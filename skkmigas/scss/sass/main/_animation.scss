@@ -1,0 +1,244 @@
+@keyframes moveDown {
+    from {
+        top: 0%;
+    }
+    to {
+        top: 2%;
+    }
+}
+
+@keyframes moveDownLong {
+    0% {
+        top: -200%;
+        opacity: 1;
+    }
+    50% {
+        top: 100%;
+        opacity: 1;
+    }
+    100% {
+        top: 150%;
+        opacity: 0;
+    }
+}
+
+@keyframes moveUp {
+    from {
+        top: 120%;
+    }
+    to {
+        top: 0%;
+    }
+}
+
+@keyframes moveUpGround {
+    from {
+        bottom: -20%;
+        height: 10%;
+    }
+    to {
+        bottom: 0%;
+    }
+}
+
+@keyframes moveLeft {
+    from {
+        left: 100%;
+    }
+    to {
+        left: 0%;
+    }
+}
+
+@keyframes moveLeftb {
+    from {
+        left: 45%;
+    }
+    to {
+        left: 47%;
+    }
+}
+
+@keyframes moveRight {
+    0% {
+        right: 0%;
+    }
+    50% {
+        right: 60%;
+        opacity: 1;
+    }
+    100% {
+        right: -100%;
+        opacity: 0;
+    }
+}
+@keyframes boat {
+    0% {
+        transform:translateX(-15%);
+    }
+    100% {
+        transform:translateX(0%);
+    }
+}
+
+@keyframes sizeIn {
+    0% {
+        transform: scale(0);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1.0);
+    }
+}
+
+@keyframes scaled {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1.0);
+    }
+}
+
+@keyframes sizeOut {
+    0% {
+        transform: scale(2.5);
+    }
+    50% {
+        transform: scale(2);
+    }
+    100% {
+        transform: scale(1.0);
+    }
+}
+
+@keyframes sizeOutHide {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.25);
+    }
+    100% {
+        transform: scale(1.5);
+    }
+}
+
+@keyframes opacity {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes opacity2 {
+    0% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.scroll {
+    &Up {
+        top:-100%;
+    }
+    &Down {
+        top:0%;
+    }
+    &Mobile {
+        @include max-responsive($xs) {
+            position:relative;
+        }
+    }
+}
+
+.animation {
+    &__duration {
+        animation-direction: alternate;
+        &.fast {
+            animation-duration: 0.4s;
+        }
+        &.fast2 {
+            animation-duration: 0.5s;
+        }
+        &.first {
+            animation-duration: 1s;
+        }
+        &.second {
+            animation-duration: 1.25s;
+        }
+        &.third {
+            animation-duration: 1.50s;
+        }
+        &.fourth {
+            animation-duration: 1.75s;
+        }
+        &.long {
+            animation-duration: 5s;
+        }
+        &.longer {
+            animation-duration: 15s;
+        }
+        &.rewind {
+            animation-iteration-count: infinite;
+        }
+        &.repeat1 {
+            animation-iteration-count: 1;
+        }
+    }
+    &__moveDown {
+        animation-name: moveDown;
+    }
+    &__moveDownLong {
+        animation-name: moveDownLong;
+    }
+    &__moveUp {
+        width: 100%;
+        animation-name: moveUp;
+    }
+    &__moveUp__ground {
+        width: 100%;
+        animation-name: moveUpGround;
+    }
+    &__moveLeft {
+        animation-name: moveLeft;
+    }
+    &__moveLeftb {
+        animation-name: moveLeftb;
+    }
+    &__moveRight {
+        animation-name: moveRight;
+    }
+    &__sizeIn {
+        animation-name: sizeIn;
+    }
+    &__scaled {
+        animation-name: scaled;
+    }
+    &__sizeOut {
+        animation-name: sizeOut;
+    }
+    &__sizeOutHide {
+        animation-name: sizeOutHide;
+    }
+    &__opacity {
+        animation-name: opacity;
+        display: block;
+    }
+    &__opacity2 {
+        animation-name: opacity;
+        display: block;
+    }
+    &__boat {
+        animation-name: boat;
+    }
+}

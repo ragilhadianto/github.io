@@ -1,0 +1,37 @@
+// @import url(https://fonts.googleapis.com/css?family=Pontano+Sans);
+// @import url(https://fonts.googleapis.com/css?family=Lato:400,300,700);
+// @import url(https://fonts.googleapis.com/css?family=Fjalla+One);
+// @import url(https://fonts.googleapis.com/css?family=Noto+Serif:400,700);
+
+// base sass, mixin + variable
+
+/* --------------------------------------------------------
+Kompas.com - 2016
+
+author	: Ragil Hadianto
+version	: 1.00
+
+----------------------------------------------------------*/
+
+@import 'main/preload';
+@import 'modules/base';
+// global
+@import 'main/global';
+@import 'main/grid';
+@import 'main/fontface';
+@import 'main/utilities';
+
+// header
+@import 'main/all';
+@import 'main/header';
+
+// main
+@import 'main/main';
+@import 'main/page';
+@import 'main/kcmread';
+@import 'main/kcmshare';
+@import 'main/animation';
+@import 'main/quoteslide';
+
+// footer
+@import 'main/footer';

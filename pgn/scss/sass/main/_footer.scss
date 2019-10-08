@@ -1,0 +1,39 @@
+.logo_footer{
+	p{
+		color: #fff;
+	}	
+	@include min-responsive(320px){
+		padding-top: 10px;
+	}
+	@include min-responsive($ssm){
+		padding-top: 100px;
+	}
+}
+
+.footer{	
+	z-index: 7;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+
+	& .inner_footer{
+		height: 30px;
+		bottom: 0;
+
+		@include max-responsive($xs){
+			height: 35px;
+		}
+		@include range-responsive(480px, $ssm){
+			height: 16px;
+		}
+
+		
+
+	}
+	& img{
+		left: 0;
+	    margin: 0 auto;
+	    right: 0;
+	    top: 0;
+	}
+}

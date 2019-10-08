@@ -1,0 +1,126 @@
+/*header*/
+.menu{
+  position: fixed;
+  left: -325px;
+  top: 0;
+  width: 300px;
+  height: 100vh;
+  background: #c82129;
+  z-index: 9999;
+  text-align: center;
+  -webkit-box-shadow: 9px 0px 19px -9px rgba(0,0,0,0.6);
+  -moz-box-shadow: 9px 0px 19px -9px rgba(0,0,0,0.6);
+  box-shadow: 9px 0px 19px -9px rgba(0,0,0,0.6);
+
+  &.show{
+    left: 0;
+    @include base_transition(all);
+  }
+
+  h2{
+    padding: 20px 0;
+    color: #fff;
+    color: #fff;
+    span{
+      font-size: 15px;
+      position: absolute;
+      right: 10px;
+      top: 15px;
+      cursor: pointer;
+      padding: 10px;
+    }
+  }
+  ul li{
+    display: list-item;
+    text-align: center;
+    border-top: 1px solid #9f000a;
+    a{
+      font-size: 18px;
+      color: #fff;
+      padding: 10px 0;
+      width: 100%;
+      font-style: italic;
+    }
+  }
+}
+
+.menu_desktop{
+  text-align: right;
+
+  @include min-responsive(0){
+    margin-right: 20px;
+    top: 5px;
+  }
+  @include min-responsive(641px){
+    margin-right: auto;
+    top: auto;
+  }
+
+  ul{
+
+    li{
+
+      a{
+        font-weight: bold;
+        font-style: italic;
+        color: #acacac;
+        font-size: 16px;
+        padding: 9px 20px;
+
+      }
+      & a.active{
+        color: #e5333e;
+      }
+    }
+  }
+}
+.header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  z-index: 999;
+  width: 100%;
+  background: #fff;
+  border-bottom: 1px solid #dedede;
+  padding-top: 10px;
+
+  @include min-responsive(0){
+    height: 50px;
+  }
+  @include min-responsive(361px){
+    height: 60px;
+  }
+
+
+  &__logo{
+
+    @include min-responsive(0){
+      margin-left: 10px !important;
+    }
+    @include min-responsive(641px){
+      margin-left: 0 !important;
+    }
+    img{
+      @include max-responsive(640px){
+        float: left;
+        width: 70%;
+        position: relative;
+        top: 2px;
+      }
+    }
+    span{
+      left: 15px;
+      position: relative;
+      top: 3px;
+
+      @include max-responsive(640px){
+        left: 10px;
+        top: 5px;
+        font-size: 12px;
+      }
+
+    }
+  }
+}

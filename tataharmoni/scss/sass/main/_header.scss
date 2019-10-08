@@ -1,0 +1,184 @@
+.header{
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  color: #fff;
+  padding: 15px;
+  background: rgba(255, 255,255,0);
+  @include base_transition(all);
+  top: 0;
+  left: 0;
+  height: 80px;
+
+  @include max-responsive(640px){
+    padding: 5px;
+    height: 60px;
+  }
+
+
+  &__logo{
+
+    @include max-responsive(640px){
+      padding-top: 10px;
+    }
+  }
+  &__menu{
+    text-align: right;
+    padding-top: 15px;
+    @include max-responsive(640px){
+      padding-top: 10px;
+    }
+    ul{
+      @include base_transition(all);
+
+      @include max-responsive(640px){
+        overflow-y: auto;
+        right: -100%;
+        display: block;
+        width: 85%;
+        position: fixed;
+        top: 0;
+        //background: rgba(0,0,0,0.95);
+        background: $color_1;
+        height: 100vh;
+        padding-top: 20px;
+      }
+
+      &.show{
+        @include max-responsive(640px){
+          right: 0;
+        }
+      }
+
+      li{
+
+        @include max-responsive(640px){
+          display: list-item;
+          padding: 15px;
+        }
+        a{
+          padding: 20px;
+          text-transform: uppercase;
+          @extend .font_b;
+          color:$color_2;
+          @include max-responsive(640px){
+            color: #fff !important;
+          }
+        }
+      }
+    }
+
+    &__mobileicon{
+      font-size: 22px;
+    }
+
+    &__index{
+      ul{
+        li{
+          a{
+            color: #fff;
+          }
+        }
+      }
+    }
+
+
+  }
+  &--show,
+  &--page{
+      background: rgba(255, 255,255,0.95);
+      -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+      -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+      box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+    a{
+        color:$color_2 !important;
+    }
+    & .header__menu__mobileicon{
+        color:$color_2 !important;
+    }
+  }
+}
+
+.slider{
+  position: relative;
+  color: #fff;
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+  @include max-responsive(640px){
+    height: 500px;
+  }
+
+
+  &__overlay{
+    background: rgba(0,20,53, 0.6);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top:0;
+  }
+  &__naration{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    bottom: 250px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 30px;
+    @include max-responsive(640px){
+      font-size: 24px;
+    }
+  }
+  &__tracking{
+    background: rgba(0,25,75,0.8);
+    bottom: 0;
+    width: 100%;
+    padding: 45px 0;
+    position: absolute;
+    @include max-responsive(640px){
+      text-align: center;
+      padding: 35px 0;
+    }
+    span{
+      display: block;
+      //color:$color_2;
+      color:#fff;
+      margin-bottom: 10px;
+      font-size: 20px;
+    }
+    .input{
+      width: 88%;
+      margin-right: 5px;
+      @include max-responsive(1024px){
+        width: 85%;
+      }
+      @include max-responsive(768px){
+        width: 83%;
+      }
+      @include max-responsive(640px){
+        width: 100%;
+      }
+    }
+    & .button{
+      position: relative;
+      top: 2px;
+      @include max-responsive(640px){
+        width: 100%;
+        top:5px;
+      }
+    }
+  }
+  img{
+    width:100%;
+    @extend .imgfill;
+  }
+
+  & .slick-track {
+    height: 600px;
+    @include max-responsive(640px){
+      height: 500px;
+    }
+  }
+}

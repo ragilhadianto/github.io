@@ -1,0 +1,33 @@
+/*–––––––––––––LAYOUT–––––––––––––*/
+body [class*=col] {
+	//float:left;
+	//position:relative;
+	//&:first-child{margin-left:0}
+}
+.col-x{width: auto;}
+
+.container {
+	margin: 0 auto;
+	//padding:0 20px;
+	*zoom: 1;
+	@include max-responsive(768px){
+		padding: 0 10px;
+	}
+	&:after{
+		content:"";
+		display:table;
+		clear:both;
+	}
+}
+.clearfix,
+.row{
+	&:after,
+	&:before {
+		display: table;
+		content: "";
+		line-height: 0;
+	}
+	&:after {
+		clear: both;
+	}
+}
