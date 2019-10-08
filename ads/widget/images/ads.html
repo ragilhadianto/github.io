@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>quiz</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500">
+  </head>
+  <body>
+
+
+
+    <!-- s:quiz tebak -->
+      <link rel="stylesheet" type="text/css" href="css/normalize.min.css" />
+      <link rel="stylesheet" type="text/css" href="css/quiz__tebak.css" />
+
+      <div class="quiz__tebak__container" style="background:#183676;color:#fff;">
+        <!-- <div class="header">
+          <img src="images/header.jpg" alt="">
+          <span id="openrules">
+            <img src="images/icon_info.png" alt="">
+          </span>
+        </div> -->
+
+        <div class="banner">
+          <img src="images/bg.jpg" alt="">
+        </div>
+
+
+        <div class="wrap_content">
+          <div class="main">
+            <div class="main__top hide" id="timer">
+              <div class="main__top__left">
+                <p>Di huruf apa posisi bola ?</p>
+              </div>
+              <div class="main__top__right">
+                <h1><time>00:00:00</time></h1>
+              </div>
+            </div>
+            <div class="foto imgfill">
+              <img src="images/foto.jpg" alt="">
+              <img id="fotobenar" class="hide fotobenar" src="images/foto_benar.jpg" alt="">
+            </div>
+          </div>
+
+          <div class="footer">
+            <div class="footer__play" id="step1">
+              <p>Di huruf apa posisi bola ?</p>
+              <button class="btn btn__reg btn_step1" id="start">
+                Jawab
+              </button>
+            </div>
+
+            <div class="footer__option hide" id="step2">
+              <small>pilih jawaban</small>
+              <ul>
+                <li class="btn__yellow btn_step2">
+                  <span>a</span>
+                </li>
+                <li class="btn__orange btn_step2">
+                  <span>b</span>
+                </li>
+                <li class="btn__green btn_step2benar" id="stop">
+                  <span>c</span>
+                </li>
+                <li class="btn__darkred btn_step2">
+                  <span>d</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="footer__play hide" id="step3_benar">
+              <p>jawaban Benar</p>
+              <button class="btn btn__reg btn_step3benar">
+                Lanjut
+              </button>
+            </div>
+
+            <div class="footer__play hide" id="step3_salah">
+              <p>Jawaban SALAH</p>
+              <button class="btn btn__reg btn_step3salah">
+                COBA Lagi
+              </button>
+            </div>
+
+            <div class="footer__form hide" id="step4">
+              <div class="footer__form__inner">
+                <p>Isi form berikut untuk konfirmasi hadiah</p>
+                <form action="javascript:void(0)" method="post">
+                  <table>
+                    <tr>
+                      <td>
+                        <span>Nama</span>
+                        <input type="text">
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <span>Email</span>
+                        <input type="text">
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <span>No Hp</span>
+                        <input type="text">
+                      </td>
+                    </tr>
+                  </table>
+                <small> *Dengan meng-klik tombol submit Anda menetujui Syarat dan Ketentuan yang berlaku </small>
+                <button class="btn btn__reg btn_step4">
+                  Submit
+                </button>
+                </form>
+              </div>
+            </div>
+
+            <div class="footer__thank hide" id="step5">
+              <div class="footer__thank__inner">
+                <div class="footer__thank__inner__middle">
+                  <h2>Terima Kasih</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+
+
+        <!-- rules -->
+        <div class="rules">
+          <span id="closerules">[x] Close</span>
+          <div class="rules_inner">
+            <p>Cara Bermain</p>
+            <ul>
+              <li>
+                tap / klik gambar yang dekat dengan area kosong, dari arah atas/samping/bawah
+              </li>
+              <li>
+                bentuk sampai sesuai gambar utuh
+              </li>
+              <li>
+                lorem ipsum dolor
+              </li>
+              <li>
+                game finish
+              </li>
+            </ul>
+            </br>
+            <p>Syarat & Ketentuan</p>
+            <ul>
+              <li>
+                Follow IG @lorem ipsum dan like FB lorem ipsum
+              </li>
+              <li>
+                Screenshoot hasil dan posting ke akun kamu, tag akun @loremipsum
+              </li>
+              <li>
+                like yg terbanyak akan bla bla boxoverlay
+              </li>
+              <li>
+                lorem ipsum dolor
+              </li>
+              <li>
+                Hadiah bla bla bla
+              </li>
+              <li>
+                Follow IG @lorem ipsum dan like FB lorem ipsum
+              </li>
+              <li>
+                Screenshoot hasil dan posting ke akun kamu, tag akun @loremipsum
+              </li>
+              <li>
+                like yg terbanyak akan bla bla boxoverlay
+              </li>
+              <li>
+                lorem ipsum dolor
+              </li>
+              <li>
+                Hadiah bla bla bla
+              </li>
+              <li>
+                Follow IG @lorem ipsum dan like FB lorem ipsum
+              </li>
+              <li>
+                Screenshoot hasil dan posting ke akun kamu, tag akun @loremipsum
+              </li>
+              <li>
+                like yg terbanyak akan bla bla boxoverlay
+              </li>
+              <li>
+                lorem ipsum dolor
+              </li>
+              <li>
+                Hadiah bla bla bla
+              </li>
+              <li>
+                Follow IG @lorem ipsum dan like FB lorem ipsum
+              </li>
+              <li>
+                Screenshoot hasil dan posting ke akun kamu, tag akun @loremipsum
+              </li>
+              <li>
+                like yg terbanyak akan bla bla boxoverlay
+              </li>
+              <li>
+                lorem ipsum dolor
+              </li>
+              <li>
+                Hadiah bla bla bla
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+      <script type="text/javascript" src="js/jquery.js"></script>
+      <script type="text/javascript">
+        $(document).ready(function() {
+
+          $('.btn_step1').click(function() {
+            $('#step1').hide();
+            $('#step2').show();
+            $('#timer').show();
+          });
+          $('.btn_step2').click(function() {
+            $('#step2').hide();
+            $('#step3_salah').show();
+          });
+          $('.btn_step2benar').click(function() {
+            $('#step2').hide();
+            $('#timer').hide();
+            $('#step3_benar').show();
+            $('#fotobenar').show();
+          });
+          $('.btn_step3benar').click(function() {
+            $('#step3_benar').hide();
+            $('#step4').show();
+          });
+          $('.btn_step3salah').click(function() {
+            $('#step3_salah').hide();
+            $('#step2').show();
+          });
+          $('.btn_step4').click(function() {
+            $('#step4').hide();
+            $('#step5').show();
+          });
+          $('#closerules').click(function() {
+            $('.rules').hide();
+          });
+          $('#openrules').click(function() {
+            $('.rules').show();
+          });
+        });
+
+        var h1 = document.getElementsByTagName('h1')[0],
+            start = document.getElementById('start'),
+            stop = document.getElementById('stop'),
+            //clear = document.getElementById('clear'),
+            seconds = 0, minutes = 0, hours = 0,
+            t;
+
+        function add() {
+            seconds++;
+            if (seconds >= 60) {
+                seconds = 0;
+                minutes++;
+                if (minutes >= 60) {
+                    minutes = 0;
+                    hours++;
+                }
+            }
+
+            h1.textContent = (hours ? (hours > 9 ? hours : "0" + hours) : "00") + ":" + (minutes ? (minutes > 9 ? minutes : "0" + minutes) : "00") + ":" + (seconds > 9 ? seconds : "0" + seconds);
+
+            timer();
+        }
+        function timer() {
+            t = setTimeout(add, 1000);
+        }
+        //timer();
+
+
+        /* Start button */
+        start.onclick = timer;
+
+        /* Stop button */
+        stop.onclick = function() {
+            clearTimeout(t);
+        }
+
+        /* Clear button */
+        // clear.onclick = function() {
+        //     h1.textContent = "00:00:00";
+        //     seconds = 0; minutes = 0; hours = 0;
+        // }
+    </script>
+    <!-- e:quiz tebak -->
+  </body>
+</html>

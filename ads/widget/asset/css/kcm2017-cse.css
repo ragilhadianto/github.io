@@ -1,0 +1,83 @@
+.gsc-control-cse {
+    font-family: "Roboto", sans-serif!important;
+    padding: 0!important;
+}
+.gsc-thumbnail-inside {
+    padding: 0!important;
+}
+.gs-result .gs-visibleUrl {
+    padding-bottom: 10px!important;
+}
+.gsc-webResult.gsc-result {
+    border-bottom: 1px solid #dfdfdf!important;
+    padding-top: 20px!important;
+    padding-bottom: 20px!important;
+}
+.gsc-webResult.gsc-result:hover {
+    border-bottom: 1px solid #dfdfdf!important;
+}
+.gs-webResult.gs-result a.gs-title:link b,
+.gs-result .gs-title {
+    text-decoration: none!important;
+    height: auto!important;
+}
+.gs-result .gs-title:hover {
+    text-decoration: none!important;
+    color: #39a6dd!important;
+}
+.gs-webResult.gs-result a.gs-title:link b,
+.gs-webResult.gs-result a.gs-title:link {
+    color: #2a2a2a!important;
+}
+.gs-webResult.gs-result a.gs-title:hover b,
+.gs-webResult.gs-result a.gs-title:hover {
+    color: #39a6dd!important;
+}
+.gsc-control-cse .gs-result .gs-title, .gsc-control-cse .gs-result .gs-title * {
+    font-size: 26px!important;
+    font-weight: 300!important;
+}
+.gsc-control-cse .gs-result .gs-title b,
+.gs-webResult.gs-result a.gs-title:hover b {
+    font-weight: 400!important;
+}
+.gsc-control-cse .gs-result .gs-title {
+    padding: 0 0 5px!important;
+}
+.gsc-url-top {
+    padding: 0!important;
+}
+.gs-webResult div.gs-visibleUrl-short {
+    color: #e55225!important;
+    font-weight: 300!important;
+}
+.gs-image-box.gs-web-image-box.gs-web-image-box-landscape {
+    width: 190px!important;
+}
+.gs-web-image-box-landscape img.gs-image {
+    max-width: 177px!important;
+    max-height: 117px!important;
+}
+.gs-webResult .gs-snippet {
+    color: #808080!important;
+    font-size: 14px!important;
+    font-weight: 300!important;
+    line-height: 1.5!important;
+}
+.gs-webResult .gs-snippet b {
+    color: #666!important;
+}
+
+/* paging */
+.gsc-cursor-page {
+    padding: 5px 9px!important;
+    background-color: #fff!important;
+    font-size: 16px!important;
+    color: #000!important;
+}
+.gsc-cursor-page:hover {
+    text-decoration: none!important;
+    color: #fff!important;
+    border-radius: 20px!important;
+    background-color: #71C4D6!important;
+}

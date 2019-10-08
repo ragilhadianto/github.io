@@ -1,0 +1,128 @@
+@charset "UTF-8";
+/* --------------------------------------------------------
+Kompas.com - 2017
+author	: Ragil Hadianto
+----------------------------------------------------------*/
+/*ΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôUtilitiesΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇô*/
+.clearfix { *zoom: 1; }
+
+.display-table { display: table; width: 100%; height: 100%; position: relative; z-index: 1; }
+
+.display-center { display: table-cell; vertical-align: middle; text-align: center; width: 100%; height: 100%; }
+
+.center { float: none !important; margin: 0 auto !important; text-align: center; }
+
+.middle { display: table-cell; vertical-align: middle; }
+
+.top { display: table-cell; vertical-align: top; }
+
+.bottom { display: table-cell; vertical-align: bottom; }
+
+.center-block { display: block; margin-left: auto; margin-right: auto; }
+
+.hide { display: none !important; }
+
+.show { display: block !important; }
+
+.invisible { visibility: hidden; }
+
+.text-hide { font: 0/0 a; color: transparent; text-shadow: none; background-color: transparent; border: 0; }
+
+.affix { position: fixed; }
+
+.d_table { display: table; }
+
+.d_block { display: block; }
+
+.right { float: right !important; }
+
+.left { float: left !important; }
+
+.text-left { text-align: left !important; }
+
+.text-right { text-align: right !important; }
+
+.text-center { text-align: center !important; }
+
+.mt1 { margin-top: 10px !important; }
+
+.mb1 { margin-bottom: 10px !important; }
+
+.mr1 { margin-right: 10px !important; }
+
+.ml1 { margin-left: 10px !important; }
+
+.pt1 { padding-top: 10px !important; }
+
+.pb1 { padding-bottom: 10px !important; }
+
+.pr1 { padding-right: 10px !important; }
+
+.pl1 { padding-left: 10px !important; }
+
+.mt2 { margin-top: 20px !important; }
+
+.mb2 { margin-bottom: 20px !important; }
+
+.mr2 { margin-right: 20px !important; }
+
+.ml2 { margin-left: 20px !important; }
+
+.pt2 { padding-top: 20px !important; }
+
+.pb2 { padding-bottom: 20px !important; }
+
+.pr2 { padding-right: 20px !important; }
+
+.pl2 { padding-left: 20px !important; }
+
+.bolt { font-weight: bold; }
+
+html, body, h2, h3, .title__content { font-family: "blokfont", sans-serif !important; font-size: 12px !important; color: #eee !important; }
+
+h2, h3, .title__content { font-size: 20px !important; }
+
+.header, .nav { background: #7d7d7d !important; }
+
+.nav__link { font-family: "blokfont", sans-serif !important; font-size: 12px !important; }
+
+.network__link { font-size: 10px !important; }
+
+.article__title { color: #eee !important; }
+
+.article__photo__wrap .slick-slide img { height: 451px !important; }
+
+.headline__thumb .slick-slide img { height: 100px !important; }
+
+.title--center::after, .title__content::after { border-bottom: 5px solid #808080 !important; }
+
+.box--sponsored, .box--advertorial, .box--brandzview { background: #808080 !important; }
+
+.kcm__close { background: #808080 !important; }
+
+.gramedia__buy { background: #808080 !important; border: 1px solid #808080 !important; }
+
+.most__count { background: #808080 !important; }
+
+img { width: 100% !important; height: 100% !important; }
+
+.not_textblock, .not_textblock p, .not_textblock a, h3.not_textblock{
+  font-family: Roboto, sans-serif !important;
+  color:#000 !important;
+}
+.not_change img,
+img.not_change{
+  height: auto !important;
+}
+.not_change2 img,
+img.not_change2{
+  height: auto !important;
+  width: auto !important;
+}
+.not_change3 img,
+img.not_change3{
+  width: 100% !important;
+  height: auto !important;
+}
+
+@font-face { font-family: 'blokfont'; src: url("../fonts/BLOKKNeue-Regular.eot"); src: url("../fonts/BLOKKNeue-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/BLOKKNeue-Regular.woff2") format("woff2"), url("../fonts/BLOKKNeue-Regular.woff") format("woff"), url("../fonts/BLOKKNeue-Regular.svg#e Light") format("svg"); font-weight: 400; font-style: normal; font-stretch: normal; unicode-range: U+0020-00FE; }
