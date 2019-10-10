@@ -64,6 +64,10 @@ body{
   top: 0;
   z-index: 1;
 
+  @include max-responsive(($sm)){
+    position: absolute;
+  }
+
   &__inner{
     height: 100vh;
     align-content: center;
@@ -92,6 +96,10 @@ body{
 
     h1{
       text-transform: uppercase;
+
+      @include max-responsive($sm){
+        font-size: 28px;
+      }
     }
     small{
       @extend .color1;
