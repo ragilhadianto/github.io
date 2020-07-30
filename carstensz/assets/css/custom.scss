@@ -1,0 +1,367 @@
+// font
+@font-face {
+    font-family: 'big_caslonmedium';
+    src: url('../font/');
+    src: url('../font/big_caslon_medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/big_caslon_medium-webfont.woff2') format('woff2'),
+         url('../font/big_caslon_medium-webfont.woff') format('woff'),
+         url('../font/big_caslon_medium-webfont.ttf') format('truetype'),
+         url('../font/big_caslon_medium-webfont.svg#big_caslonmedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+//base
+$slg:1367px;
+$lg:1100px;
+$md:992px;
+$sm:768px;
+$xs:360px;
+$xxs:320px;
+
+// media
+@mixin max-responsive ($media) {
+    @media (max-width: $media) { @content; }
+}   
+@mixin min-responsive ($media) {
+    @media (min-width: $media) { @content; }
+}
+@mixin range-responsive ($media, $media2) {
+    @media (min-width: $media) and (max-width: $media2) { @content; }
+}
+
+@mixin base_transition($t) {
+    -webkit-transition: $t 0.2s ease;
+    -moz-transition: $t 0.2s ease;
+    -ms-transition: $t 0.2s ease;
+    -o-transition: $t 0.2s ease;
+    transition: $t 0.2s ease;
+}
+
+
+$font_1: 'big_caslonmedium', sans-serif;
+$color1: #00005F;
+
+
+//global
+*, :after, :before {
+    box-sizing: border-box;
+}
+body {
+    color: #565656 !important;
+}
+.color1{
+    color: $color1 !important;
+}
+.color2{
+    color: #565656 !important;
+}
+.font1{
+    font-family: $font_1;
+    font-weight: 500 !important;
+    letter-spacing: 0.03em;
+    word-spacing: -0.2em;
+}
+.bg_color1{
+    background: $color1;
+    color: #fff;
+}
+.bg_grey{
+    background: #E5E5E5;
+}
+.font36{
+    font-size: 36px;
+    line-height: 45px;
+
+    @include max-responsive($md){
+        font-size: 30px;
+        line-height: 35px;
+    }
+}
+.font24{
+    font-size: 24px;
+    
+    @include max-responsive($md){
+        font-size: 16px;
+    }
+}
+.font20{
+    font-size:  20px;
+
+    @include max-responsive($md){
+        font-size: 16px;
+    }
+}
+h1, h2, h3, h4, h5, h6{
+    @extend .font1, .color1;    
+}
+a{
+    @extend .color1;
+}
+
+
+.textCut3,
+.textCut2,
+.textCut1{
+  overflow: hidden;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+}
+.textCut2{
+  -webkit-line-clamp: 2;
+}
+.textCut1{
+  -webkit-line-clamp: 1;
+}
+.imgfill,
+.imgfill > img{
+  width: 100%;
+  height: 100%;
+  object-position: 50% 50%;
+  -o-object-fit: cover;
+  object-fit: cover;
+
+  &__top{
+    object-position: 50% 0;
+  }
+}
+
+// rewrite bootstrap
+//card
+.card{
+    
+    &--2{
+        background: #CAD0D6;
+    }
+
+    &--3{
+
+        @include max-responsive($md){
+            min-height: 300px;
+        }
+    }
+
+    &-header{
+        
+        &--2{
+            height: 150px;
+
+            @include max-responsive($md){
+                height: 100px;
+            }
+        }
+    }
+
+    &-body{
+        
+        @include max-responsive($md){
+            padding: 1rem;
+        }
+    }
+}
+.go-to:hover, .go-to:focus:hover{
+    background-color: $color1; 
+    color: #fff !important;   
+}
+
+//breadcrumb
+.breadcrumb{
+    li{
+        font-size: 12px;
+        a{
+            font-size: 12px;
+        }
+    }   
+}
+//hr
+.hr{
+
+    &_1{
+        border-top: 0.0625rem solid $color1;
+    }
+}
+.btn{
+
+    &.bg_grey{
+
+        &:hover{
+            color: #fff !important;
+        }
+    }
+}
+//end rewrite bootstrap
+
+//header 
+.header{
+
+    .nav-link{
+        font-size: 14px;
+        padding-left: 2.5em !important;
+        color: $color1 !important;
+
+        @include max-responsive($md){
+            padding-left: 0 !important;            
+            font-size: 15px;
+        }
+    }
+    
+    .navbar-brand, .navbar-brand > img {
+        width: 7rem;
+    }
+    @media (min-width: 992px){
+        .navbar-expand-lg .navbar-nav .dropdown-menu {
+            border-top: 3px solid rgba(0, 0, 0, 0.6);
+        }
+    }
+    
+    .navbar-nav-item:hover,
+    .dropdown-item:hover {
+        @extend .color1;
+    }
+
+    & .header-section{
+        @include base_transition(all);
+    }
+   
+
+    &.scrolled{
+        
+        .nav-link{
+            @extend .color1;
+        }
+
+        .header-section{
+            box-shadow: 0px 12px 15px rgba(140, 152, 164, 0.1);
+            position: fixed;
+            width: 100%;
+            background: rgba(255,255,255,0.9);
+        }
+    }
+
+    .dropdown-menu:not(.navbar-promo):not(.dropdown-menu-no-border-on-mobile){
+        
+        @include max-responsive($md){
+            border-left: 0.1875rem solid $color1;
+        }
+    }
+
+    &__home{
+
+
+        .nav-link{
+            color: #fff !important;
+    
+            @include max-responsive($md){
+                color: $color1 !important;
+            }
+        }
+
+    }
+
+
+}
+
+
+//slider
+#heroNav{
+
+    span{
+        font-size: 18px;
+    }
+    h2{
+        font-size: 35px;
+        margin-bottom: 50px !important;
+        //line-height: 45px;
+    }
+    a{
+        color: #fff !important;
+    }
+}
+
+
+//step
+.step-md{
+
+    &  .step-content{
+        padding: 0 30px;
+
+        h3{
+            text-transform: uppercase;
+        }
+
+        p{
+            font-size: 14px;
+        }
+    }
+    & .step-icon{
+        width: 90px !important;
+
+        &::after {
+            @include min-responsive(769px){
+                width: calc(100% - 160px) !important;
+                left: calc(50% + 100px) !important;  
+                border-top: 0.125rem solid $color1 !important;  
+            }            
+            @include max-responsive(768px){
+                border-left: 0.125rem solid $color1 !important;  
+                left: 3em;
+                top: 5em;
+                height: calc(100% - 5.5em);
+            }            
+            
+        }
+
+        img{
+            width: 100%;
+        }
+    }
+}
+
+//latestnews
+.latestnews{
+    & .container{
+        
+    }
+
+    & .imgfill{
+        height:100%;
+        overflow: hidden;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        @include max-responsive($md){
+            position: relative;
+            height: 300px;
+        }
+    }
+    &__item{
+        padding: 35px 165px 60px 0;
+
+        @include max-responsive($md){
+            padding: 0;
+        }
+    }
+}
+
+.footer{
+    background: $color1;
+  
+
+    p, small{
+        font-size: 14px;
+        color: #fff;
+    }
+
+    & .avatar{
+        background: #fff;
+        width: 30px !important;
+        height: 30px !important;
+    }
+
+    & .fa{
+        color: $color1;
+    }
+}
+
