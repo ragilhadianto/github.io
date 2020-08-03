@@ -281,7 +281,7 @@ a{
 
 
 //step
-.step-md{
+.step{
 
     &  .step-content{
         padding: 0 30px;
@@ -308,12 +308,27 @@ a{
                 left: 3em;
                 top: 5em;
                 height: calc(100% - 5.5em);
-            }            
-            
+            }                        
         }
 
         img{
             width: 100%;
+        }
+    }
+    & .step-item{
+
+        &:last-child{   
+
+            & .step-icon{
+                &::after {
+                   
+                    @include max-responsive(768px){
+                        border-left: 0 !important;
+                    }                        
+                }
+            }
+          
+
         }
     }
 }
