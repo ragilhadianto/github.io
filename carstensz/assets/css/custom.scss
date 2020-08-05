@@ -191,11 +191,12 @@ a{
     }
 }
 .container__arrow__left{
-    //display: none !important;
+    //
 }
 .slick-arrow-left{
     right: 0 !important;
     left: auto !important;
+    display: none !important;
 }
 .container__arrow{
     position: absolute;
