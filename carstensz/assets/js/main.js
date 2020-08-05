@@ -35,13 +35,13 @@ $(document).on('ready', function () {
   });
 
 
-if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+// if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
 
-  $(".parentMenu").attr("href", "javascript:void(0);")
+//   $(".parentMenu").attr("href", "javascript:void(0);");
 
-} else {
+// } else {
   
-}
+// }
 
 
   if (/MSIE \d|Trident.*rv:/.test(navigator.userAgent)) document.write('<script src="../../assets/vendor/polifills.js"><\/script>');

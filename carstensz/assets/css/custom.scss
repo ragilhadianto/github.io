@@ -190,8 +190,12 @@ a{
         }
     }
 }
+.container__arrow__left{
+    //display: none !important;
+}
 .slick-arrow-left{
-    display: none !important;
+    right: 0 !important;
+    left: auto !important;
 }
 .container__arrow{
     position: absolute;
@@ -203,7 +207,20 @@ a{
     background: none !important;
     
     @include max-responsive($md){
-        display: none;
+        display: none !important;
+    }
+
+    &__right{
+
+        &.slick-disabled{
+            display: none;
+        }
+    }
+    &__left{
+
+        &.slick-disabled{
+            display: none !important;
+        }
     }
 }
 //end rewrite bootstrap
