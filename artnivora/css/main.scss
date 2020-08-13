@@ -1,0 +1,358 @@
+//base
+$slg:1367px;
+$lg:1100px;
+$md:992px;
+$sm:768px;
+$xs:360px;
+$xxs:320px;
+
+// media
+@mixin max-responsive ($media) {
+    @media (max-width: $media) { @content; }
+}   
+@mixin min-responsive ($media) {
+    @media (min-width: $media) { @content; }
+}
+@mixin range-responsive ($media, $media2) {
+    @media (min-width: $media) and (max-width: $media2) { @content; }
+}
+
+@mixin base_transition($t) {
+    -webkit-transition: $t 0.2s ease;
+    -moz-transition: $t 0.2s ease;
+    -ms-transition: $t 0.2s ease;
+    -o-transition: $t 0.2s ease;
+    transition: $t 0.2s ease;
+}
+
+@font-face {
+    font-family: 'GFSDidotRegular';
+    src: url('../fonts/GFSDidotRegular.eot');
+    src: url('../fonts/GFSDidotRegular.eot') format('embedded-opentype'),
+         url('../fonts/GFSDidotRegular.woff2') format('woff2'),
+         url('../fonts/GFSDidotRegular.woff') format('woff'),
+         url('../fonts/GFSDidotRegular.ttf') format('truetype'),
+         url('../fonts/GFSDidotRegular.svg#GFSDidotRegular') format('svg');
+}
+
+
+$font_1: 'GFSDidotRegular', sans;
+$color1: #00005F;
+
+
+//global
+*, :after, :before {
+    box-sizing: border-box;
+}
+div{
+    &:focus {
+        border: 0 !important;
+        outline-style: none !important;
+        outline-color:#fff !important;
+    }
+}
+html {
+    color: #000;
+    font-size: 12px;
+    line-height: 1.4;
+}
+html,
+body{
+    min-height: 100vh;
+    font-size: 20px;    
+}  
+body{
+    background: #F9F4F1;
+    @extend .font1;
+}
+p{
+
+}
+.font1{
+    font-family: $font_1;
+}
+.imgfill,
+.imgfill > img{
+  width: 100%;
+  height: 100%;
+  object-position: 50% 50%;
+  -o-object-fit: cover;
+  object-fit: cover;
+
+  &__top{
+    object-position: 50% 0;
+  }
+}
+.h100vh{
+    height: 100vh !important;
+}
+.h100{
+    height: 100% !important;
+    @include max-responsive($md){
+        height: auto !important; 
+    }
+}
+.max-h100{
+    max-height: 100% !important;
+    @include max-responsive($md){
+        max-height: auto !important; 
+    }
+}
+.wAuto{
+    width: auto !important;
+    max-width: none !important;
+}
+.container{
+
+    @include max-responsive($md){
+        padding: 0 40px;
+    }
+}
+//header
+.header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 20;
+
+  
+}
+.about{    
+    position: fixed;
+    width: 100%;
+    background: rgba(249,244,241,0.75);
+    z-index: 30;
+    display: none;
+
+    &.show{
+        display: block;
+    }
+
+    & .container{
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+
+    h3{
+        font-size: 30px;
+        font-weight: 400;
+
+        @include max-responsive($md){
+            font-size: 24px;
+        }
+    }
+}
+
+.btn{
+    &__close{
+    position: absolute;
+    right: 0;
+    top: 25px;
+    padding: 10px;
+    width: 35px;
+    cursor: pointer;
+
+        @include max-responsive($md){
+            right: 25px;
+        }
+
+        &--video{
+            right: -7px;
+            top: -35px;
+        }
+    }
+    }
+
+
+
+.logo{
+    margin: 10px 0 0 0;
+}
+
+.main{
+    min-height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+
+    @include max-responsive($md){
+        padding-bottom: 100px;
+    }
+
+    & .container{
+        position: relative;
+        display: flex;
+        align-items: center;
+        height: 100vh;
+
+        @include max-responsive($md){
+            display: block;
+            height: auto;
+        }
+        
+        & > div{
+            height: 70vh;
+            align-items: center;
+            display: flex;
+
+            @include max-responsive($md){
+                height: auto;
+                display: block;
+            }
+        }
+    }
+
+    &__item{    
+        height: 100vh;
+        position: relative;
+        width: 100vw;
+
+        @include max-responsive($md){
+            position: relative;
+            display: block !important;
+            height: auto;
+            margin-top: 130px;
+
+            
+            &:first-child {
+                margin-top: 0;
+                display: none !important;
+            }
+        }
+        
+        &__inner{
+            width: 100%;
+        }        
+
+        &--cover{
+            margin-top: 0;
+        }
+
+        & .item{
+            margin: 0 auto;
+            display: none;
+            height: 100%;
+            align-items: center;
+            position: relative;
+            outline: none;
+            
+            @include max-responsive($md){
+                display: block;
+                margin-bottom: 50px;
+            }            
+ 
+            &--full{
+                height: 100vh;
+            }
+            
+            &.itemShow {
+                display: flex;
+                
+            }       
+
+            img{
+                max-height: 100%;
+                width: auto;
+
+                @include max-responsive($md){
+                    max-height: auto;
+                    width: 100%;
+                }
+            }
+
+            & .imgfill{
+                max-width: 100%;
+                width: 100%;
+            }            
+        }
+
+        &__title{
+            position: absolute;
+            left: 0;
+            bottom: 30px;
+            font-size: 16px;
+            width: 1100px;
+            margin: 0 auto;
+            right: 0;
+            padding: 0 10px;
+
+            @include max-responsive($md){
+                padding: 0 40px;
+                width: 100%;
+                position: relative;
+                display: block;
+                bottom: 0;
+                margin-top: 20px;
+            }
+        }
+    }
+
+}
+
+
+.itemVideo{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    align-items: center;
+    z-index: 9999;
+    display: none;
+
+    &.show{
+        display: flex;
+    }
+
+    & .youtube,
+    iframe{
+        height: 100%;
+        width: 100%;
+    }
+}
+
+
+//custom slick
+.slick-slide {
+    outline: none !important;
+}
+.slick-prev, .slick-next {
+    width: 25%;
+    height: 100%;
+    z-index: 10;
+}
+.slick-prev:before, .slick-next:before{
+    content: none !important;  
+}
+
+
+.slick-list {
+
+    &:focus {
+        outline: none;
+    }
+
+}
+.openVideo{
+    cursor: pointer;
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+    &:after{
+        background: url(../img/play.png) no-repeat;
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        text-align: center;
+        background-position: center;
+        background-size: 50px;
+    }
+}
