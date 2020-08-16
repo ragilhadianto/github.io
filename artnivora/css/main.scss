@@ -254,10 +254,12 @@ p{
             align-items: center;
             position: relative;
             outline: none;
-            
+            justify-content: center;
+                    
             @include max-responsive($md){
                 display: block;
                 margin-bottom: 40px;
+                margin: 50px auto !important;
             }            
  
             &--full{
@@ -266,8 +268,15 @@ p{
             
             &.itemShow {
                 display: flex;
-                
             }       
+
+            &--smallScale{
+                
+                @include max-responsive($md){
+                    width: 70%;
+                    margin: 0 auto;
+                }
+            }
 
             img{
                 max-height: 100%;
