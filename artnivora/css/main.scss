@@ -66,10 +66,18 @@ body{
     @extend .font1;
 }
 p{
+    margin: 0;
+    font-size: 24px;
 
+    @include max-responsive($md){
+        font-size: 22px;
+    }
 }
 .font1{
     font-family: $font_1;
+}
+.black{
+    color: #000 !important;
 }
 .imgfill,
 .imgfill > img{
@@ -122,7 +130,6 @@ p{
 .about{    
     position: fixed;
     width: 100%;
-    background: rgba(249,244,241,0.75);
     z-index: 30;
     display: none;
 
@@ -140,9 +147,10 @@ p{
     h3{
         font-size: 30px;
         font-weight: 400;
-
+        color: #fff;
         @include max-responsive($md){
             font-size: 24px;
+            color: #000;
         }
     }
 }
@@ -155,7 +163,8 @@ p{
     padding: 10px;
     width: 35px;
     cursor: pointer;
-
+        max-width: auto;
+        min-height: auto;
         @include max-responsive($md){
             right: 25px;
         }
@@ -164,13 +173,20 @@ p{
             right: -7px;
             top: -35px;
         }
+
+        img{
+            width: 100% !important;
+        }
     }
-    }
+}
 
 
 
 .logo{
     margin: 10px 0 0 0;
+    @include max-responsive($md){
+        margin:5px 0 0 0;
+    }
 }
 
 .main{
@@ -214,7 +230,7 @@ p{
             position: relative;
             display: block !important;
             height: auto;
-            margin-top: 130px;
+            margin-top: 110px;
 
             
             &:first-child {
@@ -241,7 +257,7 @@ p{
             
             @include max-responsive($md){
                 display: block;
-                margin-bottom: 50px;
+                margin-bottom: 40px;
             }            
  
             &--full{
@@ -256,6 +272,8 @@ p{
             img{
                 max-height: 100%;
                 width: auto;
+                // min-height: 100%;
+                // max-width: none;
 
                 @include max-responsive($md){
                     max-height: auto;
@@ -273,7 +291,7 @@ p{
             position: absolute;
             left: 0;
             bottom: 30px;
-            font-size: 16px;
+            font-size: 14px;
             width: 1100px;
             margin: 0 auto;
             right: 0;
@@ -286,6 +304,7 @@ p{
                 display: block;
                 bottom: 0;
                 margin-top: 20px;
+                font-size: 11px;
             }
         }
     }
@@ -296,13 +315,14 @@ p{
 .itemVideo{
     height: 100%;
     width: 100%;
+    margin: auto;
     position: absolute;
-    left: 0;
-    top: 0;
+    top: 0; left: 0; bottom: 0; right: 0;
     align-items: center;
     z-index: 9999;
     display: none;
 
+    
     &.show{
         display: flex;
     }
@@ -354,5 +374,17 @@ p{
         text-align: center;
         background-position: center;
         background-size: 50px;
+    }
+    &--potrait{
+
+    }
+    &--landscape{
+        
+        img{
+            max-height: 100%;
+            width: auto;
+            min-height: 100%;
+            max-width: none;
+        }
     }
 }
