@@ -24,19 +24,79 @@ $xxs:320px;
     -o-transition: $t 0.2s ease;
     transition: $t 0.2s ease;
 }
+@font-face {
+    font-family: 'Didot LT Pro Roman';
+    src: url('DidotLTPro-Roman.woff2') format('woff2'),
+        url('DidotLTPro-Roman.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
 
 @font-face {
-    font-family: 'GFSDidotRegular';
-    src: url('../fonts/GFSDidotRegular.eot');
-    src: url('../fonts/GFSDidotRegular.eot') format('embedded-opentype'),
-         url('../fonts/GFSDidotRegular.woff2') format('woff2'),
-         url('../fonts/GFSDidotRegular.woff') format('woff'),
-         url('../fonts/GFSDidotRegular.ttf') format('truetype'),
-         url('../fonts/GFSDidotRegular.svg#GFSDidotRegular') format('svg');
+    font-family: 'Didot LT Pro Roman';
+    src: url('DidotLTPro-BoldItalic.woff2') format('woff2'),
+        url('DidotLTPro-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Didot LT Pro Roman';
+    src: url('DidotLTPro-Bold.woff2') format('woff2'),
+        url('DidotLTPro-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Didot LT Pro Roman';
+    src: url('DidotLTPro-Italic.woff2') format('woff2'),
+        url('DidotLTPro-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Didot LT Pro Roman';
+    src: url('../fonts/DidotLTPro-Roman.woff2') format('woff2'),
+        url('../fonts/DidotLTPro-Roman.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Didot LT Pro Roman';
+    src: url('../fonts/DidotLTPro-BoldItalic.woff2') format('woff2'),
+        url('../fonts/DidotLTPro-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Didot LT Pro Roman';
+    src: url('../fonts/DidotLTPro-Bold.woff2') format('woff2'),
+        url('../fonts/DidotLTPro-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Didot LT Pro Roman';
+    src: url('../fonts/DidotLTPro-Italic.woff2') format('woff2'),
+        url('../fonts/DidotLTPro-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
 }
 
 
-$font_1: 'GFSDidotRegular', sans;
 $color1: #00005F;
 
 
@@ -60,6 +120,8 @@ html,
 body{
     min-height: 100vh;
     font-size: 20px;    
+    font-family: 'Didot LT Pro Roman';
+    font-weight: normal;
 }  
 body{
     background: #F9F4F1;
@@ -74,7 +136,8 @@ p{
     }
 }
 .font1{
-    font-family: $font_1;
+    font-family: 'Didot LT Pro Roman';
+    font-weight: normal;
 }
 .black{
     color: #000 !important;
@@ -273,7 +336,7 @@ p{
             &--smallScale{
                 
                 @include max-responsive($md){
-                    width: 70%;
+                    width: 55%;
                     margin: 0 auto;
                 }
             }
@@ -382,7 +445,7 @@ p{
         left: 0;
         text-align: center;
         background-position: center;
-        background-size: 50px;
+        background-size: 35px;
     }
     &--potrait{
 

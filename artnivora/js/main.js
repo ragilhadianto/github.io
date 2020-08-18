@@ -28,6 +28,10 @@ $('.slickSlider').slick({
   if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
         $('.logo img').attr("src","img/logo_black.png");
         $('.btn__close img').attr("src","img/close_black.png");
+   } else{
+        $(".logo").click(function() {
+            $('.about').addClass('show');
+        });
    }
 
 //lazyload
@@ -46,9 +50,6 @@ $(".openVideo").click(function() {
     console.log(hWrapVideo);
 });
 
-$(".logo").click(function() {
-    $('.about').addClass('show');
-});
 
 // get height
 // var hWrapVideo = $(".openVideo img").attr('height',$(".openVideo img").height());
