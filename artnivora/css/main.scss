@@ -188,7 +188,7 @@ p{
     left: 0;
     right: 0;
     z-index: 99999;
-    padding: 25px 0 0;
+    padding: 35px 0 0;
 }
 .about{    
     position: fixed;
@@ -232,10 +232,6 @@ p{
         max-width: none;
         opacity: 0;
 
-        @include max-responsive($md){
-            right: 25px;
-        }
-
         &.show{
            opacity: 1;
         }
@@ -253,6 +249,9 @@ p{
         img{
             width: 160% !important;
             max-width: none;
+            right: 0;
+            position: absolute;
+            bottom: 0;
         }
     }
 }
