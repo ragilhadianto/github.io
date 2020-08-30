@@ -14,13 +14,15 @@ $(document).ready(function(){
             $(this).attr('data-click-state', 0);
             $(this).text("Close");
             $(".nav__inner, .header__menuMobile").addClass('show');
-            logoWhite();
+            $(".header__logo__img, .nav__logo__img").hide();
+            $(".header__logo__imgMobile, .nav__logoMobile").show();
           }
         else {
             $(this).attr('data-click-state', 1);
             $(this).text("Menu");
             $(".nav__inner, .header__menuMobile").removeClass('show');
-            logoBlack();
+            $(".header__logo__img, .nav__logo__img").show();
+            $(".header__logo__imgMobile, .nav__logoMobile").hide();
         }
       });
 
@@ -46,20 +48,20 @@ $(document).ready(function(){
 function logoWhite(){
     //condition
     if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-        $('.header__logo img').attr("src","images/logo_m.png");
+        $('.header__logo .header__logo__img').attr("src","images/logo_m.png");
     }else{
-        $('.header__logo img').attr("src","images/logo.png");
+        $('.header__logo .header__logo__img').attr("src","images/logo.png");
     }
-    $('.nav__logo img').attr("src","images/logo_bottom.png");
+    $('.nav__logo .nav__logo__img').attr("src","images/logo_bottom.png");
 }
 function logoBlack(){
     //condition
     if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-        $('.header__logo img').attr("src","images/logo_m_black.png");
+        $('.header__logo .header__logo__img').attr("src","images/logo_m_black.png");
     }else{
-        $('.header__logo img').attr("src","images/logo_black.png");
+        $('.header__logo .header__logo__img').attr("src","images/logo_black.png");
     }
-    $('.nav__logo img').attr("src","images/logo_bottom_black.png");
+    $('.nav__logo .nav__logo__img').attr("src","images/logo_bottom_black.png");
 }
 
 $(window).scroll(function() {

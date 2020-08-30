@@ -175,6 +175,10 @@ p{
             top: 20px;
             width: 90px;
         }
+
+        &__imgMobile{
+            display: none;
+        }
     }
 }
 
@@ -305,6 +309,10 @@ p{
         }
     
 
+    }
+
+    &__logoMobile{
+        display: none;
     }
 }
 
