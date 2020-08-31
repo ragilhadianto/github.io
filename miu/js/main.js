@@ -23,7 +23,7 @@ $(document).ready(function(){
             $(".nav__inner, .header__menuMobile").removeClass('show');
             $(".header__logo__img, .nav__logo__img").show();
             $(".header__logo__imgMobile, .nav__logoMobile").hide();
-        }
+        } 
       });
 
     //scroll & click menu
@@ -37,8 +37,10 @@ $(document).ready(function(){
                 location.hash = target;
         });
         $(".header__menuMobile").text("Menu");
-            $(".nav__inner, .header__menuMobile").removeClass('show');
-            $(".header__menuMobile").attr('data-click-state', 1);
+        $(".nav__inner, .header__menuMobile").removeClass('show');
+        $(".header__logo__img, .nav__logo__img").show();
+        $(".header__logo__imgMobile, .nav__logoMobile").hide();
+        $(".header__menuMobile").attr('data-click-state', 1);
         return false;
     });
 
