@@ -131,6 +131,7 @@ p{
 
     @include max-responsive($md){
         padding: 0 20px;
+        max-width: none;
     }
 }
 
@@ -176,8 +177,27 @@ p{
             width: 90px;
         }
 
+        &__img{
+            display: block;
+
+            @include max-responsive($md){
+                display: none;
+            }
+        }
         &__imgMobile{
             display: none;
+
+            @include max-responsive($md){
+                display: block;
+            }
+        }
+
+        &__imgMenu{
+            display: none;
+
+            @include max-responsive($md){
+                display: none;
+            }
         }
     }
 }
@@ -346,7 +366,7 @@ p{
     p{
         margin: 3px 0 20px;
         letter-spacing: 1px;
-        font-size: 20px;
+        font-size: 16px;
         @include max-responsive($md){
             font-size: 16px;
         }
@@ -367,8 +387,9 @@ p{
         //min-height: 100vh;
         padding:100px 0;
 
-        @include max-responsive($md){
+        @include max-responsive($lg){
             padding:100px 20px;
+            max-width: none;
         }
     }
 
@@ -489,33 +510,47 @@ p{
         background-size: contain;
         background-position: right;
 
-        @include max-responsive($md){
-            background-image: url(../images/bg_2_m.jpg);
-            background-size: 100%;
-            background-position: center top;
+        @include max-responsive($lg){
+            background-image: none;
+            display: block !important;
         }
 
         & .container{
+            @include max-responsive($lg){
+                padding: 0 0 100px 0;
+            }
 
-            @include max-responsive($md){
-                margin: 300px 0 60px 0;
+            & .row{
+                div{
+                    @include max-responsive($lg){
+                        padding: 100px 40px 0 40px;
+                    }
+                }
             }
         }
 
         p{
             font-size: 20px;
         }
+
+        img{
+            display: none;
+            width: 100%;
+            @include max-responsive($lg){
+                display: block;
+            }
+        }
     }
     &__3{
         background-image: url(../images/bg_3.jpg);
         position: relative;
 
-        @include max-responsive($md){
+        @include max-responsive($lg){
+            background-image: none;
             background-size: 100%;
             background-position: center top;
             background-color: $color1;
             min-height: auto;
-            padding-top: 265px;
         }
 
         hr{
@@ -524,6 +559,31 @@ p{
             bottom: 0;
             @include max-responsive($md){
                 display: block;
+            }
+        }
+        
+        img{
+            display: none;
+            width: 100%;
+            @include max-responsive($lg){
+                display: block;
+            }
+        }
+
+        
+        & .container{
+
+            @include max-responsive($lg){
+                padding: 0 0 100px 0;
+
+            }
+
+            & .row{
+                div{
+                    @include max-responsive($lg){
+                        padding: 100px 40px 0 40px;
+                    }
+                }
             }
         }
     }
@@ -568,6 +628,7 @@ p{
         br{
             display: none;
         }
+
     }
 
     &__7{
