@@ -1,0 +1,61 @@
+.imgfill > img{
+  width: 100%;
+  height: 100%;
+  object-position: 50% 50%;
+  -o-object-fit: cover;
+  object-fit: cover;
+
+  &__top{
+    object-position: 50% 0;
+  }
+}
+
+.imgAuto > img{
+  width: auto;
+}
+
+.btn{
+  border: 1px;
+  border-style: solid;
+  border-color: #fff;
+  padding: 8px 15px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  img{
+    width: auto;
+    margin-left: 10px;
+  }
+
+  &__solid{
+    border:none;
+  }
+
+  &__solidWhite{
+    background:#fff;
+  }
+  &__solidOrange{
+    background:$color__orange;
+  }
+
+  &__blue{
+    border-color: $color__blue;
+  }
+  
+  &__orange{
+    border-color: $color__orange;
+  }
+  
+  &__orange2{
+    border-color: $color__orange2;
+  }
+}
+
+.position{
+
+  &__absolute{
+    position: absolute;
+  }
+}
