@@ -10,6 +10,16 @@ $(document).ready(function(){
         dots:true
     });
 
+    $('.agenda__slider').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: false,
+        autoplaySpeed: 2000,
+        infinite: false,
+        arrows: true,
+        dots:true
+    });
+
     //Kunjungi Kami
     $( "#galeri__inka" ).click(function() {
         $( this ).addClass("btn__solidOrange btn__solid");

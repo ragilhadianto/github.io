@@ -1,5 +1,5 @@
 //screen
-$slg:1367px;
+$xl:1280px;
 $lg:1140px;
 $md:992px;
 $sm:768px;
@@ -36,6 +36,12 @@ $color__blue:#296EBB;
 $color__gray:#333333;
 $color__gray2:#E0E0E0; 
 $color__gray3:#F2F2F2; 
+$color__gray4:#828282; 
+$color__gray5:#BDBDBD; 
+$color__green:#277633; 
+$color__green2:#59A65E; 
+$color__greenpastle:#32C1AE; 
+$color__purple:#79318D; 
 
 .color__orange{
     color:$color__orange;
@@ -45,4 +51,31 @@ $color__gray3:#F2F2F2;
 }
 .color__blue{
     color:$color__blue;
+}
+.color__green{
+    color:$color__green;
+}
+.color__green2{
+    color:$color__green2;
+}
+.color__gray{
+    color:$color__gray;
+}
+.color__gray2{
+    color:$color__gray2;
+}
+.color__gray3{
+    color:$color__gray3;
+}
+.color__gray4{
+    color:$color__gray4;
+}
+.color__gray5{
+    color:$color__gray5;
+}
+.color__purple{
+    color:$color__purple;
+}
+.color__greenpastle{
+    color:$color__greenpastle;
 }
