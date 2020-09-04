@@ -9,7 +9,6 @@
 }
 
 .section{
-    //padding: 20px 0 50px 0;
     
 
     & .container{
@@ -92,12 +91,10 @@
                 & .section__img{
                     width: 50%;        
                     overflow: hidden;  
-                    margin-bottom: 0;
                 }
         
                 & .section__text{
                     width: 50%;
-                    padding: 0 10px 0 0;
 
                     h3{
                         font-style: normal;
@@ -117,7 +114,6 @@
                 height: 1px;
                 background:$color__gray;
                 border: none;
-                //margin: 25px 0 0;
                 width: 100%;
             }
 
@@ -143,7 +139,6 @@
             
                     & .section__text{
                         width: 50%;
-                        padding: 0 10px 0 0;
     
                         h3{
                             font-style: normal;
@@ -305,12 +300,10 @@
     width: 100%;
     height: 100vh;
     overflow: hidden;
-    padding: 0;
 
     & .container{
         height: 100%;
         position: relative;
-        padding: 0;
 
         @include max-responsive($lg){
             position: inherit;
@@ -318,12 +311,10 @@
         }
     }
       
-        
     &__slider{
         height: 100vh;
         width: 100%;
 
-      
         &__item{
             height: 100%;
             position: relative;
@@ -339,7 +330,6 @@
             }
         }
         
-
         span{
             position: absolute;
             width: 100%;
@@ -348,7 +338,6 @@
             top: 0;
             left: 0;
             right: 0;
-
         }
     }
 
@@ -360,7 +349,6 @@
         margin: 0 auto;
         height: auto;
         width: 100%;
-        padding: 80px 20px 25px;
 
         small{
             @extend .color__orange;
