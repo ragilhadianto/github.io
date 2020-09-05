@@ -1,13 +1,13 @@
 .footer{
-	background: #edecec;
-	font-size: 12px;
-	@include max-responsive(640px){
-		text-align: center;
+	background: #000;
+
+	h5{
+		font-size: 18px;
+		
 	}
-	&__copyright{
-		text-align: center;
-		border-top: 1px solid #dfdfdf;
-		padding: 15px 0;
-		margin: 0;
+	ul{
+		li{
+			@extend .color__gray5;
+		}
 	}
 }

@@ -17,7 +17,9 @@ $(document).ready(function(){
         autoplaySpeed: 2000,
         infinite: false,
         arrows: true,
-        dots:true
+        dots:true,
+        prevArrow: '<button class="circle circle__1 border__gray slick-arrow prev-arrow"><img src="images/svg/icon__arrowLeft.svg"></button>',
+        nextArrow: '<button class="circle circle__1 border__gray slick-arrow next-arrow"><img src="images/svg/icon__arrowRight.svg"></button>'
     });
 
     //Kunjungi Kami
@@ -46,6 +48,51 @@ $(document).ready(function(){
         }
         prevScrollpos = currentScrollPos;
     }
+
+    //goto top
+    $('#gotoTop').on("click",function(){
+        $("HTML, BODY").animate({
+            scrollTop: 0
+        }, 1000);
+     });
+
+     //menu
+     $('.header__menu').on('click',function(){
+        if($(this).attr('data-click-state') == 1) {
+            $(this).attr('data-click-state', 0);
+            $(this).children().attr('src', "images/svg/icon__menuMobileClose.svg");
+           
+            $(".nav").css("display","block");
+            $("body").css("overflow","hidden");
+            console.log("0");
+          }
+        else {
+            $(this).attr('data-click-state', 1);
+            $(this).children().attr('src', "images/svg/icon__menuMobile.svg");
+           
+            $(".nav").css("display","none");
+            $("body").css("overflow","scroll");
+            console.log("1");
+        } 
+      });
+
+     //accordion
+     $('.toggle').click(function(e) {
+        e.preventDefault();    
+      var $this = $(this);    
+      if ($this.next().hasClass('show')) {
+          $this.next().removeClass('show');
+          $this.next().slideUp(350);
+          $this.parent().children(".toggle--arrow").find("img").attr('src', "images/svg/icon__arrowTop.svg");
+      } else {
+          $this.parent().parent().find('li .inner').removeClass('show');
+          $this.parent().parent().find(".toggle--arrow img").attr('src', "images/svg/icon__arrowTop.svg");
+          $this.parent().parent().find('li .inner').slideUp(350);
+          $this.next().toggleClass('show');
+          $this.next().slideToggle(350);
+          $this.parent().children(".toggle--arrow").find("img").attr('src', "images/svg/icon__arrowBottomWhite.svg");
+      }
+  });
    
 });
 

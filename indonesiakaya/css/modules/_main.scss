@@ -1,6 +1,7 @@
-.container{        
-    @include max-responsive($lg){
-        max-width: none;
+.container{  
+    padding: 0;      
+    @include min-responsive($md){
+        max-width: 640px;
     }
 }
 
@@ -10,13 +11,6 @@
 
 .section{
     
-
-    & .container{
-        padding: 0;
-        @include min-responsive($md){
-            max-width: 640px;
-        }
-    }
 
     h2,h4{
         border-bottom: 1px solid $color__gray;
@@ -32,11 +26,11 @@
 
         h3{
             font-size: 28px;
-            @extend .font2;
+            font-family: $font__2;
         }
         h5{
             font-size: 24px;
-            @extend .font2;
+            font-family: $font__2;
         }
 
         p{
@@ -450,7 +444,38 @@
         top: 370px;
         bottom: auto;
     }
-    & .slick-prev, .slick-next{
+    & .slick-arrow{
         top: 29%;
+    }
+}
+
+.buletin{
+    background: $color__gray6;
+    overflow: hidden;
+
+    & .svg{
+        position: absolute;
+        right: -20px;
+        top: 25px;
+        width: 115px;
+        height: 115px;
+    }
+    p{
+        font-size: 14px;
+    }
+
+    button{
+        right: 0;
+        background: $color__gray6;
+        color: #fff;
+        border-radius: 0 50px 50px 0;
+    }
+
+    &--basic{
+        background: none;
+
+        button{
+            background: #000;
+        }
     }
 }

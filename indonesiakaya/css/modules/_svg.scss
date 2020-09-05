@@ -1,12 +1,17 @@
 .svg{
     fill:#fff;
-    width: 100%;
+    stroke: #fff;
 
-    &__logo{
-   
+    &__arrow{
+        width: 11px;
+        height: 9px;    
+        fill: none;
     }
-}
-
-svg{
-    display: none;
+    &__arrowGray{
+        stroke: $color__gray;
+    }
+    &__bulletin{
+        fill:none;
+        stroke: $color__gray;
+    }
 }
