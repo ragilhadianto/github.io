@@ -93,6 +93,16 @@ $(document).ready(function(){
           $this.parent().children(".toggle--arrow").find("img").attr('src', "images/svg/icon__arrowBottomWhite.svg");
       }
   });
-   
+
+    $(".itemopenVideo").click(function() {
+        $(this).parent().children('.itemVideo').addClass('show');
+        // var hWrapVideo = $(this).children('img').height();
+        // $(this).parent().children('.itemVideo').height(hWrapVideo);
+        // console.log(hWrapVideo);
+    });
+    $(".itemVideo__close").click(function() {
+        $(this).removeClass('show');
+        $('.itemVideo').removeClass('show');   
+    });
 });
 
