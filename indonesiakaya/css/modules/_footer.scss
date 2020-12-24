@@ -1,6 +1,7 @@
 .footer{
 	background: #000;
-
+	position: relative;
+	
 	h5{
 		font-size: 18px;
 		
@@ -9,5 +10,18 @@
 		li{
 			@extend .color__gray5;
 		}
+	}
+
+	&__subscribe{
+		@include min-responsive($md){
+			position: absolute;
+			left: 0;
+			bottom: 50px;
+		}
+	}
+	button,
+	input{
+		border:1px solid #fff;
+		min-width: auto;
 	}
 }
