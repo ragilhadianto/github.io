@@ -1,0 +1,19 @@
+svg {
+  display: none;
+  width: 15px;
+  height: 13px;
+}
+.svg {
+  display: block;
+  fill: #fff;
+  width: 15px;
+  height: 13px;
+
+  &__2 {
+    height: 18px;
+  }
+
+  &__theme {
+    fill: $color__blue;
+  }
+}

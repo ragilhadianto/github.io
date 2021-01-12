@@ -1,0 +1,14 @@
+.section {
+  &__head {
+  }
+
+  &__body {
+  }
+}
+
+.menu {
+  width: 75%;
+  @include min-responsive(481px) {
+    width: 300px;
+  }
+}

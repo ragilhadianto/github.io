@@ -1,0 +1,73 @@
+.theme {
+  .bg__theme {
+    @extend .bg__theme;
+  }
+  .color__theme {
+    @extend .color__theme;
+  }
+  .svg__theme {
+    @extend .svg__theme;
+  }
+
+  &--red {
+    .bg__theme {
+      background-color: $color__red;
+    }
+    .color__theme {
+      color: $color__red;
+    }
+    .svg__theme {
+      fill: $color__red;
+    }
+  }
+  &--greenTosca {
+    .bg__theme {
+      background-color: $color__greenTosca;
+    }
+    .color__theme {
+      color: $color__greenTosca;
+    }
+    .svg__theme {
+      fill: $color__greenTosca;
+    }
+  }
+  &--purple {
+    .bg__theme {
+      background-color: $color__purple;
+    }
+    .color__theme {
+      color: $color__purple;
+    }
+    .svg__theme {
+      fill: $color__purple;
+    }
+  }
+  &--orange {
+    .bg__theme {
+      background-color: $color__orange;
+    }
+    .color__theme {
+      color: $color__orange;
+    }
+    .svg__theme {
+      fill: $color__orange;
+    }
+  }
+  &--yellow {
+    .bg__theme {
+      background-color: $color__yellow;
+      .text-white {
+        color: #000;
+      }
+    }
+    .color__theme {
+      color: $color__yellow;
+    }
+    .svg__theme {
+      fill: $color__yellow;
+    }
+    .btn__primary {
+      color: #000 !important;
+    }
+  }
+}
