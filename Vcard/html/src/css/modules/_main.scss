@@ -11,4 +11,25 @@
   @include min-responsive(481px) {
     width: 300px;
   }
+
+  &__item {
+    width: 200%;
+  }
+}
+
+//login
+.login {
+  padding-bottom: 50px;
+}
+
+//nav after login
+.tooltip {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  right: 20%;
+  font-weight: bold;
+  top: 10px;
 }

@@ -25,13 +25,24 @@
 
   <body class="bg-gray-100 theme login">
     <div
-      class="menu h-full fixed bg__gray1 top-0 -right-full z-50 rounded-30__tl rounded-30__bl transition-all"
+      class="menu h-full fixed bg__gray1 top-0 -right-full z-50 rounded-30__tl rounded-30__bl transition-all overflow-hidden"
     >
-      <h3 class="text-white text-sm font-bold p-5 pt-7">MENU</h3>
-      <ul class="color__gray3">
+      <h3
+        id="menu-header"
+        class="text-white text-sm font-bold py-5 px-6 pt-7 flex items-center cursor-pointer"
+      >
+        <img class="svg mr-3" src="images/svg/back-menu.svg" alt="" /
+        style="display: none;">
+        <strong>MENU</strong>
+      </h3>
+
+      <!-- <ul
+        class="color__gray3 menu-inner relative transition-all left-0"
+        id="menu-first"
+      >
         <li class="block">
           <a
-            class="p-5 flex items-center w-full border-t border__gray6"
+            class="py-5 px-6 flex items-center w-full border-t border__gray6"
             href="#"
           >
             <img class="svg mr-3" src="images/svg/user2.svg" alt="" />
@@ -40,22 +51,132 @@
         </li>
         <li class="block">
           <a
-            class="p-5 flex items-center w-full border-t border__gray6"
+            class="py-5 px-6 flex items-center w-full border-t border__gray6"
             href="#"
           >
             <img class="svg mr-3" src="images/svg/register.svg" alt="" />
             Register
           </a>
         </li>
-        <li class="block">
-          <a
-            class="p-5 flex items-center w-full border-t border__gray6 text-sm"
-            href="#"
-          >
-            About Vcard
-          </a>
-        </li>
-      </ul>
+      </ul> -->
+      <div class="flex menu__item">
+        <ul
+          class="color__gray3 menu-inner relative transition-all left-0 w-full"
+          id="menu-login"
+        >
+          <li class="block">
+            <a
+              class="px-5 py-3 w-full border-t border__gray6 block color__gray3"
+              href="javascript:void(0);"
+            >
+              <small class="font-bold"> Welcome</small> <br />
+              Mark Smith
+            </a>
+          </li>
+          <li class="block">
+            <a
+              class="py-5 px-6 flex items-center justify-between w-full border-t border__gray6"
+              href="javascript:void(0)"
+              data-related="menu-profile"
+            >
+              <div class="flex items-center">
+                <img class="svg mr-3" src="images/svg/user2.svg" alt="" />
+                Profile
+              </div>
+              <img
+                class="w-auto"
+                src="images/svg/right-arrow-menu.svg"
+                alt=""
+              />
+            </a>
+          </li>
+          <li class="block">
+            <a
+              class="py-5 px-6 flex items-center w-full border-t border__gray6"
+              href="#"
+            >
+              <img class="svg mr-3" src="images/svg/menu-notif.svg" alt="" />
+              Notifications
+            </a>
+          </li>
+          <li class="block">
+            <a
+              class="py-5 px-6 flex items-center w-full border-t border__gray6"
+              href="#"
+            >
+              <img class="svg mr-3" src="images/svg/menu-message.svg" alt="" />
+              Messaging
+            </a>
+          </li>
+          <li class="block">
+            <a
+              class="py-5 px-6 flex items-center w-full border-t border__gray6"
+              href="#"
+            >
+              <img class="svg mr-3" src="images/svg/menu-friends.svg" alt="" />
+              Friends
+            </a>
+          </li>
+          <li class="block">
+            <a
+              class="py-5 px-6 flex items-center w-full border-t border__gray6"
+              href="#"
+            >
+              <img class="svg mr-3" src="images/svg/menu-help.svg" alt="" />
+              Helpdesk
+            </a>
+          </li>
+          <li class="block">
+            <a
+              class="py-5 px-6 flex items-center w-full border-t border__gray6"
+              href="#"
+            >
+              <img class="svg mr-3" src="images/svg/menu-cart.svg" alt="" />
+              Vcard Shop
+            </a>
+          </li>
+        </ul>
+
+        <ul
+          class="color__gray3 menu-inner relative transition-all w-full l left-0"
+          id="menu-profile"
+        >
+          <li class="block">
+            <a
+              class="py-5 px-6 flex items-center w-full border-t border__gray6"
+              href="#"
+            >
+              <img class="svg mr-3" src="images/svg/menu-view.svg" alt="" />
+              View Profile
+            </a>
+          </li>
+          <li class="block">
+            <a
+              class="py-5 px-6 flex items-center w-full border-t border__gray6"
+              href="#"
+            >
+              <img class="svg mr-3" src="images/svg/menu-edit.svg" alt="" />
+              Edit Profile
+            </a>
+          </li>
+          <li class="block">
+            <a
+              class="py-5 px-6 flex items-center w-full border-t border__gray6"
+              href="#"
+            >
+              <img class="svg mr-3" src="images/svg/menu-analisis.svg" alt="" />
+              Profile Analytics
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <a
+        class="py-10 px-6 flex items-center w-full text-xs color__gray3 absolute bottom-0"
+        href="#"
+      >
+        About Vcard
+      </a>
     </div>
     <header class="fixed mx-auto inset-x-0 max-w-screen-sm z-20">
       <div class="container p-7">
@@ -223,7 +344,7 @@
           class="items-center flex justify-center border__blackAlpha border-solid border-r"
         >
           <a
-            class="text-white p-3 text-center text-xs flex-col h-full w-full flex"
+            class="text-white p-3 text-center text-xs flex-col w-full flex relative"
             href="http://"
             target="_blank"
             rel="noopener noreferrer"
@@ -240,7 +361,7 @@
           class="items-center flex justify-center border__blackAlpha border-solid border-r"
         >
           <a
-            class="text-white p-3 text-center text-xs flex-col h-full w-full flex"
+            class="text-white p-3 text-center text-xs flex-col w-full flex relative"
             href="http://"
             target="_blank"
             rel="noopener noreferrer"
@@ -257,7 +378,7 @@
           class="items-center flex justify-center border__blackAlpha border-solid border-r"
         >
           <a
-            class="text-white p-3 text-center text-xs flex-col h-full w-full flex"
+            class="text-white p-3 text-center text-xs flex-col w-full flex relative"
             href="http://"
             target="_blank"
             rel="noopener noreferrer"
@@ -272,7 +393,7 @@
         </li>
         <li class="items-center flex justify-center">
           <a
-            class="text-white p-3 text-center text-xs flex-col h-full w-full flex"
+            class="text-white p-3 text-center text-xs flex-col w-full flex relative"
             href="http://"
             target="_blank"
             rel="noopener noreferrer"
@@ -283,6 +404,9 @@
               alt=""
             />
             Message
+            <span class="tooltip rounded-full text-white bg__red absolute"
+              >10</span
+            >
           </a>
         </li>
       </ul>
