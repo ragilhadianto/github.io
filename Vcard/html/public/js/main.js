@@ -7,20 +7,14 @@ $(document).ready(function () {
     if ($(this).attr("data-click-state") == 1) {
       $(this).attr("data-click-state", 0);
       $(iconMenu).attr("src", "images/svg/cancel.svg");
-      $("body").css({
-        height: "100%",
-        overflow: "hidden",
-      });
+      $("body").addClass("h-full-hidden");
       $(".menu").addClass("right-0");
       $(".menu").removeClass("-right-full");
       //console.log("0");
     } else {
       $(this).attr("data-click-state", 1);
       $(iconMenu).attr("src", "images/svg/menu.svg");
-      $("body").css({
-        height: "auto",
-        overflow: "unset",
-      });
+      $("body").removeClass("h-full-hidden");
       $(".menu").removeClass("right-0");
       $(".menu").addClass("-right-full");
       //console.log("1");

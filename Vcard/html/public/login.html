@@ -24,16 +24,64 @@
   </head>
 
   <body class="bg-gray-100 min-h-full h-full-custom theme">
-    <header class="fixed mx-auto inset-x-0 max-w-screen-sm z-20">
-      <div class="container p-7">
-        <a href="javascript:void(0);">
+    <div
+      class="menu h-full fixed bg__gray1 top-0 -right-full z-50 rounded-30__tl rounded-30__bl transition-all overflow-hidden"
+    >
+      <h3
+        id="menu-header"
+        class="text-white text-sm font-bold py-5 px-6 pt-7 flex items-center cursor-pointer"
+      >
+        <img class="svg mr-3" src="images/svg/back-menu.svg" alt="" /
+        style="display: none;">
+        <strong>MENU</strong>
+      </h3>
+
+      <ul
+        class="color__gray3 menu-inner relative transition-all left-0"
+        id="menu-first"
+      >
+        <li class="block">
+          <a
+            class="py-5 px-6 flex items-center w-full border-t border__gray6"
+            href="#"
+          >
+            <img class="svg mr-3" src="images/svg/user2.svg" alt="" />
+            Login
+          </a>
+        </li>
+        <li class="block">
+          <a
+            class="py-5 px-6 flex items-center w-full border-t border__gray6"
+            href="#"
+          >
+            <img class="svg mr-3" src="images/svg/register.svg" alt="" />
+            Register
+          </a>
+        </li>
+      </ul>
+
+      <a
+        class="py-10 px-6 flex items-center w-full text-xs color__gray3 absolute bottom-0"
+        href="#"
+      >
+        About Vcard
+      </a>
+    </div>
+    <header class="absolute mx-auto inset-x-0 max-w-screen-sm z-20">
+      <div class="container p-3">
+        <a
+          href="javascript:void(0);"
+          id="menu-btn"
+          data-click-state="1"
+          class="bg-black bg-opacity-20"
+        >
           <img class="w-auto" src="images/svg/menu.svg" alt="menu" />
         </a>
       </div>
     </header>
 
     <section
-      class="section__head bg__gray1 max-w-screen-sm mx-auto h-28 flex justify-center text-center"
+      class="section__head bg__gray6 max-w-screen-sm mx-auto h-28 flex justify-center text-center"
     ></section>
 
     <section
@@ -223,5 +271,8 @@
         </g>
       </g>
     </svg>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
