@@ -41,13 +41,13 @@
 // color
 .color {
   &__gray1 {
-    color: $color__gray1;
+    color: $color__gray1 !important;
   }
   &__gray2 {
-    color: $color__gray2;
+    color: $color__gray2 !important;
   }
   &__gray3 {
-    color: $color__gray3;
+    color: $color__gray3 !important;
   }
   &__theme {
     color: $color__blue;
@@ -61,6 +61,9 @@
   }
   &__gray2 {
     background-color: $color__gray2;
+  }
+  &__gray3 {
+    background-color: $color__gray3;
   }
   &__gray4 {
     background-color: $color__gray4;
@@ -156,11 +159,19 @@
 }
 .h-full-custom {
   height: 100%;
-  @include max-responsive($xs) {
+  @include max-responsive($lg) {
     height: auto;
   }
 }
 .h-full-hidden {
   height: 100%;
   overflow: hidden;
+}
+
+//padding
+.pt-20per {
+  padding-top: 20%;
+}
+.pt-25per {
+  padding-top: 25%;
 }

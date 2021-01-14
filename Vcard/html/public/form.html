@@ -75,90 +75,233 @@
           data-click-state="1"
           class="bg-black bg-opacity-20"
         >
-          <img class="w-auto" src="images/svg/menu.svg" alt="menu" />
+          <img class="w-auto" src="images/svg/menu_dark.svg" alt="menu" />
         </a>
       </div>
     </header>
 
-    <section
-      class="section__head bg__gray6 max-w-screen-sm mx-auto h-28 flex justify-center text-center"
-    ></section>
-
-    <section
-      class="section__body max-w-screen-sm mx-auto rounded-30__t bg-white p-7 -mt-7 grid-cols-1 z-10 relative h-full-calc flex items-center"
-    >
-      <div class="w-full self-center">
-        <div class="text-center mb-8">
-          <h2 class="font-bold">Register</h2>
-          <p class="color__gray2">Create an account</p>
+    <section class="max-w-screen-sm mx-auto p-7 bg-white">
+      <div class="pt-16 md:pt-20 mb-10">
+        <div class="mb-14">
+          <h3 class="text-xl color__theme font-bold">Profile Creation</h3>
+          <p class="mt-4 text-sm md:text-base">
+            You will need to provide these information to display on your
+            profile like displaying it on your printed business card but with
+            more interaction.
+          </p>
+        </div>
+        <div class="mb-14">
+          <h4 class="color__theme font-bold mb-3">Account Information</h4>
+          <p class="mt-4 text-sm md:text-base">
+            We need this information to contact you. It will not be visible for
+            public.
+          </p>
+          <div class="my-5">
+            <form action="">
+              <input
+                class="border__gray3 border-solid border rounded-full px-3 py-3 mb-4 pl-10 text-sm w-full bg-no-repeat bg__position1"
+                type="text"
+                name=""
+                id=""
+                placeholder="Username"
+                style="background-image: url(../public/images/svg/user.svg)"
+              />
+              <input
+                class="border__gray3 border-solid border rounded-full px-3 py-3 mb-4 pl-10 text-sm w-full bg-no-repeat bg__position2"
+                type="text"
+                name=""
+                id=""
+                placeholder="Email"
+                style="background-image: url(../public/images/svg/message2.svg)"
+                type="text"
+                name=""
+                id=""
+              />
+              <input
+                class="border__gray3 border-solid border rounded-full px-3 py-3 mb-4 pl-10 text-sm w-full bg-no-repeat bg__position1"
+                type="text"
+                name=""
+                id=""
+                placeholder="Phone"
+                style="
+                  background-image: url(../public/images/svg/form-phone.svg);
+                "
+                type="text"
+                name=""
+                id=""
+              />
+              <p class="text-sm md:text-base">
+                By registering this account, you’ve read and agreed to all 3 of
+                these documents <br />
+                <a
+                  class="underline"
+                  href="http://"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Terms Of Use & Conditions
+                </a>
+                |
+                <a
+                  class="underline"
+                  href="http://"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Privacy Policy</a
+                >
+              </p>
+              <button
+                class="btn btn__primary bg__theme rounded-full mx-auto clear-both my-5"
+              >
+                Yes! Register Now
+              </button>
+            </form>
+          </div>
         </div>
 
-        <div>
-          <form action="">
-            <input
-              class="border__gray3 border-solid border rounded-full px-3 py-3 mb-4 pl-10 text-sm w-full bg-no-repeat bg__position1"
-              type="text"
-              name=""
-              id=""
-              placeholder="Username"
-              style="background-image: url(../public/images/svg/user.svg)"
-            />
-            <input
-              class="border__gray3 border-solid border rounded-full px-3 py-3 mb-4 pl-10 text-sm w-full bg-no-repeat bg__position2"
-              type="text"
-              name=""
-              id=""
-              placeholder="Email"
-              style="background-image: url(../public/images/svg/message2.svg)"
-              type="text"
-              name=""
-              id=""
-            />
-            <input
-              class="border__gray3 border-solid border rounded-full px-3 py-3 mb-4 pl-10 text-sm w-full bg-no-repeat bg__position1"
-              type="text"
-              name=""
-              id=""
-              placeholder="Password"
-              style="background-image: url(../public/images/svg/padlock.svg)"
-              type="text"
-              name=""
-              id=""
-            />
+        <form action="">
+          <div class="mb-14">
+            <h4 class="color__theme font-bold mb-3">Display Information</h4>
+            <div class="my-5">
+              <input
+                class="border__gray3 border-solid border rounded-full px-3 py-3 mb-4 pl-10 text-sm w-full bg-no-repeat bg__position1"
+                type="text"
+                name=""
+                id=""
+                placeholder="Display Name"
+                style="background-image: url(../public/images/svg/user.svg)"
+              />
+              <input
+                class="border__gray3 border-solid border rounded-full px-3 py-3 mb-4 pl-10 text-sm w-full bg-no-repeat bg__position2"
+                type="text"
+                name=""
+                id=""
+                placeholder="Company"
+                style="
+                  background-image: url(../public/images/svg/form-company.svg);
+                "
+                type="text"
+                name=""
+                id=""
+              />
+              <input
+                class="border__gray3 border-solid border rounded-full px-3 py-3 mb-4 pl-10 text-sm w-full bg-no-repeat bg__position1"
+                type="text"
+                name=""
+                id=""
+                placeholder="Position"
+                style="
+                  background-image: url(../public/images/svg/form-position.svg);
+                "
+                type="text"
+                name=""
+                id=""
+              />
+            </div>
+          </div>
+          <div class="mb-14">
+            <h4 class="color__theme font-bold mb-3">Contact</h4>
+            <div class="my-5">
+              <a
+                href="javascript:void(0);"
+                class="btn btn__primary bg__gray3 color__gray1 rounded-full bg-no-repeat bg__position1"
+                href="http://"
+                rel="noopener noreferrer"
+                style="
+                  background-image: url(../public/images/svg/form-plus.svg);
+                "
+              >
+                Add New Contact</a
+              >
+            </div>
+          </div>
+          <div class="mb-14">
+            <h4 class="color__theme font-bold mb-3">Privacy Setting</h4>
+
+            <p class="mt-4 text-sm md:text-base">
+              If you turn off, your contact will not be shown but visitor can
+              contact you via our end-to-end encrypted message system.
+            </p>
+            <div class="my-5">
+              <a
+                href="javascript:void(0);"
+                class="btn btn__primary bg__gray3 color__gray1 rounded-full bg-no-repeat bg__position1"
+                href="http://"
+                rel="noopener noreferrer"
+                style="
+                  background-image: url(../public/images/svg/form-plus.svg);
+                "
+              >
+                Add New Contact</a
+              >
+            </div>
+          </div>
+          <div class="mb-14">
+            <h4 class="color__theme font-bold mb-3">Social Media</h4>
+            <div class="my-5">
+              <a
+                href="javascript:void(0);"
+                class="btn btn__primary bg__gray3 color__gray1 rounded-full bg-no-repeat bg__position1"
+                href="http://"
+                rel="noopener noreferrer"
+                style="
+                  background-image: url(../public/images/svg/form-plus.svg);
+                "
+              >
+                Add Link Account</a
+              >
+            </div>
+          </div>
+          <div class="mb-14">
+            <h4 class="color__theme font-bold mb-3">Upload</h4>
+            <div class="my-5">
+              <a
+                href="javascript:void(0);"
+                class="btn btn__primary border__gray3 border-solid border color__gray2 rounded-full bg-no-repeat bg__position1"
+                href="http://"
+                rel="noopener noreferrer"
+                style="
+                  background-image: url(../public/images/svg/form-upload.svg);
+                "
+              >
+                Profile Photo</a
+              >
+            </div>
+
+            <div class="my-5">
+              <a
+                href="javascript:void(0);"
+                class="btn btn__primary border__gray3 border-solid border color__gray2 rounded-full bg-no-repeat bg__position1"
+                href="http://"
+                rel="noopener noreferrer"
+                style="
+                  background-image: url(../public/images/svg/form-upload.svg);
+                "
+              >
+                Company Logo</a
+              >
+            </div>
+            <div class="my-5">
+              <a
+                href="javascript:void(0);"
+                class="btn btn__primary border__gray3 border-solid border color__gray2 rounded-full bg-no-repeat bg__position1"
+                href="http://"
+                rel="noopener noreferrer"
+                style="
+                  background-image: url(../public/images/svg/form-upload.svg);
+                "
+              >
+                Business Card</a
+              >
+            </div>
+          </div>
+          <div class="flex mt-4 justify-center">
             <button
               class="btn btn__primary bg__theme rounded-full mx-auto clear-both"
             >
-              Sign Up
+              Save Setting
             </button>
-          </form>
-
-          <div class="text-center mt-10 mb-8">
-            <p class="color__gray2 mb-5">or log in using</p>
-            <ul class="flex justify-center">
-              <li>
-                <a href="http://" target="_blank" rel="noopener noreferrer">
-                  <img src="images/svg/fb2.svg" alt="" />
-                </a>
-              </li>
-              <li>
-                <span class="w-px bg__gray3 h-full mx-3 block"></span>
-              </li>
-              <li>
-                <a href="http://" target="_blank" rel="noopener noreferrer">
-                  <img src="images/svg/google.svg" alt="" />
-                </a>
-              </li>
-            </ul>
           </div>
-        </div>
-        <div class="mt-10 text-center mx-auto self-end">
-          <p class="color__gray2">
-            Already have an account?
-            <a href="http://" target="_blank" rel="noopener noreferrer">
-              <strong>Login</strong>
-            </a>
-          </p>
-        </div>
+        </form>
       </div>
     </section>
 
