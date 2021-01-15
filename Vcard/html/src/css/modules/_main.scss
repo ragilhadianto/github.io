@@ -12,6 +12,12 @@
     width: 300px;
   }
 
+  &__btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+  }
+
   &__item {
     width: 200%;
   }

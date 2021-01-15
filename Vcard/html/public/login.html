@@ -28,15 +28,24 @@
       class="menu h-full fixed bg__gray1 top-0 -right-full z-50 rounded-30__tl rounded-30__bl transition-all overflow-hidden"
     >
       <h3
-        id="menu-header"
-        class="text-white text-sm font-bold py-5 px-6 pt-7 flex items-center cursor-pointer"
+        class="text-white text-sm font-bold py-5 px-6 pt-7 items-center cursor-pointer flex justify-between"
       >
-        <img class="svg mr-3" src="images/svg/back-menu.svg" alt="" /
-        style="display: none;">
-        <strong>MENU</strong>
+        <div id="menu-header" class="flex items-center">
+          <img class="svg mr-3" src="images/svg/back-menu.svg" alt="" /
+          style="display: none;">
+          <strong>MENU</strong>
+        </div>
+        <div id="menu-close">
+          <img
+            class="svg svg__3 justify-self-end"
+            src="images/svg/menu-cancel.svg"
+            alt=""
+          />
+        </div>
       </h3>
 
-      <ul
+      <!-- login -->
+      <!-- <ul
         class="color__gray3 menu-inner relative transition-all left-0"
         id="menu-first"
       >
@@ -58,7 +67,119 @@
             Register
           </a>
         </li>
-      </ul>
+      </ul> -->
+
+      <div class="flex menu__item">
+        <ul
+          class="color__gray3 menu-inner relative transition-all left-0 w-full"
+          id="menu-login"
+        >
+          <li class="block">
+            <a
+              class="px-5 py-3 w-full border-t border__gray6 block color__gray3"
+              href="javascript:void(0);"
+            >
+              <small class="font-bold"> Welcome</small> <br />
+              Mark Smith
+            </a>
+          </li>
+          <li class="block">
+            <a
+              class="py-5 px-6 flex items-center justify-between w-full border-t border__gray6"
+              href="javascript:void(0)"
+              data-related="menu-profile"
+            >
+              <div class="flex items-center">
+                <img class="svg mr-3" src="images/svg/user2.svg" alt="" />
+                Profile
+              </div>
+              <img
+                class="w-auto"
+                src="images/svg/right-arrow-menu.svg"
+                alt=""
+              />
+            </a>
+          </li>
+          <li class="block">
+            <a
+              class="py-5 px-6 flex items-center w-full border-t border__gray6"
+              href="#"
+            >
+              <img class="svg mr-3" src="images/svg/menu-notif.svg" alt="" />
+              Notifications
+            </a>
+          </li>
+          <li class="block">
+            <a
+              class="py-5 px-6 flex items-center w-full border-t border__gray6"
+              href="#"
+            >
+              <img class="svg mr-3" src="images/svg/menu-message.svg" alt="" />
+              Messaging
+            </a>
+          </li>
+          <li class="block">
+            <a
+              class="py-5 px-6 flex items-center w-full border-t border__gray6"
+              href="#"
+            >
+              <img class="svg mr-3" src="images/svg/menu-friends.svg" alt="" />
+              Friends
+            </a>
+          </li>
+          <li class="block">
+            <a
+              class="py-5 px-6 flex items-center w-full border-t border__gray6"
+              href="#"
+            >
+              <img class="svg mr-3" src="images/svg/menu-help.svg" alt="" />
+              Helpdesk
+            </a>
+          </li>
+          <li class="block">
+            <a
+              class="py-5 px-6 flex items-center w-full border-t border__gray6"
+              href="#"
+            >
+              <img class="svg mr-3" src="images/svg/menu-cart.svg" alt="" />
+              Vcard Shop
+            </a>
+          </li>
+        </ul>
+
+        <ul
+          class="color__gray3 menu-inner relative transition-all w-full l left-0"
+          id="menu-profile"
+        >
+          <li class="block">
+            <a
+              class="py-5 px-6 flex items-center w-full border-t border__gray6"
+              href="#"
+            >
+              <img class="svg mr-3" src="images/svg/menu-view.svg" alt="" />
+              View Profile
+            </a>
+          </li>
+          <li class="block">
+            <a
+              class="py-5 px-6 flex items-center w-full border-t border__gray6"
+              href="#"
+            >
+              <img class="svg mr-3" src="images/svg/menu-edit.svg" alt="" />
+              Edit Profile
+            </a>
+          </li>
+          <li class="block">
+            <a
+              class="py-5 px-6 flex items-center w-full border-t border__gray6"
+              href="#"
+            >
+              <img class="svg mr-3" src="images/svg/menu-analisis.svg" alt="" />
+              Profile Analytics
+            </a>
+          </li>
+        </ul>
+      </div>
 
       <a
         class="py-10 px-6 flex items-center w-full text-xs color__gray3 absolute bottom-0"
@@ -68,15 +189,20 @@
       </a>
     </div>
     <header class="absolute mx-auto inset-x-0 max-w-screen-sm z-20">
-      <div class="container p-3">
-        <a
-          href="javascript:void(0);"
-          id="menu-btn"
-          data-click-state="1"
-          class="bg-black bg-opacity-20"
-        >
-          <img class="w-auto" src="images/svg/menu.svg" alt="menu" />
-        </a>
+      <div class="container px-7 pt-7">
+        <div class="flex justify-between">
+          <a href="index.html" class="w-36">
+            <img class="max-h-8 w-auto" src="images/logo-white@2x.png" alt="" />
+          </a>
+          <a
+            href="javascript:void(0);"
+            id="menu-btn"
+            class="menu__btn"
+            data-click-state="1"
+          >
+            <img class="w-auto" src="images/svg/menu.svg" alt="menu" />
+          </a>
+        </div>
       </div>
     </header>
 

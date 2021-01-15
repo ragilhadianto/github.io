@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "tailwindcss build ./src/css/styles.css -o ./public/css/tailwind.css"
+    "build": "cross-env NODE_ENV=production tailwindcss build ./src/css/styles.css -o ./public/css/tailwind.css"
   },
   "author": "ragil",
   "license": "ISC",

@@ -151,6 +151,19 @@
       min-width: auto;
     }
   }
+  &__basic {
+    padding: 10px 15px;
+    min-width: 150px;
+    @include max-responsive($xs) {
+      min-width: auto;
+    }
+  }
+
+  &__left {
+    text-align: left;
+    justify-content: inherit;
+    padding-left: 40px;
+  }
 }
 
 //height
@@ -159,7 +172,7 @@
 }
 .h-full-custom {
   height: 100%;
-  @include max-responsive($lg) {
+  @include max-responsive($xs) {
     height: auto;
   }
 }

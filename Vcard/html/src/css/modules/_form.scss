@@ -1,0 +1,58 @@
+// form
+select::-ms-expand {
+  display: none;
+}
+select {
+  -webkit-appearance: none;
+  appearance: none;
+}
+input[type="checkbox"] {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+
+label {
+  cursor: pointer;
+  //   text-indent: -9999px;
+  //   width: 200px;
+  //   height: 100px;
+  background: #fff;
+  display: block;
+  border-radius: 100px;
+  position: relative;
+  color: $color__gray1;
+}
+
+label:after {
+  content: "Status : OFF";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  background: #fff;
+  border-radius: 90px;
+  transition: 0.3s;
+  height: 100%;
+  padding: 12px;
+  text-align: center;
+  font-weight: bold;
+}
+
+input:checked + label {
+  background: #fff;
+}
+
+input:checked + label:after {
+  //left: calc(100% - 5px);
+  left: 100%;
+  transform: translateX(-100%);
+  background: $color__green;
+  content: "Status : ON";
+
+  color: #fff;
+}
+
+label:active:after {
+  width: 130px;
+}

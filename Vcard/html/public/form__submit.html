@@ -23,19 +23,28 @@
     />
   </head>
 
-  <body class="bg-gray-100 min-h-full h-full-custom theme">
+  <body class="bg-gray-100 min-h-full theme">
     <div
       class="menu h-full fixed bg__gray1 top-0 -right-full z-50 rounded-30__tl rounded-30__bl transition-all overflow-hidden"
     >
       <h3
-        id="menu-header"
-        class="text-white text-sm font-bold py-5 px-6 pt-7 flex items-center cursor-pointer"
+        class="text-white text-sm font-bold py-5 px-6 pt-7 items-center cursor-pointer flex justify-between"
       >
-        <img class="svg mr-3" src="images/svg/back-menu.svg" alt="" /
-        style="display: none;">
-        <strong>MENU</strong>
+        <div id="menu-header" class="flex items-center">
+          <img class="svg mr-3" src="images/svg/back-menu.svg" alt="" /
+          style="display: none;">
+          <strong>MENU</strong>
+        </div>
+        <div id="menu-close">
+          <img
+            class="svg svg__3 justify-self-end"
+            src="images/svg/menu-cancel.svg"
+            alt=""
+          />
+        </div>
       </h3>
 
+      <!-- login -->
       <ul
         class="color__gray3 menu-inner relative transition-all left-0"
         id="menu-first"
@@ -60,6 +69,118 @@
         </li>
       </ul>
 
+      <!-- <div class="flex menu__item">
+        <ul
+          class="color__gray3 menu-inner relative transition-all left-0 w-full"
+          id="menu-login"
+        >
+          <li class="block">
+            <a
+              class="px-5 py-3 w-full border-t border__gray6 block color__gray3"
+              href="javascript:void(0);"
+            >
+              <small class="font-bold"> Welcome</small> <br />
+              Mark Smith
+            </a>
+          </li>
+          <li class="block">
+            <a
+              class="py-5 px-6 flex items-center justify-between w-full border-t border__gray6"
+              href="javascript:void(0)"
+              data-related="menu-profile"
+            >
+              <div class="flex items-center">
+                <img class="svg mr-3" src="images/svg/user2.svg" alt="" />
+                Profile
+              </div>
+              <img
+                class="w-auto"
+                src="images/svg/right-arrow-menu.svg"
+                alt=""
+              />
+            </a>
+          </li>
+          <li class="block">
+            <a
+              class="py-5 px-6 flex items-center w-full border-t border__gray6"
+              href="#"
+            >
+              <img class="svg mr-3" src="images/svg/menu-notif.svg" alt="" />
+              Notifications
+            </a>
+          </li>
+          <li class="block">
+            <a
+              class="py-5 px-6 flex items-center w-full border-t border__gray6"
+              href="#"
+            >
+              <img class="svg mr-3" src="images/svg/menu-message.svg" alt="" />
+              Messaging
+            </a>
+          </li>
+          <li class="block">
+            <a
+              class="py-5 px-6 flex items-center w-full border-t border__gray6"
+              href="#"
+            >
+              <img class="svg mr-3" src="images/svg/menu-friends.svg" alt="" />
+              Friends
+            </a>
+          </li>
+          <li class="block">
+            <a
+              class="py-5 px-6 flex items-center w-full border-t border__gray6"
+              href="#"
+            >
+              <img class="svg mr-3" src="images/svg/menu-help.svg" alt="" />
+              Helpdesk
+            </a>
+          </li>
+          <li class="block">
+            <a
+              class="py-5 px-6 flex items-center w-full border-t border__gray6"
+              href="#"
+            >
+              <img class="svg mr-3" src="images/svg/menu-cart.svg" alt="" />
+              Vcard Shop
+            </a>
+          </li>
+        </ul>
+
+        <ul
+          class="color__gray3 menu-inner relative transition-all w-full l left-0"
+          id="menu-profile"
+        >
+          <li class="block">
+            <a
+              class="py-5 px-6 flex items-center w-full border-t border__gray6"
+              href="#"
+            >
+              <img class="svg mr-3" src="images/svg/menu-view.svg" alt="" />
+              View Profile
+            </a>
+          </li>
+          <li class="block">
+            <a
+              class="py-5 px-6 flex items-center w-full border-t border__gray6"
+              href="#"
+            >
+              <img class="svg mr-3" src="images/svg/menu-edit.svg" alt="" />
+              Edit Profile
+            </a>
+          </li>
+          <li class="block">
+            <a
+              class="py-5 px-6 flex items-center w-full border-t border__gray6"
+              href="#"
+            >
+              <img class="svg mr-3" src="images/svg/menu-analisis.svg" alt="" />
+              Profile Analytics
+            </a>
+          </li>
+        </ul>
+      </div> -->
+
       <a
         class="py-10 px-6 flex items-center w-full text-xs color__gray3 absolute bottom-0"
         href="#"
@@ -68,20 +189,25 @@
       </a>
     </div>
     <header class="absolute mx-auto inset-x-0 max-w-screen-sm z-20">
-      <div class="container p-3">
-        <a
-          href="javascript:void(0);"
-          id="menu-btn"
-          data-click-state="1"
-          class="bg-black bg-opacity-20"
-        >
-          <img class="w-auto" src="images/svg/menu_dark.svg" alt="menu" />
-        </a>
+      <div class="container px-7 pt-7">
+        <div class="flex justify-between">
+          <a href="index.html" class="w-36">
+            <img class="max-h-8 w-auto" src="images/logo@2x.png" alt="" />
+          </a>
+          <a
+            href="javascript:void(0);"
+            id="menu-btn"
+            class="menu__btn"
+            data-click-state="1"
+          >
+            <img class="w-auto" src="images/svg/menu_dark.svg" alt="menu" />
+          </a>
+        </div>
       </div>
     </header>
 
     <section class="max-w-screen-sm mx-auto p-7 bg-white">
-      <div class="pt-16 md:pt-20 mb-10">
+      <div class="pt-20 md:pt-28 mb-10">
         <div class="mb-14">
           <h3 class="text-xl color__theme font-bold">Profile Creation</h3>
           <p class="mt-4 text-sm md:text-base">
@@ -146,7 +272,8 @@
                   href="http://"
                   target="_blank"
                   rel="noopener noreferrer"
-                  >Privacy Policy</a
+                >
+                  Privacy Policy</a
                 >
               </p>
               <button
@@ -159,9 +286,9 @@
         </div>
 
         <form action="">
-          <div class="mb-14">
+          <div class="mb-9">
             <h4 class="color__theme font-bold mb-3">Display Information</h4>
-            <div class="my-5">
+            <div class="mt-5">
               <input
                 class="border__gray3 border-solid border rounded-full px-3 py-3 mb-4 pl-10 text-sm w-full bg-no-repeat bg__position1"
                 type="text"
@@ -198,65 +325,66 @@
               />
             </div>
           </div>
-          <div class="mb-14">
+          <div class="mb-9">
             <h4 class="color__theme font-bold mb-3">Contact</h4>
-            <div class="my-5">
-              <a
-                href="javascript:void(0);"
-                class="btn btn__primary bg__gray3 color__gray1 rounded-full bg-no-repeat bg__position1"
-                href="http://"
-                rel="noopener noreferrer"
+            <div class="my-5" id="form-contact">
+              <select
+                id="add-contact"
+                class="w-full bg__gray3 color__gray1 rounded-full py-3 mb-4 px-10 bg-no-repeat bg__position1 text-center text-sm"
                 style="
                   background-image: url(../public/images/svg/form-plus.svg);
                 "
               >
-                Add New Contact</a
-              >
+                <option selected value="Contact">Add New Contact</option>
+                <option value="Phone">Phone</option>
+                <option value="Email">Email</option>
+                <option value="Web">Web</option>
+                <option value="Address">Address</option>
+              </select>
             </div>
           </div>
-          <div class="mb-14">
+          <div class="mb-9">
             <h4 class="color__theme font-bold mb-3">Privacy Setting</h4>
 
             <p class="mt-4 text-sm md:text-base">
               If you turn off, your contact will not be shown but visitor can
               contact you via our end-to-end encrypted message system.
             </p>
-            <div class="my-5">
-              <a
-                href="javascript:void(0);"
-                class="btn btn__primary bg__gray3 color__gray1 rounded-full bg-no-repeat bg__position1"
-                href="http://"
-                rel="noopener noreferrer"
-                style="
-                  background-image: url(../public/images/svg/form-plus.svg);
-                "
-              >
-                Add New Contact</a
-              >
+            <div class="relative">
+              <input type="checkbox" id="switch" checked />
+              <label
+                for="switch"
+                class="bg__gray3 border__gray3 border-solid border w-full rounded-full py-3 mb-4 px-5 text-sm"
+                >Tap to turn off
+                <span class="absolute right-5">Tap to turn On</span>
+              </label>
             </div>
           </div>
-          <div class="mb-14">
+          <div class="mb-9">
             <h4 class="color__theme font-bold mb-3">Social Media</h4>
-            <div class="my-5">
-              <a
-                href="javascript:void(0);"
-                class="btn btn__primary bg__gray3 color__gray1 rounded-full bg-no-repeat bg__position1"
-                href="http://"
-                rel="noopener noreferrer"
+            <div class="my-5" id="form-socmed">
+              <select
+                id="add-socmed"
+                class="w-full bg__gray3 color__gray1 rounded-full py-3 mb-4 px-10 bg-no-repeat bg__position1 text-center text-sm"
                 style="
                   background-image: url(../public/images/svg/form-plus.svg);
                 "
               >
-                Add Link Account</a
-              >
+                <option selected value="Account">Add Link Account</option>
+                <option value="Linkedin">Linkedin</option>
+                <option value="Facebook">Facebook</option>
+                <option value="Instagram">Instagram</option>
+                <option value="Twitter">Twitter</option>
+              </select>
             </div>
           </div>
-          <div class="mb-14">
+          <div class="mb-9">
             <h4 class="color__theme font-bold mb-3">Upload</h4>
             <div class="my-5">
               <a
                 href="javascript:void(0);"
-                class="btn btn__primary border__gray3 border-solid border color__gray2 rounded-full bg-no-repeat bg__position1"
+                data-micromodal-trigger="profile-modal"
+                class="btn btn__basic btn__left bg__gray3 color__gray1 border__gray3 border-solid border rounded-full bg-no-repeat bg__position1"
                 href="http://"
                 rel="noopener noreferrer"
                 style="
@@ -270,7 +398,8 @@
             <div class="my-5">
               <a
                 href="javascript:void(0);"
-                class="btn btn__primary border__gray3 border-solid border color__gray2 rounded-full bg-no-repeat bg__position1"
+                data-micromodal-trigger="companyLogo-modal"
+                class="btn btn__basic btn__left bg__gray3 color__gray1 border__gray3 border-solid border rounded-full bg-no-repeat bg__position1"
                 href="http://"
                 rel="noopener noreferrer"
                 style="
@@ -283,7 +412,8 @@
             <div class="my-5">
               <a
                 href="javascript:void(0);"
-                class="btn btn__primary border__gray3 border-solid border color__gray2 rounded-full bg-no-repeat bg__position1"
+                data-micromodal-trigger="card-modal"
+                class="btn btn__basic btn__left bg__gray3 color__gray1 border__gray3 border-solid border rounded-full bg-no-repeat bg__position1"
                 href="http://"
                 rel="noopener noreferrer"
                 style="
@@ -304,6 +434,94 @@
         </form>
       </div>
     </section>
+
+    <!-- photoprofile-modal-->
+    <div class="modal micromodal-slide" id="profile-modal" aria-hidden="true">
+      <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+        <div
+          class="modal__container max-w-screen-sm mx-auto p-7"
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="modal-1-title"
+        >
+          <main>
+            <p class="text-sm font-bold" id="modal-1-title">Profile Photo</p>
+            <p class="mb-5 text-sm">Max Size : 1024 x 1024px</p>
+            <input type="file" id="photo-field" class="text-sm" />
+
+            <div class="flex justify-start mt-10">
+              <a
+                class="text-sm btn btn__primary bg__gray3 rounded-full mx-auto clear-both cursor-pointer color__gray1"
+                aria-label="Close modal"
+                data-micromodal-close
+              >
+                Done
+              </a>
+            </div>
+          </main>
+        </div>
+      </div>
+    </div>
+
+    <!-- company logo - modal-->
+    <div
+      class="modal micromodal-slide"
+      id="companyLogo-modal"
+      aria-hidden="true"
+    >
+      <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+        <div
+          class="modal__container max-w-screen-sm mx-auto p-7"
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="modal-1-title"
+        >
+          <main>
+            <p class="text-sm font-bold" id="modal-1-title">Company Logo</p>
+            <p class="mb-5 text-sm">Max Size : 640 x 640px</p>
+            <input type="file" id="company-logo-field" class="text-sm" />
+
+            <div class="flex justify-start mt-10">
+              <a
+                class="text-sm btn btn__primary bg__gray3 rounded-full mx-auto clear-both cursor-pointer color__gray1"
+                aria-label="Close modal"
+                data-micromodal-close
+              >
+                Done
+              </a>
+            </div>
+          </main>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card - modal-->
+    <div class="modal micromodal-slide" id="card-modal" aria-hidden="true">
+      <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+        <div
+          class="modal__container max-w-screen-sm mx-auto p-7"
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="modal-1-title"
+        >
+          <main>
+            <p class="text-sm font-bold" id="modal-1-title">Business Card</p>
+            <p class="mb-5 text-sm">Max Size : 2000 x 1200px</p>
+            <input type="file" id="business-card-field" class="text-sm" />
+
+            <div class="flex justify-start mt-10">
+              <a
+                class="text-sm btn btn__primary bg__gray3 rounded-full mx-auto clear-both cursor-pointer color__gray1"
+                aria-label="Close modal"
+                data-micromodal-close
+              >
+                Done
+              </a>
+            </div>
+          </main>
+        </div>
+      </div>
+    </div>
 
     <!-- svg -->
 
@@ -424,6 +642,7 @@
     </svg>
 
     <script src="js/jquery.min.js"></script>
+    <script src="js/micromodal.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
