@@ -1021,6 +1021,10 @@ video {
   visibility: visible;
 }
 
+.w-24 {
+  width: 6rem;
+}
+
 .w-32 {
   width: 8rem;
 }
