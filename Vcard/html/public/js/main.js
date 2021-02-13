@@ -1,20 +1,5 @@
 $(document).ready(function () {
   $("#menu-btn").on("click", function () {
-    // var iconMenu = $("#menu-btn").children("img");
-    // if ($(this).attr("data-click-state") == 1) {
-    //   $(this).attr("data-click-state", 0);
-    //   //$(iconMenu).attr("src", "images/svg/cancel.svg");
-    //   $("body").addClass("h-full-hidden");
-    //   $(".menu").addClass("right-0");
-    //   $(".menu").removeClass("-right-full");
-    //   //console.log("0");
-    // } else {
-    //   $(this).attr("data-click-state", 1);
-    //   //$(iconMenu).attr("src", "images/svg/menu.svg");
-    //   $("body").removeClass("h-full-hidden");
-    //   $(".menu").removeClass("right-0");
-    //   $(".menu").addClass("-right-full");
-    //   //console.log("1");
     $("body").addClass("h-full-hidden");
     $(".menu").addClass("right-0");
     $(".menu").removeClass("-right-full");
@@ -28,8 +13,8 @@ $(document).ready(function () {
 
   //menu
   var headerMenu = $("#menu-header strong");
-  $(".menu-inner li a").on("click", function (e) {
-    e.preventDefault();
+  $(".menu-inner li a").on("click", function () {
+    //e.preventDefault();
     var id = $(this).attr("data-related");
     var thisClick = $(this);
     $(".menu .menu-inner").each(function () {
@@ -41,8 +26,8 @@ $(document).ready(function () {
       }
     });
   });
-  $("#menu-header").on("click", function (e) {
-    e.preventDefault();
+  $("#menu-header").on("click", function () {
+    //e.preventDefault();
     $(".menu-inner").removeClass("-left-full");
     $(".menu-inner").removeClass("-left-2/4	");
     $(headerMenu).text("MENU");
@@ -129,20 +114,38 @@ $(document).ready(function () {
   });
 
   //upload images
-  function readURL(input) {
-    if (input.files && input.files[0]) {
-      var reader = new FileReader();
+  // function readURL(input) {
+  //   if (input.files && input.files[0]) {
+  //     var reader = new FileReader();
 
-      reader.onload = function (e) {
-        $("#blah").show();
-        $("#blah").attr("src", e.target.result);
-      };
+  //     reader.onload = function (e) {
+  //       $("#blah").show();
+  //       $("#blah").attr("src", e.target.result);
+  //     };
 
-      reader.readAsDataURL(input.files[0]); // convert to base64 string
-    }
-  }
+  //     reader.readAsDataURL(input.files[0]); // convert to base64 string
+  //   }
+  // }
 
-  $("#imgInp").change(function () {
-    readURL(this);
-  });
+  // $("#imgInp").change(function () {
+  //   readURL(this);
+  // });
+
+  // animate
+  const mainsend = document.querySelector("#mail-send");
+  mainsend.classList.add("animate__animated", "animate__bounceInLeft");
+  setTimeout(function () {
+    mainsend.classList.remove("animate__bounceInLeft");
+    mainsend.classList.add("animate__backOutRight");
+  }, 1000);
+
+  setInterval(function () {
+    mainsend.classList.add("animate__animated", "animate__bounceInLeft");
+    mainsend.addEventListener("animationend", () => {
+      setTimeout(function () {
+        mainsend.classList.remove("animate__bounceInLeft");
+        mainsend.classList.add("animate__backOutRight");
+      }, 1000);
+    });
+  }, 500);
 });

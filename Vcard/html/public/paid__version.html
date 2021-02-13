@@ -23,7 +23,7 @@
     />
   </head>
 
-  <body class="bg-gray-100 theme login">
+  <body class="bg-gray-100 theme">
     <div
       class="menu h-full fixed bg__gray1 top-0 -right-full z-50 rounded-30__tl rounded-30__bl transition-all overflow-hidden"
     >
@@ -359,18 +359,20 @@
     <div
       class="max-w-screen-sm mx-auto bg__theme fixed bottom-0 w-full left-0 right-0 z-20"
     >
-      <ul class="grid grid-cols-4">
+      <span class="navbottom__shadow"></span>
+      <!-- if item more 4 add class "navbottom__more" more -->
+      <ul class="flex navbottom navbottom__more scrollbar">
         <li
-          class="items-center flex justify-center border__blackAlpha border-solid border-r"
+          class="items-start flex justify-center border__blackAlpha border-solid border-r"
         >
           <a
-            class="text-white p-2 text-center text-xs flex-col w-full flex relative"
+            class="text-white p-3 text-center text-xs flex-col w-full flex relative"
             href="http://"
             target="_blank"
             rel="noopener noreferrer"
           >
             <img
-              class="imgAuto__noMax my-1"
+              class="imgAuto__noMax mx-auto my-1"
               src="images/svg/floppy-disk.svg"
               alt=""
             />
@@ -378,16 +380,16 @@
           </a>
         </li>
         <li
-          class="items-center flex justify-center border__blackAlpha border-solid border-r"
+          class="items-start flex justify-center border__blackAlpha border-solid border-r"
         >
           <a
-            class="text-white p-2 text-center text-xs flex-col w-full flex relative"
+            class="text-white p-3 text-center text-xs flex-col w-full flex relative"
             href="http://"
             target="_blank"
             rel="noopener noreferrer"
           >
             <img
-              class="imgAuto__noMax my-1"
+              class="imgAuto__noMax mx-auto my-1"
               src="images/svg/arrows.svg"
               alt=""
             />
@@ -395,31 +397,33 @@
           </a>
         </li>
         <li
-          class="items-center flex justify-center border__blackAlpha border-solid border-r"
+          class="items-start flex justify-center border__blackAlpha border-solid border-r"
         >
           <a
-            class="text-white p-2 text-center text-xs flex-col w-full flex relative"
+            class="text-white p-3 text-center text-xs flex-col w-full flex relative"
             href="http://"
             target="_blank"
             rel="noopener noreferrer"
           >
             <img
-              class="imgAuto__noMax my-1"
+              class="imgAuto__noMax mx-auto my-1"
               src="images/svg/share.svg"
               alt=""
             />
             Share
           </a>
         </li>
-        <li class="items-center flex justify-center">
+        <li
+          class="items-start flex justify-center border__blackAlpha border-solid border-r"
+        >
           <a
-            class="text-white p-2 text-center text-xs flex-col w-full flex relative"
+            class="text-white p-3 text-center text-xs flex-col w-full flex relative"
             href="http://"
             target="_blank"
             rel="noopener noreferrer"
           >
             <img
-              class="imgAuto__noMax my-1"
+              class="imgAuto__noMax mx-auto my-1"
               src="images/svg/paper-plane.svg"
               alt=""
             />
@@ -429,9 +433,45 @@
             >
           </a>
         </li>
+        <li
+          class="items-start flex justify-center border__blackAlpha border-solid border-r"
+        >
+          <a
+            class="text-white p-3 text-center text-xs flex-col w-full flex relative"
+            href="http://"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              class="imgAuto__noMax mx-auto my-1"
+              src="images/svg/user2.svg"
+              alt=""
+            />
+            lorem
+          </a>
+        </li>
+        <li class="items-start flex justify-center">
+          <a
+            class="text-white p-3 text-center text-xs flex-col w-full flex relative"
+            href="http://"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              class="imgAuto__noMax mx-auto my-1"
+              src="images/svg/user2.svg"
+              alt=""
+            />
+            lorem
+          </a>
+        </li>
+        <li class="blank"></li>
       </ul>
     </div>
 
+    <div class="footer py-3 text-center max-w-screen-sm mx-auto">
+      <p class="text-xs text-white">SVG © 2013 - 2021</p>
+    </div>
     <!-- svg -->
 
     <!-- svg right arrow -->

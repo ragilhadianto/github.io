@@ -6,6 +6,9 @@ module.exports = {
     fontFamily: {
       sans: ["Montserrat", "sans-serif"],
     },
+    container: {
+      center: true,
+    },
     screens: {
       sm: "480px",
       smd: "640px",

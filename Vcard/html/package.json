@@ -4,11 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "cross-env NODE_ENV=production tailwindcss build ./src/css/styles.css -o ./public/css/tailwind.css"
+    "build": "cross-env NODE_ENV=production tailwindcss build ./src/css/styles.css -o ./public/css/tailwind.css",
+    "dev": "tailwindcss build ./src/css/styles.css -o ./public/css/tailwind.css"
   },
   "author": "ragil",
   "license": "ISC",
   "dependencies": {
+    "animate.css": "^4.1.1",
     "autoprefixer": "^10.2.1",
     "cross-env": "^7.0.3",
     "postcss": "^8.2.4",

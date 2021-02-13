@@ -19,6 +19,16 @@
     .svg__theme {
       fill: $color__red;
     }
+
+    .navbottom__shadow {
+      background: rgb(209, 1, 35);
+      background: linear-gradient(
+        90deg,
+        rgba(209, 1, 35, 0) 0%,
+        rgba(209, 1, 35, 0.5) 27%,
+        rgba(209, 1, 35, 1) 84%
+      );
+    }
   }
   &--greenTosca {
     .bg__theme {
@@ -29,6 +39,15 @@
     }
     .svg__theme {
       fill: $color__greenTosca;
+    }
+    .navbottom__shadow {
+      background: rgb(8, 164, 164);
+      background: linear-gradient(
+        90deg,
+        rgba(8, 164, 164, 0) 0%,
+        rgba(8, 164, 164, 0.5) 27%,
+        rgba(8, 164, 164, 1) 84%
+      );
     }
   }
   &--purple {
@@ -41,6 +60,15 @@
     .svg__theme {
       fill: $color__purple;
     }
+    .navbottom__shadow {
+      background: rgb(143, 68, 173);
+      background: linear-gradient(
+        90deg,
+        rgba(143, 68, 173, 0) 0%,
+        rgba(143, 68, 173, 0.5) 27%,
+        rgba(143, 68, 173, 1) 84%
+      );
+    }
   }
   &--orange {
     .bg__theme {
@@ -51,6 +79,15 @@
     }
     .svg__theme {
       fill: $color__orange;
+    }
+    .navbottom__shadow {
+      background: rgb(231, 75, 60);
+      background: linear-gradient(
+        90deg,
+        rgba(231, 75, 60, 0) 0%,
+        rgba(231, 75, 60, 0.5) 27%,
+        rgba(231, 75, 60, 1) 84%
+      );
     }
   }
   &--yellow {
@@ -68,6 +105,18 @@
     }
     .btn__primary {
       color: #000 !important;
+    }
+    .tooltip {
+      color: #fff !important;
+    }
+    .navbottom__shadow {
+      background: rgb(241, 197, 14);
+      background: linear-gradient(
+        90deg,
+        rgba(241, 197, 14, 0) 0%,
+        rgba(241, 197, 14, 0.5) 27%,
+        rgba(241, 197, 14, 1) 84%
+      );
     }
   }
 }

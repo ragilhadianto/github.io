@@ -282,6 +282,33 @@
                 Yes! Register Now
               </button>
             </form>
+
+            <div class="text-center mt-10 mb-8">
+              <p class="color__gray2 mb-5">or register using</p>
+              <ul class="flex justify-center">
+                <li>
+                  <a href="http://" target="_blank" rel="noopener noreferrer">
+                    <img src="images/svg/fb2.svg" alt="" />
+                  </a>
+                </li>
+                <li>
+                  <span class="w-px bg__gray3 h-full mx-5 block"></span>
+                </li>
+                <li>
+                  <a href="http://" target="_blank" rel="noopener noreferrer">
+                    <img src="images/svg/google.svg" alt="" />
+                  </a>
+                </li>
+                <li>
+                  <span class="w-px bg__gray3 h-full mx-5 block"></span>
+                </li>
+                <li>
+                  <a href="http://" target="_blank" rel="noopener noreferrer">
+                    <img src="images/svg/apple.svg" alt="" />
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
 
@@ -424,16 +451,34 @@
               >
             </div>
           </div>
-          <div class="flex mt-4 justify-center">
+
+          <!-- Register/Edit Profile - First time -->
+          <!-- <div class="flex mt-4 justify-center">
             <button
               class="btn btn__primary bg__theme rounded-full mx-auto clear-both"
             >
               Save Setting
             </button>
+          </div> -->
+          <!-- /Register/Edit Profile - First time -->
+
+          <!-- Edit Profile – After Save -->
+          <div class="grid grid-cols-2 gap-x-3">
+            <button class="btn btn__primary bg__theme rounded-full">
+              Save Setting
+            </button>
+            <button class="btn btn__primary bg__green rounded-full">
+              Preview Profile
+            </button>
           </div>
+          <!-- /Edit Profile – After Save -->
         </form>
       </div>
     </section>
+
+    <div class="footer py-3 text-center max-w-screen-sm mx-auto">
+      <p class="text-xs text-white">SVG © 2013 - 2021</p>
+    </div>
 
     <!-- photoprofile-modal-->
     <div class="modal micromodal-slide" id="profile-modal" aria-hidden="true">

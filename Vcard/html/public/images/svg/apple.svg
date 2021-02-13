@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="29.026" height="33.982" viewBox="0 0 29.026 33.982">
+  <g id="apple" transform="translate(-37.336)">
+    <g id="Group_127" data-name="Group 127" transform="translate(51.286)">
+      <g id="Group_126" data-name="Group 126" transform="translate(0)">
+        <path id="Path_79" data-name="Path 79" d="M254.455,0a7.974,7.974,0,0,0-5.163,2.8A6.926,6.926,0,0,0,247.6,8.177a6.731,6.731,0,0,0,5.21-2.661A7.477,7.477,0,0,0,254.455,0Z" transform="translate(-247.522)" fill="#505050"/>
+      </g>
+    </g>
+    <g id="Group_129" data-name="Group 129" transform="translate(37.336 7.954)">
+      <g id="Group_128" data-name="Group 128" transform="translate(0)">
+        <path id="Path_80" data-name="Path 80" d="M65.379,123.287a8.6,8.6,0,0,0-6.493-3.447c-3.048,0-4.337,1.459-6.455,1.459-2.183,0-3.842-1.455-6.478-1.455a8.814,8.814,0,0,0-7.094,4.288c-2.457,3.81-2.037,10.974,1.945,17.076,1.425,2.183,3.328,4.639,5.817,4.66,2.215.021,2.84-1.421,5.841-1.436s3.57,1.455,5.781,1.432c2.491-.019,4.5-2.74,5.924-4.923a24.484,24.484,0,0,0,2.194-4.12A7.492,7.492,0,0,1,65.379,123.287Z" transform="translate(-37.336 -119.84)" fill="#505050"/>
+      </g>
+    </g>
+  </g>
+</svg>

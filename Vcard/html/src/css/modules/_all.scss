@@ -83,6 +83,9 @@
   &__red {
     background-color: $color__red;
   }
+  &__green {
+    background-color: $color__green;
+  }
 
   &__position1 {
     background-position: 20px 15px;
@@ -168,7 +171,7 @@
 
 //height
 .h-full-calc {
-  height: calc(100% + 1.75rem - 7rem);
+  height: calc(100% + 1.75rem - 9.5rem);
 }
 .h-full-custom {
   height: 100%;
@@ -187,4 +190,30 @@
 }
 .pt-25per {
   padding-top: 25%;
+}
+
+// scrollbar
+.scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0, 0, 0, 0.3) rgba(224, 224, 224, 1);
+
+  &::-webkit-scrollbar {
+    width: 5px;
+    height: 7px;
+    @include max-responsive($md) {
+      display: none;
+      -ms-overflow-style: none; /* IE and Edge */
+      scrollbar-width: none; /* Firefox */
+    }
+  }
+
+  &::-webkit-scrollbar-track {
+    background: rgba(224, 224, 224, 1);
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    border: none;
+  }
 }

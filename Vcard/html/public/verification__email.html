@@ -23,7 +23,7 @@
     />
   </head>
 
-  <body class="bg-gray-100 min-h-full h-full-custom theme">
+  <body class="bg-gray-100 min-h-full h-full theme">
     <div
       class="menu h-full fixed bg__gray1 top-0 -right-full z-50 rounded-30__tl rounded-30__bl transition-all overflow-hidden"
     >
@@ -205,7 +205,6 @@
         </div>
       </div>
     </header>
-
     <section
       class="section__head bg__gray6 max-w-screen-sm mx-auto h-28 flex justify-center text-center"
     ></section>
@@ -215,71 +214,29 @@
     >
       <div class="w-full self-center">
         <div class="text-center mb-8">
-          <h2 class="font-bold">Welcome!</h2>
-          <p class="color__gray2">Please sign in to continue</p>
-        </div>
-
-        <div>
-          <form action="">
-            <input
-              class="border__gray3 border-solid border rounded-full px-3 py-3 mb-4 pl-10 text-sm w-full bg-no-repeat bg__position1"
-              type="text"
-              name=""
-              id=""
-              placeholder="Username"
-              style="background-image: url(../public/images/svg/user.svg)"
+          <div class="text-center flex justify-center mb-5 overflow-hidden">
+            <img
+              class="w-auto"
+              src="images/svg/mail-send.svg"
+              alt=""
+              id="mail-send"
             />
-            <input
-              class="border__gray3 border-solid border rounded-full px-3 py-3 mb-4 pl-10 text-sm w-full bg-no-repeat bg__position1"
-              type="text"
-              name=""
-              id=""
-              placeholder="Password"
-              style="background-image: url(../public/images/svg/padlock.svg)"
-              type="text"
-              name=""
-              id=""
-            />
-            <a href="http://#" target="_blank" rel="noopener noreferrer"
-              ><small class="text-xs float-right mb-5">Forgot Password?</small>
-            </a>
-            <button
-              class="btn btn__primary bg__theme rounded-full mx-auto clear-both"
-            >
-              Login
-            </button>
-          </form>
-
-          <div class="text-center mt-20 mb-8">
-            <p class="color__gray2 mb-5">or log in using</p>
-            <ul class="flex justify-center">
-              <li>
-                <a href="http://" target="_blank" rel="noopener noreferrer">
-                  <img src="images/svg/fb2.svg" alt="" />
-                </a>
-              </li>
-              <li>
-                <span class="w-px bg__gray3 h-full mx-3 block"></span>
-              </li>
-              <li>
-                <a href="http://" target="_blank" rel="noopener noreferrer">
-                  <img src="images/svg/google.svg" alt="" />
-                </a>
-              </li>
-            </ul>
           </div>
-        </div>
-        <div class="mt-10 text-center mx-auto self-end">
-          <p class="color__gray2">
-            Don't have an account?
-            <a href="http://" target="_blank" rel="noopener noreferrer">
-              <strong>Sign Up</strong>
-            </a>
-          </p>
+          <h3 class="color__gray2">
+            We have sent a
+            <br />
+            verification email to <br />
+            lorem@gmail.com
+          </h3>
+          <br />
+          <br />
+          <small class="text-sm text-red-500"
+            >please open that email to get <br />
+            further instructions.</small
+          >
         </div>
       </div>
     </section>
-
     <div class="footer py-3 text-center max-w-screen-sm mx-auto">
       <p class="text-xs text-white">SVG © 2013 - 2021</p>
     </div>
@@ -402,6 +359,7 @@
     </svg>
 
     <script src="js/jquery.min.js"></script>
+    <script src="js/micromodal.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
