@@ -17,7 +17,7 @@ label {
   //   text-indent: -9999px;
   //   width: 200px;
   //   height: 100px;
-  background: #fff;
+  background: $color__red2;
   display: block;
   border-radius: 100px;
   position: relative;
@@ -30,7 +30,8 @@ label:after {
   top: 0;
   left: 0;
   width: 50%;
-  background: #fff;
+  background: $color__red2;
+  color: #fff;
   border-radius: 90px;
   transition: 0.3s;
   height: 100%;

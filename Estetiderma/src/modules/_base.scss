@@ -1,10 +1,9 @@
 //screen
-$slg: 1367px;
-$lg: 1140px;
-$md: 992px;
-$sm: 768px;
-$xs: 360px;
-$xxs: 320px;
+$xl: 1280px;
+$lg: 1024px;
+$md: 768px;
+$sm: 640px;
+$xs: 320px;
 
 // media
 @mixin max-responsive($media) {
@@ -62,7 +61,6 @@ $color__gray5: #f5f5f5;
 $color__gray6: #303030;
 $color__blue: #064faf;
 $color__red: #d10123;
-$color__red2: #ff0000;
 $color__green: #00af07;
 $color__greenTosca: #08a4a4;
 $color__purple: #8f44ad;
