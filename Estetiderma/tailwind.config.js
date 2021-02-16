@@ -1,6 +1,5 @@
 module.exports = {
-  purge: ["./**/*.html"],
-  darkMode: false, // or 'media' or 'class'
+  purge: ["./public/**/*.html", "./public/**/*.js"],
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {},
@@ -8,7 +7,7 @@ module.exports = {
       center: true,
     },
     screens: {
-      xs: "100%",
+      xs: "320px",
       sm: "640px",
       md: "768px",
       lg: "1024px",

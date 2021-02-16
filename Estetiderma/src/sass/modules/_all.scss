@@ -1,0 +1,116 @@
+.imgfillImg {
+  width: 100% !important;
+  height: 100% !important;
+  object-position: 50% 50%;
+  -o-object-fit: cover;
+  object-fit: cover;
+
+  &__top {
+    object-position: 50% 0;
+  }
+  &__middle {
+    object-position: 50% 25%;
+  }
+}
+
+.imgAuto {
+  width: auto;
+
+  & > img {
+    width: auto;
+  }
+
+  &__max {
+    max-width: 100%;
+    width: auto;
+    & > img {
+      max-width: 100%;
+      width: auto;
+    }
+  }
+  &__noMax {
+    max-width: none;
+    width: auto;
+    & > img {
+      max-width: none;
+      width: auto;
+    }
+  }
+}
+
+// bg
+.bg {
+  &__gray1 {
+    background-color: $color__gray1 !important;
+  }
+  &__tosca {
+    background-color: $color__tosca;
+  }
+  &__tosca2 {
+    background-color: $color__tosca2;
+  }
+}
+// color
+.color {
+  &__gray1 {
+    color: $color__gray1 !important;
+  }
+}
+
+//rounded
+
+//btn
+.btn {
+  padding: 6px 15px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-size: 14px;
+  justify-content: center;
+  z-index: 1;
+  text-decoration: none !important;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+
+  svg {
+    margin-right: 10px;
+  }
+}
+
+//height
+.h-full-custom {
+  height: 100%;
+  @include max-responsive($xs) {
+    height: auto;
+  }
+}
+.h-full-hidden {
+  height: 100%;
+  overflow: hidden;
+}
+
+// scrollbar
+.scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0, 0, 0, 0.3) rgba(224, 224, 224, 1);
+
+  &::-webkit-scrollbar {
+    width: 5px;
+    height: 7px;
+    @include max-responsive($md) {
+      display: none;
+      -ms-overflow-style: none; /* IE and Edge */
+      scrollbar-width: none; /* Firefox */
+    }
+  }
+
+  &::-webkit-scrollbar-track {
+    background: rgba(224, 224, 224, 1);
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    border: none;
+  }
+}

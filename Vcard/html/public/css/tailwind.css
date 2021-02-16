@@ -708,6 +708,10 @@ video {
   font-weight: 700;
 }
 
+.h-8 {
+  height: 2rem;
+}
+
 .h-28 {
   height: 7rem;
 }
