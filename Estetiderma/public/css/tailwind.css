@@ -581,9 +581,9 @@ video {
   }
 }
 
-@media (min-width: 1100px) {
+@media (min-width: 1320px) {
   .container {
-    max-width: 1100px;
+    max-width: 1320px;
   }
 }
 
@@ -13985,7 +13985,7 @@ video {
 }
 
 .max-w-screen-xl {
-  max-width: 1100px;
+  max-width: 1320px;
 }
 
 .min-h-0 {
@@ -31209,9 +31209,9 @@ video {
     }
   }
 
-  @media (min-width: 1100px) {
+  @media (min-width: 1320px) {
     .xs\:container {
-      max-width: 1100px;
+      max-width: 1320px;
     }
   }
 
@@ -44613,7 +44613,7 @@ video {
   }
 
   .xs\:max-w-screen-xl {
-    max-width: 1100px;
+    max-width: 1320px;
   }
 
   .xs\:min-h-0 {
@@ -61759,9 +61759,9 @@ video {
     }
   }
 
-  @media (min-width: 1100px) {
+  @media (min-width: 1320px) {
     .sm\:container {
-      max-width: 1100px;
+      max-width: 1320px;
     }
   }
 
@@ -75163,7 +75163,7 @@ video {
   }
 
   .sm\:max-w-screen-xl {
-    max-width: 1100px;
+    max-width: 1320px;
   }
 
   .sm\:min-h-0 {
@@ -92309,9 +92309,9 @@ video {
     }
   }
 
-  @media (min-width: 1100px) {
+  @media (min-width: 1320px) {
     .md\:container {
-      max-width: 1100px;
+      max-width: 1320px;
     }
   }
 
@@ -105713,7 +105713,7 @@ video {
   }
 
   .md\:max-w-screen-xl {
-    max-width: 1100px;
+    max-width: 1320px;
   }
 
   .md\:min-h-0 {
@@ -122859,9 +122859,9 @@ video {
     }
   }
 
-  @media (min-width: 1100px) {
+  @media (min-width: 1320px) {
     .lg\:container {
-      max-width: 1100px;
+      max-width: 1320px;
     }
   }
 
@@ -136263,7 +136263,7 @@ video {
   }
 
   .lg\:max-w-screen-xl {
-    max-width: 1100px;
+    max-width: 1320px;
   }
 
   .lg\:min-h-0 {
@@ -153378,7 +153378,7 @@ video {
   }
 }
 
-@media (min-width: 1100px) {
+@media (min-width: 1320px) {
   .xl\:container {
     width: 100%;
     margin-right: auto;
@@ -153409,9 +153409,9 @@ video {
     }
   }
 
-  @media (min-width: 1100px) {
+  @media (min-width: 1320px) {
     .xl\:container {
-      max-width: 1100px;
+      max-width: 1320px;
     }
   }
 
@@ -166813,7 +166813,7 @@ video {
   }
 
   .xl\:max-w-screen-xl {
-    max-width: 1100px;
+    max-width: 1320px;
   }
 
   .xl\:min-h-0 {

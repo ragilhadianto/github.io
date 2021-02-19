@@ -7,11 +7,11 @@ module.exports = {
       center: true,
     },
     screens: {
-      xs: "320px",
+      xs: "100%",
       sm: "640px",
       md: "768px",
       lg: "1024px",
-      xl: "1340px",
+      xl: "1320px",
     },
   },
   variants: {

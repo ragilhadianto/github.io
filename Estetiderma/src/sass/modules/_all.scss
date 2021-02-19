@@ -55,10 +55,29 @@
   &__gray1 {
     color: $color__gray1 !important;
   }
+  &__gray2 {
+    color: $color__gray2 !important;
+  }
+  &__gray4 {
+    color: $color__gray4 !important;
+  }
+  &__tosca {
+    color: $color__tosca;
+  }
 }
 
-//rounded
-
+//border
+.border {
+  &__tosca {
+    border-color: $color__tosca;
+  }
+  &__gray3 {
+    border-color: $color__gray3;
+  }
+  &__gray4 {
+    border-color: $color__gray4;
+  }
+}
 //btn
 .btn {
   padding: 6px 15px;
@@ -74,6 +93,10 @@
 
   svg {
     margin-right: 10px;
+  }
+
+  &__shadow {
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
   }
 }
 
@@ -113,4 +136,18 @@
     border-radius: 20px;
     border: none;
   }
+}
+
+//font-size
+.h1 {
+  font-size: 36px;
+  line-height: 120%;
+}
+.h2 {
+  font-size: 24px;
+  line-height: 33.6px;
+}
+.h3 {
+  font-size: 20px;
+  line-height: 130%;
 }

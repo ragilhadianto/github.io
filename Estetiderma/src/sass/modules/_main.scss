@@ -1,0 +1,87 @@
+//slick
+.slick-dotted.slick-slider {
+  margin-bottom: 0;
+}
+
+.slick-dots {
+  bottom: 40px;
+  text-align: left;
+}
+.slick-dots li.slick-active button:before {
+  opacity: 1;
+  color: transparent;
+  background: #fff;
+}
+.slick-dots li button:before {
+  opacity: 1;
+  color: transparent;
+  background: transparent;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  width: 12px;
+  height: 12px;
+}
+
+// slider shadow
+.slider {
+  &__shadow {
+    background: rgb(17, 17, 17);
+    background: linear-gradient(
+      90deg,
+      rgba(17, 17, 17, 1) 0%,
+      rgba(255, 255, 255, 0) 100%
+    );
+    opacity: 0.6;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 50%;
+  }
+  &__arrow {
+    .prev-arrow {
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+    }
+    .next-arrow {
+      position: absolute;
+      right: 0;
+      top: 0;
+      bottom: 0;
+    }
+    .slick-disabled {
+      opacity: 0.3;
+    }
+  }
+  &__dots2 {
+    display: block;
+    position: relative;
+    bottom: 0;
+    text-align: center;
+    margin-top: 30px;
+    ul {
+      position: relative;
+      text-align: center;
+      bottom: 0;
+    }
+    &--tosca {
+      .slick-dots li button:before {
+        border-color: $color__tosca;
+      }
+      .slick-dots li.slick-active button:before {
+        background: $color__tosca;
+      }
+    }
+  }
+}
+
+.product {
+  &__foto {
+    width: 205px;
+    margin: 0 auto;
+    img {
+    }
+  }
+}
