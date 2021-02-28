@@ -3,11 +3,12 @@
     width: 220px;
   }
 
-  ul {
-    li {
+  // topbar
+  & > .bg__gray1 {
+    @include max-responsive($md) {
+      padding: 10px 20px;
     }
   }
-
   &__menu {
     ul {
       &.toggle.show {

@@ -11,7 +11,7 @@ $(".slider").slick({
   infinite: false,
   speed: 500,
   fade: true,
-  autoplay: false,
+  autoplay: true,
   autoplaySpeed: 2000,
   appendDots: ".slider__dots",
 });
