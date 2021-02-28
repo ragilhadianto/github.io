@@ -1,0 +1,1547 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/tailwind.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Estetiderma</title>
+  </head>
+  <body>
+    <!-- topbar -->
+    <div class="text-center bg__gray1 text-white py-3 text-sm">
+      <p>Nikmati ongkos kirim gratis dengan pembelian minimal Rp50.000</p>
+    </div>
+    <!-- header -->
+    <div class="header">
+      <div class="container px-5">
+        <div class="flex justify-between items-center">
+          <div class="logo">
+            <a href="index.html">
+              <img src="images/logo.svg" alt="" />
+            </a>
+          </div>
+          <div class="hidden md:block">
+            <ul class="text-base flex items-center font-normal">
+              <li>
+                <a class="px-2 py-10" href="tentang.html">Tentang</a>
+              </li>
+              <li>
+                <a class="px-2 py-10" href="perawatan.html">Perawatan</a>
+              </li>
+              <li>
+                <a class="px-2 py-10" href="produk.html">Produk</a>
+              </li>
+              <li>
+                <a class="px-2 py-10" href="berita-promo.html"
+                  >Berita & Promo</a
+                >
+              </li>
+              <li>
+                <a class="px-2 py-10" href="lokasi-konsultasi.html"
+                  >Lokasi & Konsultasi
+                </a>
+              </li>
+              <li>
+                <a class="ml-5 px-1 py-10" href="keranjang.html">
+                  <div
+                    class="rounded-full bg__tosca h-9 w-9 flex items-center justify-center"
+                  >
+                    <img
+                      class="w-auto"
+                      src="images/svg/icon__shop.svg"
+                      alt=""
+                    />
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a class="px-1 py-10" href="search.html">
+                  <div
+                    class="rounded-full bg__tosca h-9 w-9 flex items-center justify-center"
+                  >
+                    <img
+                      class="w-auto"
+                      src="images/svg/icon__search.svg"
+                      alt=""
+                    />
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- content -->
+    <div class="content">
+      <div class="container px-5">
+        <!-- section -->
+        <div class="grid grid-cols-12 gap-10 mt-14">
+          <div class="col-span-12">
+            <p class="h1 font-normal color__tosca">Klinik Kami</p>
+          </div>
+          <div class="md:col-span-6">
+            <div class="flex flex-wrap">
+              <a
+                href="javascript:void"
+                class="rounded-full py-3 px-6 border border__gray4 font-normal text-xl mr-4 mt-4 tablinks active"
+                onclick="openCity(event, 'jakarta')"
+                >Jakarta</a
+              >
+              <a
+                href="javascript:void"
+                class="rounded-full py-3 px-6 bg-transparent border-white border border__gray4 font-normal text-xl mr-4 mt-4 tablinks"
+                onclick="openCity(event, 'botabek')"
+                >Bodetabek</a
+              >
+              <a
+                href="javascript:void"
+                class="rounded-full py-3 px-6 bg-transparent border-white border border__gray4 font-normal text-xl mr-4 mt-4 tablinks"
+                onclick="openCity(event, 'lainnya')"
+                >Lainnya</a
+              >
+              <a
+                href="javascript:void"
+                class="rounded-full py-3 px-6 bg-transparent border-white border border__gray4 font-normal text-xl mr-4 mt-4 tablinks"
+                onclick="openCity(event, 'lihatsemua')"
+                >Lihat Semua</a
+              >
+            </div>
+          </div>
+          <div class="md:col-span-6">
+            <p class="h4 font-normal mt-5">
+              Temukan klinik Estetiderma terdekatmu beserta informasi jam
+              operasional dan jadwal kerja dokter, dan langsung
+              <a
+                class="color__tosca"
+                href="http://"
+                target="_blank"
+                rel="noopener noreferrer"
+                >hubungi via WhatsApp untuk konsultasi online atau booking
+                perawatan di klinik.</a
+              >
+            </p>
+          </div>
+        </div>
+
+        <!-- section -->
+        <div class="grid grid-cols-12 mt-10 border-t border__gray3">
+          <div class="md:col-span-6">
+            <div class="location__list">
+              <ul class="tabcontent" id="jakarta" style="display: block">
+                <li
+                  class="py-8 border-b border__gray3 w-full cursor-pointer flex items-center justify-between px-5 tabLinkContact"
+                  onclick="openContact(event, 'jakarta-1')"
+                >
+                  <div>
+                    <p class="color__tosca h2 font-normal underline">Jakarta</p>
+                    <p class="text-sm font-normal mt-2">09.00 – 20.00 WIB</p>
+                  </div>
+                  <div>
+                    <ul>
+                      <li class="mr-3">
+                        <img src="images/svg/icon__wa2.svg" alt="" />
+                        <img
+                          class="location__icon__white"
+                          src="images/svg/icon__wa2--white.svg"
+                          alt=""
+                        />
+                      </li>
+                      <li class="mr-3">
+                        <img src="images/svg/icon__loc.svg" alt="" />
+                        <img
+                          class="location__icon__white"
+                          src="images/svg/icon__loc--white.svg"
+                          alt=""
+                        />
+                      </li>
+                      <li class="mr-3">
+                        <img src="images/svg/icon__arrow.svg" alt="" />
+                        <img
+                          class="location__icon__white"
+                          src="images/svg/icon__arrow--white.svg"
+                          alt=""
+                        />
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li
+                  class="py-8 border-b border__gray3 w-full cursor-pointer flex items-center justify-between px-5 tabLinkContact"
+                  onclick="openContact(event, 'jakarta-2')"
+                >
+                  <div>
+                    <p class="color__tosca h2 font-normal underline">
+                      Kyai Maja
+                    </p>
+                    <p class="text-sm font-normal mt-2">09.00 – 20.00 WIB</p>
+                  </div>
+                  <div>
+                    <ul>
+                      <li class="mr-3">
+                        <img src="images/svg/icon__wa2.svg" alt="" />
+                        <img
+                          class="location__icon__white"
+                          src="images/svg/icon__wa2--white.svg"
+                          alt=""
+                        />
+                      </li>
+                      <li class="mr-3">
+                        <img src="images/svg/icon__loc.svg" alt="" />
+                        <img
+                          class="location__icon__white"
+                          src="images/svg/icon__loc--white.svg"
+                          alt=""
+                        />
+                      </li>
+                      <li class="mr-3">
+                        <img src="images/svg/icon__arrow.svg" alt="" />
+                        <img
+                          class="location__icon__white"
+                          src="images/svg/icon__arrow--white.svg"
+                          alt=""
+                        />
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+
+              </ul>
+              <ul class="tabcontent" id="botabek">
+                <li
+                  class="py-8 border-b border__gray3 w-full cursor-pointer flex items-center justify-between px-5 tabLinkContact"
+                  onclick="openContact(event, 'botabek-1')"
+                >
+                  <div>
+                    <p class="color__tosca h2 font-normal underline">
+                      Bodetabek
+                    </p>
+                    <p class="text-sm font-normal mt-2">09.00 – 20.00 WIB</p>
+                  </div>
+                  <div>
+                    <ul>
+                      <li class="mr-3">
+                        <img src="images/svg/icon__wa2.svg" alt="" />
+                        <img
+                          class="location__icon__white"
+                          src="images/svg/icon__wa2--white.svg"
+                          alt=""
+                        />
+                      </li>
+                      <li class="mr-3">
+                        <img src="images/svg/icon__loc.svg" alt="" />
+                        <img
+                          class="location__icon__white"
+                          src="images/svg/icon__loc--white.svg"
+                          alt=""
+                        />
+                      </li>
+                      <li class="mr-3">
+                        <img src="images/svg/icon__arrow.svg" alt="" />
+                        <img
+                          class="location__icon__white"
+                          src="images/svg/icon__arrow--white.svg"
+                          alt=""
+                        />
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li
+                  class="py-8 border-b border__gray3 w-full cursor-pointer flex items-center justify-between px-5 tabLinkContact"
+                  onclick="openContact(event, 'botabek-2')"
+                >
+                  <div>
+                    <p class="color__tosca h2 font-normal underline">Bekasi</p>
+                    <p class="text-sm font-normal mt-2">09.00 – 20.00 WIB</p>
+                  </div>
+                  <div>
+                    <ul>
+                      <li class="mr-3">
+                        <img src="images/svg/icon__wa2.svg" alt="" />
+                        <img
+                          class="location__icon__white"
+                          src="images/svg/icon__wa2--white.svg"
+                          alt=""
+                        />
+                      </li>
+                      <li class="mr-3">
+                        <img src="images/svg/icon__loc.svg" alt="" />
+                        <img
+                          class="location__icon__white"
+                          src="images/svg/icon__loc--white.svg"
+                          alt=""
+                        />
+                      </li>
+                      <li class="mr-3">
+                        <img src="images/svg/icon__arrow.svg" alt="" />
+                        <img
+                          class="location__icon__white"
+                          src="images/svg/icon__arrow--white.svg"
+                          alt=""
+                        />
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+              <ul class="tabcontent" id="lainnya">
+                <li
+                  class="py-8 border-b border__gray3 w-full cursor-pointer flex items-center justify-between px-5 tabLinkContact"
+                  onclick="openContact(event, 'lainnya-1')"
+                >
+                  <div>
+                    <p class="color__tosca h2 font-normal underline">lainnya</p>
+                    <p class="text-sm font-normal mt-2">09.00 – 20.00 WIB</p>
+                  </div>
+                  <div>
+                    <ul>
+                      <li class="mr-3">
+                        <img src="images/svg/icon__wa2.svg" alt="" />
+                        <img
+                          class="location__icon__white"
+                          src="images/svg/icon__wa2--white.svg"
+                          alt=""
+                        />
+                      </li>
+                      <li class="mr-3">
+                        <img src="images/svg/icon__loc.svg" alt="" />
+                        <img
+                          class="location__icon__white"
+                          src="images/svg/icon__loc--white.svg"
+                          alt=""
+                        />
+                      </li>
+                      <li class="mr-3">
+                        <img src="images/svg/icon__arrow.svg" alt="" />
+                        <img
+                          class="location__icon__white"
+                          src="images/svg/icon__arrow--white.svg"
+                          alt=""
+                        />
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li
+                  class="py-8 border-b border__gray3 w-full cursor-pointer flex items-center justify-between px-5 tabLinkContact"
+                  onclick="openContact(event, 'lainnya-2')"
+                >
+                  <div>
+                    <p class="color__tosca h2 font-normal underline">lainnya</p>
+                    <p class="text-sm font-normal mt-2">09.00 – 20.00 WIB</p>
+                  </div>
+                  <div>
+                    <ul>
+                      <li class="mr-3">
+                        <img src="images/svg/icon__wa2.svg" alt="" />
+                        <img
+                          class="location__icon__white"
+                          src="images/svg/icon__wa2--white.svg"
+                          alt=""
+                        />
+                      </li>
+                      <li class="mr-3">
+                        <img src="images/svg/icon__loc.svg" alt="" />
+                        <img
+                          class="location__icon__white"
+                          src="images/svg/icon__loc--white.svg"
+                          alt=""
+                        />
+                      </li>
+                      <li class="mr-3">
+                        <img src="images/svg/icon__arrow.svg" alt="" />
+                        <img
+                          class="location__icon__white"
+                          src="images/svg/icon__arrow--white.svg"
+                          alt=""
+                        />
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+              <ul class="tabcontent" id="lihatsemua">
+                <li
+                  class="py-8 border-b border__gray3 w-full cursor-pointer flex items-center justify-between px-5 tabLinkContact"
+                  onclick="openContact(event, 'lihatsemua-1')"
+                >
+                  <div>
+                    <p class="color__tosca h2 font-normal underline">
+                      lihatsemua
+                    </p>
+                    <p class="text-sm font-normal mt-2">09.00 – 20.00 WIB</p>
+                  </div>
+                  <div>
+                    <ul>
+                      <li class="mr-3">
+                        <img src="images/svg/icon__wa2.svg" alt="" />
+                        <img
+                          class="location__icon__white"
+                          src="images/svg/icon__wa2--white.svg"
+                          alt=""
+                        />
+                      </li>
+                      <li class="mr-3">
+                        <img src="images/svg/icon__loc.svg" alt="" />
+                        <img
+                          class="location__icon__white"
+                          src="images/svg/icon__loc--white.svg"
+                          alt=""
+                        />
+                      </li>
+                      <li class="mr-3">
+                        <img src="images/svg/icon__arrow.svg" alt="" />
+                        <img
+                          class="location__icon__white"
+                          src="images/svg/icon__arrow--white.svg"
+                          alt=""
+                        />
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li
+                  class="py-8 border-b border__gray3 w-full cursor-pointer flex items-center justify-between px-5 tabLinkContact"
+                  onclick="openContact(event, 'lihatsemua-2')"
+                  
+                >
+                  <div>
+                    <p class="color__tosca h2 font-normal underline">
+                      lihatsemua
+                    </p>
+                    <p class="text-sm font-normal mt-2">09.00 – 20.00 WIB</p>
+                  </div>
+                  <div>
+                    <ul>
+                      <li class="mr-3">
+                        <img src="images/svg/icon__wa2.svg" alt="" />
+                        <img
+                          class="location__icon__white"
+                          src="images/svg/icon__wa2--white.svg"
+                          alt=""
+                        />
+                      </li>
+                      <li class="mr-3">
+                        <img src="images/svg/icon__loc.svg" alt="" />
+                        <img
+                          class="location__icon__white"
+                          src="images/svg/icon__loc--white.svg"
+                          alt=""
+                        />
+                      </li>
+                      <li class="mr-3">
+                        <img src="images/svg/icon__arrow.svg" alt="" />
+                        <img
+                          class="location__icon__white"
+                          src="images/svg/icon__arrow--white.svg"
+                          alt=""
+                        />
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li
+                  class="py-8 border-b border__gray3 w-full cursor-pointer flex items-center justify-between px-5 tabLinkContact"
+                  onclick="openContact(event, 'lihatsemua-3')"
+                >
+                  <div>
+                    <p class="color__tosca h2 font-normal underline">
+                      lihatsemua
+                    </p>
+                    <p class="text-sm font-normal mt-2">09.00 – 20.00 WIB</p>
+                  </div>
+                  <div>
+                    <ul>
+                      <li class="mr-3">
+                        <img src="images/svg/icon__wa2.svg" alt="" />
+                        <img
+                          class="location__icon__white"
+                          src="images/svg/icon__wa2--white.svg"
+                          alt=""
+                        />
+                      </li>
+                      <li class="mr-3">
+                        <img src="images/svg/icon__loc.svg" alt="" />
+                        <img
+                          class="location__icon__white"
+                          src="images/svg/icon__loc--white.svg"
+                          alt=""
+                        />
+                      </li>
+                      <li class="mr-3">
+                        <img src="images/svg/icon__arrow.svg" alt="" />
+                        <img
+                          class="location__icon__white"
+                          src="images/svg/icon__arrow--white.svg"
+                          alt=""
+                        />
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="md:col-span-6">
+            <div class="h-full w-full relative h-min-600">
+              <img
+                id="tabContact__close"
+                class="absolute right-5 top-5 w-auto z-50 cursor-pointer"
+                src="images/svg/close.svg"
+                alt=""
+              />
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126920.28185637132!2d106.75947801814148!3d-6.229571229042203!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f3e945e34b9d%3A0x5371bf0fdad786a2!2sJakarta!5e0!3m2!1sen!2sid!4v1614163156105!5m2!1sen!2sid"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                class="absolute left-0 top-0 w-full h-full"
+              ></iframe>
+
+                <!-- detail lokasi -->
+                <!-- jakarta 1 -->
+                <div id="jakarta-1"  class="grid grid-cols-12 relative text-white tabContact">
+                  <div class="md:col-span-6 bg__tosca pt-10 p-7 leading-6">
+                    <p class="uppercase">Hubungi Kami</p>
+                    <div class="mt-5">
+                      <p class="font-medium mb-2">Konsultasi Online</p>
+                      <ul>
+                        <li class="block flex underline mb-2">
+                          <img
+                            class="w-auto mr-3"
+                            src="images/svg/wa.svg"
+                            alt=""
+                          />
+                          0878-7291-1916
+                        </li>
+                        <li class="block flex underline mb-2">
+                          <img
+                            class="w-auto mr-3"
+                            src="images/svg/telp.svg"
+                            alt=""
+                          />021- 87787198
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="mt-5">
+                      <p class="font-medium mb-1">Alamat</p>
+                      <p>
+                        Jl. TB Shimatupang no. 1E, Kel. Gedong, Kec. Pasar Rebo,
+                        Jakarta Timur 13760 — 50m dari RS Pasar Rebo (FRANCHISE)
+                        <br />
+                        <a
+                          href="http://"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          class="underline"
+                          >Buka Google Maps</a
+                        >
+                      </p>
+                    </div>
+                    <div class="mt-5">
+                      <p class="font-medium mb-1">Jam Operasional</p>
+                      <ul>
+                        <li class="block">Senin-Jumat:10.00-20.00 WIB</li>
+                        <li class="block">Sabtu: 10.00-14.30 WIB</li>
+                        <li class="block">Hari Libur Nasional tutup</li>
+                      </ul>
+                    </div>
+                    <div class="mt-5">
+                      <p class="font-medium mb-1">Pelayanan</p>
+                      <p>
+                        Facial Care, Medical Peeling, Microdermabrasion,
+                        IPLElectrocauterisation, Intralesional Steroid Injection,
+                        Skin booster, Dermapen, Tanam benang, Immune booster,
+                        Injeksi jerawat
+                      </p>
+                    </div>
+                  </div>
+                  <div class="md:col-span-6 bg__tosca3 pt-10 p-7 pr-10 leading-6">
+                    <p class="uppercase">Jadwal Praktek Dokter</p>
+                    <div class="mt-5 list list__custom">
+                      <ul>
+                        <li class="block">
+                          <p class="font-medium">dr. M Karyadi Hadiprodjo</p>
+                          <div>
+                            <strong> Selasa</strong>
+                            <br />
+                            10.00–14.00, 18.00–20.00
+                          </div>
+                          <div>
+                            <strong>Kamis</strong>
+                            <br />10.00–14.00, 18.00–20.00
+                          </div>
+                          <div>
+                            <strong>Jumat</strong>
+                            <br />10.00–14.00
+                          </div>
+                        </li>
+                        <li class="block">
+                          <p class="font-medium">dr. Rini Tjahjadi</p>
+                          <div>
+                            <strong> Selasa</strong>
+                            <br />
+                            10.00–14.00, 18.00–20.00
+                          </div>
+                          <div>
+                            <strong>Kamis</strong>
+                            <br />10.00–14.00, 18.00–20.00
+                          </div>
+                          <div>
+                            <strong>Jumat</strong>
+                            <br />10.00–14.00
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- jakarta 2 -->
+                <div id="jakarta-2"  class="grid grid-cols-12 relative text-white tabContact">
+                  <div class="md:col-span-6 bg__tosca pt-10 p-7 leading-6">
+                    <p class="uppercase">Hubungi Kami jakarta-2</p>
+                    <div class="mt-5">
+                      <p class="font-medium mb-2">Konsultasi Online</p>
+                      <ul>
+                        <li class="block flex underline mb-2">
+                          <img
+                            class="w-auto mr-3"
+                            src="images/svg/wa.svg"
+                            alt=""
+                          />
+                          123-7291-1916
+                        </li>
+                        <li class="block flex underline mb-2">
+                          <img
+                            class="w-auto mr-3"
+                            src="images/svg/telp.svg"
+                            alt=""
+                          />021- 123123123
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="mt-5">
+                      <p class="font-medium mb-1">Alamat</p>
+                      <p>
+                        Jl. TB Shimatupang no. 1E, Kel. Gedong, Kec. Pasar Rebo,
+                        Jakarta Timur 13760 — 50m dari RS Pasar Rebo (FRANCHISE)
+                        <br />
+                        <a
+                          href="http://"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          class="underline"
+                          >Buka Google Maps</a
+                        >
+                      </p>
+                    </div>
+                    <div class="mt-5">
+                      <p class="font-medium mb-1">Jam Operasional</p>
+                      <ul>
+                        <li class="block">Senin-Jumat:10.00-20.00 WIB</li>
+                        <li class="block">Sabtu: 10.00-14.30 WIB</li>
+                        <li class="block">Hari Libur Nasional tutup</li>
+                      </ul>
+                    </div>
+                    <div class="mt-5">
+                      <p class="font-medium mb-1">Pelayanan</p>
+                      <p>
+                        Facial Care, Medical Peeling, Microdermabrasion,
+                        IPLElectrocauterisation, Intralesional Steroid Injection,
+                        Skin booster, Dermapen, Tanam benang, Immune booster,
+                        Injeksi jerawat
+                      </p>
+                    </div>
+                  </div>
+                  <div class="md:col-span-6 bg__tosca3 pt-10 p-7 pr-10 leading-6">
+                    <p class="uppercase">Jadwal Praktek Dokter</p>
+                    <div class="mt-5 list list__custom">
+                      <ul>
+                        <li class="block">
+                          <p class="font-medium">dr. M Karyadi Hadiprodjo</p>
+                          <div>
+                            <strong> Selasa</strong>
+                            <br />
+                            10.00–14.00, 18.00–20.00
+                          </div>
+                          <div>
+                            <strong>Kamis</strong>
+                            <br />10.00–14.00, 18.00–20.00
+                          </div>
+                          <div>
+                            <strong>Jumat</strong>
+                            <br />10.00–14.00
+                          </div>
+                        </li>
+                        <li class="block">
+                          <p class="font-medium">dr. Rini Tjahjadi</p>
+                          <div>
+                            <strong> Selasa</strong>
+                            <br />
+                            10.00–14.00, 18.00–20.00
+                          </div>
+                          <div>
+                            <strong>Kamis</strong>
+                            <br />10.00–14.00, 18.00–20.00
+                          </div>
+                          <div>
+                            <strong>Jumat</strong>
+                            <br />10.00–14.00
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- botabek 1 -->
+                <div id="botabek-1"  class="grid grid-cols-12 relative text-white tabContact">
+                  <div class="md:col-span-6 bg__tosca pt-10 p-7 leading-6">
+                    <p class="uppercase">Hubungi Kami botabek 1</p>
+                    <div class="mt-5">
+                      <p class="font-medium mb-2">Konsultasi Online</p>
+                      <ul>
+                        <li class="block flex underline mb-2">
+                          <img
+                            class="w-auto mr-3"
+                            src="images/svg/wa.svg"
+                            alt=""
+                          />
+                          123-7291-1916
+                        </li>
+                        <li class="block flex underline mb-2">
+                          <img
+                            class="w-auto mr-3"
+                            src="images/svg/telp.svg"
+                            alt=""
+                          />021- 123123123
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="mt-5">
+                      <p class="font-medium mb-1">Alamat</p>
+                      <p>
+                        Jl. TB Shimatupang no. 1E, Kel. Gedong, Kec. Pasar Rebo,
+                        Jakarta Timur 13760 — 50m dari RS Pasar Rebo (FRANCHISE)
+                        <br />
+                        <a
+                          href="http://"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          class="underline"
+                          >Buka Google Maps</a
+                        >
+                      </p>
+                    </div>
+                    <div class="mt-5">
+                      <p class="font-medium mb-1">Jam Operasional</p>
+                      <ul>
+                        <li class="block">Senin-Jumat:10.00-20.00 WIB</li>
+                        <li class="block">Sabtu: 10.00-14.30 WIB</li>
+                        <li class="block">Hari Libur Nasional tutup</li>
+                      </ul>
+                    </div>
+                    <div class="mt-5">
+                      <p class="font-medium mb-1">Pelayanan</p>
+                      <p>
+                        Facial Care, Medical Peeling, Microdermabrasion,
+                        IPLElectrocauterisation, Intralesional Steroid Injection,
+                        Skin booster, Dermapen, Tanam benang, Immune booster,
+                        Injeksi jerawat
+                      </p>
+                    </div>
+                  </div>
+                  <div class="md:col-span-6 bg__tosca3 pt-10 p-7 pr-10 leading-6">
+                    <p class="uppercase">Jadwal Praktek Dokter</p>
+                    <div class="mt-5 list list__custom">
+                      <ul>
+                        <li class="block">
+                          <p class="font-medium">dr. M Karyadi Hadiprodjo</p>
+                          <div>
+                            <strong> Selasa</strong>
+                            <br />
+                            10.00–14.00, 18.00–20.00
+                          </div>
+                          <div>
+                            <strong>Kamis</strong>
+                            <br />10.00–14.00, 18.00–20.00
+                          </div>
+                          <div>
+                            <strong>Jumat</strong>
+                            <br />10.00–14.00
+                          </div>
+                        </li>
+                        <li class="block">
+                          <p class="font-medium">dr. Rini Tjahjadi</p>
+                          <div>
+                            <strong> Selasa</strong>
+                            <br />
+                            10.00–14.00, 18.00–20.00
+                          </div>
+                          <div>
+                            <strong>Kamis</strong>
+                            <br />10.00–14.00, 18.00–20.00
+                          </div>
+                          <div>
+                            <strong>Jumat</strong>
+                            <br />10.00–14.00
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- botabek 2 -->
+                <div id="botabek-2"  class="grid grid-cols-12 relative text-white tabContact">
+                  <div class="md:col-span-6 bg__tosca pt-10 p-7 leading-6">
+                    <p class="uppercase">Hubungi Kami botabek 2</p>
+                    <div class="mt-5">
+                      <p class="font-medium mb-2">Konsultasi Online</p>
+                      <ul>
+                        <li class="block flex underline mb-2">
+                          <img
+                            class="w-auto mr-3"
+                            src="images/svg/wa.svg"
+                            alt=""
+                          />
+                          123-7291-1916
+                        </li>
+                        <li class="block flex underline mb-2">
+                          <img
+                            class="w-auto mr-3"
+                            src="images/svg/telp.svg"
+                            alt=""
+                          />021- 123123123
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="mt-5">
+                      <p class="font-medium mb-1">Alamat</p>
+                      <p>
+                        Jl. TB Shimatupang no. 1E, Kel. Gedong, Kec. Pasar Rebo,
+                        Jakarta Timur 13760 — 50m dari RS Pasar Rebo (FRANCHISE)
+                        <br />
+                        <a
+                          href="http://"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          class="underline"
+                          >Buka Google Maps</a
+                        >
+                      </p>
+                    </div>
+                    <div class="mt-5">
+                      <p class="font-medium mb-1">Jam Operasional</p>
+                      <ul>
+                        <li class="block">Senin-Jumat:10.00-20.00 WIB</li>
+                        <li class="block">Sabtu: 10.00-14.30 WIB</li>
+                        <li class="block">Hari Libur Nasional tutup</li>
+                      </ul>
+                    </div>
+                    <div class="mt-5">
+                      <p class="font-medium mb-1">Pelayanan</p>
+                      <p>
+                        Facial Care, Medical Peeling, Microdermabrasion,
+                        IPLElectrocauterisation, Intralesional Steroid Injection,
+                        Skin booster, Dermapen, Tanam benang, Immune booster,
+                        Injeksi jerawat
+                      </p>
+                    </div>
+                  </div>
+                  <div class="md:col-span-6 bg__tosca3 pt-10 p-7 pr-10 leading-6">
+                    <p class="uppercase">Jadwal Praktek Dokter</p>
+                    <div class="mt-5 list list__custom">
+                      <ul>
+                        <li class="block">
+                          <p class="font-medium">dr. M Karyadi Hadiprodjo</p>
+                          <div>
+                            <strong> Selasa</strong>
+                            <br />
+                            10.00–14.00, 18.00–20.00
+                          </div>
+                          <div>
+                            <strong>Kamis</strong>
+                            <br />10.00–14.00, 18.00–20.00
+                          </div>
+                          <div>
+                            <strong>Jumat</strong>
+                            <br />10.00–14.00
+                          </div>
+                        </li>
+                        <li class="block">
+                          <p class="font-medium">dr. Rini Tjahjadi</p>
+                          <div>
+                            <strong> Selasa</strong>
+                            <br />
+                            10.00–14.00, 18.00–20.00
+                          </div>
+                          <div>
+                            <strong>Kamis</strong>
+                            <br />10.00–14.00, 18.00–20.00
+                          </div>
+                          <div>
+                            <strong>Jumat</strong>
+                            <br />10.00–14.00
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- lainnya 1 -->
+                <div id="lainnya-1"  class="grid grid-cols-12 relative text-white tabContact">
+                  <div class="md:col-span-6 bg__tosca pt-10 p-7 leading-6">
+                    <p class="uppercase">Hubungi Kami lainnya 1</p>
+                    <div class="mt-5">
+                      <p class="font-medium mb-2">Konsultasi Online</p>
+                      <ul>
+                        <li class="block flex underline mb-2">
+                          <img
+                            class="w-auto mr-3"
+                            src="images/svg/wa.svg"
+                            alt=""
+                          />
+                          123-7291-1916
+                        </li>
+                        <li class="block flex underline mb-2">
+                          <img
+                            class="w-auto mr-3"
+                            src="images/svg/telp.svg"
+                            alt=""
+                          />021- 123123123
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="mt-5">
+                      <p class="font-medium mb-1">Alamat</p>
+                      <p>
+                        Jl. TB Shimatupang no. 1E, Kel. Gedong, Kec. Pasar Rebo,
+                        Jakarta Timur 13760 — 50m dari RS Pasar Rebo (FRANCHISE)
+                        <br />
+                        <a
+                          href="http://"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          class="underline"
+                          >Buka Google Maps</a
+                        >
+                      </p>
+                    </div>
+                    <div class="mt-5">
+                      <p class="font-medium mb-1">Jam Operasional</p>
+                      <ul>
+                        <li class="block">Senin-Jumat:10.00-20.00 WIB</li>
+                        <li class="block">Sabtu: 10.00-14.30 WIB</li>
+                        <li class="block">Hari Libur Nasional tutup</li>
+                      </ul>
+                    </div>
+                    <div class="mt-5">
+                      <p class="font-medium mb-1">Pelayanan</p>
+                      <p>
+                        Facial Care, Medical Peeling, Microdermabrasion,
+                        IPLElectrocauterisation, Intralesional Steroid Injection,
+                        Skin booster, Dermapen, Tanam benang, Immune booster,
+                        Injeksi jerawat
+                      </p>
+                    </div>
+                  </div>
+                  <div class="md:col-span-6 bg__tosca3 pt-10 p-7 pr-10 leading-6">
+                    <p class="uppercase">Jadwal Praktek Dokter</p>
+                    <div class="mt-5 list list__custom">
+                      <ul>
+                        <li class="block">
+                          <p class="font-medium">dr. M Karyadi Hadiprodjo</p>
+                          <div>
+                            <strong> Selasa</strong>
+                            <br />
+                            10.00–14.00, 18.00–20.00
+                          </div>
+                          <div>
+                            <strong>Kamis</strong>
+                            <br />10.00–14.00, 18.00–20.00
+                          </div>
+                          <div>
+                            <strong>Jumat</strong>
+                            <br />10.00–14.00
+                          </div>
+                        </li>
+                        <li class="block">
+                          <p class="font-medium">dr. Rini Tjahjadi</p>
+                          <div>
+                            <strong> Selasa</strong>
+                            <br />
+                            10.00–14.00, 18.00–20.00
+                          </div>
+                          <div>
+                            <strong>Kamis</strong>
+                            <br />10.00–14.00, 18.00–20.00
+                          </div>
+                          <div>
+                            <strong>Jumat</strong>
+                            <br />10.00–14.00
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- lainnya 2 -->
+                <div id="lainnya-2"  class="grid grid-cols-12 relative text-white tabContact">
+                  <div class="md:col-span-6 bg__tosca pt-10 p-7 leading-6">
+                    <p class="uppercase">Hubungi Kami lainnya 2</p>
+                    <div class="mt-5">
+                      <p class="font-medium mb-2">Konsultasi Online</p>
+                      <ul>
+                        <li class="block flex underline mb-2">
+                          <img
+                            class="w-auto mr-3"
+                            src="images/svg/wa.svg"
+                            alt=""
+                          />
+                          123-7291-1916
+                        </li>
+                        <li class="block flex underline mb-2">
+                          <img
+                            class="w-auto mr-3"
+                            src="images/svg/telp.svg"
+                            alt=""
+                          />021- 123123123
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="mt-5">
+                      <p class="font-medium mb-1">Alamat</p>
+                      <p>
+                        Jl. TB Shimatupang no. 1E, Kel. Gedong, Kec. Pasar Rebo,
+                        Jakarta Timur 13760 — 50m dari RS Pasar Rebo (FRANCHISE)
+                        <br />
+                        <a
+                          href="http://"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          class="underline"
+                          >Buka Google Maps</a
+                        >
+                      </p>
+                    </div>
+                    <div class="mt-5">
+                      <p class="font-medium mb-1">Jam Operasional</p>
+                      <ul>
+                        <li class="block">Senin-Jumat:10.00-20.00 WIB</li>
+                        <li class="block">Sabtu: 10.00-14.30 WIB</li>
+                        <li class="block">Hari Libur Nasional tutup</li>
+                      </ul>
+                    </div>
+                    <div class="mt-5">
+                      <p class="font-medium mb-1">Pelayanan</p>
+                      <p>
+                        Facial Care, Medical Peeling, Microdermabrasion,
+                        IPLElectrocauterisation, Intralesional Steroid Injection,
+                        Skin booster, Dermapen, Tanam benang, Immune booster,
+                        Injeksi jerawat
+                      </p>
+                    </div>
+                  </div>
+                  <div class="md:col-span-6 bg__tosca3 pt-10 p-7 pr-10 leading-6">
+                    <p class="uppercase">Jadwal Praktek Dokter</p>
+                    <div class="mt-5 list list__custom">
+                      <ul>
+                        <li class="block">
+                          <p class="font-medium">dr. M Karyadi Hadiprodjo</p>
+                          <div>
+                            <strong> Selasa</strong>
+                            <br />
+                            10.00–14.00, 18.00–20.00
+                          </div>
+                          <div>
+                            <strong>Kamis</strong>
+                            <br />10.00–14.00, 18.00–20.00
+                          </div>
+                          <div>
+                            <strong>Jumat</strong>
+                            <br />10.00–14.00
+                          </div>
+                        </li>
+                        <li class="block">
+                          <p class="font-medium">dr. Rini Tjahjadi</p>
+                          <div>
+                            <strong> Selasa</strong>
+                            <br />
+                            10.00–14.00, 18.00–20.00
+                          </div>
+                          <div>
+                            <strong>Kamis</strong>
+                            <br />10.00–14.00, 18.00–20.00
+                          </div>
+                          <div>
+                            <strong>Jumat</strong>
+                            <br />10.00–14.00
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- lihatsemua 1 -->
+                <div id="lihatsemua-1"  class="grid grid-cols-12 relative text-white tabContact">
+                  <div class="md:col-span-6 bg__tosca pt-10 p-7 leading-6">
+                    <p class="uppercase">Hubungi Kami lihatsemua 1</p>
+                    <div class="mt-5">
+                      <p class="font-medium mb-2">Konsultasi Online</p>
+                      <ul>
+                        <li class="block flex underline mb-2">
+                          <img
+                            class="w-auto mr-3"
+                            src="images/svg/wa.svg"
+                            alt=""
+                          />
+                          123-7291-1916
+                        </li>
+                        <li class="block flex underline mb-2">
+                          <img
+                            class="w-auto mr-3"
+                            src="images/svg/telp.svg"
+                            alt=""
+                          />021- 123123123
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="mt-5">
+                      <p class="font-medium mb-1">Alamat</p>
+                      <p>
+                        Jl. TB Shimatupang no. 1E, Kel. Gedong, Kec. Pasar Rebo,
+                        Jakarta Timur 13760 — 50m dari RS Pasar Rebo (FRANCHISE)
+                        <br />
+                        <a
+                          href="http://"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          class="underline"
+                          >Buka Google Maps</a
+                        >
+                      </p>
+                    </div>
+                    <div class="mt-5">
+                      <p class="font-medium mb-1">Jam Operasional</p>
+                      <ul>
+                        <li class="block">Senin-Jumat:10.00-20.00 WIB</li>
+                        <li class="block">Sabtu: 10.00-14.30 WIB</li>
+                        <li class="block">Hari Libur Nasional tutup</li>
+                      </ul>
+                    </div>
+                    <div class="mt-5">
+                      <p class="font-medium mb-1">Pelayanan</p>
+                      <p>
+                        Facial Care, Medical Peeling, Microdermabrasion,
+                        IPLElectrocauterisation, Intralesional Steroid Injection,
+                        Skin booster, Dermapen, Tanam benang, Immune booster,
+                        Injeksi jerawat
+                      </p>
+                    </div>
+                  </div>
+                  <div class="md:col-span-6 bg__tosca3 pt-10 p-7 pr-10 leading-6">
+                    <p class="uppercase">Jadwal Praktek Dokter</p>
+                    <div class="mt-5 list list__custom">
+                      <ul>
+                        <li class="block">
+                          <p class="font-medium">dr. M Karyadi Hadiprodjo</p>
+                          <div>
+                            <strong> Selasa</strong>
+                            <br />
+                            10.00–14.00, 18.00–20.00
+                          </div>
+                          <div>
+                            <strong>Kamis</strong>
+                            <br />10.00–14.00, 18.00–20.00
+                          </div>
+                          <div>
+                            <strong>Jumat</strong>
+                            <br />10.00–14.00
+                          </div>
+                        </li>
+                        <li class="block">
+                          <p class="font-medium">dr. Rini Tjahjadi</p>
+                          <div>
+                            <strong> Selasa</strong>
+                            <br />
+                            10.00–14.00, 18.00–20.00
+                          </div>
+                          <div>
+                            <strong>Kamis</strong>
+                            <br />10.00–14.00, 18.00–20.00
+                          </div>
+                          <div>
+                            <strong>Jumat</strong>
+                            <br />10.00–14.00
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- lihatsemua 2 -->
+                <div id="lihatsemua-2"  class="grid grid-cols-12 relative text-white tabContact">
+                  <div class="md:col-span-6 bg__tosca pt-10 p-7 leading-6">
+                    <p class="uppercase">Hubungi Kami lihatsemua 2</p>
+                    <div class="mt-5">
+                      <p class="font-medium mb-2">Konsultasi Online</p>
+                      <ul>
+                        <li class="block flex underline mb-2">
+                          <img
+                            class="w-auto mr-3"
+                            src="images/svg/wa.svg"
+                            alt=""
+                          />
+                          123-7291-1916
+                        </li>
+                        <li class="block flex underline mb-2">
+                          <img
+                            class="w-auto mr-3"
+                            src="images/svg/telp.svg"
+                            alt=""
+                          />021- 123123123
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="mt-5">
+                      <p class="font-medium mb-1">Alamat</p>
+                      <p>
+                        Jl. TB Shimatupang no. 1E, Kel. Gedong, Kec. Pasar Rebo,
+                        Jakarta Timur 13760 — 50m dari RS Pasar Rebo (FRANCHISE)
+                        <br />
+                        <a
+                          href="http://"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          class="underline"
+                          >Buka Google Maps</a
+                        >
+                      </p>
+                    </div>
+                    <div class="mt-5">
+                      <p class="font-medium mb-1">Jam Operasional</p>
+                      <ul>
+                        <li class="block">Senin-Jumat:10.00-20.00 WIB</li>
+                        <li class="block">Sabtu: 10.00-14.30 WIB</li>
+                        <li class="block">Hari Libur Nasional tutup</li>
+                      </ul>
+                    </div>
+                    <div class="mt-5">
+                      <p class="font-medium mb-1">Pelayanan</p>
+                      <p>
+                        Facial Care, Medical Peeling, Microdermabrasion,
+                        IPLElectrocauterisation, Intralesional Steroid Injection,
+                        Skin booster, Dermapen, Tanam benang, Immune booster,
+                        Injeksi jerawat
+                      </p>
+                    </div>
+                  </div>
+                  <div class="md:col-span-6 bg__tosca3 pt-10 p-7 pr-10 leading-6">
+                    <p class="uppercase">Jadwal Praktek Dokter</p>
+                    <div class="mt-5 list list__custom">
+                      <ul>
+                        <li class="block">
+                          <p class="font-medium">dr. M Karyadi Hadiprodjo</p>
+                          <div>
+                            <strong> Selasa</strong>
+                            <br />
+                            10.00–14.00, 18.00–20.00
+                          </div>
+                          <div>
+                            <strong>Kamis</strong>
+                            <br />10.00–14.00, 18.00–20.00
+                          </div>
+                          <div>
+                            <strong>Jumat</strong>
+                            <br />10.00–14.00
+                          </div>
+                        </li>
+                        <li class="block">
+                          <p class="font-medium">dr. Rini Tjahjadi</p>
+                          <div>
+                            <strong> Selasa</strong>
+                            <br />
+                            10.00–14.00, 18.00–20.00
+                          </div>
+                          <div>
+                            <strong>Kamis</strong>
+                            <br />10.00–14.00, 18.00–20.00
+                          </div>
+                          <div>
+                            <strong>Jumat</strong>
+                            <br />10.00–14.00
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- lihatsemua 3 -->
+                <div id="lihatsemua-3"  class="grid grid-cols-12 relative text-white tabContact">
+                  <div class="md:col-span-6 bg__tosca pt-10 p-7 leading-6">
+                    <p class="uppercase">Hubungi Kami lihatsemua 3</p>
+                    <div class="mt-5">
+                      <p class="font-medium mb-2">Konsultasi Online</p>
+                      <ul>
+                        <li class="block flex underline mb-2">
+                          <img
+                            class="w-auto mr-3"
+                            src="images/svg/wa.svg"
+                            alt=""
+                          />
+                          123-7291-1916
+                        </li>
+                        <li class="block flex underline mb-2">
+                          <img
+                            class="w-auto mr-3"
+                            src="images/svg/telp.svg"
+                            alt=""
+                          />021- 123123123
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="mt-5">
+                      <p class="font-medium mb-1">Alamat</p>
+                      <p>
+                        Jl. TB Shimatupang no. 1E, Kel. Gedong, Kec. Pasar Rebo,
+                        Jakarta Timur 13760 — 50m dari RS Pasar Rebo (FRANCHISE)
+                        <br />
+                        <a
+                          href="http://"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          class="underline"
+                          >Buka Google Maps</a
+                        >
+                      </p>
+                    </div>
+                    <div class="mt-5">
+                      <p class="font-medium mb-1">Jam Operasional</p>
+                      <ul>
+                        <li class="block">Senin-Jumat:10.00-20.00 WIB</li>
+                        <li class="block">Sabtu: 10.00-14.30 WIB</li>
+                        <li class="block">Hari Libur Nasional tutup</li>
+                      </ul>
+                    </div>
+                    <div class="mt-5">
+                      <p class="font-medium mb-1">Pelayanan</p>
+                      <p>
+                        Facial Care, Medical Peeling, Microdermabrasion,
+                        IPLElectrocauterisation, Intralesional Steroid Injection,
+                        Skin booster, Dermapen, Tanam benang, Immune booster,
+                        Injeksi jerawat
+                      </p>
+                    </div>
+                  </div>
+                  <div class="md:col-span-6 bg__tosca3 pt-10 p-7 pr-10 leading-6">
+                    <p class="uppercase">Jadwal Praktek Dokter</p>
+                    <div class="mt-5 list list__custom">
+                      <ul>
+                        <li class="block">
+                          <p class="font-medium">dr. M Karyadi Hadiprodjo</p>
+                          <div>
+                            <strong> Selasa</strong>
+                            <br />
+                            10.00–14.00, 18.00–20.00
+                          </div>
+                          <div>
+                            <strong>Kamis</strong>
+                            <br />10.00–14.00, 18.00–20.00
+                          </div>
+                          <div>
+                            <strong>Jumat</strong>
+                            <br />10.00–14.00
+                          </div>
+                        </li>
+                        <li class="block">
+                          <p class="font-medium">dr. Rini Tjahjadi</p>
+                          <div>
+                            <strong> Selasa</strong>
+                            <br />
+                            10.00–14.00, 18.00–20.00
+                          </div>
+                          <div>
+                            <strong>Kamis</strong>
+                            <br />10.00–14.00, 18.00–20.00
+                          </div>
+                          <div>
+                            <strong>Jumat</strong>
+                            <br />10.00–14.00
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- footer -->
+    <div class="footer py-10 bg__tosca text-white font-light">
+      <div class="container px-5">
+        <div>
+          <div class="logo">
+            <a href="index.html">
+              <img src="images/logo__white.svg" alt="" />
+            </a>
+          </div>
+        </div>
+        <div class="grid grid-cols-12">
+          <div class="col-span-12 md:col-span-6 md:pr-28">
+            <div class="my-10">
+              <p class="text-xl">
+                Berlangganan buletin estetiderma untuk mendapatkan <br />
+                promo dan informasi terkini
+              </p>
+            </div>
+            <div class="relative mt-20">
+              <form action="">
+                <input
+                  type="text"
+                  placeholder="Alamat email kamu"
+                  class="bg-transparent border-b border-white field placeholder-white w-full py-5"
+                />
+                <button
+                  class="rounded-full py-3 px-6 bg-white color__tosca absolute right-0"
+                >
+                  Daftar
+                </button>
+              </form>
+            </div>
+            <div class="py-5">
+              <ul>
+                <li class="mr-3">
+                  <a href="http://#" target="_blank" rel="noopener noreferrer">
+                    <img src="images/svg/facebook.svg" alt="" />
+                  </a>
+                </li>
+                <li class="mr-3">
+                  <a href="http://#" target="_blank" rel="noopener noreferrer">
+                    <img src="images/svg/ig.svg" alt="" />
+                  </a>
+                </li>
+              </ul>
+              <p class="text-xs mt-5">
+                © 2021 ESTETIDERMA and its logo are registered trademarks. All
+                rights reserved. Copyright 2021
+              </p>
+            </div>
+          </div>
+
+          <div class="col-span-12 md:col-span-6">
+            <div class="my-10 grid grid-cols-12 md:gap-10">
+              <ul class="col-span-12 md:col-span-4">
+                <li class="block leading-7 text-sm uppercase font-bold">
+                  umum
+                </li>
+                <li class="block leading-7 text-sm">
+                  <a href=""> Tentang Kami </a>
+                </li>
+                <li class="block leading-7 text-sm">
+                  <a href=""> Produk Kami </a>
+                </li>
+                <li class="block leading-7 text-sm">
+                  <a href=""> General Enquires </a>
+                </li>
+                <li class="block leading-7 text-sm">
+                  <a href=""> Konsultasi Online </a>
+                </li>
+                <li class="block leading-7 text-sm">
+                  <a href=""> Kesempatan Kerja </a>
+                </li>
+                <li class="block leading-7 text-sm">
+                  <a href=""> Pertanyaan Umum </a>
+                </li>
+              </ul>
+              <ul class="col-span-12 md:col-span-4">
+                <li class="block leading-7 text-sm uppercase font-bold">
+                  perawatan
+                </li>
+                <li class="block leading-7 text-sm">
+                  <a href=""> Facial </a>
+                </li>
+                <li class="block leading-7 text-sm">
+                  <a href=""> Jerawat & Bopeng </a>
+                </li>
+                <li class="block leading-7 text-sm">
+                  <a href=""> Pigmentasi & Kulit Kusam </a>
+                </li>
+                <li class="block leading-7 text-sm">
+                  <a href=""> Wajah & Kulit Menua </a>
+                </li>
+                <li class="block leading-7 text-sm">
+                  <a href=""> Contouring </a>
+                </li>
+                <li class="block leading-7 text-sm">
+                  <a href=""> Layanan lainnya </a>
+                </li>
+              </ul>
+              <ul class="col-span-12 md:col-span-4 md:ml-5">
+                <li class="block leading-7 text-sm uppercase font-bold">
+                  Klinik Kami
+                </li>
+                <li class="block leading-7 text-sm">
+                  <a href=""> Jakarta</a>
+                </li>
+                <li class="block leading-7 text-sm">
+                  <a href=""> Bodetabek </a>
+                </li>
+                <li class="block leading-7 text-sm">
+                  <a href=""> Lainnya </a>
+                </li>
+                <li class="block leading-7 text-sm">
+                  <a href="">Lihat Semua </a>
+                </li>
+              </ul>
+            </div>
+            <div class="mt-14">
+              <ul class="flex items-center">
+                <li class="pr-10">
+                  <img src="images/svg/bca.svg" alt="" />
+                </li>
+                <li class="pr-10">
+                  <img src="images/svg/mandiri.svg" alt="" />
+                </li>
+                <li class="pr-10">
+                  <img src="images/svg/gopay.svg" alt="" />
+                </li>
+                <li class="pr-10">
+                  <img src="images/svg/spay.svg" alt="" />
+                </li>
+                <li class="pr-10">
+                  <img src="images/svg/visa.svg" alt="" />
+                </li>
+                <li class="pr-10">
+                  <img src="images/svg/mastercard.svg" alt="" />
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- js -->
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/micromodal.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

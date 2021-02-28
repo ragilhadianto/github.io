@@ -7,4 +7,29 @@
     li {
     }
   }
+
+  &__menu {
+    ul {
+      &.toggle.show {
+        display: none;
+
+        @include max-responsive($md) {
+          display: flex;
+        }
+      }
+
+      li {
+      }
+    }
+  }
+
+  &__open {
+    position: fixed;
+    top: 0;
+    @extend .bg__gray5;
+
+    & .header__menu {
+      display: block;
+    }
+  }
 }

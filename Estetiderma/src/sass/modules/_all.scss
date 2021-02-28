@@ -43,11 +43,28 @@
   &__gray1 {
     background-color: $color__gray1 !important;
   }
+  &__gray3 {
+    background-color: $color__gray3;
+  }
+  &__gray5 {
+    background-color: $color__gray5;
+  }
   &__tosca {
     background-color: $color__tosca;
   }
   &__tosca2 {
     background-color: $color__tosca2;
+  }
+  &__tosca3 {
+    background-color: $color__tosca3;
+  }
+  &__morewhite {
+    background: rgb(255, 255, 255);
+    background: linear-gradient(
+      360deg,
+      rgba(255, 255, 255, 1) 22%,
+      rgba(255, 255, 255, 0) 100%
+    );
   }
 }
 // color
@@ -58,11 +75,20 @@
   &__gray2 {
     color: $color__gray2 !important;
   }
+  &__gray3 {
+    color: $color__gray3 !important;
+  }
   &__gray4 {
     color: $color__gray4 !important;
   }
   &__tosca {
     color: $color__tosca;
+
+    &__mobile {
+      @include max-responsive($md) {
+        color: $color__tosca;
+      }
+    }
   }
 }
 
@@ -70,6 +96,12 @@
 .border {
   &__tosca {
     border-color: $color__tosca;
+
+    &__mobile {
+      @include max-responsive($md) {
+        border-color: $color__tosca;
+      }
+    }
   }
   &__gray3 {
     border-color: $color__gray3;
@@ -97,6 +129,12 @@
 
   &__shadow {
     box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
+
+    &__mobile {
+      @include max-responsive($md) {
+        box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
+      }
+    }
   }
 }
 
@@ -111,11 +149,17 @@
   height: 100%;
   overflow: hidden;
 }
+.h-min-400 {
+  min-height: 400px;
+}
+.h-min-600 {
+  min-height: 600px;
+}
 
 // scrollbar
 .scrollbar {
   scrollbar-width: thin;
-  scrollbar-color: rgba(0, 0, 0, 0.3) rgba(224, 224, 224, 1);
+  scrollbar-color: $color__tosca;
 
   &::-webkit-scrollbar {
     width: 5px;
@@ -132,7 +176,7 @@
   }
 
   &::-webkit-scrollbar-thumb {
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: $color__tosca;
     border-radius: 20px;
     border: none;
   }
@@ -142,12 +186,74 @@
 .h1 {
   font-size: 36px;
   line-height: 120%;
+  @include max-responsive($md) {
+    font-size: 24px;
+    line-height: 33.6px;
+  }
 }
 .h2 {
   font-size: 24px;
   line-height: 33.6px;
+  @include max-responsive($md) {
+    font-size: 20px;
+    line-height: 150%;
+  }
 }
 .h3 {
   font-size: 20px;
   line-height: 130%;
+}
+.h4 {
+  font-size: 20px;
+  line-height: 150%;
+}
+.f14 {
+  font-size: 14px;
+
+  &--mobile {
+    @include max-responsive($md) {
+      font-size: 14px;
+    }
+  }
+}
+
+//ul li
+.list {
+  ul,
+  ol {
+    li {
+      display: list-item;
+      list-style: disc;
+      margin: 0 0 0 20px;
+    }
+  }
+
+  &__custom {
+    ul,
+    ol {
+      li {
+        margin-bottom: 10px;
+      }
+    }
+  }
+  ul {
+    list-style-type: disc;
+    list-style-position: inside;
+  }
+  ol {
+    list-style-type: decimal;
+    list-style-position: inside;
+  }
+  ul ul,
+  ol ul {
+    list-style-type: circle;
+    list-style-position: inside;
+    margin-left: 15px;
+  }
+  ol ol,
+  ul ol {
+    list-style-type: lower-latin;
+    list-style-position: inside;
+    margin-left: 15px;
+  }
 }
