@@ -1,0 +1,18 @@
+.footer {
+  & .nav {
+    border-top: double 4px #000;
+    padding-top: 25px;
+
+    ul {
+      li {
+        padding: 10px 0;
+      }
+    }
+  }
+  & .nav__bottom {
+    @include max-responsive($lg) {
+      padding-top: 25px;
+      border-top: dashed 1px #e6e6e6;
+    }
+  }
+}

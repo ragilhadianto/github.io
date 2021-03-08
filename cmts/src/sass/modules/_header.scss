@@ -1,0 +1,41 @@
+.header {
+  &__nav {
+    @include max-responsive($md) {
+      top: 0;
+      right: -100%;
+      width: 80%;
+      z-index: 50;
+      height: 100%;
+      background-color: $color__green1;
+      @include base_transition(all);
+    }
+
+    ul {
+      li {
+        a {
+          &.active,
+          &:hover {
+            @extend .color__green1;
+            border-bottom: 2px solid;
+            padding-bottom: 5px;
+            @include max-responsive($md) {
+              color: #fff;
+            }
+          }
+
+          @include max-responsive($md) {
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+  &.active {
+    & .header__nav {
+      right: 0;
+    }
+    & .header__nav__bg {
+      display: block;
+    }
+  }
+}

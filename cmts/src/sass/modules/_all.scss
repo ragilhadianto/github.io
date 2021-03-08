@@ -1,0 +1,241 @@
+.imgfillImg {
+  width: 100% !important;
+  height: 100% !important;
+  object-position: 50% 50%;
+  -o-object-fit: cover;
+  object-fit: cover;
+
+  &__top {
+    object-position: 50% 0;
+  }
+  &__middle {
+    object-position: 50% 25%;
+  }
+}
+
+.imgAuto {
+  width: auto;
+
+  & > img {
+    width: auto;
+  }
+
+  &__max {
+    max-width: 100%;
+    width: auto;
+    & > img {
+      max-width: 100%;
+      width: auto;
+    }
+  }
+  &__noMax {
+    max-width: none;
+    width: auto;
+    & > img {
+      max-width: none;
+      width: auto;
+    }
+  }
+}
+
+// bg
+.bg {
+  &__green1 {
+    background-color: $color__green1;
+
+    &__img {
+      background-image: url("../images/bg-space-topleft.svg"),
+        url("../images/bg-space-bottomright.svg");
+      background-position: top left, bottom right;
+      background-size: 65%;
+      @include max-responsive($lg) {
+        background-size: 100%;
+      }
+    }
+  }
+  &__spacetop1 {
+    background-image: url("../images/bg-space-topleft.svg");
+  }
+  &__spacebottom1 {
+    background-image: url("../images/bg-space-bottomright.svg");
+  }
+  &__spacebottom2 {
+    background-image: url("../images/bg-space-white.svg");
+    background-position: bottom left;
+    background-size: 65%;
+    @include max-responsive($lg) {
+      background-size: 100%;
+    }
+  }
+
+  &__1 {
+    background-image: url("../images/bg1.jpg");
+  }
+
+  &__gray1 {
+    background-color: $color__grey1;
+  }
+}
+// color
+.color {
+  &__green1 {
+    color: $color__green1;
+
+    &__hover {
+      &:hover {
+        color: $color__green1;
+      }
+    }
+  }
+}
+
+//border
+.border {
+  &__gray2 {
+    border-color: $color__grey2;
+  }
+}
+//btn
+.btn {
+  padding: 6px 15px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-size: 14px;
+  justify-content: center;
+  z-index: 1;
+  text-decoration: none !important;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+
+  svg {
+    margin-right: 10px;
+  }
+}
+
+//height
+.h-full-custom {
+  height: 100%;
+  @include max-responsive($xs) {
+    height: auto;
+  }
+}
+.h-full-hidden {
+  height: 100%;
+  overflow: hidden;
+}
+
+// scrollbar
+.scrollbar {
+  scrollbar-width: thin;
+  //scrollbar-color: $color__tosca;
+
+  &::-webkit-scrollbar {
+    width: 5px;
+    height: 7px;
+    @include max-responsive($md) {
+      display: none;
+      -ms-overflow-style: none; /* IE and Edge */
+      scrollbar-width: none; /* Firefox */
+    }
+  }
+
+  &::-webkit-scrollbar-track {
+    background: rgba(224, 224, 224, 1);
+  }
+
+  &::-webkit-scrollbar-thumb {
+    //background-color: $color__tosca;
+    border-radius: 20px;
+    border: none;
+  }
+}
+
+//font-size
+
+//ul li
+.list {
+  ul,
+  ol {
+    li {
+      display: list-item;
+      list-style: disc;
+      margin: 0 0 0 20px;
+    }
+  }
+
+  &__custom {
+    ul,
+    ol {
+      li {
+        margin-bottom: 10px;
+      }
+    }
+  }
+  ul {
+    list-style-type: disc;
+    list-style-position: inside;
+  }
+  ol {
+    list-style-type: decimal;
+    list-style-position: inside;
+  }
+  ul ul,
+  ol ul {
+    list-style-type: circle;
+    list-style-position: inside;
+    margin-left: 15px;
+  }
+  ol ol,
+  ul ol {
+    list-style-type: lower-latin;
+    list-style-position: inside;
+    margin-left: 15px;
+  }
+
+  &__unlist {
+    display: flex !important;
+    list-style: none !important;
+    margin: 0 !important;
+    list-style-type: none !important;
+    list-style-position: inherit !important;
+    margin-left: 0 !important;
+    li {
+      display: flex !important;
+      list-style: none !important;
+      list-style-type: none !important;
+      margin: 0 0 0 15px !important;
+    }
+  }
+}
+
+// slider
+.slider {
+  position: static;
+  .arrow {
+    position: absolute;
+    top: 10px;
+  }
+  .prev-arrow {
+    left: 0;
+  }
+  .next-arrow {
+    right: 0;
+  }
+
+  .slick-slider {
+  }
+
+  .slick-slide {
+    margin: 0 20px;
+    @include max-responsive($lg) {
+      margin: 0 15px 0 15px;
+    }
+  }
+  .slick-list {
+    margin: 0 -20px;
+    @include max-responsive($lg) {
+      margin: 0 -15px;
+    }
+  }
+}

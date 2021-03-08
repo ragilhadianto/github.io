@@ -55,7 +55,16 @@
     .slick-disabled {
       opacity: 0.3;
     }
+
+    &--big {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+    }
   }
+
   &__dots2 {
     display: block;
     position: relative;
@@ -161,6 +170,7 @@
     p {
       font-size: 18px;
       line-height: 140%;
+      // letter-spacing: 3% !important;
     }
     strong {
       font-weight: 500;
@@ -178,18 +188,22 @@
 //location
 .location {
   &__list {
-    ul {
-      li {
+    & > ul {
+      & > li {
         @include base_transition(all);
 
         & .location__icon__white {
           display: none;
         }
-
+        img {
+          @include max-responsive($md) {
+            width: 20px;
+          }
+        }
         &:hover,
         &.active {
           @extend .bg__tosca2;
-
+          border: none;
           p {
             color: #fff;
           }
@@ -199,6 +213,19 @@
           }
           & .location__icon__white {
             display: block;
+          }
+
+          ul {
+            li {
+              &:nth-child(3) {
+                @include max-responsive($md) {
+                  img {
+                    -ms-transform: rotate(90deg); /* IE 9 */
+                    transform: rotate(90deg);
+                  }
+                }
+              }
+            }
           }
         }
       }
@@ -210,17 +237,45 @@
 .tabContact {
   display: none;
 }
+.tabContact {
+  position: relative;
+  @include min-responsive($md) {
+    position: absolute;
+    right: 0px;
+    top: 0;
+    z-index: 40;
+    width: 51%;
+  }
+
+  &__close {
+    @include max-responsive($md) {
+      width: 30px;
+    }
+  }
+}
+
 .tablinks {
   @extend .color__gray4;
   &.active {
     @extend .bg__tosca;
     color: #fff !important;
     @extend .border__tosca;
+
+    &:hover {
+      background-color: #fff !important;
+      color: $color__tosca !important;
+    }
+  }
+}
+
+.nav__jump {
+  a.active {
+    @extend .color__tosca;
+    background-color: #fff;
   }
 }
 
 //dropdown
-
 .dropbtn:hover,
 .dropbtn:focus {
   // background-color: #2980b9;
@@ -228,7 +283,6 @@
 
 .dropdown {
   position: relative;
-  display: inline-block;
 }
 
 .dropdown-content {
@@ -239,13 +293,39 @@
   overflow: auto;
   z-index: 1;
   overflow-y: auto;
-  max-height: 205px;
-  padding-top: 40px;
+  max-height: 300px;
+  // padding-top: 20px;
   @extend .scrollbar;
+
+  &__mobile {
+    @include min-responsive($md) {
+      display: block;
+      position: relative;
+      min-width: auto;
+      padding-top: 0;
+    }
+
+    @include max-responsive($md) {
+      border-radius: 35px;
+    }
+  }
+
+  p {
+    @include max-responsive($md) {
+      width: 100%;
+      margin-bottom: 5px;
+      text-decoration: none;
+    }
+  }
+
+  .h2 {
+    @include max-portrait($md) {
+      margin-top: 4px;
+    }
+  }
 }
 
 .dropdown-content a {
-  color: black;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
@@ -264,6 +344,7 @@
   width: 48px;
   height: 48px;
   padding-right: 14px;
+  z-index: 99999;
 
   span {
     width: 150px;

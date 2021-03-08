@@ -34,14 +34,14 @@
         </div>
         <div
           id="header__menu"
-          class="header__menu hidden md:block relative w-full md:w-auto top-0 left-0 bg__gray5 z-50 mt-10 md:mt-0"
+          class="header__menu hidden md:block relative md:static w-full md:w-auto top-0 left-0 bg__gray5 z-50 mt-10 md:mt-0"
         >
           <ul
             class="text-base flex flex-col md:flex-row md:items-center font-normal"
           >
             <li>
               <a
-                class="w-full px-2 md:py-10 border-b md:border-0 border__gray3 py-5"
+                class="w-full px-2 md:py-10 border-b md:border-0 border__gray3 py-5 active"
                 href="tentang.html"
                 >Tentang</a
               >
@@ -49,8 +49,7 @@
             <li>
               <a
                 class="w-full px-2 md:py-10 border-b md:border-0 border__gray3 py-5 flex flex-wrap justify-between"
-                href="javascript:void(0);"
-                onclick="toggleFunction(this)"
+                href="perawatan.html"
                 >Perawatan
                 <img
                   class="w-auto md:hidden"
@@ -58,12 +57,17 @@
                   alt=""
                 />
               </a>
+              <a
+                class="w-full h-full absolute top-0 left-0 md:hidden"
+                href="javascript:void(0);"
+                onclick="toggleFunction(this)"
+              ></a>
               <ul
                 class="absolute hidden left-0 top-0 w-full flex flex-col bg__gray5 h-full overflow-y-scroll toggle"
               >
                 <li>
                   <a
-                    class="w-full px-2 py-3 border-b border__gray3 flex flex-wrap justify-between"
+                    class="w-full px-2 py-3 border-b border__gray3 flex flex-wrap justify-between pb-5"
                     href="javascript:void(0);"
                     onclick="closeToggleFunction(this)"
                     ><img
@@ -95,6 +99,97 @@
                   <a class="w-full px-2 py-3" href="">Lainnya</a>
                 </li>
               </ul>
+
+              <!-- perawatan hover  -->
+              <div
+                class="header__menu__sub absolute left-0 right-0 top-32 mx-auto bg__gray5 z-50 hidden h-full md:h-auto"
+              >
+                <div class="container px-5 relative md:py-10">
+                  <div class="grid grid-cols-12 md:gap-10">
+                    <div
+                      class="col-span-12 md:col-span-3 bg__tosca rounded-xl h-full p-6 flex flex-wrap content-between"
+                    >
+                      <p class="text-white text-xl md:text-2xl font-light">
+                        Copy tentang Konsultasi Dokter Online lorem ipsum dolor
+                        sit amet Brighten complexion and tighten pores.
+                      </p>
+                      <div class="flex">
+                        <a
+                          href="#"
+                          class="rounded-full py-3 px-6 bg-transparent border-white border top-0 border__tosca__mobile color__tosca__mobile btn__shadow__mobile text-white"
+                          `
+                        >
+                          Konsultasi Sekarang
+                        </a>
+                      </div>
+                    </div>
+                    <div
+                      class="grid grid-cols-12 col-span-12 md:col-span-9 md:mt-0 mt-5 md:gap-10"
+                    >
+                      <div class="col-span-12 md:col-span-4">
+                        <a href="perawatan-detail.html">
+                          <div class="rounded-lg overflow-hidden">
+                            <img src="images/perawatan-1.jpg" alt="" />
+                          </div>
+                          <h3 class="color__tosca text-xl font-normal mt-5">
+                            Perawatan Dasar
+                          </h3>
+                        </a>
+                      </div>
+                      <div class="col-span-12 md:col-span-4">
+                        <a href="perawatan-detail.html">
+                          <div class="rounded-lg overflow-hidden">
+                            <img src="images/perawatan-2.jpg" alt="" />
+                          </div>
+                          <h3 class="color__tosca text-xl font-normal mt-5">
+                            Jerawat dan bopeng
+                          </h3>
+                        </a>
+                      </div>
+                      <div class="col-span-12 md:col-span-4">
+                        <a href="perawatan-detail.html">
+                          <div class="rounded-lg overflow-hidden">
+                            <img src="images/perawatan-3.jpg" alt="" />
+                          </div>
+                          <h3 class="color__tosca text-xl font-normal mt-5">
+                            Pigmentasi dan kulit kusam
+                          </h3>
+                        </a>
+                      </div>
+                      <div class="col-span-12 md:col-span-4">
+                        <a href="perawatan-detail.html">
+                          <div class="rounded-lg overflow-hidden">
+                            <img src="images/perawatan-4.jpg" alt="" />
+                          </div>
+                          <h3 class="color__tosca text-xl font-normal mt-5">
+                            Wajah dan kulit menua
+                          </h3>
+                        </a>
+                      </div>
+                      <div class="col-span-12 md:col-span-4">
+                        <a href="perawatan-detail.html">
+                          <div class="rounded-lg overflow-hidden">
+                            <img src="images/perawatan-5.jpg" alt="" />
+                          </div>
+                          <h3 class="color__tosca text-xl font-normal mt-5">
+                            Contouring
+                          </h3>
+                        </a>
+                      </div>
+                      <div class="col-span-12 md:col-span-4">
+                        <a href="perawatan-detail.html">
+                          <div class="rounded-lg overflow-hidden">
+                            <img src="images/perawatan-6.jpg" alt="" />
+                          </div>
+                          <h3 class="color__tosca text-xl font-normal mt-5">
+                            Layanan lainnya
+                          </h3>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </li>
             <li>
               <a
@@ -106,7 +201,7 @@
             <li>
               <a
                 class="w-full px-2 md:py-10 border-b md:border-0 border__gray3 py-5 flex flex-wrap justify-between"
-                href="javascript:void(0);"
+                href="berita-promo.html"
                 onclick="toggleFunction(this)"
                 >Berita & Promo
                 <img
@@ -115,12 +210,17 @@
                   alt=""
                 />
               </a>
+              <a
+                class="w-full h-full absolute top-0 left-0 md:hidden"
+                href="javascript:void(0);"
+                onclick="toggleFunction(this)"
+              ></a>
               <ul
                 class="absolute hidden left-0 top-0 w-full flex flex-col bg__gray5 h-full overflow-y-scroll toggle"
               >
                 <li>
                   <a
-                    class="w-full px-2 py-3 border-b border__gray3 flex flex-wrap justify-between"
+                    class="w-full pb-5 px-2 py-3 border-b border__gray3 flex flex-wrap justify-between"
                     href="javascript:void(0);"
                     onclick="closeToggleFunction(this)"
                     ><img
@@ -141,8 +241,74 @@
                   <a class="w-full px-2 py-3" href="">Blog </a>
                 </li>
               </ul>
+              <!-- berita  hover  -->
+              <div
+                class="header__menu__sub absolute left-0 right-0 top-32 mx-auto bg__gray5 z-50 hidden h-full md:h-auto"
+              >
+                <div class="container px-5 relative md:py-10">
+                  <div class="grid grid-cols-12 md:gap-10">
+                    <div
+                      class="col-span-12 md:col-span-3 bg__tosca rounded-xl min-h-full h-full p-6 flex flex-wrap content-between"
+                    >
+                      <p class="text-white text-xl md:text-2xl font-light">
+                        Copy tentang Konsultasi Dokter Online lorem ipsum dolor
+                        sit amet Brighten complexion and tighten pores.
+                      </p>
+                    </div>
+                    <div
+                      class="grid grid-cols-12 col-span-12 md:col-span-9 md:mt-0 mt-5 md:gap-10"
+                    >
+                      <div class="col-span-12 md:col-span-4">
+                        <a href="perawatan-detail.html">
+                          <div class="rounded-lg overflow-hidden">
+                            <img src="images/perawatan-1.jpg" alt="" />
+                          </div>
+                          <h3 class="color__tosca text-xl font-normal mt-5">
+                            Promo Spesial
+                          </h3>
+                          <p class="mt-2 font-normal">
+                            Menyajikan pelayanan kesehatan kulit oleh para ahli
+                            kecantikan terlatih dan dokter berpengalaman dan
+                            didukung oleh teknologi kecantikan modern.
+                          </p>
+                        </a>
+                      </div>
+                      <div class="col-span-12 md:col-span-4">
+                        <a href="perawatan-detail.html">
+                          <div class="rounded-lg overflow-hidden">
+                            <img src="images/perawatan-2.jpg" alt="" />
+                          </div>
+                          <h3 class="color__tosca text-xl font-normal mt-5">
+                            Acara dan Kegiatan
+                          </h3>
+                          <p class="mt-2 font-normal">
+                            Menyajikan pelayanan kesehatan kulit oleh para ahli
+                            kecantikan terlatih dan dokter berpengalaman dan
+                            didukung oleh teknologi kecantikan modern.
+                          </p>
+                        </a>
+                      </div>
+                      <div class="col-span-12 md:col-span-4">
+                        <a href="perawatan-detail.html">
+                          <div class="rounded-lg overflow-hidden">
+                            <img src="images/perawatan-3.jpg" alt="" />
+                          </div>
+                          <h3 class="color__tosca text-xl font-normal mt-5">
+                            Blog
+                          </h3>
+                          <p class="mt-2 font-normal">
+                            Menyajikan pelayanan kesehatan kulit oleh para ahli
+                            kecantikan terlatih dan dokter berpengalaman dan
+                            didukung oleh teknologi kecantikan modern.
+                          </p>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </li>
-            <!--  -->
+
             <li>
               <a
                 class="w-full px-2 md:py-10 border-b md:border-0 border__gray3 py-5"
@@ -229,7 +395,7 @@
         <!-- section -->
         <div class="grid grid-cols-12 md:gap-10 gap-y-5 md:gap-y-16 md:mt-14">
           <div class="col-span-12 md:col-span-6">
-            <div class="rounded-lg overflow-hidden">
+            <div class="rounded-lg overflow-hidden photoFit">
               <img src="images/tentang1.jpg" alt="" />
             </div>
           </div>
@@ -251,32 +417,32 @@
             <div class="mt-2 flex flex-wrap pr-14 nav__item">
               <a
                 href="#page-section1"
-                class="rounded-full py-3 px-6 bg-transparent border-white border border__gray4 color__gray4 font-normal text-sm md:text-xl mr-4 mt-4"
+                class="btn__transparant rounded-full py-3 px-6 bg-transparent border-white border border__gray4 color__gray4 font-normal text-sm md:text-xl mr-3 mt-3"
                 >Peeling</a
               >
               <a
                 href="#page-section2"
-                class="rounded-full py-3 px-6 bg-transparent border-white border border__gray4 color__gray4 font-normal text-sm md:text-xl mr-4 mt-4"
+                class="btn__transparant rounded-full py-3 px-6 bg-transparent border-white border border__gray4 color__gray4 font-normal text-sm md:text-xl mr-3 mt-3"
                 >Laser CO2</a
               >
               <a
                 href="#page-section3"
-                class="rounded-full py-3 px-6 bg-transparent border-white border border__gray4 color__gray4 font-normal text-sm md:text-xl mr-4 mt-4"
+                class="btn__transparant rounded-full py-3 px-6 bg-transparent border-white border border__gray4 color__gray4 font-normal text-sm md:text-xl mr-3 mt-3"
                 >Laser NdYAG</a
               >
               <a
                 href="#page-section4"
-                class="rounded-full py-3 px-6 bg-transparent border-white border border__gray4 color__gray4 font-normal text-sm md:text-xl mr-4 mt-4"
+                class="btn__transparant rounded-full py-3 px-6 bg-transparent border-white border border__gray4 color__gray4 font-normal text-sm md:text-xl mr-3 mt-3"
                 >VPL</a
               >
               <a
                 href="#page-section5"
-                class="rounded-full py-3 px-6 bg-transparent border-white border border__gray4 color__gray4 font-normal text-sm md:text-xl mr-4 mt-4"
+                class="btn__transparant rounded-full py-3 px-6 bg-transparent border-white border border__gray4 color__gray4 font-normal text-sm md:text-xl mr-3 mt-3"
                 >Dermapen (whitening)</a
               >
               <a
                 href="#page-section6"
-                class="rounded-full py-3 px-6 bg-transparent border-white border border__gray4 color__gray4 font-normal text-sm md:text-xl mr-4 mt-4"
+                class="btn__transparant rounded-full py-3 px-6 bg-transparent border-white border border__gray4 color__gray4 font-normal text-sm md:text-xl mr-3 mt-3"
                 >Skin booster</a
               >
             </div>
@@ -341,7 +507,7 @@
             <div class="dropdown w-full font-medium">
               <div
                 onclick="dropdownFunction(this)"
-                class="flex justify-center md:justify-start dropbtn w-full bg-white rounded-full py-4 px-6 btn__shadow cursor-pointer"
+                class="flex justify-center md:justify-start dropbtn w-full bg-white rounded-full py-4 px-6 btn__shadow cursor-pointer font-normal"
               >
                 Tersedia pada Klinik
 
@@ -352,7 +518,7 @@
                 />
               </div>
               <div
-                class="myDropdown dropdown-content w-full bg-white rounded-xl py-3 px-6 text-md top-0 btn__shadow"
+                class="myDropdown dropdown-content w-full bg-white rounded-xl text-xs md:text-lg py-10 px-5 md:py-10 md:px-10 text-md top-0 btn__shadow font-normal"
               >
                 <img
                   class="w-auto absolute top-5 m-auto right-5"
@@ -361,27 +527,27 @@
                 />
                 <div class="flex justify-between flex-wrap py-3">
                   <p>dasdasd, Jakarta Selatan</p>
-                  <p class="color__tosca">0878-7291-1916</p>
+                  <p class="color__tosca underline">0878-7291-1916</p>
                 </div>
                 <div class="flex justify-between flex-wrap py-3">
                   <p>adasd, Jakarta Selatan</p>
-                  <p class="color__tosca">0878-7291-1916</p>
+                  <p class="color__tosca underline">0878-7291-1916</p>
                 </div>
                 <div class="flex justify-between flex-wrap py-3">
                   <p>Tebet, Jakarta Selatan</p>
-                  <p class="color__tosca">0878-7291-1916</p>
+                  <p class="color__tosca underline">0878-7291-1916</p>
                 </div>
                 <div class="flex justify-between flex-wrap py-3">
                   <p>Tebet, Jakarta Selatan</p>
-                  <p class="color__tosca">0878-7291-1916</p>
+                  <p class="color__tosca underline">0878-7291-1916</p>
                 </div>
                 <div class="flex justify-between flex-wrap py-3">
                   <p>Tebet, Jakarta Selatan</p>
-                  <p class="color__tosca">0878-7291-1916</p>
+                  <p class="color__tosca underline">0878-7291-1916</p>
                 </div>
                 <div class="flex justify-between flex-wrap py-3">
                   <p>Tebet, Jakarta Selatan</p>
-                  <p class="color__tosca">0878-7291-1916</p>
+                  <p class="color__tosca underline">0878-7291-1916</p>
                 </div>
               </div>
             </div>
@@ -446,7 +612,7 @@
             <div class="dropdown w-full font-medium">
               <div
                 onclick="dropdownFunction(this)"
-                class="flex justify-center md:justify-start dropbtn w-full bg-white rounded-full py-4 px-6 btn__shadow cursor-pointer"
+                class="flex justify-center md:justify-start dropbtn w-full bg-white rounded-full py-4 px-6 btn__shadow cursor-pointer font-normal"
               >
                 Tersedia pada Klinik
 
@@ -457,7 +623,7 @@
                 />
               </div>
               <div
-                class="myDropdown dropdown-content w-full bg-white rounded-xl py-3 px-6 text-md top-0 btn__shadow"
+                class="myDropdown dropdown-content w-full bg-white rounded-xl text-xs md:text-lg py-10 px-5 md:py-10 md:px-10 text-md top-0 btn__shadow font-normal"
               >
                 <img
                   class="w-auto absolute top-5 m-auto right-5"
@@ -466,27 +632,27 @@
                 />
                 <div class="flex justify-between flex-wrap py-3">
                   <p>Tebet, Jakarta Selatan</p>
-                  <p class="color__tosca">0878-7291-1916</p>
+                  <p class="color__tosca underline">0878-7291-1916</p>
                 </div>
                 <div class="flex justify-between flex-wrap py-3">
                   <p>Tebet, Jakarta Selatan</p>
-                  <p class="color__tosca">0878-7291-1916</p>
+                  <p class="color__tosca underline">0878-7291-1916</p>
                 </div>
                 <div class="flex justify-between flex-wrap py-3">
                   <p>Tebet, Jakarta Selatan</p>
-                  <p class="color__tosca">0878-7291-1916</p>
+                  <p class="color__tosca underline">0878-7291-1916</p>
                 </div>
                 <div class="flex justify-between flex-wrap py-3">
                   <p>Tebet, Jakarta Selatan</p>
-                  <p class="color__tosca">0878-7291-1916</p>
+                  <p class="color__tosca underline">0878-7291-1916</p>
                 </div>
                 <div class="flex justify-between flex-wrap py-3">
                   <p>Tebet, Jakarta Selatan</p>
-                  <p class="color__tosca">0878-7291-1916</p>
+                  <p class="color__tosca underline">0878-7291-1916</p>
                 </div>
                 <div class="flex justify-between flex-wrap py-3">
                   <p>Tebet, Jakarta Selatan</p>
-                  <p class="color__tosca">0878-7291-1916</p>
+                  <p class="color__tosca underline">0878-7291-1916</p>
                 </div>
               </div>
             </div>
@@ -551,7 +717,7 @@
             <div class="dropdown w-full font-medium">
               <div
                 onclick="dropdownFunction(this)"
-                class="flex justify-center md:justify-start dropbtn w-full bg-white rounded-full py-4 px-6 btn__shadow cursor-pointer"
+                class="flex justify-center md:justify-start dropbtn w-full bg-white rounded-full py-4 px-6 btn__shadow cursor-pointer font-normal"
               >
                 Tersedia pada Klinik
 
@@ -562,7 +728,7 @@
                 />
               </div>
               <div
-                class="myDropdown dropdown-content w-full bg-white rounded-xl py-3 px-6 text-md top-0 btn__shadow"
+                class="myDropdown dropdown-content w-full bg-white rounded-xl text-xs md:text-lg py-10 px-5 md:py-10 md:px-10 text-md top-0 btn__shadow font-normal"
               >
                 <img
                   class="w-auto absolute top-5 m-auto right-5"
@@ -571,27 +737,27 @@
                 />
                 <div class="flex justify-between flex-wrap py-3">
                   <p>123, Jakarta Selatan</p>
-                  <p class="color__tosca">0878-7291-1916</p>
+                  <p class="color__tosca underline">0878-7291-1916</p>
                 </div>
                 <div class="flex justify-between flex-wrap py-3">
                   <p>123, Jakarta Selatan</p>
-                  <p class="color__tosca">0878-7291-1916</p>
+                  <p class="color__tosca underline">0878-7291-1916</p>
                 </div>
                 <div class="flex justify-between flex-wrap py-3">
                   <p>Tebet, Jakarta Selatan</p>
-                  <p class="color__tosca">0878-7291-1916</p>
+                  <p class="color__tosca underline">0878-7291-1916</p>
                 </div>
                 <div class="flex justify-between flex-wrap py-3">
                   <p>Tebet, Jakarta Selatan</p>
-                  <p class="color__tosca">0878-7291-1916</p>
+                  <p class="color__tosca underline">0878-7291-1916</p>
                 </div>
                 <div class="flex justify-between flex-wrap py-3">
                   <p>Tebet, Jakarta Selatan</p>
-                  <p class="color__tosca">0878-7291-1916</p>
+                  <p class="color__tosca underline">0878-7291-1916</p>
                 </div>
                 <div class="flex justify-between flex-wrap py-3">
                   <p>Tebet, Jakarta Selatan</p>
-                  <p class="color__tosca">0878-7291-1916</p>
+                  <p class="color__tosca underline">0878-7291-1916</p>
                 </div>
               </div>
             </div>
@@ -655,7 +821,7 @@
             <div class="dropdown w-full font-medium">
               <div
                 onclick="dropdownFunction(this)"
-                class="flex justify-center md:justify-start dropbtn w-full bg-white rounded-full py-4 px-6 btn__shadow cursor-pointer"
+                class="flex justify-center md:justify-start dropbtn w-full bg-white rounded-full py-4 px-6 btn__shadow cursor-pointer font-normal"
               >
                 Tersedia pada Klinik
 
@@ -666,7 +832,7 @@
                 />
               </div>
               <div
-                class="myDropdown dropdown-content w-full bg-white rounded-xl py-3 px-6 text-md top-0 btn__shadow"
+                class="myDropdown dropdown-content w-full bg-white rounded-xl text-xs md:text-lg py-10 px-5 md:py-10 md:px-10 text-md top-0 btn__shadow font-normal"
               >
                 <img
                   class="w-auto absolute top-5 m-auto right-5"
@@ -675,27 +841,27 @@
                 />
                 <div class="flex justify-between flex-wrap py-3">
                   <p>321321312, Jakarta Selatan</p>
-                  <p class="color__tosca">0878-7291-1916</p>
+                  <p class="color__tosca underline">0878-7291-1916</p>
                 </div>
                 <div class="flex justify-between flex-wrap py-3">
                   <p>Tebet, Jakarta Selatan</p>
-                  <p class="color__tosca">0878-7291-1916</p>
+                  <p class="color__tosca underline">0878-7291-1916</p>
                 </div>
                 <div class="flex justify-between flex-wrap py-3">
                   <p>Tebet, Jakarta Selatan</p>
-                  <p class="color__tosca">0878-7291-1916</p>
+                  <p class="color__tosca underline">0878-7291-1916</p>
                 </div>
                 <div class="flex justify-between flex-wrap py-3">
                   <p>Tebet, Jakarta Selatan</p>
-                  <p class="color__tosca">0878-7291-1916</p>
+                  <p class="color__tosca underline">0878-7291-1916</p>
                 </div>
                 <div class="flex justify-between flex-wrap py-3">
                   <p>Tebet, Jakarta Selatan</p>
-                  <p class="color__tosca">0878-7291-1916</p>
+                  <p class="color__tosca underline">0878-7291-1916</p>
                 </div>
                 <div class="flex justify-between flex-wrap py-3">
                   <p>Tebet, Jakarta Selatan</p>
-                  <p class="color__tosca">0878-7291-1916</p>
+                  <p class="color__tosca underline">0878-7291-1916</p>
                 </div>
               </div>
             </div>
@@ -759,7 +925,7 @@
             <div class="dropdown w-full font-medium">
               <div
                 onclick="dropdownFunction(this)"
-                class="flex justify-center md:justify-start dropbtn w-full bg-white rounded-full py-4 px-6 btn__shadow cursor-pointer"
+                class="flex justify-center md:justify-start dropbtn w-full bg-white rounded-full py-4 px-6 btn__shadow cursor-pointer font-normal"
               >
                 Tersedia pada Klinik
 
@@ -770,7 +936,7 @@
                 />
               </div>
               <div
-                class="myDropdown dropdown-content w-full bg-white rounded-xl py-3 px-6 text-md top-0 btn__shadow"
+                class="myDropdown dropdown-content w-full bg-white rounded-xl text-xs md:text-lg py-10 px-5 md:py-10 md:px-10 text-md top-0 btn__shadow font-normal"
               >
                 <img
                   class="w-auto absolute top-5 m-auto right-5"
@@ -779,27 +945,27 @@
                 />
                 <div class="flex justify-between flex-wrap py-3">
                   <p>456456, Jakarta Selatan</p>
-                  <p class="color__tosca">0878-7291-1916</p>
+                  <p class="color__tosca underline">0878-7291-1916</p>
                 </div>
                 <div class="flex justify-between flex-wrap py-3">
                   <p>Tebet, Jakarta Selatan</p>
-                  <p class="color__tosca">0878-7291-1916</p>
+                  <p class="color__tosca underline">0878-7291-1916</p>
                 </div>
                 <div class="flex justify-between flex-wrap py-3">
                   <p>Tebet, Jakarta Selatan</p>
-                  <p class="color__tosca">0878-7291-1916</p>
+                  <p class="color__tosca underline">0878-7291-1916</p>
                 </div>
                 <div class="flex justify-between flex-wrap py-3">
                   <p>Tebet, Jakarta Selatan</p>
-                  <p class="color__tosca">0878-7291-1916</p>
+                  <p class="color__tosca underline">0878-7291-1916</p>
                 </div>
                 <div class="flex justify-between flex-wrap py-3">
                   <p>Tebet, Jakarta Selatan</p>
-                  <p class="color__tosca">0878-7291-1916</p>
+                  <p class="color__tosca underline">0878-7291-1916</p>
                 </div>
                 <div class="flex justify-between flex-wrap py-3">
                   <p>Tebet, Jakarta Selatan</p>
-                  <p class="color__tosca">0878-7291-1916</p>
+                  <p class="color__tosca underline">0878-7291-1916</p>
                 </div>
               </div>
             </div>
@@ -863,7 +1029,7 @@
             <div class="dropdown w-full font-medium">
               <div
                 onclick="dropdownFunction(this)"
-                class="flex justify-center md:justify-start dropbtn w-full bg-white rounded-full py-4 px-6 btn__shadow cursor-pointer"
+                class="flex justify-center md:justify-start dropbtn w-full bg-white rounded-full py-4 px-6 btn__shadow cursor-pointer font-normal"
               >
                 Tersedia pada Klinik
 
@@ -874,7 +1040,7 @@
                 />
               </div>
               <div
-                class="myDropdown dropdown-content w-full bg-white rounded-xl py-3 px-6 text-md top-0 btn__shadow"
+                class="myDropdown dropdown-content w-full bg-white rounded-xl text-xs md:text-lg py-10 px-5 md:py-10 md:px-10 text-md top-0 btn__shadow font-normal"
               >
                 <img
                   class="w-auto absolute top-5 m-auto right-5"
@@ -883,27 +1049,27 @@
                 />
                 <div class="flex justify-between flex-wrap py-3">
                   <p>789789, Jakarta Selatan</p>
-                  <p class="color__tosca">0878-7291-1916</p>
+                  <p class="color__tosca underline">0878-7291-1916</p>
                 </div>
                 <div class="flex justify-between flex-wrap py-3">
                   <p>Tebet, Jakarta Selatan</p>
-                  <p class="color__tosca">0878-7291-1916</p>
+                  <p class="color__tosca underline">0878-7291-1916</p>
                 </div>
                 <div class="flex justify-between flex-wrap py-3">
                   <p>Tebet, Jakarta Selatan</p>
-                  <p class="color__tosca">0878-7291-1916</p>
+                  <p class="color__tosca underline">0878-7291-1916</p>
                 </div>
                 <div class="flex justify-between flex-wrap py-3">
                   <p>Tebet, Jakarta Selatan</p>
-                  <p class="color__tosca">0878-7291-1916</p>
+                  <p class="color__tosca underline">0878-7291-1916</p>
                 </div>
                 <div class="flex justify-between flex-wrap py-3">
                   <p>Tebet, Jakarta Selatan</p>
-                  <p class="color__tosca">0878-7291-1916</p>
+                  <p class="color__tosca underline">0878-7291-1916</p>
                 </div>
                 <div class="flex justify-between flex-wrap py-3">
                   <p>Tebet, Jakarta Selatan</p>
-                  <p class="color__tosca">0878-7291-1916</p>
+                  <p class="color__tosca underline">0878-7291-1916</p>
                 </div>
               </div>
             </div>
@@ -915,11 +1081,13 @@
           class="grid grid-cols-12 md:gap-10 md:gap-y-20 mt-20 items-end flex justify-center pt-14 mt-14 border-t border__gray3"
         >
           <div class="col-span-12 flex md:justify-between justify-center">
-            <h3 class="h2 color__gray4">Rekomendasi Produk</h3>
+            <h3 class="text-2xl lettter3percent color__gray4">
+              Rekomendasi Produk
+            </h3>
             <div class="flex md:block hidden">
               <a
                 href="produk.html"
-                class="rounded-full py-3 px-6 bg-transparent border top-0 color__tosca border__tosca font-normal btn__shadow"
+                class="rounded-full py-3 px-6 btn__white bg-white border top-0 color__tosca border__tosca font-normal btn__shadow"
               >
                 Lihat selengkapnya
               </a>
@@ -933,7 +1101,9 @@
                     <img src="images/produk1.png" alt="" />
                   </div>
                   <div class="mt-5">
-                    <p class="text-lg font-medium">Krim Anti Penuaan Wajah</p>
+                    <p class="text-lg md:text-2xl font-medium">
+                      Krim Anti Penuaan Wajah
+                    </p>
                     <small class="text-sm mt-1 block"
                       >SPF 30 yang cocok untuk semua jenis kulit.</small
                     >
@@ -947,7 +1117,9 @@
                     <img src="images/produk1.png" alt="" />
                   </div>
                   <div class="mt-5">
-                    <p class="text-lg font-medium">Krim Anti Penuaan Wajah</p>
+                    <p class="text-lg md:text-2xl font-medium">
+                      Krim Anti Penuaan Wajah
+                    </p>
                     <small class="text-sm mt-1 block"
                       >SPF 30 yang cocok untuk semua jenis kulit.</small
                     >
@@ -961,7 +1133,9 @@
                     <img src="images/produk2.png" alt="" />
                   </div>
                   <div class="mt-5">
-                    <p class="text-lg font-medium">Krim Anti Penuaan Wajah</p>
+                    <p class="text-lg md:text-2xl font-medium">
+                      Krim Anti Penuaan Wajah
+                    </p>
                     <small class="text-sm mt-1 block"
                       >SPF 30 yang cocok untuk semua jenis kulit.</small
                     >
@@ -975,7 +1149,9 @@
                     <img src="images/produk3.png" alt="" />
                   </div>
                   <div class="mt-5">
-                    <p class="text-lg font-medium">Krim Anti Penuaan Wajah</p>
+                    <p class="text-lg md:text-2xl font-medium">
+                      Krim Anti Penuaan Wajah
+                    </p>
                     <small class="text-sm mt-1 block"
                       >SPF 30 yang cocok untuk semua jenis kulit.</small
                     >
@@ -989,7 +1165,9 @@
                     <img src="images/produk2.png" alt="" />
                   </div>
                   <div class="mt-5">
-                    <p class="text-lg font-medium">Krim Anti Penuaan Wajah</p>
+                    <p class="text-lg md:text-2xl font-medium">
+                      Krim Anti Penuaan Wajah
+                    </p>
                     <small class="text-sm mt-1 block"
                       >SPF 30 yang cocok untuk semua jenis kulit.</small
                     >
@@ -1007,7 +1185,7 @@
             <div class="flex">
               <a
                 href="produk.html"
-                class="rounded-full py-3 px-6 bg-transparent border top-0 color__tosca border__tosca font-normal btn__shadow"
+                class="rounded-full py-3 px-6 btn__white bg-white border top-0 color__tosca border__tosca font-normal btn__shadow"
               >
                 Lihat selengkapnya
               </a>
@@ -1072,7 +1250,7 @@
           </div>
 
           <div class="col-span-12 md:col-span-6">
-            <div class="my-10 grid grid-cols-12 md:gap-10">
+            <div class="my-10 grid grid-cols-12 md:gap-5">
               <ul class="col-span-12 md:col-span-4 mb-5 md:mb-0">
                 <li
                   class="md:block leading-7 tracking-wider text-sm mr-2 uppercase font-bold"

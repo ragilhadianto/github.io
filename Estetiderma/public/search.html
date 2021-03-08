@@ -34,14 +34,14 @@
         </div>
         <div
           id="header__menu"
-          class="header__menu hidden md:block relative w-full md:w-auto top-0 left-0 bg__gray5 z-50 mt-10 md:mt-0"
+          class="header__menu hidden md:block relative md:static w-full md:w-auto top-0 left-0 bg__gray5 z-50 mt-10 md:mt-0"
         >
           <ul
             class="text-base flex flex-col md:flex-row md:items-center font-normal"
           >
             <li>
               <a
-                class="w-full px-2 md:py-10 border-b md:border-0 border__gray3 py-5"
+                class="w-full px-2 md:py-10 border-b md:border-0 border__gray3 py-5 active"
                 href="tentang.html"
                 >Tentang</a
               >
@@ -49,8 +49,7 @@
             <li>
               <a
                 class="w-full px-2 md:py-10 border-b md:border-0 border__gray3 py-5 flex flex-wrap justify-between"
-                href="javascript:void(0);"
-                onclick="toggleFunction(this)"
+                href="perawatan.html"
                 >Perawatan
                 <img
                   class="w-auto md:hidden"
@@ -58,12 +57,17 @@
                   alt=""
                 />
               </a>
+              <a
+                class="w-full h-full absolute top-0 left-0 md:hidden"
+                href="javascript:void(0);"
+                onclick="toggleFunction(this)"
+              ></a>
               <ul
                 class="absolute hidden left-0 top-0 w-full flex flex-col bg__gray5 h-full overflow-y-scroll toggle"
               >
                 <li>
                   <a
-                    class="w-full px-2 py-3 border-b border__gray3 flex flex-wrap justify-between"
+                    class="w-full px-2 py-3 border-b border__gray3 flex flex-wrap justify-between pb-5"
                     href="javascript:void(0);"
                     onclick="closeToggleFunction(this)"
                     ><img
@@ -95,6 +99,97 @@
                   <a class="w-full px-2 py-3" href="">Lainnya</a>
                 </li>
               </ul>
+
+              <!-- perawatan hover  -->
+              <div
+                class="header__menu__sub absolute left-0 right-0 top-32 mx-auto bg__gray5 z-50 hidden h-full md:h-auto"
+              >
+                <div class="container px-5 relative md:py-10">
+                  <div class="grid grid-cols-12 md:gap-10">
+                    <div
+                      class="col-span-12 md:col-span-3 bg__tosca rounded-xl h-full p-6 flex flex-wrap content-between"
+                    >
+                      <p class="text-white text-xl md:text-2xl font-light">
+                        Copy tentang Konsultasi Dokter Online lorem ipsum dolor
+                        sit amet Brighten complexion and tighten pores.
+                      </p>
+                      <div class="flex">
+                        <a
+                          href="#"
+                          class="rounded-full py-3 px-6 bg-transparent border-white border top-0 border__tosca__mobile color__tosca__mobile btn__shadow__mobile text-white"
+                          `
+                        >
+                          Konsultasi Sekarang
+                        </a>
+                      </div>
+                    </div>
+                    <div
+                      class="grid grid-cols-12 col-span-12 md:col-span-9 md:mt-0 mt-5 md:gap-10"
+                    >
+                      <div class="col-span-12 md:col-span-4">
+                        <a href="perawatan-detail.html">
+                          <div class="rounded-lg overflow-hidden">
+                            <img src="images/perawatan-1.jpg" alt="" />
+                          </div>
+                          <h3 class="color__tosca text-xl font-normal mt-5">
+                            Perawatan Dasar
+                          </h3>
+                        </a>
+                      </div>
+                      <div class="col-span-12 md:col-span-4">
+                        <a href="perawatan-detail.html">
+                          <div class="rounded-lg overflow-hidden">
+                            <img src="images/perawatan-2.jpg" alt="" />
+                          </div>
+                          <h3 class="color__tosca text-xl font-normal mt-5">
+                            Jerawat dan bopeng
+                          </h3>
+                        </a>
+                      </div>
+                      <div class="col-span-12 md:col-span-4">
+                        <a href="perawatan-detail.html">
+                          <div class="rounded-lg overflow-hidden">
+                            <img src="images/perawatan-3.jpg" alt="" />
+                          </div>
+                          <h3 class="color__tosca text-xl font-normal mt-5">
+                            Pigmentasi dan kulit kusam
+                          </h3>
+                        </a>
+                      </div>
+                      <div class="col-span-12 md:col-span-4">
+                        <a href="perawatan-detail.html">
+                          <div class="rounded-lg overflow-hidden">
+                            <img src="images/perawatan-4.jpg" alt="" />
+                          </div>
+                          <h3 class="color__tosca text-xl font-normal mt-5">
+                            Wajah dan kulit menua
+                          </h3>
+                        </a>
+                      </div>
+                      <div class="col-span-12 md:col-span-4">
+                        <a href="perawatan-detail.html">
+                          <div class="rounded-lg overflow-hidden">
+                            <img src="images/perawatan-5.jpg" alt="" />
+                          </div>
+                          <h3 class="color__tosca text-xl font-normal mt-5">
+                            Contouring
+                          </h3>
+                        </a>
+                      </div>
+                      <div class="col-span-12 md:col-span-4">
+                        <a href="perawatan-detail.html">
+                          <div class="rounded-lg overflow-hidden">
+                            <img src="images/perawatan-6.jpg" alt="" />
+                          </div>
+                          <h3 class="color__tosca text-xl font-normal mt-5">
+                            Layanan lainnya
+                          </h3>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </li>
             <li>
               <a
@@ -106,7 +201,7 @@
             <li>
               <a
                 class="w-full px-2 md:py-10 border-b md:border-0 border__gray3 py-5 flex flex-wrap justify-between"
-                href="javascript:void(0);"
+                href="berita-promo.html"
                 onclick="toggleFunction(this)"
                 >Berita & Promo
                 <img
@@ -115,12 +210,17 @@
                   alt=""
                 />
               </a>
+              <a
+                class="w-full h-full absolute top-0 left-0 md:hidden"
+                href="javascript:void(0);"
+                onclick="toggleFunction(this)"
+              ></a>
               <ul
                 class="absolute hidden left-0 top-0 w-full flex flex-col bg__gray5 h-full overflow-y-scroll toggle"
               >
                 <li>
                   <a
-                    class="w-full px-2 py-3 border-b border__gray3 flex flex-wrap justify-between"
+                    class="w-full pb-5 px-2 py-3 border-b border__gray3 flex flex-wrap justify-between"
                     href="javascript:void(0);"
                     onclick="closeToggleFunction(this)"
                     ><img
@@ -141,8 +241,74 @@
                   <a class="w-full px-2 py-3" href="">Blog </a>
                 </li>
               </ul>
+              <!-- berita  hover  -->
+              <div
+                class="header__menu__sub absolute left-0 right-0 top-32 mx-auto bg__gray5 z-50 hidden h-full md:h-auto"
+              >
+                <div class="container px-5 relative md:py-10">
+                  <div class="grid grid-cols-12 md:gap-10">
+                    <div
+                      class="col-span-12 md:col-span-3 bg__tosca rounded-xl min-h-full h-full p-6 flex flex-wrap content-between"
+                    >
+                      <p class="text-white text-xl md:text-2xl font-light">
+                        Copy tentang Konsultasi Dokter Online lorem ipsum dolor
+                        sit amet Brighten complexion and tighten pores.
+                      </p>
+                    </div>
+                    <div
+                      class="grid grid-cols-12 col-span-12 md:col-span-9 md:mt-0 mt-5 md:gap-10"
+                    >
+                      <div class="col-span-12 md:col-span-4">
+                        <a href="perawatan-detail.html">
+                          <div class="rounded-lg overflow-hidden">
+                            <img src="images/perawatan-1.jpg" alt="" />
+                          </div>
+                          <h3 class="color__tosca text-xl font-normal mt-5">
+                            Promo Spesial
+                          </h3>
+                          <p class="mt-2 font-normal">
+                            Menyajikan pelayanan kesehatan kulit oleh para ahli
+                            kecantikan terlatih dan dokter berpengalaman dan
+                            didukung oleh teknologi kecantikan modern.
+                          </p>
+                        </a>
+                      </div>
+                      <div class="col-span-12 md:col-span-4">
+                        <a href="perawatan-detail.html">
+                          <div class="rounded-lg overflow-hidden">
+                            <img src="images/perawatan-2.jpg" alt="" />
+                          </div>
+                          <h3 class="color__tosca text-xl font-normal mt-5">
+                            Acara dan Kegiatan
+                          </h3>
+                          <p class="mt-2 font-normal">
+                            Menyajikan pelayanan kesehatan kulit oleh para ahli
+                            kecantikan terlatih dan dokter berpengalaman dan
+                            didukung oleh teknologi kecantikan modern.
+                          </p>
+                        </a>
+                      </div>
+                      <div class="col-span-12 md:col-span-4">
+                        <a href="perawatan-detail.html">
+                          <div class="rounded-lg overflow-hidden">
+                            <img src="images/perawatan-3.jpg" alt="" />
+                          </div>
+                          <h3 class="color__tosca text-xl font-normal mt-5">
+                            Blog
+                          </h3>
+                          <p class="mt-2 font-normal">
+                            Menyajikan pelayanan kesehatan kulit oleh para ahli
+                            kecantikan terlatih dan dokter berpengalaman dan
+                            didukung oleh teknologi kecantikan modern.
+                          </p>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </li>
-            <!--  -->
+
             <li>
               <a
                 class="w-full px-2 md:py-10 border-b md:border-0 border__gray3 py-5"
@@ -384,7 +550,7 @@
                   <a
                     href="http://"
                     target="_blank"
-                    class="rounded-full py-3 px-6 bg-transparent border border__tosca color__tosca overflow-hidden"
+                    class="rounded-full py-3 px-6 bg-white border border__tosca color__tosca overflow-hidden"
                   >
                     <img src="images/tokopedia.png" alt="" />
                   </a>
@@ -393,7 +559,7 @@
                   <a
                     href="http://"
                     target="_blank"
-                    class="rounded-full py-3 px-6 bg-transparent border border__tosca color__tosca overflow-hidden"
+                    class="rounded-full py-3 px-6 bg-white border border__tosca color__tosca overflow-hidden"
                   >
                     <img src="images/shoope.png" alt="" />
                   </a>
@@ -460,7 +626,7 @@
           </div>
 
           <div class="col-span-12 md:col-span-6">
-            <div class="my-10 grid grid-cols-12 md:gap-10">
+            <div class="my-10 grid grid-cols-12 md:gap-5">
               <ul class="col-span-12 md:col-span-4 mb-5 md:mb-0">
                 <li
                   class="md:block leading-7 tracking-wider text-sm mr-2 uppercase font-bold"

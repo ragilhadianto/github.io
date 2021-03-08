@@ -9,67 +9,381 @@
     <title>Estetiderma</title>
   </head>
   <body>
-    <!-- topbar -->
-    <div class="text-center bg__gray1 text-white py-3 text-sm">
-      <p>Nikmati ongkos kirim gratis dengan pembelian minimal Rp50.000</p>
-    </div>
     <!-- header -->
-    <div class="header">
-      <div class="container px-5">
-        <div class="flex justify-between items-center">
+    <div
+      class="header relative z-50 w-full h-full overflow-y-auto md:overflow-y-visible"
+    >
+      <!-- topbar -->
+      <div class="text-center bg__gray1 text-white py-3 text-sm">
+        <p>Nikmati ongkos kirim gratis dengan pembelian minimal Rp50.000</p>
+      </div>
+      <div
+        class="container px-5 pt-5 pb-10 md:py-0 md:flex justify-between items-center"
+      >
+        <div class="flex justify-between items-center w-full md:w-auto">
           <div class="logo">
             <a href="index.html">
               <img src="images/logo.svg" alt="" />
             </a>
           </div>
-          <div class="hidden md:block">
-            <ul class="text-base flex items-center font-normal">
-              <li>
-                <a class="px-2 py-10" href="tentang.html">Tentang</a>
-              </li>
-              <li>
-                <a class="px-2 py-10" href="perawatan.html">Perawatan</a>
-              </li>
-              <li>
-                <a class="px-2 py-10" href="produk.html">Produk</a>
-              </li>
-              <li>
-                <a class="px-2 py-10" href="berita-promo.html"
-                  >Berita & Promo</a
+          <div class="md:hidden block">
+            <a href="javascript:void(0);" id="menu_mobile" data-click-state="1">
+              <img src="images/svg/icon__menu.svg" alt="" />
+            </a>
+          </div>
+        </div>
+        <div
+          id="header__menu"
+          class="header__menu hidden md:block relative md:static w-full md:w-auto top-0 left-0 bg__gray5 z-50 mt-10 md:mt-0"
+        >
+          <ul
+            class="text-base flex flex-col md:flex-row md:items-center font-normal"
+          >
+            <li>
+              <a
+                class="w-full px-2 md:py-10 border-b md:border-0 border__gray3 py-5 active"
+                href="tentang.html"
+                >Tentang</a
+              >
+            </li>
+            <li>
+              <a
+                class="w-full px-2 md:py-10 border-b md:border-0 border__gray3 py-5 flex flex-wrap justify-between"
+                href="perawatan.html"
+                >Perawatan
+                <img
+                  class="w-auto md:hidden"
+                  src="images/svg/icon__menuArrow.svg"
+                  alt=""
+                />
+              </a>
+              <a
+                class="w-full h-full absolute top-0 left-0 md:hidden"
+                href="javascript:void(0);"
+                onclick="toggleFunction(this)"
+              ></a>
+              <ul
+                class="absolute hidden left-0 top-0 w-full flex flex-col bg__gray5 h-full overflow-y-scroll toggle"
+              >
+                <li>
+                  <a
+                    class="w-full px-2 py-3 border-b border__gray3 flex flex-wrap justify-between pb-5"
+                    href="javascript:void(0);"
+                    onclick="closeToggleFunction(this)"
+                    ><img
+                      class="w-auto"
+                      src="images/svg/icon__menuArrowBack.svg"
+                      alt=""
+                    />
+                    Perawatan</a
+                  >
+                </li>
+                <li>
+                  <a class="w-full px-2 py-3" href="">Perawatan Dasar</a>
+                </li>
+                <li>
+                  <a class="w-full px-2 py-3" href="">Jerawat & Bopeng</a>
+                </li>
+                <li>
+                  <a class="w-full px-2 py-3" href=""
+                    >Pigmentasi & Kulit Kusam
+                  </a>
+                </li>
+                <li>
+                  <a class="w-full px-2 py-3" href="">Wajah & Kulit Menua</a>
+                </li>
+                <li>
+                  <a class="w-full px-2 py-3" href="">Contouring</a>
+                </li>
+                <li>
+                  <a class="w-full px-2 py-3" href="">Lainnya</a>
+                </li>
+              </ul>
+
+              <!-- perawatan hover  -->
+              <div
+                class="header__menu__sub absolute left-0 right-0 top-32 mx-auto bg__gray5 z-50 hidden h-full md:h-auto"
+              >
+                <div class="container px-5 relative md:py-10">
+                  <div class="grid grid-cols-12 md:gap-10">
+                    <div
+                      class="col-span-12 md:col-span-3 bg__tosca rounded-xl h-full p-6 flex flex-wrap content-between"
+                    >
+                      <p class="text-white text-xl md:text-2xl font-light">
+                        Copy tentang Konsultasi Dokter Online lorem ipsum dolor
+                        sit amet Brighten complexion and tighten pores.
+                      </p>
+                      <div class="flex">
+                        <a
+                          href="#"
+                          class="rounded-full py-3 px-6 bg-transparent border-white border top-0 border__tosca__mobile color__tosca__mobile btn__shadow__mobile text-white"
+                          `
+                        >
+                          Konsultasi Sekarang
+                        </a>
+                      </div>
+                    </div>
+                    <div
+                      class="grid grid-cols-12 col-span-12 md:col-span-9 md:mt-0 mt-5 md:gap-10"
+                    >
+                      <div class="col-span-12 md:col-span-4">
+                        <a href="perawatan-detail.html">
+                          <div class="rounded-lg overflow-hidden">
+                            <img src="images/perawatan-1.jpg" alt="" />
+                          </div>
+                          <h3 class="color__tosca text-xl font-normal mt-5">
+                            Perawatan Dasar
+                          </h3>
+                        </a>
+                      </div>
+                      <div class="col-span-12 md:col-span-4">
+                        <a href="perawatan-detail.html">
+                          <div class="rounded-lg overflow-hidden">
+                            <img src="images/perawatan-2.jpg" alt="" />
+                          </div>
+                          <h3 class="color__tosca text-xl font-normal mt-5">
+                            Jerawat dan bopeng
+                          </h3>
+                        </a>
+                      </div>
+                      <div class="col-span-12 md:col-span-4">
+                        <a href="perawatan-detail.html">
+                          <div class="rounded-lg overflow-hidden">
+                            <img src="images/perawatan-3.jpg" alt="" />
+                          </div>
+                          <h3 class="color__tosca text-xl font-normal mt-5">
+                            Pigmentasi dan kulit kusam
+                          </h3>
+                        </a>
+                      </div>
+                      <div class="col-span-12 md:col-span-4">
+                        <a href="perawatan-detail.html">
+                          <div class="rounded-lg overflow-hidden">
+                            <img src="images/perawatan-4.jpg" alt="" />
+                          </div>
+                          <h3 class="color__tosca text-xl font-normal mt-5">
+                            Wajah dan kulit menua
+                          </h3>
+                        </a>
+                      </div>
+                      <div class="col-span-12 md:col-span-4">
+                        <a href="perawatan-detail.html">
+                          <div class="rounded-lg overflow-hidden">
+                            <img src="images/perawatan-5.jpg" alt="" />
+                          </div>
+                          <h3 class="color__tosca text-xl font-normal mt-5">
+                            Contouring
+                          </h3>
+                        </a>
+                      </div>
+                      <div class="col-span-12 md:col-span-4">
+                        <a href="perawatan-detail.html">
+                          <div class="rounded-lg overflow-hidden">
+                            <img src="images/perawatan-6.jpg" alt="" />
+                          </div>
+                          <h3 class="color__tosca text-xl font-normal mt-5">
+                            Layanan lainnya
+                          </h3>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <a
+                class="w-full px-2 md:py-10 border-b md:border-0 border__gray3 py-5"
+                href="produk.html"
+                >Produk</a
+              >
+            </li>
+            <li>
+              <a
+                class="w-full px-2 md:py-10 border-b md:border-0 border__gray3 py-5 flex flex-wrap justify-between"
+                href="berita-promo.html"
+                onclick="toggleFunction(this)"
+                >Berita & Promo
+                <img
+                  class="w-auto md:hidden"
+                  src="images/svg/icon__menuArrow.svg"
+                  alt=""
+                />
+              </a>
+              <a
+                class="w-full h-full absolute top-0 left-0 md:hidden"
+                href="javascript:void(0);"
+                onclick="toggleFunction(this)"
+              ></a>
+              <ul
+                class="absolute hidden left-0 top-0 w-full flex flex-col bg__gray5 h-full overflow-y-scroll toggle"
+              >
+                <li>
+                  <a
+                    class="w-full pb-5 px-2 py-3 border-b border__gray3 flex flex-wrap justify-between"
+                    href="javascript:void(0);"
+                    onclick="closeToggleFunction(this)"
+                    ><img
+                      class="w-auto"
+                      src="images/svg/icon__menuArrowBack.svg"
+                      alt=""
+                    />
+                    Berita & Promo</a
+                  >
+                </li>
+                <li>
+                  <a class="w-full px-2 py-3" href="">Promo Spesial</a>
+                </li>
+                <li>
+                  <a class="w-full px-2 py-3" href="">Acara dan Kegiatan</a>
+                </li>
+                <li>
+                  <a class="w-full px-2 py-3" href="">Blog </a>
+                </li>
+              </ul>
+              <!-- berita  hover  -->
+              <div
+                class="header__menu__sub absolute left-0 right-0 top-32 mx-auto bg__gray5 z-50 hidden h-full md:h-auto"
+              >
+                <div class="container px-5 relative md:py-10">
+                  <div class="grid grid-cols-12 md:gap-10">
+                    <div
+                      class="col-span-12 md:col-span-3 bg__tosca rounded-xl min-h-full h-full p-6 flex flex-wrap content-between"
+                    >
+                      <p class="text-white text-xl md:text-2xl font-light">
+                        Copy tentang Konsultasi Dokter Online lorem ipsum dolor
+                        sit amet Brighten complexion and tighten pores.
+                      </p>
+                    </div>
+                    <div
+                      class="grid grid-cols-12 col-span-12 md:col-span-9 md:mt-0 mt-5 md:gap-10"
+                    >
+                      <div class="col-span-12 md:col-span-4">
+                        <a href="perawatan-detail.html">
+                          <div class="rounded-lg overflow-hidden">
+                            <img src="images/perawatan-1.jpg" alt="" />
+                          </div>
+                          <h3 class="color__tosca text-xl font-normal mt-5">
+                            Promo Spesial
+                          </h3>
+                          <p class="mt-2 font-normal">
+                            Menyajikan pelayanan kesehatan kulit oleh para ahli
+                            kecantikan terlatih dan dokter berpengalaman dan
+                            didukung oleh teknologi kecantikan modern.
+                          </p>
+                        </a>
+                      </div>
+                      <div class="col-span-12 md:col-span-4">
+                        <a href="perawatan-detail.html">
+                          <div class="rounded-lg overflow-hidden">
+                            <img src="images/perawatan-2.jpg" alt="" />
+                          </div>
+                          <h3 class="color__tosca text-xl font-normal mt-5">
+                            Acara dan Kegiatan
+                          </h3>
+                          <p class="mt-2 font-normal">
+                            Menyajikan pelayanan kesehatan kulit oleh para ahli
+                            kecantikan terlatih dan dokter berpengalaman dan
+                            didukung oleh teknologi kecantikan modern.
+                          </p>
+                        </a>
+                      </div>
+                      <div class="col-span-12 md:col-span-4">
+                        <a href="perawatan-detail.html">
+                          <div class="rounded-lg overflow-hidden">
+                            <img src="images/perawatan-3.jpg" alt="" />
+                          </div>
+                          <h3 class="color__tosca text-xl font-normal mt-5">
+                            Blog
+                          </h3>
+                          <p class="mt-2 font-normal">
+                            Menyajikan pelayanan kesehatan kulit oleh para ahli
+                            kecantikan terlatih dan dokter berpengalaman dan
+                            didukung oleh teknologi kecantikan modern.
+                          </p>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <a
+                class="w-full px-2 md:py-10 border-b md:border-0 border__gray3 py-5"
+                href="lokasi-konsultasi.html"
+                >Lokasi & Konsultasi
+              </a>
+            </li>
+            <li>
+              <a
+                class="w-full px-2 md:py-10 border-b md:border-0 border__gray3 py-5 flex flex-wrap justify-between"
+                href="keranjang.html"
+              >
+                <span class="md:hidden">Keranjang</span>
+                <div
+                  class="rounded-full bg__tosca w-7 h-7 md:h-9 md:w-9 flex items-center justify-center p-1 md:p-0"
                 >
-              </li>
-              <li>
-                <a class="px-2 py-10" href="lokasi-konsultasi.html"
-                  >Lokasi & Konsultasi
-                </a>
-              </li>
-              <li>
-                <a class="ml-5 px-1 py-10" href="keranjang.html">
-                  <div
-                    class="rounded-full bg__tosca h-9 w-9 flex items-center justify-center"
-                  >
-                    <img
-                      class="w-auto"
-                      src="images/svg/icon__shop.svg"
-                      alt=""
-                    />
+                  <img
+                    class="md:w-auto"
+                    src="images/svg/icon__shop.svg"
+                    alt=""
+                  />
+                </div>
+              </a>
+            </li>
+            <li>
+              <a
+                class="w-full px-2 md:py-10 border-b md:border-0 border__gray3 py-5 flex flex-wrap justify-between"
+                href="javascript:void(0);"
+                onclick="toggleSearch(this)"
+                id="search"
+              >
+                <span class="md:hidden">Cari Kata Kunci</span>
+                <div
+                  class="rounded-full bg__tosca w-7 h-7 md:h-9 md:w-9 flex items-center justify-center p-1 md:p-0"
+                >
+                  <img
+                    class="md:w-auto"
+                    src="images/svg/icon__search.svg"
+                    alt=""
+                  />
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- search -->
+      <div
+        class="absolute left-0 right-0 top-40 mx-auto bg__gray5 z-50 hidden toggleSearch h-full md:h-auto"
+      >
+        <div class="container px-5 relative md:py-20">
+          <div class="h-96 flex items-center">
+            <div class="w-full">
+              <p class="h2 font-normal mb-20">
+                Copywriting tentang kata kunci <br />yang ingin di cari lorem
+                ipsum.
+              </p>
+              <form action="">
+                <div class="relative">
+                  <input
+                    type="text"
+                    placeholder="Perawatan khusus kulit sensitif"
+                    class="placeholder-gray-200 h1 bg-transparent border-b border__gray3 field w-full py-5"
+                  />
+                  <div class="flex justify-center">
+                    <button
+                      class="rounded-full py-3 px-6 bg-transparent border top-0 color__tosca border__tosca font-normal btn__shadow md:absolute right-0 mt-4"
+                    >
+                      Cari Kata Kunci
+                    </button>
                   </div>
-                </a>
-              </li>
-              <li>
-                <a class="px-1 py-10" href="search.html">
-                  <div
-                    class="rounded-full bg__tosca h-9 w-9 flex items-center justify-center"
-                  >
-                    <img
-                      class="w-auto"
-                      src="images/svg/icon__search.svg"
-                      alt=""
-                    />
-                  </div>
-                </a>
-              </li>
-            </ul>
+                </div>
+              </form>
+            </div>
           </div>
         </div>
       </div>
@@ -77,41 +391,41 @@
 
     <!-- content -->
     <div class="content">
-      <div class="container px-5">
+      <div class="container md:px-5">
         <!-- section -->
-        <div class="grid grid-cols-12 gap-10 mt-14">
+        <div class="grid grid-cols-12 md:gap-10 mt-8 md:mt-14 px-5 md:px-0">
           <div class="col-span-12">
             <p class="h1 font-normal color__tosca">Klinik Kami</p>
           </div>
-          <div class="md:col-span-6">
-            <div class="flex flex-wrap">
+          <div class="col-span-12 md:col-span-6">
+            <div class="flex flex-wrap w-full jumpclick">
               <a
-                href="javascript:void"
-                class="rounded-full py-3 px-6 border border__gray4 font-normal text-xl mr-4 mt-4 tablinks active"
+                href="#jakarta"
+                class="rounded-full py-3 px-6 btn__transparant border border__gray4 font-normal text-sm md:text-xl mr-3 mt-4 tablinks active"
                 onclick="openCity(event, 'jakarta')"
                 >Jakarta</a
               >
               <a
-                href="javascript:void"
-                class="rounded-full py-3 px-6 bg-transparent border-white border border__gray4 font-normal text-xl mr-4 mt-4 tablinks"
+                href="#botabek"
+                class="rounded-full py-3 px-6 btn__transparant border-white border border__gray4 font-normal text-sm md:text-xl mr-3 mt-4 tablinks"
                 onclick="openCity(event, 'botabek')"
                 >Bodetabek</a
               >
               <a
-                href="javascript:void"
-                class="rounded-full py-3 px-6 bg-transparent border-white border border__gray4 font-normal text-xl mr-4 mt-4 tablinks"
+                href="#lainnya"
+                class="rounded-full py-3 px-6 btn__transparant border-white border border__gray4 font-normal text-sm md:text-xl mr-3 mt-4 tablinks"
                 onclick="openCity(event, 'lainnya')"
                 >Lainnya</a
               >
               <a
-                href="javascript:void"
-                class="rounded-full py-3 px-6 bg-transparent border-white border border__gray4 font-normal text-xl mr-4 mt-4 tablinks"
+                href="#lihatsemua"
+                class="rounded-full py-3 px-6 btn__transparant border-white border border__gray4 font-normal text-sm md:text-xl mr-3 mt-4 tablinks"
                 onclick="openCity(event, 'lihatsemua')"
                 >Lihat Semua</a
               >
             </div>
           </div>
-          <div class="md:col-span-6">
+          <div class="col-span-12 md:col-span-6">
             <p class="h4 font-normal mt-5">
               Temukan klinik Estetiderma terdekatmu beserta informasi jam
               operasional dan jadwal kerja dokter, dan langsung
@@ -128,8 +442,8 @@
         </div>
 
         <!-- section -->
-        <div class="grid grid-cols-12 mt-10 border-t border__gray3">
-          <div class="md:col-span-6">
+        <div class="grid grid-cols-12 mt-10 border-t border__gray3 relative">
+          <div class="col-span-12 md:col-span-6">
             <div class="location__list">
               <ul class="tabcontent" id="jakarta" style="display: block">
                 <li
@@ -167,349 +481,37 @@
                         />
                       </li>
                     </ul>
-                  </div>
+                  </div>                 
                 </li>
-                <li
-                  class="py-8 border-b border__gray3 w-full cursor-pointer flex items-center justify-between px-5 tabLinkContact"
-                  onclick="openContact(event, 'jakarta-2')"
-                >
-                  <div>
-                    <p class="color__tosca h2 font-normal underline">
-                      Kyai Maja
-                    </p>
-                    <p class="text-sm font-normal mt-2">09.00 – 20.00 WIB</p>
-                  </div>
-                  <div>
-                    <ul>
-                      <li class="mr-3">
-                        <img src="images/svg/icon__wa2.svg" alt="" />
-                        <img
-                          class="location__icon__white"
-                          src="images/svg/icon__wa2--white.svg"
-                          alt=""
-                        />
-                      </li>
-                      <li class="mr-3">
-                        <img src="images/svg/icon__loc.svg" alt="" />
-                        <img
-                          class="location__icon__white"
-                          src="images/svg/icon__loc--white.svg"
-                          alt=""
-                        />
-                      </li>
-                      <li class="mr-3">
-                        <img src="images/svg/icon__arrow.svg" alt="" />
-                        <img
-                          class="location__icon__white"
-                          src="images/svg/icon__arrow--white.svg"
-                          alt=""
-                        />
-                      </li>
-                    </ul>
-                  </div>
-                </li>
-
-              </ul>
-              <ul class="tabcontent" id="botabek">
-                <li
-                  class="py-8 border-b border__gray3 w-full cursor-pointer flex items-center justify-between px-5 tabLinkContact"
-                  onclick="openContact(event, 'botabek-1')"
-                >
-                  <div>
-                    <p class="color__tosca h2 font-normal underline">
-                      Bodetabek
-                    </p>
-                    <p class="text-sm font-normal mt-2">09.00 – 20.00 WIB</p>
-                  </div>
-                  <div>
-                    <ul>
-                      <li class="mr-3">
-                        <img src="images/svg/icon__wa2.svg" alt="" />
-                        <img
-                          class="location__icon__white"
-                          src="images/svg/icon__wa2--white.svg"
-                          alt=""
-                        />
-                      </li>
-                      <li class="mr-3">
-                        <img src="images/svg/icon__loc.svg" alt="" />
-                        <img
-                          class="location__icon__white"
-                          src="images/svg/icon__loc--white.svg"
-                          alt=""
-                        />
-                      </li>
-                      <li class="mr-3">
-                        <img src="images/svg/icon__arrow.svg" alt="" />
-                        <img
-                          class="location__icon__white"
-                          src="images/svg/icon__arrow--white.svg"
-                          alt=""
-                        />
-                      </li>
-                    </ul>
-                  </div>
-                </li>
-                <li
-                  class="py-8 border-b border__gray3 w-full cursor-pointer flex items-center justify-between px-5 tabLinkContact"
-                  onclick="openContact(event, 'botabek-2')"
-                >
-                  <div>
-                    <p class="color__tosca h2 font-normal underline">Bekasi</p>
-                    <p class="text-sm font-normal mt-2">09.00 – 20.00 WIB</p>
-                  </div>
-                  <div>
-                    <ul>
-                      <li class="mr-3">
-                        <img src="images/svg/icon__wa2.svg" alt="" />
-                        <img
-                          class="location__icon__white"
-                          src="images/svg/icon__wa2--white.svg"
-                          alt=""
-                        />
-                      </li>
-                      <li class="mr-3">
-                        <img src="images/svg/icon__loc.svg" alt="" />
-                        <img
-                          class="location__icon__white"
-                          src="images/svg/icon__loc--white.svg"
-                          alt=""
-                        />
-                      </li>
-                      <li class="mr-3">
-                        <img src="images/svg/icon__arrow.svg" alt="" />
-                        <img
-                          class="location__icon__white"
-                          src="images/svg/icon__arrow--white.svg"
-                          alt=""
-                        />
-                      </li>
-                    </ul>
-                  </div>
-                </li>
-              </ul>
-              <ul class="tabcontent" id="lainnya">
-                <li
-                  class="py-8 border-b border__gray3 w-full cursor-pointer flex items-center justify-between px-5 tabLinkContact"
-                  onclick="openContact(event, 'lainnya-1')"
-                >
-                  <div>
-                    <p class="color__tosca h2 font-normal underline">lainnya</p>
-                    <p class="text-sm font-normal mt-2">09.00 – 20.00 WIB</p>
-                  </div>
-                  <div>
-                    <ul>
-                      <li class="mr-3">
-                        <img src="images/svg/icon__wa2.svg" alt="" />
-                        <img
-                          class="location__icon__white"
-                          src="images/svg/icon__wa2--white.svg"
-                          alt=""
-                        />
-                      </li>
-                      <li class="mr-3">
-                        <img src="images/svg/icon__loc.svg" alt="" />
-                        <img
-                          class="location__icon__white"
-                          src="images/svg/icon__loc--white.svg"
-                          alt=""
-                        />
-                      </li>
-                      <li class="mr-3">
-                        <img src="images/svg/icon__arrow.svg" alt="" />
-                        <img
-                          class="location__icon__white"
-                          src="images/svg/icon__arrow--white.svg"
-                          alt=""
-                        />
-                      </li>
-                    </ul>
-                  </div>
-                </li>
-                <li
-                  class="py-8 border-b border__gray3 w-full cursor-pointer flex items-center justify-between px-5 tabLinkContact"
-                  onclick="openContact(event, 'lainnya-2')"
-                >
-                  <div>
-                    <p class="color__tosca h2 font-normal underline">lainnya</p>
-                    <p class="text-sm font-normal mt-2">09.00 – 20.00 WIB</p>
-                  </div>
-                  <div>
-                    <ul>
-                      <li class="mr-3">
-                        <img src="images/svg/icon__wa2.svg" alt="" />
-                        <img
-                          class="location__icon__white"
-                          src="images/svg/icon__wa2--white.svg"
-                          alt=""
-                        />
-                      </li>
-                      <li class="mr-3">
-                        <img src="images/svg/icon__loc.svg" alt="" />
-                        <img
-                          class="location__icon__white"
-                          src="images/svg/icon__loc--white.svg"
-                          alt=""
-                        />
-                      </li>
-                      <li class="mr-3">
-                        <img src="images/svg/icon__arrow.svg" alt="" />
-                        <img
-                          class="location__icon__white"
-                          src="images/svg/icon__arrow--white.svg"
-                          alt=""
-                        />
-                      </li>
-                    </ul>
-                  </div>
-                </li>
-              </ul>
-              <ul class="tabcontent" id="lihatsemua">
-                <li
-                  class="py-8 border-b border__gray3 w-full cursor-pointer flex items-center justify-between px-5 tabLinkContact"
-                  onclick="openContact(event, 'lihatsemua-1')"
-                >
-                  <div>
-                    <p class="color__tosca h2 font-normal underline">
-                      lihatsemua
-                    </p>
-                    <p class="text-sm font-normal mt-2">09.00 – 20.00 WIB</p>
-                  </div>
-                  <div>
-                    <ul>
-                      <li class="mr-3">
-                        <img src="images/svg/icon__wa2.svg" alt="" />
-                        <img
-                          class="location__icon__white"
-                          src="images/svg/icon__wa2--white.svg"
-                          alt=""
-                        />
-                      </li>
-                      <li class="mr-3">
-                        <img src="images/svg/icon__loc.svg" alt="" />
-                        <img
-                          class="location__icon__white"
-                          src="images/svg/icon__loc--white.svg"
-                          alt=""
-                        />
-                      </li>
-                      <li class="mr-3">
-                        <img src="images/svg/icon__arrow.svg" alt="" />
-                        <img
-                          class="location__icon__white"
-                          src="images/svg/icon__arrow--white.svg"
-                          alt=""
-                        />
-                      </li>
-                    </ul>
-                  </div>
-                </li>
-                <li
-                  class="py-8 border-b border__gray3 w-full cursor-pointer flex items-center justify-between px-5 tabLinkContact"
-                  onclick="openContact(event, 'lihatsemua-2')"
-                  
-                >
-                  <div>
-                    <p class="color__tosca h2 font-normal underline">
-                      lihatsemua
-                    </p>
-                    <p class="text-sm font-normal mt-2">09.00 – 20.00 WIB</p>
-                  </div>
-                  <div>
-                    <ul>
-                      <li class="mr-3">
-                        <img src="images/svg/icon__wa2.svg" alt="" />
-                        <img
-                          class="location__icon__white"
-                          src="images/svg/icon__wa2--white.svg"
-                          alt=""
-                        />
-                      </li>
-                      <li class="mr-3">
-                        <img src="images/svg/icon__loc.svg" alt="" />
-                        <img
-                          class="location__icon__white"
-                          src="images/svg/icon__loc--white.svg"
-                          alt=""
-                        />
-                      </li>
-                      <li class="mr-3">
-                        <img src="images/svg/icon__arrow.svg" alt="" />
-                        <img
-                          class="location__icon__white"
-                          src="images/svg/icon__arrow--white.svg"
-                          alt=""
-                        />
-                      </li>
-                    </ul>
-                  </div>
-                </li>
-                <li
-                  class="py-8 border-b border__gray3 w-full cursor-pointer flex items-center justify-between px-5 tabLinkContact"
-                  onclick="openContact(event, 'lihatsemua-3')"
-                >
-                  <div>
-                    <p class="color__tosca h2 font-normal underline">
-                      lihatsemua
-                    </p>
-                    <p class="text-sm font-normal mt-2">09.00 – 20.00 WIB</p>
-                  </div>
-                  <div>
-                    <ul>
-                      <li class="mr-3">
-                        <img src="images/svg/icon__wa2.svg" alt="" />
-                        <img
-                          class="location__icon__white"
-                          src="images/svg/icon__wa2--white.svg"
-                          alt=""
-                        />
-                      </li>
-                      <li class="mr-3">
-                        <img src="images/svg/icon__loc.svg" alt="" />
-                        <img
-                          class="location__icon__white"
-                          src="images/svg/icon__loc--white.svg"
-                          alt=""
-                        />
-                      </li>
-                      <li class="mr-3">
-                        <img src="images/svg/icon__arrow.svg" alt="" />
-                        <img
-                          class="location__icon__white"
-                          src="images/svg/icon__arrow--white.svg"
-                          alt=""
-                        />
-                      </li>
-                    </ul>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="md:col-span-6">
-            <div class="h-full w-full relative h-min-600">
-              <img
-                id="tabContact__close"
-                class="absolute right-5 top-5 w-auto z-50 cursor-pointer"
-                src="images/svg/close.svg"
-                alt=""
-              />
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126920.28185637132!2d106.75947801814148!3d-6.229571229042203!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f3e945e34b9d%3A0x5371bf0fdad786a2!2sJakarta!5e0!3m2!1sen!2sid!4v1614163156105!5m2!1sen!2sid"
-                style="border: 0"
-                allowfullscreen=""
-                loading="lazy"
-                class="absolute left-0 top-0 w-full h-full"
-              ></iframe>
-
-                <!-- detail lokasi -->
                 <!-- jakarta 1 -->
                 <div id="jakarta-1"  class="grid grid-cols-12 relative text-white tabContact">
-                  <div class="md:col-span-6 bg__tosca pt-10 p-7 leading-6">
-                    <p class="uppercase">Hubungi Kami</p>
+                  <img
+                  id="tabContact__close"
+                  class="absolute right-5 top-5 w-auto z-50 cursor-pointer tabContact__close"
+                  src="images/svg/close.svg"
+                  alt=""
+                />
+                  <div id="jakarta-1a-section" class="col-span-12 md:col-span-6 bg__tosca pt-6 p-5 md:pt-10 md:p-7 leading-6 ">
+                    <p class="uppercase hidden md:block">Hubungi Kami</p>                      
+                    <div class="nav__jump">
+                      <div class="flex mb-2 md:hidden">
+                        <a
+                        href="#jakarta-1a-section"
+                        class="rounded-full py-3 px-6 font-normal text-sm md:text-xl uppercase border active"
+                        onclick="openJump(event)"
+                        >Hubungi Kami</a>
+                      </div>
+                      <div class="flex mb-2 md:hidden">
+                          <a
+                          href="#jakarta-1b-section"
+                          class="rounded-full py-3 px-6 font-normal text-sm md:text-xl uppercase text-white border"
+                          onclick="openJump(event)"
+                          >JADWAL PRAKTEK DOKTER</a>
+                      </div>
+                    </div>
                     <div class="mt-5">
                       <p class="font-medium mb-2">Konsultasi Online</p>
-                      <ul>
+                      <ul class="text-xl">  
                         <li class="block flex underline mb-2">
                           <img
                             class="w-auto mr-3"
@@ -560,8 +562,8 @@
                       </p>
                     </div>
                   </div>
-                  <div class="md:col-span-6 bg__tosca3 pt-10 p-7 pr-10 leading-6">
-                    <p class="uppercase">Jadwal Praktek Dokter</p>
+                  <div id="jakarta-1b-section" class="col-span-12 md:col-span-6 bg__tosca3 pt-7 p-5 md:pt-10 md:p-7 pr-10 leading-6">
+                    <p class="uppercase">Jadwal Praktek Dokter 1</p>
                     <div class="mt-5 list list__custom">
                       <ul>
                         <li class="block">
@@ -600,28 +602,89 @@
                     </div>
                   </div>
                 </div>
-
+                
+                <li
+                  class="py-8 border-b border__gray3 w-full cursor-pointer flex items-center justify-between px-5 tabLinkContact"
+                  onclick="openContact(event, 'jakarta-2')"
+                >
+                  <div>
+                    <p class="color__tosca h2 font-normal underline">
+                      Kyai Maja
+                    </p>
+                    <p class="text-sm font-normal mt-2">09.00 – 20.00 WIB</p>
+                  </div>
+                  <div>
+                    <ul>
+                      <li class="mr-3">
+                        <img src="images/svg/icon__wa2.svg" alt="" />
+                        <img
+                          class="location__icon__white"
+                          src="images/svg/icon__wa2--white.svg"
+                          alt=""
+                        />
+                      </li>
+                      <li class="mr-3">
+                        <img src="images/svg/icon__loc.svg" alt="" />
+                        <img
+                          class="location__icon__white"
+                          src="images/svg/icon__loc--white.svg"
+                          alt=""
+                        />
+                      </li>
+                      <li class="mr-3">
+                        <img src="images/svg/icon__arrow.svg" alt="" />
+                        <img
+                          class="location__icon__white"
+                          src="images/svg/icon__arrow--white.svg"
+                          alt=""
+                        />
+                      </li>
+                    </ul>
+                  </div>
+                </li>
                 <!-- jakarta 2 -->
                 <div id="jakarta-2"  class="grid grid-cols-12 relative text-white tabContact">
-                  <div class="md:col-span-6 bg__tosca pt-10 p-7 leading-6">
-                    <p class="uppercase">Hubungi Kami jakarta-2</p>
+                  <img
+                  id="tabContact__close"
+                  class="absolute right-5 top-5 w-auto z-50 cursor-pointer tabContact__close"
+                  src="images/svg/close.svg"
+                  alt=""
+                />
+                  <div id="jakarta-2a-section" class="col-span-12 md:col-span-6 bg__tosca pt-6 p-5 md:pt-10 md:p-7 leading-6 ">
+                    <p class="uppercase hidden md:block">Hubungi Kami</p>                      
+                    <div class="nav__jump">
+                      <div class="flex mb-2 md:hidden">
+                        <a
+                        href="#jakarta-2a-section"
+                        class="rounded-full py-3 px-6 font-normal text-sm md:text-xl uppercase border active"
+                        onclick="openJump(event)"
+                        >Hubungi Kami</a>
+                      </div>
+                      <div class="flex mb-2 md:hidden">
+                          <a
+                          href="#jakarta-2b-section"
+                          class="rounded-full py-3 px-6 font-normal text-sm md:text-xl uppercase text-white border"
+                          onclick="openJump(event)"
+                          >JADWAL PRAKTEK DOKTER</a>
+                      </div>
+                    </div>
                     <div class="mt-5">
                       <p class="font-medium mb-2">Konsultasi Online</p>
-                      <ul>
+                      <ul class="text-xl">  
                         <li class="block flex underline mb-2">
                           <img
                             class="w-auto mr-3"
                             src="images/svg/wa.svg"
                             alt=""
                           />
-                          123-7291-1916
+                          0878-7291-1916
                         </li>
                         <li class="block flex underline mb-2">
                           <img
                             class="w-auto mr-3"
                             src="images/svg/telp.svg"
                             alt=""
-                          />021- 123123123
+                          />021- 87787198
                         </li>
                       </ul>
                     </div>
@@ -658,8 +721,8 @@
                       </p>
                     </div>
                   </div>
-                  <div class="md:col-span-6 bg__tosca3 pt-10 p-7 pr-10 leading-6">
-                    <p class="uppercase">Jadwal Praktek Dokter</p>
+                  <div id="jakarta-2b-section" class="col-span-12 md:col-span-6 bg__tosca3 pt-7 p-5 md:pt-10 md:p-7 pr-10 leading-6">
+                    <p class="uppercase">Jadwal Praktek Dokter 2</p>
                     <div class="mt-5 list list__custom">
                       <ul>
                         <li class="block">
@@ -698,14 +761,76 @@
                     </div>
                   </div>
                 </div>
-
+              </ul>
+              <ul class="tabcontent" id="botabek">
+                <li
+                  class="py-8 border-b border__gray3 w-full cursor-pointer flex items-center justify-between px-5 tabLinkContact"
+                  onclick="openContact(event, 'botabek-1')"
+                >
+                  <div>
+                    <p class="color__tosca h2 font-normal underline">
+                      Bodetabek
+                    </p>
+                    <p class="text-sm font-normal mt-2">09.00 – 20.00 WIB</p>
+                  </div>
+                  <div>
+                    <ul>
+                      <li class="mr-3">
+                        <img src="images/svg/icon__wa2.svg" alt="" />
+                        <img
+                          class="location__icon__white"
+                          src="images/svg/icon__wa2--white.svg"
+                          alt=""
+                        />
+                      </li>
+                      <li class="mr-3">
+                        <img src="images/svg/icon__loc.svg" alt="" />
+                        <img
+                          class="location__icon__white"
+                          src="images/svg/icon__loc--white.svg"
+                          alt=""
+                        />
+                      </li>
+                      <li class="mr-3">
+                        <img src="images/svg/icon__arrow.svg" alt="" />
+                        <img
+                          class="location__icon__white"
+                          src="images/svg/icon__arrow--white.svg"
+                          alt=""
+                        />
+                      </li>
+                    </ul>
+                  </div>
+                </li>
                 <!-- botabek 1 -->
                 <div id="botabek-1"  class="grid grid-cols-12 relative text-white tabContact">
-                  <div class="md:col-span-6 bg__tosca pt-10 p-7 leading-6">
-                    <p class="uppercase">Hubungi Kami botabek 1</p>
+                  <img
+                  id="tabContact__close"
+                  class="absolute right-5 top-5 w-auto z-50 cursor-pointer tabContact__close"
+                  src="images/svg/close.svg"
+                  alt=""
+                />
+                  <div id="botabek-1a-section" class="col-span-12 md:col-span-6 bg__tosca pt-6 p-5 md:pt-10 md:p-7 leading-6">
+                    <p class="uppercase hidden md:block">Hubungi Kami</p>                      
+                    <div class="nav__jump">
+                      <div class="flex mb-2 md:hidden">
+                        <a
+                        href="#botabek-1a-section"
+                        class="rounded-full py-3 px-6 font-normal text-sm md:text-xl uppercase border active"
+                        onclick="openJump(event)"
+                        >Hubungi Kami</a>
+                      </div>
+                      <div class="flex mb-2 md:hidden">
+                          <a
+                          href="#botabek-1b-section"
+                          class="rounded-full py-3 px-6 font-normal text-sm md:text-xl uppercase text-white border"
+                          onclick="openJump(event)"
+                          >JADWAL PRAKTEK DOKTER</a>
+                      </div>
+                    </div>
                     <div class="mt-5">
                       <p class="font-medium mb-2">Konsultasi Online</p>
-                      <ul>
+                      <ul class="text-xl">
                         <li class="block flex underline mb-2">
                           <img
                             class="w-auto mr-3"
@@ -756,8 +881,8 @@
                       </p>
                     </div>
                   </div>
-                  <div class="md:col-span-6 bg__tosca3 pt-10 p-7 pr-10 leading-6">
-                    <p class="uppercase">Jadwal Praktek Dokter</p>
+                  <div id="botabek-1b-section" class="col-span-12 md:col-span-6 bg__tosca3 pt-7 p-5 md:pt-10 md:p-7 pr-10 leading-6">
+                    <p class="uppercase">Jadwal Praktek Dokter 1</p>
                     <div class="mt-5 list list__custom">
                       <ul>
                         <li class="block">
@@ -796,14 +921,72 @@
                     </div>
                   </div>
                 </div>
-
+                <li
+                  class="py-8 border-b border__gray3 w-full cursor-pointer flex items-center justify-between px-5 tabLinkContact"
+                  onclick="openContact(event, 'botabek-2')"
+                >
+                  <div>
+                    <p class="color__tosca h2 font-normal underline">Bekasi</p>
+                    <p class="text-sm font-normal mt-2">09.00 – 20.00 WIB</p>
+                  </div>
+                  <div>
+                    <ul>
+                      <li class="mr-3">
+                        <img src="images/svg/icon__wa2.svg" alt="" />
+                        <img
+                          class="location__icon__white"
+                          src="images/svg/icon__wa2--white.svg"
+                          alt=""
+                        />
+                      </li>
+                      <li class="mr-3">
+                        <img src="images/svg/icon__loc.svg" alt="" />
+                        <img
+                          class="location__icon__white"
+                          src="images/svg/icon__loc--white.svg"
+                          alt=""
+                        />
+                      </li>
+                      <li class="mr-3">
+                        <img src="images/svg/icon__arrow.svg" alt="" />
+                        <img
+                          class="location__icon__white"
+                          src="images/svg/icon__arrow--white.svg"
+                          alt=""
+                        />
+                      </li>
+                    </ul>
+                  </div>
+                </li>
                 <!-- botabek 2 -->
                 <div id="botabek-2"  class="grid grid-cols-12 relative text-white tabContact">
-                  <div class="md:col-span-6 bg__tosca pt-10 p-7 leading-6">
-                    <p class="uppercase">Hubungi Kami botabek 2</p>
+                  <img
+                  id="tabContact__close"
+                  class="absolute right-5 top-5 w-auto z-50 cursor-pointer tabContact__close"
+                  src="images/svg/close.svg"
+                  alt=""
+                />
+                  <div id="botabek-2a-section" class="col-span-12 md:col-span-6 bg__tosca pt-6 p-5 md:pt-10 md:p-7 leading-6">
+                    <p class="uppercase hidden md:block">Hubungi Kami</p>                      
+                    <div class="nav__jump">
+                      <div class="flex mb-2 md:hidden">
+                        <a
+                        href="#botabek-2a-section"
+                        class="rounded-full py-3 px-6 font-normal text-sm md:text-xl uppercase border active"
+                        onclick="openJump(event)"
+                        >Hubungi Kami</a>
+                      </div>
+                      <div class="flex mb-2 md:hidden">
+                          <a
+                          href="#botabek-2b-section"
+                          class="rounded-full py-3 px-6 font-normal text-sm md:text-xl uppercase text-white border"
+                          onclick="openJump(event)"
+                          >JADWAL PRAKTEK DOKTER</a>
+                      </div>
+                    </div>
                     <div class="mt-5">
                       <p class="font-medium mb-2">Konsultasi Online</p>
-                      <ul>
+                      <ul class="text-xl">
                         <li class="block flex underline mb-2">
                           <img
                             class="w-auto mr-3"
@@ -854,8 +1037,8 @@
                       </p>
                     </div>
                   </div>
-                  <div class="md:col-span-6 bg__tosca3 pt-10 p-7 pr-10 leading-6">
-                    <p class="uppercase">Jadwal Praktek Dokter</p>
+                  <div id="botabek-2b-section" class="col-span-12 md:col-span-6 bg__tosca3 pt-7 p-5 md:pt-10 md:p-7 pr-10 leading-6">
+                    <p class="uppercase">Jadwal Praktek Dokter 2</p>
                     <div class="mt-5 list list__custom">
                       <ul>
                         <li class="block">
@@ -894,14 +1077,74 @@
                     </div>
                   </div>
                 </div>
-
+              </ul>
+              <ul class="tabcontent" id="lainnya">
+                <li
+                  class="py-8 border-b border__gray3 w-full cursor-pointer flex items-center justify-between px-5 tabLinkContact"
+                  onclick="openContact(event, 'lainnya-1')"
+                >
+                  <div>
+                    <p class="color__tosca h2 font-normal underline">lainnya</p>
+                    <p class="text-sm font-normal mt-2">09.00 – 20.00 WIB</p>
+                  </div>
+                  <div>
+                    <ul>
+                      <li class="mr-3">
+                        <img src="images/svg/icon__wa2.svg" alt="" />
+                        <img
+                          class="location__icon__white"
+                          src="images/svg/icon__wa2--white.svg"
+                          alt=""
+                        />
+                      </li>
+                      <li class="mr-3">
+                        <img src="images/svg/icon__loc.svg" alt="" />
+                        <img
+                          class="location__icon__white"
+                          src="images/svg/icon__loc--white.svg"
+                          alt=""
+                        />
+                      </li>
+                      <li class="mr-3">
+                        <img src="images/svg/icon__arrow.svg" alt="" />
+                        <img
+                          class="location__icon__white"
+                          src="images/svg/icon__arrow--white.svg"
+                          alt=""
+                        />
+                      </li>
+                    </ul>
+                  </div>
+                </li>
                 <!-- lainnya 1 -->
                 <div id="lainnya-1"  class="grid grid-cols-12 relative text-white tabContact">
-                  <div class="md:col-span-6 bg__tosca pt-10 p-7 leading-6">
-                    <p class="uppercase">Hubungi Kami lainnya 1</p>
+                  <img
+                  id="tabContact__close"
+                  class="absolute right-5 top-5 w-auto z-50 cursor-pointer tabContact__close"
+                  src="images/svg/close.svg"
+                  alt=""
+                />
+                  <div id="lainnya-1a-section" class="col-span-12 md:col-span-6 bg__tosca pt-6 p-5 md:pt-10 md:p-7 leading-6">
+                    <p class="uppercase hidden md:block">Hubungi Kami</p>                      
+                    <div class="nav__jump">
+                      <div class="flex mb-2 md:hidden">
+                        <a
+                        href="#lainnya-1a-section"
+                        class="rounded-full py-3 px-6 font-normal text-sm md:text-xl uppercase border active"
+                        onclick="openJump(event)"
+                        >Hubungi Kami</a>
+                      </div>
+                      <div class="flex mb-2 md:hidden">
+                          <a
+                          href="#lainnya-1b-section"
+                          class="rounded-full py-3 px-6 font-normal text-sm md:text-xl uppercase text-white border"
+                          onclick="openJump(event)"
+                          >JADWAL PRAKTEK DOKTER</a>
+                      </div>
+                    </div>
                     <div class="mt-5">
                       <p class="font-medium mb-2">Konsultasi Online</p>
-                      <ul>
+                      <ul class="text-xl">
                         <li class="block flex underline mb-2">
                           <img
                             class="w-auto mr-3"
@@ -952,8 +1195,8 @@
                       </p>
                     </div>
                   </div>
-                  <div class="md:col-span-6 bg__tosca3 pt-10 p-7 pr-10 leading-6">
-                    <p class="uppercase">Jadwal Praktek Dokter</p>
+                  <div id="lainnya-1b-section" class="col-span-12 md:col-span-6 bg__tosca3 pt-7 p-5 md:pt-10 md:p-7 pr-10 leading-6">
+                    <p class="uppercase">Jadwal Praktek Dokter 1</p>
                     <div class="mt-5 list list__custom">
                       <ul>
                         <li class="block">
@@ -992,14 +1235,72 @@
                     </div>
                   </div>
                 </div>
-
+                <li
+                  class="py-8 border-b border__gray3 w-full cursor-pointer flex items-center justify-between px-5 tabLinkContact"
+                  onclick="openContact(event, 'lainnya-2')"
+                >
+                  <div>
+                    <p class="color__tosca h2 font-normal underline">lainnya</p>
+                    <p class="text-sm font-normal mt-2">09.00 – 20.00 WIB</p>
+                  </div>
+                  <div>
+                    <ul>
+                      <li class="mr-3">
+                        <img src="images/svg/icon__wa2.svg" alt="" />
+                        <img
+                          class="location__icon__white"
+                          src="images/svg/icon__wa2--white.svg"
+                          alt=""
+                        />
+                      </li>
+                      <li class="mr-3">
+                        <img src="images/svg/icon__loc.svg" alt="" />
+                        <img
+                          class="location__icon__white"
+                          src="images/svg/icon__loc--white.svg"
+                          alt=""
+                        />
+                      </li>
+                      <li class="mr-3">
+                        <img src="images/svg/icon__arrow.svg" alt="" />
+                        <img
+                          class="location__icon__white"
+                          src="images/svg/icon__arrow--white.svg"
+                          alt=""
+                        />
+                      </li>
+                    </ul>
+                  </div>
+                </li>
                 <!-- lainnya 2 -->
                 <div id="lainnya-2"  class="grid grid-cols-12 relative text-white tabContact">
-                  <div class="md:col-span-6 bg__tosca pt-10 p-7 leading-6">
-                    <p class="uppercase">Hubungi Kami lainnya 2</p>
+                  <img
+                  id="tabContact__close"
+                  class="absolute right-5 top-5 w-auto z-50 cursor-pointer tabContact__close"
+                  src="images/svg/close.svg"
+                  alt=""
+                />
+                  <div id="lainnya-2a-section" class="col-span-12 md:col-span-6 bg__tosca pt-6 p-5 md:pt-10 md:p-7 leading-6">
+                    <p class="uppercase hidden md:block">Hubungi Kami</p>                      
+                    <div class="nav__jump">
+                      <div class="flex mb-2 md:hidden">
+                        <a
+                        href="#lainnya-2a-section"
+                        class="rounded-full py-3 px-6 font-normal text-sm md:text-xl uppercase border active"
+                        onclick="openJump(event)"
+                        >Hubungi Kami</a>
+                      </div>
+                      <div class="flex mb-2 md:hidden">
+                          <a
+                          href="#lainnya-2b-section"
+                          class="rounded-full py-3 px-6 font-normal text-sm md:text-xl uppercase text-white border"
+                          onclick="openJump(event)"
+                          >JADWAL PRAKTEK DOKTER</a>
+                      </div>
+                    </div>
                     <div class="mt-5">
                       <p class="font-medium mb-2">Konsultasi Online</p>
-                      <ul>
+                      <ul class="text-xl">
                         <li class="block flex underline mb-2">
                           <img
                             class="w-auto mr-3"
@@ -1050,8 +1351,8 @@
                       </p>
                     </div>
                   </div>
-                  <div class="md:col-span-6 bg__tosca3 pt-10 p-7 pr-10 leading-6">
-                    <p class="uppercase">Jadwal Praktek Dokter</p>
+                  <div id="lainnya-2b-section" class="col-span-12 md:col-span-6 bg__tosca3 pt-7 p-5 md:pt-10 md:p-7 pr-10 leading-6">
+                    <p class="uppercase">Jadwal Praktek Dokter 2</p>
                     <div class="mt-5 list list__custom">
                       <ul>
                         <li class="block">
@@ -1090,14 +1391,76 @@
                     </div>
                   </div>
                 </div>
-
+              </ul>
+              <ul class="tabcontent" id="lihatsemua">
+                <li
+                  class="py-8 border-b border__gray3 w-full cursor-pointer flex items-center justify-between px-5 tabLinkContact"
+                  onclick="openContact(event, 'lihatsemua-1')"
+                >
+                  <div>
+                    <p class="color__tosca h2 font-normal underline">
+                      lihatsemua
+                    </p>
+                    <p class="text-sm font-normal mt-2">09.00 – 20.00 WIB</p>
+                  </div>
+                  <div>
+                    <ul>
+                      <li class="mr-3">
+                        <img src="images/svg/icon__wa2.svg" alt="" />
+                        <img
+                          class="location__icon__white"
+                          src="images/svg/icon__wa2--white.svg"
+                          alt=""
+                        />
+                      </li>
+                      <li class="mr-3">
+                        <img src="images/svg/icon__loc.svg" alt="" />
+                        <img
+                          class="location__icon__white"
+                          src="images/svg/icon__loc--white.svg"
+                          alt=""
+                        />
+                      </li>
+                      <li class="mr-3">
+                        <img src="images/svg/icon__arrow.svg" alt="" />
+                        <img
+                          class="location__icon__white"
+                          src="images/svg/icon__arrow--white.svg"
+                          alt=""
+                        />
+                      </li>
+                    </ul>
+                  </div>
+                </li>
                 <!-- lihatsemua 1 -->
                 <div id="lihatsemua-1"  class="grid grid-cols-12 relative text-white tabContact">
-                  <div class="md:col-span-6 bg__tosca pt-10 p-7 leading-6">
-                    <p class="uppercase">Hubungi Kami lihatsemua 1</p>
+                  <img
+                  id="tabContact__close"
+                  class="absolute right-5 top-5 w-auto z-50 cursor-pointer tabContact__close"
+                  src="images/svg/close.svg"
+                  alt=""
+                />
+                  <div id="lihatsemua-1a-section" class="col-span-12 md:col-span-6 bg__tosca pt-6 p-5 md:pt-10 md:p-7 leading-6">
+                    <p class="uppercase hidden md:block">Hubungi Kami</p>                      
+                    <div class="nav__jump">
+                      <div class="flex mb-2 md:hidden">
+                        <a
+                        href="#lihatsemua-1a-section"
+                        class="rounded-full py-3 px-6 font-normal text-sm md:text-xl uppercase border active"
+                        onclick="openJump(event)"
+                        >Hubungi Kami</a>
+                      </div>
+                      <div class="flex mb-2 md:hidden">
+                          <a
+                          href="#lihatsemua-1b-section"
+                          class="rounded-full py-3 px-6 font-normal text-sm md:text-xl uppercase text-white border"
+                          onclick="openJump(event)"
+                          >JADWAL PRAKTEK DOKTER</a>
+                      </div>
+                    </div>
                     <div class="mt-5">
                       <p class="font-medium mb-2">Konsultasi Online</p>
-                      <ul>
+                      <ul class="text-xl">
                         <li class="block flex underline mb-2">
                           <img
                             class="w-auto mr-3"
@@ -1148,8 +1511,8 @@
                       </p>
                     </div>
                   </div>
-                  <div class="md:col-span-6 bg__tosca3 pt-10 p-7 pr-10 leading-6">
-                    <p class="uppercase">Jadwal Praktek Dokter</p>
+                  <div id="lihatsemua-1b-section" class="col-span-12 md:col-span-6 bg__tosca3 pt-7 p-5 md:pt-10 md:p-7 pr-10 leading-6">
+                    <p class="uppercase">Jadwal Praktek Dokter 1</p>
                     <div class="mt-5 list list__custom">
                       <ul>
                         <li class="block">
@@ -1188,14 +1551,75 @@
                     </div>
                   </div>
                 </div>
-
+                <li
+                  class="py-8 border-b border__gray3 w-full cursor-pointer flex items-center justify-between px-5 tabLinkContact"
+                  onclick="openContact(event, 'lihatsemua-2')"
+                  
+                >
+                  <div>
+                    <p class="color__tosca h2 font-normal underline">
+                      lihatsemua 2
+                    </p>
+                    <p class="text-sm font-normal mt-2">09.00 – 20.00 WIB</p>
+                  </div>
+                  <div>
+                    <ul>
+                      <li class="mr-3">
+                        <img src="images/svg/icon__wa2.svg" alt="" />
+                        <img
+                          class="location__icon__white"
+                          src="images/svg/icon__wa2--white.svg"
+                          alt=""
+                        />
+                      </li>
+                      <li class="mr-3">
+                        <img src="images/svg/icon__loc.svg" alt="" />
+                        <img
+                          class="location__icon__white"
+                          src="images/svg/icon__loc--white.svg"
+                          alt=""
+                        />
+                      </li>
+                      <li class="mr-3">
+                        <img src="images/svg/icon__arrow.svg" alt="" />
+                        <img
+                          class="location__icon__white"
+                          src="images/svg/icon__arrow--white.svg"
+                          alt=""
+                        />
+                      </li>
+                    </ul>
+                  </div>
+                </li>
                 <!-- lihatsemua 2 -->
                 <div id="lihatsemua-2"  class="grid grid-cols-12 relative text-white tabContact">
-                  <div class="md:col-span-6 bg__tosca pt-10 p-7 leading-6">
-                    <p class="uppercase">Hubungi Kami lihatsemua 2</p>
+                  <img
+                  id="tabContact__close"
+                  class="absolute right-5 top-5 w-auto z-50 cursor-pointer tabContact__close"
+                  src="images/svg/close.svg"
+                  alt=""
+                />
+                  <div id="lihatsemua-2a-section" class="col-span-12 md:col-span-6 bg__tosca pt-6 p-5 md:pt-10 md:p-7 leading-6">
+                    <p class="uppercase hidden md:block">Hubungi Kami</p>                      
+                    <div class="nav__jump">
+                      <div class="flex mb-2 md:hidden">
+                        <a
+                        href="#lihatsemua-2a-section"
+                        class="rounded-full py-3 px-6 font-normal text-sm md:text-xl uppercase border active"
+                        onclick="openJump(event)"
+                        >Hubungi Kami</a>
+                      </div>
+                      <div class="flex mb-2 md:hidden">
+                          <a
+                          href="#lihatsemua-2b-section"
+                          class="rounded-full py-3 px-6 font-normal text-sm md:text-xl uppercase text-white border"
+                          onclick="openJump(event)"
+                          >JADWAL PRAKTEK DOKTER</a>
+                      </div>
+                    </div>
                     <div class="mt-5">
                       <p class="font-medium mb-2">Konsultasi Online</p>
-                      <ul>
+                      <ul class="text-xl">
                         <li class="block flex underline mb-2">
                           <img
                             class="w-auto mr-3"
@@ -1244,98 +1668,54 @@
                         Skin booster, Dermapen, Tanam benang, Immune booster,
                         Injeksi jerawat
                       </p>
-                    </div>
-                  </div>
-                  <div class="md:col-span-6 bg__tosca3 pt-10 p-7 pr-10 leading-6">
-                    <p class="uppercase">Jadwal Praktek Dokter</p>
-                    <div class="mt-5 list list__custom">
-                      <ul>
-                        <li class="block">
-                          <p class="font-medium">dr. M Karyadi Hadiprodjo</p>
-                          <div>
-                            <strong> Selasa</strong>
-                            <br />
-                            10.00–14.00, 18.00–20.00
-                          </div>
-                          <div>
-                            <strong>Kamis</strong>
-                            <br />10.00–14.00, 18.00–20.00
-                          </div>
-                          <div>
-                            <strong>Jumat</strong>
-                            <br />10.00–14.00
-                          </div>
-                        </li>
-                        <li class="block">
-                          <p class="font-medium">dr. Rini Tjahjadi</p>
-                          <div>
-                            <strong> Selasa</strong>
-                            <br />
-                            10.00–14.00, 18.00–20.00
-                          </div>
-                          <div>
-                            <strong>Kamis</strong>
-                            <br />10.00–14.00, 18.00–20.00
-                          </div>
-                          <div>
-                            <strong>Jumat</strong>
-                            <br />10.00–14.00
-                          </div>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- lihatsemua 3 -->
-                <div id="lihatsemua-3"  class="grid grid-cols-12 relative text-white tabContact">
-                  <div class="md:col-span-6 bg__tosca pt-10 p-7 leading-6">
-                    <p class="uppercase">Hubungi Kami lihatsemua 3</p>
-                    <div class="mt-5">
-                      <p class="font-medium mb-2">Konsultasi Online</p>
-                      <ul>
-                        <li class="block flex underline mb-2">
-                          <img
-                            class="w-auto mr-3"
-                            src="images/svg/wa.svg"
-                            alt=""
-                          />
-                          123-7291-1916
-                        </li>
-                        <li class="block flex underline mb-2">
-                          <img
-                            class="w-auto mr-3"
-                            src="images/svg/telp.svg"
-                            alt=""
-                          />021- 123123123
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="mt-5">
-                      <p class="font-medium mb-1">Alamat</p>
                       <p>
-                        Jl. TB Shimatupang no. 1E, Kel. Gedong, Kec. Pasar Rebo,
-                        Jakarta Timur 13760 — 50m dari RS Pasar Rebo (FRANCHISE)
-                        <br />
-                        <a
-                          href="http://"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          class="underline"
-                          >Buka Google Maps</a
-                        >
+                        Facial Care, Medical Peeling, Microdermabrasion,
+                        IPLElectrocauterisation, Intralesional Steroid Injection,
+                        Skin booster, Dermapen, Tanam benang, Immune booster,
+                        Injeksi jerawat
                       </p>
-                    </div>
-                    <div class="mt-5">
-                      <p class="font-medium mb-1">Jam Operasional</p>
-                      <ul>
-                        <li class="block">Senin-Jumat:10.00-20.00 WIB</li>
-                        <li class="block">Sabtu: 10.00-14.30 WIB</li>
-                        <li class="block">Hari Libur Nasional tutup</li>
-                      </ul>
-                    </div>
-                    <div class="mt-5">
-                      <p class="font-medium mb-1">Pelayanan</p>
+                      <p>
+                        Facial Care, Medical Peeling, Microdermabrasion,
+                        IPLElectrocauterisation, Intralesional Steroid Injection,
+                        Skin booster, Dermapen, Tanam benang, Immune booster,
+                        Injeksi jerawat
+                      </p>
+                      <p>
+                        Facial Care, Medical Peeling, Microdermabrasion,
+                        IPLElectrocauterisation, Intralesional Steroid Injection,
+                        Skin booster, Dermapen, Tanam benang, Immune booster,
+                        Injeksi jerawat
+                      </p>
+                      <p>
+                        Facial Care, Medical Peeling, Microdermabrasion,
+                        IPLElectrocauterisation, Intralesional Steroid Injection,
+                        Skin booster, Dermapen, Tanam benang, Immune booster,
+                        Injeksi jerawat
+                      </p>
+                      <p>
+                        Facial Care, Medical Peeling, Microdermabrasion,
+                        IPLElectrocauterisation, Intralesional Steroid Injection,
+                        Skin booster, Dermapen, Tanam benang, Immune booster,
+                        Injeksi jerawat
+                      </p>
+                      <p>
+                        Facial Care, Medical Peeling, Microdermabrasion,
+                        IPLElectrocauterisation, Intralesional Steroid Injection,
+                        Skin booster, Dermapen, Tanam benang, Immune booster,
+                        Injeksi jerawat
+                      </p>
+                      <p>
+                        Facial Care, Medical Peeling, Microdermabrasion,
+                        IPLElectrocauterisation, Intralesional Steroid Injection,
+                        Skin booster, Dermapen, Tanam benang, Immune booster,
+                        Injeksi jerawat
+                      </p>
+                      <p>
+                        Facial Care, Medical Peeling, Microdermabrasion,
+                        IPLElectrocauterisation, Intralesional Steroid Injection,
+                        Skin booster, Dermapen, Tanam benang, Immune booster,
+                        Injeksi jerawat
+                      </p>
                       <p>
                         Facial Care, Medical Peeling, Microdermabrasion,
                         IPLElectrocauterisation, Intralesional Steroid Injection,
@@ -1344,8 +1724,8 @@
                       </p>
                     </div>
                   </div>
-                  <div class="md:col-span-6 bg__tosca3 pt-10 p-7 pr-10 leading-6">
-                    <p class="uppercase">Jadwal Praktek Dokter</p>
+                  <div id="lihatsemua-2b-section" class="col-span-12 md:col-span-6 bg__tosca3 pt-7 p-5 md:pt-10 md:p-7 pr-10 leading-6">
+                    <p class="uppercase">Jadwal Praktek Dokter 2</p>
                     <div class="mt-5 list list__custom">
                       <ul>
                         <li class="block">
@@ -1384,8 +1764,26 @@
                     </div>
                   </div>
                 </div>
-
-
+              </ul>
+            </div>
+          </div>
+          <div class="col-span-12 md:col-span-6">
+            <div class="h-full w-full relative h-min-600 ">
+              <!-- <img
+                id="tabContact__close"
+                class="absolute right-5 top-5 w-auto z-50 cursor-pointer hidden tabContact__close"
+                src="images/svg/close.svg"
+                alt=""
+              /> -->
+              <div class="w-full h-full hidden md:block absolute left-0 top-0" >
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126920.28185637132!2d106.75947801814148!3d-6.229571229042203!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f3e945e34b9d%3A0x5371bf0fdad786a2!2sJakarta!5e0!3m2!1sen!2sid!4v1614163156105!5m2!1sen!2sid"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  class="w-full h-full"
+                ></iframe>
+              </div>
 
               </div>
             </div>
@@ -1394,7 +1792,7 @@
       </div>
     </div>
     <!-- footer -->
-    <div class="footer py-10 bg__tosca text-white font-light">
+    <div class="footer py-10 bg__tosca text-white font-light relative">
       <div class="container px-5">
         <div>
           <div class="logo">
@@ -1406,17 +1804,18 @@
         <div class="grid grid-cols-12">
           <div class="col-span-12 md:col-span-6 md:pr-28">
             <div class="my-10">
-              <p class="text-xl">
-                Berlangganan buletin estetiderma untuk mendapatkan <br />
+              <p class="text-md md:text-xl">
+                Berlangganan buletin estetiderma untuk mendapatkan
+                <br class="hidden md:block" />
                 promo dan informasi terkini
               </p>
             </div>
-            <div class="relative mt-20">
+            <div class="relative mt-14 md:mt-20">
               <form action="">
                 <input
                   type="text"
                   placeholder="Alamat email kamu"
-                  class="bg-transparent border-b border-white field placeholder-white w-full py-5"
+                  class="bg-transparent placeholder-gray-200 border-b border-white field placeholder-white w-full py-5"
                 />
                 <button
                   class="rounded-full py-3 px-6 bg-white color__tosca absolute right-0"
@@ -1425,8 +1824,10 @@
                 </button>
               </form>
             </div>
-            <div class="py-5">
-              <ul>
+            <div class="md:py-5">
+              <ul
+                class="absolute md:relative top-12 md:top-auto right-3 md:right-auto"
+              >
                 <li class="mr-3">
                   <a href="http://#" target="_blank" rel="noopener noreferrer">
                     <img src="images/svg/facebook.svg" alt="" />
@@ -1438,7 +1839,7 @@
                   </a>
                 </li>
               </ul>
-              <p class="text-xs mt-5">
+              <p class="text-xs mt-5 hidden md:block">
                 © 2021 ESTETIDERMA and its logo are registered trademarks. All
                 rights reserved. Copyright 2021
               </p>
@@ -1446,96 +1847,119 @@
           </div>
 
           <div class="col-span-12 md:col-span-6">
-            <div class="my-10 grid grid-cols-12 md:gap-10">
-              <ul class="col-span-12 md:col-span-4">
-                <li class="block leading-7 text-sm uppercase font-bold">
+            <div class="my-10 grid grid-cols-12 md:gap-5">
+              <ul class="col-span-12 md:col-span-4 mb-5 md:mb-0">
+                <li
+                  class="md:block leading-7 tracking-wider text-sm mr-2 uppercase font-bold"
+                >
                   umum
                 </li>
-                <li class="block leading-7 text-sm">
+                <li class="md:block leading-7 tracking-wider text-sm mr-2">
                   <a href=""> Tentang Kami </a>
                 </li>
-                <li class="block leading-7 text-sm">
+                <li class="md:block leading-7 tracking-wider text-sm mr-2">
                   <a href=""> Produk Kami </a>
                 </li>
-                <li class="block leading-7 text-sm">
+                <li class="md:block leading-7 tracking-wider text-sm mr-2">
                   <a href=""> General Enquires </a>
                 </li>
-                <li class="block leading-7 text-sm">
+                <li class="md:block leading-7 tracking-wider text-sm mr-2">
                   <a href=""> Konsultasi Online </a>
                 </li>
-                <li class="block leading-7 text-sm">
+                <li class="md:block leading-7 tracking-wider text-sm mr-2">
                   <a href=""> Kesempatan Kerja </a>
                 </li>
-                <li class="block leading-7 text-sm">
+                <li class="md:block leading-7 tracking-wider text-sm mr-2">
                   <a href=""> Pertanyaan Umum </a>
                 </li>
               </ul>
-              <ul class="col-span-12 md:col-span-4">
-                <li class="block leading-7 text-sm uppercase font-bold">
+              <ul class="col-span-12 md:col-span-4 mb-5 md:mb-0">
+                <li
+                  class="md:block leading-7 tracking-wider text-sm mr-2 uppercase font-bold"
+                >
                   perawatan
                 </li>
-                <li class="block leading-7 text-sm">
+                <li class="md:block leading-7 tracking-wider text-sm mr-2">
                   <a href=""> Facial </a>
                 </li>
-                <li class="block leading-7 text-sm">
+                <li class="md:block leading-7 tracking-wider text-sm mr-2">
                   <a href=""> Jerawat & Bopeng </a>
                 </li>
-                <li class="block leading-7 text-sm">
+                <li class="md:block leading-7 tracking-wider text-sm mr-2">
                   <a href=""> Pigmentasi & Kulit Kusam </a>
                 </li>
-                <li class="block leading-7 text-sm">
+                <li class="md:block leading-7 tracking-wider text-sm mr-2">
                   <a href=""> Wajah & Kulit Menua </a>
                 </li>
-                <li class="block leading-7 text-sm">
+                <li class="md:block leading-7 tracking-wider text-sm mr-2">
                   <a href=""> Contouring </a>
                 </li>
-                <li class="block leading-7 text-sm">
+                <li class="md:block leading-7 tracking-wider text-sm mr-2">
                   <a href=""> Layanan lainnya </a>
                 </li>
               </ul>
-              <ul class="col-span-12 md:col-span-4 md:ml-5">
-                <li class="block leading-7 text-sm uppercase font-bold">
+              <ul class="col-span-12 md:col-span-4 mb-5 md:mb-0 md:ml-5">
+                <li
+                  class="md:block leading-7 tracking-wider text-sm mr-2 uppercase font-bold"
+                >
                   Klinik Kami
                 </li>
-                <li class="block leading-7 text-sm">
+                <li class="md:block leading-7 tracking-wider text-sm mr-2">
                   <a href=""> Jakarta</a>
                 </li>
-                <li class="block leading-7 text-sm">
+                <li class="md:block leading-7 tracking-wider text-sm mr-2">
                   <a href=""> Bodetabek </a>
                 </li>
-                <li class="block leading-7 text-sm">
+                <li class="md:block leading-7 tracking-wider text-sm mr-2">
                   <a href=""> Lainnya </a>
                 </li>
-                <li class="block leading-7 text-sm">
+                <li class="md:block leading-7 tracking-wider text-sm mr-2">
                   <a href="">Lihat Semua </a>
                 </li>
               </ul>
             </div>
-            <div class="mt-14">
-              <ul class="flex items-center">
-                <li class="pr-10">
+            <div class="md:mt-14">
+              <ul class="flex flex-wrap md:flex-nowrap items-center">
+                <li class="py-3 pr-5 md:pr-10">
                   <img src="images/svg/bca.svg" alt="" />
                 </li>
-                <li class="pr-10">
+                <li class="py-3 pr-5 md:pr-10">
                   <img src="images/svg/mandiri.svg" alt="" />
                 </li>
-                <li class="pr-10">
+                <li class="py-3 pr-5 md:pr-10">
                   <img src="images/svg/gopay.svg" alt="" />
                 </li>
-                <li class="pr-10">
+                <li class="py-3 pr-5 md:pr-10">
                   <img src="images/svg/spay.svg" alt="" />
                 </li>
-                <li class="pr-10">
+                <li class="py-3 pr-5 md:pr-10">
                   <img src="images/svg/visa.svg" alt="" />
                 </li>
-                <li class="pr-10">
+                <li class="py-3 pr-5 md:pr-10">
                   <img src="images/svg/mastercard.svg" alt="" />
                 </li>
               </ul>
             </div>
           </div>
+
+          <div class="col-span-12 py-5 md:hidden">
+            <p class="text-xs mt-5">
+              © 2021 ESTETIDERMA and its logo are registered trademarks. All
+              rights reserved. Copyright 2021
+            </p>
+          </div>
         </div>
       </div>
+    </div>
+
+    <!-- WA -->
+    <div
+      class="whatsapp__roll fixed right-5 bottom-5 bg__gray1 rounded-full flex items-center justify-end cursor-pointer transition-all px-3 text-center text-white"
+    >
+      <div>
+        <span class="hidden mr-2">Konsultasi Online</span>
+      </div>
+      <img class="w-auto" src="images/svg/wa.svg" alt="" />
     </div>
 
     <!-- js -->

@@ -1,0 +1,370 @@
+(function($){
+    $(function(){
+
+        duplicateSearchForm();
+       	contentFormatting();
+        updateHomeLinkForSyspex();
+        adjustWidth();
+        adjustClasses();
+        textSlides();
+        animSmiley();
+        miscFunctions();
+        adjustFilterLoader();
+        adjustInnerSliders();
+        removePhocaFooter();
+
+        resizeWindow();
+        $(window).resize(function() {
+            resizeWindow();
+            adjustWidth();
+            posTextSlides();
+            adjustFilterLoader();
+        });
+
+        function removePhocaFooter() {
+            $('a[href*="phoca.cz/phocagallery"]').closest('div').remove();
+        }
+
+        function adjustInnerSliders()
+        {
+            $('.sfc-inner').each(function() {
+                var sfcInner = $(this);
+                if (typeof sfcInner !== 'undefined' && !(sfcInner.text()).trim().length) {
+                    sfcInner.remove();
+                } else {
+                    var sfc = $(this).find('.sprocket-features-content');
+                    if (typeof sfc !== 'undefined' && !((sfc.text()).trim().length)) {
+                        sfc.hide();
+                    }
+                    sfcInner.css({margin: '10px auto'});
+                }
+            });
+        }
+
+        function adjustFilterLoader()
+        {
+            var el = $('#jak2-loading');
+            var wH = $(window).height();
+            var lH = el.outerHeight();
+            var oT = (wH-lH)/2;
+            el.css('top', oT);
+        }
+
+        function miscFunctions()
+        {
+            $('.mod-content-top img').hover(
+                function() {
+                    $(this).velocity('finish', true)
+                        .velocity({scale:1.1},{duration:100})
+                        .velocity({scale:.8},{duration:100})
+                        .velocity({scale:0.9},{duration:200});
+                },
+                function() {
+                    $(this).velocity({scale:.8},{duration:100})
+                        .velocity({scale:1.1},{duration:100})
+                        .velocity({scale:1},{duration:200});
+                }
+            )
+                .click(function() {
+                    $(this).velocity('finish', true)
+                        .velocity({scale:0.3}, {duration:100})
+                        .velocity({scale:1},{duration:100});
+                });
+
+            $('a[href="http://www.faboba.com"]').closest('div').remove();
+            $('.chrono_credits').remove();
+
+            $('[href="http://www.balbooa.com/joomla-gallery"]').closest('p').remove();
+            $('[href="http://www.phoca.cz/phocadocumentation"]').closest('div').remove();
+            $('.acymailing_footer').remove();
+
+            $('#contAnchor a').click(function(e){
+                e.preventDefault();
+                var anchor = $(this).attr('href');
+                anchor = anchor.replace("#","");
+                scrollToAnchor(anchor);
+            });
+
+            if ($('.product_contact_form [name=subject]').length) {
+                $('.product_contact_form [name=subject]').val($('.data-page-title').text());
+            }
+
+            if ($('.form-success').length) {
+                alert($('.form-success').text());
+            }
+
+            if ($('.product_contact_form .validation.message').length) {
+                alert($('.product_contact_form .validation.message').text());
+                // scrollToAnchor('enquiry');
+            }
+
+            $(document).find('[id*=jak2filter] [name=btnReset]').click(function() {
+                $(this).prev('[name=btnSubmit]').trigger('click');
+            });
+
+            $(document).scroll(function() {
+                scrollWindow();
+            });
+        }
+
+        function scrollWindow()
+        {
+            var scrolledTop = $(document).scrollTop();
+            if (scrolledTop >= 150) {
+                $('#contAnchorWrap').addClass('fixed');
+                if ($('#rt-header-surround').hasClass('slideDown')) {
+                    $('#contAnchorWrap').removeClass('dAnimU');
+                    if (!$('#contAnchorWrap').hasClass('dAnimD')) {
+                        $('#contAnchorWrap').addClass('dAnimD');
+                        $('#contAnchorWrap').velocity({top:138});
+                    }
+                } else if ($('#rt-header-surround').hasClass('slideUp')) {
+                    $('#contAnchorWrap').removeClass('dAnimD');
+                    if (!$('#contAnchorWrap').hasClass('dAnimU')) {
+                        $('#contAnchorWrap').addClass('dAnimU');
+                        $('#contAnchorWrap').velocity({top:-30},{duration:0});
+                        $('#contAnchorWrap').velocity({top:65});
+                    }
+                }
+            } else {
+                $('#contAnchorWrap').removeClass('fixed');
+                $('#contAnchorWrap').removeClass('dAnimD, dAnimU');
+            }
+        }
+
+        function duplicateSearchForm()
+        {
+            if ($('.top-search-box').length && !$('form#searchForm').length) {
+                var formHtml = $('.top-search-box').html();
+                //var formHtml = $('form.form-search').closest('div.rt-omega').html();
+                $('.rt-search-cont').html(formHtml);
+                $('.rt-search-cont button').addClass('button btn btn-primary');
+            }
+        }
+
+   		function scrollToAnchor(aid)
+        {
+		    var aTag = $("a[name='"+ aid +"']");
+		    var adjust = -250;
+		    $('html,body').animate({scrollTop: aTag.offset().top + adjust },'fast');
+		}
+
+		function resizeWindow()
+		{
+			var iW = $('.itemBody').width();
+			$('#contAnchorWrap').width(iW);
+		}
+
+		function contentFormatting()
+		{
+			$('table.table-bordered').each(function() {
+				if (!$(this).hasClass('table')) {
+					$(this).addClass('table');
+				}
+			});
+		}
+
+        function updateHomeLinkForSyspex()
+        {
+            var homeItemId = 348;
+            if ($('.menu-block .item' + homeItemId).length) {
+                var href = $('.menu-block .item' + homeItemId + ' a.item').attr('href');
+                $('a#rt-logo, ul.breadcrumb a[href="/en/"], .k2BreadcrumbsBlock a[href$="syspex.com/"]').attr('href',href);
+            }
+        }
+
+        function isMobile()
+        {
+            return $(window).width() < 768 ? true : false;
+        }
+
+        function adjustWidth()
+        {
+            //like fb layout for mobile view
+            var wW = $(window).width();
+            var mW = $('#rt-mainbody').outerWidth();
+            var wA = (-(wW-mW)/2)-10;
+            
+            if (wW < 768) {
+                $('.catItemImageWrap, .itemImageWrap').css({'margin-left':wA+'px', 'margin-right':wA+'px'});
+            } else {
+               $('.catItemImageWrap, .itemImageWrap').css({'margin-left':'inherit', 'margin-right':'inherit'}); 
+            }
+
+            $('#itemListLinks .catItemImageWrap').css({'margin-left':'inherit', 'margin-right':'inherit'});
+        }
+
+        function adjustClasses()
+        {
+            if ($('#k2Container.itemView').length) {
+                $('#rt-main-surround').addClass('pageK2Item');
+            }
+
+            $('.polling_container').closest('.rt-block').addClass('mod-poll');
+        }
+
+        function textSlides()
+        {
+            var helper = {
+                alert: function() {
+                    alert('123');
+                }
+            };
+
+            $('.textSlides').each(function() {
+
+                var tSlides = [
+                    'In Syspex...',
+                    'Our business is not just pursuing sole profitability',
+                    'It is a platform of lifelong learning & helping',
+                    'Our dream is to create a remarkable & sustainable<br />“Organic Farm”',
+                    '... with Love, Care & Respect.',
+                    'We believe in the positive effect of Helping, Happy, Honesty and Healthy.',
+                    'Come and Join Us Now!'
+                ];
+
+                var el = $(this);
+                el.text('');
+                el.css({
+                    backgroundColor:'#eee',
+                    textAlign:'center',
+                    height: 150,
+                    fontSize: '2.5em',
+                    lineHeight: '1em',
+                    position: 'relative',
+                    padding: 30
+                });
+
+                $.each(tSlides, function(i) {
+                    var ht = '<div class="tsLi" style="display:inline-block; opacity:0">' + tSlides[i] + '</div>';
+                    el.append(ht);
+                });
+
+                posTextSlides();
+
+                textSlidesPlay(el);
+
+            });
+        }
+
+        function textSlidesPlay(el, i)
+        {
+            if (i === undefined) i = 1;
+
+            var count = el.find('.tsLi').length;
+
+            var li = el.find('.tsLi:nth-child(' + i + ')');
+
+            if (i==1) {
+                li.velocity({
+                    scaleX: 1.5,
+                    scaleY: 1.5
+                });
+            }
+
+            el.velocity({backgroundPosition: '200px 200px'},{duration: 20000, loop:true})
+                .velocity('reverse');
+
+            $.Velocity
+                .animate(li,
+                    {
+                        opacity:1,
+                        scaleX: 1,
+                        scaleY: 1
+                    },
+                    {
+                        duration: 500,
+                        
+                        complete: function() {
+                            $.Velocity.animate(
+                                    $(this),
+                                    {
+                                        opacity:0,
+                                        scaleX:1.5,
+                                        scaleY:1.5
+                                    },
+                                    {
+                                        delay: 3000,
+                                        duration: 500
+                                    }
+                                )
+                                .then(function(element) {
+                                    if (i < count) {
+                                        i++;
+                                    } else {
+                                        i = 1;
+                                    }
+
+                                    textSlidesPlay(el, i);
+                                });
+                        }
+                    }
+                );
+            }
+
+        function posTextSlides()
+        {
+            var el = $('.textSlides');
+            el.find('.tsLi').each(function() {
+                $(this).css({
+                    position: 'absolute',
+                    left: (el.outerWidth() - $(this).outerWidth())/2,
+                    top: (el.outerHeight() - $(this).outerHeight())/2,
+                });
+            });
+        }
+
+        function animSmiley()
+        {
+            var sml = $('span:contains("㋛")');
+            if (sml.length) {
+                sml.html((sml.html()).replace('㋛','<span class="smileyAnim">㋛</span>'));
+                
+                $('.smileyAnim')
+                    .css({display:'inline-block'})
+                    .velocity({translateY:5}, {duration:300})
+                    .velocity({translateY:-5}, {duration:300})
+                    .velocity({translateY:5}, {duration:300})
+                    .velocity({translateY:-5}, {duration:300})
+                    .velocity({translateY:0}, {duration:300})
+                    .velocity({rotateZ:45},{duration:800, loop:true})
+                    .velocity('reverse');
+                }
+        }
+
+        function animBgHeader()
+        {
+            var oL=1;
+            setInterval(function() {
+                $('.showcase-type-preset2 #rt-showcase').css({backgroundPosition: oL +'px 0'});
+                oL+=5;
+            }, 100);
+        }
+
+        function scrollTo(selector, offset) {
+            if (offset === undefined) offset = 0;
+
+            $('html, body').animate({
+                scrollTop: $(selector).offset().top - offset
+            }, 500);
+        }
+
+    });
+})(jQuery);
+
+function customTitle()
+{
+	var strVar="";
+	strVar += "<section id=\"rt-showcase-surround\">";
+	strVar += "    <div id=\"rt-showcase\" class=\"rt-overlay-dark\">";
+	strVar += "        <div class=\"rt-container\">";
+	strVar += "            <div class=\"rt-grid-12 rt-alpha rt-omega\">";
+	strVar += "                <div class=\"rt-block contInner\">";
+	strVar += "                <\/div>";
+	strVar += "            <\/div>";
+	strVar += "            <div class=\"clear\"><\/div>";
+	strVar += "        <\/div>";
+	strVar += "    <\/div>";
+	strVar += "<\/section>";
+	return strVar;
+}

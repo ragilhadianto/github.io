@@ -1,4 +1,5 @@
 .header {
+  background-color: #f8f8f8;
   .logo {
     width: 220px;
   }
@@ -18,8 +19,55 @@
           display: flex;
         }
       }
+      &.static li {
+        position: static;
 
+        & a.h-full {
+          display: none;
+        }
+      }
       li {
+        @include max-responsive($md) {
+          position: relative;
+        }
+        &:hover {
+          & > a {
+            @include min-responsive($md) {
+              color: $color__tosca;
+              text-decoration: underline;
+            }
+          }
+          & .header__menu__sub {
+            display: block;
+
+            @include max-responsive($md) {
+              display: none;
+            }
+          }
+        }
+
+        a.active {
+          @extend .color__tosca;
+          text-decoration: underline;
+        }
+
+        // mobile
+        ul {
+          li {
+            @include max-responsive($md) {
+              position: relative !important;
+            }
+          }
+        }
+      }
+    }
+
+    &__sub {
+      min-height: 600px;
+
+      & > div {
+        min-height: 100%;
+        height: 100%;
       }
     }
   }
