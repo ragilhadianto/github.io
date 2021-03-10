@@ -1,9 +1,10 @@
 .header {
   &__nav {
-    @include max-responsive($md) {
+    @include max-responsive($lg) {
       top: 0;
       right: -100%;
       width: 80%;
+      max-width: 300px;
       z-index: 50;
       height: 100%;
       background-color: $color__green1;
@@ -13,18 +14,19 @@
     ul {
       li {
         a {
-          &.active,
-          &:hover {
-            @extend .color__green1;
-            border-bottom: 2px solid;
-            padding-bottom: 5px;
-            @include max-responsive($md) {
-              color: #fff;
-            }
+          padding-bottom: 5px;
+          @include base_transition(all);
+
+          @include max-responsive($lg) {
+            color: #fff;
           }
 
-          @include max-responsive($md) {
-            color: #fff;
+          &.active,
+          &:hover {
+            @include min-responsive($lg) {
+              color: $color__green1;
+              border-bottom: 2px solid;
+            }
           }
         }
       }

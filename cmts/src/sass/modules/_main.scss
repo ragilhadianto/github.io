@@ -1,0 +1,56 @@
+.slider {
+  &__image {
+    height: 300px;
+
+    @include max-responsive($lg) {
+      height: 200px;
+    }
+  }
+}
+
+//photo-profile
+.photo-profile {
+  max-width: 250px;
+  @include max-responsive($lg) {
+    padding-left: 20px;
+  }
+  img {
+    max-width: 100%;
+    width: auto;
+  }
+}
+
+//photo
+.photo {
+  height: 300px;
+
+  @include max-responsive($md) {
+    height: 150px;
+  }
+
+  overflow: hidden;
+  &:hover img {
+    transform: scale(1.2);
+  }
+  img {
+    @extend .imgfillImg;
+    transition: transform 0.7s ease;
+  }
+  &--full {
+    height: 600px;
+
+    @include max-responsive($md) {
+      height: 300px;
+    }
+  }
+}
+
+//hover img
+.img-hover-zoom {
+  img {
+    transition: transform 0.7s ease;
+  }
+  &:hover img {
+    transform: scale(1.2);
+  }
+}

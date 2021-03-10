@@ -1,11 +1,25 @@
 .footer {
+  .container {
+  }
   & .nav {
     border-top: double 4px #000;
     padding-top: 25px;
-
     ul {
       li {
-        padding: 10px 0;
+        @include min-responsive($md) {
+          padding: 10px 0;
+        }
+        a {
+          @include base_transition(all);
+          padding-bottom: 5px;
+          &.active,
+          &:hover {
+            @include min-responsive($lg) {
+              color: $color__green1;
+              border-bottom: 2px solid;
+            }
+          }
+        }
       }
     }
   }

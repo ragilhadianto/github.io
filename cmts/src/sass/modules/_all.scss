@@ -52,12 +52,14 @@
         background-size: 100%;
       }
     }
-  }
-  &__spacetop1 {
-    background-image: url("../images/bg-space-topleft.svg");
-  }
-  &__spacebottom1 {
-    background-image: url("../images/bg-space-bottomright.svg");
+    &__imgb {
+      background-image: url("../images/bg-space-topleft.svg");
+      background-position: top left;
+      background-size: 65%;
+      @include max-responsive($lg) {
+        background-size: 100%;
+      }
+    }
   }
   &__spacebottom2 {
     background-image: url("../images/bg-space-white.svg");
@@ -67,9 +69,18 @@
       background-size: 100%;
     }
   }
+  &__spacetop1 {
+    background-image: url("../images/bg-space-white-top.svg");
+    background-position: top right;
+    background-size: 65%;
+    @include max-responsive($lg) {
+      background-size: 100%;
+    }
+  }
 
   &__1 {
     background-image: url("../images/bg1.jpg");
+    background-position: bottom center;
   }
 
   &__gray1 {
@@ -86,6 +97,10 @@
         color: $color__green1;
       }
     }
+  }
+
+  &__yellow {
+    color: $color__yellow;
   }
 }
 
@@ -155,12 +170,32 @@
 
 //ul li
 .list {
-  ul,
+  ul {
+    li {
+      list-style: disc;
+      display: list-item;
+      margin: 0 0 0 20px;
+    }
+  }
   ol {
     li {
+      list-style: decimal;
       display: list-item;
-      list-style: disc;
-      margin: 0 0 0 20px;
+      margin: 0 0 0 40px;
+      padding-left: 20px;
+      @include max-responsive($md) {
+        margin: 0 0 0 30px;
+      }
+    }
+  }
+  &__yellow {
+    ul,
+    ol {
+      li {
+        &::marker {
+          @extend .color__yellow;
+        }
+      }
     }
   }
 

@@ -2,8 +2,33 @@ input,
 button,
 select,
 textarea {
-  font-weight: 400;
+  font-weight: 600;
+}
+
+select::-ms-expand {
+  display: none;
+}
+select {
+  -webkit-appearance: none;
+  appearance: none;
 }
 
 .field {
+  &__select {
+    background-image: url("../images/svg/selectarrow.svg");
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    color: $color__green1;
+    min-width: 300px;
+
+    option {
+      background-color: $color__grey2;
+      color: #fff;
+
+      &:hover {
+        background-color: $color__green1;
+      }
+    }
+  }
 }
