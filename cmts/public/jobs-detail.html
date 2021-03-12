@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/tailwind.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>CMTS</title>
+  </head>
+  <body>
+    <!-- header -->
+    <div class="header">
+      <div
+        class="header__nav__bg hidden h-full w-full bg-black bg-opacity-20 top-0 left-0 fixed z-10"
+      ></div>
+      <div class="container px-5 flex lg:block flex-wrap justify-between">
+        <div class="logo py-8 flex justify-center w-44 lg:w-auto">
+          <a href="index.html">
+            <img class="w-auto" src="images/logo.svg" alt="" />
+          </a>
+        </div>
+        <div
+          class="header__nav nav lg:block fixed lg:relative py-8 px-5 pl-8 lg:p-0"
+        >
+          <ul
+            class="flex flex-wrap flex-col lg:flex-row justify-between font-semibold text-xl text-black"
+          >
+            <li class="block lg:hidden w-full flex justify-between mb-8">
+              <h3 class="text-2xl font-bold text-white">Menu</h3>
+              <img
+                data-click-state="0"
+                class="header__mobile__close w-auto cursor-pointer"
+                src="images/svg/menu_close.svg"
+                alt=""
+              />
+            </li>
+            <li>
+              <a class="py-3" href="cmts-team.html">CMTS Team</a>
+            </li>
+            <li>
+              <a class="py-3" href="funding-awards.html">Funding & Awards</a>
+            </li>
+            <li>
+              <a class="py-3" href="publication.html">Publications</a>
+            </li>
+            <li>
+              <a class="py-3" href="news.html">News</a>
+            </li>
+            <li>
+              <a class="py-3" href="group-life.html">Group Life</a>
+            </li>
+            <li>
+              <a class="py-3" href="spinoff.html">Spin-Off Technology</a>
+            </li>
+            <li>
+              <a class="py-3" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div
+          class="header__mobile flex items-center block lg:hidden cursor-pointer"
+          data-click-state="1"
+        >
+          <img src="images/svg/menu.svg" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <!-- main -->
+    <div class="main bg__spacebottom2 bg-no-repeat">
+      <!-- section  sub title -->
+      <div>
+        <div
+          class="container px-5 flex flex-wrap justify-between lg:pt-10 pb-5 lg:border-b border__gray2"
+        >
+          <h2 class="color__green1 font-semibold text-2xl lg:text-4xl">Jobs</h2>
+        </div>
+      </div>
+
+      <!-- section -->
+      <div class="content">
+        <div class="container px-5 lg:pt-16 pb-10">
+          <div class="grid grid-cols-12 lg:gap-10">
+            <div class="col-span-12 lg:col-span-6 font-medium mb-10">
+              <h3 class="mb-2 font-semibold">Job Description</h3>
+              <p>
+                30 Product Launches and 500+ Sandoz products currently marketed
+                and supplied by Sandoz to reach out a bigger patient population
+                in different therapeutic areas. This is your chance to be part
+                of a patient-oriented company aimed to continuously provide
+                generic medicines that are of Quality, Safe, Effective and
+                Affordable.
+              </p>
+              <br />
+              <h3 class="mb-2 font-semibold">Minimum requirements</h3>
+              <p>What you’ll bring to the role:</p>
+              <div class="list">
+                <ul>
+                  <li>
+                    At least 2-4 years’ experience as a Graphic Artist related
+                    to Pharma Industry
+                  </li>
+                  <li>
+                    Graduate of Bachelor of Science in Industrial Design or
+                    other related courses
+                  </li>
+                  <li>Proficient in English and Tagalog.</li>
+                  <li>
+                    Computer literate, specifically acrobat illustrator and
+                    other packaging/lay-outing programs Excellent communication
+                    skills Why consider Sandoz?
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-span-12 lg:col-span-6">
+              <form action="">
+                <label for="name">Name</label><br />
+                <input
+                  class="field w-full px-2 py-1"
+                  type="text"
+                  id="name"
+                  name="name"
+                  value=""
+                /><br /><br />
+                <label for="Email">Email</label><br />
+                <input
+                  class="field w-full px-2 py-1"
+                  type="text"
+                  id="Email"
+                  name="Email"
+                  value=""
+                /><br /><br />
+                <label for="Phone">Phone</label><br />
+                <input
+                  class="field w-full px-2 py-1"
+                  type="text"
+                  id="Phone"
+                  name="Phone"
+                  value=""
+                /><br /><br />
+                <label for="Message">Address</label><br />
+                <textarea
+                  class="field w-full px-2 py-1"
+                  type="text"
+                  id="Message"
+                  name="Message"
+                  value=""
+                  rows="4"
+                  cols="50"
+                ></textarea
+                ><br /><br />
+                <label for="ApplicationLetter">Application Letter</label><br />
+                <input
+                  class="field w-full px-2 py-1"
+                  type="file"
+                  id="ApplicationLetter"
+                  name="ApplicationLetter"
+                  value=""
+                />
+                <small class="font-semibold"
+                  >(Max 300kb, format file .PDF)</small
+                >
+                <br /><br />
+                <label for="UploadCV">Upload CV</label><br />
+                <input
+                  class="field w-full px-2 py-1"
+                  type="file"
+                  id="UploadCV"
+                  name="UploadCV"
+                  value=""
+                />
+                <small class="font-semibold"
+                  >(Max 300kb, format file .PDF)</small
+                >
+                <br /><br />
+                <button class="text-white bg__green1 px-14 py-1">Send</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- footer -->
+      <div class="footer">
+        <div class="container px-5 py-20">
+          <div class="nav">
+            <ul
+              class="flex flex-wrap flex-col lg:flex-row justify-between font-semibold text-xl text-black text-center"
+            >
+              <li>
+                <a class="py-3" href="cmts-team.html">CMTS Team</a>
+              </li>
+              <li>
+                <a class="py-3" href="funding-awards.html">Funding & Awards</a>
+              </li>
+              <li>
+                <a class="py-3" href="publication.html">Publications</a>
+              </li>
+              <li>
+                <a class="py-3" href="news.html">News</a>
+              </li>
+              <li>
+                <a class="py-3" href="group-life.html">Group Life</a>
+              </li>
+              <li>
+                <a class="py-3" href="spinoff.html">Spin-Off Technology</a>
+              </li>
+              <li>
+                <a class="py-3" href="contact.html">Contact</a>
+              </li>
+            </ul>
+            <ul
+              class="nav__bottom flex flex-wrap flex-col lg:flex-row text-center justify-center font-normal mt-10 text-base"
+            >
+              <li class="mx-5">
+                <a href="cmts-team.html">© 2013 – 2020 CTMS-Lab</a>
+              </li>
+              <li class="mx-5">
+                <a href="funding-awards.html">Terms of Use</a>
+              </li>
+              <li class="mx-5">
+                <a href="publication.html">Privacy Policy</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- js -->
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

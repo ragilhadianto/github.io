@@ -8,6 +8,17 @@
   }
 }
 
+//jobs
+.jobs {
+  .border {
+    border-bottom: 0;
+
+    &:last-child {
+      border-bottom: 1px solid #d1d5db;
+    }
+  }
+}
+
 //photo-profile
 .photo-profile {
   max-width: 250px;
@@ -17,6 +28,13 @@
   img {
     max-width: 100%;
     width: auto;
+  }
+}
+
+//content
+.content {
+  p {
+    margin-bottom: 15px;
   }
 }
 
@@ -42,6 +60,13 @@
     @include max-responsive($md) {
       height: 300px;
     }
+  }
+  &--auto {
+    height: auto;
+  }
+
+  &--article {
+    height: 175px;
   }
 }
 

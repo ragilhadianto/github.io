@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/tailwind.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>CMTS</title>
+  </head>
+  <body>
+    <!-- header -->
+    <div class="header">
+      <div
+        class="header__nav__bg hidden h-full w-full bg-black bg-opacity-20 top-0 left-0 fixed z-10"
+      ></div>
+      <div class="container px-5 flex lg:block flex-wrap justify-between">
+        <div class="logo py-8 flex justify-center w-44 lg:w-auto">
+          <a href="index.html">
+            <img class="w-auto" src="images/logo.svg" alt="" />
+          </a>
+        </div>
+        <div
+          class="header__nav nav lg:block fixed lg:relative py-8 px-5 pl-8 lg:p-0"
+        >
+          <ul
+            class="flex flex-wrap flex-col lg:flex-row justify-between font-semibold text-xl text-black"
+          >
+            <li class="block lg:hidden w-full flex justify-between mb-8">
+              <h3 class="text-2xl font-bold text-white">Menu</h3>
+              <img
+                data-click-state="0"
+                class="header__mobile__close w-auto cursor-pointer"
+                src="images/svg/menu_close.svg"
+                alt=""
+              />
+            </li>
+            <li>
+              <a class="py-3" href="cmts-team.html">CMTS Team</a>
+            </li>
+            <li>
+              <a class="py-3" href="funding-awards.html">Funding & Awards</a>
+            </li>
+            <li>
+              <a class="py-3" href="publication.html">Publications</a>
+            </li>
+            <li>
+              <a class="py-3 active" href="news.html">News</a>
+            </li>
+            <li>
+              <a class="py-3" href="group-life.html">Group Life</a>
+            </li>
+            <li>
+              <a class="py-3" href="spinoff.html">Spin-Off Technology</a>
+            </li>
+            <li>
+              <a class="py-3" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div
+          class="header__mobile flex items-center block lg:hidden cursor-pointer"
+          data-click-state="1"
+        >
+          <img src="images/svg/menu.svg" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <!-- main -->
+    <div class="main bg__spacebottom2 bg-no-repeat">
+      <!-- section  sub title -->
+      <div>
+        <div
+          class="container px-5 flex flex-wrap justify-between lg:pt-10 pb-5"
+        >
+          <h2 class="color__green1 font-semibold text-2xl lg:text-4xl">News</h2>
+          <div class="flex items-center w-full lg:w-auto">
+            <small class="font-semibold text-base block mr-2 hidden lg:block"
+              >Sort :</small
+            >
+            <form action="" class="w-full lg:w-auto">
+              <select
+                class="border border__gray2 px-5 py-2 pr-16 field__select w-full lg:w-auto mt-5 lg:mt-0"
+                name=""
+                id=""
+              >
+                <option value="">Select Year</option>
+                <option value="">2021</option>
+                <option value="">2020</option>
+              </select>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- section -->
+      <div
+        class="bg__green1 bg__green1__imgb bg-left-top bg-no-repeat bg-contain text-white"
+      >
+        <div class="container px-5 pt-16 pb-10">
+          <div class="grid grid-cols-12 lg:gap-x-20 mb-10 lg:mb-12">
+            <div class="col-span-12 mb-10">
+              <h3 class="text-2xl lg:text-4xl font-semibold color__yellow">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since
+              </h3>
+            </div>
+            <div
+              class="flex flex-col-reverse lg:grid col-span-12 grid-cols-1 lg:grid-cols-2 lg:gap-10 gap-5"
+            >
+              <div class="flex flex-wrap content-between h-full">
+                <p class="text-lg font-medium">
+                  Under the massive supports from Macao Science & Technology
+                  Fund (FDCT, for O Fundo para o Desenvolvimento das Ciências e
+                  da Tecnologia), Macao Young Entrepreneur Incubation Centre,
+                  and the University of Macau, the CMTS team have successfully
+                  set up the spin-off firm specialised in wound healing.
+                </p>
+                <p class="text-lg font-medium color__yellow mt-5">
+                  1 Jan 2019 - Admin
+                </p>
+              </div>
+              <div>
+                <div class="overflow-hidden">
+                  <img class="imgfillImg" src="images/foto8.jpg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- section -->
+      <div>
+        <div class="container px-5 mt-20">
+          <div class="relative">
+            <h4
+              class="color__green1 border-b border__gray2 pb-3 mb-5 text-2xl font-bold text-center"
+            >
+              Latest
+            </h4>
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-10">
+              <div>
+                <a href="article-detail.html">
+                  <div>
+                    <div class="overflow-hidden photo--article img-hover-zoom">
+                      <img class="imgfillImg" src="images/foto8.jpg" alt="" />
+                    </div>
+                    <h4 class="font-semibold py-3">
+                      Title Lorem ipsum dolor Title Lorem ipsum dolor
+                    </h4>
+                  </div>
+                </a>
+              </div>
+              <div>
+                <a href="article-detail.html">
+                  <div>
+                    <div class="overflow-hidden photo--article img-hover-zoom">
+                      <img class="imgfillImg" src="images/foto7.jpg" alt="" />
+                    </div>
+                    <h4 class="font-semibold py-3">
+                      Title Lorem ipsum dolor dolor dolor Title Lorem ipsum
+                      dolor
+                    </h4>
+                  </div>
+                </a>
+              </div>
+              <div>
+                <a href="article-detail.html">
+                  <div>
+                    <div class="overflow-hidden photo--article img-hover-zoom">
+                      <img class="imgfillImg" src="images/foto8.jpg" alt="" />
+                    </div>
+                    <h4 class="font-semibold py-3">
+                      Title Lorem ipsum dolor Title Lorem ipsum dolor
+                    </h4>
+                  </div>
+                </a>
+              </div>
+              <div>
+                <a href="article-detail.html">
+                  <div>
+                    <div class="overflow-hidden photo--article img-hover-zoom">
+                      <img class="imgfillImg" src="images/foto7.jpg" alt="" />
+                    </div>
+                    <h4 class="font-semibold py-3">
+                      Title Lorem ipsum dolor dolor dolor Title Lorem ipsum
+                      dolor
+                    </h4>
+                  </div>
+                </a>
+              </div>
+              <div>
+                <a href="article-detail.html">
+                  <div>
+                    <div class="overflow-hidden photo--article img-hover-zoom">
+                      <img class="imgfillImg" src="images/foto8.jpg" alt="" />
+                    </div>
+                    <h4 class="font-semibold py-3">
+                      Title Lorem ipsum dolor Title Lorem ipsum dolor
+                    </h4>
+                  </div>
+                </a>
+              </div>
+              <div>
+                <a href="article-detail.html">
+                  <div>
+                    <div class="overflow-hidden photo--article img-hover-zoom">
+                      <img class="imgfillImg" src="images/foto7.jpg" alt="" />
+                    </div>
+                    <h4 class="font-semibold py-3">
+                      Title Lorem ipsum dolor dolor dolor Title Lorem ipsum
+                      dolor
+                    </h4>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="flex justify-center my-5">
+              <span
+                class="color__green1 font-semibold text-center cursor-pointer"
+                >More</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- footer -->
+      <div class="footer">
+        <div class="container px-5 py-20">
+          <div class="nav">
+            <ul
+              class="flex flex-wrap flex-col lg:flex-row justify-between font-semibold text-xl text-black text-center"
+            >
+              <li>
+                <a class="py-3" href="cmts-team.html">CMTS Team</a>
+              </li>
+              <li>
+                <a class="py-3" href="funding-awards.html">Funding & Awards</a>
+              </li>
+              <li>
+                <a class="py-3" href="publication.html">Publications</a>
+              </li>
+              <li>
+                <a class="py-3 active" href="news.html">News</a>
+              </li>
+              <li>
+                <a class="py-3" href="group-life.html">Group Life</a>
+              </li>
+              <li>
+                <a class="py-3" href="spinoff.html">Spin-Off Technology</a>
+              </li>
+              <li>
+                <a class="py-3" href="contact.html">Contact</a>
+              </li>
+            </ul>
+            <ul
+              class="nav__bottom flex flex-wrap flex-col lg:flex-row text-center justify-center font-normal mt-10 text-base"
+            >
+              <li class="mx-5">
+                <a href="cmts-team.html">© 2013 – 2020 CTMS-Lab</a>
+              </li>
+              <li class="mx-5">
+                <a href="funding-awards.html">Terms of Use</a>
+              </li>
+              <li class="mx-5">
+                <a href="publication.html">Privacy Policy</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- js -->
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

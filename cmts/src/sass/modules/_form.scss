@@ -12,8 +12,13 @@ select {
   -webkit-appearance: none;
   appearance: none;
 }
+label {
+  font-weight: 600;
+}
 
 .field {
+  border: 1px solid $color__grey2;
+
   &__select {
     background-image: url("../images/svg/selectarrow.svg");
     background-position: center right;
