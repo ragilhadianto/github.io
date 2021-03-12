@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32.5" height="32.5" viewBox="0 0 32.5 32.5">
+  <g id="Group_269" data-name="Group 269" transform="translate(-317.5 -768.5)" opacity="0.8">
+    <g id="Path_88" data-name="Path 88" transform="translate(317.5 768.5)" fill="#fff">
+      <path d="M 32 32 L 0.5 32 L 0.5 0.5 L 32 0.5 L 32 32 Z" stroke="none"/>
+      <path d="M 1 1 L 1 31.5 L 31.5 31.5 L 31.5 1 L 1 1 M 0 0 L 32.5 0 L 32.5 32.5 L 0 32.5 L 0 0 Z" stroke="none" fill="#0f7562"/>
+    </g>
+    <path id="Polygon_3" data-name="Polygon 3" d="M6,0l6,10H0Z" transform="translate(328 780)" fill="#0f7562"/>
+  </g>
+</svg>
