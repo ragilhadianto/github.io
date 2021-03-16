@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- font -->
+
+    <link rel="stylesheet" href="css/tailwind.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>LeBoYe</title>
+  </head>
+  <body class="h-full">
+    <!-- logo -->
+    <div class="logo">
+      <a href="index.html">
+        <img class="w-auto" src="images/logo.svg" alt="" />
+      </a>
+    </div>
+    <!-- menu -->
+    <div class="menu">
+      <div class="menu__burger" data-click-state="1">
+        <img class="w-auto" src="images/svg/menu.svg" alt="" />
+      </div>
+      <!-- inner menu -->
+      <div class="menu__inner">
+        <div class="container">
+          <ul class="flex flex-col">
+            <li>
+              <a class="uppercase text-sm py-10" href="work.html"> WORK </a>
+            </li>
+            <li>
+              <a class="uppercase text-sm py-10" href="journal.html">
+                Journal
+              </a>
+            </li>
+            <li>
+              <a class="uppercase text-sm py-10" href="journal.html">
+                Studio
+              </a>
+            </li>
+            <li>
+              <a class="uppercase text-sm py-10" href="shop.html"> Shop </a>
+            </li>
+            <li>
+              <form>
+                <div class="flex py-10">
+                  <img class="w-auto" src="images/svg/search.svg" alt="" />
+                  <span class="ml-2">|</span>
+                  <input
+                    class="px-2 bg-transparent"
+                    type="text"
+                    placeholder=" search your type here"
+                  />
+                </div>
+              </form>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- homeslide -->
+    <div class="slider slider--home h-full w-full">
+      <div class="w-full h-full">
+        <img class="imgfillImg" src="images/slide1.jpg" alt="" />
+        <!-- <a href="project-detail.html"></a> -->
+      </div>
+
+      <div class="w-full h-full">
+        <img class="imgfillImg" src="images/slide2.jpg" alt="" />
+        <!-- <a href="project-detail.html"></a> -->
+      </div>
+    </div>
+
+    <!-- js -->
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

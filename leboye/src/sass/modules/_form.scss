@@ -1,0 +1,27 @@
+input,
+button,
+select,
+textarea {
+  font-weight: 300;
+  font-family: "Baskerville", sans-serif;
+  &::placeholder {
+    color: #000 !important;
+    font-weight: normal;
+  }
+}
+
+select::-ms-expand {
+  display: none;
+}
+select {
+  -webkit-appearance: none;
+  appearance: none;
+}
+label {
+  font-weight: 600;
+}
+
+.field {
+  &__select {
+  }
+}
