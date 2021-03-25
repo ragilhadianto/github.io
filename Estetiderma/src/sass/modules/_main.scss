@@ -360,3 +360,12 @@
     }
   }
 }
+
+//maps
+.maps {
+  min-height: 500px;
+
+  &__active {
+    right: 0 !important;
+  }
+}

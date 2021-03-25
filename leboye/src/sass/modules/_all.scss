@@ -38,6 +38,11 @@
   }
 }
 
+//font
+.font-2 {
+  font-family: "Baskerville", sans-serif !important;
+}
+
 // bg
 .bg {
   &__whitegradient {
@@ -176,49 +181,7 @@
     }
   }
 }
-
-// slider
-.slider {
-  // position: static;
-  // .arrow {
-  //   position: absolute;
-  //   top: 10px;
-  // }
-  // .prev-arrow {
-  //   left: 0;
-  // }
-  // .next-arrow {
-  //   right: 0;
-  // }
-
-  // .slick-slider {
-  // }
-
-  // .slick-slide {
-  //   margin: 0 20px;
-  //   @include max-responsive($lg) {
-  //     margin: 0 15px 0 15px;
-  //   }
-  // }
-  // .slick-list {
-  //   margin: 0 -20px;
-  //   @include max-responsive($lg) {
-  //     margin: 0 -15px;
-  //   }
-  // }
-
-  &--home {
-    & .slick-track,
-    & .slick-list {
-      height: 100%;
-    }
-    & .slick-slide {
-      & > div {
-        height: 100%;
-      }
-    }
-    & .slick-arrow {
-      display: none !important;
-    }
-  }
+//width
+.w-768 {
+  width: 768px;
 }

@@ -77,7 +77,7 @@ $("#menu_mobile").on("click", function () {
 });
 
 //location
-function openCity(evt, cityName) {
+function openCity(evt, cityName, maps) {
   var i, tabcontent, tablinks;
   tabcontent = document.getElementsByClassName("tabcontent");
   for (i = 0; i < tabcontent.length; i++) {
@@ -97,6 +97,12 @@ function openCity(evt, cityName) {
     tablinks[i].className = tablinks[i].className.replace(" active", "");
   }
   document.getElementById(cityName).style.display = "block";
+
+  mapsitem = document.getElementsByClassName("maps");
+  for (i = 0; i < mapsitem.length; i++) {
+    mapsitem[i].className = mapsitem[i].className.replace("maps__active", "");
+  }
+  document.getElementById(maps).classList.add("maps__active");
   evt.currentTarget.className += " active";
   closeContact();
 }
@@ -130,6 +136,7 @@ function closeContact(evt, cityName) {
   for (i = 0; i < tablinks.length; i++) {
     tablinks[i].className = tablinks[i].className.replace(" active", "");
   }
+  document.querySelector(".maps").style.right = "-100%";
   // tabContact__close.classList.remove("block");
   // tabContact__close.classList.add("hidden");
 }

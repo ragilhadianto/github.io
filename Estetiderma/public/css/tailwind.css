@@ -1119,6 +1119,10 @@ video {
   top: 10rem;
 }
 
+.-right-full {
+  right: -100%;
+}
+
 .resize {
   resize: both;
 }

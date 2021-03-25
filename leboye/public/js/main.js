@@ -24,6 +24,21 @@ $(".slider").slick({
   slidesToShow: 1,
   slidesToScroll: 1,
 });
+$(".slider-b").slick({
+  dots: false,
+  infinite: true,
+  speed: 500,
+  autoplay: false,
+  autoplaySpeed: 2000,
+  appendDots: false,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  appendArrows: ".slider__arrow",
+  prevArrow:
+    '<button class="prev-arrow"><img src="images/svg/arrow-left.svg"></button>',
+  nextArrow:
+    '<button class="next-arrow"><img src="images/svg/arrow-right.svg"></button>',
+});
 
 // //backtotop
 // $(window).scroll(function () {

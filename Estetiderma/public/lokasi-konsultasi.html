@@ -402,25 +402,25 @@
               <a
                 href="#jakarta"
                 class="rounded-full py-3 px-6 btn__transparant border border__gray4 font-normal text-sm md:text-xl mr-3 mt-4 tablinks active"
-                onclick="openCity(event, 'jakarta')"
+                onclick="openCity(event, 'jakarta', 'maps__jakarta')"
                 >Jakarta</a
               >
               <a
                 href="#botabek"
                 class="rounded-full py-3 px-6 btn__transparant border-white border border__gray4 font-normal text-sm md:text-xl mr-3 mt-4 tablinks"
-                onclick="openCity(event, 'botabek')"
+                onclick="openCity(event, 'botabek', 'maps__botabek')"
                 >Bodetabek</a
               >
               <a
                 href="#lainnya"
                 class="rounded-full py-3 px-6 btn__transparant border-white border border__gray4 font-normal text-sm md:text-xl mr-3 mt-4 tablinks"
-                onclick="openCity(event, 'lainnya')"
+                onclick="openCity(event, 'lainnya','maps__lainnya')"
                 >Lainnya</a
               >
               <a
                 href="#lihatsemua"
                 class="rounded-full py-3 px-6 btn__transparant border-white border border__gray4 font-normal text-sm md:text-xl mr-3 mt-4 tablinks"
-                onclick="openCity(event, 'lihatsemua')"
+                onclick="openCity(event, 'lihatsemua', 'maps__lihatsemua')"
                 >Lihat Semua</a
               >
             </div>
@@ -1775,14 +1775,43 @@
                 src="images/svg/close.svg"
                 alt=""
               /> -->
-              <div class="w-full h-full hidden md:block absolute left-0 top-0" >
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126920.28185637132!2d106.75947801814148!3d-6.229571229042203!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f3e945e34b9d%3A0x5371bf0fdad786a2!2sJakarta!5e0!3m2!1sen!2sid!4v1614163156105!5m2!1sen!2sid"
-                  style="border: 0"
-                  allowfullscreen=""
-                  loading="lazy"
-                  class="w-full h-full"
-                ></iframe>
+              <div class="w-full h-full hidden md:block absolute left-0 top-0 overflow-hidden" >
+                <div id="maps__jakarta" class="maps h-full w-full -right-full absolute" style="right: 0;">
+                    <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126920.28185637132!2d106.75947801814148!3d-6.229571229042203!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f3e945e34b9d%3A0x5371bf0fdad786a2!2sJakarta!5e0!3m2!1sen!2sid!4v1614163156105!5m2!1sen!2sid"
+                    style="border: 0"
+                    allowfullscreen=""
+                    loading="lazy"
+                    class="w-full h-full"
+                  ></iframe>
+                </div>
+                <div id="maps__botabek" class="maps h-full w-full -right-full absolute">
+                    <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d253763.0610843002!2d106.67771073030977!3d-6.387829614855901!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69e95620a297d3%3A0x1cfd4042316fb217!2sDepok%20City%2C%20West%20Java!5e0!3m2!1sen!2sid!4v1616686633684!5m2!1sen!2sid"
+                    style="border: 0"
+                    allowfullscreen=""
+                    loading="lazy"
+                    class="w-full h-full"
+                  ></iframe>
+                </div>
+                <div id="maps__lainnya" class="maps h-full w-full -right-full absolute">
+                    <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8171126.270125711!2d96.14921546937319!3d-0.13189383887511008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e2aad6120570311%3A0x1def4d17e789deb4!2sSumatra!5e0!3m2!1sen!2sid!4v1616687920398!5m2!1sen!2sid"
+                    style="border: 0"
+                    allowfullscreen=""
+                    loading="lazy"
+                    class="w-full h-full"
+                  ></iframe>
+                </div>
+                <div id="maps__lihatsemua" class="maps h-full w-full -right-full absolute">
+                    <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126899.51562516022!2d107.08422291882007!3d-6.314870694754216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e699a97cdfd23f3%3A0xa467efa8d683cc31!2sCikarang%2C%20Bekasi%2C%20West%20Java!5e0!3m2!1sen!2sid!4v1616687999464!5m2!1sen!2sid"
+                    style="border: 0"
+                    allowfullscreen=""
+                    loading="lazy"
+                    class="w-full h-full"
+                  ></iframe>
+                </div>
               </div>
 
               </div>

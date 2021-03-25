@@ -6,13 +6,13 @@ module.exports = {
     container: {
       center: true,
     },
-    // screens: {
-    //   xs: "100%",
-    //   sm: "640px",
-    //   md: "768px",
-    //   lg: "1024px",
-    //   xl: "1280px",
-    // },
+    screens: {
+      xs: "100%",
+      sm: "640px",
+      md: "768px",
+      lg: "1024px",
+      xl: "1280px",
+    },
   },
   variants: {
     extend: {},
