@@ -236,6 +236,10 @@
 .tabcontent,
 .tabContact {
   display: none;
+
+  &__close {
+    width: 30px;
+  }
 }
 .tabContact {
   position: relative;

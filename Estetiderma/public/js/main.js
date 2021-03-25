@@ -136,7 +136,7 @@ function closeContact(evt, cityName) {
   for (i = 0; i < tablinks.length; i++) {
     tablinks[i].className = tablinks[i].className.replace(" active", "");
   }
-  document.querySelector(".maps").style.right = "-100%";
+  //document.querySelector(".maps").style.right = "-100%";
   // tabContact__close.classList.remove("block");
   // tabContact__close.classList.add("hidden");
 }
@@ -161,7 +161,7 @@ function openContact(evt, cityName) {
       cityName
     ).parentElement.parentElement.parentElement.parentElement.style.height =
       offsetHeight + "px";
-    console.log("desktop opencontact");
+    console.log("desktop opencontact asdad");
   } else {
   }
   // console.log(offsetHeight);
