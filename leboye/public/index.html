@@ -21,33 +21,78 @@
     <!-- menu -->
     <div class="menu">
       <div class="menu__burger" data-click-state="1">
-        <img class="w-auto" src="images/svg/menu.svg" alt="" />
+        <!-- <img class="w-auto" src="images/svg/menu.svg" alt="" /> -->
+        <div class="buttonsvg">
+          <svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg">
+            <g>
+              <line x1="0" y1="17" x2="48" y2="17" stroke-width="1" />
+              <line x1="0" y1="31" x2="48" y2="31" stroke-width="1" />
+            </g>
+            
+            <g>
+              <line x1="0" y1="24" x2="48" y2="24" stroke-width="1" />
+              <line x1="0" y1="24" x2="48" y2="24" stroke-width="1" />
+            </g>
+          </svg>
+        </div>
       </div>
       <!-- inner menu -->
       <div class="menu__inner">
         <div class="container">
           <ul class="flex flex-col">
             <li>
-              <a class="uppercase text-sm py-10" href="work.html"> WORK </a>
+              <a class="uppercase text-sm py-5 lg:py-10 w-full lg:w-auto" href="work.html"> WORK </a>
+              <ul>
+                <li>
+                  <a href="work.html">all projects.</a>
+                </li>
+                <li>
+                  <a href="work.html">fields.</a>
+                </li>
+                <li>
+                  <a href="work.html">clients.</a>
+                </li>
+              </ul>             
             </li>
             <li>
-              <a class="uppercase text-sm py-10" href="journal.html">
+              <a class="uppercase text-sm py-5 lg:py-10 w-full lg:w-auto" href="journal.html">
                 Journal
               </a>
+              <ul>
+                <li>
+                  <a href="journal.html">behind the scenes.</a>
+                </li>
+                <li>
+                  <a href="journal-events.html">events.</a>
+                </li>
+                <li>
+                  <a href="journal-recognitions.html">recognitions.</a>
+                </li>
+              </ul>
             </li>
             <li>
-              <a class="uppercase text-sm py-10" href="journal.html">
+              <a class="uppercase text-sm py-5 lg:py-10 w-full lg:w-auto" href="studio.html">
                 Studio
               </a>
+              <ul>
+                <li>
+                  <a href="studio.html">story.</a>
+                </li>
+                <li>
+                  <a href="studio-approach.html">approach.</a>
+                </li>
+                <li>
+                  <a href="studio-reachus.html">reach us.</a>
+                </li>
+              </ul>
             </li>
             <li>
-              <a class="uppercase text-sm py-10" href="shop.html"> Shop </a>
+              <a class="uppercase text-sm py-5 lg:py-10 w-full lg:w-auto" href="shop.html"> Shop </a>
             </li>
             <li>
               <form>
-                <div class="flex py-10">
+                <div class="flex py-6 lg:py-10 w-full lg:w-auto">
                   <img class="w-auto" src="images/svg/search.svg" alt="" />
-                  <span class="ml-2">|</span>
                   <input
                     class="px-2 bg-transparent"
                     type="text"
@@ -62,20 +107,75 @@
     </div>
 
     <!-- homeslide -->
+    <div class="layer"></div>
     <div class="slider slider--home h-full w-full">
-      <div class="w-full h-full">
+      <div class="item dark-mode w-full h-full relative">
         <img class="imgfillImg" src="images/slide1.jpg" alt="" />
-        <!-- <a href="project-detail.html"></a> -->
+        <!-- <a href="project-detail.html"></a> -->       
+        <div class="absolute left-7 lg:left-0 lg:right-0 bottom-7 mx-auto text-center text-xl">
+          <a href="work-detail.html" class="hover__50 item__text">
+            La Vie  
+          </a>      
+        </div> 
       </div>
 
-      <div class="w-full h-full">
-        <img class="imgfillImg" src="images/slide2.jpg" alt="" />
-        <!-- <a href="project-detail.html"></a> -->
+      <div class="item w-full h-full relative">
+        <img class="imgfillImg" src="images/slide2.jpg" alt="" />  
+        <div class="absolute left-7 lg:left-0 lg:right-0 bottom-7 mx-auto text-center text-xl">
+          <a href="work-detail.html" class="hover__50 item__text">
+            La Vie  
+          </a>                
+        </div> 
       </div>
+    </div>
+
+    <!-- video -->
+    <div class="overlayVideo w-full h-full fixed left-0 right-0 top-0" style="z-index: 9999999;">
+      <video id="videoOpening" class="w-full h-full imgfillImg" autoplay playsinline muted src="video/video.mp4" preload="auto"></video>
+      <img id="sound" class="fixed bottom-7 left-7 w-6 cursor-pointer z-50" src="images/svg/sound.svg" alt="" />    
+      <div class="overlaySkip absolute left-0 right-0 bottom-7 mx-auto text-center">
+        <a href="javascript:void(0);" class="skipButton hover__50">
+          click to enter 
+        </a>      
+      </div> 
+      <script>
+        document.getElementById('videoOpening').addEventListener('ended',myHandler,false);
+        function myHandler(e) {
+            document.querySelector('.overlayVideo').style.display ="none";
+            document.getElementById('videoOpening').pause();
+            $('.layer').fadeOut();
+        }
+        document.querySelector('.overlaySkip').addEventListener("click", function(){
+          document.querySelector('.overlayVideo').style.display ="none";
+          document.getElementById('videoOpening').pause();
+          $('.layer').fadeOut();
+        });
+        
+        var video = document.getElementById('videoOpening');
+        video.muted = true;
+        sound.addEventListener('click', function() {
+          sound.classList.toggle('muted');
+          if (video.muted === true) {
+            video.muted = false;
+            sound.src = "images/svg/sound_on.svg";
+          }
+          else if (video.muted === false) {
+            video.muted = true;
+            sound.src = "images/svg/sound.svg";
+          }
+        });
+      </script>
+    </div>
+
+    <div class="slider__position item__position fixed right-7 bottom-7 flex items-center">
+      <span class="mx-1">1</span>
+      <span class="mx-1 item__arrow"><img src="images/svg/arrow-right2.svg" alt=""> </span>
+      <span class="mx-1">2</span>
     </div>
 
     <!-- js -->
     <script src="js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/main.js"></script>
   </body>

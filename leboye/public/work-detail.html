@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- font -->
-
     <link rel="stylesheet" href="css/tailwind.css" />
     <link rel="stylesheet" href="css/styles.css" />
     <title>LeBoYe</title>
   </head>
   <body class="h-full">
+    <div class="layer"></div>
     <!-- logo -->
     <div class="logo">
       <a href="index.html">
@@ -21,31 +21,78 @@
     <!-- menu -->
     <div class="menu">
       <div class="menu__burger" data-click-state="1">
-        <img class="w-auto" src="images/svg/menu.svg" alt="" />
+        <!-- <img class="w-auto" src="images/svg/menu.svg" alt="" /> -->
+        <div class="buttonsvg">
+          <svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg">
+            <g>
+              <line x1="0" y1="17" x2="48" y2="17" stroke-width="1" />
+              <line x1="0" y1="31" x2="48" y2="31" stroke-width="1" />
+            </g>
+            
+            <g>
+              <line x1="0" y1="24" x2="48" y2="24" stroke-width="1" />
+              <line x1="0" y1="24" x2="48" y2="24" stroke-width="1" />
+            </g>
+          </svg>
+        </div>
       </div>
       <!-- inner menu -->
       <div class="menu__inner">
         <div class="container">
           <ul class="flex flex-col">
             <li>
-              <a class="uppercase text-sm py-10" href="work.html"> WORK </a>
+              <a class="uppercase text-sm py-5 lg:py-10 w-full lg:w-auto" href="work.html"> WORK </a>
+              <ul>
+                <li>
+                  <a href="work.html">all projects.</a>
+                </li>
+                <li>
+                  <a href="work.html">fields.</a>
+                </li>
+                <li>
+                  <a href="work.html">clients.</a>
+                </li>
+              </ul>             
             </li>
             <li>
-              <a class="uppercase text-sm py-10" href="journal.html">
+              <a class="uppercase text-sm py-5 lg:py-10 w-full lg:w-auto" href="journal.html">
                 Journal
               </a>
+              <ul>
+                <li>
+                  <a href="journal.html">behind the scenes.</a>
+                </li>
+                <li>
+                  <a href="journal-events.html">events.</a>
+                </li>
+                <li>
+                  <a href="journal-recognitions.html">recognitions.</a>
+                </li>
+              </ul>
             </li>
             <li>
-              <a class="uppercase text-sm py-10" href="studio.html"> Studio </a>
+              <a class="uppercase text-sm py-5 lg:py-10 w-full lg:w-auto" href="studio.html">
+                Studio
+              </a>
+              <ul>
+                <li>
+                  <a href="studio.html">story.</a>
+                </li>
+                <li>
+                  <a href="studio-approach.html">approach.</a>
+                </li>
+                <li>
+                  <a href="studio-reachus.html">reach us.</a>
+                </li>
+              </ul>
             </li>
             <li>
-              <a class="uppercase text-sm py-10" href="shop.html"> Shop </a>
+              <a class="uppercase text-sm py-5 lg:py-10 w-full lg:w-auto" href="shop.html"> Shop </a>
             </li>
             <li>
               <form>
-                <div class="flex py-10">
+                <div class="flex py-6 lg:py-10 w-full lg:w-auto">
                   <img class="w-auto" src="images/svg/search.svg" alt="" />
-                  <span class="ml-2">|</span>
                   <input
                     class="px-2 bg-transparent"
                     type="text"
@@ -60,31 +107,39 @@
     </div>
 
     <!-- content -->
-    <div class="content__head container pt-8 h-full flex items-center">
-      <h2 class="uppercase text-sm letterspace__5 absolute top-8">work</h2>
+    <div class="content__head container lg:h-full flex lg:items-center pt-36 md:pt-0 mb-10 lg:mb-0">
+      <div class="bg__whitegradient__top fixed top-0 w-full h-24 lg:h-32 hidden z-20 left-0"></div>
+      <h2 class="z-20 uppercase text-sm letterspace__5 absolute top-8 hidden lg:block lg:fixed">
+        <a href="work.html">work</a>
+      </h2>
       <div class="relative">
         <div class="grid grid-cols-12">
-          <div class="col-span-5">
+          <div class="col-span-12 lg:col-span-5">
             <h1>La Vie: Designed for People</h1>
-            <div class="my-5">
-              <p class="letterspace__5 uppercase text-xs">Project</p>
-              <p>branding. corporate.</p>
+            <div class="my-8 lg:my-5">
+              <p class="m-0 uppercase letterspace__3 mb-1 text-xs leading-5	">Project</p>
+              <p class="leading-5 tracking-wider">
+                <a href="#">branding. corporate.</a>
+              </p>
             </div>
-            <div class="my-5">
-              <p class="letterspace__5 uppercase text-xs">Year</p>
-              <p>2010 - 2012</p>
+            <div class="my-8 lg:my-5">
+              <p class="m-0 uppercase letterspace__3 mb-1 text-xs leading-5	">Year</p>
+              <p class="leading-5 tracking-wider">
+                <a href="#">2010 - 2012</a>
+              </p>
             </div>
           </div>
-          <div class="col-span-7">
-            <img src="images/photo-detail.jpg" alt="" />
+          <div class="col-span-12 lg:col-span-7">
+            <img class="lozad" data-src="images/photo-detail.jpg" alt="" />
           </div>
         </div>
       </div>
     </div>
     <div class="content">
+      <div class="bg__whitegradient fixed bottom-0 w-full h-24 lg:h-32 z-50"></div>
       <div class="container pb-10">
-        <div class="content__inner grid grid-cols-12 gap-x-3 gap-y-20 px-20">
-          <div class="col-span-6 pr-40">
+        <div class="content__inner grid grid-cols-12 lg:gap-x-3 gap-y-10 lg:gap-y-20 lg:px-20">
+          <div class="col-span-12 lg:col-span-6 lg:pr-40">
             <p>
               An elegant residence designed for people. Two luxurious towers of
               300 all suites – two and three bedroom apartments – providing
@@ -101,22 +156,22 @@
               peaceful balance and healthy living.
             </p>
           </div>
-          <div class="col-span-6">
-            <img src="images/photo-detail2.jpg" alt="" />
+          <div class="col-span-12 lg:col-span-6">
+            <img class="lozad" data-src="images/photo-detail2.jpg" alt="" />
           </div>
-          <div class="col-span-6">
-            <img src="images/photo-detail3.jpg" alt="" />
+          <div class="col-span-12 lg:col-span-6">
+            <img class="lozad" data-src="images/photo-detail3.jpg" alt="" />
           </div>
-          <div class="col-span-6">
-            <img src="images/photo-detail4.jpg" alt="" />
+          <div class="col-span-12 lg:col-span-6">
+            <img class="lozad" data-src="images/photo-detail4.jpg" alt="" />
           </div>
-          <div class="col-span-6">
-            <img src="images/photo-detail5.jpg" alt="" />
+          <div class="col-span-12 lg:col-span-6">
+            <img class="lozad" data-src="images/photo-detail5.jpg" alt="" />
           </div>
-          <div class="col-span-6">
-            <img src="images/photo-detail6.jpg" alt="" />
+          <div class="col-span-12 lg:col-span-6">
+            <img class="lozad" data-src="images/photo-detail6.jpg" alt="" />
           </div>
-          <div class="col-span-6 pr-40">
+          <div class="col-span-12 lg:col-span-6 lg:pr-40">
             <p>
               An elegant residence designed for people. Two luxurious towers of
               300 all suites – two and three bedroom apartments – providing
@@ -133,13 +188,13 @@
               peaceful balance and healthy living.
             </p>
           </div>
-          <div class="col-span-6">
-            <img src="images/photo-detail7.jpg" alt="" />
+          <div class="col-span-12 lg:col-span-6">
+            <img class="lozad" data-src="images/photo-detail7.jpg" alt="" />
           </div>
           <div class="col-span-12">
-            <img src="images/photo-detail10.jpg" alt="" />
+            <img class="lozad" data-src="images/photo-detail10.jpg" alt="" />
           </div>
-          <div class="col-span-6 pr-40">
+          <div class="col-span-12 lg:col-span-6 lg:pr-40">
             <p>
               The client’s dedication to quality and detail in all aspects was
               showcased through this luxurious brochure. Exclusive bronze
@@ -150,32 +205,37 @@
               heavy semi-translucent tracing paper.
             </p>
           </div>
-          <br />
-          <div class="col-span-6">
-            <img src="images/photo-detail8.jpg" alt="" />
+          <div class="col-span-12 lg:col-span-6">
+            <img class="lozad" data-src="images/photo-detail8.jpg" alt="" />
           </div>
-          <div class="col-span-6">
-            <img src="images/photo-detail9.jpg" alt="" />
+          <div class="col-span-12 lg:col-span-6">
+            <img class="lozad" data-src="images/photo-detail9.jpg" alt="" />
           </div>
 
           <div
-            class="col-span-12 flex flex-wrap justify-between uppercase letterspace__5"
+            class="text-xs xl:text-sm col-span-12 flex flex-wrap justify-between uppercase letterspace__5 lg:mt-5"
           >
             <a href="work-detail.html">Previous</a>
             <a href="work-detail.html">next</a>
-          </div>
+          </div>         
+        </div>
+        <div class="col-span-12 mt-10 lg:hidden ">
+          <p class="font-baskerville uppercase text-xs letterspace__5" >
+            <a href="work.html">Back to work</a>
+          </p>
         </div>
       </div>
     </div>
 
-    <!-- top -->
-    <a href="#">
-      <div class="ontop">
-        <img class="w-auto" src="images/svg/backtop.svg" alt="" />
+    <!-- top -->    
+    <div class="ontop">
+      <a href="#">
+        <img class="w-auto mx-auto" src="images/svg/backtop.svg" alt="" />
         <p class="letterspace__5 uppercase">top</p>
-      </div>
-    </a>
+      </a>
+    </div>
     <!-- js -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
     <script src="js/jquery-1.11.0.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/main.js"></script>

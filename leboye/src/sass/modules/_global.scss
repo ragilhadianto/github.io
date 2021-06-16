@@ -35,8 +35,10 @@ a {
   text-decoration: none;
   vertical-align: top;
   outline: 0;
-  //@include base_transition(all);
+  opacity: 1;
+  @include base_transition(all);
   &:hover {
+    opacity: 0.5;
     //color: $cl_1;
     //text-decoration: none;
   }

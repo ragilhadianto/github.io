@@ -1,0 +1,22 @@
+input,
+button,
+select,
+textarea {
+
+}
+
+select::-ms-expand {
+  display: none;
+}
+select {
+  -webkit-appearance: none;
+  appearance: none;
+}
+label {
+  font-weight: 600;
+}
+
+.field {
+  &__select {
+  }
+}

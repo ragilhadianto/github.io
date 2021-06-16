@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- font -->
+
+    <link rel="stylesheet" href="css/tailwind.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>LeBoYe</title>
+  </head>
+  <body class="h-full">
+    <div class="layer"></div>
+    <!-- logo -->
+    <div class="logo">
+      <a href="index.html">
+        <img class="w-auto" src="images/logo.svg" alt="" />
+      </a>
+    </div>
+    <!-- menu -->
+    <div class="menu">
+      <div class="menu__burger" data-click-state="1">
+        <!-- <img class="w-auto" src="images/svg/menu.svg" alt="" /> -->
+        <div class="buttonsvg">
+          <svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg">
+            <g>
+              <line x1="0" y1="17" x2="48" y2="17" stroke-width="1" />
+              <line x1="0" y1="31" x2="48" y2="31" stroke-width="1" />
+            </g>
+            
+            <g>
+              <line x1="0" y1="24" x2="48" y2="24" stroke-width="1" />
+              <line x1="0" y1="24" x2="48" y2="24" stroke-width="1" />
+            </g>
+          </svg>
+        </div>
+      </div>
+      <!-- inner menu -->
+      <div class="menu__inner">
+        <div class="container">
+          <ul class="flex flex-col">
+            <li>
+              <a class="uppercase text-sm py-5 lg:py-10 w-full lg:w-auto" href="work.html"> WORK </a>
+              <ul>
+                <li>
+                  <a href="work.html">all projects.</a>
+                </li>
+                <li>
+                  <a href="work.html">fields.</a>
+                </li>
+                <li>
+                  <a href="work.html">clients.</a>
+                </li>
+              </ul>             
+            </li>
+            <li>
+              <a class="uppercase text-sm py-5 lg:py-10 w-full lg:w-auto" href="journal.html">
+                Journal
+              </a>
+              <ul>
+                <li>
+                  <a href="journal.html">behind the scenes.</a>
+                </li>
+                <li>
+                  <a href="journal-events.html">events.</a>
+                </li>
+                <li>
+                  <a href="journal-recognitions.html">recognitions.</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a class="uppercase text-sm py-5 lg:py-10 w-full lg:w-auto" href="studio.html">
+                Studio
+              </a>
+              <ul>
+                <li>
+                  <a href="studio.html">story.</a>
+                </li>
+                <li>
+                  <a href="studio-approach.html">approach.</a>
+                </li>
+                <li>
+                  <a href="studio-reachus.html">reach us.</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a class="uppercase text-sm py-5 lg:py-10 w-full lg:w-auto" href="shop.html"> Shop </a>
+            </li>
+            <li>
+              <form>
+                <div class="flex py-6 lg:py-10 w-full lg:w-auto">
+                  <img class="w-auto" src="images/svg/search.svg" alt="" />
+                  <input
+                    class="px-2 bg-transparent"
+                    type="text"
+                    placeholder=" search your type here"
+                  />
+                </div>
+              </form>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- content -->
+    <div class="content">
+      <!-- bg transparant -->
+      <div class="bg__whitegradient fixed bottom-0 w-full h-32 z-50"></div>
+      <div class="container container__pr0 pt-8 pb-32">
+        <h2 class="uppercase text-sm  pt-36 lg:pt-0 mb-4 lg:mb-28 letterspace__5 lg:fixed">
+          <a href="shop.html">Shop</a>
+        </h2>
+        <div class="grid grid-cols-12 lg:mt-28">
+          <div class="col-span-12 lg:col-span-3 mb-20 lg:mb-0">
+            <ul class="flex flex-col letterspace__1 menu__category lg:sticky top-36">
+              <li>
+                <a href="javascript:void(0);" class="active"
+                >
+                  <img
+                    class="w-auto absolute -left-5"
+                    src="images/svg/bullet.svg"
+                    alt=""
+                  />
+                  all products.
+                </a>
+              </li>
+              <li>
+                <a href="javascript:void(0);">categories.</a>
+                <ul>
+                  <li>
+                    <a href="#">collectibles</a>
+                  </li>
+                  <li>
+                    <a href="#">gifts</a>
+                  </li>
+                  <li>
+                    <a href="#">prints</a>
+                  </li>
+                  <li>
+                    <a href="#">publications</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="javascript:void(0);">information.</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-span-12 lg:col-span-9 grid grid-cols-12 lg:grid-cols-5 lg:gap-x-10 gap-y-20">
+            <div class="col-span-9 lg:col-span-1">
+                <a href="shop-detail.html">
+                  <div class="overflow-hidden relative photo photo-produk">
+                    <img
+                      class="imgfillImg hover"
+                      src="images/produk2.jpg"
+                      alt=""
+                    />
+                    <img class="imgfillImg" src="images/produk1.jpg" alt="" />
+                  </div>
+                  <p class="leading-5 mt-3.5">LaVie</p>
+                </a>
+            </div>
+            <div class="col-span-9 lg:col-span-1">
+                <a href="shop-detail.html">
+                  <div class="overflow-hidden relative photo photo-produk">
+                    <img
+                      class="imgfillImg hover"
+                      src="images/produk1.jpg"
+                      alt=""
+                    />
+                    <img class="imgfillImg" src="images/produk2.jpg" alt="" />
+                  </div>
+                  <p class="leading-5 mt-3.5">Waerebo</p>
+                </a>
+            </div>
+            <div class="col-span-9 lg:col-span-1">
+                <a href="shop-detail.html">
+                  <div class="overflow-hidden relative photo photo-produk">
+                    <img
+                      class="imgfillImg hover"
+                      src="images/produk2.jpg"
+                      alt=""
+                    />
+                    <img class="imgfillImg" src="images/produk3.jpg" alt="" />
+                  </div>
+                  <p class="leading-5 mt-3.5">YCAB: Angel of Change</p>
+                </a>
+            </div>
+            <div class="col-span-9 lg:col-span-1">
+                <a href="shop-detail.html">
+                  <div class="overflow-hidden relative photo photo-produk">
+                    <img
+                      class="imgfillImg hover"
+                      src="images/produk2.jpg"
+                      alt=""
+                    />
+                    <img class="imgfillImg" src="images/produk4.jpg" alt="" />
+                  </div>
+                  <p class="leading-5 mt-3.5">Rumah Kucing Garong</p>
+                </a>
+            </div>
+            <div class="col-span-9 lg:col-span-1">
+                <a href="shop-detail.html">
+                  <div class="overflow-hidden relative photo photo-produk">
+                    <img
+                      class="imgfillImg hover"
+                      src="images/produk2.jpg"
+                      alt=""
+                    />
+                    <img class="imgfillImg" src="images/produk5.jpg" alt="" />
+                  </div>
+                  <p class="leading-5 mt-3.5">Roh Project</p>
+                </a>
+            </div>
+            <div class="col-span-9 lg:col-span-1">
+                <a href="shop-detail.html">
+                  <div class="overflow-hidden relative photo photo-produk">
+                    <img
+                      class="imgfillImg hover"
+                      src="images/produk2.jpg"
+                      alt=""
+                    />
+                    <img class="imgfillImg" src="images/produk3.jpg" alt="" />
+                  </div>
+                  <p class="leading-5 mt-3.5">YCAB: Angel of Change</p>
+                </a>
+            </div>
+            <div class="col-span-9 lg:col-span-1">
+                <a href="shop-detail.html">
+                  <div class="overflow-hidden relative photo photo-produk">
+                    <img
+                      class="imgfillImg hover"
+                      src="images/produk2.jpg"
+                      alt=""
+                    />
+                    <img class="imgfillImg" src="images/produk4.jpg" alt="" />
+                  </div>
+                  <p class="leading-5 mt-3.5">Rumah Kucing Garong</p>
+                </a>
+            </div>
+            <div class="col-span-9 lg:col-span-1">
+                <a href="shop-detail.html">
+                  <div class="overflow-hidden relative photo photo-produk">
+                    <img
+                      class="imgfillImg hover"
+                      src="images/produk2.jpg"
+                      alt=""
+                    />
+                    <img class="imgfillImg" src="images/produk5.jpg" alt="" />
+                  </div>
+                  <p class="leading-5 mt-3.5">Roh Project</p>
+                </a>
+            </div>
+            <div class="col-span-9 lg:col-span-1">
+                <a href="shop-detail.html">
+                  <div class="overflow-hidden relative photo photo-produk">
+                    <img
+                      class="imgfillImg hover"
+                      src="images/produk2.jpg"
+                      alt=""
+                    />
+                    <img class="imgfillImg" src="images/produk3.jpg" alt="" />
+                  </div>
+                  <p class="leading-5 mt-3.5">YCAB: Angel of Change</p>
+                </a>
+            </div>
+            <div class="col-span-9 lg:col-span-1">
+                <a href="shop-detail.html">
+                  <div class="overflow-hidden relative photo photo-produk">
+                    <img
+                      class="imgfillImg hover"
+                      src="images/produk2.jpg"
+                      alt=""
+                    />
+                    <img class="imgfillImg" src="images/produk4.jpg" alt="" />
+                  </div>
+                  <p class="leading-5 mt-3.5">Rumah Kucing Garong</p>
+                </a>
+            </div>
+            <div class="col-span-9 lg:col-span-1">
+                <a href="shop-detail.html">
+                  <div class="overflow-hidden relative photo photo-produk">
+                    <img
+                      class="imgfillImg hover"
+                      src="images/produk2.jpg"
+                      alt=""
+                    />
+                    <img class="imgfillImg" src="images/produk5.jpg" alt="" />
+                  </div>
+                  <p class="leading-5 mt-3.5">Roh Project</p>
+                </a>
+            </div>
+            <div class="col-span-9 lg:col-span-1">
+                <a href="shop-detail.html">
+                  <div class="overflow-hidden relative photo photo-produk">
+                    <img
+                      class="imgfillImg hover"
+                      src="images/produk2.jpg"
+                      alt=""
+                    />
+                    <img class="imgfillImg" src="images/produk3.jpg" alt="" />
+                  </div>
+                  <p class="leading-5 mt-3.5">YCAB: Angel of Change</p>
+                </a>
+            </div>
+            <div class="col-span-9 lg:col-span-1">
+                <a href="shop-detail.html">
+                  <div class="overflow-hidden relative photo photo-produk">
+                    <img
+                      class="imgfillImg hover"
+                      src="images/produk2.jpg"
+                      alt=""
+                    />
+                    <img class="imgfillImg" src="images/produk4.jpg" alt="" />
+                  </div>
+                  <p class="leading-5 mt-3.5">Rumah Kucing Garong</p>
+                </a>
+            </div>
+            <div class="col-span-9 lg:col-span-1">
+                <a href="shop-detail.html">
+                  <div class="overflow-hidden relative photo photo-produk">
+                    <img
+                      class="imgfillImg hover"
+                      src="images/produk2.jpg"
+                      alt=""
+                    />
+                    <img class="imgfillImg" src="images/produk5.jpg" alt="" />
+                  </div>
+                  <p class="leading-5 mt-3.5">Roh Project</p>
+                </a>
+            </div>
+            <div class="col-span-9 lg:col-span-1">
+                <a href="shop-detail.html">
+                  <div class="overflow-hidden relative photo photo-produk">
+                    <img
+                      class="imgfillImg hover"
+                      src="images/produk2.jpg"
+                      alt=""
+                    />
+                    <img class="imgfillImg" src="images/produk3.jpg" alt="" />
+                  </div>
+                  <p class="leading-5 mt-3.5">YCAB: Angel of Change</p>
+                </a>
+            </div>
+            <div class="col-span-9 lg:col-span-1">
+                <a href="shop-detail.html">
+                  <div class="overflow-hidden relative photo photo-produk">
+                    <img
+                      class="imgfillImg hover"
+                      src="images/produk2.jpg"
+                      alt=""
+                    />
+                    <img class="imgfillImg" src="images/produk4.jpg" alt="" />
+                  </div>
+                  <p class="leading-5 mt-3.5">Rumah Kucing Garong</p>
+                </a>
+            </div>
+            <div class="col-span-9 lg:col-span-1">
+                <a href="shop-detail.html">
+                  <div class="overflow-hidden relative photo photo-produk">
+                    <img
+                      class="imgfillImg hover"
+                      src="images/produk2.jpg"
+                      alt=""
+                    />
+                    <img class="imgfillImg" src="images/produk5.jpg" alt="" />
+                  </div>
+                  <p class="leading-5 mt-3.5">Roh Project</p>
+                </a>
+            </div>
+            <div class="col-span-9 lg:col-span-1">
+                <a href="shop-detail.html">
+                  <div class="overflow-hidden relative photo photo-produk">
+                    <img
+                      class="imgfillImg hover"
+                      src="images/produk2.jpg"
+                      alt=""
+                    />
+                    <img class="imgfillImg" src="images/produk3.jpg" alt="" />
+                  </div>
+                  <p class="leading-5 mt-3.5">YCAB: Angel of Change</p>
+                </a>
+            </div>
+            <div class="col-span-9 lg:col-span-1">
+                <a href="shop-detail.html">
+                  <div class="overflow-hidden relative photo photo-produk">
+                    <img
+                      class="imgfillImg hover"
+                      src="images/produk2.jpg"
+                      alt=""
+                    />
+                    <img class="imgfillImg" src="images/produk4.jpg" alt="" />
+                  </div>
+                  <p class="leading-5 mt-3.5">Rumah Kucing Garong</p>
+                </a>
+            </div>
+            <div class="col-span-9 lg:col-span-1">
+                <a href="shop-detail.html">
+                  <div class="overflow-hidden relative photo photo-produk">
+                    <img
+                      class="imgfillImg hover"
+                      src="images/produk2.jpg"
+                      alt=""
+                    />
+                    <img class="imgfillImg" src="images/produk5.jpg" alt="" />
+                  </div>
+                  <p class="leading-5 mt-3.5">Roh Project</p>
+                </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- top -->    
+    <div class="ontop">
+      <a href="#">
+        <img class="w-auto mx-auto" src="images/svg/backtop.svg" alt="" />
+        <p class="letterspace__5 uppercase">top</p>
+      </a>
+    </div>
+    <!-- js -->
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

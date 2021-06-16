@@ -1,0 +1,23 @@
+{
+  "name": "Estetiderma",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "postcss": "^8.2.4",
+    "tailwindcss": "^2.0.2"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.2.6",
+    "cross-env": "^7.0.3",
+    "cssnano": "^5.0.6",
+    "postcss-cli": "^8.3.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "tailwindcss build ./src/tailwind.css -o ./public/css/tailwind.css",
+    "build": "cross-env NODE_ENV=production postcss build ./src/tailwind.css -o ./public/css/tailwind.css"
+  },
+  "author": "",
+  "license": "ISC"
+}

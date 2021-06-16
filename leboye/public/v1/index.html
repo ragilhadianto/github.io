@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- font -->
+
+    <link rel="stylesheet" href="css/tailwind.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>LeBoYe</title>
+  </head>
+  <body class="h-full">
+    <!-- logo -->
+    <div class="logo">
+      <a href="index.html">
+        <img class="w-auto" src="images/logo.svg" alt="" />
+      </a>
+    </div>
+    <!-- menu -->
+    <div class="menu">
+      <div class="menu__burger" data-click-state="1">
+        <img class="w-auto" src="images/svg/menu.svg" alt="" />
+      </div>
+      <!-- inner menu -->
+      <div class="menu__inner">
+        <div class="container">
+          <ul class="flex flex-col">
+            <li>
+              <a class="uppercase text-sm py-6 lg:py-10 w-full lg:w-auto" href="work.html"> WORK </a>
+              <ul>
+                <li>
+                  <a href="work.html">all projects.</a>
+                </li>
+                <li>
+                  <a href="work.html">fields.</a>
+                </li>
+                <li>
+                  <a href="work.html">clients.</a>
+                </li>
+              </ul>             
+            </li>
+            <li>
+              <a class="uppercase text-sm py-6 lg:py-10 w-full lg:w-auto" href="journal.html">
+                Journal
+              </a>
+              <ul>
+                <li>
+                  <a href="journal.html">behind the scenes.</a>
+                </li>
+                <li>
+                  <a href="journal-events.html">events.</a>
+                </li>
+                <li>
+                  <a href="journal-recognitions.html">recognitions.</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a class="uppercase text-sm py-6 lg:py-10 w-full lg:w-auto" href="studio.html">
+                Studio
+              </a>
+              <ul>
+                <li>
+                  <a href="studio.html">story.</a>
+                </li>
+                <li>
+                  <a href="studio-approach.html">approach.</a>
+                </li>
+                <li>
+                  <a href="studio-reachus.html">reach us.</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a class="uppercase text-sm py-6 lg:py-10 w-full lg:w-auto" href="shop.html"> Shop </a>
+            </li>
+            <li>
+              <form>
+                <div class="flex py-6 lg:py-10 w-full lg:w-auto">
+                  <img class="w-auto" src="images/svg/search.svg" alt="" />
+                  <span class="ml-2">|</span>
+                  <input
+                    class="px-2 bg-transparent"
+                    type="text"
+                    placeholder=" search your type here"
+                  />
+                </div>
+              </form>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- homeslide -->
+    <div class="slider slider--home h-full w-full">
+      <div class="w-full h-full relative">
+        <img class="imgfillImg" src="images/slide1.jpg" alt="" />
+        <!-- <a href="project-detail.html"></a> -->       
+        <div class="absolute left-0 right-0 bottom-7 mx-auto text-center hidden lg:block text-xl">
+          <a href="work-detail.html">
+            La Vie  
+          </a>      
+          <img class="w-auto mx-auto" src="images/svg/arrow-bottom.svg" alt="">
+        </div> 
+      </div>
+
+      <div class="w-full h-full relative">
+        <img class="imgfillImg" src="images/slide2.jpg" alt="" />       
+        <div class="absolute left-0 right-0 bottom-7 mx-auto text-center hidden lg:block text-xl">
+          <a href="work-detail.html">
+            La Vie  
+          </a>      
+          <img class="w-auto mx-auto" src="images/svg/arrow-bottom.svg" alt="">
+        </div> 
+      </div>
+    </div>
+
+    <!-- video -->
+    <div class="overlayVideo w-full h-full fixed left-0 right-0 top-0" style="z-index: 99999;">
+      <video id="videoOpening" class="w-full h-full imgfillImg" autoplay playsinline muted src="video/video.mp4" preload="auto"></video>
+      <div class="overlaySkip absolute left-0 right-0 bottom-7 mx-auto text-center">
+        <a href="javascript:void(0);">
+          SKIP 
+        </a>      
+        <img class="w-auto mx-auto" src="images/svg/arrow-bottom.svg" alt="">
+      </div> 
+      <script>
+        document.getElementById('videoOpening').addEventListener('ended',myHandler,false);
+        function myHandler(e) {
+            document.querySelector('.overlayVideo').style.display ="none";
+            document.getElementById('videoOpening').pause();
+        }
+        document.querySelector('.overlaySkip').addEventListener("click", function(){
+          document.querySelector('.overlayVideo').style.display ="none";
+          document.getElementById('videoOpening').pause();
+        });
+      </script>
+    </div>
+
+    <div class="fixed right-7 bottom-7 flex items-center">
+      <span class="mx-1">1</span>
+      <span class="mx-1"><img src="images/svg/arrow-right2.svg" alt=""> </span>
+      <span class="mx-1">2</span>
+    </div>
+
+    <!-- js -->
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

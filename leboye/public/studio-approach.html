@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- font -->
-
     <link rel="stylesheet" href="css/tailwind.css" />
     <link rel="stylesheet" href="css/styles.css" />
     <title>LeBoYe</title>
   </head>
   <body class="h-full">
+    <!-- <div class="layer"></div> -->
     <!-- logo -->
     <div class="logo">
       <a href="index.html">
@@ -21,31 +21,78 @@
     <!-- menu -->
     <div class="menu">
       <div class="menu__burger" data-click-state="1">
-        <img class="w-auto" src="images/svg/menu.svg" alt="" />
+        <!-- <img class="w-auto" src="images/svg/menu.svg" alt="" /> -->
+        <div class="buttonsvg">
+          <svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg">
+            <g>
+              <line x1="0" y1="17" x2="48" y2="17" stroke-width="1" />
+              <line x1="0" y1="31" x2="48" y2="31" stroke-width="1" />
+            </g>
+            
+            <g>
+              <line x1="0" y1="24" x2="48" y2="24" stroke-width="1" />
+              <line x1="0" y1="24" x2="48" y2="24" stroke-width="1" />
+            </g>
+          </svg>
+        </div>
       </div>
       <!-- inner menu -->
       <div class="menu__inner">
         <div class="container">
           <ul class="flex flex-col">
             <li>
-              <a class="uppercase text-sm py-10" href="work.html"> WORK </a>
+              <a class="uppercase text-sm py-5 lg:py-10 w-full lg:w-auto" href="work.html"> WORK </a>
+              <ul>
+                <li>
+                  <a href="work.html">all projects.</a>
+                </li>
+                <li>
+                  <a href="work.html">fields.</a>
+                </li>
+                <li>
+                  <a href="work.html">clients.</a>
+                </li>
+              </ul>             
             </li>
             <li>
-              <a class="uppercase text-sm py-10" href="journal.html">
+              <a class="uppercase text-sm py-5 lg:py-10 w-full lg:w-auto" href="journal.html">
                 Journal
               </a>
+              <ul>
+                <li>
+                  <a href="journal.html">behind the scenes.</a>
+                </li>
+                <li>
+                  <a href="journal-events.html">events.</a>
+                </li>
+                <li>
+                  <a href="journal-recognitions.html">recognitions.</a>
+                </li>
+              </ul>
             </li>
             <li>
-              <a class="uppercase text-sm py-10" href="studio.html"> Studio </a>
+              <a class="uppercase text-sm py-5 lg:py-10 w-full lg:w-auto" href="studio.html">
+                Studio
+              </a>
+              <ul>
+                <li>
+                  <a href="studio.html">story.</a>
+                </li>
+                <li>
+                  <a href="studio-approach.html">approach.</a>
+                </li>
+                <li>
+                  <a href="studio-reachus.html">reach us.</a>
+                </li>
+              </ul>
             </li>
             <li>
-              <a class="uppercase text-sm py-10" href="shop.html"> Shop </a>
+              <a class="uppercase text-sm py-5 lg:py-10 w-full lg:w-auto" href="shop.html"> Shop </a>
             </li>
             <li>
               <form>
-                <div class="flex py-10">
+                <div class="flex py-6 lg:py-10 w-full lg:w-auto">
                   <img class="w-auto" src="images/svg/search.svg" alt="" />
-                  <span class="ml-2">|</span>
                   <input
                     class="px-2 bg-transparent"
                     type="text"
@@ -62,130 +109,125 @@
     <!-- content -->
     <div class="content">
       <div class="container pt-8 pb-32">
-        <h2 class="uppercase text-sm mb-28 letterspace__5">studio</h2>
-        <div class="grid grid-cols-12">
-          <div class="col-span-3">
-            <ul class="flex flex-col letterspace__1">
+        <div class="bg__whitegradient__top fixed top-0 w-full h-24 lg:h-32 hidden z-20 left-0"></div>
+        <h2 class="z-20 uppercase text-sm  pt-36 lg:pt-0 mb-4 lg:mb-28 letterspace__5 lg:fixed">
+          <a href="studio.html">studio</a>
+        </h2>
+        <div class="grid grid-cols-12 lg:mt-28">
+          <div class="col-span-12 lg:col-span-3 mb-20 lg:mb-0">
+            <ul class="flex flex-col letterspace__1 menu__category lg:sticky top-36"">
               <li>
-                <a class="py-2 relative flex items-center" href="studio.html">
+                <a href="studio.html">
                   story.
                 </a>
               </li>
               <li>
-                <a
-                  class="py-2 relative flex items-center"
-                  href="studio-approach.html"
+                <a href="studio-approach.html" class="active"
                   ><img
                     class="w-auto absolute -left-5"
-                    src="images/svg/line.svg"
+                    src="images/svg/bullet.svg"
                     alt=""
                   />approach.</a
                 >
               </li>
               <li>
-                <a
-                  class="py-2 relative flex items-center"
-                  href="studio-reachus.html"
+                <a href="studio-reachus.html"
                   >reach us.</a
                 >
               </li>
             </ul>
           </div>
-          <div class="col-span-9 content__inner flex justify-center">
-            <div class="relative w-768">
+          <div class="col-span-12 lg:col-span-7 xl:col-span-9 content__inner flex justify-center">
+            <div class="relative w-full lg:max-w-screen-md px-8">
               <div class="slider-b w-full">
                 <div class="text-center">
                   <h3 class="text-4xl italic">A Good Eye</h3>
                   <div class="py-5">
-                    <img
-                      class="w-auto inline-block max-h-96 max-w-xl"
-                      src="images/photo-approach1.png"
-                      alt=""
-                    />
+                    <video id="videoOpening" class="w-full h-full imgfillImg" autoplay playsinline loop muted src="video/video.mp4" preload="auto"></video>
                   </div>
-                  <p class="font-2 md:px-20">
+                  <span class="text-sm lg:text-base	 xl:text-lg  font-2 lg:px-20 block	">
                     01 <br />
                     Design is the art of seeing the invisible and make it
                     visible.
-                  </p>
+                  </span>
                 </div>
                 <div class="text-center">
                   <h3 class="text-4xl italic">A Whimsical Sense</h3>
                   <div class="py-5">
                     <img
-                      class="w-auto inline-block max-h-96 max-w-xl"
+                      class="w-full inline-block w-full"
                       src="images/photo-approach2.png"
                       alt=""
                     />
                   </div>
-                  <p class="font-2 md:px-20">
+                  <span class="text-sm lg:text-base	 xl:text-lg  font-2 lg:px-20 block	">
                     02 <br />
                     In design, we provide chronicles to other people’s
                     businesses, and opening windows into their worlds
-                  </p>
+                  </span>
                 </div>
                 <div class="text-center">
                   <h3 class="text-4xl italic">A Whimsical Sense</h3>
                   <div class="py-5">
                     <img
-                      class="w-auto inline-block max-h-96 max-w-xl"
+                      class="w-full inline-block w-full"
                       src="images/photo-approach3.png"
                       alt=""
                     />
                   </div>
-                  <p class="font-2 md:px-20">
+                  <span class="text-sm lg:text-base	 xl:text-lg  font-2 lg:px-20 block	">
                     02 <br />
                     In design, we provide chronicles to other people’s
                     businesses, and opening windows into their worlds
-                  </p>
+                  </span>
                 </div>
                 <div class="text-center">
                   <h3 class="text-4xl italic">A Whimsical Sense</h3>
                   <div class="py-5">
                     <img
-                      class="w-auto inline-block max-h-96 max-w-xl"
+                      class="w-full inline-block w-full"
                       src="images/photo-approach4.png"
                       alt=""
                     />
                   </div>
-                  <p class="font-2 md:px-20">
+                  <span class="text-sm lg:text-base	 xl:text-lg  font-2 lg:px-20 block	">
                     02 <br />
                     In design, we provide chronicles to other people’s
                     businesses, and opening windows into their worlds
-                  </p>
+                  </span>
                 </div>
                 <div class="text-center">
                   <h3 class="text-4xl italic">A Whimsical Sense</h3>
                   <div class="py-5">
                     <img
-                      class="w-auto inline-block max-h-96 max-w-xl"
+                      class="w-full inline-block w-full"
                       src="images/photo-approach5.png"
                       alt=""
                     />
                   </div>
-                  <p class="font-2 md:px-20">
+                  <span class="text-sm lg:text-base	 xl:text-lg  font-2 lg:px-20 block	">
                     02 <br />
                     In design, we provide chronicles to other people’s
                     businesses, and opening windows into their worlds
-                  </p>
+                  </span>
                 </div>
               </div>
-              <div
+              <!-- <div
                 class="slider__arrow w-full absolute top-0 bottom-0 m-auto left-0 right-0 z-50 w-full"
-              ></div>
+              ></div> -->
             </div>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- top -->
-    <a href="#">
-      <div class="ontop">
-        <img class="w-auto" src="images/svg/backtop.svg" alt="" />
+    <!-- top -->    
+    <div class="ontop">
+      <a href="#">
+        <img class="w-auto mx-auto" src="images/svg/backtop.svg" alt="" />
         <p class="letterspace__5 uppercase">top</p>
-      </div>
-    </a>
+      </a>
+    </div>
     <!-- js -->
     <script src="js/jquery-1.11.0.min.js"></script>
     <script src="js/slick.min.js"></script>

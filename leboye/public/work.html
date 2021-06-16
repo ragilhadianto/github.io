@@ -12,6 +12,7 @@
     <title>LeBoYe</title>
   </head>
   <body class="h-full">
+    <div class="layer"></div>
     <!-- logo -->
     <div class="logo">
       <a href="index.html">
@@ -21,31 +22,78 @@
     <!-- menu -->
     <div class="menu">
       <div class="menu__burger" data-click-state="1">
-        <img class="w-auto" src="images/svg/menu.svg" alt="" />
+        <!-- <img class="w-auto" src="images/svg/menu.svg" alt="" /> -->
+        <div class="buttonsvg">
+          <svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg">
+            <g>
+              <line x1="0" y1="17" x2="48" y2="17" stroke-width="1" />
+              <line x1="0" y1="31" x2="48" y2="31" stroke-width="1" />
+            </g>
+            
+            <g>
+              <line x1="0" y1="24" x2="48" y2="24" stroke-width="1" />
+              <line x1="0" y1="24" x2="48" y2="24" stroke-width="1" />
+            </g>
+          </svg>
+        </div>
       </div>
       <!-- inner menu -->
       <div class="menu__inner">
         <div class="container">
           <ul class="flex flex-col">
             <li>
-              <a class="uppercase text-sm py-10" href="work.html"> WORK </a>
+              <a class="uppercase text-sm py-5 lg:py-10 w-full lg:w-auto" href="work.html"> WORK </a>
+              <ul>
+                <li>
+                  <a href="work.html" >all projects.</a>
+                </li>
+                <li>
+                  <a href="work.html">fields.</a>
+                </li>
+                <li>
+                  <a href="work.html">clients.</a>
+                </li>
+              </ul>             
             </li>
             <li>
-              <a class="uppercase text-sm py-10" href="journal.html">
+              <a class="uppercase text-sm py-5 lg:py-10 w-full lg:w-auto" href="journal.html">
                 Journal
               </a>
+              <ul>
+                <li>
+                  <a href="journal.html">behind the scenes.</a>
+                </li>
+                <li>
+                  <a href="journal-events.html">events.</a>
+                </li>
+                <li>
+                  <a href="journal-recognitions.html">recognitions.</a>
+                </li>
+              </ul>
             </li>
             <li>
-              <a class="uppercase text-sm py-10" href="studio.html"> Studio </a>
+              <a class="uppercase text-sm py-5 lg:py-10 w-full lg:w-auto" href="studio.html">
+                Studio
+              </a>
+              <ul>
+                <li>
+                  <a href="studio.html">story.</a>
+                </li>
+                <li>
+                  <a href="studio-approach.html">approach.</a>
+                </li>
+                <li>
+                  <a href="studio-reachus.html">reach us.</a>
+                </li>
+              </ul>
             </li>
             <li>
-              <a class="uppercase text-sm py-10" href="shop.html"> Shop </a>
+              <a class="uppercase text-sm py-5 lg:py-10 w-full lg:w-auto" href="shop.html"> Shop </a>
             </li>
             <li>
               <form>
-                <div class="flex py-10">
+                <div class="flex py-6 lg:py-10 w-full lg:w-auto">
                   <img class="w-auto" src="images/svg/search.svg" alt="" />
-                  <span class="ml-2">|</span>
                   <input
                     class="px-2 bg-transparent"
                     type="text"
@@ -60,56 +108,123 @@
     </div>
 
     <!-- content -->
+
     <div class="content">
       <!-- bg transparant -->
-      <div class="bg__whitegradient fixed bottom-0 w-full h-32 z-50"></div>
-      <div class="-rotate-90 transform absolute -right-16 mt-60">
-        <span class="px-3 cursor-pointer">chronological</span>
-        <span class="px-3 underline cursor-pointer">alphabetical</span>
+    
+      <div class="bg__whitegradient fixed bottom-0 w-full h-24 lg:h-32 z-50"></div>
+      <div class="-rotate-90 transform fixed -right-14 lg:-right-16 mt-60 text-xs	lg:text-base">
+        <span class="px-3 cursor-pointer text-sm hover">chronological</span>
+        <span class="px-3 underline cursor-pointer text-sm hover">alphabetical</span>
       </div>
       <div class="container pt-8 pb-32">
-        <h2 class="uppercase text-sm mb-28 letterspace__5">work</h2>
-        <div class="grid grid-cols-12">
-          <div class="col-span-3">
-            <ul class="flex flex-col letterspace__1">
+        <div class="bg__whitegradient__top fixed top-0 w-full h-24 lg:h-32 hidden z-20 left-0"></div>
+        <h2 class="z-20 uppercase text-sm pt-36 lg:pt-0 mb-8 lg:mb-28 letterspace__5 lg:fixed">
+          <a href="work.html">work</a>
+        </h2>
+        <div class="grid grid-cols-10 lg:mt-28">
+          <div class="col-span-12 lg:col-span-2 mb-20 lg:mb-0">
+            <ul class="flex flex-col letterspace__1 menu__category lg:sticky top-36">
               <li>
-                <a
-                  class="py-2 relative flex items-center"
-                  href="javascript:void(0);"
-                >
-                  <img
-                    class="w-auto absolute -left-5"
-                    src="images/svg/line.svg"
-                    alt=""
-                  />
+                <a href="javascript:void(0);" class="active">
+                  <img class="w-auto absolute -left-4" src="images/svg/bullet.svg" alt=""/>
                   all projects.
                 </a>
               </li>
               <li>
-                <a class="py-2" href="javascript:void(0);">fields.</a>
+                <a href="javascript:void(0);">fields.</a>
+                <ul class="flex-wrap">
+                  <li>
+                    <a href="#">
+                      branding
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      environmental
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      exhibition
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      interactive
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      packaging
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      print
+                    </a>
+                  </li>
+                </ul>
               </li>
               <li>
-                <a class="py-2" href="javascript:void(0);">clients.</a>
+                <a href="javascript:void(0);">clients.</a>
+                <ul>
+                  <li>
+                    <a href="#">
+                      arts & culture
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      commercial
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      culinary
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      institution
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      design & architecture
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      lifestyle
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      non-commercial
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      miscellaneous
+                    </a>
+                  </li>
+                </ul>
               </li>
             </ul>
           </div>
-          <div class="col-span-9 grid grid-cols-12 gap-x-10 gap-y-20">
-            <div class="col-span-4">
-              <a href="work-detail.html">
-                <div class="overflow-hidden photo-post">
-                  <img
-                    class="imgfillImg hover"
-                    src="images/photo1_hover.jpg"
-                    alt=""
-                  />
-                  <img class="imgfillImg" src="images/photo1.jpg" alt="" />
+          <div class="col-span-12 lg:col-span-8 grid grid-cols-12 sm:gap-x-10 xl:gap-x-20	  gap-y-20 xl:gap-y-24">
+            <div class="col-span-9 sm:col-span-5 lg:col-span-4">
+              <a href="work-detail.html" class="hover">
+                <div class="overflow-hidden photo photo-post">
+                  <img class="imgfillImg hover__single" src="images/photo1.jpg" alt="" />
                 </div>
-                <p>A to Z</p>
+                <p class="mt-1">A to Z</p>
               </a>
             </div>
-            <div class="col-span-4">
-              <a href="work-detail.html">
-                <div class="overflow-hidden photo-post">
+            <div class="col-span-9 sm:col-span-5 lg:col-span-4">
+              <a href="work-detail.html" class="hover">
+                <div class="overflow-hidden photo photo-post">
                   <img
                     class="imgfillImg hover"
                     src="images/photo1_hover.jpg"
@@ -117,12 +232,12 @@
                   />
                   <img class="imgfillImg" src="images/photo2.jpg" alt="" />
                 </div>
-                <p>Bunga Rampai</p>
+                <p class="mt-1">Bunga Rampai</p>
               </a>
             </div>
-            <div class="col-span-4">
-              <a href="work-detail.html">
-                <div class="overflow-hidden photo-post">
+            <div class="col-span-9 sm:col-span-5 lg:col-span-4">
+              <a href="work-detail.html" class="hover">
+                <div class="overflow-hidden photo photo-post">
                   <img
                     class="imgfillImg hover"
                     src="images/photo1_hover.jpg"
@@ -130,12 +245,12 @@
                   />
                   <img class="imgfillImg" src="images/photo1.jpg" alt="" />
                 </div>
-                <p>Chiaroscuro</p>
+                <p class="mt-1">Chiaroscuro</p>
               </a>
             </div>
-            <div class="col-span-4">
-              <a href="work-detail.html">
-                <div class="overflow-hidden photo-post">
+            <div class="col-span-9 sm:col-span-5 lg:col-span-4">
+              <a href="work-detail.html" class="hover">
+                <div class="overflow-hidden photo photo-post">
                   <img
                     class="imgfillImg hover"
                     src="images/photo1_hover.jpg"
@@ -143,12 +258,12 @@
                   />
                   <img class="imgfillImg" src="images/photo3.jpg" alt="" />
                 </div>
-                <p>De Soematra</p>
+                <p class="mt-1">De Soematra</p>
               </a>
             </div>
-            <div class="col-span-4">
-              <a href="work-detail.html">
-                <div class="overflow-hidden photo-post">
+            <div class="col-span-9 sm:col-span-5 lg:col-span-4">
+              <a href="work-detail.html" class="hover">
+                <div class="overflow-hidden photo photo-post">
                   <img
                     class="imgfillImg hover"
                     src="images/photo1_hover.jpg"
@@ -156,12 +271,12 @@
                   />
                   <img class="imgfillImg" src="images/photo1.jpg" alt="" />
                 </div>
-                <p>Chiaroscuro</p>
+                <p class="mt-1">Chiaroscuro</p>
               </a>
             </div>
-            <div class="col-span-4">
-              <a href="work-detail.html">
-                <div class="overflow-hidden photo-post">
+            <div class="col-span-9 sm:col-span-5 lg:col-span-4">
+              <a href="work-detail.html" class="hover">
+                <div class="overflow-hidden photo photo-post">
                   <img
                     class="imgfillImg hover"
                     src="images/photo1_hover.jpg"
@@ -169,12 +284,12 @@
                   />
                   <img class="imgfillImg" src="images/photo2.jpg" alt="" />
                 </div>
-                <p>A to Z</p>
+                <p class="mt-1">A to Z</p>
               </a>
             </div>
-            <div class="col-span-4">
-              <a href="work-detail.html">
-                <div class="overflow-hidden photo-post">
+            <div class="col-span-9 sm:col-span-5 lg:col-span-4">
+              <a href="work-detail.html" class="hover">
+                <div class="overflow-hidden photo photo-post">
                   <img
                     class="imgfillImg hover"
                     src="images/photo1_hover.jpg"
@@ -182,12 +297,12 @@
                   />
                   <img class="imgfillImg" src="images/photo1.jpg" alt="" />
                 </div>
-                <p>A to Z</p>
+                <p class="mt-1">A to Z</p>
               </a>
             </div>
-            <div class="col-span-4">
-              <a href="work-detail.html">
-                <div class="overflow-hidden photo-post">
+            <div class="col-span-9 sm:col-span-5 lg:col-span-4">
+              <a href="work-detail.html" class="hover">
+                <div class="overflow-hidden photo photo-post">
                   <img
                     class="imgfillImg hover"
                     src="images/photo1_hover.jpg"
@@ -195,12 +310,12 @@
                   />
                   <img class="imgfillImg" src="images/photo2.jpg" alt="" />
                 </div>
-                <p>Bunga Rampai</p>
+                <p class="mt-1">Bunga Rampai</p>
               </a>
             </div>
-            <div class="col-span-4">
-              <a href="work-detail.html">
-                <div class="overflow-hidden photo-post">
+            <div class="col-span-9 sm:col-span-5 lg:col-span-4">
+              <a href="work-detail.html" class="hover">
+                <div class="overflow-hidden photo photo-post">
                   <img
                     class="imgfillImg hover"
                     src="images/photo1_hover.jpg"
@@ -208,12 +323,12 @@
                   />
                   <img class="imgfillImg" src="images/photo1.jpg" alt="" />
                 </div>
-                <p>Chiaroscuro</p>
+                <p class="mt-1">Chiaroscuro</p>
               </a>
             </div>
-            <div class="col-span-4">
-              <a href="work-detail.html">
-                <div class="overflow-hidden photo-post">
+            <div class="col-span-9 sm:col-span-5 lg:col-span-4">
+              <a href="work-detail.html" class="hover">
+                <div class="overflow-hidden photo photo-post">
                   <img
                     class="imgfillImg hover"
                     src="images/photo1_hover.jpg"
@@ -221,12 +336,12 @@
                   />
                   <img class="imgfillImg" src="images/photo3.jpg" alt="" />
                 </div>
-                <p>De Soematra</p>
+                <p class="mt-1">De Soematra</p>
               </a>
             </div>
-            <div class="col-span-4">
-              <a href="work-detail.html">
-                <div class="overflow-hidden photo-post">
+            <div class="col-span-9 sm:col-span-5 lg:col-span-4">
+              <a href="work-detail.html" class="hover">
+                <div class="overflow-hidden photo photo-post">
                   <img
                     class="imgfillImg hover"
                     src="images/photo1_hover.jpg"
@@ -234,12 +349,12 @@
                   />
                   <img class="imgfillImg" src="images/photo1.jpg" alt="" />
                 </div>
-                <p>Chiaroscuro</p>
+                <p class="mt-1">Chiaroscuro</p>
               </a>
             </div>
-            <div class="col-span-4">
-              <a href="work-detail.html">
-                <div class="overflow-hidden photo-post">
+            <div class="col-span-9 sm:col-span-5 lg:col-span-4">
+              <a href="work-detail.html" class="hover">
+                <div class="overflow-hidden photo photo-post">
                   <img
                     class="imgfillImg hover"
                     src="images/photo1_hover.jpg"
@@ -247,7 +362,7 @@
                   />
                   <img class="imgfillImg" src="images/photo2.jpg" alt="" />
                 </div>
-                <p>A to Z</p>
+                <p class="mt-1">A to Z</p>
               </a>
             </div>
           </div>
@@ -255,13 +370,14 @@
       </div>
     </div>
 
-    <!-- top -->
-    <a href="#">
-      <div class="ontop">
-        <img class="w-auto" src="images/svg/backtop.svg" alt="" />
+    <!-- top -->    
+    <div class="ontop">
+      <a href="#">
+        <img class="w-auto mx-auto" src="images/svg/backtop.svg" alt="" />
         <p class="letterspace__5 uppercase">top</p>
-      </div>
-    </a>
+      </a>
+    </div>
+    
     <!-- js -->
     <script src="js/jquery-1.11.0.min.js"></script>
     <script src="js/slick.min.js"></script>

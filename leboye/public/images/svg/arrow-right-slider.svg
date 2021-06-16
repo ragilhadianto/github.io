@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="66.383" height="48.511" viewBox="0 0 66.383 48.511">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #f6f6f6;
+      }
+    </style>
+  </defs>
+  <path id="arrow-right-slider" class="cls-1" d="M45.17,13.788a3.83,3.83,0,1,1,5.416-5.416L71.011,28.8a3.829,3.829,0,0,1,0,5.416L50.586,54.639a3.83,3.83,0,1,1-5.416-5.416L59.057,35.335H9.58a3.83,3.83,0,1,1,0-7.66H59.057Z" transform="translate(-5.75 -7.25)"/>
+</svg>

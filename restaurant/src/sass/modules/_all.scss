@@ -1,0 +1,14 @@
+.imgfillImg {
+  width: 100% !important;
+  height: 100% !important;
+  object-position: 50% 50%;
+  -o-object-fit: cover;
+  object-fit: cover;
+
+  &__top {
+    object-position: 50% 0;
+  }
+  &__middle {
+    object-position: 50% 25%;
+  }
+}
