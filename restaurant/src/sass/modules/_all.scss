@@ -12,3 +12,19 @@
     object-position: 50% 25%;
   }
 }
+
+.text{
+
+  &__wrap{
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+
+    &__1{
+      -webkit-line-clamp: 1;
+    }
+    &__2{
+      -webkit-line-clamp: 2;
+    }
+  }
+}
