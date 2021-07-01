@@ -1,0 +1,98 @@
+.player-head, .banner-header {
+    width: 100%;
+    padding: 10px 0 5px;
+    position: relative;
+    z-index: 2;
+}
+
+.ratiobox {
+    display: block;
+    position: relative;
+}
+.ratiobox > .ratiobox_content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    background-color: #eee;
+}
+.ratiobox_content iframe {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+.ratiobox.ratio_16_9:after {
+    padding-top: 56.25%;
+}
+.ratiobox:after {
+    content: "";
+    display: block;
+    padding-top: 100%;
+    overflow: hidden;
+}
+.footer__social {
+    margin: 0px 0px 20px 0;
+}
+.icon-item {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px 2px;
+    width: 32px;
+    height: 32px;
+    font-size: 20px;
+    color: #FFFFFF;
+    border-radius: 100%;
+}
+.icon-item__fb {
+    background: #3C5A99;
+}
+.icon-item__tw {
+    background: #1DA1F2;
+}
+.icon-item__ig {
+    background: #5851DB;
+    background: -moz-radial-gradient(left bottom, ellipse cover, #ffdc80 15%, #e1306c 55%, #5851db 100%);
+    background: -webkit-radial-gradient(left bottom, ellipse cover, #ffdc80 15%, #e1306c 55%, #5851db 100%);
+    background: radial-gradient(ellipse at left bottom, #ffdc80 15%, #e1306c 55%, #5851db 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$top_color', endColorstr='$bottom_color',GradientType=1 );
+}
+.icon-item__in {
+    background: #0077B5;
+}
+.icon-item__yt {
+    background: #FF0000;
+}
+.icon-item {
+    text-align: center !important;
+}
+
+.layer-overlay {
+    opacity: 0.75;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 11;
+    overflow: hidden;
+    filter: alpha(opacity=0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    -ms-transition: all 0.3s ease-in-out 0s;
+    -o-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+    background: #000000;
+    display: none;
+}
+#navbar-menu-layer{
+    right: -100%;
+    @include base_transition(all);
+   
+}

@@ -1,0 +1,29 @@
+input,
+button,
+select,
+textarea {
+  font-weight: 600;
+}
+
+select::-ms-expand {
+  display: none;
+}
+select {
+  -webkit-appearance: none;
+  appearance: none;
+}
+label {
+  font-weight: 600;
+}
+
+.field {
+  &__select {
+  }
+}
+
+.select{
+  background-image: url(../images/svg/arrow__bottom.svg);
+  background-position: right 10px center;
+  background-repeat: no-repeat;
+  padding-right: 35px;
+}

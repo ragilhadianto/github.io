@@ -36,7 +36,9 @@
     right: 30px;
     top: 20px;
     width: 70px;
-
+  }
+  @include min-responsive($lg){
+    bottom: 30px;
   }
 }
 .menu {
@@ -290,9 +292,11 @@
     bottom: 40px;
   }
 
+  @include min-responsive($lgmid){
+    bottom: 35px;
+  }
   @include min-responsive($lg){
     bottom: 40px;
-
   }
 
   @include range-responsive($sm,$lg){

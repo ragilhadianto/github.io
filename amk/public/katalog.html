@@ -1,0 +1,1005 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/tailwind.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Title</title>
+  </head>
+  <body>
+
+    <header>
+      <div class="bg__gray1 color__gray2">
+        <div class="container px-5 flex justify-between py-1">
+          <div class="flex items-center">
+            <img class="w-auto mr-2" src="images/svg/access_time.svg" alt="">
+            <p>Senin - Minggu: 08.00 – 17.00 WITA</p>
+          </div>
+          <div>
+            <ul>
+              <li>
+                <a class="px-2" href="aboutus.html">About us</a>
+              </li>
+              <li>
+                <a class="px-2" href="kontak.html">Kontak</a>
+              </li>
+              <li>
+                <a class="px-2" href="karir.html">Karir</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="container px-5">
+        <div class="grid grid-cols-12 py-4 items-center text-white">
+          <div class="col-span-3">
+            <a href="index.html">
+              <img class="w-auto" src="images/logo.svg" alt="">
+            </a>
+          </div>
+
+          <div class="col-span-6">
+            <div class="flex">
+              <span class="flex items-center bg__green rounded-md px-3 py-1 cursor-pointer mr-3 transition-all	">
+                Kategori 
+                <img class="w-auto ml-2" src="images/svg/arrow_bottom_menu.svg" alt="">
+              </span>
+              <div >
+                <form action="" class="flex">
+                  <input type="text" name="" id="" placeholder="Cari Kitchen Faucet" class="rounded-tl-md rounded-bl-md w-80	px-3 py-1 color__gray1">
+                  <button class="bg__green px-3 py-1 rounded-tr-md rounded-br-md transition-all	">
+                    <img class="w-auto" src="images/svg/icon_search.svg" alt="">
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-span-3 flex justify-end">
+            <ul>
+              <li>
+                <a class="px-3 flex" href="solusi.html">
+                  Solusi
+                  <img class="w-auto ml-1" src="images/svg/arrow_bottom_menu.svg" alt="">
+                </a>
+              </li>
+              <li>
+                <a class="px-3" href="brands.html">Brands</a>
+              </li>
+              <li>
+                <a class="px-3" href="FAQ.html">FAQ</a>
+              </li>
+              <li>
+                <a class="px-3" href="Kontak.html">Kontak</a>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </header>
+    
+
+    <div class="container px-5 pb-20">
+      <div class="grid grid-cols-12 relative my-10 gap-x-12">
+        
+        <!-- sidebar -->
+        <div class="col-span-4 pr-12">
+            <h3 class="text-3xl mb-12">Katalog</h3>
+
+            <div class="border border__gray3 rounded-md text-base overflow-hidden">
+                <strong class="px-7 py-3 bg__gray3 block">Kategori</strong>
+                <ul class="px-7 py-3 color__gray1 border__gray3 border-b">
+                    <li class="w-full">
+                        <div class="flex items-center justify-between font-semibold cursor-pointer py-3">
+                            Cat Tembok
+                            <img class="w-auto" src="images/svg/arrow_bottom_black.svg" alt="">
+                        </div>                      
+                        <ul class="pl-5 ">
+                            <li class="w-full">
+                                <a href="" class="flex items-center justify-between font-normal cursor-pointer py-2 color__gray5">          
+                                    Outdoor
+                                    <span>56</span>                                        
+                                </a>
+                            </li>
+                            <li class="w-full">
+                                <a href="" class="flex items-center justify-between font-normal cursor-pointer py-2 color__gray5">          
+                                    Indoor
+                                    <span>11</span>                                        
+                                </a>
+                            </li>
+                            <li class="w-full">
+                                <a href="" class="flex items-center justify-between font-normal cursor-pointer py-2 color__gray5">          
+                                    Texture
+                                    <span>23</span>                                        
+                                </a>
+                            </li>
+                        </ul>                        
+                    </li>
+                    <li class="w-full">
+                        <div class="flex items-center justify-between font-semibold cursor-pointer py-3">
+                            Baja Ringan
+                            <img class="w-auto" src="images/svg/arrow_bottom_black.svg" alt="">
+                        </div>
+                    </li>
+                    <li class="w-full">
+                        <div class="flex items-center justify-between font-semibold cursor-pointer py-3">
+                            Palu dan Tang
+                            <img class="w-auto" src="images/svg/arrow_bottom_black.svg" alt="">
+                        </div>
+                    </li>
+                    <li class="w-full">
+                        <div class="flex items-center justify-between font-semibold cursor-pointer py-3">
+                            Pasir Bangunan
+                            <img class="w-auto" src="images/svg/arrow_bottom_black.svg" alt="">
+                        </div>
+                    </li>
+                    <li class="w-full">
+                        <div class="flex items-center justify-between font-semibold cursor-pointer py-3">
+                            Batu Bata
+                            <img class="w-auto" src="images/svg/arrow_bottom_black.svg" alt="">
+                        </div>
+                    </li>
+                </ul>
+                <div class="px-7 py-3 border-b-8 border__orange ">
+                    <a href="kategori.html" class="font-bold">Lihat Semua Kategori</a>
+                </div>
+
+            </div>
+
+            <div class="my-10">
+                <div class="my-5">
+                    <img class="w-auto" src="images/svg/icon_information.svg" alt=""> 
+                    <p class="text-xxs mt-2">Semua produk tersedia kecuali produk bertanda Pre-Order atau Menuju Toko</p>
+                </div>
+                <div class="my-5">
+                    <div class="flex">
+                        <div class="product__list__label bg__gray1 text-white rounded-md text-xxs ">Menuju Toko</div>
+                    </div>
+                    <p class="text-xxs mt-2">Produk sedang perjalanan menuju toko.<br/> <strong>Produk tersedia dalam waktu</strong> < 4 minggu.</p>
+                </div>
+                <div class="my-5">
+                    <div class="flex">
+                        <div class="product__list__label bg__gray2 color__gray1 rounded-md text-xxs ">Pre-order</div>
+                    </div>
+                    <p class="text-xxs mt-2">Produk harus dipesan secara preorder,<br/> <strong> Produk tersedia dalam waktu</strong> 4-6 minggu setelah pemesanan.</p>
+                </div>
+            </div>
+
+        </div>
+        
+        <!-- main -->
+        <div class="col-span-8 ">
+            <div class="mb-12 flex justify-between">
+                <p class="text-2xl">394 results for <span class="color__orange">Cat Tembok</span></p>
+                <div class="flex justify-between">
+                    <div class="flex items-center text-sm ml-8">
+                        <p class="mr-2">Tampilkan</p>
+                        <select name="" id="" class="select border border__green rounded-md px-4 py-2 color__green">
+                            <option value="">10</option>
+                            <option value="">20</option>
+                            <option value="">30</option>
+                            <option value="">40</option>
+                        </select>
+                    </div>
+                    <div class="flex items-center text-sm  ml-8">
+                        <p class="mr-2">Urutkan</p>
+                        <select name="" id="" class="select border border__green rounded-md px-4 py-2 color__green">
+                            <option value="">Paling Sesuai</option>
+                            <option value="">asd</option>
+                            <option value="">asd</option>
+                            <option value="">asd</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+     
+
+            <div>
+                <ul class="product__list grid grid-cols-4 gap-5">
+                    <li class="product__item border border__gray3 rounded-md overflow-hidden bg-white">               
+                        <div class="p-2">
+                            <a href="produk.html">
+                            <div class="product__list__photo p-2">
+                                <img src="images/produk1.jpg" alt="">
+                            </div>
+                            </a>
+                            <div class="product__label flex justify-between items-end relative">
+                            <span class="product__list__logo">
+                                <img src="images/produk1-logo.jpg" alt="">
+                            </span>
+                            <a href="toko.html">
+                                <div class="absolute right-0 bottom-0 product__list__label bg__gray1 text-white rounded-md text-xxs labeltoko">Menuju Toko</div>
+                            </a>
+                            <div class="product__list__label bg__gray2 color__gray1 rounded-md text-xxs ">Pre-order</div>
+                            </div>
+                        </div>
+                        <a href="produk.html">
+                            <div class="border-t border__gray3 p-2">
+                            <div class="relative pb-8 mb-3">
+                                <p class="text-base text__wrap2">Hand Pallet Big 3T 685x1220mm Wasdasd asda asdas</p>
+                                <div class="flex justify-between absolute bottom-0 w-full">
+                                <small class="color__gray2 text-sm line-through">Rp450.000,-</small>
+                                <div class="product__list__label bg__orange2 color__red rounded-md text-sm font-bold">-25%</div>
+                                </div>
+                            </div>
+                            <div class="bg__orange rounded-md text-center font-bold py-2 text-base">
+                                Rp56.430.000,-
+                            </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="product__item border border__gray3 rounded-md overflow-hidden bg-white">               
+                        <div class="p-2">
+                            <a href="produk.html">
+                            <div class="product__list__photo p-2">
+                                <img src="images/produk2.jpg" alt="">
+                            </div>
+                            </a>
+                            <div class="product__label flex justify-between items-end relative">
+                            <span class="product__list__logo">
+                                <img src="images/produk2-logo.jpg" alt="">
+                            </span>
+                            <a href="toko.html">
+                                <div class="absolute right-0 bottom-0 product__list__label bg__gray1 text-white rounded-md text-xxs labeltoko">Menuju Toko</div>
+                            </a>
+                            <div class="product__list__label bg__gray2 color__gray1 rounded-md text-xxs ">Pre-order</div>
+                            </div>
+                        </div>
+                        <a href="produk.html">
+                            <div class="border-t border__gray3 p-2">
+                            <div class="relative pb-8 mb-3">
+                                <p class="text-base text__wrap2">Hand Pallet Big 3T 685x1220mm Wasdasd asda asdas</p>
+                                <div class="flex justify-between absolute bottom-0 w-full">
+                                <small class="color__gray2 text-sm line-through">Rp450.000,-</small>
+                                <div class="product__list__label bg__orange2 color__red rounded-md text-sm font-bold">-25%</div>
+                                </div>
+                            </div>
+                            <div class="bg__orange rounded-md text-center font-bold py-2 text-base">
+                                Rp56.430.000,-
+                            </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="product__item border border__gray3 rounded-md overflow-hidden bg-white">               
+                        <div class="p-2">
+                            <a href="produk.html">
+                            <div class="product__list__photo p-2">
+                                <img src="images/produk1.jpg" alt="">
+                            </div>
+                            </a>
+                            <div class="product__label flex justify-between items-end relative">
+                            <span class="product__list__logo">
+                                <img src="images/produk1-logo.jpg" alt="">
+                            </span>
+                            <a href="toko.html">
+                                <div class="absolute right-0 bottom-0 product__list__label bg__gray1 text-white rounded-md text-xxs labeltoko">Menuju Toko</div>
+                            </a>
+                            <div class="product__list__label bg__gray2 color__gray1 rounded-md text-xxs ">Pre-order</div>
+                            </div>
+                        </div>
+                        <a href="produk.html">
+                            <div class="border-t border__gray3 p-2">
+                            <div class="relative pb-8 mb-3">
+                                <p class="text-base text__wrap2">Hand Pallet Big 3T 685x1220mm Wasdasd asda asdas</p>
+                                <div class="flex justify-between absolute bottom-0 w-full">
+                                <small class="color__gray2 text-sm line-through">Rp450.000,-</small>
+                                <div class="product__list__label bg__orange2 color__red rounded-md text-sm font-bold">-25%</div>
+                                </div>
+                            </div>
+                            <div class="bg__orange rounded-md text-center font-bold py-2 text-base">
+                                Rp56.430.000,-
+                            </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="product__item border border__gray3 rounded-md overflow-hidden bg-white">               
+                        <div class="p-2">
+                            <a href="produk.html">
+                            <div class="product__list__photo p-2">
+                                <img src="images/produk2.jpg" alt="">
+                            </div>
+                            </a>
+                            <div class="product__label flex justify-between items-end relative">
+                            <span class="product__list__logo">
+                                <img src="images/produk2-logo.jpg" alt="">
+                            </span>
+                            <a href="toko.html">
+                                <div class="absolute right-0 bottom-0 product__list__label bg__gray1 text-white rounded-md text-xxs labeltoko">Menuju Toko</div>
+                            </a>
+                            <div class="product__list__label bg__gray2 color__gray1 rounded-md text-xxs ">Pre-order</div>
+                            </div>
+                        </div>
+                        <a href="produk.html">
+                            <div class="border-t border__gray3 p-2">
+                            <div class="relative pb-8 mb-3">
+                                <p class="text-base text__wrap2">Hand Pallet Big 3T 685x1220mm Wasdasd asda asdas</p>
+                                <div class="flex justify-between absolute bottom-0 w-full">
+                                <small class="color__gray2 text-sm line-through">Rp450.000,-</small>
+                                <div class="product__list__label bg__orange2 color__red rounded-md text-sm font-bold">-25%</div>
+                                </div>
+                            </div>
+                            <div class="bg__orange rounded-md text-center font-bold py-2 text-base">
+                                Rp56.430.000,-
+                            </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="product__item border border__gray3 rounded-md overflow-hidden bg-white">               
+                        <div class="p-2">
+                            <a href="produk.html">
+                            <div class="product__list__photo p-2">
+                                <img src="images/produk1.jpg" alt="">
+                            </div>
+                            </a>
+                            <div class="product__label flex justify-between items-end relative">
+                            <span class="product__list__logo">
+                                <img src="images/produk1-logo.jpg" alt="">
+                            </span>
+                            <a href="toko.html">
+                                <div class="absolute right-0 bottom-0 product__list__label bg__gray1 text-white rounded-md text-xxs labeltoko">Menuju Toko</div>
+                            </a>
+                            <div class="product__list__label bg__gray2 color__gray1 rounded-md text-xxs ">Pre-order</div>
+                            </div>
+                        </div>
+                        <a href="produk.html">
+                            <div class="border-t border__gray3 p-2">
+                            <div class="relative pb-8 mb-3">
+                                <p class="text-base text__wrap2">Hand Pallet Big 3T 685x1220mm Wasdasd asda asdas</p>
+                                <div class="flex justify-between absolute bottom-0 w-full">
+                                <small class="color__gray2 text-sm line-through">Rp450.000,-</small>
+                                <div class="product__list__label bg__orange2 color__red rounded-md text-sm font-bold">-25%</div>
+                                </div>
+                            </div>
+                            <div class="bg__orange rounded-md text-center font-bold py-2 text-base">
+                                Rp56.430.000,-
+                            </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="product__item border border__gray3 rounded-md overflow-hidden bg-white">               
+                        <div class="p-2">
+                            <a href="produk.html">
+                            <div class="product__list__photo p-2">
+                                <img src="images/produk2.jpg" alt="">
+                            </div>
+                            </a>
+                            <div class="product__label flex justify-between items-end relative">
+                            <span class="product__list__logo">
+                                <img src="images/produk2-logo.jpg" alt="">
+                            </span>
+                            <a href="toko.html">
+                                <div class="absolute right-0 bottom-0 product__list__label bg__gray1 text-white rounded-md text-xxs labeltoko">Menuju Toko</div>
+                            </a>
+                            <div class="product__list__label bg__gray2 color__gray1 rounded-md text-xxs ">Pre-order</div>
+                            </div>
+                        </div>
+                        <a href="produk.html">
+                            <div class="border-t border__gray3 p-2">
+                            <div class="relative pb-8 mb-3">
+                                <p class="text-base text__wrap2">Hand Pallet Big 3T 685x1220mm Wasdasd asda asdas</p>
+                                <div class="flex justify-between absolute bottom-0 w-full">
+                                <small class="color__gray2 text-sm line-through">Rp450.000,-</small>
+                                <div class="product__list__label bg__orange2 color__red rounded-md text-sm font-bold">-25%</div>
+                                </div>
+                            </div>
+                            <div class="bg__orange rounded-md text-center font-bold py-2 text-base">
+                                Rp56.430.000,-
+                            </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="product__item border border__gray3 rounded-md overflow-hidden bg-white">               
+                        <div class="p-2">
+                            <a href="produk.html">
+                            <div class="product__list__photo p-2">
+                                <img src="images/produk1.jpg" alt="">
+                            </div>
+                            </a>
+                            <div class="product__label flex justify-between items-end relative">
+                            <span class="product__list__logo">
+                                <img src="images/produk1-logo.jpg" alt="">
+                            </span>
+                            <a href="toko.html">
+                                <div class="absolute right-0 bottom-0 product__list__label bg__gray1 text-white rounded-md text-xxs labeltoko">Menuju Toko</div>
+                            </a>
+                            <div class="product__list__label bg__gray2 color__gray1 rounded-md text-xxs ">Pre-order</div>
+                            </div>
+                        </div>
+                        <a href="produk.html">
+                            <div class="border-t border__gray3 p-2">
+                            <div class="relative pb-8 mb-3">
+                                <p class="text-base text__wrap2">Hand Pallet Big 3T 685x1220mm Wasdasd asda asdas</p>
+                                <div class="flex justify-between absolute bottom-0 w-full">
+                                <small class="color__gray2 text-sm line-through">Rp450.000,-</small>
+                                <div class="product__list__label bg__orange2 color__red rounded-md text-sm font-bold">-25%</div>
+                                </div>
+                            </div>
+                            <div class="bg__orange rounded-md text-center font-bold py-2 text-base">
+                                Rp56.430.000,-
+                            </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="product__item border border__gray3 rounded-md overflow-hidden bg-white">               
+                        <div class="p-2">
+                            <a href="produk.html">
+                            <div class="product__list__photo p-2">
+                                <img src="images/produk2.jpg" alt="">
+                            </div>
+                            </a>
+                            <div class="product__label flex justify-between items-end relative">
+                            <span class="product__list__logo">
+                                <img src="images/produk2-logo.jpg" alt="">
+                            </span>
+                            <a href="toko.html">
+                                <div class="absolute right-0 bottom-0 product__list__label bg__gray1 text-white rounded-md text-xxs labeltoko">Menuju Toko</div>
+                            </a>
+                            <div class="product__list__label bg__gray2 color__gray1 rounded-md text-xxs ">Pre-order</div>
+                            </div>
+                        </div>
+                        <a href="produk.html">
+                            <div class="border-t border__gray3 p-2">
+                            <div class="relative pb-8 mb-3">
+                                <p class="text-base text__wrap2">Hand Pallet Big 3T 685x1220mm Wasdasd asda asdas</p>
+                                <div class="flex justify-between absolute bottom-0 w-full">
+                                <small class="color__gray2 text-sm line-through">Rp450.000,-</small>
+                                <div class="product__list__label bg__orange2 color__red rounded-md text-sm font-bold">-25%</div>
+                                </div>
+                            </div>
+                            <div class="bg__orange rounded-md text-center font-bold py-2 text-base">
+                                Rp56.430.000,-
+                            </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="product__item border border__gray3 rounded-md overflow-hidden bg-white">               
+                        <div class="p-2">
+                            <a href="produk.html">
+                            <div class="product__list__photo p-2">
+                                <img src="images/produk2.jpg" alt="">
+                            </div>
+                            </a>
+                            <div class="product__label flex justify-between items-end relative">
+                            <span class="product__list__logo">
+                                <img src="images/produk2-logo.jpg" alt="">
+                            </span>
+                            <a href="toko.html">
+                                <div class="absolute right-0 bottom-0 product__list__label bg__gray1 text-white rounded-md text-xxs labeltoko">Menuju Toko</div>
+                            </a>
+                            <div class="product__list__label bg__gray2 color__gray1 rounded-md text-xxs ">Pre-order</div>
+                            </div>
+                        </div>
+                        <a href="produk.html">
+                            <div class="border-t border__gray3 p-2">
+                            <div class="relative pb-8 mb-3">
+                                <p class="text-base text__wrap2">Hand Pallet Big 3T 685x1220mm Wasdasd asda asdas</p>
+                                <div class="flex justify-between absolute bottom-0 w-full">
+                                <small class="color__gray2 text-sm line-through">Rp450.000,-</small>
+                                <div class="product__list__label bg__orange2 color__red rounded-md text-sm font-bold">-25%</div>
+                                </div>
+                            </div>
+                            <div class="bg__orange rounded-md text-center font-bold py-2 text-base">
+                                Rp56.430.000,-
+                            </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="product__item border border__gray3 rounded-md overflow-hidden bg-white">               
+                        <div class="p-2">
+                            <a href="produk.html">
+                            <div class="product__list__photo p-2">
+                                <img src="images/produk1.jpg" alt="">
+                            </div>
+                            </a>
+                            <div class="product__label flex justify-between items-end relative">
+                            <span class="product__list__logo">
+                                <img src="images/produk1-logo.jpg" alt="">
+                            </span>
+                            <a href="toko.html">
+                                <div class="absolute right-0 bottom-0 product__list__label bg__gray1 text-white rounded-md text-xxs labeltoko">Menuju Toko</div>
+                            </a>
+                            <div class="product__list__label bg__gray2 color__gray1 rounded-md text-xxs ">Pre-order</div>
+                            </div>
+                        </div>
+                        <a href="produk.html">
+                            <div class="border-t border__gray3 p-2">
+                            <div class="relative pb-8 mb-3">
+                                <p class="text-base text__wrap2">Hand Pallet Big 3T 685x1220mm Wasdasd asda asdas</p>
+                                <div class="flex justify-between absolute bottom-0 w-full">
+                                <small class="color__gray2 text-sm line-through">Rp450.000,-</small>
+                                <div class="product__list__label bg__orange2 color__red rounded-md text-sm font-bold">-25%</div>
+                                </div>
+                            </div>
+                            <div class="bg__orange rounded-md text-center font-bold py-2 text-base">
+                                Rp56.430.000,-
+                            </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="product__item border border__gray3 rounded-md overflow-hidden bg-white">               
+                        <div class="p-2">
+                            <a href="produk.html">
+                            <div class="product__list__photo p-2">
+                                <img src="images/produk2.jpg" alt="">
+                            </div>
+                            </a>
+                            <div class="product__label flex justify-between items-end relative">
+                            <span class="product__list__logo">
+                                <img src="images/produk2-logo.jpg" alt="">
+                            </span>
+                            <a href="toko.html">
+                                <div class="absolute right-0 bottom-0 product__list__label bg__gray1 text-white rounded-md text-xxs labeltoko">Menuju Toko</div>
+                            </a>
+                            <div class="product__list__label bg__gray2 color__gray1 rounded-md text-xxs ">Pre-order</div>
+                            </div>
+                        </div>
+                        <a href="produk.html">
+                            <div class="border-t border__gray3 p-2">
+                            <div class="relative pb-8 mb-3">
+                                <p class="text-base text__wrap2">Hand Pallet Big 3T 685x1220mm Wasdasd asda asdas</p>
+                                <div class="flex justify-between absolute bottom-0 w-full">
+                                <small class="color__gray2 text-sm line-through">Rp450.000,-</small>
+                                <div class="product__list__label bg__orange2 color__red rounded-md text-sm font-bold">-25%</div>
+                                </div>
+                            </div>
+                            <div class="bg__orange rounded-md text-center font-bold py-2 text-base">
+                                Rp56.430.000,-
+                            </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="product__item border border__gray3 rounded-md overflow-hidden bg-white">               
+                        <div class="p-2">
+                            <a href="produk.html">
+                            <div class="product__list__photo p-2">
+                                <img src="images/produk1.jpg" alt="">
+                            </div>
+                            </a>
+                            <div class="product__label flex justify-between items-end relative">
+                            <span class="product__list__logo">
+                                <img src="images/produk1-logo.jpg" alt="">
+                            </span>
+                            <a href="toko.html">
+                                <div class="absolute right-0 bottom-0 product__list__label bg__gray1 text-white rounded-md text-xxs labeltoko">Menuju Toko</div>
+                            </a>
+                            <div class="product__list__label bg__gray2 color__gray1 rounded-md text-xxs ">Pre-order</div>
+                            </div>
+                        </div>
+                        <a href="produk.html">
+                            <div class="border-t border__gray3 p-2">
+                            <div class="relative pb-8 mb-3">
+                                <p class="text-base text__wrap2">Hand Pallet Big 3T 685x1220mm Wasdasd asda asdas</p>
+                                <div class="flex justify-between absolute bottom-0 w-full">
+                                <small class="color__gray2 text-sm line-through">Rp450.000,-</small>
+                                <div class="product__list__label bg__orange2 color__red rounded-md text-sm font-bold">-25%</div>
+                                </div>
+                            </div>
+                            <div class="bg__orange rounded-md text-center font-bold py-2 text-base">
+                                Rp56.430.000,-
+                            </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="product__item border border__gray3 rounded-md overflow-hidden bg-white">               
+                        <div class="p-2">
+                            <a href="produk.html">
+                            <div class="product__list__photo p-2">
+                                <img src="images/produk2.jpg" alt="">
+                            </div>
+                            </a>
+                            <div class="product__label flex justify-between items-end relative">
+                            <span class="product__list__logo">
+                                <img src="images/produk2-logo.jpg" alt="">
+                            </span>
+                            <a href="toko.html">
+                                <div class="absolute right-0 bottom-0 product__list__label bg__gray1 text-white rounded-md text-xxs labeltoko">Menuju Toko</div>
+                            </a>
+                            <div class="product__list__label bg__gray2 color__gray1 rounded-md text-xxs ">Pre-order</div>
+                            </div>
+                        </div>
+                        <a href="produk.html">
+                            <div class="border-t border__gray3 p-2">
+                            <div class="relative pb-8 mb-3">
+                                <p class="text-base text__wrap2">Hand Pallet Big 3T 685x1220mm Wasdasd asda asdas</p>
+                                <div class="flex justify-between absolute bottom-0 w-full">
+                                <small class="color__gray2 text-sm line-through">Rp450.000,-</small>
+                                <div class="product__list__label bg__orange2 color__red rounded-md text-sm font-bold">-25%</div>
+                                </div>
+                            </div>
+                            <div class="bg__orange rounded-md text-center font-bold py-2 text-base">
+                                Rp56.430.000,-
+                            </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="product__item border border__gray3 rounded-md overflow-hidden bg-white">               
+                        <div class="p-2">
+                            <a href="produk.html">
+                            <div class="product__list__photo p-2">
+                                <img src="images/produk2.jpg" alt="">
+                            </div>
+                            </a>
+                            <div class="product__label flex justify-between items-end relative">
+                            <span class="product__list__logo">
+                                <img src="images/produk2-logo.jpg" alt="">
+                            </span>
+                            <a href="toko.html">
+                                <div class="absolute right-0 bottom-0 product__list__label bg__gray1 text-white rounded-md text-xxs labeltoko">Menuju Toko</div>
+                            </a>
+                            <div class="product__list__label bg__gray2 color__gray1 rounded-md text-xxs ">Pre-order</div>
+                            </div>
+                        </div>
+                        <a href="produk.html">
+                            <div class="border-t border__gray3 p-2">
+                            <div class="relative pb-8 mb-3">
+                                <p class="text-base text__wrap2">Hand Pallet Big 3T 685x1220mm Wasdasd asda asdas</p>
+                                <div class="flex justify-between absolute bottom-0 w-full">
+                                <small class="color__gray2 text-sm line-through">Rp450.000,-</small>
+                                <div class="product__list__label bg__orange2 color__red rounded-md text-sm font-bold">-25%</div>
+                                </div>
+                            </div>
+                            <div class="bg__orange rounded-md text-center font-bold py-2 text-base">
+                                Rp56.430.000,-
+                            </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="product__item border border__gray3 rounded-md overflow-hidden bg-white">               
+                        <div class="p-2">
+                            <a href="produk.html">
+                            <div class="product__list__photo p-2">
+                                <img src="images/produk1.jpg" alt="">
+                            </div>
+                            </a>
+                            <div class="product__label flex justify-between items-end relative">
+                            <span class="product__list__logo">
+                                <img src="images/produk1-logo.jpg" alt="">
+                            </span>
+                            <a href="toko.html">
+                                <div class="absolute right-0 bottom-0 product__list__label bg__gray1 text-white rounded-md text-xxs labeltoko">Menuju Toko</div>
+                            </a>
+                            <div class="product__list__label bg__gray2 color__gray1 rounded-md text-xxs ">Pre-order</div>
+                            </div>
+                        </div>
+                        <a href="produk.html">
+                            <div class="border-t border__gray3 p-2">
+                            <div class="relative pb-8 mb-3">
+                                <p class="text-base text__wrap2">Hand Pallet Big 3T 685x1220mm Wasdasd asda asdas</p>
+                                <div class="flex justify-between absolute bottom-0 w-full">
+                                <small class="color__gray2 text-sm line-through">Rp450.000,-</small>
+                                <div class="product__list__label bg__orange2 color__red rounded-md text-sm font-bold">-25%</div>
+                                </div>
+                            </div>
+                            <div class="bg__orange rounded-md text-center font-bold py-2 text-base">
+                                Rp56.430.000,-
+                            </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="product__item border border__gray3 rounded-md overflow-hidden bg-white">               
+                        <div class="p-2">
+                            <a href="produk.html">
+                            <div class="product__list__photo p-2">
+                                <img src="images/produk2.jpg" alt="">
+                            </div>
+                            </a>
+                            <div class="product__label flex justify-between items-end relative">
+                            <span class="product__list__logo">
+                                <img src="images/produk2-logo.jpg" alt="">
+                            </span>
+                            <a href="toko.html">
+                                <div class="absolute right-0 bottom-0 product__list__label bg__gray1 text-white rounded-md text-xxs labeltoko">Menuju Toko</div>
+                            </a>
+                            <div class="product__list__label bg__gray2 color__gray1 rounded-md text-xxs ">Pre-order</div>
+                            </div>
+                        </div>
+                        <a href="produk.html">
+                            <div class="border-t border__gray3 p-2">
+                            <div class="relative pb-8 mb-3">
+                                <p class="text-base text__wrap2">Hand Pallet Big 3T 685x1220mm Wasdasd asda asdas</p>
+                                <div class="flex justify-between absolute bottom-0 w-full">
+                                <small class="color__gray2 text-sm line-through">Rp450.000,-</small>
+                                <div class="product__list__label bg__orange2 color__red rounded-md text-sm font-bold">-25%</div>
+                                </div>
+                            </div>
+                            <div class="bg__orange rounded-md text-center font-bold py-2 text-base">
+                                Rp56.430.000,-
+                            </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="product__item border border__gray3 rounded-md overflow-hidden bg-white">               
+                        <div class="p-2">
+                            <a href="produk.html">
+                            <div class="product__list__photo p-2">
+                                <img src="images/produk1.jpg" alt="">
+                            </div>
+                            </a>
+                            <div class="product__label flex justify-between items-end relative">
+                            <span class="product__list__logo">
+                                <img src="images/produk1-logo.jpg" alt="">
+                            </span>
+                            <a href="toko.html">
+                                <div class="absolute right-0 bottom-0 product__list__label bg__gray1 text-white rounded-md text-xxs labeltoko">Menuju Toko</div>
+                            </a>
+                            <div class="product__list__label bg__gray2 color__gray1 rounded-md text-xxs ">Pre-order</div>
+                            </div>
+                        </div>
+                        <a href="produk.html">
+                            <div class="border-t border__gray3 p-2">
+                            <div class="relative pb-8 mb-3">
+                                <p class="text-base text__wrap2">Hand Pallet Big 3T 685x1220mm Wasdasd asda asdas</p>
+                                <div class="flex justify-between absolute bottom-0 w-full">
+                                <small class="color__gray2 text-sm line-through">Rp450.000,-</small>
+                                <div class="product__list__label bg__orange2 color__red rounded-md text-sm font-bold">-25%</div>
+                                </div>
+                            </div>
+                            <div class="bg__orange rounded-md text-center font-bold py-2 text-base">
+                                Rp56.430.000,-
+                            </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="product__item border border__gray3 rounded-md overflow-hidden bg-white">               
+                        <div class="p-2">
+                            <a href="produk.html">
+                            <div class="product__list__photo p-2">
+                                <img src="images/produk2.jpg" alt="">
+                            </div>
+                            </a>
+                            <div class="product__label flex justify-between items-end relative">
+                            <span class="product__list__logo">
+                                <img src="images/produk2-logo.jpg" alt="">
+                            </span>
+                            <a href="toko.html">
+                                <div class="absolute right-0 bottom-0 product__list__label bg__gray1 text-white rounded-md text-xxs labeltoko">Menuju Toko</div>
+                            </a>
+                            <div class="product__list__label bg__gray2 color__gray1 rounded-md text-xxs ">Pre-order</div>
+                            </div>
+                        </div>
+                        <a href="produk.html">
+                            <div class="border-t border__gray3 p-2">
+                            <div class="relative pb-8 mb-3">
+                                <p class="text-base text__wrap2">Hand Pallet Big 3T 685x1220mm Wasdasd asda asdas</p>
+                                <div class="flex justify-between absolute bottom-0 w-full">
+                                <small class="color__gray2 text-sm line-through">Rp450.000,-</small>
+                                <div class="product__list__label bg__orange2 color__red rounded-md text-sm font-bold">-25%</div>
+                                </div>
+                            </div>
+                            <div class="bg__orange rounded-md text-center font-bold py-2 text-base">
+                                Rp56.430.000,-
+                            </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="product__item border border__gray3 rounded-md overflow-hidden bg-white">               
+                        <div class="p-2">
+                            <a href="produk.html">
+                            <div class="product__list__photo p-2">
+                                <img src="images/produk1.jpg" alt="">
+                            </div>
+                            </a>
+                            <div class="product__label flex justify-between items-end relative">
+                            <span class="product__list__logo">
+                                <img src="images/produk1-logo.jpg" alt="">
+                            </span>
+                            <a href="toko.html">
+                                <div class="absolute right-0 bottom-0 product__list__label bg__gray1 text-white rounded-md text-xxs labeltoko">Menuju Toko</div>
+                            </a>
+                            <div class="product__list__label bg__gray2 color__gray1 rounded-md text-xxs ">Pre-order</div>
+                            </div>
+                        </div>
+                        <a href="produk.html">
+                            <div class="border-t border__gray3 p-2">
+                            <div class="relative pb-8 mb-3">
+                                <p class="text-base text__wrap2">Hand Pallet Big 3T 685x1220mm Wasdasd asda asdas</p>
+                                <div class="flex justify-between absolute bottom-0 w-full">
+                                <small class="color__gray2 text-sm line-through">Rp450.000,-</small>
+                                <div class="product__list__label bg__orange2 color__red rounded-md text-sm font-bold">-25%</div>
+                                </div>
+                            </div>
+                            <div class="bg__orange rounded-md text-center font-bold py-2 text-base">
+                                Rp56.430.000,-
+                            </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="product__item border border__gray3 rounded-md overflow-hidden bg-white">               
+                        <div class="p-2">
+                            <a href="produk.html">
+                            <div class="product__list__photo p-2">
+                                <img src="images/produk2.jpg" alt="">
+                            </div>
+                            </a>
+                            <div class="product__label flex justify-between items-end relative">
+                            <span class="product__list__logo">
+                                <img src="images/produk2-logo.jpg" alt="">
+                            </span>
+                            <a href="toko.html">
+                                <div class="absolute right-0 bottom-0 product__list__label bg__gray1 text-white rounded-md text-xxs labeltoko">Menuju Toko</div>
+                            </a>
+                            <div class="product__list__label bg__gray2 color__gray1 rounded-md text-xxs ">Pre-order</div>
+                            </div>
+                        </div>
+                        <a href="produk.html">
+                            <div class="border-t border__gray3 p-2">
+                            <div class="relative pb-8 mb-3">
+                                <p class="text-base text__wrap2">Hand Pallet Big 3T 685x1220mm Wasdasd asda asdas</p>
+                                <div class="flex justify-between absolute bottom-0 w-full">
+                                <small class="color__gray2 text-sm line-through">Rp450.000,-</small>
+                                <div class="product__list__label bg__orange2 color__red rounded-md text-sm font-bold">-25%</div>
+                                </div>
+                            </div>
+                            <div class="bg__orange rounded-md text-center font-bold py-2 text-base">
+                                Rp56.430.000,-
+                            </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>        
+            
+            <!-- paging -->
+            <div class="mt-16">
+                <ul class="flex items-center color__gray5 text-base">
+                    <li>
+                        <a href="#" class="rounded-full overflow-hidden border border__gray3 flex justify-center items-center p-2 mr-2">
+                            <img class="w-auto" src="images/svg/arrow_left_abu.svg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="p-2 mx-3">
+                           1
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="p-2 mx-3 color__orange font-bold">
+                           2
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="p-2 mx-3">
+                           3
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="p-2 mx-3">
+                           ...
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="p-2 mx-3">
+                           67
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="p-2 mx-3">
+                           68
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="rounded-full overflow-hidden bg__green flex justify-center items-center p-2 ml-2">
+                            <img style="width: 8px;height: 8px;" class="w-auto" src="images/svg/arrow_right2.svg" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+      </div>
+
+
+    </div>
+
+
+    <footer>
+      <div class="relative bg__gray3 py-10">
+        <div class="container px-5">
+          <div>
+            <h5 class="text-3xl mb-10 font-bold">Sekarang bahan bangunan bisa dipesan melalui<br/>
+              <span class="color__green"> Whatsapp  (08 595 667 7054)</span> <br/>
+              Belanja sekarang!
+            </h5>
+            <p class="text-xl font-bold">* Pengiriman dari Jayapura</p>
+          </div>
+          <img class="w-auto absolute right-0 bottom-0 " src="images/footer_img.png" alt="">
+        </div>
+      </div>
+      <div class="bg__orange py-10">
+        <div class="container px-5">
+          <div class="grid grid-cols-12">
+            <div class="col-span-8 grid grid-cols-12">
+              <div class="col-span-3">
+                <ul class="flex flex-col font-bold">
+                  <li>
+                    <a href="kategori.html">Kategori</a>
+                  </li>
+                  <li>
+                    <a href="brands.html">Brands</a>
+                  </li>
+                  <li>
+                    <a href="keranjang.html">Keranjang</a>
+                  </li>
+                  <li>
+                    <a href="faq.html">FAQ</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-span-3">
+                <ul class="flex flex-col font-bold">
+                  <li>
+                    <a href="aboutus.html">Tentang Kami</a>
+                  </li>
+                  <li>
+                    <a href="kontak.html">Kontak</a>
+                  </li>
+                  <li>
+                    <a href="karir.html">Karir</a>
+                  </li>
+                  <li>
+                    <a href="promo.html">Promo Diskon</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-span-3">
+                <ul class="flex flex-col font-bold">
+                  <li>
+                    <a href="solusi.html">Solusi Kebutuhan</a>
+                  </li>
+                  <li>
+                    <a href="produk.html">Produk Terlaris</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-span-4">
+              <div>
+                <ul>
+                  <li class="flex items-baseline mb-2">
+                    <img class="w-auto mr-3 relative top-1" src="images/svg/footer_maps.svg" alt="">
+                    <p class="text-sm font-bold">Jl. Perikanan No.8, Hamadi, Jayapura Selatan, <br/> Kota Jayapura, Papua 99222. </p>
+                  </li>
+                  <li class="flex items-baseline mb-2">
+                    <img class="w-auto mr-3 relative top-1" src="images/svg/footer_wa.svg" alt="">
+                    <p class="text-sm font-bold">555 341 0032</p>
+                  </li>
+                  <li class="flex items-baseline mb-2">
+                    <img class="w-auto mr-3 relative top-1" src="images/svg/footer_time.svg" alt="">
+                    <p class="text-sm font-bold">08.00 – 17.00 WITA</p>
+                  </li>
+                  <li class="flex items-baseline mb-2">
+                    <img class="w-auto mr-3 relative top-1" src="images/svg/footer_phone.svg" alt="">
+                    <p class="text-sm font-bold">085956667054</p>
+                  </li>
+                  <li class="flex items-baseline mb-2">
+                    <img class="w-auto mr-3 relative top-1" src="images/svg/footer_mail.svg" alt="">
+                    <p class="text-sm font-bold">info@amk.com</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="mt-16">
+            <p class="text-sm font-bold">© Copyright 2021 by Anugerah Mahakarya</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
