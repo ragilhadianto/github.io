@@ -4,6 +4,7 @@
 
     &  .relative{
         height: 532px;
+        
     }
 
     & .slick-slide{
@@ -26,9 +27,17 @@
         bottom: 40px;
         text-align: left;
 
+        @include max-responsive($lg){
+            bottom: 10px;
+        }
+
         li{
             width: 10px;
             height: 10px;
+
+            @include max-responsive($lg){
+                margin: 0 4px;
+            }
         }
         .slick-active button:before{
             @extend .bg__green;
@@ -42,7 +51,18 @@
                 border-radius: 50%;
                 width: 12px;
                 height: 12px;
+
+                @include max-responsive($lg){
+                    width: 8px;
+                    height: 8px;
+                }
             }
+        }
+    }
+
+    &--detail{
+        @include min-responsive($lg){
+            display: none;
         }
     }
 }
@@ -53,6 +73,9 @@
 .slider__promo,
 .slider__product {
 
+    .slick-list {
+        padding-top: 0.5rem;
+    }
 
     & .slick-arrow{
         @extend .bg__green;
@@ -81,7 +104,9 @@
     }
 }
 
+
 .slider__item__dots,
+.slider__dots--detail,
 .slider__product__dots  {
 
     .slick-dots {
@@ -91,9 +116,12 @@
         li{
             width: 10px;
             height: 10px;
+            @include max-responsive($lg){
+                margin: 0 4px;
+            }
         }
         .slick-active button:before{
-            @extend .bg__orange;
+        background-color: $color_orange !important;
             color: transparent;
         }
         button{            
@@ -104,6 +132,10 @@
                 border-radius: 50%;
                 width: 12px;
                 height: 12px;
+                @include max-responsive($lg){
+                    width: 8px;
+                    height: 8px;
+                }
             }
         }
     }
@@ -113,6 +145,11 @@
 .product{
 
     &__list{
+
+        @include max-responsive($lg){
+            overflow-x: auto;
+            grid-auto-flow: column;
+        }
 
         &__logo{
             max-width: 50px;
@@ -143,6 +180,15 @@
         &__photo{
             height: 160px;
             overflow: hidden;
+            text-align: center;
+            img{
+                max-height: 100%;
+                width: auto;
+            }
+
+            @include max-responsive($lg){
+                height: 130px;
+            }
         }
 
 
@@ -165,11 +211,46 @@
     }
 
     &__item{
+
+        &__m{
+            @include max-responsive($lg){
+                width: 140px;
+                margin: 0 auto;
+            }
+
+            &:last-child {
+                @include max-responsive($lg){
+                    margin-right: 10px
+                }
+            }
+        }
+
+        
+        
+
+        
+        @include base_transition(all);
+        position: relative;
+        top: 0;
         &:hover{
+            border-color: $color_gray5;
+            top: -7px;
             .labeltoko{
                 display: flex;
             }
         }    
+
+        & > a{
+            width: 100%
+        }
+
+        & > div{
+
+            & > a{
+                display: flex;
+                justify-content: center;
+            }
+        }
     }
 
     &__label{
@@ -186,5 +267,45 @@
                 max-height: 50px;
             }
         }
+    }
+}
+
+#menu__category{
+    li{
+        img{
+            @include base_transition(all);
+        }
+        ul{
+            display: none;
+
+            li{
+
+            }
+        }
+    }
+}
+
+
+.whatsapp__link{
+    position: fixed;
+    right: -33px;
+    bottom: 400px;
+    background-color: $color_green;
+    color: #fff;
+    font-size: 14px;
+    display: flex;
+    -ms-transform: rotate(90deg); /* IE 9 */
+    transform: rotate(90deg);
+    border-radius: 0px 0 6px 6px;
+    padding: 5px 10px;
+    box-shadow: (4px 0 4px rgba(0, 0, 0, 0.15));
+    @include base_transition(all);
+    
+    &:hover{
+        background-color: $color_green2;
+    }
+
+    @include max-responsive($lg){
+        bottom: 70px;
     }
 }

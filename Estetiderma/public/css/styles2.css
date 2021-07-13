@@ -1,0 +1,9 @@
+.none-mobile-jadwal-praktek {
+  display: none;
+}
+@media screen and (max-width: 450px) {
+  .for-ordering-datas {
+    display: flex;
+    flex-flow: column;
+  }
+}

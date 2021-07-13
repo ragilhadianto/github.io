@@ -1,3 +1,149 @@
 header{
     background-color: $color_orange;
 }
+
+.menu{
+    position: relative;
+
+    & > div{
+        display: none;
+    }
+
+    &:hover{
+
+        & > div{
+            display: block;
+        }
+
+    }
+    &__sub{ 
+        width: 250px;
+        position: relative;
+        height: 420px;
+        top: 50px;
+
+        & .bg__shadwow{
+            box-shadow: 1px 0px 10px 0 rgba(0,0,0,0.25);
+            -webkit-box-shadow: 1px 0px 10px 0 rgba(0,0,0,0.25);
+            -moz-box-shadow: 1px 0px 10px 0 rgba(0,0,0,0.25);
+            @extend .bg__gray3;
+            width: 220px;
+            height: 400px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: -1;
+            display: block;
+
+            &__2{
+                background-color: #fff;
+            }
+        }
+
+        ul{            
+            width: 215px;
+            top: 52px;                      
+            height: 400px;
+            z-index: 999;
+            left: 0;
+            color: #000;
+            font-weight: 500;
+            padding: 15px 0;     
+
+            li{
+                width: 100%;
+                a{
+                    padding: 6px 15px;
+                    font-size: 16px;
+                    width: 200px;
+                    display: block;
+                    &:hover{
+                        @extend .bg__green;
+                        color: #fff;
+                    }
+                }
+
+                &:hover{
+                    @extend .bg__green;
+                    color: #fff;
+                }
+                div{
+                    left: 265px;
+                    width: 220px;
+                }
+            }
+            
+        }
+
+        ul{
+
+            & > li{
+
+                &:hover{                    
+
+                    & > div{
+                        display: block;
+                    }
+                }
+            }
+        }
+
+
+        //layer 2 - 3
+        & > div ul{
+                overflow-x: hidden;
+                @extend .scrollbar1;
+                
+            & > li{                               
+
+                div{
+                    display: none;
+                }
+
+                ul{                    
+                    background-color: #fff;
+                    top: 0;
+                    
+                    li{
+                        &:hover{
+                           background-color: $color_green;      
+
+                           ul{
+                               display: block !important;
+                           }
+                        }
+                        a{
+                            font-weight: normal;
+                            &:hover{
+                                background-color: $color_green;
+                             }
+                        }
+
+                        ul{                    
+                            left: 200px;
+                            //background-color: #fff;
+                            top: 0;
+                            position: absolute;
+                            display: none;
+                            // box-shadow: 1px 0px 10px 0 rgba(0,0,0,0.25);
+                            // -webkit-box-shadow: 1px 0px 10px 0 rgba(0,0,0,0.25);
+                            // -moz-box-shadow: 1px 0px 10px 0 rgba(0,0,0,0.25);
+                            li{
+                                &:hover{
+                                   background-color: $color_green;
+                                }
+                                a{
+                                    font-weight: normal;
+                                    &:hover{
+                                        background-color: $color_green;
+                                     }
+                                }
+                            }
+                        }
+                    }
+                }                
+
+            }
+        }
+    }
+}

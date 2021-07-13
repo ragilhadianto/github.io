@@ -1,0 +1,8 @@
+.footer {
+  .logo {
+    width: 220px;
+    @include max-responsive($md) {
+      width: 185px;
+    }
+  }
+}

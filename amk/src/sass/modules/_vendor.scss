@@ -1,90 +1,18 @@
 // font
 @font-face {
   font-family: 'Whitney HTF';
-  src: url('../fonts/WhitneyHTF-Black.woff2') format('woff2'),
-      url('../fonts/WhitneyHTF-Black.woff') format('woff');
-  font-weight: 900;
+  src: url('../fonts/WhitneyHTF-Medium.woff2') format('woff2'),
+      url('../fonts/WhitneyHTF-Medium.woff') format('woff');
+  font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
   font-family: 'Whitney HTF';
-  src: url('../fonts/WhitneyHTF-BlackItalic.woff2') format('woff2'),
-      url('../fonts/WhitneyHTF-BlackItalic.woff') format('woff');
-  font-weight: 900;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Whitney HTF';
-  src: url('../fonts/WhitneyHTF-BlackCondensed.woff2') format('woff2'),
-      url('../fonts/WhitneyHTF-BlackCondensed.woff') format('woff');
-  font-weight: 900;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Whitney HTF';
-  src: url('../fonts/WhitneyHTF-BlackItalicSC.woff2') format('woff2'),
-      url('../fonts/WhitneyHTF-BlackItalicSC.woff') format('woff');
-  font-weight: 900;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Whitney HTF';
-  src: url('../fonts/WhitneyHTF-BlackSC.woff2') format('woff2'),
-      url('../fonts/WhitneyHTF-BlackSC.woff') format('woff');
-  font-weight: 900;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Whitney HTF';
-  src: url('../fonts/WhitneyHTF-Bold.woff2') format('woff2'),
-      url('../fonts/WhitneyHTF-Bold.woff') format('woff');
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Whitney HTF';
-  src: url('../fonts/WhitneyHTF-BoldCondensed.woff2') format('woff2'),
-      url('../fonts/WhitneyHTF-BoldCondensed.woff') format('woff');
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Whitney HTF';
-  src: url('../fonts/WhitneyHTF-BoldItalic.woff2') format('woff2'),
-      url('../fonts/WhitneyHTF-BoldItalic.woff') format('woff');
-  font-weight: bold;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Whitney HTF';
-  src: url('../fonts/WhitneyHTF-BoldItalicSC.woff2') format('woff2'),
-      url('../fonts/WhitneyHTF-BoldItalicSC.woff') format('woff');
-  font-weight: bold;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Whitney HTF';
-  src: url('../fonts/WhitneyHTF-BoldSC.woff2') format('woff2'),
-      url('../fonts/WhitneyHTF-BoldSC.woff') format('woff');
-  font-weight: bold;
+  src: url('../fonts/WhitneyHTF-SemiBold.woff2') format('woff2'),
+      url('../fonts/WhitneyHTF-SemiBold.woff') format('woff');
+  font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
@@ -100,174 +28,14 @@
 
 @font-face {
   font-family: 'Whitney HTF';
-  src: url('../fonts/WhitneyHTF-BookCondensed.woff2') format('woff2'),
-      url('../fonts/WhitneyHTF-BookCondensed.woff') format('woff');
-  font-weight: normal;
+  src: url('../fonts/WhitneyHTF-Bold.woff2') format('woff2'),
+      url('../fonts/WhitneyHTF-Bold.woff') format('woff');
+  font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 
-@font-face {
-  font-family: 'Whitney HTF';
-  src: url('../fonts/WhitneyHTF-BookItalic.woff2') format('woff2'),
-      url('../fonts/WhitneyHTF-BookItalic.woff') format('woff');
-  font-weight: normal;
-  font-style: italic;
-  font-display: swap;
-}
 
-@font-face {
-  font-family: 'Whitney HTF';
-  src: url('../fonts/WhitneyHTF-BookItalicSC.woff2') format('woff2'),
-      url('../fonts/WhitneyHTF-BookItalicSC.woff') format('woff');
-  font-weight: normal;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Whitney HTF';
-  src: url('../fonts/WhitneyHTF-BookSC.woff2') format('woff2'),
-      url('../fonts/WhitneyHTF-BookSC.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Whitney HTF';
-  src: url('../fonts/WhitneyHTF-Light.woff2') format('woff2'),
-      url('../fonts/WhitneyHTF-Light.woff') format('woff');
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Whitney HTF';
-  src: url('../fonts/WhitneyHTF-LightCondensed.woff2') format('woff2'),
-      url('../fonts/WhitneyHTF-LightCondensed.woff') format('woff');
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Whitney HTF';
-  src: url('../fonts/WhitneyHTF-LightItalic.woff2') format('woff2'),
-      url('../fonts/WhitneyHTF-LightItalic.woff') format('woff');
-  font-weight: 300;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Whitney HTF';
-  src: url('../fonts/WhitneyHTF-MediumCondensed.woff2') format('woff2'),
-      url('../fonts/WhitneyHTF-MediumCondensed.woff') format('woff');
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Whitney HTF';
-  src: url('../fonts/WhitneyHTF-Medium.woff2') format('woff2'),
-      url('../fonts/WhitneyHTF-Medium.woff') format('woff');
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Whitney HTF';
-  src: url('../fonts/WhitneyHTF-LightItalicSC.woff2') format('woff2'),
-      url('../fonts/WhitneyHTF-LightItalicSC.woff') format('woff');
-  font-weight: 300;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Whitney HTF';
-  src: url('../fonts/WhitneyHTF-MediumItalic.woff2') format('woff2'),
-      url('../fonts/WhitneyHTF-MediumItalic.woff') format('woff');
-  font-weight: 500;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Whitney HTF';
-  src: url('../fonts/WhitneyHTF-LightSC.woff2') format('woff2'),
-      url('../fonts/WhitneyHTF-LightSC.woff') format('woff');
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Whitney HTF';
-  src: url('../fonts/WhitneyHTF-MediumItalicSC.woff2') format('woff2'),
-      url('../fonts/WhitneyHTF-MediumItalicSC.woff') format('woff');
-  font-weight: 500;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Whitney HTF';
-  src: url('../fonts/WhitneyHTF-SemiBold.woff2') format('woff2'),
-      url('../fonts/WhitneyHTF-SemiBold.woff') format('woff');
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Whitney HTF';
-  src: url('../fonts/WhitneyHTF-MediumSC.woff2') format('woff2'),
-      url('../fonts/WhitneyHTF-MediumSC.woff') format('woff');
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Whitney HTF';
-  src: url('../fonts/WhitneyHTF-SemiBoldCondensed.woff2') format('woff2'),
-      url('../fonts/WhitneyHTF-SemiBoldCondensed.woff') format('woff');
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Whitney HTF';
-  src: url('../fonts/WhitneyHTF-SemiBoldItalic.woff2') format('woff2'),
-      url('../fonts/WhitneyHTF-SemiBoldItalic.woff') format('woff');
-  font-weight: 600;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Whitney HTF';
-  src: url('../fonts/WhitneyHTF-SemiBoldItalicSC.woff2') format('woff2'),
-      url('../fonts/WhitneyHTF-SemiBoldItalicSC.woff') format('woff');
-  font-weight: 600;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Whitney HTF';
-  src: url('../fonts/WhitneyHTF-SemiBoldSC.woff2') format('woff2'),
-      url('../fonts/WhitneyHTF-SemiBoldSC.woff') format('woff');
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
-}
 
 
 

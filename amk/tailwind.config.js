@@ -13,6 +13,12 @@ module.exports = {
       lg: "1024px",
       xl: "1200px",
     },
+   
+     extend: {
+      fontSize: {
+        'xxs': '10px',
+       }
+    }
   },
   variants: {
     extend: {},

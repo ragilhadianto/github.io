@@ -1,0 +1,63 @@
+//screen
+$xl: 1340px;
+$lg: 1024px;
+$md: 768px;
+$sm: 640px;
+$xs: 320px;
+
+//color
+$color__gray1: #333333;
+$color__gray2: #4f4f4f;
+$color__gray3: #e0e0e0;
+$color__gray4: #828282;
+$color__gray5: #f8f8f8;
+$color__tosca: #4a8b90;
+$color__tosca2: #3a777b;
+$color__tosca3: #6fa3a5;
+
+// media
+@mixin max-responsive($media) {
+  @media (max-width: $media) {
+    @content;
+  }
+}
+@mixin min-responsive($media) {
+  @media (min-width: $media) {
+    @content;
+  }
+}
+@mixin range-responsive($media, $media2) {
+  @media (min-width: $media) and (max-width: $media2) {
+    @content;
+  }
+}
+
+@mixin max-portrait($media) {
+  @media (max-device-width: $media) and (orientation: portrait) {
+    @content;
+  }
+}
+@mixin min-portrait($media) {
+  @media (min-device-width: $media) and (orientation: portrait) {
+    @content;
+  }
+}
+
+@mixin max-lanscape($media) {
+  @media (max-device-width: $media) and (orientation: landscape) {
+    @content;
+  }
+}
+@mixin min-lanscape($media) {
+  @media (min-device-width: $media) and (orientation: landscape) {
+    @content;
+  }
+}
+
+@mixin base_transition($t) {
+  -webkit-transition: $t 0.3s ease;
+  -moz-transition: $t 0.3s ease;
+  -ms-transition: $t 0.3s ease;
+  -o-transition: $t 0.3s ease;
+  transition: $t 0.3s ease;
+}

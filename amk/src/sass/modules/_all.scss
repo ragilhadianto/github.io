@@ -240,7 +240,23 @@
   }
 }
 
-//text
-.text-xxs{
-  font-size: 12px;
+//custom scroll bar
+.scrollbar1{
+  scrollbar-width: thin;
+  scrollbar-color: rgb(247, 148, 29) rgba(224, 224, 224, 1);
+
+  &::-webkit-scrollbar {
+      width: 5px;
+  }
+
+  &::-webkit-scrollbar-track {
+      background: rgba(224, 224, 224, 1);
+  }
+
+  &::-webkit-scrollbar-thumb {
+      background-color: rgb(247, 148, 29);
+      border-radius: 20px;
+      border: none;
+      height: 50px;
+  }
 }
