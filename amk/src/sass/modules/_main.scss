@@ -288,7 +288,7 @@
 
 .whatsapp__link{
     position: fixed;
-    right: -33px;
+    right: -41px;
     bottom: 400px;
     background-color: $color_green;
     color: #fff;
@@ -300,6 +300,7 @@
     padding: 5px 10px;
     box-shadow: (4px 0 4px rgba(0, 0, 0, 0.15));
     @include base_transition(all);
+    z-index: 9999;
     
     &:hover{
         background-color: $color_green2;
@@ -307,5 +308,88 @@
 
     @include max-responsive($lg){
         bottom: 70px;
+    }
+}
+
+
+// accordion
+.accordion{
+  
+    .inner {
+      overflow: hidden;
+      //display: none;
+      @include min-responsive($xl){
+          display: none !important;
+      }
+    }
+    
+    
+    li a.toggleAccordion {
+      display: flex;
+    }
+
+    &__brands,
+    &__kategorimenu,
+    &__submenu{
+
+        li{
+            display: block;
+            width: 100%;
+        }
+        .inner {
+            overflow: hidden;
+            display: none;
+            //margin-top: 10px;
+            @include min-responsive($xl){
+                display: block !important;
+            }
+            
+            &.show{}
+          }
+    }
+}
+  
+.sidebarLayer{
+    z-index: 999;
+}
+.sidebar{
+    @include max-responsive($lg){
+        position: fixed;
+        left: -300px;
+        top: 0;
+        width: 300px;
+        padding: 0;
+        z-index: 99999999;
+        background: #fff;
+        height: 100%;
+        overflow-y: auto;
+
+        &.active{
+            left: 0;
+        }
+    }
+}
+
+.tampilkan{
+    width: 235px;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    position: fixed;
+    z-index: 9999;
+    display: none;
+
+    &.active{
+        display: block;
+    }
+
+    span{
+        width: 12px;
+        height: 12px;
+
+        &.active{
+            background-color: $color_green;
+            border: 0;
+        }
     }
 }

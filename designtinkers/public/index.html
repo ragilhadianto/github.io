@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/tailwind.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Design Tinkers</title>
+  </head>
+  <body>
+
+    <!-- header -->
+    <div class="header absolute top-0 left-0 right-0 w-full z-50 py-5">
+      <div class="container px-5 flex justify-between items-center">
+        <a href="index.html">
+          <img src="images/logo.svg" class="w-16 md:w-auto" alt="Design Tinkers">
+        </a>
+
+        <!-- mobile menu -->
+        <div class="hamburger hamburger--slider hamburger--white md:hidden z-50">
+          <div class="hamburger-box">
+            <div class="hamburger-inner"></div>
+          </div>
+        </div>
+        <!-- /mobile menu -->
+
+        <div class="fixed top-0 -right-full w-8/12	bg-purple h-full pt-24 md:pt-0 md:right-auto md:bg-transparent md:w-auto md:relative md:block menu transition-all">
+          <ul class="flex flex-col md:flex-row text-right gap-y-3">
+            <li>
+              <a href="javascript:void(0);" class="btnGoTo text-white px-7 text-base font-medium" data-id="#section1">Programme</a>
+            </li>
+            <li>
+              <a href="javascript:void(0);" class="btnGoTo text-white px-7 text-base font-medium" data-id="#section2">Event Gallery</a>
+            </li>
+            <li>
+              <a href="javascript:void(0);" class="btnGoTo text-white px-7 text-base font-medium" data-id="#section3">Who we are</a>
+            </li>
+            <li>
+              <a href="javascript:void(0);" class="btnGoTo text-white px-7 text-base font-medium" data-id="#section4">News</a>
+            </li>
+            <li>
+              <a href="javascript:void(0);" class="btnGoTo text-white px-7 text-base font-medium" data-id="#section5">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- section 1 - hero -->
+    <div class="section h-full w-full bg-fixed bg-cover flex items-center  relative" style="background-image: url(images/foto_hero.jpg);">
+      <div class="bg-purple absolute left-0 top-0 w-full h-full bg-opacity-50 z-0"></div>
+      <img src="images/comp_1.svg" class="absolute left-0 bottom-0 md:-bottom-40 w-20	 md:w-auto" alt="">
+      <img src="images/comp_2.svg" class="absolute right-0 top-28 md:bottom-10 w-14	 md:w-auto" alt="">
+      <div class="container px-5 z-10 ">
+        <div>
+          <h2 class="text-white text-xl md:text-3xl md:text-5xl font-bold leading-tight	">Empowering Creative Thinkers <br/>
+            Nurturing Design Confidence</h2>
+        </div>
+     </div>
+    </div>
+
+    <!-- section 2 -->
+    <div class="section w-full relative py-20 md:py-28" id="section1">
+      <div class="container px-5 text-center">
+        <div class="md:px-36 ">
+          <div class="mb-24">
+            <h3 class="text-green1 text-2xl md:text-4xl	font-semibold mb-5">Introduction</h3>
+            <p class="text-base md:text-lg	text-gray1">DesignTinkers recognise the child’s unique ways of seeing the world. We want them to remain inquisitive of what works and what does not in their environment and to instil critical thinking at an early age. By exposing children to design concepts, principles and aesthetics, we introduce design as a process to problem solve and be creative in finding solutions.</p>
+          </div>
+          <div class="mb-24">
+            <h3 class="text-green1 text-2xl md:text-4xl	font-semibold mb-5">Holiday Programmes</h3>
+            <p class="text-base md:text-lg	text-gray1">We at DesignTinkers provide fun & nurturing camps and workshops crossing between Art, Design & Architecture. Our programmes are designed to pique curiosity, prompt inquiries, challenge norms, test ideas to get to unique outcomes through a design process.</p>
+          </div>
+          <div class="mb-5">
+            <p class="text-base md:text-lg	text-gray1">View and join of our upcoming programmes on Eventbrite</p>
+          </div>
+        </div>        
+        <div class="slider slider--green mb-5 -mx-5	md:m-0">
+          <div class="shadow-lg rounded-lg overflow-hidden m-5">
+            <a href="">
+              <div class="w-full h-44 overflow-hidden relative">
+                <img src="images/foto_hero.jpg" class="imgfillImg" alt="">
+                <span class="text-white absolute left-5 top-5 rounded-md bg-orange px-3 py-2 text-sm	 z-50">Selling Fast…</span>
+              </div>
+              <div class="p-4">
+                <div class="flex justify-between text-left"> 
+                  <div class="bg-green2 text-white p-1 rounded-md text-center font-medium flex items-center">
+                    <div class="px-3">
+                      <small class="text-base ">AUG</small>
+                      <span class="block text-2xl	-mt-2">26</span>
+                    </div>
+                  </div>
+                  <div class="text-sm p-2">
+                    <small>Venue: </small>
+                    <p class="text-black font-medium text__wrap2">Drama Centre, 100 Victoria St. (Bugis)</p>
+                  </div>
+                </div>
+                <div class="px-3 py-5 border-t mt-5">
+                  <h3 class="text-green1 text-lg md:text-xl font-semibold mb-3 h-12	flex items-center justify-center">Fabulous Fun Camp</h3>
+                  <p class="text-gray1 text-sm text__wrap3">If you are looking for a holiday camp to excite, energise and engage your children during this holiday,</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="shadow-lg rounded-lg overflow-hidden m-5">
+            <a href="">
+              <div class="w-full h-44 overflow-hidden relative">
+                <img src="images/foto_hero.jpg" class="imgfillImg" alt="">
+                <span class="text-white absolute left-5 top-5 rounded-md bg-orange px-3 py-2 text-sm	 z-50">Selling Fast…</span>
+              </div>
+              <div class="p-4">
+                <div class="flex justify-between text-left"> 
+                  <div class="bg-green2 text-white p-1 rounded-md text-center font-medium flex items-center">
+                    <div class="px-3">
+                      <small class="text-base ">AUG</small>
+                      <span class="block text-2xl	-mt-2">26</span>
+                    </div>
+                  </div>
+                  <div class="text-sm p-2">
+                    <small>Venue: </small>
+                    <p class="text-black font-medium text__wrap2">Drama Centre, 100 Victoria St. (Bugis)</p>
+                  </div>
+                </div>
+                <div class="px-3 py-5 border-t mt-5">
+                  <h3 class="text-green1 text-lg md:text-xl font-semibold mb-3 h-12	flex items-center justify-center">Fabulous Fun Camp</h3>
+                  <p class="text-gray1 text-sm text__wrap3">If you are looking for a holiday camp to excite, energise and engage your children during this holiday,</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="shadow-lg rounded-lg overflow-hidden m-5">
+            <a href="">
+              <div class="w-full h-44 overflow-hidden relative">
+                <img src="images/foto_hero.jpg" class="imgfillImg" alt="">
+                <span class="text-white absolute left-5 top-5 rounded-md bg-red-600 px-3 py-2 text-sm	z-50">Sold Out!</span>
+              </div>
+              <div class="p-4">
+                <div class="flex justify-between text-left"> 
+                  <div class="bg-green2 text-white p-1 rounded-md text-center font-medium flex items-center">
+                    <div class="px-3">
+                      <small class="text-base ">AUG</small>
+                      <span class="block text-2xl	-mt-2">20</span>
+                    </div>
+                  </div>
+                  <div class="text-sm p-2">
+                    <small>Venue: </small>
+                    <p class="text-black font-medium text__wrap2">Drama Centre, asdasd asdasd100 Victoria St. (Bugis)</p>
+                  </div>
+                </div>
+                <div class="px-3 py-5 border-t mt-5">
+                  <h3 class="text-green1 text-lg md:text-xl font-semibold mb-3 h-12	flex items-center justify-center">Fabulous Fasdas asdasdun Camp</h3>
+                  <p class="text-gray1 text-sm text__wrap3">If you are looking for a asdasdasd asdasdasd asdasdasd asdasdasdholiday camp to excite, energise and engage your children during this holiday,</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="shadow-lg rounded-lg overflow-hidden m-5">
+            <a href="">
+              <div class="w-full h-44 overflow-hidden relative">
+                <img src="images/foto_hero.jpg" class="imgfillImg" alt="">
+                <span class="text-white absolute left-5 top-5 rounded-md bg-orange px-3 py-2 text-sm	 z-50">Selling Fast…</span>
+              </div>
+              <div class="p-4">
+                <div class="flex justify-between text-left"> 
+                  <div class="bg-green2 text-white p-1 rounded-md text-center font-medium flex items-center">
+                    <div class="px-3">
+                      <small class="text-base ">AUG</small>
+                      <span class="block text-2xl	-mt-2">26</span>
+                    </div>
+                  </div>
+                  <div class="text-sm p-2">
+                    <small>Venue: </small>
+                    <p class="text-black font-medium text__wrap2">Drama Centre, 100 Victoria St. (Bugis)</p>
+                  </div>
+                </div>
+                <div class="px-3 py-5 border-t mt-5">
+                  <h3 class="text-green1 text-lg md:text-xl font-semibold mb-3 h-12	flex items-center justify-center">Fabulous Fun Camp</h3>
+                  <p class="text-gray1 text-sm text__wrap3">If you are looking for a holiday camp to excite, energise and engage your children during this holiday,</p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="flex items-center justify-center">
+          <a href="#" class="text-center bg-green1 text-white text-sm px-20 py-3 rounded-lg">View More</a>
+        </div>
+
+      </div>
+    </div>
+
+
+    <!-- section 3 -->
+    <div class="section w-full relative py-20 md:py-28 bg-purple" id="section2">
+      <img src="images/comp_3.svg" class="absolute left-0 bottom-3 md:bottom-20 w-20 md:w-auto" alt="">
+      <img src="images/comp_4.svg" class="absolute right-0 top-10 md:top-20 w-20 md:w-auto" alt="">
+      <div class="container px-5 text-center">
+        <div class="md:px-36 ">
+          <div class="mb-10">
+            <h3 class="text-white text-2xl md:text-4xl	font-semibold mb-5">Event Gallery</h3>
+            <p class="text-base md:text-lg	text-white">Past and ongoing camps and workshops centred around hands-on design and make experience for children, either in a group or individual project settings.</p>
+          </div>
+        </div>        
+        
+        <div class="grid grid-cols-3 slider mb-5 -mx-5 md:m-0">
+          <div class="shadow-lg rounded-lg overflow-hidden m-5 bg-white">
+            <a href="">
+              <div class="w-full h-44 overflow-hidden relative">
+                <img src="images/foto_hero.jpg" class="imgfillImg" alt="">
+              </div>
+              <div class="p-4">
+                <div class="flex text-left"> 
+                  <div class="text-purple p-1 rounded-md text-center font-medium flex items-center">
+                    <div class="md:px-3">
+                      <small class="text-base ">AUG</small>
+                      <span class="block text-2xl	-mt-2">2021</span>
+                    </div>
+                  </div>
+                  <div class="text-sm p-2 flex items-center">
+                    <p class="text-black font-medium text__wrap2 font-semibold">Build A Shelter Together</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="shadow-lg rounded-lg overflow-hidden m-5 bg-white">
+            <a href="">
+              <div class="w-full h-44 overflow-hidden relative">
+                <img src="images/foto_hero.jpg" class="imgfillImg" alt="">
+              </div>
+              <div class="p-4">
+                <div class="flex text-left"> 
+                  <div class="text-purple p-1 rounded-md text-center font-medium flex items-center">
+                    <div class="md:px-3">
+                      <small class="text-base ">AUG</small>
+                      <span class="block text-2xl	-mt-2">2021</span>
+                    </div>
+                  </div>
+                  <div class="text-sm p-2 flex items-center">
+                    <p class="text-black font-medium text__wrap2 font-semibold">Design A Home Design A Home Design A Home Design A Home </p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="shadow-lg rounded-lg overflow-hidden m-5 bg-white">
+            <a href="">
+              <div class="w-full h-44 overflow-hidden relative">
+                <img src="images/foto_hero.jpg" class="imgfillImg" alt="">
+              </div>
+              <div class="p-4">
+                <div class="flex text-left"> 
+                  <div class="text-purple p-1 rounded-md text-center font-medium flex items-center">
+                    <div class="md:px-3">
+                      <small class="text-base ">AUG</small>
+                      <span class="block text-2xl	-mt-2">2019</span>
+                    </div>
+                  </div>
+                  <div class="text-sm p-2 flex items-center">
+                    <p class="text-black font-medium text__wrap2 font-semibold">Build A Shelter Together</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="flex items-center justify-center mb-5">
+          <a href="#" class="text-center bg-purple2 text-white text-sm px-20 py-3 rounded-lg">View More</a>
+        </div>
+
+        <div class="md:px-36 mt-28">
+          <div>
+            <h3 class="text-white text-2xl md:text-4xl	font-semibold mb-5">What People Say About Us</h3>
+
+            <div class="rounded-lg bg-white py-8 p-5 md:p-10">
+              <div class="slider__text flex items-center">
+                <div class="text-gray1 px-5 md:px-10">
+                  <p class="text-base">“Dash loved the 4-day workshop with DesignTinkers. He was initially shy and worried about what would be expected from him. Teacher Tatiana and Teacher Tess were both very accommodating and patient in class. The workshop enabled Dash to maximise his creativity with limited resources as he learnt to use his imagination to problem solve and pushed beyond his limitation. Dash had an amazing learning experience at DesignTinkers’ workshop!”
+                  </p>
+                  <br/>
+                  <p class="font-medium ">Hansen Ang</p>
+                </div>
+                <div class="text-gray1 px-5 md:px-10">
+                  <p class="text-base">“Dash loved the 4-day workshop with DesignTinkers. He was initially shy and worried about what would be expected from him. Teacher Tatiana and Teacher lve and pushed beyond his limitation. Dash had an amazing learning experience at DesignTinkers’ workshop!”
+                  </p>
+                  <br/>
+                  <p class="font-medium ">Hansen Ang</p>
+                </div>
+                <div class="text-gray1 px-5 md:px-10">
+                  <p class="text-base">“Dash loved the 4-day workshop with DesignTinkers. He was initially shy and worried about what would be expected from him. Teacher Tatiana and Teacher Tess were both very accommodating and patient in class. The workshop enabled Dash to maximise his creativity with limited resources as he learnt to use his imagination to problem solve and pushed beyond his limitation. Dash had an amazing learning experience at DesignTinkers’ workshop!”
+                  </p>
+                  <br/>
+                  <p class="font-medium ">Hansen Ang</p>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>    
+
+      </div>
+    </div>
+
+    <!-- section 4 -->
+    <div class="section w-full relative py-20 md:py-28" id="section3">
+      <img src="images/comp_6.svg" class="absolute -left-10 top-0 bottom-0 m-auto w-16 md:w-auto" alt="">
+      <img src="images/comp_5.svg" class="absolute right-0 top-0 w-16 md:w-auto" alt="">
+      <img src="images/comp_5.svg" class="absolute right-0 bottom-5 w-16 md:w-auto" alt="">
+      <div class="container px-5 text-center">
+        <div class="md:px-36 ">
+          <div class="mb-10">
+            <h3 class="text-purple text-2xl md:text-4xl	font-semibold mb-5">Who We Are</h3>
+            <p class="text-base md:text-lg	text-gray1">An educator, an architect, a data analyst, experimental parents with varied interests in art, culture, language and design. We value diversity, innovation, preservation and sustainability. </p>
+          </div>
+        </div>        
+
+        <div class="text-left mt-16 md:mt-28 px-5 md:px-20">
+          <h3 class="text-purple text-xl md:text-3xl	font-semibold mb-5 md:mb-10">Tessa Ng</h3>
+          <div class="md:grid md:grid-cols-2 md:gap-x-20 flex flex-col-reverse">
+            <div>             
+              <p class="text-base md:text-lg	text-gray1 mb-10 ">Tessa received her BA in Architecture degree from RMIT University and is a registered Architect (ARBV) with professional practice experience across Australia and Singapore. In 2010, Tessa embarked on her Architectural teaching journey and have since developed a passion and keen interest to work with teens and children. </p>
+              <p class="text-base md:text-lg	text-gray1 mb-10 ">Extending that knowledge and experience, Tessa co-founded DesignTinkers to provide a fun and nurturing space for the young; to promote creativity and critical thinking through exploring design ideas and solutions via hands-on making and creating. </p>
+              <p class="text-base md:text-lg	text-gray1 mb-10 ">Extending that knowledge and experience, Tessa co-founded DesignTinkers to provide a fun and nurturing space for the young; to promote creativity and critical thinking through exploring design ideas and solutions via hands-on making and creating. </p>
+            </div>
+            <div class="-ml-5 md:ml-0">
+             <img src="images/foto1.png" class="w-auto" alt="">
+            </div>
+          </div>
+        </div>
+
+        <div class="text-left mt-16 md:mt-28 px-5 md:px-20">
+          <div class="grid md:grid-cols-2 md:gap-x-20">
+            <div></div>
+            <h3 class="text-purple text-xl md:text-3xl	font-semibold mb-5 md:mb-10">Esther Wang</h3>
+          </div>
+          <div class="grid md:grid-cols-2 gap-x-20">           
+            <div>
+             <img src="images/foto2.png" class="w-auto" alt="">
+            </div>
+            <div>             
+              <p class="text-base md:text-lg	text-gray1 mb-10 ">Esther started out in the corporate world as a market and consumer insight analyst for most part of her career and she had a short stint with the National Arts Council. Esther started a family and has a young child in elementary school, and she has since been actively engaged in activities that involve children’s development. In her free time, she picked up a foreign language and speaks it fluently.</p>
+              <p class="text-base md:text-lg	text-gray1 mb-10 ">​​Esther values very much the benefits of art education for children and aspires to provide an avenue for children to express their creativity in thinking, imagining and exploring.  She believes that a child’s eagerness to design, make art and showcase their creations reinforces a child’s sense of achievement at an early age which builds great self-esteem in kids to take pride in their work.</p>
+              <p class="text-base md:text-lg	text-gray1 mb-10 ">Esther constantly scours for fun programs to help grow a child’s artistic confidence and this steadfastly led to co-founding DesignTinkers; to expand the vision of unlocking each child’s innate creativity through exploratory play. </p>
+            </div>
+          </div>
+        </div>
+          
+
+      </div>
+    </div>
+
+    <!-- section 5 -->
+    <div class="section w-full relative py-20 md:py-28 bg-blue" id="section4">
+      <div class="container px-5">
+        <div class="md:px-36 text-center">
+          <div class="mb-5 md:mb-10">
+            <h3 class="text-white text-2xl md:text-4xl	font-semibold">News & Features</h3>
+          </div>
+        </div>       
+        
+        <div class="slider slider--blue mb-5 -mx-5	md:m-0">
+          <div class="shadow-lg rounded-lg overflow-hidden m-5 bg-white ">
+            <a href="">
+              <div class="w-full h-44 overflow-hidden relative">
+                <img src="images/foto_hero.jpg" class="imgfillImg" alt="">
+              </div>
+              <div class="p-6 h-56	">              
+                  <h3 class="text-blue2 text-lg md:text-xl font-semibold text__wrap2" >Fabulous Fun Camp</h3>
+                  <p class="text-black text-sm my-5">20 Aug 2021</p>
+                  <p class="text-gray1 text-sm text__wrap3">If you are looking for a holiday camp to excite, energise and engage your children during this holiday,</p>              
+              </div>
+            </a>
+          </div>
+          <div class="shadow-lg rounded-lg overflow-hidden m-5 bg-white ">
+            <a href="">
+              <div class="w-full h-44 overflow-hidden relative">
+                <img src="images/foto_hero.jpg" class="imgfillImg" alt="">
+              </div>
+              <div class="p-6 h-56	">              
+                  <h3 class="text-blue2 text-lg md:text-xl font-semibold text__wrap2" >In publishing and graphic design, Lorem ipsum is a placeholder text commonly </h3>
+                  <p class="text-black text-sm my-5">20 Aug 2021</p>
+                  <p class="text-gray1 text-sm text__wrap3">If you are looking for a holiday camp to excite, energise and engage your children during this holiday,</p>              
+              </div>
+            </a>
+          </div>
+          <div class="shadow-lg rounded-lg overflow-hidden m-5 bg-white ">
+            <a href="">
+              <div class="w-full h-44 overflow-hidden relative">
+                <img src="images/foto_hero.jpg" class="imgfillImg" alt="">
+              </div>
+              <div class="p-6 h-56	">              
+                  <h3 class="text-blue2 text-lg md:text-xl font-semibold text__wrap2" >Fabulous Fun Camp</h3>
+                  <p class="text-black text-sm my-5">20 Aug 2021</p>
+                  <p class="text-gray1 text-sm text__wrap3">If you are  lookinglookinglookinglookinglookinglookinglooking lookinglookinglooking for a holiday camp to excite, energise and engage your children during this holiday,</p>              
+              </div>
+            </a>
+          </div>
+          <div class="shadow-lg rounded-lg overflow-hidden m-5 bg-white ">
+            <a href="">
+              <div class="w-full h-44 overflow-hidden relative">
+                <img src="images/foto_hero.jpg" class="imgfillImg" alt="">
+              </div>
+              <div class="p-6 h-56	">              
+                  <h3 class="text-blue2 text-lg md:text-xl font-semibold text__wrap2" >Fabulous Fun Camp</h3>
+                  <p class="text-black text-sm my-5">20 Aug 2021</p>
+                  <p class="text-gray1 text-sm text__wrap3">If you are looking for a holiday camp to excite, energise and engage your children during this holiday,</p>              
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="flex items-center justify-center mt-5">
+          <a href="#" class="text-center bg-blue2 text-white text-sm px-20 py-3 rounded-lg">View More</a>
+        </div>
+
+          
+
+      </div>
+    </div>
+
+    <!-- section 6 -->
+    <div class="section w-full relative py-20 md:py-28" >
+      <img src="images/comp_6.svg" class="absolute left-0 top-0 bottom-0 m-auto w-16 md:w-auto" alt="">
+      <img src="images/comp_5.svg" class="absolute right-0 top-0 w-16 md:w-auto" alt="">
+      <img src="images/comp_5.svg" class="absolute right-0 bottom-5 w-16 md:w-auto" alt="">
+      <div class="container px-5 text-center">
+        <div class="md:px-36 ">
+          <div class="mb-10">
+            <h3 class="text-purple text-2xl md:text-4xl	font-semibold mb-5">Partnerships + Collaborations</h3>
+          </div>
+        </div>        
+
+        <div class="text-left mt-16 md:mt-28 px-5 md:px-20">
+          <h3 class="text-purple text-xl md:text-3xl	font-semibold mb-5 md:mb-10">Schools Partnerships</h3>
+          <div class="grid md:grid-cols-2 gap-x-20">
+            <div>             
+              <p class="text-base md:text-lg	text-gray1 mb-10 ">We can curate co-curricular programmes, enrichment courses and holiday programmes for your students that would also suit your needs. Feel free to contact us and we look forward to developing a program together with you.</p>
+            </div>
+            <div class="h-96 overflow-hidden rounded-lg">
+             <img src="images/foto_hero.jpg" class="w-auto imgfillImg" alt="">
+            </div>
+          </div>
+        </div>
+
+        <div class="mb-10 mt-20 px-5 md:px-20">
+          <h3 class="text-purple text-xl md:text-3xl	font-semibold mb-5 md:mb-10">Workshop Collaborations</h3>
+          <p class="text-base md:text-lg	text-gray1">DesignTinkers collaborated with Creative Learning Experience, London, for a 4-day online Holiday Workshop to Re-imagine Our Home Objects. During the sessions, children were encouraged to observe and be sensitive to the design of objects and spaces around them. They were to critique what could work better in their environment and to re-invent, re-design their chosen objects before producing rapid prototypes to test their ideas.</p>
+
+        </div>
+        <div class="mb-10 px-5 md:px-20">
+          <p class="text-base md:text-lg	text-gray1">DesignTinkers are always open to collaborations to test ideas and develop solutions with children in a workshop. Feel free to contact us to discuss the possibilities of working together.</p>
+        </div>
+          
+
+      </div>
+    </div>
+
+    <!-- section 7 -->
+    <div class="section w-full relative py-20 md:py-28 bg-green3" id="section5">
+        <div class="container px-5 md:px-20">
+          <div class="grid md:grid-cols-2 gap-x-20 gap-y-20">
+            <div>
+              <h3 class="text-green1 text-xl md:text-3xl	font-semibold mb-5 md:mb-10">For Enquiry</h3>
+              <form>
+                <div class="mb-5">
+                  <p class="text-base mb-2">Your Name</p>
+                  <input class="rounded-md bg-white px-4 py-2 w-full" type="text" name="" id="">
+                </div>
+                <div class="mb-5">
+                  <p class="text-base mb-2">Your Contact Number</p>
+                  <div class="relative">
+                    <input class="rounded-md bg-white px-4 py-2 w-full pl-20" type="text" name="" id="">
+                    <span class="bg-green1 text-white px-5 rounded-l-md absolute left-0 top-0 bottom-0 flex items-center text-sm">+65</span>
+                  </div>
+                </div>
+                <div class="mb-5">
+                  <p class="text-base mb-2">E-Mail</p>
+                  <input class="rounded-md bg-white px-4 py-2 w-full" type="text" name="" id="">
+                </div>
+                <div class="mb-5">
+                  <p class="text-base mb-2">Your Message</p>
+                  <textarea class="rounded-md bg-white px-4 py-2 w-full" rows="6" name="" id=""></textarea>
+                </div>
+                <div class="mb-5">
+                  <img src="images/cap.jpg" class="w-auto" alt="">
+                </div>
+                <button class="p-2 rounded-md text-center text-white bg-green1 w-full">SEND</button>
+              </form>
+            </div>
+
+            <div>
+              <div class="mb-20">
+                <h3 class="text-green1 text-xl md:text-3xl	font-semibold mb-5 md:mb-16">Contact Detail</h3>
+                <div class="mb-8 flex items-center">
+                  <img src="images/icon__telp.svg" class="w-auto mr-4" alt="">
+                  <p class="text-base">+65 9769 1205</p>
+                </div>
+                <div class="md:mb-8 flex items-start">
+                  <img src="images/icon__maps.svg" class="w-auto mr-4" alt="">
+                  <p class="text-sm md:text-base">
+                    <strong class="font-bold">Goodman Arts Centre</strong> <br/>
+                    90 Goodman Road, Singapore 439053
+                  </p>
+                </div>
+              </div>
+              <div>
+                <h3 class="text-green1 text-sm md:text-xl	font-semibold mb-5">Follow us on these socials media</h3>
+                <div class="flex gap-x-10">
+                  <a class="mb-8 flex items-center" href="">
+                    <img src="images/icon__fb.svg" class="w-auto mr-4" alt="">
+                    <p class="text-sm md:text-base">Facebook</p>
+                  </a>
+                  <a class="mb-8 flex items-center" href="">
+                    <img src="images/icon__ig.svg" class="w-auto mr-4" alt="">
+                    <p class="text-sm md:text-base">Instagram</p>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+
+    <div class="footer text-xs md:text-sm text-black text-center py-5 bg-green3">
+      <div class="container px-5">
+        <p> <a href="">Terms Of Use</a>  <span class="mx-2">|</span> <a href="">Privacy Policy</a> <span class="mx-2">|</span>  © 2021 Design Tinkers Pte. Ltd.</p>
+      </div>
+    </div>
+    
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

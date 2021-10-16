@@ -115,6 +115,19 @@
 }
 //btn
 .btn {
+
+
+}
+
+.hover{
+
+  &__bordergreen{
+
+    &:hover{
+      border-color: $color_green;
+      color: $color_green;
+    }
+  }
 }
 
 //height
@@ -258,5 +271,16 @@
       border-radius: 20px;
       border: none;
       height: 50px;
+  }
+}
+
+.scrollbar{
+
+  &__hide{
+    &::-webkit-scrollbar {
+
+      display: none; /* webkit browsers implementation */
+    
+    }
   }
 }

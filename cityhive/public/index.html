@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/tailwind.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>CityHive</title>
+  </head>
+  <body>
+
+    <!-- topbar -->
+    <div class="topbar bg-yellow1 py-1 border-b border-black border-opacity-10">
+      <div class="container flex justify-between items-center">
+        <div class="flex">
+          <div>
+            Language: 
+            <select name="" id="" class="bg-transparent">
+              <option value="">English</option>
+              <option value="">English</option>
+              <option value="">English</option>
+            </select>
+          </div>
+          <div class="mx-3">
+            |
+          </div>
+          <div>
+            Currency: 
+            <select name="" id="" class="bg-transparent">
+              <option value="">SGD</option>
+              <option value="">SGD</option>
+              <option value="">SGD</option>
+            </select>
+          </div>
+          <div class="mx-3">
+            |
+          </div>
+          <div>
+            <a href="">Online Helpdesk</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- header -->
+    <div class="header bg-yellow1 py-2">
+      <div class="container flex justify-between items-center">
+        
+        <div class="flex items-center flex-auto	pr-10">
+          <!-- logo -->
+          <a href="index.html">
+            <img src="images/svg/logo.svg" class="w-16 md:w-auto" alt="CityHive">
+          </a>
+
+          <!-- menu -->
+          <div class="relative w-full xl:ml-20 ">
+            <div class="flex items-center">
+              <div class="mx-5 ">
+                <img src="images/svg/icon_menu.svg" class="w-auto" alt="">
+              </div>
+              <form action="" class="w-full">
+                <input type="text" class="bg-white rounded-md px-5 py-3 w-full text-lg">
+                <button class="bg-grey1 rounded-r-md absolute right-0 top-0 bottom-0 my-auto flex items-center justify-center px-3">
+                  <img src="images/svg/icon_search.svg" alt="">
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- user -->
+        <div class="flex gap-x-8">
+            <a href="" class="flex items-center flex-auto">
+              <img src="images/svg/icon_user.svg" alt="" class="w-auto">
+              <div class="text-sm font-medium ml-2">
+                <span class="block text-yellow2 ">Login</span>
+                My Account
+              </div>
+            </a>
+            <a href="" class="flex items-center">
+              <div class="relative">
+                <img src="images/svg/icon_user_wishlist.svg" alt="" class="w-auto">
+                <span class="absolute left-6 -top-1 rounded-full w-6	h-6 border-black border text-xs font-semibold flex items-center justify-center">
+                  0
+                </span>
+              </div>
+              <div class="text-sm font-medium ml-5">
+                <span class="block text-yellow2 ">Favorite</span>
+                My Wishlist
+              </div>
+            </a>
+            <a href="" class="flex items-center">
+              <div class="relative">
+                <img src="images/svg/icon_cart.svg" alt="" class="w-auto">
+                <span class="absolute left-6 -top-1 rounded-full w-6	h-6 border-black border text-xs font-semibold flex items-center justify-center bg-yellow1">
+                  0
+                </span>
+              </div>             
+              <div class="text-sm font-medium ml-5">
+                <span class="block text-yellow2 ">Your Cart</span>
+                $0.00
+              </div>
+            </a>
+        </div>
+      </div>
+    </div>
+    
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

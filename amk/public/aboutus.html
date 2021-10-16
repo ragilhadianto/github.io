@@ -33,7 +33,7 @@
                 <a class="px-2" href="kontak.html">Kontak</a>
               </li>
               <li>
-                <a class="px-2" href="karir.html">Karir</a>
+                <a class="px-2" href="aboutus.html#karir">Karir</a>
               </li>
             </ul>
           </div>
@@ -49,7 +49,7 @@
 
           <div class="col-span-6 hidden xl:block">
             <div class="flex">
-              <span class="menu flex items-center bg__green rounded-md px-3 py-1 cursor-pointer mr-3 transition-all	">
+              <span class="menu flex items-center bg__green rounded-md px-3 py-1 cursor-pointer mr-3 transition-all	font-semibold">
                 Kategori 
                 <img class="w-auto ml-2" src="images/svg/arrow_bottom_menu.svg" alt="">
 
@@ -215,33 +215,608 @@
           <div class="col-span-3 flex justify-end hidden xl:block">
             <ul>
               <li>
-                <a class="px-3 flex" href="katalog.html">
+                <span class="menu px-3 flex underline font-semibold cursor-auto">
                   Solusi
                   <img class="w-auto ml-1" src="images/svg/arrow_bottom_menu.svg" alt="">
-                </a>
+                  <div class="scrollbar1"  style="width: 230px;position:absolute;left: 0;top: 0;z-index: 9999;">
+                    <div style="height: 390px;position:absolute;left: 0;top: 0;">
+                      <div class="menu__sub">
+                        <div style="overflow: hidden;height: 390px; ">
+                          <div>
+                            <div class="bg__shadwow"></div>
+                            <ul>
+                              <li>
+                                <a href="">Semua Kategori</a>
+                              </li>
+                              <li>
+                                <a href="" class="active">Adhesive Product</a>
+                              </li>
+                              <li>
+                                <a href="">Air Compessor</a>
+                              </li>
+                              <li>
+                                <a href="">Automotive Equipment</a>
+                              </li>
+                              <li>
+                                <a href="">Chemical Product</a>
+                              </li>
+                              <li>
+                                <a href="">Cleaning Supplies</a>
+                              </li>
+                              <li>
+                                <a href="">Corporate Souvenir</a>
+                              </li>
+                              <li>
+                                <a href="">Cutting Tool</a>
+                              </li>
+                              <li>
+                                <a href="">Generator</a>
+                              </li>
+                              <li>
+                                <a href="">Cutting Tool</a>
+                              </li>
+                              <li>
+                                <a href="">Generator</a>
+                              </li>
+                            </ul>
+  
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </span>
               </li>
               <li>
                 <a class="px-3" href="brands.html">Brands</a>
               </li>
               <li>
-                <a class="px-3" href="FAQ.html">FAQ</a>
+                <a class="px-3" href="faq.html">FAQ</a>
               </li>
               <li>
-                <a class="px-3" href="Kontak.html">Kontak</a>
+                <a class="px-3" href="kontak.html">Kontak</a>
               </li>
             </ul>
           </div>
 
           <!-- mobile -->
           <div class="col-span-6 xl:hidden flex justify-end">
+
+            <!-- kategory menu -->
             <div class="pl-3">
-              <img src="images/svg/icon_category.svg" alt="">
+              <img class="m_kategoriClick" src="images/svg/icon_category.svg" alt="">
+              <div class="w-full h-full bg-white fixed left-0 top-0 z-50 px-5 pt-8 m_kategorishow hidden">
+                <div class="flex justify-between items-center border-b border-black pb-5">
+                  <h3 class="color__orange text-xl">Kategori Produk</h3>
+                  <img class="m_closemenu w-auto" src="images/svg/icon_close.svg" alt="">
+                </div>
+                <ul style="height: 90%;" class="scrollbar__hide overflow-x-auto  accordion__kategorimenu flex flex-col text-black">
+                  <li>
+                    <a class="py-3 text-lg border-black border-b w-full flex justify-between items-center" href="katalog.html">
+                      <span>Semua Kategori</span>
+                      <img class="w-auto" src="images/svg/arrow_right_black_2.svg" alt="">
+                    </a>                    
+                  </li>
+                  <li>
+                    <a class="toggleAccordion toggleAccordion--menu py-3 text-lg border-black border-b w-full flex justify-between items-center" href="javascript:void(0);">
+                      <span>Adhesive Product</span>
+                      <img class="w-auto" src="images/svg/arrow_right_black_2.svg" alt="">
+                    </a>   
+                    <ul class="accordion__brands py-3 color__gray1 border__gray3 xl:border-b inner">
+                        <li class="w-full">
+                            <div class="toggleAccordion pl-1 flex items-center justify-between font-semibold cursor-pointer pb-3">
+                                Cat Tembok
+                                <img class="w-auto" src="images/svg/arrow_bottom_black.svg" alt="">
+                            </div>                      
+                            <ul class="pl-5 inner mb-5">
+                                <li class="w-full">
+                                    <a href="" class="flex items-center justify-between font-normal cursor-pointer pb-2 font-semibold">          
+                                        Outdoor
+                                        <span class="color__orange font-normal">(56)</span>                                        
+                                    </a>
+                                </li>
+                                <li class="w-full">
+                                    <a href="" class="flex items-center justify-between font-normal cursor-pointer pb-2 font-semibold">          
+                                        Indoor
+                                        <span class="color__orange font-normal">(11)</span>                                        
+                                    </a>
+                                </li>
+                                <li class="w-full">
+                                    <a href="" class="flex items-center justify-between font-normal cursor-pointer pb-2 font-semibold">          
+                                        Texture
+                                        <span class="color__orange font-normal">(23)</span>                                        
+                                    </a>
+                                </li>
+                            </ul>                        
+                        </li>
+                        <li class="w-full">
+                            <div class="toggleAccordion pl-1 flex items-center justify-between font-semibold cursor-pointer pb-3">
+                              Baja Ringan
+                                <img class="w-auto" src="images/svg/arrow_bottom_black.svg" alt="">
+                            </div>                      
+                            <ul class="pl-5 inner mb-5">
+                                <li class="w-full">
+                                    <a href="" class="flex items-center justify-between font-normal cursor-pointer pb-2 font-semibold">          
+                                        Outdoor
+                                        <span class="color__orange font-normal">(56)</span>                                        
+                                    </a>
+                                </li>
+                                <li class="w-full">
+                                    <a href="" class="flex items-center justify-between font-normal cursor-pointer pb-2 font-semibold">          
+                                        Indoor
+                                        <span class="color__orange font-normal">(11)</span>                                        
+                                    </a>
+                                </li>
+                                <li class="w-full">
+                                    <a href="" class="flex items-center justify-between font-normal cursor-pointer pb-2 font-semibold">          
+                                        Texture
+                                        <span class="color__orange font-normal">(23)</span>                                        
+                                    </a>
+                                </li>
+                            </ul>                        
+                        </li>
+                    </ul>    
+                  </li>
+                  <li>
+                    <a class="toggleAccordion toggleAccordion--menu py-3 text-lg border-black border-b w-full flex justify-between items-center" href="javascript:void(0);">
+                      <span>Adhesive Product</span>
+                      <img class="w-auto" src="images/svg/arrow_right_black_2.svg" alt="">
+                    </a>   
+                    <ul class="accordion__brands py-3 color__gray1 border__gray3 xl:border-b inner">
+                        <li class="w-full">
+                            <div class="toggleAccordion pl-1 flex items-center justify-between font-semibold cursor-pointer pb-3">
+                                Cat Tembok
+                                <img class="w-auto" src="images/svg/arrow_bottom_black.svg" alt="">
+                            </div>                      
+                            <ul class="pl-5 inner mb-5">
+                                <li class="w-full">
+                                    <a href="" class="flex items-center justify-between font-normal cursor-pointer pb-2 font-semibold">          
+                                        Outdoor
+                                        <span class="color__orange font-normal">(56)</span>                                        
+                                    </a>
+                                </li>
+                                <li class="w-full">
+                                    <a href="" class="flex items-center justify-between font-normal cursor-pointer pb-2 font-semibold">          
+                                        Indoor
+                                        <span class="color__orange font-normal">(11)</span>                                        
+                                    </a>
+                                </li>
+                                <li class="w-full">
+                                    <a href="" class="flex items-center justify-between font-normal cursor-pointer pb-2 font-semibold">          
+                                        Texture
+                                        <span class="color__orange font-normal">(23)</span>                                        
+                                    </a>
+                                </li>
+                            </ul>                        
+                        </li>
+                        <li class="w-full">
+                            <div class="toggleAccordion pl-1 flex items-center justify-between font-semibold cursor-pointer pb-3">
+                              Baja Ringan
+                                <img class="w-auto" src="images/svg/arrow_bottom_black.svg" alt="">
+                            </div>                      
+                            <ul class="pl-5 inner mb-5">
+                                <li class="w-full">
+                                    <a href="" class="flex items-center justify-between font-normal cursor-pointer pb-2 font-semibold">          
+                                        Outdoor
+                                        <span class="color__orange font-normal">(56)</span>                                        
+                                    </a>
+                                </li>
+                                <li class="w-full">
+                                    <a href="" class="flex items-center justify-between font-normal cursor-pointer pb-2 font-semibold">          
+                                        Indoor
+                                        <span class="color__orange font-normal">(11)</span>                                        
+                                    </a>
+                                </li>
+                                <li class="w-full">
+                                    <a href="" class="flex items-center justify-between font-normal cursor-pointer pb-2 font-semibold">          
+                                        Texture
+                                        <span class="color__orange font-normal">(23)</span>                                        
+                                    </a>
+                                </li>
+                            </ul>                        
+                        </li>
+                    </ul>    
+                  </li>
+                  <li>
+                    <a class="toggleAccordion toggleAccordion--menu py-3 text-lg border-black border-b w-full flex justify-between items-center" href="javascript:void(0);">
+                      <span>Adhesive Product</span>
+                      <img class="w-auto" src="images/svg/arrow_right_black_2.svg" alt="">
+                    </a>   
+                    <ul class="accordion__brands py-3 color__gray1 border__gray3 xl:border-b inner">
+                        <li class="w-full">
+                            <div class="toggleAccordion pl-1 flex items-center justify-between font-semibold cursor-pointer pb-3">
+                                Cat Tembok
+                                <img class="w-auto" src="images/svg/arrow_bottom_black.svg" alt="">
+                            </div>                      
+                            <ul class="pl-5 inner mb-5">
+                                <li class="w-full">
+                                    <a href="" class="flex items-center justify-between font-normal cursor-pointer pb-2 font-semibold">          
+                                        Outdoor
+                                        <span class="color__orange font-normal">(56)</span>                                        
+                                    </a>
+                                </li>
+                                <li class="w-full">
+                                    <a href="" class="flex items-center justify-between font-normal cursor-pointer pb-2 font-semibold">          
+                                        Indoor
+                                        <span class="color__orange font-normal">(11)</span>                                        
+                                    </a>
+                                </li>
+                                <li class="w-full">
+                                    <a href="" class="flex items-center justify-between font-normal cursor-pointer pb-2 font-semibold">          
+                                        Texture
+                                        <span class="color__orange font-normal">(23)</span>                                        
+                                    </a>
+                                </li>
+                            </ul>                        
+                        </li>
+                        <li class="w-full">
+                            <div class="toggleAccordion pl-1 flex items-center justify-between font-semibold cursor-pointer pb-3">
+                              Baja Ringan
+                                <img class="w-auto" src="images/svg/arrow_bottom_black.svg" alt="">
+                            </div>                      
+                            <ul class="pl-5 inner mb-5">
+                                <li class="w-full">
+                                    <a href="" class="flex items-center justify-between font-normal cursor-pointer pb-2 font-semibold">          
+                                        Outdoor
+                                        <span class="color__orange font-normal">(56)</span>                                        
+                                    </a>
+                                </li>
+                                <li class="w-full">
+                                    <a href="" class="flex items-center justify-between font-normal cursor-pointer pb-2 font-semibold">          
+                                        Indoor
+                                        <span class="color__orange font-normal">(11)</span>                                        
+                                    </a>
+                                </li>
+                                <li class="w-full">
+                                    <a href="" class="flex items-center justify-between font-normal cursor-pointer pb-2 font-semibold">          
+                                        Texture
+                                        <span class="color__orange font-normal">(23)</span>                                        
+                                    </a>
+                                </li>
+                            </ul>                        
+                        </li>
+                    </ul>    
+                  </li>
+                  <li>
+                    <a class="toggleAccordion toggleAccordion--menu py-3 text-lg border-black border-b w-full flex justify-between items-center" href="javascript:void(0);">
+                      <span>Adhesive Product</span>
+                      <img class="w-auto" src="images/svg/arrow_right_black_2.svg" alt="">
+                    </a>   
+                    <ul class="accordion__brands py-3 color__gray1 border__gray3 xl:border-b inner">
+                        <li class="w-full">
+                            <div class="toggleAccordion pl-1 flex items-center justify-between font-semibold cursor-pointer pb-3">
+                                Cat Tembok
+                                <img class="w-auto" src="images/svg/arrow_bottom_black.svg" alt="">
+                            </div>                      
+                            <ul class="pl-5 inner mb-5">
+                                <li class="w-full">
+                                    <a href="" class="flex items-center justify-between font-normal cursor-pointer pb-2 font-semibold">          
+                                        Outdoor
+                                        <span class="color__orange font-normal">(56)</span>                                        
+                                    </a>
+                                </li>
+                                <li class="w-full">
+                                    <a href="" class="flex items-center justify-between font-normal cursor-pointer pb-2 font-semibold">          
+                                        Indoor
+                                        <span class="color__orange font-normal">(11)</span>                                        
+                                    </a>
+                                </li>
+                                <li class="w-full">
+                                    <a href="" class="flex items-center justify-between font-normal cursor-pointer pb-2 font-semibold">          
+                                        Texture
+                                        <span class="color__orange font-normal">(23)</span>                                        
+                                    </a>
+                                </li>
+                            </ul>                        
+                        </li>
+                        <li class="w-full">
+                            <div class="toggleAccordion pl-1 flex items-center justify-between font-semibold cursor-pointer pb-3">
+                              Baja Ringan
+                                <img class="w-auto" src="images/svg/arrow_bottom_black.svg" alt="">
+                            </div>                      
+                            <ul class="pl-5 inner mb-5">
+                                <li class="w-full">
+                                    <a href="" class="flex items-center justify-between font-normal cursor-pointer pb-2 font-semibold">          
+                                        Outdoor
+                                        <span class="color__orange font-normal">(56)</span>                                        
+                                    </a>
+                                </li>
+                                <li class="w-full">
+                                    <a href="" class="flex items-center justify-between font-normal cursor-pointer pb-2 font-semibold">          
+                                        Indoor
+                                        <span class="color__orange font-normal">(11)</span>                                        
+                                    </a>
+                                </li>
+                                <li class="w-full">
+                                    <a href="" class="flex items-center justify-between font-normal cursor-pointer pb-2 font-semibold">          
+                                        Texture
+                                        <span class="color__orange font-normal">(23)</span>                                        
+                                    </a>
+                                </li>
+                            </ul>                        
+                        </li>
+                    </ul>    
+                  </li>
+                  <li>
+                    <a class="toggleAccordion toggleAccordion--menu py-3 text-lg border-black border-b w-full flex justify-between items-center" href="javascript:void(0);">
+                      <span>Adhesive Product</span>
+                      <img class="w-auto" src="images/svg/arrow_right_black_2.svg" alt="">
+                    </a>   
+                    <ul class="accordion__brands py-3 color__gray1 border__gray3 xl:border-b inner">
+                        <li class="w-full">
+                            <div class="toggleAccordion pl-1 flex items-center justify-between font-semibold cursor-pointer pb-3">
+                                Cat Tembok
+                                <img class="w-auto" src="images/svg/arrow_bottom_black.svg" alt="">
+                            </div>                      
+                            <ul class="pl-5 inner mb-5">
+                                <li class="w-full">
+                                    <a href="" class="flex items-center justify-between font-normal cursor-pointer pb-2 font-semibold">          
+                                        Outdoor
+                                        <span class="color__orange font-normal">(56)</span>                                        
+                                    </a>
+                                </li>
+                                <li class="w-full">
+                                    <a href="" class="flex items-center justify-between font-normal cursor-pointer pb-2 font-semibold">          
+                                        Indoor
+                                        <span class="color__orange font-normal">(11)</span>                                        
+                                    </a>
+                                </li>
+                                <li class="w-full">
+                                    <a href="" class="flex items-center justify-between font-normal cursor-pointer pb-2 font-semibold">          
+                                        Texture
+                                        <span class="color__orange font-normal">(23)</span>                                        
+                                    </a>
+                                </li>
+                            </ul>                        
+                        </li>
+                        <li class="w-full">
+                            <div class="toggleAccordion pl-1 flex items-center justify-between font-semibold cursor-pointer pb-3">
+                              Baja Ringan
+                                <img class="w-auto" src="images/svg/arrow_bottom_black.svg" alt="">
+                            </div>                      
+                            <ul class="pl-5 inner mb-5">
+                                <li class="w-full">
+                                    <a href="" class="flex items-center justify-between font-normal cursor-pointer pb-2 font-semibold">          
+                                        Outdoor
+                                        <span class="color__orange font-normal">(56)</span>                                        
+                                    </a>
+                                </li>
+                                <li class="w-full">
+                                    <a href="" class="flex items-center justify-between font-normal cursor-pointer pb-2 font-semibold">          
+                                        Indoor
+                                        <span class="color__orange font-normal">(11)</span>                                        
+                                    </a>
+                                </li>
+                                <li class="w-full">
+                                    <a href="" class="flex items-center justify-between font-normal cursor-pointer pb-2 font-semibold">          
+                                        Texture
+                                        <span class="color__orange font-normal">(23)</span>                                        
+                                    </a>
+                                </li>
+                            </ul>                        
+                        </li>
+                    </ul>    
+                  </li>
+                  <li>
+                    <a class="py-3 text-lg border-black border-b w-full flex justify-between items-center" href="javascript:void(0);">
+                      <span>Air Compessor</span>
+                      <img class="w-auto" src="images/svg/arrow_right_black_2.svg" alt="">
+                    </a>       
+                  </li>
+                  <li>
+                    <a class="py-3 text-lg border-black border-b w-full flex justify-between items-center" href="javascript:void(0);">
+                      <span>Automotive Equipment</span>
+                      <img class="w-auto" src="images/svg/arrow_right_black_2.svg" alt="">
+                    </a>       
+                  </li>
+                  <li>
+                    <a class="py-3 text-lg border-black border-b w-full flex justify-between items-center" href="javascript:void(0);">
+                      <span>Chemical Product</span>
+                      <img class="w-auto" src="images/svg/arrow_right_black_2.svg" alt="">
+                    </a>       
+                  </li>
+                  <li>
+                    <a class="py-3 text-lg border-black border-b w-full flex justify-between items-center" href="javascript:void(0);">
+                      <span>Cleaning Supplies</span>
+                      <img class="w-auto" src="images/svg/arrow_right_black_2.svg" alt="">
+                    </a>       
+                  </li>
+                  <li>
+                    <a class="py-3 text-lg border-black border-b w-full flex justify-between items-center" href="javascript:void(0);">
+                      <span>Corporate Souvenir</span>
+                      <img class="w-auto" src="images/svg/arrow_right_black_2.svg" alt="">
+                    </a>       
+                  </li>
+                  <li>
+                    <a class="py-3 text-lg border-black border-b w-full flex justify-between items-center" href="javascript:void(0);">
+                      <span>Cutting Tool</span>
+                      <img class="w-auto" src="images/svg/arrow_right_black_2.svg" alt="">
+                    </a>       
+                  </li>
+                  <li>
+                    <a class="py-3 text-lg border-black border-b w-full flex justify-between items-center" href="javascript:void(0);">
+                      <span>Generator</span>
+                      <img class="w-auto" src="images/svg/arrow_right_black_2.svg" alt="">
+                    </a>       
+                  </li>
+                 
+                </ul>
+              </div>
             </div>
+
+            <!-- search menu -->
             <div class="pl-3">
-              <img src="images/svg/icon_search_white.svg" alt="">
+              <img class="m_searchClick" src="images/svg/icon_search_white.svg" alt="">
+              <div class="w-full h-full bg-white fixed left-0 top-0 z-50 px-5 pt-8 hidden m_searchshow">
+                <div class="flex justify-between items-center  pb-5">
+                  <h3 class="color__orange text-xl">Cari Produk</h3>
+                  <img class="m_closemenu w-auto" src="images/svg/icon_close.svg" alt="">
+                </div>
+                <div class="border-b border-black py-2">
+                  <form action="" class="w-full flex justify-between">
+                    <input type="text" name="" id="" placeholder="Cari Kitchen Faucet" class="pl-0 pr-3 py-1 color__gray1 w-full text-base">
+                    <button class="bg__green px-3 py-1 rounded-md transition-all	">
+                      <img class="w-auto" src="images/svg/icon_search.svg" alt="">
+                    </button>
+                  </form>
+                </div>
+
+                <div class="mt-5 border-b border-black">
+                  <p class="color__orange font-bold text-sm">Terakhir dilihat</p>
+                  <ul class="grid grid-flow-col py-5 text-black overflow-x-auto">
+                    <li class="mr-5">
+                      <a href="#">
+                        <div class="w-16 overflow-hidden">
+                          <img class="imgfillImg" src="images/produk1.jpg" alt="">
+                        </div>
+                        <small class="text-sm w-16 text__wrap2 text-center">Masker 3M</small>
+                      </a>
+                    </li>
+                    <li class="mr-5">
+                      <a href="#">
+                        <div class="w-16 overflow-hidden">
+                          <img class="imgfillImg" src="images/produk1.jpg" alt="">
+                        </div>
+                        <small class="text-sm w-16 text__wrap2 text-center">lorem ipsum asda asdasds</small>
+                      </a>
+                    </li>
+                    <li class="mr-5">
+                      <a href="#">
+                        <div class="w-16 overflow-hidden">
+                          <img class="imgfillImg" src="images/produk1.jpg" alt="">
+                        </div>
+                        <div class="text-sm w-16 text__wrap2 text-center">Masker 3M</div>
+                      </a>
+                    </li>
+                    <li class="mr-5">
+                      <a href="#">
+                        <div class="w-16 overflow-hidden">
+                          <img class="imgfillImg" src="images/produk1.jpg" alt="">
+                        </div>
+                        <div class="text-sm w-16 text__wrap2 text-center">Masker 3M</div>
+                      </a>
+                    </li>
+                    <li class="mr-5">
+                      <a href="#">
+                        <div class="w-16 overflow-hidden">
+                          <img class="imgfillImg" src="images/produk1.jpg" alt="">
+                        </div>
+                        <div class="text-sm w-16 text__wrap2 text-center">Masker 3M</div>
+                      </a>
+                    </li>
+                    <li class="mr-5">
+                      <a href="#">
+                        <div class="w-16 overflow-hidden">
+                          <img class="imgfillImg" src="images/produk1.jpg" alt="">
+                        </div>
+                        <div class="text-sm w-16 text__wrap2 text-center">Masker 3M</div>
+                      </a>
+                    </li>
+                    <li class="mr-5">
+                      <a href="#">
+                        <div class="w-16 overflow-hidden">
+                          <img class="imgfillImg" src="images/produk1.jpg" alt="">
+                        </div>
+                        <div class="text-sm w-16 text__wrap2 text-center">Masker 3M</div>
+                      </a>
+                    </li>
+                    <li class="mr-5">
+                      <a href="#">
+                        <div class="w-16 overflow-hidden">
+                          <img class="imgfillImg" src="images/produk1.jpg" alt="">
+                        </div>
+                        <div class="text-sm w-16 text__wrap2 text-center">Masker 3M</div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="mt-5">
+                  <div class="flex justify-between">
+                    <p class="color__orange font-bold text-sm">Terakhir dicari</p>
+                    <p class="color__green font-bold text-xs">Hapus Semua</p>
+                  </div>
+                  <ul class="mt-3">
+                    <li class="flex justify-between text-black py-2">                      
+                      <a href="#" class="flex w-full items-center pr-2">
+                        <img class="w-auto mr-2" src="images/svg/access_time_grey.svg" alt="">
+                        <p class="flex-1">Batu Bata</p>
+                      </a>
+                      <img class="w-4	" src="images/svg/icon_close.svg" alt="">                      
+                    </li>
+                    <li class="flex justify-between text-black py-2">                      
+                      <a href="#" class="flex w-full items-center pr-2">
+                        <img class="w-auto mr-2" src="images/svg/access_time_grey.svg" alt="">
+                        <p class="flex-1">Semen 5 kg</p>
+                      </a>
+                      <img class="w-4	" src="images/svg/icon_close.svg" alt="">                      
+                    </li>
+                    <li class="flex justify-between text-black py-2">                      
+                      <a href="#" class="flex w-full items-center pr-2">
+                        <img class="w-auto mr-2" src="images/svg/access_time_grey.svg" alt="">
+                        <p class="flex-1">Batu</p>
+                      </a>
+                      <img class="w-4	" src="images/svg/icon_close.svg" alt="">                      
+                    </li>
+                    <li class="flex justify-between text-black py-2">                      
+                      <a href="#" class="flex w-full items-center pr-2">
+                        <img class="w-auto mr-2" src="images/svg/access_time_grey.svg" alt="">
+                        <p class="flex-1">Batu Bata</p>
+                      </a>
+                      <img class="w-4	" src="images/svg/icon_close.svg" alt="">                      
+                    </li>
+                  </ul>
+                  
+                </div>
+              </div>
             </div>
+
+            <!-- menu -->
             <div class="pl-3">
-              <img src="images/svg/icon_menu.svg" alt="">
+              <img class="m_menuClick" src="images/svg/icon_menu.svg" alt="">
+              <div class="w-full h-full bg-white fixed left-0 top-0 z-50 px-5 pt-8 hidden m_menushow">
+                <div class="flex justify-between items-center border-b border-black pb-5">
+                  <h3 class="color__orange text-xl">Menu</h3>
+                  <img class="m_closemenu w-auto" src="images/svg/icon_close.svg" alt="">
+                </div>
+                <ul class="accordion__submenu flex flex-col text-black">
+                  <li class="border-black border-b">
+                    <a class="toggleAccordion toggleAccordion--menu py-3 text-lg w-full flex justify-between items-center" href="katalog.html">
+                      <span>Solusi</span>
+                      <img class="w-auto" src="images/svg/arrow_right_black_2.svg" alt="">
+                    </a>                   
+                       
+                    <div class="inner pb-5">
+                      <ul>
+                         <li>
+                           <a href="asdasd">sdasdas lorem </a>
+                         </li>
+                         <li>
+                           <a href="asdasd">sdasdas lorem </a>
+                         </li>
+                         <li>
+                           <a href="asdasd">sdasdas lorem </a>
+                         </li>
+                      </ul>
+                    </div> 
+                  </li>
+                  <li class="border-black border-b">
+                    <a class="py-3 text-lg w-full" href="brands.html">Brands</a>
+                  </li>
+                  <li class="border-black border-b">
+                    <a class="py-3 text-lg w-full" href="faq.html">FAQ</a>
+                  </li>
+                  <li class="border-black border-b">
+                    <a class="py-3 text-lg w-full" href="kontak.html">Kontak</a>
+                  </li>
+                  <li class="border-black border-b">
+                    <a class="py-3 text-lg w-full" href="aboutus.html">Tentang</a>
+                  </li>
+                  <li class="border-black border-b">
+                    <a class="py-3 text-lg w-full" href="karir.html">Karir</a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
 
@@ -272,16 +847,18 @@
         <div class="col-span-12 lg:col-span-8">
 
             <div id="tentang" class="content border-b border__gray3 mb-10 pb-10">
-                <h2 class="text-xl	color__gray5 font-normal mb-5">Usaha kami dimulai dari sebuah toko kecil dengan nama toko “CENTRAL” yang menjual bahan bangunan sejak tahun 1988 di Jayapura - Papua.</h2>
+                <h2 class="text-2xl		color__gray5 font-normal mb-5">Usaha kami dimulai dari sebuah toko kecil dengan nama toko “CENTRAL” yang menjual bahan bangunan sejak tahun 1988 di Jayapura - Papua.</h2>
 
                 <p>Sejak saat itu kami terus mengembangkan usaha ini dengan berfokus pada ketersediaan barang di Jayapura, dengan memperluas kapasitas penyimpanan bahan bangunan, sehingga stok kebutuhan dalam pembangunan selalu tersedia. Pada tahun 2012 kami meningkatkan status usaha menjadi PT. Anugerah Maha Karya sampai saat ini, dan masih dengan prinsip awal kami yaitu menjamin ketersediaan beragam produk dan menjamin kualitas produk yang kami jual telah memenuhi standard nasional Indonesia.</p>
                 <p>Tekad kuat kami untuk menjadi perusahaan yang dapat diandalakan dalam pembangunan daerah terus kami wujudkan dalam konsistensi penyajian beragam produk yang terus bertambah jumlahnya seiring dengan technology dan di bantu dengan System distribusi yang solid pada gudang penyalur (Depo) di kota Jayapura  maupun di Kabupaten Jayapura (Sentani) yang akan melayani kebutuhan bahan bangunan ke kabupaten-kabupaten lainnya.</p>
 
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4070855.7713308283!2d135.5651080701558!3d-4.8648419947096615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x683b2c04aaff9273%3A0xeba94e9c5eefe673!2sPapua!5e0!3m2!1sen!2sid!4v1625159512337!5m2!1sen!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-
+                <div class="pt-12">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4070855.7713308283!2d135.5651080701558!3d-4.8648419947096615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x683b2c04aaff9273%3A0xeba94e9c5eefe673!2sPapua!5e0!3m2!1sen!2sid!4v1625159512337!5m2!1sen!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div> 
+                
                 <table class="my-10">
                   <tr class="flex items-start">
-                      <td class="mr-5 pt-2">
+                      <td class="mr-2 pt-2">
                           <img src="images/svg/icon_phone.svg" alt="">
                       </td>
                       <td>
@@ -289,7 +866,7 @@
                       </td>
                   </tr>
                   <tr class="flex items-baseline">
-                      <td class="mr-5 pt-2">
+                      <td class="mr-2 pt-2">
                           <img src="images/svg/icon_mail.svg" alt="">
                       </td>
                       <td>
@@ -297,7 +874,7 @@
                       </td>
                   </tr>
                   <tr class="flex items-baseline">
-                      <td class="mr-5 pt-2">
+                      <td class="mr-2 pt-2">
                           <img src="images/svg/icon_location.svg" alt="">
                       </td>
                       <td>
@@ -435,11 +1012,11 @@
     </footer>
 
 
-    <!-- WA -->    
-    <a href="http://" target="_blank" rel="noopener noreferrer" class="whatsapp__link">
-      <img class="w-auto mr-2" src="images/svg/icon_whatsapp.svg" alt="">
-      Whatsapp
-    </a>
+   <!-- WA -->    
+   <a href="http://" target="_blank" rel="noopener noreferrer" class="whatsapp__link">
+    <img class="w-auto mr-2" src="images/svg/icon_whatsapp.svg" alt="">
+  </a>
+
 
 
     <script src="js/jquery-1.11.0.min.js"></script>

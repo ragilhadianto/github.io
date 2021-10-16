@@ -8,7 +8,7 @@ module.exports = {
     },
     screens: {
       xs: "100%",
-      sm: "640px",
+      sm: "360px",
       md: "768px",
       lg: "1024px",
       xl: "1200px",
@@ -17,6 +17,9 @@ module.exports = {
      extend: {
       fontSize: {
         'xxs': '10px',
+       },
+       lineHeight: {
+        '11': '3rem',
        }
     }
   },

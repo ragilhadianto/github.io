@@ -1,0 +1,19 @@
+.header {
+}
+
+.menu{
+    z-index: 9999;
+
+    ul{
+
+        li{
+
+            a{
+                @include max-responsive($md){
+                    color: #fff;
+                    border: none;
+                }
+            }
+        }
+    }
+}

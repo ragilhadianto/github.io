@@ -330,16 +330,18 @@ $(".header__menu ul li")
 // accordion
 $('.toggleAccordion').click(function(e) {
   e.preventDefault();
-  console.log("asdasdas");
   let $this = $(this);
 
   if ($this.next().hasClass('show')) {
       $this.next().removeClass('show');
       $this.next().slideUp(350);
+      $this.find('img').attr('src','images/svg/icon__plus.svg');
   } else {
       $this.parent().parent().find('li .inner').removeClass('show');
       $this.parent().parent().find('li .inner').slideUp(350);
+      $this.parent().parent().find('li img').attr('src','images/svg/icon__plus.svg');
       $this.next().toggleClass('show');
       $this.next().slideToggle(350);
+      $this.find('img').attr('src','images/svg/icon__minus.svg');
   }
 });

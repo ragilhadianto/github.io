@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/tailwind.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Design Tinkers</title>
+  </head>
+  <body>
+
+    <!-- header -->
+    <div class="header top-0 left-0 right-0 w-full z-50 py-5">
+      <div class="container px-5 flex justify-between items-center">
+        <a href="index.html">
+          <img src="images/logo.svg" class="w-16 md:w-auto" alt="Design Tinkers">
+        </a>
+        <!-- mobile menu -->
+        <div class="hamburger hamburger--slider md:hidden z-50">
+            <div class="hamburger-box">
+              <div class="hamburger-inner"></div>
+            </div>
+          </div>
+          <!-- /mobile menu -->  
+          <div class="fixed top-0 -right-full w-8/12	bg-purple h-full pt-24 md:pt-0 md:right-auto md:bg-transparent md:w-auto md:relative lg:block menu transition-all">
+            <ul class="flex flex-col md:flex-row text-right gap-y-3">
+                <li>
+                    <a href="index.html#section1" class="btnGoTo mx-7 text-base font-medium" data-id="#section1">Programme</a>
+                </li>
+                <li>
+                    <a href="event.html" class="btnGoTo mx-7 text-base font-medium pb-2 border-b-2 border-black" data-id="#section2">Event Gallery</a>
+                </li>
+                <li>
+                    <a href="index.html#section3" class="btnGoTo mx-7 text-base font-medium" data-id="#section3">Who we are</a>
+                </li>
+                <li>
+                    <a href="news.html" class="btnGoTo mx-7 text-base font-medium  " data-id="#section4">News</a>
+                </li>
+                <li>
+                    <a href="index.html#section5" class="btnGoTo mx-7 text-base font-medium" data-id="#section5">Contact Us</a>
+                </li>
+            </ul>
+          </div>
+      </div>
+    </div>
+
+    <div class="bg-green3 py-8 mt-5 bg-no-repeat bg-right bg-cover md:bg-contain" style="background-image: url(images/comp_7.svg);">
+       <div class="container px-5">
+           <div class='w-full md:w-9/12'>
+                <h3 class="text-purple text-3xl	font-semibold">Title Gallery</h3>
+                <p class="text-sm text-black mt-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati, quae? Maiores architecto voluptates pariatur qui. Temporibus velit dolores ex vel quasi optio. Aut rerum eum incidunt itaque iusto quaerat id.</p>
+           </div>
+       </div>
+    </div>
+
+    <div class="container px-5">
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-8 md:gap-12 my-14 gallery">
+        
+                <a href="images/foto_hero.jpg">
+                    <div class="shadow-lg rounded-lg h-32 md:h-56 w-full overflow-hidden relative">
+                        <img src="images/foto_hero.jpg" class="imgfillImg" alt="">
+                    </div>
+                </a>      
+                <a href="images/foto.jpg">
+                    <div class="shadow-lg rounded-lg h-32 md:h-56 w-full overflow-hidden relative">
+                        <img src="images/foto.jpg" class="imgfillImg" alt="">
+                    </div>
+                </a>      
+                <a href="images/foto2.png">
+                    <div class="shadow-lg rounded-lg h-32 md:h-56 w-full overflow-hidden relative">
+                        <img src="images/foto2.png" class="imgfillImg" alt="">
+                    </div>
+                </a>      
+                <a href="images/foto_hero.jpg">
+                    <div class="shadow-lg rounded-lg h-32 md:h-56 w-full overflow-hidden relative">
+                        <img src="images/foto_hero.jpg" class="imgfillImg" alt="">
+                    </div>
+                </a>      
+                <a href="images/foto.jpg">
+                    <div class="shadow-lg rounded-lg h-32 md:h-56 w-full overflow-hidden relative">
+                        <img src="images/foto.jpg" class="imgfillImg" alt="">
+                    </div>
+                </a>      
+                <a href="images/foto2.png">
+                    <div class="shadow-lg rounded-lg h-32 md:h-56 w-full overflow-hidden relative">
+                        <img src="images/foto2.png" class="imgfillImg" alt="">
+                    </div>
+                </a>      
+          
+        </div>
+    </div>
+
+
+    <div class="footer text-xs md:text-sm text-black text-center py-5">
+      <div class="container px-5">
+        <p> <a href="">Terms Of Use</a>  <span class="mx-2">|</span> <a href="">Privacy Policy</a> <span class="mx-2">|</span>  © 2021 Design Tinkers Pte. Ltd.</p>
+      </div>
+    </div>
+    
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
