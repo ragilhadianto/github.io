@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "postcss": "^8.2.4",
+    "postcss": "^8.2.10",
     "tailwindcss": "^2.0.2"
   },
   "devDependencies": {
