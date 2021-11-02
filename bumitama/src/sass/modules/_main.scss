@@ -1,5 +1,8 @@
 .container{
 
+  @include max-responsive($lg){
+    padding: 0 20px;
+  }
   
 }
 
@@ -90,10 +93,81 @@
         transition-timing-function: ease; }
 
 .content{
+    max-width: 80%;
+    margin: 0 auto;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+    font-size: 18px;
+    line-height: 34px;
+
+
+    @include max-responsive($lg){
+      max-width: 100%;
+      font-size: 15px;
+      margin-left: 1.25rem;
+      margin-bottom: 0;
+    }
 
     p{
         margin: 2px 0 20px 0;
-        line-height: 1.9;
+        font-size: 18px;
+        line-height: 34px;
+        @include max-responsive($lg){
+          font-size: 15px;
+          line-height: 30px;
+        }
+    }
+
+    img{
+      border-radius: 20px;
+
+      &.brnone{
+        border-radius: 0;
+      }
+    }
+
+    small{
+      margin: 10px 0;
+      display: block;
+    }
+
+    .photo{
+      margin: 50px 0;
+    }
+
+    ul,
+    ol{
+
+      li{
+        padding-left: 30px;
+        margin-bottom: 10px;
+        background-image: url(../images/svg/icon__line.svg);
+        background-repeat: no-repeat;
+        background-position: top 10px left;
+        line-height: 30px;
+      }
+    }
+
+    ol{
+      
+      li{
+        background-image: none;
+        list-style: decimal;   
+        padding-left: 10px;
+        margin-left: 20px;
+      }
+    }
+    
+    hr{
+      margin: 50px auto;
+    }
+    
+  
+    h3{
+      @include max-responsive($lg){
+        font-size: 17px;
+        line-height: 27px
+      }
     }
 }
 
@@ -118,4 +192,83 @@
     cursor: pointer;
     z-index: 999;
   }
+}
+
+.breadcum{
+  position: relative;
+  z-index: 10;
+  
+  ul{
+    li{
+      a{
+        text-transform: lowercase;
+      }
+    }
+  }
+}
+
+
+
+// accordion
+.accordion{
+  
+  
+  .inner {
+    overflow: hidden;
+    display: none;    
+  }
+
+  .innerm{
+
+    @include max-responsive($md){
+      overflow: hidden;
+      display: none; 
+    }
+  }
+  
+  
+  li a.toggleAccordion {
+
+  }
+
+}
+
+
+//background
+.bg{
+
+  &__3{
+    background-image: url(../images/bg3.png);
+    @include max-responsive($lg){
+      background-image: none;
+    }
+  }
+}
+
+
+//slider
+.slider{
+
+
+  .slick-next:before,
+  .slick-prev::before {
+      content: '';
+  }
+  .slick-next,
+  .slick-prev{
+      background-size: 100%;
+      width: 35px;
+      height: 35px;
+      z-index: 999;
+  }
+  .slick-prev{
+    background-image: url(../images/svg/icon__arow__slider--left.svg);
+    left: -10px;
+  }
+  .slick-next{
+    right: -10px;
+    background-image: url(../images/svg/icon__arow__slider--right.svg);
+  }
+
+ 
 }

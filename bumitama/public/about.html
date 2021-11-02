@@ -19,56 +19,139 @@
 
     <div class="header">
       <div class="container">
-        <div class="flex justify-between items-center pt-7 pb-16">       
+        <div class="flex justify-between items-center  pt-5 pb-24">       
           <div class="logo">
             <a href="index.html">
-              <img class="w-auto" src="images/logo.png" alt="">
+              <img class="w-60 lg:w-72" src="images/logo.png" alt="">
             </a>
           </div>        
-          <div class="ml-5">
-            <ul class="text-green1 flex gap-x-10">
-              <li>
-                <a href="about.html">About Us</a>
-              </li>
-              <li>
-                <a href="business.html">Our Business</a>
-              </li>
-              <li>
-                <a href="sustainability.html">Sustainability</a>
-              </li>
-              <li>
-                <a href="investor.html">Investor</a>
-              </li>
-              <li>
-                <a href="news.html">News & Media</a>
-              </li>
-            </ul>
+          <div class="header__menu p-5 lg:p-0 lg:ml-5 lg:block lg:relative w-full lg:w-auto h-screen lg:h-auto left-0 top-0 right-0 bg-brokenwhite lg:bg-transparent z-50 flex flex-wrap content-between">
+            <div class="w-full">
+              <div class="lg:hidden flex justify-between items-center ">
+                <a href="index.html" class="header__sub__logo">
+                  <img class="w-60 lg:w-auto" src="images/logo.png" alt="">
+                </a>
+                <div class="menuMobileBack header__sub hidden">
+                  <img class="w-auto" src="images/svg/icon__menu__back.svg" alt="">
+                </div>
+                <div class="text-xl header__sub hidden">
+                  <a href="sustainability.html">Sustainability</a>
+                </div>            
+                <div class="menuMobileClose">
+                  <img class="w-auto" src="images/svg/icon__menu__close.svg" alt="">
+                </div>
+              </div>    
+              <ul class="text-green1 flex lg:gap-x-10 flex-col lg:flex-row mt-10 lg:mt-0 relative lg:static ">
+                <li>
+                  <a class="hover text-lg py-3 lg:py-0 lg:text-base" href="about.html">About Us</a>
+                </li>
+                <li>
+                  <a class="hover text-lg py-3 lg:py-0 lg:text-base" href="business.html">Our Business</a>
+                </li>
+                <li class="dropdown ">
+                  <a class="dropbtn dropbtn__sub hover text-lg py-3 lg:py-0 lg:text-base flex items-center" href="sustainability.html">
+                    Sustainability
+                    <img class="transform -rotate-90 lg:rotate-0" style="width: 15px;margin-left: 5px;" src="images/svg/icon__arrow__bottom.svg" alt="">
+                  </a>
+                  <div class="header__menu__sub dropdown-content w-full lg:w-auto  flex-col lg:rounded-xl text-base lg:px-4 py-3">
+                    <a class="py-3 lg:py-1" href="environment.html">Environment</a>
+                    <a class="py-3 lg:py-1" href="community.html">Community</a>
+                    <a class="py-3 lg:py-1" href="workplace.html">Workplace</a>
+                    <a class="py-3 lg:py-1" href="#">Responsible Sourcing</a>
+                    <a class="py-3 lg:py-1" href="#">Certifications</a>
+                    <a class="py-3 lg:py-1" href="policies-reports.html">Policies & Reports</a>
+                  </div>
+                </li>
+                <li>
+                  <a class="hover text-lg py-3 lg:py-0 lg:text-base" href="investor.html">Investor</a>
+                </li>
+                <li>
+                  <a class="hover text-lg py-3 lg:py-0 lg:text-base" href="news.html">News & Media</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="text-gray-400 w-full lg:hidden">
+              <ul class="flex flex-col mb-3 pb-3 border-b border-gray-400">
+                <li>
+                  <a href="" class="mb-3">Contact</a>
+                </li>
+                <li>
+                  <a href="" class="mb-3">Terms & Conditions</a>
+                </li>
+              </ul>
+              <small>© 2021 Bumitama Agri. All Rights Reserved.</small>
+            </div>
           </div>
-          <div class="cursor-pointer">
-            <img class="w-auto" src="images/svg/icon__search.svg" alt="">
+          
+          <div class="flex items-center gap-x-2"> 
+            <div class="cursor-pointer dropdown relative ">
+              <div class="dropbtn dropbtn__search p-2">
+                <img class="w-auto lg:w-4" src="images/svg/icon__search.svg" alt="">
+              </div>
+              <div class="sub__search dropdown-content p-5  w-full lg:w-auto flex-col lg:rounded-xl text-base lg:px-4 lg:py-3">
+                <div class="lg:hidden flex justify-between items-center ">
+                  <a href="index.html" class="header__sub__logo">
+                    <img class="w-60 lg:w-auto" src="images/logo.png" alt="">
+                  </a>           
+                  <div class="menuMobileClose">
+                    <img class="w-auto" src="images/svg/icon__menu__close.svg" alt="">
+                  </div>
+                </div>    
+                  <form action="" class="relative mt-10 lg:mt-0">
+                    <input class="w-full lg:w-auto bg-transparent p-2 border-b lg:border-green1 border-gray-400" type="text" placeholder="Enter keyword">
+                    <button class="absolute right-0 top-0 bottom-0 m-auto pl-5">
+                      <img style="width: 15px;" class=" transform -rotate-90 hidden lg:block" src="images/svg/icon__arrow__bottom.svg" alt="">
+                      <img class="w-auto lg:hidden" src="images/svg/icon__search__grey.svg" alt="">
+                    </button>
+                  </form>
+              </div>
+            </div>
+            
+            <!-- mobile -->
+            <div class="menuMobile">
+              <img class="w-auto" src="images/svg/icon__menu__m.svg" alt="">
+            </div>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="h-4/5 w-full overflow-hidden items-end flex bg-cover" style="background-image: url(images/hero__about.jpg);">
+    <div class="h-3/6	 lg:h-4/5 w-full overflow-hidden items-end flex bg-cover bg-center" style="background-image: url(images/hero__about.jpg);">
       <div class="container">
-        <h3 class="font-libre text-white w-1/2 text-3xl	leading-10 tracking-wide mb-20">About Us
+        <h3 class="font-libre text-white w-1/2 text-xl lg:text-3xl	leading-10 tracking-wide mb-5 lg:mb-20">About Us
           </h3>
       </div>
     </div>
     
-    <div class="bg-brokenwhite bg-cover bg-right-top bg-no-repeat py-24" style="background-image: url(images/bg3.png);">
+    <div class="bg-brokenwhite bg-none bg-cover bg-right-top bg-no-repeat py-10 lg:py-24 bg__3">
       <div class="container">
-       <div class="grid grid-cols-2">
-         <div class="pr-32 font-libre leading-8	">
-          <h4 class="text-2xl text-orange1  mb-8">Who we are?</h4>
-          <p>We manage a total planted area of 187,917 hectares with 29.3% of for our Plasma smallholders. Our oil palms are relatively mature, with a weighted average age of 11.6 years as of January 2021.</p>
-          <br/>
-          <p>We operate 14 mills with a processing capacity of 6.03 million metric tonnes, 8 of which are RSPO certified. We have a time-bound plan, aiming for full RSPO certification by 2022.</p>
+
+        <div class="breadcum mb-10 lg:hidden">
+          <ul class="text-gray-400">
+              <li>
+                  <a class="text-xs" href="index.html">home</a>
+              </li>
+              <li>
+                  <a class="text-xs" href="">></a>
+              </li>
+              <li>
+                  <a href="about.html" class="underline text-green1 text-xs">aboutus</a>
+              </li>
+          </ul>
+        </div>
+
+       <div class="grid lg:grid-cols-2">
+         <div class="lg:pr-32 leading-8">
+          <h4 class="text-xl lg:text-2xl text-orange1 font-libre mb-8">Who we are?</h4>
+          <div class="font-nuri lg:font-lib  pl-5 lg:pl-0 leading-8">
+            <p>We manage a total planted area of 187,917 hectares with 29.3% of for our Plasma smallholders. Our oil palms are relatively mature, with a weighted average age of 11.6 years as of January 2021.</p>
+            <br/>
+            <p>We operate 14 mills with a processing capacity of 6.03 million metric tonnes, 8 of which are RSPO certified. We have a time-bound plan, aiming for full RSPO certification by 2022.</p>
+          </div>
          </div>
-         <div class="mt-14">
-           <div class="rounded-xl overflow-hidden ">
+         <div class="lg:mt-8">
+           <div class="xl:rounded-xl overflow-hidden mt-10 lg:my-10 -mx-5">
              <img src="images/foto_about1.jpg" alt="">
            </div>
            <small class="my-3 block text-center text-xs">Processing capacity of 6.03 million metric tonnes, 8 of which are RSPO certified. </small>
@@ -79,103 +162,121 @@
       </div>
     </div>
 
-    <div class="breadcum my-16">
+    <div class="breadcum mt-16 mb-8 hidden lg:block">
         <div class="container">
-            <ul class="text-gray-400">
-                <li>
-                    <a href="index.html">home</a>
-                </li>
-                <li>
-                    <a href="">></a>
-                </li>
-                <li>
-                    <a href="about.html" class="underline text-green1 ">aboutus</a>
-                </li>
-            </ul>
+          <ul class="text-gray-400">
+              <li>
+                  <a class="text-xs lg:text-sm" href="index.html">home</a>
+              </li>
+              <li>
+                  <a class="text-xs lg:text-sm" href="">></a>
+              </li>
+              <li>
+                  <a href="about.html" class="underline text-green1 text-xs lg:text-sm">aboutus</a>
+              </li>
+          </ul>     
         </div>
     </div>
 
-    <div class="pb-24" >
+    <div class="pb-10 lg:pb-24" >
       <div class="container">  
           <div class="grid grid-cols-12">
-            <div class="col-span-3 ">
-              <ul class="flex flex-col w-full sticky top-10">
+            <div class="lg:col-span-3 hidden lg:block">
+              <ul class="flex flex-col w-full sticky top-0 uppercase navigation pt-10">
                 <li>
-                  <a href="" class="flex items-center text-green1 text-xs tracking-widest pb-5"> 
-                    <img class="w-auto mr-3" src="images/svg/icon___dots__orange.svg" alt="">  
+                  <a href="#1" class="flex items-center text-gray-400 text-xs tracking-widest pb-5"> 
+                    <img class="w-auto mr-3 hidden" src="images/svg/icon___dots__orange.svg" alt="">  
                     OUR VISION AND MISSION</a>
                 </li>
                 <li>
-                  <a href="" class="flex items-center text-gray-400 text-xs tracking-widest	pb-5">OUR JOURNEY</a>
+                  <a href="#2" class="flex items-center text-gray-400 text-xs tracking-widest	pb-5">
+                    <img class="w-auto mr-3 hidden" src="images/svg/icon___dots__orange.svg" alt="">  
+                    OUR JOURNEY
+                  </a>
                 </li>
                 <li>
-                  <a href="" class="flex items-center text-gray-400  text-xs tracking-widest	pb-5">OUR PARTNERS</a>
+                  <a href="#3" class="flex items-center text-gray-400  text-xs tracking-widest	pb-5">
+                    <img class="w-auto mr-3 hidden" src="images/svg/icon___dots__orange.svg" alt="">  
+                    OUR PARTNERS
+                  </a>
                 </li>
                 <li>
-                  <a href="" class="flex items-center text-gray-400 text-xs tracking-widest	pb-5">MAPPING BUMITAMA</a>
+                  <a href="#4" class="flex items-center text-gray-400 text-xs tracking-widest	pb-5">
+                    <img class="w-auto mr-3 hidden" src="images/svg/icon___dots__orange.svg" alt="">  
+                    MAPPING BUMITAMA
+                  </a>
                 </li>
                 <li>
-                  <a href="" class="flex items-center text-gray-400 text-xs tracking-widest	pb-5">AWARDS</a>
+                  <a href="#5" class="flex items-center text-gray-400 text-xs tracking-widest	pb-5">
+                    <img class="w-auto mr-3 hidden" src="images/svg/icon___dots__orange.svg" alt="">  
+                    AWARDS
+                  </a>
                 </li>
               </ul>
             </div>
-            <div class="col-span-9 w-full pl-10">
+            <div class="col-span-12 lg:col-span-9 w-full lg:pl-10 ">
 
-                <div id="OurVision" class="mb-20">
-                    <h4 class="text-2xl text-green1 font-libre mb-14">Our Vision and Mission</h4>
-                    <div class="grid grid-cols-2 gap-x-24 gap-y-14">
-                        <div class="mb-10">
-                            <h5 class="mb-5 text-lg font-libre text-orange1">Vision</h5>
-                            <p>To be a leading CPO producer through continuous improvement, focus on productivity, cost efficiency, sustainability and growth.</p>
+                <div id="1" class="pt-10 mb-5 lg:mb-20 page-section">
+                    <h4 class="text-xl lg:text-2xl text-green1 font-libre mb-8 lg:mb-14 ">Our Vision and Mission</h4>
+                    <div class="grid grid-cols-1 lg:grid-cols-2 lg:gap-x-24 lg:gap-y-14 ml-5 lg:ml-0 w-11/12 lg:w-full">
+                        <div class="pt-5 lg:pt-0 border-t border-gray-300 lg:border-none ">
+                          <div class="mb-10">
+                              <h5 class="mb-5 text-lg font-libre text-orange1">Vision</h5>
+                              <p>To be a leading CPO producer through continuous improvement, focus on productivity, cost efficiency, sustainability and growth.</p>
+                          </div>                        
+                          <div class="mb-10">
+                              <h5 class="mb-5 text-lg font-libre text-orange1">How do we do it?</h5>
+                              <ul>
+                                  <li class="flex items-baseline mb-4">
+                                    <img class="w-auto mr-5" src="images/svg/icon__line.svg" alt="">
+                                      42% increase in RSPO certified volume since 2018.
+                                  </li>
+                                  <li class="flex items-baseline mb-4">
+                                    <img class="w-auto mr-5" src="images/svg/icon__line.svg" alt="">
+                                    4 additional mills RSPO certified in the last 2 years, taking our certified area to 44.5%.
+                                  </li>
+                                  <li class="flex items-baseline mb-4">
+                                    <img class="w-auto mr-5" src="images/svg/icon__line.svg" alt="">
+                                    98.8% of all FFB is traceable to plantation.
+                                  </li>
+                              </ul>
+                          </div>
                         </div>
-                        <div>
-                            <h5 class="mb-5 text-lg font-libre text-orange1">Mision</h5>
-                            <p>To enhance shareholders' value; to improve the benefits and quality of life of our employees; to improve the welfare of the local communities and the environment.
-                            </p>
-                        </div>
-                        <div class="mb-10">
-                            <h5 class="mb-5 text-lg font-libre text-orange1">How do we do it?</h5>
-                            <ul>
-                                <li class="flex items-center mb-4">
-                                   <img class="w-auto mr-5" src="images/svg/icon__line.svg" alt="">
-                                    42% increase in RSPO certified volume since 2018.
-                                </li>
-                                <li class="flex items-center mb-4">
-                                   <img class="w-auto mr-5" src="images/svg/icon__line.svg" alt="">
-                                   4 additional mills RSPO certified in the last 2 years, taking our certified area to 44.5%.
-                                </li>
-                                <li class="flex items-center mb-4">
-                                   <img class="w-auto mr-5" src="images/svg/icon__line.svg" alt="">
-                                   98.8% of all FFB is traceable to plantation.
-                                </li>
-                            </ul>
-                        </div>
-                        <div>
-                            <h5 class="mb-5 text-lg font-libre text-orange1">How do we do it?</h5>
-                            <ul>
-                                <li class="flex items-center mb-4">
-                                   <img class="w-auto mr-5" src="images/svg/icon__line.svg" alt="">
-                                   Total dividends will amount to S$0.024 per share for FY2020.
-                                </li>
-                                <li class="flex items-center mb-4">
-                                   <img class="w-auto mr-5" src="images/svg/icon__line.svg" alt="">
-                                   We benchmark and track our wages and benefits in line with the Indonesia national living wage.
-                                </li>
-                                <li class="flex items-center mb-4">
-                                   <img class="w-auto mr-5" src="images/svg/icon__line.svg" alt="">
-                                   Almost 30% of our planted area is dedicated to Plasma smallholders from local communities.
-                                </li>
-                            </ul>
+
+                        <div class="pt-5 lg:pt-0 border-t border-gray-300 lg:border-none ">
+                            <div class="mb-10">
+                              <h5 class="mb-5 text-lg font-libre text-orange1">Mision</h5>
+                              <p>To enhance shareholders' value; to improve the benefits and quality of life of our employees; to improve the welfare of the local communities and the environment.
+                              </p>
+                            </div>
+                              <div class="mb-10">
+                                  <h5 class="mb-5 text-lg font-libre text-orange1">How do we do it?</h5>
+                                  <ul>
+                                      <li class="flex items-baseline mb-4">
+                                        <img class="w-auto mr-5" src="images/svg/icon__line.svg" alt="">
+                                        Total dividends will amount to S$0.024 per share for FY2020.
+                                      </li>
+                                      <li class="flex items-baseline mb-4">
+                                        <img class="w-auto mr-5" src="images/svg/icon__line.svg" alt="">
+                                        We benchmark and track our wages and benefits in line with the Indonesia national living wage.
+                                      </li>
+                                      <li class="flex items-baseline mb-4">
+                                        <img class="w-auto mr-5" src="images/svg/icon__line.svg" alt="">
+                                        Almost 30% of our planted area is dedicated to Plasma smallholders from local communities.
+                                      </li>
+                                  </ul>
+                              </div>
+                            
                         </div>
                     </div>
                </div>
 
-                <div id="OurJourney" class="mb-20">
-                    <h4 class="text-2xl text-green1 font-libre mb-14">Our Journey</h4>
+                <div id="2" class="pt-10 mb-5 lg:mb-20 page-section  border-t border-b border-green1 lg:border-none">
+                    <h4 class="text-xl lg:text-2xl text-green1 font-libre mb-8 lg:mb-14">Our Journey</h4>
                     <div class="rounded-xl overflow-hidden my-10 shadow-md relative">
                         <img src="images/foto_about2.jpg" alt="">
                         <div class="absolute left-0 right-0 top-0 bottom-0 w-full m-auto cursor-pointer ytplay">
-                            <img class="absolute left-0 right-0 top-0 bottom-0 w-auto m-auto" src="images/svg/icon__play.svg" alt="">
+                            <img class="absolute left-0 right-0 top-0 bottom-0 w-12	lg:w-auto m-auto" src="images/svg/icon__play.svg" alt="">
                         </div>
                         <div class="absolute w-full h-full top-0 left-0 ytplayer hidden">
                             <iframe width="560" height="315" src="https://www.youtube.com/embed/eEaZvEZye84" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -186,219 +287,281 @@
                     </div> 
                </div>
 
-                <div id="OurPartners" class="mb-20">
-                    <h4 class="text-2xl text-green1 font-libre mb-14">Our Partners</h4>
-                   <ul>
-                       <li class="w-full cursor-pointer border-green1 border-t border-b py-5">
-                           <div class="flex justify-between font-libre">
+                <div id="3" class="pt-10 mb-5 lg:mb-20 page-section">
+                    <h4 class="text-xl lg:text-2xl text-green1 font-libre mb-8 lg:mb-14">Our Partners</h4>
+                   <ul class="accordion ml-5 lg:ml-0 w-11/12 lg:w-full">
+                       <li class="w-full cursor-pointer border-gray-300 lg:border-green1 border-t border-b ">
+                           <div class="flex justify-between font-libre toggleAccordion py-6">
                                 RSPO
-                                <img class="w-auto" src="images/svg/icon__arrow__bottom.svg" alt="">
+                                <img class="w-auto transform rotate-180" src="images/svg/icon__arrow__bottom.svg" alt="">
                            </div>
-                           <div class="grid grid-cols-12 gap-x-10 my-14">
-                                <ul class="col-span-7">
-                                    <li class="flex items-center mb-4">
+                           <div class="flex flex-row-reverse lg:grid grid-cols-12 lg:gap-x-10 mb-14 inner" style="display: grid;">
+                                <ul class="col-span-12 lg:col-span-7">
+                                    <li class="flex items-baseline mb-4">
                                         <img class="w-auto mr-5" src="images/svg/icon__line.svg" alt="">
                                         RSPO is the Roundtable on Sustainable Palm Oil who aims to unite the many stakeholders within the palm oil industry to develop and implement global standards for sustainable palm oil.
                                     </li>
-                                    <li class="flex items-center mb-4">
+                                    <li class="flex items-baseline mb-4">
                                         <img class="w-auto mr-5" src="images/svg/icon__line.svg" alt="">
                                         Member of the RSPO since 2007 and co-chair of the RSPO Complaints Panel
                                     </li>
-                                    <li class="flex items-center mb-4">
+                                    <li class="flex items-baseline mb-4">
                                         <img class="w-auto mr-5" src="images/svg/icon__line.svg" alt="">
                                         Member of the RSPO No Deforestation Task Force, the Peatlands Working Group, the Human Rights and Social Compliance Working Group, Shared Responsibility Working Group, Jurisdiction Working Group, Decent Living Wage Subgroup, Biodiversity High Conservation Value Working Group, and Standard Standing Committee.
                                     </li>
                                 </ul>
-                                <div class="col-span-5">
-                                    <img src="images/foto_about3.png" alt="">
+                                <div class="col-span-12 lg:col-span-5">
+                                    <img class="w-6/12 lg:w-auto m-auto" src="images/foto_about3.png" alt="">
                                 </div>
                            </div>
                        </li>
-                       <li class="w-full cursor-pointer border-green1 border-b py-6">
-                           <div class="flex justify-between font-libre">
+                       <li class="w-full cursor-pointer border-gray-300 lg:border-green1 border-b">
+                           <div class="flex justify-between font-libre toggleAccordion py-6">
                                 PONGO Alliance
                                 <img class="w-auto" src="images/svg/icon__arrow__bottom.svg" alt="">
                            </div>
+                           <div class="mb-14 inner">
+                              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia magnam suscipit expedita deleniti consequuntur soluta ullam. Ratione fuga dolores adipisci cum dolorum, doloremque nostrum, nihil praesentium unde dolor exercitationem distinctio?
+                            </div>
                        </li>
-                       <li class="w-full cursor-pointer border-green1 border-b py-6">
-                           <div class="flex justify-between font-libre">
+                       <li class="w-full cursor-pointer border-gray-300 lg:border-green1 border-b">
+                           <div class="flex justify-between font-libre toggleAccordion py-6">
                                 IDH – The Sustainable Trade Initiative
                                 <img class="w-auto" src="images/svg/icon__arrow__bottom.svg" alt="">
                            </div>
+                           <div class="mb-14 inner">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia magnam suscipit expedita deleniti consequuntur soluta ullam. Ratione fuga dolores adipisci cum dolorum, doloremque nostrum, nihil praesentium unde dolor exercitationem distinctio?
+                          </div>
                        </li>
-                       <li class="w-full cursor-pointer border-green1 border-b py-6">
-                           <div class="flex justify-between font-libre">
+                       <li class="w-full cursor-pointer border-gray-300 lg:border-green1 border-b">
+                           <div class="flex justify-between font-libre toggleAccordion py-6">
                                 Ketapang Production, Protection, Inclusion Compact
                                 <img class="w-auto" src="images/svg/icon__arrow__bottom.svg" alt="">
                            </div>
+                           <div class="mb-14 inner">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia magnam suscipit expedita deleniti consequuntur soluta ullam. Ratione fuga dolores adipisci cum dolorum, doloremque nostrum, nihil praesentium unde dolor exercitationem distinctio?
+                          </div>
                        </li>
-                       <li class="w-full cursor-pointer border-green1 border-b py-6">
-                           <div class="flex justify-between font-libre">
+                       <li class="w-full cursor-pointer border-gray-300 lg:border-green1 border-b">
+                           <div class="flex justify-between font-libre toggleAccordion py-6">
                                 Earthqualizer
                                 <img class="w-auto" src="images/svg/icon__arrow__bottom.svg" alt="">
                            </div>
+                           <div class="mb-14 inner">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia magnam suscipit expedita deleniti consequuntur soluta ullam. Ratione fuga dolores adipisci cum dolorum, doloremque nostrum, nihil praesentium unde dolor exercitationem distinctio?
+                          </div>
                        </li>
-                       <li class="w-full cursor-pointer border-green1 border-b py-6">
-                           <div class="flex justify-between font-libre">
+                       <li class="w-full cursor-pointer border-gray-300 lg:border-green1 border-b">
+                           <div class="flex justify-between font-libre toggleAccordion py-6">
                                 Institute of Agricultural Stiper Yogyakarta (INSTIPER) 
                                 <img class="w-auto" src="images/svg/icon__arrow__bottom.svg" alt="">
                            </div>
+                           <div class="mb-14 inner">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia magnam suscipit expedita deleniti consequuntur soluta ullam. Ratione fuga dolores adipisci cum dolorum, doloremque nostrum, nihil praesentium unde dolor exercitationem distinctio?
+                          </div>
                        </li>
-                       <li class="w-full cursor-pointer border-green1 border-b py-6">
-                           <div class="flex justify-between font-libre">
+                       <li class="w-full cursor-pointer border-gray-300 lg:border-green1 border-b">
+                           <div class="flex justify-between font-libre toggleAccordion py-6">
                                 National Development Agency (Bappenas)
                                 <img class="w-auto" src="images/svg/icon__arrow__bottom.svg" alt="">
                            </div>
+                           <div class="mb-14 inner">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia magnam suscipit expedita deleniti consequuntur soluta ullam. Ratione fuga dolores adipisci cum dolorum, doloremque nostrum, nihil praesentium unde dolor exercitationem distinctio?
+                          </div>
                        </li>
                    </ul>
                </div>
-
                
-               <div id="Mapping" class="mb-20">
-                    <h4 class="text-2xl text-green1 font-libre mb-14">Mapping Bumitama</h4>
-                    <div class="rounded-xl overflow-hidden my-10 shadow-md">
-                        <img src="images/foto_about4.jpg" alt="">
-                    </div> 
-                    <div class="font-libre">
-                        <p>
-                        We are based in Riau, Central and West Kalimantan and have corporate offices in Singapore and Jakarta.
-                        </p>
-                    </div>
-
-                    <div class="font-libre grid grid-cols-12 my-20">
-                        <div class="col-span-2 text-2xl">
-                            <ul class="flex flex-col sticky top-10">
-                                <li class="mb-10">
-                                    <a class="text-orange1" href="javascript:void(0);">2013</a>
-                                </li>
-                                <li class="mb-10">
-                                    <a class="text-gray-400" href="javascript:void(0);">2014</a>
-                                </li>
-                                <li class="mb-10">
-                                    <a class="text-gray-400" href="javascript:void(0);">2015</a>
-                                </li>
-                                <li class="mb-10">
-                                    <a class="text-gray-400" href="javascript:void(0);">2016</a>
-                                </li>
-                                <li class="mb-10">
-                                    <a class="text-gray-400" href="javascript:void(0);">2017</a>
-                                </li>
-                                <li class="mb-10">
-                                    <a class="text-gray-400" href="javascript:void(0);">2018</a>
-                                </li>
-                                <li class="mb-10">
-                                    <a class="text-gray-400" href="javascript:void(0);">2019</a>
-                                </li>
-                                <li class="mb-10">
-                                    <a class="text-gray-400" href="javascript:void(0);">2020</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="col-span-10 text-lg">
-                            <div class="text-orange1 pb-10">
-                                Received Forbes Asia 200 ‘Best Under A Billion’ Award.
-                            </div>
-                            <div class="pb-10">
-                                Received ‘Frost & Sullivan Indonesia Excellence’ Award.
-                            </div>
-                            <div class="pb-10">
-                                Received Asiamoney Award in 3 categories:
-                                <ul class="mt-5">
-                                    <li class="flex items-center mb-4">
-                                       <img class="w-auto mr-5" src="images/svg/icon__line.svg" alt="">
-                                       Best Overall for Corporate Governance
-                                    </li>
-                                    <li class="flex items-center mb-4">
-                                       <img class="w-auto mr-5" src="images/svg/icon__line.svg" alt="">
-                                       Best for Investor Relations
-                                    </li>
-                                    <li class="flex items-center mb-4">
-                                       <img class="w-auto mr-5" src="images/svg/icon__line.svg" alt="">
-                                       Best for Corporate Social Responsibility
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="pb-10">
-                                Received Asiamoney Award in 7 categories:
-                                <ul class="mt-5">
-                                    <li class="flex items-center mb-4">
-                                       <img class="w-auto mr-5" src="images/svg/icon__line.svg" alt="">
-                                       Best Managed Small Cap Company
-                                    </li>
-                                    <li class="flex items-center mb-4">
-                                       <img class="w-auto mr-5" src="images/svg/icon__line.svg" alt="">
-                                       Best Overall for Corporate Governance
-                                    </li>
-                                    <li class="flex items-center mb-4">
-                                       <img class="w-auto mr-5" src="images/svg/icon__line.svg" alt="">
-                                       Best for Disclosure and Transparency
-                                    </li>
-                                    <li class="flex items-center mb-4">
-                                       <img class="w-auto mr-5" src="images/svg/icon__line.svg" alt="">
-                                       Best for Shareholders’ Rights and Equitable Treatment
-                                    </li>
-                                    <li class="flex items-center mb-4">
-                                       <img class="w-auto mr-5" src="images/svg/icon__line.svg" alt="">
-                                       Best for Responsibilities of Management and the Board of Directors
-                                    </li>
-                                    <li class="flex items-center mb-4">
-                                       <img class="w-auto mr-5" src="images/svg/icon__line.svg" alt="">
-                                       Best for Investor Relations
-                                    </li>
-                                    <li class="flex items-center mb-4">
-                                       <img class="w-auto mr-5" src="images/svg/icon__line.svg" alt="">
-                                       Best for Corporate Social Responsibility
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="pb-10">
-                                Received Asiamoney Award in 3 categories:
-                                <ul class="mt-5">
-                                    <li class="flex items-center mb-4">
-                                       <img class="w-auto mr-5" src="images/svg/icon__line.svg" alt="">
-                                       Overall Most Outstanding Company in Singapore
-                                    </li>
-                                    <li class="flex items-center mb-4">
-                                       <img class="w-auto mr-5" src="images/svg/icon__line.svg" alt="">
-                                       Most Outstanding Company in Singapore (Small Cap)
-                                    </li>
-                                    <li class="flex items-center mb-4">
-                                       <img class="w-auto mr-5" src="images/svg/icon__line.svg" alt="">
-                                       Most Outstanding Company in Singapore (Consumer Staple)
-                                    </li>
-                                </ul>
-                            </div>                            
-                            <div class="pb-10">
-                                Awarded the ‘Most Profitable Company’ (Agriculture Sector) from The Edge Billion Dollar Club, 3 years in a row from 2017 to 2019.
-                            </div>
-                            <div class="pb-10">
-                                Received Asiamoney Award in 2 categories:
-                                <ul class="mt-5">
-                                    <li class="flex items-center mb-4">
-                                        <img class="w-auto mr-5" src="images/svg/icon__line.svg" alt="">
-                                        Most Outstanding Company in Singapore (Small Cap)
-                                    </li>
-                                    <li class="flex items-center mb-4">
-                                        <img class="w-auto mr-5" src="images/svg/icon__line.svg" alt="">
-                                        Most Outstanding Company in Singapore for the decade 2010 – 2019.
-                                    </li>
-                                </ul>
-                            </div>                            
-                            <div class="pb-10">
-                                Received Distinguished Member of ‘Singapore’s Fastest Growing Companies 2020’ from The Straits Times Certificate.
-                            </div>
-                            <div class="pb-10">
-                                FT High-Growth Companies Asia-Pacific 2020 from the Financial Times.
-                            </div>
-                            <div class="pb-10">
-                                Received Asiamoney award for Most Outstanding Company in Singapore (Consumer Staple).
-                            </div>
-                        </div>
+               <div id="4" class="pt-10 mb-5 lg:mb-20 page-section">
+                    <h4 class="text-xl lg:text-2xl text-green1 font-libre mb-8 lg:mb-14">Mapping Bumitama</h4>
+                    <div class="ml-5 lg:ml-0 w-11/12 lg:w-full">
+                      <div class="rounded-xl overflow-hidden my-10 shadow-md">
+                          <img src="images/foto_about4.jpg" alt="">
+                      </div> 
+                      <div class="font-libre">
+                          <p>
+                          We are based in Riau, Central and West Kalimantan and have corporate offices in Singapore and Jakarta.
+                          </p>
+                      </div>                    
                     </div>
                 </div>
+
+               <div id="5" class="pt-10 mb-5 lg:mb-20 page-section">
+                <h4 class="text-xl lg:text-2xl text-green1 font-libre mb-8 lg:mb-14">Awards</h4>
+                  <div class="font-libre grid grid-cols-12">
+                    <div class="col-span-2 text-2xl hidden lg:block">
+                        <ul class="flex flex-col sticky top-10 navigation-year ">
+                            <li class="mb-10">
+                                <a class="text-gray-400" href="#1year">2013</a>
+                            </li>
+                            <li class="mb-10">
+                                <a class="text-gray-400" href="#2year">2014</a>
+                            </li>
+                            <li class="mb-10">
+                                <a class="text-gray-400" href="#3year">2015</a>
+                            </li>
+                            <li class="mb-10">
+                                <a class="text-gray-400" href="#4year">2016</a>
+                            </li>
+                            <li class="mb-10">
+                                <a class="text-gray-400" href="#5year">2017</a>
+                            </li>
+                            <li class="mb-10">
+                                <a class="text-gray-400" href="#6year">2018</a>
+                            </li>
+                            <li class="mb-10">
+                                <a class="text-gray-400" href="#7year">2019</a>
+                            </li>
+                            <li class="mb-10">
+                                <a class="text-gray-400" href="#8year">2020</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-span-12 lg:col-span-10 text-lg ml-5 lg:ml-0 w-11/12 lg:w-full accordion border-t border-gray-300 lg:border-none">
+                        <div class="py-4 lg:pb-10 page-section-year lg:pt-0 border-b border-gray-300 lg:border-none" id="#1year">
+                            <span class="flex items-center block lg:hidden toggleAccordion">
+                              2013
+                              <img class="w-auto ml-3 arrowhistory" src="images/svg/icon__arrow__bottom__green.svg" alt="">
+                            </span>
+                            <div class="innerm innerm--history py-5 lg:py-0">
+                              Received Forbes Asia 200 ‘Best Under A Billion’ Award.
+                            </div>
+                        </div>
+                        <div class="py-4 lg:pb-10 page-section-year lg:pt-0 border-b border-gray-300 lg:border-none" id="#2year">
+                          <span class="flex items-center block lg:hidden toggleAccordion">
+                            2014
+                            <img class="w-auto ml-3 arrowhistory" src="images/svg/icon__arrow__bottom__green.svg" alt="">
+                          </span>
+                          <div class="innerm innerm--history py-5 lg:py-0">
+                            Received ‘Frost & Sullivan Indonesia Excellence’ Award.
+                           </div>
+                        </div>
+                        <div class="py-4 lg:pb-10 page-section-year lg:pt-0 border-b border-gray-300 lg:border-none" id="#3year">
+                          <span class="flex items-center block lg:hidden toggleAccordion">
+                            2015
+                            <img class="w-auto ml-3 arrowhistory" src="images/svg/icon__arrow__bottom__green.svg" alt="">
+                          </span>
+                          <div class="innerm innerm--history py-5 lg:py-0">
+                            Received Asiamoney Award in 3 categories:
+                            <ul class="mt-5">
+                                <li class="flex items-baseline mb-4">
+                                  <img class="w-auto mr-5" src="images/svg/icon__line.svg" alt="">
+                                  Best Overall for Corporate Governance
+                                </li>
+                                <li class="flex items-baseline mb-4">
+                                  <img class="w-auto mr-5" src="images/svg/icon__line.svg" alt="">
+                                  Best for Investor Relations
+                                </li>
+                                <li class="flex items-baseline mb-4">
+                                  <img class="w-auto mr-5" src="images/svg/icon__line.svg" alt="">
+                                  Best for Corporate Social Responsibility
+                                </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="py-4 lg:pb-10 page-section-year lg:pt-0 border-b border-gray-300 lg:border-none" id="#4year">
+                          <span class="flex items-center block lg:hidden toggleAccordion">
+                            2016
+                            <img class="w-auto ml-3 arrowhistory" src="images/svg/icon__arrow__bottom__green.svg" alt="">
+                          </span>
+                          <div class="innerm innerm--history py-5 lg:py-0">
+                            Received Asiamoney Award in 7 categories:
+                            <ul class="mt-5">
+                                <li class="flex items-baseline mb-4">
+                                  <img class="w-auto mr-5" src="images/svg/icon__line.svg" alt="">
+                                  Best Managed Small Cap Company
+                                </li>
+                                <li class="flex items-baseline mb-4">
+                                  <img class="w-auto mr-5" src="images/svg/icon__line.svg" alt="">
+                                  Best Overall for Corporate Governance
+                                </li>
+                                <li class="flex items-baseline mb-4">
+                                  <img class="w-auto mr-5" src="images/svg/icon__line.svg" alt="">
+                                  Best for Disclosure and Transparency
+                                </li>
+                                <li class="flex items-baseline mb-4">
+                                  <img class="w-auto mr-5" src="images/svg/icon__line.svg" alt="">
+                                  Best for Shareholders’ Rights and Equitable Treatment
+                                </li>
+                                <li class="flex items-baseline mb-4">
+                                  <img class="w-auto mr-5" src="images/svg/icon__line.svg" alt="">
+                                  Best for Responsibilities of Management and the Board of Directors
+                                </li>
+                                <li class="flex items-baseline mb-4">
+                                  <img class="w-auto mr-5" src="images/svg/icon__line.svg" alt="">
+                                  Best for Investor Relations
+                                </li>
+                                <li class="flex items-baseline mb-4">
+                                  <img class="w-auto mr-5" src="images/svg/icon__line.svg" alt="">
+                                  Best for Corporate Social Responsibility
+                                </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="py-4 lg:pb-10 page-section-year lg:pt-0 border-b border-gray-300 lg:border-none" id="#5year">
+                          <span class="flex items-center block lg:hidden toggleAccordion">
+                            2017
+                            <img class="w-auto ml-3 arrowhistory" src="images/svg/icon__arrow__bottom__green.svg" alt="">
+                          </span>
+                          <div class="innerm innerm--history py-5 lg:py-0">
+                            Received Asiamoney Award in 3 categories:
+                            <ul class="mt-5">
+                                <li class="flex items-baseline mb-4">
+                                  <img class="w-auto mr-5" src="images/svg/icon__line.svg" alt="">
+                                  Overall Most Outstanding Company in Singapore
+                                </li>
+                                <li class="flex items-baseline mb-4">
+                                  <img class="w-auto mr-5" src="images/svg/icon__line.svg" alt="">
+                                  Most Outstanding Company in Singapore (Small Cap)
+                                </li>
+                                <li class="flex items-baseline mb-4">
+                                  <img class="w-auto mr-5" src="images/svg/icon__line.svg" alt="">
+                                  Most Outstanding Company in Singapore (Consumer Staple)
+                                </li>
+                            </ul>
+                          </div>
+                        </div>                            
+                        <div class="py-4 lg:pb-10 page-section-year lg:pt-0 border-b border-gray-300 lg:border-none" id="#6year">
+                          <span class="flex items-center block lg:hidden toggleAccordion">
+                            2018
+                            <img class="w-auto ml-3 arrowhistory" src="images/svg/icon__arrow__bottom__green.svg" alt="">
+                          </span>
+                          <div class="innerm innerm--history py-5 lg:py-0">
+                            Awarded the ‘Most Profitable Company’ (Agriculture Sector) from The Edge Billion Dollar Club, 3 years in a row from 2017 to 2019.
+                          </div>
+                        </div>
+                        <div class="py-4 lg:pb-10 page-section-year lg:pt-0 border-b border-gray-300 lg:border-none" id="#7year">
+                          <span class="flex items-center block lg:hidden toggleAccordion">
+                            2019
+                            <img class="w-auto ml-3 arrowhistory" src="images/svg/icon__arrow__bottom__green.svg" alt="">
+                          </span>
+                          <div class="innerm innerm--history py-5 lg:py-0">
+                            Received Asiamoney Award in 2 categories:
+                            <ul class="mt-5">
+                                <li class="flex items-baseline mb-4">
+                                    <img class="w-auto mr-5" src="images/svg/icon__line.svg" alt="">
+                                    Most Outstanding Company in Singapore (Small Cap)
+                                </li>
+                                <li class="flex items-baseline mb-4">
+                                    <img class="w-auto mr-5" src="images/svg/icon__line.svg" alt="">
+                                    Most Outstanding Company in Singapore for the decade 2010 – 2019.
+                                </li>
+                            </ul>
+                          </div>
+                        </div>                            
+                        <div class="py-4 lg:pb-10 page-section-year lg:pt-0 border-b border-gray-300 lg:border-none" id="#8year">
+                          <span class="flex items-center block lg:hidden toggleAccordion">
+                            2020
+                            <img class="w-auto ml-3 arrowhistory" src="images/svg/icon__arrow__bottom__green.svg" alt="">
+                          </span>
+                          <div class="innerm innerm--history py-5 lg:py-0">
+                            Received Distinguished Member of ‘Singapore’s Fastest Growing Companies 2020’ from The Straits Times Certificate.
+                          </div>
+                        </div>
+                    </div>
+                  </div>       
+                </div>
             
-
-
             </div> 
             
           
@@ -406,11 +569,12 @@
         </div>
     </div>
 
-    <div class="footer bg-green2 text-white pt-14 pb-10 text-xs">
+    <div class="footer bg-green2 text-white pt-10 lg:pt-14 pb-10 text-xs">
       <div class="container">
-        <div class="grid grid-cols-12">          
-          <div class="col-span-5">
-            <div class="mb-10">
+        <div class="grid grid-cols-12 accordion">          
+          <div class="col-span-12 lg:col-span-5">
+            <img class="w-auto block lg:hidden mb-10" src="images/logo-white.png" alt="">
+            <div class="lg:mb-10">
               <h4 class="text-lg mb-4">Contact Us</h4>              
               <p><strong>All Enquiries:</strong> general@bumitama-agri.com (+65 6222 1332)</p>
               <div class="mt-2">
@@ -424,7 +588,7 @@
             </div>
 
             <div>
-              <h4 class="text-lg mb-4">Current Share Price</h4>
+              <h4 class="text-lg mb-3">Current Share Price</h4>
               <p><strong> 22 June 2021 5.30pm SGT</strong></p>
             </div>
 
@@ -438,124 +602,145 @@
             </div>
 
           </div>
-          <div class="col-span-7 grid grid-cols-12 gap-x-10">
-            <div class="col-span-9">
-              <div class="grid grid-cols-3 gap-x-10">
-                <div class="mb-10">
-                 <h4 class="text-lg mb-4">About Us</h4>
-                 <ul class="flex flex-col gap-y-3">
-                   <li>
+          <div class="col-span-12 lg:col-span-7 grid grid-cols-12 lg:gap-x-10 my-5 lg:my-0 py-8 lg:pt-0 border-t border-b border-gray-500 lg:border-none">
+            <div class="col-span-12 lg:col-span-9">
+              <div class="grid lg:grid-cols-3 lg:gap-x-10">
+                <div class="lg:mb-10">
+                 <h4 class="text-lg mb-4 flex items-center toggleAccordion">
+                   About Us 
+                   <img class="w-auto ml-3 block lg:hidden" src="images/svg/icon__arrow__bottom__white.svg" alt="">
+                  </h4>
+                 <ul class="flex flex-col innerm mb-8 lg:mb-0 list__block">
+                   <li class="py-1">
                      <a href="">Journey</a>
                    </li>
-                   <li>
+                   <li class="py-1">
                      <a href="">Partners</a>
                    </li>
-                   <li>
+                   <li class="py-1">
                      <a href="">Mapping Bumitama</a>
                    </li>
-                   <li>
+                   <li class="py-1">
                      <a href="">Awards</a>
                    </li>
                  </ul>
                 </div>
-                <div class="mb-10">
-                 <h4 class="text-lg mb-4">Our Business</h4>
-                 <ul class="flex flex-col gap-y-3">
-                   <li>
+                <div class="lg:mb-10">
+                 <h4 class="text-lg mb-4 flex items-center toggleAccordion">
+                   Our Business
+                   <img class="w-auto ml-3 block lg:hidden" src="images/svg/icon__arrow__bottom__white.svg" alt="">
+                  </h4>
+                 <ul class="flex flex-col innerm mb-8 lg:mb-0 list__block">
+                   <li class="py-1">
                      <a href="">Product</a>
                    </li>
-                   <li>
+                   <li class="py-1">
                      <a href="">Plantations</a>
                    </li>
-                   <li>
+                   <li class="py-1">
                      <a href="">Research and Development</a>
                    </li>
                  </ul>
                 </div>
-                <div class="mb-10">
-                 <h4 class="text-lg mb-4">Investors</h4>
-                 <ul class="flex flex-col gap-y-3">
-                   <li>
+                <div class="lg:mb-10">
+                 <h4 class="text-lg mb-4 flex items-center toggleAccordion">
+                   Investors
+                   <img class="w-auto ml-3 block lg:hidden" src="images/svg/icon__arrow__bottom__white.svg" alt="">
+                  </h4>
+                 <ul class="flex flex-col innerm mb-8 lg:mb-0 list__block">
+                   <li class="py-1">
                      <a href="">Share Information</a>
                    </li>
-                   <li>
+                   <li class="py-1">
                      <a href="">Reporting</a>
                    </li>
-                   <li>
+                   <li class="py-1">
                      <a href="">Measures</a>
                    </li>
-                   <li>
+                   <li class="py-1">
                      <a href="">Announcements</a>
                    </li>
                  </ul>
                 </div>
    
                </div>    
-               <div class="grid grid-cols-3 gap-x-10">
-                 <div class="mb-10">
-                   <h4 class="text-lg mb-4">Information</h4>
-                   <ul class="flex flex-col gap-y-3">
-                     <li>
+               <div class="grid lg:grid-cols-3 lg:gap-x-10">
+                 <div class="lg:mb-10">
+                   <h4 class="text-lg mb-4 flex items-center toggleAccordion">
+                     Information
+                     <img class="w-auto ml-3 block lg:hidden" src="images/svg/icon__arrow__bottom__white.svg" alt="">
+                    </h4>
+                   <ul class="flex flex-col innerm mb-8 lg:mb-0 list__block">
+                     <li class="py-1">
                        <a href="">Careers</a>
                      </li>
                    </ul>
                  </div>
-                <div class="mb-10">
-                 <h4 class="text-lg mb-4">Governance</h4>
-                 <ul class="flex flex-col gap-y-3">
-                   <li>
+                <div class="lg:mb-10">
+                 <h4 class="text-lg mb-4 flex items-center toggleAccordion">
+                   Governance
+                   <img class="w-auto ml-3 block lg:hidden" src="images/svg/icon__arrow__bottom__white.svg" alt="">
+                  </h4>
+                 <ul class="flex flex-col innerm mb-8 lg:mb-0 list__block">
+                   <li class="py-1">
                      <a href="">Board of Directors</a>
                    </li>
-                   <li>
+                   <li class="py-1">
                      <a href="">Board Committees</a>
                    </li>
-                   <li>
+                   <li class="py-1">
                      <a href="">Management Team</a>
                    </li>
-                   <li>
+                   <li class="py-1">
                      <a href="">Corporate Governance</a>
                    </li>
                  </ul>
                 </div>
-                <div class="mb-10">
-                 <h4 class="text-lg mb-4">News & Media</h4>
-                 <ul class="flex flex-col gap-y-3">
-                   <li>
+                <div class="lg:mb-10">
+                 <h4 class="text-lg mb-4 flex items-center toggleAccordion">
+                   News & Media
+                   <img class="w-auto ml-3 block lg:hidden" src="images/svg/icon__arrow__bottom__white.svg" alt="">
+                  </h4>
+                 <ul class="flex flex-col innerm mb-8 lg:mb-0 list__block">
+                   <li class="py-1">
                      <a href="">From Us</a>
                    </li>
-                   <li>
+                   <li class="py-1">
                      <a href="">In the Media</a>
                    </li>
                  </ul>
                 </div>
                </div>
             </div>
-            <div class="col-span-3">
-              <div class="mb-10">
-                <h4 class="text-lg mb-4">Sustainability</h4>
-                <ul class="flex flex-col gap-y-3">
-                  <li>
+            <div class="col-span-12 lg:col-span-3">
+              <div class="lg:mb-10">
+                <h4 class="text-lg mb-4 flex items-center toggleAccordion">
+                  Sustainability
+                  <img class="w-auto ml-3 block lg:hidden" src="images/svg/icon__arrow__bottom__white.svg" alt="">
+                </h4>
+                <ul class="flex flex-col innerm mb-8 lg:mb-0 list__block">
+                  <li class="py-1">
                     <a href="">Environment</a>
                   </li>
-                  <li>
+                  <li class="py-1">
                     <a href="">Community</a>
                   </li>
-                  <li>
+                  <li class="py-1">
                     <a href="">Employees</a>
                   </li>
-                  <li>
+                  <li class="py-1">
                     <a href="">Responsible Sourcing</a>
                   </li>
-                  <li>
+                  <li class="py-1">
                     <a href="">Certifications</a>
                   </li>
-                  <li>
+                  <li class="py-1">
                     <a href="">Policies</a>
                   </li>
-                  <li>
+                  <li class="py-1">
                     <a href="">Reporting</a>
                   </li>
-                  <li>
+                  <li class="py-1">
                     <a href="">Announcements</a>
                   </li>
                 </ul>
@@ -567,7 +752,7 @@
         <div class="flex justify-between mt-5 items-center">
           <p>© 2021 Bumitama Agri. All Rights Reserved.</p>
 
-          <img class="w-auto" src="images/logo-white.png" alt="">
+          <img class="w-auto hidden lg:block" src="images/logo-white.png" alt="">
         </div>
       </div>
     </div>

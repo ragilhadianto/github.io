@@ -81,6 +81,12 @@
     -webkit-box-orient: vertical;
     display: -webkit-box !important;
   }
+  &__wrap4{
+    overflow: hidden;
+    -webkit-line-clamp:4;
+    -webkit-box-orient: vertical;
+    display: -webkit-box !important;
+  }
 }
 
 
@@ -119,6 +125,17 @@
       list-style: disc;
       display: list-item;
       margin: 0 0 0 20px;
+    }
+  }
+  ul.square  {
+    li {
+      list-style-type: square;
+      display: list-item;
+      margin: 0 0 0 20px;
+
+      &::marker{
+        color:#a4a6a7;
+      }
     }
   }
   ol {

@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Nunito+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/tailwind.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Bumitama Agri</title>
+  </head>
+  <body>
+
+    <div class="header">
+      <div class="container">
+        <div class="flex justify-between items-center  pt-5 pb-24">       
+          <div class="logo">
+            <a href="index.html">
+              <img class="w-60 lg:w-72" src="images/logo.png" alt="">
+            </a>
+          </div>        
+          <div class="header__menu p-5 lg:p-0 lg:ml-5 lg:block lg:relative w-full lg:w-auto h-screen lg:h-auto left-0 top-0 right-0 bg-brokenwhite lg:bg-transparent z-50 flex flex-wrap content-between">
+            <div class="w-full">
+              <div class="lg:hidden flex justify-between items-center ">
+                <a href="index.html" class="header__sub__logo">
+                  <img class="w-60 lg:w-auto" src="images/logo.png" alt="">
+                </a>
+                <div class="menuMobileBack header__sub hidden">
+                  <img class="w-auto" src="images/svg/icon__menu__back.svg" alt="">
+                </div>
+                <div class="text-xl header__sub hidden">
+                  <a href="sustainability.html">Sustainability</a>
+                </div>            
+                <div class="menuMobileClose">
+                  <img class="w-auto" src="images/svg/icon__menu__close.svg" alt="">
+                </div>
+              </div>    
+              <ul class="text-green1 flex lg:gap-x-10 flex-col lg:flex-row mt-10 lg:mt-0 relative lg:static ">
+                <li>
+                  <a class="hover text-lg py-3 lg:py-0 lg:text-base" href="about.html">About Us</a>
+                </li>
+                <li>
+                  <a class="hover text-lg py-3 lg:py-0 lg:text-base" href="business.html">Our Business</a>
+                </li>
+                <li class="dropdown ">
+                  <a class="dropbtn dropbtn__sub hover text-lg py-3 lg:py-0 lg:text-base flex items-center" href="sustainability.html">
+                    Sustainability
+                    <img class="transform -rotate-90 lg:rotate-0" style="width: 15px;margin-left: 5px;" src="images/svg/icon__arrow__bottom.svg" alt="">
+                  </a>
+                  <div class="header__menu__sub dropdown-content w-full lg:w-auto  flex-col lg:rounded-xl text-base lg:px-4 py-3">
+                    <a class="py-3 lg:py-1" href="environment.html">Environment</a>
+                    <a class="py-3 lg:py-1" href="community.html">Community</a>
+                    <a class="py-3 lg:py-1" href="workplace.html">Workplace</a>
+                    <a class="py-3 lg:py-1" href="#">Responsible Sourcing</a>
+                    <a class="py-3 lg:py-1" href="#">Certifications</a>
+                    <a class="py-3 lg:py-1" href="policies-reports.html">Policies & Reports</a>
+                  </div>
+                </li>
+                <li>
+                  <a class="hover text-lg py-3 lg:py-0 lg:text-base" href="investor.html">Investor</a>
+                </li>
+                <li>
+                  <a class="hover text-lg py-3 lg:py-0 lg:text-base" href="news.html">News & Media</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="text-gray-400 w-full lg:hidden">
+              <ul class="flex flex-col mb-3 pb-3 border-b border-gray-400">
+                <li>
+                  <a href="" class="mb-3">Contact</a>
+                </li>
+                <li>
+                  <a href="" class="mb-3">Terms & Conditions</a>
+                </li>
+              </ul>
+              <small>© 2021 Bumitama Agri. All Rights Reserved.</small>
+            </div>
+          </div>
+          
+          <div class="flex items-center gap-x-2"> 
+            <div class="cursor-pointer dropdown relative ">
+              <div class="dropbtn dropbtn__search p-2">
+                <img class="w-auto lg:w-4" src="images/svg/icon__search.svg" alt="">
+              </div>
+              <div class="sub__search dropdown-content p-5  w-full lg:w-auto flex-col lg:rounded-xl text-base lg:px-4 lg:py-3">
+                <div class="lg:hidden flex justify-between items-center ">
+                  <a href="index.html" class="header__sub__logo">
+                    <img class="w-60 lg:w-auto" src="images/logo.png" alt="">
+                  </a>           
+                  <div class="menuMobileClose">
+                    <img class="w-auto" src="images/svg/icon__menu__close.svg" alt="">
+                  </div>
+                </div>    
+                  <form action="" class="relative mt-10 lg:mt-0">
+                    <input class="w-full lg:w-auto bg-transparent p-2 border-b lg:border-green1 border-gray-400" type="text" placeholder="Enter keyword">
+                    <button class="absolute right-0 top-0 bottom-0 m-auto pl-5">
+                      <img style="width: 15px;" class=" transform -rotate-90 hidden lg:block" src="images/svg/icon__arrow__bottom.svg" alt="">
+                      <img class="w-auto lg:hidden" src="images/svg/icon__search__grey.svg" alt="">
+                    </button>
+                  </form>
+              </div>
+            </div>
+            
+            <!-- mobile -->
+            <div class="menuMobile">
+              <img class="w-auto" src="images/svg/icon__menu__m.svg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="h-3/6	 lg:h-4/5 w-full overflow-hidden items-end flex bg-cover" style="background-image: url(images/hero__sustainability.jpg);">
+      <div class="container">
+        <h3 class="font-libre text-white w-1/2 text-xl lg:text-4xl	leading-10 tracking-wide mb-5 lg:mb-20">Sustainability
+          </h3>
+      </div>
+    </div>
+    
+    <div class="bg-brokenwhite bg-cover bg-right-top bg-no-repeat py-10 lg:py-24">
+      <div class="container">
+
+        <div class="breadcum mb-10 lg:hidden">
+          <ul class="text-gray-400">
+              <li>
+                  <a class="text-xs lg:text-sm" href="index.html">home</a>
+              </li>
+              <li>
+                  <a class="text-xs lg:text-sm" href="">></a>
+              </li>
+              <li>
+                  <a href="sustainability.html" class="underline text-green1 text-xs lg:text-sm">sustainability</a>
+              </li>
+          </ul>
+        </div>
+
+       <div class="w-full lg:w-4/6">      
+          <h4 class="text-xl lg:text-2xl font-libre">“We are strategically positioned to make a positive difference.” 
+            — Mr. Gunawan. CEO</h4>
+          <br/>
+          <br/>
+          <p>Over the years, we have made steady progress in our sustainability journey. While remaining focused on our certification programme, we continue to work with suppliers on traceable and responsible sourcing, to engage experts on strengthening existing sustainable land use initiatives and to partner with communities in innovative ways of fire prevention and socio-economic activities.</p>      
+       </div>
+      </div>
+    </div>
+
+    <div class="breadcum my-10 lg:my-16 hidden lg:block">
+        <div class="container">
+            <ul class="text-gray-400">
+                <li>
+                    <a class="text-xs lg:text-sm" href="index.html">home</a>
+                </li>
+                <li>
+                    <a class="text-xs lg:text-sm" href="">></a>
+                </li>
+                <li>
+                    <a href="sustainability.html" class="underline text-green1 text-xs lg:text-sm">sustainability</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="pb-10 lg:mb-20 bg-contain bg-right-bottom lg:bg-right-top bg-no-repeat" style="background-image: url(images/bg3.png);" >
+      <div class="container ">  
+          <div class="border-b border-green1 pb-10 lg:pb-32"> 
+            <h2 class="font-libre text-2xl lg:text-4xl lg:mb-20">Latest Publication</h2>
+            <div class="flex mt-10 block lg:hidden">
+              <a class="flex text-orange1 gap-3 uppercase hover text-xs flex items-center" href="http://" target="_blank" rel="noopener noreferrer">
+                <img class="w-auto" src="images/svg/icon__arrow__orange.svg" alt="">
+                SEE ALL
+              </a>
+            </div>
+            <div class="grid grid-cols-12">
+
+              <div class="col-span-12 lg:col-span-3 lg:border-r border-green1 flex flex-wrap content-between h-full">
+                <ul class="flex lg:flex-col overflow-x-scroll lg:overflow-hidden w-full my-8" id="nav">
+                  <li class="flex-shrink-0	mr-5"> 
+                    <a href="javascript:void(0);" class="block text-gray-400 hover text-xs tracking-widest	pb-5 active text-orange1">POLICIES</a>
+                  </li>
+                  <li class="flex-shrink-0	mr-5"> 
+                    <a href="javascript:void(0);" class="block text-gray-400 hover text-xs tracking-widest	pb-5">REPORTING</a>
+                  </li>
+                  <li class="flex-shrink-0	mr-5"> 
+                    <a href="javascript:void(0);" class="block text-gray-400 hover text-xs tracking-widest	pb-5">ANNOUNCEMENTS</a>
+                  </li>
+                </ul>
+
+                <div class="flex w-full hidden lg:block">
+                  <a class="flex text-orange1 gap-3 uppercase hover" href="http://" target="_blank" rel="noopener noreferrer">
+                    <img class="w-auto" src="images/svg/icon__arrow__orange.svg" alt="">
+                    SEE ALL
+                  </a>
+                </div>
+
+              </div>
+              <div class="col-span-12 lg:col-span-9  w-full lg:pl-10" id="tab-content">
+                <div id="tab1" class="grid grid-cols-1 lg:grid-cols-2">
+                  <div>
+                  <div class="h-full flex flex-wrap content-between">
+                    <div>
+                        <h4 class="text-xl lg:text-2xl text-orange1 font-libre mb-3 lg:mb-8">First quarter presentation slides — key updates</h4>
+                        <small class="mb-5 block">Januari 2019</small>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus euismod nibh orci, sed dolor egestas elementum interdum vulputate. Dolor aenean quis fermentum sit risus lorem. Mattis hendrerit viverra. Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                    </div>
+                    <div class="flex mt-5 hidden lg:block">
+                      <a class="flex bg-orange1 text-white gap-3 uppercase px-4 py-3 rounded-full text-xs flex items-center hover" href="http://" target="_blank" rel="noopener noreferrer">
+                      Download
+                      <img class="w-auto" src="images/svg/icon__download.svg" alt="">
+                      </a>
+                    </div>
+                  </div>
+                  </div>
+                  <div class="mt-10 pr-20 lg:pl-20">
+                    <div class="overflow-hidden shadow-md">
+                      <img src="images/foto5.jpg" alt="">
+                    </div>
+                    <div class="flex mt-5 block lg:hidden">
+                      <a class="flex bg-orange1 text-white gap-3 uppercase px-4 py-3 rounded-full text-xs flex items-center hover" href="http://" target="_blank" rel="noopener noreferrer">
+                      Download
+                      <img class="w-auto" src="images/svg/icon__download.svg" alt="">
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div id="tab2" class="grid grid-cols-1 lg:grid-cols-2">
+                  <div>
+                  <div class="h-full flex flex-wrap content-between">
+                    <div>
+                        <h4 class="text-xl lg:text-2xl text-orange1 font-libre mb-3 lg:mb-8">tab2 First quarter presentation slides — key updates</h4>
+                        <small class="mb-5 block">Januari 2019</small>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus euismod nibh orci, sed dolor egestas elementum interdum vulputate. Dolor aenean quis fermentum sit risus lorem. Mattis hendrerit viverra. Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                    </div>
+                    <div class="flex mt-5 hidden lg:block">
+                      <a class="flex bg-orange1 text-white gap-3 uppercase px-4 py-3 rounded-full text-xs flex items-center hover" href="http://" target="_blank" rel="noopener noreferrer">
+                      Download
+                      <img class="w-auto" src="images/svg/icon__download.svg" alt="">
+                      </a>
+                    </div>
+                  </div>
+                  </div>
+                  <div  class="mt-10 pr-20 lg:pl-20">
+                    <div class="overflow-hidden shadow-md">
+                      <img src="images/foto5.jpg" alt="">
+                    </div>
+                    <div class="flex mt-5 block lg:hidden">
+                      <a class="flex bg-orange1 text-white gap-3 uppercase px-4 py-3 rounded-full text-xs flex items-center hover" href="http://" target="_blank" rel="noopener noreferrer">
+                      Download
+                      <img class="w-auto" src="images/svg/icon__download.svg" alt="">
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div id="tab3" class="grid grid-cols-1 lg:grid-cols-2">
+                  <div>
+                  <div class="h-full flex flex-wrap content-between">
+                    <div>
+                        <h4 class="text-xl lg:text-2xl text-orange1 font-libre mb-3 lg:mb-8">tab3 First quarter presentation slides — key updates</h4>
+                        <small class="mb-5 block">Januari 2019</small>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus euismod nibh orci, sed dolor egestas elementum interdum vulputate. Dolor aenean quis fermentum sit risus lorem. Mattis hendrerit viverra. Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                    </div>
+                    <div class="flex mt-5 hidden lg:block">
+                      <a class="flex bg-orange1 text-white gap-3 uppercase px-4 py-3 rounded-full text-xs flex items-center hover" href="http://" target="_blank" rel="noopener noreferrer">
+                      Download
+                      <img class="w-auto" src="images/svg/icon__download.svg" alt="">
+                      </a>
+                    </div>
+                  </div>
+                  </div>
+                  <div  class="mt-10 pr-20 lg:pl-20">
+                    <div class="overflow-hidden shadow-md">
+                      <img src="images/foto5.jpg" alt="">
+                    </div>
+                    <div class="flex mt-5 block lg:hidden">
+                      <a class="flex bg-orange1 text-white gap-3 uppercase px-4 py-3 rounded-full text-xs flex items-center hover" href="http://" target="_blank" rel="noopener noreferrer">
+                      Download
+                      <img class="w-auto" src="images/svg/icon__download.svg" alt="">
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>           
+            </div>
+          </div>
+      </div>
+    </div>
+
+
+    <div class="pb-10 lg:pb-24">
+      <div class="container">  
+          <div>
+            <h2 class="font-libre text-2xl lg:text-4xl mb-10 lg:mb-20">Sustainability</h2>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-5 lg:gap-10">
+
+              <div class="grid grid-cols-7 border border-gray-300 rounded-xl overflow-hidden">                
+                <div class="col-span-4 p-4 lg:p-8 flex flex-wrap content-between flex flex-wrap content-between">
+                    <div>
+                      <h3 class="mb-5 text-base lg:text-xl font-libre ">Environtment</h3>
+                      <p class="text-xs lg:text-sm mb-10 h-20 lg:h-60 overflow-hidden text-gray-400">We are committed to conserving natural resources and protecting </p>
+                    </div>                    
+    
+                    <div class="flex w-full self-end">
+                        <a class="flex text-orange1 gap-3 uppercase" href="http://" target="_blank" rel="noopener noreferrer">
+                            <img class="w-auto" src="images/svg/icon__arrow__orange.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-span-3 h-full">
+                    <img class="object-cover h-full w-full" src="images/foto6.jpg" alt="">
+                </div>
+              </div>  
+              <div class="grid grid-cols-7 border border-gray-300 rounded-xl overflow-hidden">                
+                <div class="col-span-4 p-4 lg:p-8 flex flex-wrap content-between">
+                   <div>
+                    <h3 class="mb-5 text-base lg:text-xl font-libre ">Community</h3>
+                    <p class="text-xs lg:text-sm mb-10 h-20 lg:h-60 overflow-hidden text-gray-400">Integrating our operations through partnerships with local communities is crucial to the way we operate. With 112 villages surrounding our operations, we build on the principles of inclusion and adopt a participatory approach in managing land and natural resources.</p>
+                   </div>    
+                    <div class="flex w-full self-end">
+                        <a class="flex text-orange1 gap-3 uppercase" href="http://" target="_blank" rel="noopener noreferrer">
+                            <img class="w-auto" src="images/svg/icon__arrow__orange.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-span-3 h-full">
+                    <img class="object-cover h-full w-full" src="images/foto6.jpg" alt="">
+                </div>
+              </div>  
+
+              <div class="grid grid-cols-7 border border-gray-300 rounded-xl overflow-hidden">                
+                <div class="col-span-4 p-4 lg:p-8 flex flex-wrap content-between">
+                    <div>
+                      <h3 class="mb-5 text-base lg:text-xl font-libre ">Workplace</h3>
+                      <p class="text-xs lg:text-sm mb-10 h-20 lg:h-60 overflow-hidden text-gray-400">We employ over 31,000 people across our operations and their safety, job satisfaction, and productivity is our utmost priority.</p>
+                    </div>
+    
+                    <div class="flex w-full self-end">
+                        <a class="flex text-orange1 gap-3 uppercase" href="http://" target="_blank" rel="noopener noreferrer">
+                            <img class="w-auto" src="images/svg/icon__arrow__orange.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-span-3 h-full">
+                    <img class="object-cover h-full w-full" src="images/foto6.jpg" alt="">
+                </div>
+              </div>  
+              <div class="grid grid-cols-7 border border-gray-300 rounded-xl overflow-hidden">                
+                <div class="col-span-4 p-4 lg:p-8 flex flex-wrap content-between">
+                   <div>
+                    <h3 class="mb-5 text-base lg:text-xl font-libre ">Responsible
+                      Sourcing</h3>
+                    <p class="text-xs lg:text-sm mb-10 h-20 lg:h-60 overflow-hidden text-gray-400">We demand traceability through all our operations and although this poses unique and difficult challenges, we have achieved 98.8% traceability to plantation for our FFB.</p>
+                   </div>
+    
+                    <div class="flex w-full self-end">
+                        <a class="flex text-orange1 gap-3 uppercase" href="http://" target="_blank" rel="noopener noreferrer">
+                            <img class="w-auto" src="images/svg/icon__arrow__orange.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-span-3 h-full">
+                    <img class="object-cover h-full w-full" src="images/foto6.jpg" alt="">
+                </div>
+              </div>  
+
+              <div class="grid grid-cols-7 border border-gray-300 rounded-xl overflow-hidden">                
+                <div class="col-span-4 p-4 lg:p-8 flex flex-wrap content-between">
+                    <h3 class="mb-5 text-base lg:text-xl font-libre ">Certification</h3>
+                    <p class="text-xs lg:text-sm mb-10 h-20 lg:h-60 overflow-hidden text-gray-400">Although, we strive above the requirements from certification schemes we work with a number of different groups, such as the RSPO, ISPO, and ISO to ensure our operations are sustainable for the planet, and for our communities for many generations to come.</p>
+    
+                    <div class="flex w-full self-end">
+                        <a class="flex text-orange1 gap-3 uppercase" href="http://" target="_blank" rel="noopener noreferrer">
+                            <img class="w-auto" src="images/svg/icon__arrow__orange.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-span-3 h-full">
+                    <img class="object-cover h-full w-full" src="images/foto6.jpg" alt="">
+                </div>
+              </div>  
+              <div class="grid grid-cols-7 border border-gray-300 rounded-xl overflow-hidden">                
+                <div class="col-span-4 p-4 lg:p-8 flex flex-wrap content-between">
+                    <h3 class="mb-5 text-base lg:text-xl font-libre ">Policies
+                        and Reports</h3>
+                    <p class="text-xs lg:text-sm mb-10 h-20 lg:h-60 overflow-hidden text-gray-400">As a responsible grower in Indonesia, we Bumitama recognises that the palm oil industry must address concerns on deforestation, climate change and social injustice.</p>
+    
+                    <div class="flex w-full self-end">
+                        <a class="flex text-orange1 gap-3 uppercase" href="http://" target="_blank" rel="noopener noreferrer">
+                            <img class="w-auto" src="images/svg/icon__arrow__orange.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-span-3 h-full">
+                    <img class="object-cover h-full w-full" src="images/foto6.jpg" alt="">
+                </div>
+              </div>  
+
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="footer bg-green2 text-white pt-10 lg:pt-14 pb-10 text-xs">
+      <div class="container">
+        <div class="grid grid-cols-12 accordion">          
+          <div class="col-span-12 lg:col-span-5">
+            <img class="w-auto block lg:hidden mb-10" src="images/logo-white.png" alt="">
+            <div class="lg:mb-10">
+              <h4 class="text-lg mb-4">Contact Us</h4>              
+              <p><strong>All Enquiries:</strong> general@bumitama-agri.com (+65 6222 1332)</p>
+              <div class="mt-2">
+                <p><strong>Ms. Christina Lim: </strong> clim@bumitama-agri.com</p>
+                <p><strong>Ms. Lim Sian Choo: </strong> lim.sian.choo@bumitama-agri.com</p>
+                <p><strong>Mr. Glenn Ho:  </strong> glenn.ho@bumitama-agri.com</p>
+              </div>
+              <div class="mt-5">
+                <p>10 Anson Road, 11-19 International Plaza, Singapore, 079903 </p>
+              </div>
+            </div>
+
+            <div>
+              <h4 class="text-lg mb-3">Current Share Price</h4>
+              <p><strong> 22 June 2021 5.30pm SGT</strong></p>
+            </div>
+
+            <div class="my-5 flex items-baseline">
+              <h2 class="text-6xl font-libre">0.46</h2>
+              <p class="text-green3 text-base">(+0.02%)</p>              
+            </div>
+
+            <div class="w-1/2	border-t border-gray-500 pt-5">
+                <img class="w-full" src="images/footer-img.png" alt="">
+            </div>
+
+          </div>
+          <div class="col-span-12 lg:col-span-7 grid grid-cols-12 lg:gap-x-10 my-5 lg:my-0 py-8 lg:pt-0 border-t border-b border-gray-500 lg:border-none">
+            <div class="col-span-12 lg:col-span-9">
+              <div class="grid lg:grid-cols-3 lg:gap-x-10">
+                <div class="lg:mb-10">
+                 <h4 class="text-lg mb-4 flex items-center toggleAccordion">
+                   About Us 
+                   <img class="w-auto ml-3 block lg:hidden" src="images/svg/icon__arrow__bottom__white.svg" alt="">
+                  </h4>
+                 <ul class="flex flex-col innerm mb-8 lg:mb-0 list__block">
+                   <li class="py-1">
+                     <a href="">Journey</a>
+                   </li>
+                   <li class="py-1">
+                     <a href="">Partners</a>
+                   </li>
+                   <li class="py-1">
+                     <a href="">Mapping Bumitama</a>
+                   </li>
+                   <li class="py-1">
+                     <a href="">Awards</a>
+                   </li>
+                 </ul>
+                </div>
+                <div class="lg:mb-10">
+                 <h4 class="text-lg mb-4 flex items-center toggleAccordion">
+                   Our Business
+                   <img class="w-auto ml-3 block lg:hidden" src="images/svg/icon__arrow__bottom__white.svg" alt="">
+                  </h4>
+                 <ul class="flex flex-col innerm mb-8 lg:mb-0 list__block">
+                   <li class="py-1">
+                     <a href="">Product</a>
+                   </li>
+                   <li class="py-1">
+                     <a href="">Plantations</a>
+                   </li>
+                   <li class="py-1">
+                     <a href="">Research and Development</a>
+                   </li>
+                 </ul>
+                </div>
+                <div class="lg:mb-10">
+                 <h4 class="text-lg mb-4 flex items-center toggleAccordion">
+                   Investors
+                   <img class="w-auto ml-3 block lg:hidden" src="images/svg/icon__arrow__bottom__white.svg" alt="">
+                  </h4>
+                 <ul class="flex flex-col innerm mb-8 lg:mb-0 list__block">
+                   <li class="py-1">
+                     <a href="">Share Information</a>
+                   </li>
+                   <li class="py-1">
+                     <a href="">Reporting</a>
+                   </li>
+                   <li class="py-1">
+                     <a href="">Measures</a>
+                   </li>
+                   <li class="py-1">
+                     <a href="">Announcements</a>
+                   </li>
+                 </ul>
+                </div>
+   
+               </div>    
+               <div class="grid lg:grid-cols-3 lg:gap-x-10">
+                 <div class="lg:mb-10">
+                   <h4 class="text-lg mb-4 flex items-center toggleAccordion">
+                     Information
+                     <img class="w-auto ml-3 block lg:hidden" src="images/svg/icon__arrow__bottom__white.svg" alt="">
+                    </h4>
+                   <ul class="flex flex-col innerm mb-8 lg:mb-0 list__block">
+                     <li class="py-1">
+                       <a href="">Careers</a>
+                     </li>
+                   </ul>
+                 </div>
+                <div class="lg:mb-10">
+                 <h4 class="text-lg mb-4 flex items-center toggleAccordion">
+                   Governance
+                   <img class="w-auto ml-3 block lg:hidden" src="images/svg/icon__arrow__bottom__white.svg" alt="">
+                  </h4>
+                 <ul class="flex flex-col innerm mb-8 lg:mb-0 list__block">
+                   <li class="py-1">
+                     <a href="">Board of Directors</a>
+                   </li>
+                   <li class="py-1">
+                     <a href="">Board Committees</a>
+                   </li>
+                   <li class="py-1">
+                     <a href="">Management Team</a>
+                   </li>
+                   <li class="py-1">
+                     <a href="">Corporate Governance</a>
+                   </li>
+                 </ul>
+                </div>
+                <div class="lg:mb-10">
+                 <h4 class="text-lg mb-4 flex items-center toggleAccordion">
+                   News & Media
+                   <img class="w-auto ml-3 block lg:hidden" src="images/svg/icon__arrow__bottom__white.svg" alt="">
+                  </h4>
+                 <ul class="flex flex-col innerm mb-8 lg:mb-0 list__block">
+                   <li class="py-1">
+                     <a href="">From Us</a>
+                   </li>
+                   <li class="py-1">
+                     <a href="">In the Media</a>
+                   </li>
+                 </ul>
+                </div>
+               </div>
+            </div>
+            <div class="col-span-12 lg:col-span-3">
+              <div class="lg:mb-10">
+                <h4 class="text-lg mb-4 flex items-center toggleAccordion">
+                  Sustainability
+                  <img class="w-auto ml-3 block lg:hidden" src="images/svg/icon__arrow__bottom__white.svg" alt="">
+                </h4>
+                <ul class="flex flex-col innerm mb-8 lg:mb-0 list__block">
+                  <li class="py-1">
+                    <a href="">Environment</a>
+                  </li>
+                  <li class="py-1">
+                    <a href="">Community</a>
+                  </li>
+                  <li class="py-1">
+                    <a href="">Employees</a>
+                  </li>
+                  <li class="py-1">
+                    <a href="">Responsible Sourcing</a>
+                  </li>
+                  <li class="py-1">
+                    <a href="">Certifications</a>
+                  </li>
+                  <li class="py-1">
+                    <a href="">Policies</a>
+                  </li>
+                  <li class="py-1">
+                    <a href="">Reporting</a>
+                  </li>
+                  <li class="py-1">
+                    <a href="">Announcements</a>
+                  </li>
+                </ul>
+               </div>
+            </div>            
+          </div>
+        </div>
+
+        <div class="flex justify-between mt-5 items-center">
+          <p>© 2021 Bumitama Agri. All Rights Reserved.</p>
+
+          <img class="w-auto hidden lg:block" src="images/logo-white.png" alt="">
+        </div>
+      </div>
+    </div>
+
+
+   
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

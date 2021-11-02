@@ -3,7 +3,6 @@
   
   @include min-responsive($xl){
     width: 1600px;
-    max-width: none;
   }
 
 }
@@ -12,51 +11,27 @@
 .slider{
 
 
-    & .slick-prev{
-        display: none !important;
+    .slick-next:before,
+    .slick-prev::before {
+        content: '';
+    }
+    .slick-next,
+    .slick-prev{
+        background-size: 100%;
+        width: 35px;
+        height: 35px;
+        z-index: 999;
+    }
+    .slick-prev{
+      background-image: url(../images/svg/slider-arrow.svg);
+      left: -10px;
+    }
+    .slick-next{
+      right: -10px;
+      background-image: url(../images/svg/slider-arrow-right.svg);
     }
 
-    &--green{
-        .slick-next{
-            background-image: url(../images/arrow-righ-green.svg);
-        }
-    }
-    &--blue{
-        .slick-next{
-            background-image: url(../images/arrow-righ-blue.svg);
-        }
-    }
-    &--green,
-    &--blue{
-        
-        .slick-next{
-            right: -30px;
-            background-repeat: no-repeat;
-            width: 35px;
-            height: 35px;
-            background-size: 100%;
-            &::before{
-              content: '';
-            }
-        }
-    }
-
-    &__text{
-        & .slick-prev{
-            display: none;
-        }
-        .slick-next{
-            right: -70px;
-            background-image: url(../images/arrow-righ-purple.svg);
-            background-repeat: no-repeat;
-            width: 60px;
-            height: 60px;
-            background-size: 100%;
-            &::before{
-              content: '';
-            }
-        }
-    }
+   
 }
 
 //hamburger

@@ -1,13 +1,14 @@
-//slider
-$(".slider").slick({
+$(document).ready(function () {
+  //slider
+  $(".slider2col").slick({
     dots: false,
     infinite: true,
     speed: 500,
     autoplay: false,
     autoplaySpeed: 2000,
     appendDots: false,
-    slidesToShow: 3,
-    slidesToScroll: 3,
+    slidesToShow: 2,
+    slidesToScroll: 2,
     responsive: [
       {
         breakpoint: 1024,
@@ -20,21 +21,22 @@ $(".slider").slick({
       }
     ]
   });
-$(".slider__text").slick({
+
+
+  $(".slider-product").slick({
     dots: false,
     infinite: true,
     speed: 500,
     autoplay: false,
     autoplaySpeed: 2000,
     appendDots: false,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    adaptiveHeight: true,
+    slidesToShow: 6,
+    slidesToScroll: 6,
     responsive: [
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow:1,
+          slidesToShow:1.3,
           slidesToScroll:1,
           arrows: false,
           infinite: false,
@@ -42,6 +44,7 @@ $(".slider__text").slick({
       }
     ]
   });
+
 
   $( ".hamburger" ).click(function() {
     if($(this).hasClass('is-active')) {
@@ -71,19 +74,21 @@ $(".slider__text").slick({
   });
 
   //gallery
-  $('.gallery').magnificPopup({
-		delegate: 'a',
-		type: 'image',
-		tLoading: 'Loading image #%curr%...',
-		mainClass: 'mfp-img-mobile',
-		gallery: {
-			enabled: true,
-			navigateByImgClick: true,
-			preload: [0,1] // Will preload 0 - before current, and 1 after the current image
-		},
-		image: {
-			// tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
-			// titleSrc: function(item) {
-			// 	return item.el.attr('title') + '<small>by Marsel Van Oosten</small>';
-			}
-	});
+  // $('.gallery').magnificPopup({
+	// 	delegate: 'a',
+	// 	type: 'image',
+	// 	tLoading: 'Loading image #%curr%...',
+	// 	mainClass: 'mfp-img-mobile',
+	// 	gallery: {
+	// 		enabled: true,
+	// 		navigateByImgClick: true,
+	// 		preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+	// 	},
+	// 	image: {
+	// 		// tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
+	// 		// titleSrc: function(item) {
+	// 		// 	return item.el.attr('title') + '<small>by Marsel Van Oosten</small>';
+	// 		}
+	// });
+
+});

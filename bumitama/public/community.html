@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Nunito+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/tailwind.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Bumitama Agri</title>
+  </head>
+  <body>
+
+    <div class="header">
+      <div class="container">
+        <div class="flex justify-between items-center  pt-5 pb-24">       
+          <div class="logo">
+            <a href="index.html">
+              <img class="w-60 lg:w-72" src="images/logo.png" alt="">
+            </a>
+          </div>        
+          <div class="header__menu p-5 lg:p-0 lg:ml-5 lg:block lg:relative w-full lg:w-auto h-screen lg:h-auto left-0 top-0 right-0 bg-brokenwhite lg:bg-transparent z-50 flex flex-wrap content-between">
+            <div class="w-full">
+              <div class="lg:hidden flex justify-between items-center ">
+                <a href="index.html" class="header__sub__logo">
+                  <img class="w-60 lg:w-auto" src="images/logo.png" alt="">
+                </a>
+                <div class="menuMobileBack header__sub hidden">
+                  <img class="w-auto" src="images/svg/icon__menu__back.svg" alt="">
+                </div>
+                <div class="text-xl header__sub hidden">
+                  <a href="sustainability.html">Sustainability</a>
+                </div>            
+                <div class="menuMobileClose">
+                  <img class="w-auto" src="images/svg/icon__menu__close.svg" alt="">
+                </div>
+              </div>    
+              <ul class="text-green1 flex lg:gap-x-10 flex-col lg:flex-row mt-10 lg:mt-0 relative lg:static ">
+                <li>
+                  <a class="hover text-lg py-3 lg:py-0 lg:text-base" href="about.html">About Us</a>
+                </li>
+                <li>
+                  <a class="hover text-lg py-3 lg:py-0 lg:text-base" href="business.html">Our Business</a>
+                </li>
+                <li class="dropdown ">
+                  <a class="dropbtn dropbtn__sub hover text-lg py-3 lg:py-0 lg:text-base flex items-center" href="sustainability.html">
+                    Sustainability
+                    <img class="transform -rotate-90 lg:rotate-0" style="width: 15px;margin-left: 5px;" src="images/svg/icon__arrow__bottom.svg" alt="">
+                  </a>
+                  <div class="header__menu__sub dropdown-content w-full lg:w-auto  flex-col lg:rounded-xl text-base lg:px-4 py-3">
+                    <a class="py-3 lg:py-1" href="environment.html">Environment</a>
+                    <a class="py-3 lg:py-1" href="community.html">Community</a>
+                    <a class="py-3 lg:py-1" href="workplace.html">Workplace</a>
+                    <a class="py-3 lg:py-1" href="#">Responsible Sourcing</a>
+                    <a class="py-3 lg:py-1" href="#">Certifications</a>
+                    <a class="py-3 lg:py-1" href="policies-reports.html">Policies & Reports</a>
+                  </div>
+                </li>
+                <li>
+                  <a class="hover text-lg py-3 lg:py-0 lg:text-base" href="investor.html">Investor</a>
+                </li>
+                <li>
+                  <a class="hover text-lg py-3 lg:py-0 lg:text-base" href="news.html">News & Media</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="text-gray-400 w-full lg:hidden">
+              <ul class="flex flex-col mb-3 pb-3 border-b border-gray-400">
+                <li>
+                  <a href="" class="mb-3">Contact</a>
+                </li>
+                <li>
+                  <a href="" class="mb-3">Terms & Conditions</a>
+                </li>
+              </ul>
+              <small>© 2021 Bumitama Agri. All Rights Reserved.</small>
+            </div>
+          </div>
+          
+          <div class="flex items-center gap-x-2"> 
+            <div class="cursor-pointer dropdown relative ">
+              <div class="dropbtn dropbtn__search p-2">
+                <img class="w-auto lg:w-4" src="images/svg/icon__search.svg" alt="">
+              </div>
+              <div class="sub__search dropdown-content p-5  w-full lg:w-auto flex-col lg:rounded-xl text-base lg:px-4 lg:py-3">
+                <div class="lg:hidden flex justify-between items-center ">
+                  <a href="index.html" class="header__sub__logo">
+                    <img class="w-60 lg:w-auto" src="images/logo.png" alt="">
+                  </a>           
+                  <div class="menuMobileClose">
+                    <img class="w-auto" src="images/svg/icon__menu__close.svg" alt="">
+                  </div>
+                </div>    
+                  <form action="" class="relative mt-10 lg:mt-0">
+                    <input class="w-full lg:w-auto bg-transparent p-2 border-b lg:border-green1 border-gray-400" type="text" placeholder="Enter keyword">
+                    <button class="absolute right-0 top-0 bottom-0 m-auto pl-5">
+                      <img style="width: 15px;" class=" transform -rotate-90 hidden lg:block" src="images/svg/icon__arrow__bottom.svg" alt="">
+                      <img class="w-auto lg:hidden" src="images/svg/icon__search__grey.svg" alt="">
+                    </button>
+                  </form>
+              </div>
+            </div>
+            
+            <!-- mobile -->
+            <div class="menuMobile">
+              <img class="w-auto" src="images/svg/icon__menu__m.svg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="h-3/6	 lg:h-4/5 w-full overflow-hidden items-end flex bg-cover" style="background-image: url(images/hero__community.jpg);">
+      <div class="container">
+        <h3 class="font-libre text-white w-1/2 text-xl lg:text-4xl	leading-10 tracking-wide mb-5 lg:mb-20">Community
+          </h3>
+      </div>
+    </div>
+    
+    <div class="bg-brokenwhite bg-cover bg-right-top bg-no-repeat py-10 lg:py-24">
+      <div class="container">
+        <div class="breadcum mb-10 lg:hidden">
+          <ul class="text-gray-400">
+              <li>
+                  <a class="text-xs lg:text-sm" href="index.html">home</a>
+              </li>
+              <li>
+                  <a class="text-xs lg:text-sm" href="">></a>
+              </li>
+              <li>
+                  <a class="text-xs lg:text-sm" href="sustainability.html">sustainability</a>
+              </li>
+              <li>
+                  <a class="text-xs lg:text-sm" href="">></a>
+              </li>
+              <li>
+                  <a href="environment.html" class="underline text-green1 text-xs lg:text-sm">environment</a>
+              </li>
+          </ul>
+        </div>
+       <div class="w-full lg:w-4/6">      
+          <h4 class="text-xl lg:text-2xl font-libre">We are committed to our role as corporate citizens. </h4>    
+          <br/>
+          <br/>
+          <p>We aim to strengthen our communities by protecting the environment and natural resources, by providing safe and secure employment, by respecting traditional rights and cultures by supporting the aspirations of local people through quality education, training, and sources of alternative livelihoods.</p>       
+       </div>
+      </div>
+    </div>
+
+    <div class="breadcum mt-16 mb-8 hidden lg:block">
+        <div class="container">
+            <ul class="text-gray-400">
+                <li>
+                    <a class="text-xs lg:text-sm" href="index.html">home</a>
+                </li>
+                <li>
+                    <a class="text-xs lg:text-sm" href="">></a>
+                </li>
+                <li>
+                    <a class="text-xs lg:text-sm" href="sustainability.html">sustainability</a>
+                </li>
+                <li>
+                    <a class="text-xs lg:text-sm" href="">></a>
+                </li>
+                <li>
+                    <a href="environment.html" class="underline text-green1 text-xs lg:text-sm">community</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="pb-10 lg:pb-24">
+      <div class="container">  
+        <div class="grid grid-cols-12">
+            <div class="col-span-3 hidden lg:block">
+              <ul class="flex flex-col w-full sticky top-0 uppercase navigation pt-10">
+                <li>
+                  <a href="#1" class="flex items-center text-gray-400 text-xs tracking-widest pb-5"> 
+                    <img class="w-auto mr-3" src="images/svg/icon___dots__orange.svg" alt="">  
+                    Community Land Rights and Partnerships</a>
+                </li>
+                <li>
+                  <a href="#2" class="flex items-center text-gray-400 text-xs tracking-widest	pb-5">
+                    <img class="w-auto mr-3 hidden" src="images/svg/icon___dots__orange.svg" alt="">Social Forestry</a>
+                </li>
+                <li>
+                  <a href="#3" class="flex items-center text-gray-400  text-xs tracking-widest pb-5">
+                    <img class="w-auto mr-3 hidden" src="images/svg/icon___dots__orange.svg" alt="">Improving the Development Status of Surrounding Villages</a>
+                </li>
+                <li>
+                  <a href="#4" class="flex items-center text-gray-400 text-xs tracking-widest	pb-5"><img class="w-auto mr-3 hidden" src="images/svg/icon___dots__orange.svg" alt="">
+                    Community Farming</a>
+                </li>
+                <li>
+                  <a href="#5" class="flex items-center text-gray-400 text-xs tracking-widest	pb-5">
+                    <img class="w-auto mr-3 hidden" src="images/svg/icon___dots__orange.svg" alt="">Smallholder Partnerships</a>
+                </li>
+                <li>
+                  <a href="#6" class="flex items-center text-gray-400 text-xs tracking-widest	pb-5">
+                    <img class="w-auto mr-3 hidden" src="images/svg/icon___dots__orange.svg" alt="">Independent Smallholders</a>
+                </li>
+                <li>
+                  <a href="#7" class="flex items-center text-gray-400 text-xs tracking-widest	pb-5">
+                    <img class="w-auto mr-3 hidden" src="images/svg/icon___dots__orange.svg" alt="">Education</a>
+                </li>
+                <li>
+                  <a href="#8" class="flex items-center text-gray-400 text-xs tracking-widest	pb-5">
+                    <img class="w-auto mr-3 hidden" src="images/svg/icon___dots__orange.svg" alt="">Supporting Nutritious Diets for Children in the Community</a>
+                </li>
+              </ul>
+            </div>
+
+
+            <div class="col-span-12 lg:col-span-9 w-full pt-10 lg:pt-0 lg:pl-10 accordion">
+
+              <div id="1" class="py-5 lg:pt-10 lg:mb-10 lg:border-green1 border-gray-300 border-b page-section ">
+                  <h4 class="text-lg lg:text-2xl text-green1 font-libre lg:mb-10 flex justify-between toggleAccordion">Community Land Rights and Partnerships
+                    <img class="w-auto lg:hidden ml-2 transform rotate-180" src="images/svg/icon__arrow__bottom.svg" alt="">
+                  </h4>                    
+                  <div class="mt-5 lg:mt-0 lg:mb-10 ml-5 lg:ml-0 innerm relative h-wrap-m" style="display: block;">
+                      <ul>
+                          <li class="flex items-baseline mb-4">
+                             <img class="w-auto mr-5" src="images/svg/icon__line.svg" alt="">
+                             Integrating our operations through partnerships with local communities is crucial to the way we operate. With 112 villages surrounding our operations, we build on the principles of inclusion and adopt a participatory approach in managing land and natural resources. In our engagements, we are guided by the principles of Free, Prior and Informed Consent (FPIC) and conduct social impact assessments before all new developments. We are committed to respecting and upholding the rights of all Indigenous and local communities, including their legal and customary land tenure rights. Our commitment extends beyond FPIC principles.
+                          </li>
+                          <li class="flex items-baseline mb-4">
+                             <img class="w-auto mr-5" src="images/svg/icon__line.svg" alt="">
+                             Bumitama is committed to providing business and work opportunities for local communities by employing workers from areas surrounding our operations. About 50% of mill and estate employees are local to the regions in which we operate, while the remaining are migrant employees from other areas of Indonesia.
+                          </li>
+                          <li class="flex items-baseline mb-4">
+                             <img class="w-auto mr-5" src="images/svg/icon__line.svg" alt="">
+                             We also strive to provide the local communities with tangible and long-term benefits from our partnerships.
+                          </li>
+                          <li class="flex items-baseline mb-4">
+                             <img class="w-auto mr-5" src="images/svg/icon__line.svg" alt="">
+                             As of 2020, 24 communities participate in 40 ongoing community development programmes. Our programmes support a range of services including: medical care, childcare, education, food security	programmes, religious activities and sports.
+                          </li>
+                          <li class="flex items-baseline mb-4">
+                             <img class="w-auto mr-5" src="images/svg/icon__line.svg" alt="">
+                             Our community programmes align with our conservation work by engaging local communities in alternative livelihood programmes that do not result in forest encroachment and/or fires. We actively support economic development from initiatives such as non-timber forest products (NTFP) or eco-tourism. Examples of NTFP include successful trials of edible bird nest cultivation, honey from stingless bees, and an exploration of local forest resources with apparent market demand. Constant engagement and an inclusive approach to land-use planning reduces the risk of conflict and ensures that communities are given an opportunity to influence decisions.
+                          </li>
+                      </ul>
+
+                      <div id="clickmore" class="flex w-full pb-14 pt-60 -mt-60 absolute bottom-0 left-0 bg__gradientbrown__bottom--white lg:hidden">
+                        <a  class="flex text-orange1 gap-3 uppercase text-xs items-center tracking-widest" href="javascript:void(0);">
+                            <img class="w-auto transform rotate-90" src="images/svg/icon__arrow__orange.svg" alt="">
+                            Read More
+                        </a>
+                    </div>
+                  </div>                    
+             </div>
+
+
+              <div id="2" class="py-5 lg:pt-10 lg:mb-10 lg:border-green1 border-gray-300 border-b page-section">
+                  <h4 class="text-lg lg:text-2xl text-green1 font-libre lg:mb-10 flex justify-between toggleAccordion">
+                    Social Forestry
+                    <img class="w-auto lg:hidden ml-2" src="images/svg/icon__arrow__bottom.svg" alt="">
+                  </h4>                    
+                  <div class="mt-5 lg:mt-0 lg:mb-10 ml-5 lg:ml-0 innerm">
+                      <ul>
+                          <li class="flex items-baseline mb-4">
+                             <img class="w-auto mr-5" src="images/svg/icon__line.svg" alt="">
+                             Through participative village-level land-use planning, initially conducted in 2017, we have explored conservation area connectivity throughout the Region of Ketapang. Working with our partners and communities, we identified potential livelihood improvements from sustainable land use and forest rehabilitation programmes.
+                          </li>
+                          <li class="flex items-baseline mb-4">
+                             <img class="w-auto mr-5" src="images/svg/icon__line.svg" alt="">
+                             This collaborative spatial land-use assessment identified several issues of concern. Due to government land-zoning allocation, the availability of non-forest land in the village is insufficient – leaving only small areas for livelihoods or food sources. Traditional land-use practices exacerbated this situation through dangerous and ineffective burning for land preparation, poor quality seeds, cultivation shifts, and unsuitable management practices that result in low yields and an insufficient food source.
+                          </li>
+                          <li class="flex items-baseline mb-4">
+                             <img class="w-auto mr-5" src="images/svg/icon__line.svg" alt="">
+                             This programme connects our BBCP programme, the Governors’ Green Growth plan and the Ketapang’s Regent PPI Compact. The aim is to reduce deforestation and fire occurrences while promoting sustainable livelihoods and the diversification of income by generating marketable products sourced from the NTFP in the protected area.
+                          </li>
+                          <li class="flex items-baseline mb-4">
+                             <img class="w-auto mr-5" src="images/svg/icon__line.svg" alt="">
+                             Intensive engagement with our partners and relevant stakeholders has culminated in two 35-year social forestry licences being awarded by the Ministry of Environment and Forestry to the villages of Sungai Melayu and Simpang Tiga Sembelangaan (STS). Communities set up the village forest management units to develop and execute their forest management plans, applying shared responsibility and commitment under the Company-Community Co-Management agreements.
+                          </li>
+                          <li class="flex items-baseline mb-4">
+                             <img class="w-auto mr-5" src="images/svg/icon__line.svg" alt="">
+                             To help the communities enforce the social forestry permit requirements on community-managed state-owned forest land, Bumitama will support participating communities through:
+                          </li>
+                      </ul>
+                  </div>                    
+             </div>
+
+
+              <div id="3" class="py-5 lg:pt-10 lg:mb-10 lg:border-green1 border-gray-300 border-b page-section">
+                  <h4 class="text-lg lg:text-2xl text-green1 font-libre lg:mb-10 flex justify-between toggleAccordion">
+                    Improving the Development Status of Surrounding Villages
+                    <img class="w-auto lg:hidden ml-2" src="images/svg/icon__arrow__bottom.svg" alt="">
+                  </h4>                    
+                  <div class="mt-5 lg:mt-0 lg:mb-10 ml-5 lg:ml-0 innerm">
+                    <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse laboriosam accusamus provident vitae repudiandae eos necessitatibus et ad deleniti, delectus molestiae facilis mollitia doloremque repellendus, minima corrupti quam qui quas!
+                  </p>
+                  </div>                    
+             </div>
+
+              <div id="4" class="py-5 lg:pt-10 lg:mb-10 lg:border-green1 border-gray-300 border-b page-section">
+                  <h4 class="text-lg lg:text-2xl text-green1 font-libre lg:mb-10 flex justify-between toggleAccordion">
+                    Community Farming
+                    <img class="w-auto lg:hidden ml-2" src="images/svg/icon__arrow__bottom.svg" alt="">
+                  </h4>                    
+                  <div class="mt-5 lg:mt-0 lg:mb-10 ml-5 lg:ml-0 innerm">
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse laboriosam accusamus provident vitae repudiandae eos necessitatibus et ad deleniti, delectus molestiae facilis mollitia doloremque repellendus, minima corrupti quam qui quas!
+                      </p>
+                  </div>                    
+              </div>
+              <div id="5" class="py-5 lg:pt-10 lg:mb-10 lg:border-green1 border-gray-300 border-b page-section">
+                  <h4 class="text-lg lg:text-2xl text-green1 font-libre lg:mb-10 flex justify-between toggleAccordion">
+                    Smallholder Partnerships
+                    <img class="w-auto lg:hidden ml-2" src="images/svg/icon__arrow__bottom.svg" alt="">
+                  </h4>                    
+                  <div class="mt-5 lg:mt-0 lg:mb-10 ml-5 lg:ml-0 innerm">
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse laboriosam accusamus provident vitae repudiandae eos necessitatibus et ad deleniti, delectus molestiae facilis mollitia doloremque repellendus, minima corrupti quam qui quas!
+                      </p>
+                  </div>                    
+              </div>
+              <div id="6" class="py-5 lg:pt-10 lg:mb-10 lg:border-green1 border-gray-300 border-b page-section">
+                  <h4 class="text-lg lg:text-2xl text-green1 font-libre lg:mb-10 flex justify-between toggleAccordion">
+                    Independent Smallholders
+                    <img class="w-auto lg:hidden ml-2" src="images/svg/icon__arrow__bottom.svg" alt="">
+                  </h4>                    
+                  <div class="mt-5 lg:mt-0 lg:mb-10 ml-5 lg:ml-0 innerm">
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse laboriosam accusamus provident vitae repudiandae eos necessitatibus et ad deleniti, delectus molestiae facilis mollitia doloremque repellendus, minima corrupti quam qui quas!
+                      </p>
+                  </div>                    
+              </div>
+              <div id="7" class="py-5 lg:pt-10 lg:mb-10 lg:border-green1 border-gray-300 border-b page-section">
+                  <h4 class="text-lg lg:text-2xl text-green1 font-libre lg:mb-10 flex justify-between toggleAccordion">
+                    Education
+                    <img class="w-auto lg:hidden ml-2" src="images/svg/icon__arrow__bottom.svg" alt="">
+                  </h4>                    
+                  <div class="mt-5 lg:mt-0 lg:mb-10 ml-5 lg:ml-0 innerm">
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse laboriosam accusamus provident vitae repudiandae eos necessitatibus et ad deleniti, delectus molestiae facilis mollitia doloremque repellendus, minima corrupti quam qui quas!
+                      </p>
+                  </div>                    
+              </div>
+              <div id="8" class="py-5 lg:pt-10 lg:mb-10 lg:border-green1 border-gray-300 border-b page-section">
+                  <h4 class="text-lg lg:text-2xl text-green1 font-libre lg:mb-10 flex justify-between toggleAccordion">
+                    Supporting Nutritious Diets for Children in the Community
+                    <img class="w-auto lg:hidden ml-2" src="images/svg/icon__arrow__bottom.svg" alt="">
+                  </h4>                    
+                  <div class="mt-5 lg:mt-0 lg:mb-10 ml-5 lg:ml-0 innerm">
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse laboriosam accusamus provident vitae repudiandae eos necessitatibus et ad deleniti, delectus molestiae facilis mollitia doloremque repellendus, minima corrupti quam qui quas!
+                      </p>
+                  </div>                    
+              </div>
+              
+
+          </div> 
+            
+          
+          </div>
+        </div>
+    </div>
+
+    <div class="footer bg-green2 text-white pt-10 lg:pt-14 pb-10 text-xs">
+      <div class="container">
+        <div class="grid grid-cols-12 accordion">          
+          <div class="col-span-12 lg:col-span-5">
+            <img class="w-auto block lg:hidden mb-10" src="images/logo-white.png" alt="">
+            <div class="lg:mb-10">
+              <h4 class="text-lg mb-4">Contact Us</h4>              
+              <p><strong>All Enquiries:</strong> general@bumitama-agri.com (+65 6222 1332)</p>
+              <div class="mt-2">
+                <p><strong>Ms. Christina Lim: </strong> clim@bumitama-agri.com</p>
+                <p><strong>Ms. Lim Sian Choo: </strong> lim.sian.choo@bumitama-agri.com</p>
+                <p><strong>Mr. Glenn Ho:  </strong> glenn.ho@bumitama-agri.com</p>
+              </div>
+              <div class="mt-5">
+                <p>10 Anson Road, 11-19 International Plaza, Singapore, 079903 </p>
+              </div>
+            </div>
+
+            <div>
+              <h4 class="text-lg mb-3">Current Share Price</h4>
+              <p><strong> 22 June 2021 5.30pm SGT</strong></p>
+            </div>
+
+            <div class="my-5 flex items-baseline">
+              <h2 class="text-6xl font-libre">0.46</h2>
+              <p class="text-green3 text-base">(+0.02%)</p>              
+            </div>
+
+            <div class="w-1/2	border-t border-gray-500 pt-5">
+                <img class="w-full" src="images/footer-img.png" alt="">
+            </div>
+
+          </div>
+          <div class="col-span-12 lg:col-span-7 grid grid-cols-12 lg:gap-x-10 my-5 lg:my-0 py-8 lg:pt-0 border-t border-b border-gray-500 lg:border-none">
+            <div class="col-span-12 lg:col-span-9">
+              <div class="grid lg:grid-cols-3 lg:gap-x-10">
+                <div class="lg:mb-10">
+                 <h4 class="text-lg mb-4 flex items-center toggleAccordion">
+                   About Us 
+                   <img class="w-auto ml-3 block lg:hidden" src="images/svg/icon__arrow__bottom__white.svg" alt="">
+                  </h4>
+                 <ul class="flex flex-col innerm mb-8 lg:mb-0 list__block">
+                   <li class="py-1">
+                     <a href="">Journey</a>
+                   </li>
+                   <li class="py-1">
+                     <a href="">Partners</a>
+                   </li>
+                   <li class="py-1">
+                     <a href="">Mapping Bumitama</a>
+                   </li>
+                   <li class="py-1">
+                     <a href="">Awards</a>
+                   </li>
+                 </ul>
+                </div>
+                <div class="lg:mb-10">
+                 <h4 class="text-lg mb-4 flex items-center toggleAccordion">
+                   Our Business
+                   <img class="w-auto ml-3 block lg:hidden" src="images/svg/icon__arrow__bottom__white.svg" alt="">
+                  </h4>
+                 <ul class="flex flex-col innerm mb-8 lg:mb-0 list__block">
+                   <li class="py-1">
+                     <a href="">Product</a>
+                   </li>
+                   <li class="py-1">
+                     <a href="">Plantations</a>
+                   </li>
+                   <li class="py-1">
+                     <a href="">Research and Development</a>
+                   </li>
+                 </ul>
+                </div>
+                <div class="lg:mb-10">
+                 <h4 class="text-lg mb-4 flex items-center toggleAccordion">
+                   Investors
+                   <img class="w-auto ml-3 block lg:hidden" src="images/svg/icon__arrow__bottom__white.svg" alt="">
+                  </h4>
+                 <ul class="flex flex-col innerm mb-8 lg:mb-0 list__block">
+                   <li class="py-1">
+                     <a href="">Share Information</a>
+                   </li>
+                   <li class="py-1">
+                     <a href="">Reporting</a>
+                   </li>
+                   <li class="py-1">
+                     <a href="">Measures</a>
+                   </li>
+                   <li class="py-1">
+                     <a href="">Announcements</a>
+                   </li>
+                 </ul>
+                </div>
+   
+               </div>    
+               <div class="grid lg:grid-cols-3 lg:gap-x-10">
+                 <div class="lg:mb-10">
+                   <h4 class="text-lg mb-4 flex items-center toggleAccordion">
+                     Information
+                     <img class="w-auto ml-3 block lg:hidden" src="images/svg/icon__arrow__bottom__white.svg" alt="">
+                    </h4>
+                   <ul class="flex flex-col innerm mb-8 lg:mb-0 list__block">
+                     <li class="py-1">
+                       <a href="">Careers</a>
+                     </li>
+                   </ul>
+                 </div>
+                <div class="lg:mb-10">
+                 <h4 class="text-lg mb-4 flex items-center toggleAccordion">
+                   Governance
+                   <img class="w-auto ml-3 block lg:hidden" src="images/svg/icon__arrow__bottom__white.svg" alt="">
+                  </h4>
+                 <ul class="flex flex-col innerm mb-8 lg:mb-0 list__block">
+                   <li class="py-1">
+                     <a href="">Board of Directors</a>
+                   </li>
+                   <li class="py-1">
+                     <a href="">Board Committees</a>
+                   </li>
+                   <li class="py-1">
+                     <a href="">Management Team</a>
+                   </li>
+                   <li class="py-1">
+                     <a href="">Corporate Governance</a>
+                   </li>
+                 </ul>
+                </div>
+                <div class="lg:mb-10">
+                 <h4 class="text-lg mb-4 flex items-center toggleAccordion">
+                   News & Media
+                   <img class="w-auto ml-3 block lg:hidden" src="images/svg/icon__arrow__bottom__white.svg" alt="">
+                  </h4>
+                 <ul class="flex flex-col innerm mb-8 lg:mb-0 list__block">
+                   <li class="py-1">
+                     <a href="">From Us</a>
+                   </li>
+                   <li class="py-1">
+                     <a href="">In the Media</a>
+                   </li>
+                 </ul>
+                </div>
+               </div>
+            </div>
+            <div class="col-span-12 lg:col-span-3">
+              <div class="lg:mb-10">
+                <h4 class="text-lg mb-4 flex items-center toggleAccordion">
+                  Sustainability
+                  <img class="w-auto ml-3 block lg:hidden" src="images/svg/icon__arrow__bottom__white.svg" alt="">
+                </h4>
+                <ul class="flex flex-col innerm mb-8 lg:mb-0 list__block">
+                  <li class="py-1">
+                    <a href="">Environment</a>
+                  </li>
+                  <li class="py-1">
+                    <a href="">Community</a>
+                  </li>
+                  <li class="py-1">
+                    <a href="">Employees</a>
+                  </li>
+                  <li class="py-1">
+                    <a href="">Responsible Sourcing</a>
+                  </li>
+                  <li class="py-1">
+                    <a href="">Certifications</a>
+                  </li>
+                  <li class="py-1">
+                    <a href="">Policies</a>
+                  </li>
+                  <li class="py-1">
+                    <a href="">Reporting</a>
+                  </li>
+                  <li class="py-1">
+                    <a href="">Announcements</a>
+                  </li>
+                </ul>
+               </div>
+            </div>            
+          </div>
+        </div>
+
+        <div class="flex justify-between mt-5 items-center">
+          <p>© 2021 Bumitama Agri. All Rights Reserved.</p>
+
+          <img class="w-auto hidden lg:block" src="images/logo-white.png" alt="">
+        </div>
+      </div>
+    </div>
+
+
+   
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

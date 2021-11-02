@@ -11,7 +11,14 @@ module.exports = {
         red1: '#C70000',
         green1: '#5AAB1D',
         grey1: '#1F2024',
+        grey2: '#808080',
+        grey3: '#B1B2B2',
+        grey4: '#707070',
+        blue1: '#0F68C9',
       },
+      height: {
+        h480: '480px'
+       }
     }, 
     container: {
       center: true,
