@@ -18,6 +18,9 @@ module.exports = {
       },
       height: {
         h480: '480px'
+       },
+       fontSize: {
+        'xxs': '10px',
        }
     }, 
     container: {

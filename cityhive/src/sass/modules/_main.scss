@@ -21,14 +21,26 @@
         width: 35px;
         height: 35px;
         z-index: 999;
+
+        @include max-responsive($lg){
+          width: 25px;
+          height: 25px;
+        }
     }
     .slick-prev{
       background-image: url(../images/svg/slider-arrow.svg);
       left: -10px;
+      @include max-responsive($lg){
+        left: 5px;
+      }
     }
     .slick-next{
       right: -10px;
       background-image: url(../images/svg/slider-arrow-right.svg);
+
+      @include max-responsive($lg){
+        right: 5px;
+      }
     }
 
    

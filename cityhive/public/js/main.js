@@ -13,15 +13,54 @@ $(document).ready(function () {
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow:1.3,
+          slidesToShow:1,
           slidesToScroll:1,
-          arrows: false,
-          infinite: false,
+          infinite: true,
+        }
+      }
+    ]
+
+  });
+  $(".slider1col").slick({
+    dots: false,
+    infinite: true,
+    speed: 500,
+    autoplay: false,
+    autoplaySpeed: 2000,
+    appendDots: false,
+    slidesToShow: 5,
+    slidesToScroll: 5,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow:1,
+          slidesToScroll:1,
+          infinite: true,
         }
       }
     ]
   });
 
+  $(".slidercat").slick({
+    dots: false,
+    infinite: true,
+    speed: 500,
+    autoplay: false,
+    autoplaySpeed: 2000,
+    appendDots: false,
+    slidesToShow: 8,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow:4,
+          slidesToScroll:1,
+        }
+      }
+    ]
+  });
 
   $(".slider-product").slick({
     dots: false,
@@ -36,14 +75,15 @@ $(document).ready(function () {
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow:1.3,
-          slidesToScroll:1,
-          arrows: false,
-          infinite: false,
+          slidesToShow:2,
+          slidesToScroll:2,
+          infinite: true,
         }
       }
     ]
   });
+
+
 
 
   $( ".hamburger" ).click(function() {

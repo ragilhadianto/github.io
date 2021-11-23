@@ -18,10 +18,10 @@
   <body>
 
     <!-- topbar -->
-    <div class="topbar bg-yellow1 py-1 border-b border-black border-opacity-10">
-      <div class="container flex justify-between items-center px-5">
-        <div class="flex">
-          <div>
+    <div class="topbar hidden lg:block bg-yellow1 py-1 border-b border-black border-opacity-10 text-xs lg:text-sm py-3">
+      <div class="container lg:flex justify-between items-center px-3 lg:px-5">
+        <div class="flex w-full lg:w-auto justify-center items-start gap-x-1 mb-3 lg:mb-0">
+          <div class="flex">
             Language: 
             <select name="" id="" class="bg-transparent">
               <option value="">English</option>
@@ -29,10 +29,10 @@
               <option value="">English</option>
             </select>
           </div>
-          <div class="mx-3">
+          <div class="mx-3 hidden lg:block">
             |
           </div>
-          <div>
+          <div class="flex">
             Currency: 
             <select name="" id="" class="bg-transparent">
               <option value="">SGD</option>
@@ -40,36 +40,59 @@
               <option value="">SGD</option>
             </select>
           </div>
-          <div class="mx-3">
+          <div class="mx-3 hidden lg:block">
+            |
+          </div>
+          <div class="flex">
+            <a href="">Online Helpdesk</a>
+          </div>
+        </div>
+        <div class="flex w-full lg:w-auto justify-center items-start gap-x-3">
+          <div>
+            <a href="">About Us</a>
+          </div>
+          <div class="mx-3 hidden lg:block">
             |
           </div>
           <div>
-            <a href="">Online Helpdesk</a>
+            <a href="">How To Buy</a>
+          </div>
+          <div class="mx-3 hidden lg:block">
+            |
+          </div>
+          <div>
+            <a href="">Order Tracking</a>
+          </div>
+          <div class="mx-3 hidden lg:block">
+            |
+          </div>
+          <div>
+            <a href="">FAQs</a>
           </div>
         </div>
       </div>
     </div>
 
     <!-- header -->
-    <div class="header bg-yellow1 py-2">
-      <div class="container flex justify-between items-center px-5">
+    <div class="header bg-yellow1 py-4 lg:py-2 pb-14 lg:pb-0">
+      <div class="container lg:flex justify-between items-center px-3 lg:px-5 relative">
         
-        <div class="flex items-center flex-auto	pr-10">
+        <div class="grid grid-cols-12 lg:flex items-center lg:flex-auto	lg:pr-10">
           <!-- logo -->
-          <a href="index.html">
-            <img src="images/svg/logo.svg" class="w-16 md:w-auto" alt="CityHive">
+          <a href="index.html" class="col-span-12 w-full lg:w-auto px-10 lg:px-0 mx-auto border-b border-black border-opacity-20 lg:border-none pb-5">
+            <img src="images/svg/logo.svg" class="w-40 md:w-auto mx-auto" alt="CityHive">
           </a>
 
           <!-- menu -->
-          <div class="relative w-full xl:ml-20 ">
+          <div class="w-full xl:ml-20 col-span-12 my-2 lg:my-4">
             <div class="flex items-center">
-              <div class="mx-5 ">
+              <div class="mx-5 lg:block absolute lg:relative right-0 top-5 lg:top-0">
                 <img src="images/svg/icon_menu.svg" class="w-auto" alt="">
               </div>
-              <form action="" class="w-full">
-                <input type="text" class="bg-white rounded-md px-5 py-3 w-full text-lg">
-                <button class="bg-grey1 rounded-r-md absolute right-0 top-0 bottom-0 my-auto flex items-center justify-center px-5">
-                  <img src="images/svg/icon_search.svg" alt="">
+              <form action="" class="w-11/12 lg:w-full absolute lg:relative left-0 right-0 -bottom-14 lg:bottom-0  mx-auto">
+                <input type="text" class="bg-white rounded-md px-5 py-1 lg:py-3 w-full text-lg">
+                <button class="bg-grey1 rounded-r-md absolute right-0 top-0 bottom-0 my-auto flex items-center justify-center px-3 lg:px-5">
+                  <img class="w-6 lg:w-auto" src="images/svg/icon_search.svg" alt="">
                 </button>
               </form>
             </div>
@@ -78,34 +101,34 @@
 
 
         <!-- user -->
-        <div class="flex gap-x-8">
-            <a href="" class="flex items-center flex-auto">
-              <img src="images/svg/icon_user.svg" alt="" class="w-auto">
-              <div class="text-sm font-medium ml-2">
+        <div class="flex justify-center gap-x-10 lg:gap-x-8 mb-5 lg:mb-0">
+            <a href="" class="flex items-center">
+              <img src="images/svg/icon_user.svg" alt="" class="w-6 lg:w-auto">
+              <div class="text-xs lg:text-sm font-medium ml-2 hidden lg:block">
                 <span class="block text-yellow2 ">Login</span>
                 My Account
               </div>
             </a>
             <a href="" class="flex items-center">
               <div class="relative">
-                <img src="images/svg/icon_user_wishlist.svg" alt="" class="w-auto">
+                <img src="images/svg/icon_user_wishlist.svg" alt="" class="w-6 lg:w-auto">
                 <span class="absolute left-6 -top-1 rounded-full w-6	h-6 border-black border text-xs font-semibold flex items-center justify-center">
                   0
                 </span>
               </div>
-              <div class="text-sm font-medium ml-5">
+              <div class="text-xs lg:text-sm font-medium ml-5 hidden lg:block">
                 <span class="block text-yellow2 ">Favorite</span>
                 My Wishlist
               </div>
             </a>
             <a href="" class="flex items-center">
               <div class="relative">
-                <img src="images/svg/icon_cart.svg" alt="" class="w-auto">
+                <img src="images/svg/icon_cart.svg" alt="" class="w-6 lg:w-auto">
                 <span class="absolute left-6 -top-1 rounded-full w-6	h-6 border-black border text-xs font-semibold flex items-center justify-center bg-yellow1">
                   0
                 </span>
               </div>             
-              <div class="text-sm font-medium ml-5">
+              <div class="text-xs lg:text-sm font-medium ml-5 hidden lg:block">
                 <span class="block text-yellow2 ">Your Cart</span>
                 $0.00
               </div>
@@ -114,31 +137,31 @@
       </div>
     </div>
 
-    <div class="bg-white py-3">
-      <div class="container px-5">
-        <div class="flex">
-          <div class="mr-5">            
+    <div class="bg-white py-3 hidden lg:block">
+      <div class="container px-3 lg:px-5">
+        <div class="flex flex-wrap justify-center lg:justify-start">
+          <div class="mr-2 lg:mr-5">            
             <select name="" id="" class="bg-transparent">
               <option value="">Todays Deal </option>
               <option value="">Todays Deal</option>
               <option value="">Todays Deal</option>
             </select>
           </div>
-          <div class="mr-5">            
+          <div class="mr-2 lg:mr-5">            
             <select name="" id="" class="bg-transparent">
               <option value="">Top Seller </option>
               <option value="">Top Seller </option>
               <option value="">Top Seller </option>
             </select>
           </div>
-          <div class="mr-5">            
+          <div class="mr-2 lg:mr-5">            
             <select name="" id="" class="bg-transparent">
               <option value="">Browse History</option>
               <option value="">Browse History</option>
               <option value="">Browse History</option>
             </select>
           </div>
-          <div class="mr-5">   
+          <div class="mr-2 lg:mr-5">   
             Buy Again      
           </div>
         </div>
@@ -147,38 +170,38 @@
 
     <div class="container">
       <!-- slide hot sales -->
-      <div class="grid grid-cols-10 gap-5 my-5 px-5">
-        <div class="col-span-7">
-            <div class="rounded-xl overflow-hidden h-h480 relative">
+      <div class="grid grid-cols-10 gap-3 lg:gap-5 my-5 px-5">
+        <div class="col-span-12 lg:col-span-7">
+            <div class="rounded-xl overflow-hidden h-60	lg:h-h480 relative">
               <img class="object-cover h-full w-full" src="images/photo1.jpg" alt="">
-              <div class="text-white absolute w-full h-full top-0 left-0 px-20 flex items-center bg-black bg-opacity-20">
+              <div class="text-white absolute w-full h-full top-0 left-0 px-5 lg:px-20 flex items-center bg-black bg-opacity-20">
                  <div>
-                    <span class="rounded-sm bg-red-600  text-xs font-medium px-2 py-1 rounded">SELLING HOT</span>
-                    <h4 class="text-5xl my-4">Lorem ipsum dolor sit amet</h4>
-                    <p class="text-lg">Sub Title Sub Title  Sub Title  Sub Title  Sub Title </p>
-                    <div class="mt-14">
-                      <span class="bg-yellow1 text-black text-xs font-bold px-5 py-3 rounded ">DISCOVER NOW</span>
+                    <span class="rounded-sm bg-red-600 text-xxs lg:text-xs font-medium px-2 py-1 rounded">SELLING HOT</span>
+                    <h4 class="text-2xl lg:text-5xl my-2 lg:my-4">Lorem ipsum dolor sit amet</h4>
+                    <p class="text-xs lg:text-lg">Sub Title Sub Title  Sub Title  Sub Title  Sub Title </p>
+                    <div class="mt-3 lg:mt-14">
+                      <span class="bg-yellow1 text-black text-xxs lg:text-xs font-bold px-5 py-3 rounded ">DISCOVER NOW</span>
                     </div>
                  </div>
               </div>
             </div>
         </div>
-        <div class="col-span-3 grid gap-y-5 h-h480">
-            <div class="rounded-xl overflow-hidden h-full relative">
+        <div class="col-span-12 lg:col-span-3 grid grid-cols-12 gap-y-5 h-32 lg:h-h480 gap-x-3">
+            <div class="col-span-6 lg:col-span-12 rounded-xl overflow-hidden h-full relative">
               <img class="object-cover h-full w-full" src="images/photo1.jpg" alt="">
-              <div class="text-white absolute w-full h-full top-0 left-0 px-10 flex items-center bg-black bg-opacity-20">
+              <div class="text-white absolute w-full h-full top-0 left-0 px-5 lg:px-10 flex items-center bg-black bg-opacity-20">
                 <div>
-                   <h4 class="text-2xl	 my-4">Lorem ipsum dolor sit amet</h4>
-                   <p class="text-lg">Sub Title </p>
+                   <h4 class="text-sm lg:text-2xl my-4">Lorem ipsum dolor sit amet</h4>
+                   <p class="text-xxs lg:text-lg">Sub Title </p>
                 </div>
              </div>
             </div>
-            <div class="rounded-xl overflow-hidden h-full relative">
+            <div class="col-span-6 lg:col-span-12 rounded-xl overflow-hidden h-full relative">
               <img class="object-cover h-full w-full" src="images/photo1.jpg" alt="">
-              <div class="text-white absolute w-full h-full top-0 left-0 px-10 flex items-center bg-black bg-opacity-20">
+              <div class="text-white absolute w-full h-full top-0 left-0 px-5 lg:px-10 flex items-center bg-black bg-opacity-20">
                 <div>
-                   <h4 class="text-2xl	 my-4">Lorem ipsum dolor sit amet</h4>
-                   <p class="text-lg">Sub Title </p>
+                   <h4 class="text-sm lg:text-2xl my-4">Lorem ipsum dolor sit amet</h4>
+                   <p class="text-xxs lg:text-lg">Sub Title </p>
                 </div>
              </div>
             </div>
@@ -186,81 +209,93 @@
       </div>
 
       <!-- list category -->
-      <div class="flex gap-x-3 xl:gap-5 px-5">
-        <div class="bg-white p-5 rounded-xl text-center flex items-center justify-center flex-1 ">
-          <a href="">
-            <div class="flex justify-center">
-              <img class="w-auto" src="images/sample-icon.svg" alt="">              
-            </div>
-            <small class="text-base font-medium">Category</small>
-          </a>
+      <div class="lg:px-0 ">
+        <div class="slidercat slider px-2">
+          <div class="bg-white p-2 lg:p-5 rounded-xl text-center flex items-center justify-center flex-1 item mx-2 ">
+            <a href="">
+              <div class="flex justify-center">
+                <img class="w-auto" src="images/sample-icon.svg" alt="">              
+              </div>
+              <small class="text-xxs lg:text-base font-medium leading-none block mt-1">Beauty & 
+                Personal Care</small>
+            </a>
+          </div>
+          <div class="bg-white p-2 lg:p-5 rounded-xl text-center flex items-center justify-center flex-1 item mx-2 ">
+            <a href="">
+              <div class="flex justify-center">
+                <img class="w-auto" src="images/sample-icon.svg" alt="">              
+              </div>
+              <small class="text-xxs lg:text-base font-medium leading-none block mt-1">Category</small>
+            </a>
+          </div>
+          <div class="bg-white p-2 lg:p-5 rounded-xl text-center flex items-center justify-center flex-1 item mx-2 ">
+            <a href="">
+              <div class="flex justify-center">
+                <img class="w-auto" src="images/sample-icon.svg" alt="">              
+              </div>
+              <small class="text-xxs lg:text-base font-medium leading-none block mt-1">Category</small>
+            </a>
+          </div>
+          <div class="bg-white p-2 lg:p-5 rounded-xl text-center flex items-center justify-center flex-1 item mx-2 ">
+            <a href="">
+              <div class="flex justify-center">
+                <img class="w-auto" src="images/sample-icon.svg" alt="">              
+              </div>
+              <small class="text-xxs lg:text-base font-medium leading-none block mt-1">Category</small>
+            </a>
+          </div>
+          <div class="bg-white p-2 lg:p-5 rounded-xl text-center flex items-center justify-center flex-1 item mx-2 ">
+            <a href="">
+              <div class="flex justify-center">
+                <img class="w-auto" src="images/sample-icon.svg" alt="">              
+              </div>
+              <small class="text-xxs lg:text-base font-medium leading-none block mt-1">Category</small>
+            </a>
+          </div>
+          <div class="bg-white p-2 lg:p-5 rounded-xl text-center flex items-center justify-center flex-1 item mx-2 ">
+            <a href="">
+              <div class="flex justify-center">
+                <img class="w-auto" src="images/sample-icon.svg" alt="">              
+              </div>
+              <small class="text-xxs lg:text-base font-medium leading-none block mt-1">Category</small>
+            </a>
+          </div>
+          <div class="bg-white p-2 lg:p-5 rounded-xl text-center flex items-center justify-center flex-1 item mx-2 ">
+            <a href="">
+              <div class="flex justify-center">
+                <img class="w-auto" src="images/sample-icon.svg" alt="">              
+              </div>
+              <small class="text-xxs lg:text-base font-medium leading-none block mt-1">Category</small>
+            </a>
+          </div>
+          <div class="bg-white p-2 lg:p-5 rounded-xl text-center flex items-center justify-center flex-1 item mx-2 ">
+            <a href="">
+              <div class="flex justify-center">
+                <img class="w-auto" src="images/sample-icon.svg" alt="">              
+              </div>
+              <small class="text-xxs lg:text-base font-medium leading-none block mt-1">Category</small>
+            </a>
+          </div>
+          <div class="bg-white p-2 lg:p-5 rounded-xl text-center flex items-center justify-center flex-1 item mx-2 ">
+            <a href="">
+              <div class="flex justify-center">
+                <img class="w-auto" src="images/sample-icon.svg" alt="">              
+              </div>
+              <small class="text-xxs lg:text-base font-medium leading-none block mt-1">Category</small>
+            </a>
+          </div>
         </div>
-        <div class="bg-white p-5 rounded-xl text-center flex items-center justify-center flex-1 ">
-          <a href="">
-            <div class="flex justify-center">
-              <img class="w-auto" src="images/sample-icon.svg" alt="">              
-            </div>
-            <small class="text-base font-medium">Category</small>
-          </a>
-        </div>
-        <div class="bg-white p-5 rounded-xl text-center flex items-center justify-center flex-1 ">
-          <a href="">
-            <div class="flex justify-center">
-              <img class="w-auto" src="images/sample-icon.svg" alt="">              
-            </div>
-            <small class="text-base font-medium">Category</small>
-          </a>
-        </div>
-        <div class="bg-white p-5 rounded-xl text-center flex items-center justify-center flex-1 ">
-          <a href="">
-            <div class="flex justify-center">
-              <img class="w-auto" src="images/sample-icon.svg" alt="">              
-            </div>
-            <small class="text-base font-medium">Category</small>
-          </a>
-        </div>
-        <div class="bg-white p-5 rounded-xl text-center flex items-center justify-center flex-1 ">
-          <a href="">
-            <div class="flex justify-center">
-              <img class="w-auto" src="images/sample-icon.svg" alt="">              
-            </div>
-            <small class="text-base font-medium">Category</small>
-          </a>
-        </div>
-        <div class="bg-white p-5 rounded-xl text-center flex items-center justify-center flex-1 ">
-          <a href="">
-            <div class="flex justify-center">
-              <img class="w-auto" src="images/sample-icon.svg" alt="">              
-            </div>
-            <small class="text-base font-medium">Category</small>
-          </a>
-        </div>
-        <div class="bg-white p-5 rounded-xl text-center flex items-center justify-center flex-1 ">
-          <a href="">
-            <div class="flex justify-center">
-              <img class="w-auto" src="images/sample-icon.svg" alt="">              
-            </div>
-            <small class="text-base font-medium">Category</small>
-          </a>
-        </div>
-        <div class="bg-white p-5 rounded-xl text-center flex items-center justify-center flex-1 ">
-          <a href="">
-            <div class="flex justify-center">
-              <img class="w-auto" src="images/sample-icon.svg" alt="">              
-            </div>
-            <small class="text-base font-medium">Category</small>
-          </a>
-        </div>
+
       </div>
 
       <!-- Top Deals Of The Day -->
       <div class="my-10">
         <div class="px-5"> 
-          <div class="flex justify-between mb-5 border-b border-grey3">
+          <div class="flex flex-col lg:flex-row justify-between mb-5 border-b border-grey3">
             <h3 class="relative flex z-10 items-center">Top Deals Of The Day
               <span class="absolute border-b-4 border-yellow1 w-full -bottom-1 z-10 left-0"></span>
             </h3>
-            <div class="flex items-center font-bold z-0 pb-3">
+            <div class="flex flex-col lg:flex-row lg:items-center font-bold z-0 pb-3 pt-3 lg:pt-0">
               <p class="mr-3">Hurry Up! Offer ends in:</p>
               <ul class="bg-red1 text-white rounded-lg px-5 py-1 flex items-center">
                 <li>
@@ -286,14 +321,14 @@
 
         <div class="slider2col slider px-2">
           <div class="item mx-2">
-            <div class="grid grid-cols-2 gap-x-5 bg-white p-3 rounded-xl">
-              <div class="rounded-lg overflow-hidden col-span-1 h-80	relative">
+            <div class="grid grid-cols-5 lg:grid-cols-2 gap-x-5 bg-white p-3 rounded-xl">
+              <div class="rounded-lg overflow-hidden col-span-2 lg:col-span-1 h-40 lg:h-80	relative">
                 <img src="images/photo-square.jpg" class="w-full object-cover h-full" alt="">
                 <span class="absolute left-0 top-5 text-white bg-green1 text-sm font-bold px-2 py-1 rounded-r-md">5% OFF</span>
               </div>
-              <div class="col-span-1 p-1 place-content-between grid grid-cols-1">
+              <div class="col-span-3 lg:col-span-1 p-1 place-content-between grid grid-cols-1">
                 <div>
-                  <p class="text-blue1 font-bold text-sm">Product Title</p>
+                  <p class="text-blue1 font-bold text-sm text__wrap2">Product Title</p>
                   <div class="flex items-center">
                     <ul class="flex gap-x-1 mr-2">
                       <li>
@@ -318,7 +353,7 @@
                     <p class="text-lg text-red1 font-bold">$95.00</p>
                     <small class="line-through text-gray-400">$100.00</small>
                   </div>
-                  <div class="list my-4">
+                  <div class="list my-4 hidden lg:block">
                     <ul class="square leading-5	">
                       <li>
                         <img src="" alt="">
@@ -342,11 +377,11 @@
                     <span class="bg-red1 rounded-xl h-2	block" style="width: 70%;"></span>
                   </div>
                   <div>
-                    <p class="text-sm text-grey2 font-bold">Sold: 926 / 1000</p>
+                    <p class="text-xxs lg:text-sm text-grey2 font-bold">Sold: 926 / 1000</p>
                   </div>
                 </div>
                 <div class="flex mt-2 gap-x-2">
-                  <button class="bg-yellow1 text-black rounded-full flex-1 text-sm font-bold">ADD TO CART</button>
+                  <button class="bg-yellow1 text-black rounded-full flex-1 text-xxs lg:text-sm font-bold">ADD TO CART</button>
                   <a href="">
                     <img src="images/svg/wishlist.svg" class="w-auto" alt="">
                   </a>
@@ -355,13 +390,13 @@
             </div>
           </div>
           <div class="item mx-2">
-            <div class="grid grid-cols-2 gap-x-5 bg-white p-3 rounded-xl">
-              <div class="rounded-lg overflow-hidden col-span-1 h-80	">
+            <div class="grid grid-cols-5 lg:grid-cols-2 gap-x-5 bg-white p-3 rounded-xl">
+              <div class="rounded-lg overflow-hidden col-span-2 lg:col-span-1 h-40 lg:h-80	">
                 <img src="images/photo-square.jpg" class="w-full object-cover h-full" alt="">
               </div>
-              <div class="col-span-1 p-1 place-content-between grid grid-cols-1">
+              <div class="col-span-3 lg:col-span-1 p-1 place-content-between grid grid-cols-1">
                 <div>
-                  <p class="text-blue1 font-bold text-sm">Product Title</p>
+                  <p class="text-blue1 font-bold text-sm text__wrap2">Product Title</p>
                   <div class="flex items-center">
                     <ul class="flex gap-x-1 mr-2">
                       <li>
@@ -386,7 +421,7 @@
                     <p class="text-lg text-red1 font-bold">$95.00</p>
                     <small class="line-through text-gray-400">$100.00</small>
                   </div>
-                  <div class="list my-4">
+                  <div class="list my-4 hidden lg:block">
                     <ul class="square leading-5	">
                       <li>
                         <img src="" alt="">
@@ -410,11 +445,11 @@
                     <span class="bg-red1 rounded-xl h-2	block" style="width: 70%;"></span>
                   </div>
                   <div>
-                    <p class="text-sm text-grey2 font-bold">Sold: 926 / 1000</p>
+                    <p class="text-xxs lg:text-sm text-grey2 font-bold">Sold: 926 / 1000</p>
                   </div>
                 </div>
                 <div class="flex mt-2 gap-x-2">
-                  <button class="bg-yellow1 text-black rounded-full flex-1 text-sm font-bold">ADD TO CART</button>
+                  <button class="bg-yellow1 text-black rounded-full flex-1 text-xxs lg:text-sm font-bold">ADD TO CART</button>
                   <a href="">
                     <img src="images/svg/wishlist.svg" class="w-auto" alt="">
                   </a>
@@ -423,13 +458,13 @@
             </div>
           </div>
           <div class="item mx-2">
-            <div class="grid grid-cols-2 gap-x-5 bg-white p-3 rounded-xl">
-              <div class="rounded-lg overflow-hidden col-span-1 h-80	">
+            <div class="grid grid-cols-5 lg:grid-cols-2 gap-x-5 bg-white p-3 rounded-xl">
+              <div class="rounded-lg overflow-hidden col-span-2 lg:col-span-1 h-40 lg:h-80	">
                 <img src="images/photo-square.jpg" class="w-full object-cover h-full" alt="">
               </div>
-              <div class="col-span-1 p-1 place-content-between grid grid-cols-1">
+              <div class="col-span-3 lg:col-span-1 p-1 place-content-between grid grid-cols-1">
                 <div>
-                  <p class="text-blue1 font-bold text-sm">Product Title</p>
+                  <p class="text-blue1 font-bold text-sm text__wrap2">Product Title</p>
                   <div class="flex items-center">
                     <ul class="flex gap-x-1 mr-2">
                       <li>
@@ -454,7 +489,7 @@
                     <p class="text-lg text-red1 font-bold">$95.00</p>
                     <small class="line-through text-gray-400">$100.00</small>
                   </div>
-                  <div class="list my-4">
+                  <div class="list my-4 hidden lg:block">
                     <ul class="square leading-5	">
                       <li>
                         <img src="" alt="">
@@ -478,11 +513,11 @@
                     <span class="bg-red1 rounded-xl h-2	block" style="width: 70%;"></span>
                   </div>
                   <div>
-                    <p class="text-sm text-grey2 font-bold">Sold: 926 / 1000</p>
+                    <p class="text-xxs lg:text-sm text-grey2 font-bold">Sold: 926 / 1000</p>
                   </div>
                 </div>
                 <div class="flex mt-2 gap-x-2">
-                  <button class="bg-yellow1 text-black rounded-full flex-1 text-sm font-bold">ADD TO CART</button>
+                  <button class="bg-yellow1 text-black rounded-full flex-1 text-xxs lg:text-sm font-bold">ADD TO CART</button>
                   <a href="">
                     <img src="images/svg/wishlist.svg" class="w-auto" alt="">
                   </a>
@@ -496,11 +531,11 @@
       <!-- Top Selling Products -->
       <div class="my-10">
         <div class="px-5"> 
-          <div class="flex justify-between mb-5 border-b border-grey3">
+          <div class="flex flex-col lg:flex-row justify-between mb-5 border-b border-grey3">
             <h3 class="relative flex z-10 items-center">Top Selling Products
               <span class="absolute border-b-4 border-yellow1 w-full -bottom-1 z-10 left-0"></span>
             </h3>          
-            <a href="" class="flex items-center text-grey2 pb-3">
+            <a href="" class=" items-center text-grey2 pb-3 hidden lg:flex">
               View All Products
               <img src="images/svg/icon_arrow-right-grey.svg" class="w-auto ml-1" alt="">
             </a>         
@@ -517,7 +552,7 @@
               </div>
               <div class="col-span-1 p-1 place-content-between grid grid-cols-1">
                 <div>
-                  <p class="text-blue1 font-bold text-sm">Product lorem ipsum dolor sit</p>
+                  <p class="text-blue1 font-bold text-sm text__wrap2">Product lorem ipsum dolor sit</p>
                   <div class="flex my-2">
                     <ul class="flex mr-2">
                       <li>
@@ -554,7 +589,7 @@
               </div>
               <div class="col-span-1 p-1 place-content-between grid grid-cols-1">
                 <div>
-                  <p class="text-blue1 font-bold text-sm">Product lorem ipsum dolor sit</p>
+                  <p class="text-blue1 font-bold text-sm text__wrap2">Product lorem ipsum dolor sit</p>
                   <div class="flex my-2">
                     <ul class="flex mr-2">
                       <li>
@@ -590,7 +625,7 @@
               </div>
               <div class="col-span-1 p-1 place-content-between grid grid-cols-1">
                 <div>
-                  <p class="text-blue1 font-bold text-sm">Product lorem ipsum dolor sit</p>
+                  <p class="text-blue1 font-bold text-sm text__wrap2">Product lorem ipsum dolor sit</p>
                   <div class="flex my-2">
                     <ul class="flex mr-2">
                       <li>
@@ -626,7 +661,7 @@
               </div>
               <div class="col-span-1 p-1 place-content-between grid grid-cols-1">
                 <div>
-                  <p class="text-blue1 font-bold text-sm">Product lorem ipsum dolor sit</p>
+                  <p class="text-blue1 font-bold text-sm text__wrap2">Product lorem ipsum dolor sit</p>
                   <div class="flex my-2">
                     <ul class="flex mr-2">
                       <li>
@@ -662,7 +697,7 @@
               </div>
               <div class="col-span-1 p-1 place-content-between grid grid-cols-1">
                 <div>
-                  <p class="text-blue1 font-bold text-sm">Product lorem ipsum dolor sit</p>
+                  <p class="text-blue1 font-bold text-sm text__wrap2">Product lorem ipsum dolor sit</p>
                   <div class="flex my-2">
                     <ul class="flex mr-2">
                       <li>
@@ -699,7 +734,7 @@
               </div>
               <div class="col-span-1 p-1 place-content-between grid grid-cols-1">
                 <div>
-                  <p class="text-blue1 font-bold text-sm">Product lorem ipsum dolor sit</p>
+                  <p class="text-blue1 font-bold text-sm text__wrap2">Product lorem ipsum dolor sit</p>
                   <div class="flex my-2">
                     <ul class="flex mr-2">
                       <li>
@@ -736,7 +771,7 @@
               </div>
               <div class="col-span-1 p-1 place-content-between grid grid-cols-1">
                 <div>
-                  <p class="text-blue1 font-bold text-sm">Product lorem ipsum dolor sit</p>
+                  <p class="text-blue1 font-bold text-sm text__wrap2">Product lorem ipsum dolor sit</p>
                   <div class="flex my-2">
                     <ul class="flex mr-2">
                       <li>
@@ -770,31 +805,31 @@
       </div>
 
       <!-- 3 colomn -->
-      <div class="grid grid-cols-3 gap-x-3 px-5">        
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-y-3 gap-x-3 px-5">        
         <div class="rounded-xl overflow-hidden h-full relative">
-          <img class="object-cover h-56	 w-full" src="images/photo1.jpg" alt="">
+          <img class="object-cover h-32 lg:h-56	 w-full" src="images/photo1.jpg" alt="">
           <div class="text-white absolute w-full h-full top-0 left-0 px-10 flex items-center bg-black bg-opacity-20">
             <div>
-               <h4 class="text-2xl my-4">Lorem ipsum dolor sit amet</h4>
-               <p class="text-lg">Sub Title </p>
+               <h4 class="text-lg lg:text-2xl my-4">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</h4>
+               <p class="text-xs lg:text-lg">Sub Title </p>
             </div>
          </div>
         </div>
         <div class="rounded-xl overflow-hidden h-full relative">
-          <img class="object-cover h-56	 w-full" src="images/photo1.jpg" alt="">
+          <img class="object-cover h-32 lg:h-56	 w-full" src="images/photo1.jpg" alt="">
           <div class="text-white absolute w-full h-full top-0 left-0 px-10 flex items-center bg-black bg-opacity-20">
             <div>
-               <h4 class="text-2xl my-4">Lorem ipsum dolor sit amet</h4>
-               <p class="text-lg">Sub Title </p>
+               <h4 class="text-lg lg:text-2xl my-4">Lorem ipsum dolor sit amet</h4>
+               <p class="text-xs lg:text-lg">Sub Title </p>
             </div>
          </div>
         </div>
         <div class="rounded-xl overflow-hidden h-full relative">
-          <img class="object-cover h-56	 w-full" src="images/photo1.jpg" alt="">
+          <img class="object-cover h-32 lg:h-56	 w-full" src="images/photo1.jpg" alt="">
           <div class="text-white absolute w-full h-full top-0 left-0 px-10 flex items-center bg-black bg-opacity-20">
             <div>
-               <h4 class="text-2xl my-4">Lorem ipsum dolor sit amet</h4>
-               <p class="text-lg">Sub Title </p>
+               <h4 class="text-lg lg:text-2xl my-4">Lorem ipsum dolor sit amet</h4>
+               <p class="text-xs lg:text-lg">Sub Title </p>
             </div>
          </div>
         </div>
@@ -804,11 +839,11 @@
       <!-- Hot Trending Products -->
       <div class="my-10">
         <div class="px-5"> 
-          <div class="flex justify-between mb-5 border-b border-grey3">
+          <div class="flex flex-col lg:flex-row justify-between mb-5 border-b border-grey3">
             <h3 class="relative flex z-10 items-center">Hot Trending Products
               <span class="absolute border-b-4 border-yellow1 w-full -bottom-1 z-10 left-0"></span>
             </h3>          
-            <a href="" class="flex items-center text-grey2 pb-3">
+            <a href="" class="items-center text-grey2 pb-3 hidden lg:flex">
               View All Products
               <img src="images/svg/icon_arrow-right-grey.svg" class="w-auto ml-1" alt="">
             </a>         
@@ -825,7 +860,7 @@
               </div>
               <div class="col-span-1 p-1 place-content-between grid grid-cols-1">
                 <div>
-                  <p class="text-blue1 font-bold text-sm">Product lorem ipsum dolor sit</p>
+                  <p class="text-blue1 font-bold text-sm text__wrap2">Product lorem ipsum dolor sit</p>
                   <div class="flex my-2">
                     <ul class="flex mr-2">
                       <li>
@@ -862,7 +897,7 @@
               </div>
               <div class="col-span-1 p-1 place-content-between grid grid-cols-1">
                 <div>
-                  <p class="text-blue1 font-bold text-sm">Product lorem ipsum dolor sit</p>
+                  <p class="text-blue1 font-bold text-sm text__wrap2">Product lorem ipsum dolor sit</p>
                   <div class="flex my-2">
                     <ul class="flex mr-2">
                       <li>
@@ -898,7 +933,7 @@
               </div>
               <div class="col-span-1 p-1 place-content-between grid grid-cols-1">
                 <div>
-                  <p class="text-blue1 font-bold text-sm">Product lorem ipsum dolor sit</p>
+                  <p class="text-blue1 font-bold text-sm text__wrap2">Product lorem ipsum dolor sit</p>
                   <div class="flex my-2">
                     <ul class="flex mr-2">
                       <li>
@@ -934,7 +969,7 @@
               </div>
               <div class="col-span-1 p-1 place-content-between grid grid-cols-1">
                 <div>
-                  <p class="text-blue1 font-bold text-sm">Product lorem ipsum dolor sit</p>
+                  <p class="text-blue1 font-bold text-sm text__wrap2">Product lorem ipsum dolor sit</p>
                   <div class="flex my-2">
                     <ul class="flex mr-2">
                       <li>
@@ -970,7 +1005,7 @@
               </div>
               <div class="col-span-1 p-1 place-content-between grid grid-cols-1">
                 <div>
-                  <p class="text-blue1 font-bold text-sm">Product lorem ipsum dolor sit</p>
+                  <p class="text-blue1 font-bold text-sm text__wrap2">Product lorem ipsum dolor sit</p>
                   <div class="flex my-2">
                     <ul class="flex mr-2">
                       <li>
@@ -1007,7 +1042,7 @@
               </div>
               <div class="col-span-1 p-1 place-content-between grid grid-cols-1">
                 <div>
-                  <p class="text-blue1 font-bold text-sm">Product lorem ipsum dolor sit</p>
+                  <p class="text-blue1 font-bold text-sm text__wrap2">Product lorem ipsum dolor sit</p>
                   <div class="flex my-2">
                     <ul class="flex mr-2">
                       <li>
@@ -1044,7 +1079,7 @@
               </div>
               <div class="col-span-1 p-1 place-content-between grid grid-cols-1">
                 <div>
-                  <p class="text-blue1 font-bold text-sm">Product lorem ipsum dolor sit</p>
+                  <p class="text-blue1 font-bold text-sm text__wrap2">Product lorem ipsum dolor sit</p>
                   <div class="flex my-2">
                     <ul class="flex mr-2">
                       <li>
@@ -1081,28 +1116,28 @@
       <!-- Top Featured Products -->
       <div class="my-10">
         <div class="px-5"> 
-          <div class="flex justify-between mb-5 border-b border-grey3">
+          <div class="flex flex-col lg:flex-row justify-between mb-5 border-b border-grey3">
             <h3 class="relative flex z-10 items-center">Top Featured Products
               <span class="absolute border-b-4 border-yellow1 w-full -bottom-1 z-10 left-0"></span>
             </h3>          
-            <a href="" class="flex items-center text-grey2 pb-3">
+            <a href="" class="hidden lg:flex items-center text-grey2 pb-3">
               View All Products
               <img src="images/svg/icon_arrow-right-grey.svg" class="w-auto ml-1" alt="">
             </a>         
           </div>
         </div>  
         
-        <div class="grid grid-cols-2 gap-x-4 px-5">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-y-4 gap-x-4 px-5">
           <div class="bg-white p-2 rounded-xl grid grid-cols-5">
-            <div class="col-span-2">
+            <div class="col-span-5 lg:col-span-2">
               <div class="rounded-lg overflow-hidden relative ">
                 <img src="images/photo-square.jpg" class="w-full object-cover" alt="">
                 <span class="absolute left-0 top-5 text-white bg-green1 text-xs font-bold px-2 py-1 rounded-r-md">5% OFF</span>
               </div>
             </div>
-            <div class="col-span-3 p-1 place-content-between grid grid-cols-1 py-1 px-3">
+            <div class="col-span-5 lg:col-span-3 p-1 place-content-between grid grid-cols-1 py-3 lg:py-1 px-3">
               <div>
-                <p class="text-blue1 font-bold text-sm">Product lorem ipsum dolor sit</p>
+                <p class="text-blue1 font-bold text-sm text__wrap2">Product lorem ipsum dolor sit</p>
                 <div class="flex my-2">
                   <ul class="flex mr-2">
                     <li>
@@ -1161,16 +1196,16 @@
 
             <div class="bg-white p-2 rounded-xl">
               <div class=" grid grid-cols-5">
-                <div class="col-span-2">
+                <div class="col-span-5 lg:col-span-2">
                   <div class="rounded-lg overflow-hidden  relative ">
                     <img src="images/photo-square.jpg" class="w-full object-cover h-full" alt="">
                     <span class="absolute left-0 top-5 text-white bg-green1 text-xs font-bold px-2 py-1 rounded-r-md">5% OFF</span>
                   </div>
                 </div>
-                <div class="col-span-3">
+                <div class="col-span-5 lg:col-span-3">
                   <div class="place-content-between grid grid-cols-1 p-2">
                     <div>
-                      <p class="text-blue1 font-bold text-sm">Product lorem ipsum dolor sit</p>
+                      <p class="text-blue1 font-bold text-sm text__wrap2">Product lorem ipsum dolor sit</p>
                       <div class="flex my-2">
                         <ul class="flex mr-2">
                           <li>
@@ -1201,16 +1236,16 @@
             </div>
             <div class="bg-white p-2 rounded-xl">
               <div class=" grid grid-cols-5">
-                <div class="col-span-2">
+                <div class="col-span-5 lg:col-span-2">
                   <div class="rounded-lg overflow-hidden  relative ">
                     <img src="images/photo-square.jpg" class="w-full object-cover h-full" alt="">
                     <span class="absolute left-0 top-5 text-white bg-green1 text-xs font-bold px-2 py-1 rounded-r-md">5% OFF</span>
                   </div>
                 </div>
-                <div class="col-span-3">
+                <div class="col-span-5 lg:col-span-3">
                   <div class="place-content-between grid grid-cols-1 p-2">
                     <div>
-                      <p class="text-blue1 font-bold text-sm">Product lorem ipsum dolor sit</p>
+                      <p class="text-blue1 font-bold text-sm text__wrap2">Product lorem ipsum dolor sit</p>
                       <div class="flex my-2">
                         <ul class="flex mr-2">
                           <li>
@@ -1241,16 +1276,16 @@
             </div>
             <div class="bg-white p-2 rounded-xl">
               <div class=" grid grid-cols-5">
-                <div class="col-span-2">
+                <div class="col-span-5 lg:col-span-2">
                   <div class="rounded-lg overflow-hidden  relative ">
                     <img src="images/photo-square.jpg" class="w-full object-cover h-full" alt="">
                     <span class="absolute left-0 top-5 text-white bg-green1 text-xs font-bold px-2 py-1 rounded-r-md">5% OFF</span>
                   </div>
                 </div>
-                <div class="col-span-3">
+                <div class="col-span-5 lg:col-span-3">
                   <div class="place-content-between grid grid-cols-1 p-2">
                     <div>
-                      <p class="text-blue1 font-bold text-sm">Product lorem ipsum dolor sit</p>
+                      <p class="text-blue1 font-bold text-sm text__wrap2">Product lorem ipsum dolor sit</p>
                       <div class="flex my-2">
                         <ul class="flex mr-2">
                           <li>
@@ -1281,16 +1316,16 @@
             </div>
             <div class="bg-white p-2 rounded-xl">
               <div class=" grid grid-cols-5">
-                <div class="col-span-2">
+                <div class="col-span-5 lg:col-span-2">
                   <div class="rounded-lg overflow-hidden  relative ">
                     <img src="images/photo-square.jpg" class="w-full object-cover h-full" alt="">
                     <span class="absolute left-0 top-5 text-white bg-green1 text-xs font-bold px-2 py-1 rounded-r-md">5% OFF</span>
                   </div>
                 </div>
-                <div class="col-span-3">
+                <div class="col-span-5 lg:col-span-3">
                   <div class="place-content-between grid grid-cols-1 p-2">
                     <div>
-                      <p class="text-blue1 font-bold text-sm">Product lorem ipsum dolor sit</p>
+                      <p class="text-blue1 font-bold text-sm text__wrap2">Product lorem ipsum dolor sit</p>
                       <div class="flex my-2">
                         <ul class="flex mr-2">
                           <li>
@@ -1329,129 +1364,168 @@
       <!-- News & Review -->
       <div class="my-10">
         <div class="px-5"> 
-          <div class="flex justify-between mb-5 border-b border-grey3">
+          <div class="flex flex-col lg:flex-row justify-between mb-5 border-b border-grey3">
             <h3 class="relative flex z-10 items-center">News & Review
               <span class="absolute border-b-4 border-yellow1 w-full -bottom-1 z-10 left-0"></span>
             </h3>          
-            <a href="" class="flex items-center text-grey2 pb-3">
+            <a href="" class="hidden lg:flex items-center text-grey2 pb-3">
               View All Products
               <img src="images/svg/icon_arrow-right-grey.svg" class="w-auto ml-1" alt="">
             </a>         
           </div>
         </div> 
 
-        <div class="grid grid grid-cols-5 gap-x-4 px-5" >
+        <div class="grid grid-cols-1 gap-x-4" >
+          
+          <div class="slider1col slider px-2">
 
-          <div class="bg-white rounded-xl grid grid-cols-1 place-content-start">
-            <div>
-              <div class="rounded-t-lg overflow-hidden relative h-48	 ">
-                <img src="images/photo-square.jpg" class="w-full object-cover h-full" alt="">
-                <span class="absolute left-2 top-2 bg-yellow1 text-black text-xs px-2 py-1 rounded-lg">Article Category</span>
-              </div>
-            </div>
-            <div class="grid grid-cols-1 p-4 ">
-              <div>
-                <p class="text-black font-bold text-sm h-9 text__wrap2">Product lorem ipsum dolor sit</p>
-                <div class="my-4 leading-5 text-grey2 border-b border-gray-200 pb-4 h-24">
-                  <p class="text__wrap4">
-                    Lorem ipsum dolor sit amet 
-                  </p>
+            <div class="item mx-2">
+              <div class="bg-white rounded-xl grid grid-cols-5 lg:grid-cols-1 place-content-start ">
+                <div class="col-span-2 lg:col-span-1">
+                  <div class="rounded-lg lg:rounded-t-lg overflow-hidden relative h-full lg:h-48	 ">
+                    <img src="images/photo-square.jpg" class="w-full object-cover h-full" alt="">
+                    <span class="absolute left-2 top-2 bg-yellow1 text-black text-xs px-2 py-1 rounded-lg">Article Category</span>
+                  </div>
                 </div>
-                <div class="flex justify-between items-center text-xs text-grey2">
-                  <span>MMM DD, YYYY</span>
-                  <strong>Read More</strong>
+                <div class="col-span-3 lg:col-span-1 grid grid-cols-1 p-4 ">
+                  <div>
+                    <p class="text-black font-bold text-sm h-9 text__wrap2">Product lorem ipsum dolor sit</p>
+                    <div class="my-4 leading-5 text-grey2 border-b border-gray-200 pb-4 lg:h-24">
+                      <p class="text__wrap4">
+                        Lorem ipsum dolor sit amet 
+                      </p>
+                    </div>
+                    <div class="flex justify-between items-center text-xs text-grey2">
+                      <span>MMM DD, YYYY</span>
+                      <strong>Read More</strong>
+                    </div>
+                  </div>
                 </div>
-              </div>
+              </div>   
             </div>
-          </div>   
-          <div class="bg-white rounded-xl grid grid-cols-1 place-content-start">
-            <div>
-              <div class="rounded-t-lg overflow-hidden relative h-48	 ">
-                <img src="images/photo-square.jpg" class="w-full object-cover h-full" alt="">
-                <span class="absolute left-2 top-2 bg-yellow1 text-black text-xs px-2 py-1 rounded-lg">Article Category</span>
-              </div>
-            </div>
-            <div class="grid grid-cols-1 p-4 ">
-              <div>
-                <p class="text-black font-bold text-sm h-9 text__wrap2">Product lorem ipsum dolor sit</p>
-                <div class="my-4 leading-5 text-grey2 border-b border-gray-200 pb-4 h-24">
-                  <p class="text__wrap4">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores totam doloremque provident error vel dolore pariatur 
-                  </p>
+            <div class="item mx-2">
+              <div class="bg-white rounded-xl grid grid-cols-5 lg:grid-cols-1 place-content-start ">
+                <div class="col-span-2 lg:col-span-1">
+                  <div class="rounded-lg lg:rounded-t-lg overflow-hidden relative h-full lg:h-48	 ">
+                    <img src="images/photo-square.jpg" class="w-full object-cover h-full" alt="">
+                    <span class="absolute left-2 top-2 bg-yellow1 text-black text-xs px-2 py-1 rounded-lg">Article Category</span>
+                  </div>
                 </div>
-                <div class="flex justify-between items-center text-xs text-grey2">
-                  <span>MMM DD, YYYY</span>
-                  <strong>Read More</strong>
+                <div class="col-span-3 lg:col-span-1 grid grid-cols-1 p-4 ">
+                  <div>
+                    <p class="text-black font-bold text-sm h-9 text__wrap2">Product lorem ipsum dolor sit</p>
+                    <div class="my-4 leading-5 text-grey2 border-b border-gray-200 pb-4 lg:h-24">
+                      <p class="text__wrap4">
+                        Lorem ipsum dolor sit amet 
+                      </p>
+                    </div>
+                    <div class="flex justify-between items-center text-xs text-grey2">
+                      <span>MMM DD, YYYY</span>
+                      <strong>Read More</strong>
+                    </div>
+                  </div>
                 </div>
-              </div>
+              </div>   
             </div>
-          </div>   
-          <div class="bg-white rounded-xl grid grid-cols-1 place-content-start">
-            <div>
-              <div class="rounded-t-lg overflow-hidden relative h-48	 ">
-                <img src="images/photo-square.jpg" class="w-full object-cover h-full" alt="">
-                <span class="absolute left-2 top-2 bg-yellow1 text-black text-xs px-2 py-1 rounded-lg">Article Category</span>
-              </div>
-            </div>
-            <div class="grid grid-cols-1 p-4 ">
-              <div>
-                <p class="text-black font-bold text-sm h-9 text__wrap2">Product lorem ipsum dolor sit</p>
-                <div class="my-4 leading-5 text-grey2 border-b border-gray-200 pb-4 h-24">
-                  <p class="text__wrap4">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores totam doloremque provident error vel dolore pariatur 
-                  </p>
+            <div class="item mx-2">
+              <div class="bg-white rounded-xl grid grid-cols-5 lg:grid-cols-1 place-content-start ">
+                <div class="col-span-2 lg:col-span-1">
+                  <div class="rounded-lg lg:rounded-t-lg overflow-hidden relative h-full lg:h-48	 ">
+                    <img src="images/photo-square.jpg" class="w-full object-cover h-full" alt="">
+                    <span class="absolute left-2 top-2 bg-yellow1 text-black text-xs px-2 py-1 rounded-lg">Article Category</span>
+                  </div>
                 </div>
-                <div class="flex justify-between items-center text-xs text-grey2">
-                  <span>MMM DD, YYYY</span>
-                  <strong>Read More</strong>
+                <div class="col-span-3 lg:col-span-1 grid grid-cols-1 p-4 ">
+                  <div>
+                    <p class="text-black font-bold text-sm h-9 text__wrap2">Product lorem ipsum dolor sit</p>
+                    <div class="my-4 leading-5 text-grey2 border-b border-gray-200 pb-4 lg:h-24">
+                      <p class="text__wrap4">
+                        Lorem ipsum dolor sit amet 
+                      </p>
+                    </div>
+                    <div class="flex justify-between items-center text-xs text-grey2">
+                      <span>MMM DD, YYYY</span>
+                      <strong>Read More</strong>
+                    </div>
+                  </div>
                 </div>
-              </div>
+              </div>   
             </div>
-          </div>   
-          <div class="bg-white rounded-xl grid grid-cols-1 place-content-start">
-            <div>
-              <div class="rounded-t-lg overflow-hidden relative h-48	 ">
-                <img src="images/photo-square.jpg" class="w-full object-cover h-full" alt="">
-                <span class="absolute left-2 top-2 bg-yellow1 text-black text-xs px-2 py-1 rounded-lg">Article Category</span>
-              </div>
-            </div>
-            <div class="grid grid-cols-1 p-4 ">
-              <div>
-                <p class="text-black font-bold text-sm h-9 text__wrap2">Product lorem ipsum dolor sit</p>
-                <div class="my-4 leading-5 text-grey2 border-b border-gray-200 pb-4 h-24">
-                  <p class="text__wrap4">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores totam doloremque provident error vel dolore pariatur 
-                  </p>
+            <div class="item mx-2">
+              <div class="bg-white rounded-xl grid grid-cols-5 lg:grid-cols-1 place-content-start ">
+                <div class="col-span-2 lg:col-span-1">
+                  <div class="rounded-lg lg:rounded-t-lg overflow-hidden relative h-full lg:h-48	 ">
+                    <img src="images/photo-square.jpg" class="w-full object-cover h-full" alt="">
+                    <span class="absolute left-2 top-2 bg-yellow1 text-black text-xs px-2 py-1 rounded-lg">Article Category</span>
+                  </div>
                 </div>
-                <div class="flex justify-between items-center text-xs text-grey2">
-                  <span>MMM DD, YYYY</span>
-                  <strong>Read More</strong>
+                <div class="col-span-3 lg:col-span-1 grid grid-cols-1 p-4 ">
+                  <div>
+                    <p class="text-black font-bold text-sm h-9 text__wrap2">Product lorem ipsum dolor sit</p>
+                    <div class="my-4 leading-5 text-grey2 border-b border-gray-200 pb-4 lg:h-24">
+                      <p class="text__wrap4">
+                        Lorem ipsum dolor sit amet 
+                      </p>
+                    </div>
+                    <div class="flex justify-between items-center text-xs text-grey2">
+                      <span>MMM DD, YYYY</span>
+                      <strong>Read More</strong>
+                    </div>
+                  </div>
                 </div>
-              </div>
+              </div>   
             </div>
-          </div>   
-          <div class="bg-white rounded-xl grid grid-cols-1 place-content-start">
-            <div>
-              <div class="rounded-t-lg overflow-hidden relative h-48	 ">
-                <img src="images/photo-square.jpg" class="w-full object-cover h-full" alt="">
-                <span class="absolute left-2 top-2 bg-yellow1 text-black text-xs px-2 py-1 rounded-lg">Article Category</span>
-              </div>
-            </div>
-            <div class="grid grid-cols-1 p-4 ">
-              <div>
-                <p class="text-black font-bold text-sm h-9 text__wrap2">Product lorem ipsum dolor sit Product lorem </p>
-                <div class="my-4 leading-5 text-grey2 border-b border-gray-200 pb-4 h-24">
-                  <p class="text__wrap4">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores totam doloremque provident error vel dolore pariatur 
-                  </p>
+            <div class="item mx-2">
+              <div class="bg-white rounded-xl grid grid-cols-5 lg:grid-cols-1 place-content-start ">
+                <div class="col-span-2 lg:col-span-1">
+                  <div class="rounded-lg lg:rounded-t-lg overflow-hidden relative h-full lg:h-48	 ">
+                    <img src="images/photo-square.jpg" class="w-full object-cover h-full" alt="">
+                    <span class="absolute left-2 top-2 bg-yellow1 text-black text-xs px-2 py-1 rounded-lg">Article Category</span>
+                  </div>
                 </div>
-                <div class="flex justify-between items-center text-xs text-grey2">
-                  <span>MMM DD, YYYY</span>
-                  <strong>Read More</strong>
+                <div class="col-span-3 lg:col-span-1 grid grid-cols-1 p-4 ">
+                  <div>
+                    <p class="text-black font-bold text-sm h-9 text__wrap2">Product lorem ipsum dolor sit</p>
+                    <div class="my-4 leading-5 text-grey2 border-b border-gray-200 pb-4 lg:h-24">
+                      <p class="text__wrap4">
+                        Lorem ipsum dolor sit amet 
+                      </p>
+                    </div>
+                    <div class="flex justify-between items-center text-xs text-grey2">
+                      <span>MMM DD, YYYY</span>
+                      <strong>Read More</strong>
+                    </div>
+                  </div>
                 </div>
-              </div>
+              </div>   
             </div>
-          </div>   
+            <div class="item mx-2">
+              <div class="bg-white rounded-xl grid grid-cols-5 lg:grid-cols-1 place-content-start ">
+                <div class="col-span-2 lg:col-span-1">
+                  <div class="rounded-lg lg:rounded-t-lg overflow-hidden relative h-full lg:h-48	 ">
+                    <img src="images/photo-square.jpg" class="w-full object-cover h-full" alt="">
+                    <span class="absolute left-2 top-2 bg-yellow1 text-black text-xs px-2 py-1 rounded-lg">Article Category</span>
+                  </div>
+                </div>
+                <div class="col-span-3 lg:col-span-1 grid grid-cols-1 p-4 ">
+                  <div>
+                    <p class="text-black font-bold text-sm h-9 text__wrap2">Product lorem ipsum dolor sit</p>
+                    <div class="my-4 leading-5 text-grey2 border-b border-gray-200 pb-4 lg:h-24">
+                      <p class="text__wrap4">
+                        Lorem ipsum dolor sit amet 
+                      </p>
+                    </div>
+                    <div class="flex justify-between items-center text-xs text-grey2">
+                      <span>MMM DD, YYYY</span>
+                      <strong>Read More</strong>
+                    </div>
+                  </div>
+                </div>
+              </div>   
+            </div>
+            
+
+          </div>
 
         </div>
 
@@ -1464,29 +1538,29 @@
 
     <div class="footer bg-grey1 pt-10 pb-8 mt-32"> 
         <div class="container px-5">
-          <div class="rounded-xl overflow-hidden grid grid-cols-4 -mt-24">
-            <div class="p-4 flex items-center justify-center bg-red1 text-white">
+          <div class="rounded-xl overflow-hidden grid grid-cols-1 lg:grid-cols-4 -mt-24">
+            <div class="rounded-xl lg:rounded-none p-4 flex items-center justify-center bg-red1 text-white">
               <img src="images/svg/icon__cs.svg" class="w-auto" alt="">
               <div class="text-center pl-2">
                 <p class="text-xs">Got question? Call us at</p class="text-xs">
                 <h3>+65 6100 0000</h3>
               </div>
             </div>
-            <div class="p-4 flex items-center justify-center bg-yellow1 text-black">
+            <div class="p-4 items-center justify-center bg-yellow1 text-black hidden lg:flex">
               <img src="images/svg/icon__delivery.svg" class="w-auto" alt="">
               <div class="pl-5 flex justify-center flex-col">
                 <h5 class="text-sm font-bold leading-none">Free delivery</h5>
                 <small class="text-yellow2 text-xs">For all orders over $300</small>
               </div>
             </div>
-            <div class="p-4 flex items-center justify-center bg-yellow1 text-black">
+            <div class="p-4 items-center justify-center bg-yellow1 text-black hidden lg:flex">
               <img src="images/svg/icon__verified.svg" class="w-auto" alt="">
               <div class="pl-5 flex justify-center flex-col">
                 <h5 class="text-sm font-bold leading-none">Seller Verified</h5>
                 <small class="text-yellow2 text-xs">All responsible sellers</small>
               </div>
             </div>
-            <div class="p-4 flex items-center justify-center bg-yellow1 text-black">
+            <div class="p-4 items-center justify-center bg-yellow1 text-black hidden lg:flex">
               <img src="images/svg/icon__buynopaylater.svg" class="w-auto" alt="">
               <div class="pl-5 flex justify-center flex-col">
                 <h5 class="text-sm font-bold leading-none">Buy Now, Pay Later</h5>
@@ -1497,10 +1571,10 @@
           
 
           <!-- footer menu -->
-          <div class="grid grid-cols-6 gap-x-5 text-white pt-10 border-b border-grey4 mb-5 pb-5">
-            <div class="col-span-1">
+          <div class="grid grid-cols-1 lg:grid-cols-6 gap-x-5 text-white pt-10 border-b border-grey4 mb-5 pb-5">
+            <div class="col-span-1 mb-10 lg:mb-0">
               <h4>About Us</h4>
-              <ul class="mt-5 flex flex-col">
+              <ul class="mt-2 lg:mt-5 flex flex-col">
                 <li>
                   <a href="">The Company</a>
                 </li>
@@ -1515,9 +1589,9 @@
                 </li>
               </ul>
             </div>
-            <div class="col-span-1">
+            <div class="col-span-1 mb-10 lg:mb-0">
               <h4>Buy From Us</h4>
-              <ul class="mt-5 flex flex-col">
+              <ul class="mt-2 lg:mt-5 flex flex-col">
                 <li>
                   <a href="">Terms of Conditions</a>
                 </li>
@@ -1539,9 +1613,9 @@
                 </li>
               </ul>
             </div>
-            <div class="col-span-1">
+            <div class="col-span-1 mb-10 lg:mb-0">
               <h4>Sell With Us</h4>
-              <ul class="mt-5 flex flex-col">
+              <ul class="mt-2 lg:mt-5 flex flex-col">
                 <li>
                   <a href="">Be A Seller</a>
                 </li>
@@ -1555,9 +1629,9 @@
                 </li>
               </ul>
             </div>
-            <div class="col-span-1">
+            <div class="col-span-1 mb-10 lg:mb-0">
               <h4>Customer Service</h4>
-              <ul class="mt-5 flex flex-col">
+              <ul class="mt-2 lg:mt-5 flex flex-col">
                 <li>
                   <a href="">The Company</a>
                 </li>
@@ -1577,9 +1651,9 @@
               <div class="mt-5 text-sm">
                 <p>Sign up now with many others subscribers to get new 
                   discounted deals every week.</p>
-                  <form action="" class="flex items-center my-5">
-                    <input type="text" class="rounded-l-lg p-3" placeholder="Enter your e-mail"> 
-                    <button class="p-3 bg-yellow1 text-black rounded-r-lg">SUBSCRIBE NOW</button>
+                  <form action="" class="flex items-center my-5 w-full justify-between">
+                    <input type="text" class="flex-1 rounded-l-lg p-3" placeholder="Enter your e-mail"> 
+                    <button class="flex-none text-xxs lg:text-sm p-3 bg-yellow1 text-black rounded-r-lg">SUBSCRIBE NOW</button>
                   </form>
                   <small>By providing your email address, you agree to our <br>
                     Privacy Policy and Terms of Service.</small>
@@ -1587,13 +1661,14 @@
             </div>
           </div>
 
-          <div class="text-grey2">
+          <div class="text-grey2 text-xs">
             <p>Copyright <span class="text-white">© 2021</span> <span class="text-yellow1"> Cityhive.SG </span>. All Rights Reserved. Built by <span class="text-white">Supercharge.Business</span></p>
           </div>
         </div>
     </div>
 
-    <script src="js/jquery-1.11.0.min.js"></script>
+    <!-- <script src="js/jquery-1.11.0.min.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/main.js"></script>
   </body>
