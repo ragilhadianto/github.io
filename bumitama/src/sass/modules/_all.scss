@@ -255,3 +255,9 @@ h2.quote{
   }
 }
 
+small{
+  
+  @include max-responsive($lg){
+    font-size: 13px;
+  }
+}

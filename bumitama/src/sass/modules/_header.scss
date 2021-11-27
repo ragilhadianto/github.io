@@ -1,10 +1,17 @@
 .header{
-    position: absolute;
+    position: fixed;
+    z-index: 99999;
     left: 0;
     right: 0;
     top: 0;
     background: rgb(255,247,243);
     background: linear-gradient(180deg, rgba(255,247,243,1) 0%, rgba(255,247,243,1) 10%, rgba(255,247,243,0.75) 55%, rgba(255,247,243,0) 100%);
+    @include base_transition(all);
+
+
+    & .pt-5.pb-24{
+        //@include base_transition(all);
+    }
 
     .logo{
         @include min-responsive($lg){
@@ -13,9 +20,17 @@
     }
     &__menu{
         
-        @include max-responsive($md){
+        @include max-responsive(1023px){
             display: none;
             position: fixed;
+            //padding-top: 30px;
+        }
+
+        & ul{
+
+            @include min-responsive(0){
+                column-gap: 2rem !important; 
+            }
         }
 
         &.active{
@@ -35,9 +50,13 @@
             li{
 
                 a{
-
-                    &:hover{
-                        border-bottom: 1px solid #134F2B;
+                    bottom: 1px;
+                    position: relative;
+                    &:hover,
+                    &.active{
+                        @include min-responsive($lg){
+                            border-bottom: 1px solid #134F2B;
+                        }
                     }
                 }
             }
@@ -46,12 +65,32 @@
 
     & .menuMobile{
         display: none;
-        @include max-responsive($md){
+        @include max-responsive(1023px){
             display: block;
         }
     }
 
+    .header__sub{
+      height: 43px;
+      position: relative;
+      top: 10px; 
+    }
     
+    .menuMobileClose{
+        // position: absolute;
+        // right: 20px;
+    }
+
+
+    //scroll
+    &.header__scroll{
+
+        background: #FFF7F3;
+
+        & .pt-5.pb-24{
+            padding: 20px 0 30px 0;
+        }
+    }
 }
 
 

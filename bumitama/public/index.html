@@ -19,17 +19,17 @@
 
     <div class="header">
       <div class="container">
-        <div class="flex justify-between items-center  pt-5 pb-24">       
+        <div class="flex justify-between items-end  pt-5 pb-24">       
           <div class="logo">
             <a href="index.html">
-              <img class="w-60 lg:w-72" src="images/logo.png" alt="">
+              <img class="w-60 lg:w-72" src="images/logo.svg" alt="">
             </a>
           </div>        
-          <div class="header__menu p-5 lg:p-0 lg:ml-5 lg:block lg:relative w-full lg:w-auto h-screen lg:h-auto left-0 top-0 right-0 bg-brokenwhite lg:bg-transparent z-50 flex flex-wrap content-between">
+          <div class="header__menu p-5 lg:p-0 lg:ml-5 lg:block lg:relative w-full lg:w-auto h-full lg:h-auto left-0 top-0 right-0 bg-brokenwhite lg:bg-transparent z-50 flex flex-wrap content-between">
             <div class="w-full">
               <div class="lg:hidden flex justify-between items-center ">
                 <a href="index.html" class="header__sub__logo">
-                  <img class="w-60 lg:w-auto" src="images/logo.png" alt="">
+                  <img class="w-60 lg:w-auto" src="images/logo.svg" alt="">
                 </a>
                 <div class="menuMobileBack header__sub hidden">
                   <img class="w-auto" src="images/svg/icon__menu__back.svg" alt="">
@@ -43,17 +43,21 @@
               </div>    
               <ul class="text-green1 flex lg:gap-x-10 flex-col lg:flex-row mt-10 lg:mt-0 relative lg:static ">
                 <li>
-                  <a class="hover text-lg py-3 lg:py-0 lg:text-base" href="about.html">About Us</a>
+                  <a class="hover text-lg py-3 lg:py-0 lg:text-sm" href="about.html">About Us</a>
                 </li>
                 <li>
-                  <a class="hover text-lg py-3 lg:py-0 lg:text-base" href="business.html">Our Business</a>
+                  <a class="hover text-lg py-3 lg:py-0 lg:text-sm" href="business.html">Our Business</a>
+                </li>
+                <li>
+                  <a class="hover text-lg py-3 lg:py-0 lg:text-sm" href="governance.html">Governance</a>
                 </li>
                 <li class="dropdown ">
-                  <a class="dropbtn dropbtn__sub hover text-lg py-3 lg:py-0 lg:text-base flex items-center" href="sustainability.html">
+                  <a class="dropbtn dropbtn__sub hover text-lg py-3 lg:py-0 lg:text-sm flex items-center" href="sustainability.html">
                     Sustainability
                     <img class="transform -rotate-90 lg:rotate-0" style="width: 15px;margin-left: 5px;" src="images/svg/icon__arrow__bottom.svg" alt="">
                   </a>
-                  <div class="header__menu__sub dropdown-content w-full lg:w-auto  flex-col lg:rounded-xl text-base lg:px-4 py-3">
+                  <div class="header__menu__sub dropdown-content w-full lg:w-auto  flex-col lg:rounded-xl text-base lg:text-sm lg:px-4 py-3">
+                    <hr class="absolute left-0 right-0 top-0" style="border: 1px solid #828282;">
                     <a class="py-3 lg:py-1" href="environment.html">Environment</a>
                     <a class="py-3 lg:py-1" href="community.html">Community</a>
                     <a class="py-3 lg:py-1" href="workplace.html">Workplace</a>
@@ -63,10 +67,13 @@
                   </div>
                 </li>
                 <li>
-                  <a class="hover text-lg py-3 lg:py-0 lg:text-base" href="investor.html">Investor</a>
+                  <a class="hover text-lg py-3 lg:py-0 lg:text-sm" href="investor.html">Investor</a>
                 </li>
                 <li>
-                  <a class="hover text-lg py-3 lg:py-0 lg:text-base" href="news.html">News & Media</a>
+                  <a class="dropbtn dropbtn__sub hover text-lg py-3 lg:py-0 lg:text-sm flex items-center" href="sustainability.html">
+                    News & Media
+                    <img class="transform -rotate-90 lg:rotate-0" style="width: 15px;margin-left: 5px;" src="images/svg/icon__arrow__bottom.svg" alt="">
+                  </a>
                 </li>
               </ul>
             </div>
@@ -89,10 +96,10 @@
               <div class="dropbtn dropbtn__search p-2">
                 <img class="w-auto lg:w-4" src="images/svg/icon__search.svg" alt="">
               </div>
-              <div class="sub__search dropdown-content p-5  w-full lg:w-auto flex-col lg:rounded-xl text-base lg:px-4 lg:py-3">
+              <div class="sub__search dropdown-content p-5  w-full lg:w-auto flex-col lg:rounded-xl text-base lg:px-4 lg:pt-2 lg:pb-4">
                 <div class="lg:hidden flex justify-between items-center ">
                   <a href="index.html" class="header__sub__logo">
-                    <img class="w-60 lg:w-auto" src="images/logo.png" alt="">
+                    <img class="w-60 lg:w-auto" src="images/logo.svg" alt="">
                   </a>           
                   <div class="menuMobileClose">
                     <img class="w-auto" src="images/svg/icon__menu__close.svg" alt="">
@@ -126,7 +133,7 @@
       <div class="container absolute bottom-0 left-0 right-0 m-auto">
         <div class="absolute right-5 lg:right-0 bottom-10 w-56 p-3 bg-white rounded-2xl bg__gradientbrown border-2 border-brown1">
           <a href="">
-            <h4 class="text-sm tracking-widest font-bold mb-1 text-gray2">LATEST NEWS</h4>
+            <span class="text-sm tracking-widest font-bold text-gray2 leading-none	">LATEST NEWS</span>
             <p class="text-xs lg:text-xs text-gray1">Bumitama Agri acquires 3,642 Ha of land in Lower Perak</p>
           </a>
         </div>
@@ -136,7 +143,7 @@
       </div>
     </div>
     
-    <div class="bg-brokenwhite bg-contain	 lg:bg-cover bg-right-bottom lg:bg-right-top bg-no-repeat pt-14 lg:py-20" style="background-image: url(images/bg1.png);">
+    <div class="bg__fix1 bg-brokenwhite bg-contain	 lg:bg-cover bg-right-bottom lg:bg-right-top bg-no-repeat pt-14 lg:py-20" style="background-image: url(images/bg1.png);">
       <div class="container">
        <div class="grid lg:grid-cols-2">
          <div class="lg:pr-20 place-content-between grid">
@@ -145,15 +152,15 @@
           <p>Bumitama Agri Ltd. is one of the leading producers of palm oil and palm kernel in Indonesia.  We have been listed on the Singapore Stock Exchange since 2012 and have operations in Riau, and Central and West Kalimantan. We strive to achieve excellence through being disciplined and endeavour to lead the industry through continuous improvement.</p>
          </div>
           <div class="flex self-end mt-10">
-            <a class="cta flex text-orange1 gap-3 uppercase hover text-xs tracking-wider	 flex items-center" href="http://" target="_blank" rel="noopener noreferrer">
+            <a class="cta flex text-orange1 gap-3 uppercase hover text-xs tracking-wider	 flex items-center" href="about.html" target="_blank" rel="noopener noreferrer">
               <img class="w-auto" src="images/svg/icon__arrow__orange.svg" alt="">
               LEARN MORE
             </a>
           </div>
          </div>
          <div >
-           <div class="xl:rounded-xl overflow-hidden mt-10 -mx-5">
-             <img src="images/foto1.jpg" alt="">
+           <div class="xl:rounded-xl overflow-hidden mt-10 -mx-5 lg:h-80">
+             <img src="images/foto1.jpg" class="object-cover h-full w-full" alt="">
            </div>
          </div>
        </div>
@@ -185,26 +192,26 @@
           </div>
         </div>  
         <div>
+          <h2 class="font-libre text-2xl lg:text-4xl mb-10">Sustainability</h2>
           <div class="grid lg:grid-cols-2">
-            <div class="lg:pr-20">
-              <h2 class="font-libre text-2xl lg:text-4xl mb-10">Sustainability</h2>
-              <p class="text-xl font-libre text-lg lg:text-2xl	">Sustainability is crucial to all our operations. Certification is a given, but we go beyond what is required to achieve our goals.</p>      
+            <div class="lg:pr-20">              
+              <p class="text-xl font-libre text-lg lg:text-2xl	lg:leading-9	">Sustainability is crucial to all our operations. Certification is a given, but we go beyond what is required to achieve our goals.</p>      
               <div class="flex mt-10">
-                <a class="cta flex text-orange1 gap-3 uppercase hover text-xs flex items-center" href="http://" target="_blank" rel="noopener noreferrer">
+                <a class="cta flex text-orange1 gap-3 uppercase hover text-xs flex items-center" href="sustainability.html" target="_blank" rel="noopener noreferrer">
                   <img class="w-auto" src="images/svg/icon__arrow__orange.svg" alt="">
                   Read More
                 </a>
               </div>
   
-              <ul class="my-10">
+              <ul class="my-10 lg:mt-10 lg:mb-0">
                 <li class="w-full">
-                  <a href="" class="flex justify-between border-t border-b border-gray3  py-5 text-xl font-libre text-lg lg:text-2xl	w-full">
+                  <a href="environment.html" class="flex justify-between border-t border-b border-gray3  py-5 text-xl font-libre text-lg lg:text-2xl	w-full">
                     Environment
                     <img class="w-auto" src="images/svg/icon__arrow__orange.svg" alt="">
                   </a>  
                 </li>
                 <li class="w-full">
-                  <a href="" class="flex justify-between border-b border-gray3  py-5 text-xl font-libre text-lg lg:text-2xl	w-full">
+                  <a href="community.html" class="flex justify-between border-b border-gray3  py-5 text-xl font-libre text-lg lg:text-2xl	w-full">
                     Community
                     <img class="w-auto" src="images/svg/icon__arrow__orange.svg" alt="">
                   </a>  
@@ -224,11 +231,11 @@
               </ul>
             </div>
   
-           <div class="pl-20">
-            <div class="lg:rounded-xl overflow-hidden mt-10 lg:my-10 -mx-5">
-              <img src="images/foto3.jpg" alt="">
+            <div class="lg:pl-20">
+              <div class="lg:rounded-xl overflow-hidden mt-10 lg:my-0 -mx-5 h-80	lg:h-full">
+                <img src="images/foto3.jpg" class="h-full w-full object-cover" alt="">
+              </div>
             </div>
-          </div>
   
           </div>
         </div>
@@ -237,16 +244,16 @@
     
     <div class="py-14 lg:py-24 bg-brokenwhite" >
       <div class="container">         
-          <div class="lg:flex justify-between items-end mb-10 lg:mb-20">
+          <div class="lg:flex justify-between items-end mb-5 lg:mb-20">
             <h2 class="font-libre text-2xl lg:text-4xl">Latest News</h2>
-            <div class="flex mt-10">
-              <a class="cta flex text-orange1 gap-3 uppercase hover text-xs flex items-center" href="http://" target="_blank" rel="noopener noreferrer">
+            <!-- <div class="flex mt-5">
+              <a class="cta flex text-orange1 gap-3 uppercase hover text-xs flex items-center" href="news.html" target="_blank" rel="noopener noreferrer">
                 <img class="w-auto" src="images/svg/icon__arrow__orange.svg" alt="">
                 SEE ALL
               </a>
-            </div>
+            </div> -->
           </div>
-          <div class="grid lg:grid-cols-2 w-full border-t border-b border-gray3  py-10 lg:pb-14  lg:mb-14">
+          <div class="grid lg:grid-cols-2 w-full border-t border-gray3 py-5 lg:py-0 lg:pt-14 lg:mt-14">
             <div>
              <h4 class="text-lg lg:text-2xl text-orange1 font-libre mb-2 lg:mb-8">Bumitama Agri acquires 3,642 Ha of land in Lower Perak</h4>
              <small class="mb-0 lg:mb-5 block">Januari 2019</small>
@@ -266,7 +273,7 @@
             <div>           
             </div>
           </div>         
-          <div class="grid lg:grid-cols-2 w-full border-b border-gray3  py-10 lg:pb-14  lg:mb-14">
+          <div class="grid lg:grid-cols-2 w-full border-t border-gray3 py-5 lg:py-0 lg:pt-14 lg:mt-14">
             <div>
              <h4 class="text-lg lg:text-2xl text-orange1 font-libre mb-2 lg:mb-8">Bumitama Agri acquires 3,642 Ha of land in Lower Perak</h4>
              <small class="mb-0 lg:mb-5 block">Januari 2019</small>
@@ -286,7 +293,7 @@
             <div>           
             </div>
           </div>         
-          <div class="grid lg:grid-cols-2 w-full border-b border-gray3  py-10 lg:pb-14  lg:mb-14">
+          <div class="grid lg:grid-cols-2 w-full border-t border-gray3 py-5 lg:py-0 lg:pt-14 lg:mt-14">
             <div>
              <h4 class="text-lg lg:text-2xl text-orange1 font-libre mb-2 lg:mb-8">Bumitama Agri acquires 3,642 Ha of land in Lower Perak</h4>
              <small class="mb-0 lg:mb-5 block">Januari 2019</small>
@@ -312,40 +319,40 @@
     <div class="py-14 lg:py-24 bg-contain bg-right-bottom bg-no-repeat" style="background-image: url(images/bg4.png);" >
       <div class="container">  
           <h2 class="font-libre text-2xl lg:text-4xl lg:mb-20">Latest Publication</h2>
-          <div class="flex mt-10 block lg:hidden">
+          <!-- <div class="flex mt-10 block lg:hidden">
             <a class="cta flex text-orange1 gap-3 uppercase hover text-xs flex items-center" href="http://" target="_blank" rel="noopener noreferrer">
               <img class="w-auto" src="images/svg/icon__arrow__orange.svg" alt="">
               SEE ALL
             </a>
-          </div>
+          </div> -->
           <div class="grid grid-cols-12">
 
-            <div class="col-span-12 lg:col-span-3 lg:border-r border-gray3 flex flex-wrap content-between h-full">
-              <ul class="flex lg:flex-col overflow-x-scroll lg:overflow-hidden w-full my-8" id="nav">
-                <li class="flex-shrink-0	mr-5"> 
+            <div class="col-span-12 lg:col-span-3 lg:border-r border-gray3 flex flex-wrap content-between h-full pl-5 lg:pl-0 -mx-5 lg:mx-0">
+              <ul class="flex lg:flex-col overflow-x-scroll lg:overflow-hidden w-full my-5 lg:mt-2 lg:mb-0" id="nav">
+                <!-- <li class="flex-shrink-0 mr-5 lg:mr-0"> 
                   <a href="javascript:void(0);" class="block text-gray-400 hover text-xs tracking-widest	pb-5 active text-orange1">LATEST</a>
+                </li> -->
+                <li class="flex-shrink-0	mr-5 lg:mr-0"> 
+                  <a href="javascript:void(0);" class="block active text-orange1 hover text-xs tracking-widest	pb-5">QUARTERLY REPORT</a>
                 </li>
-                <li class="flex-shrink-0	mr-5"> 
-                  <a href="javascript:void(0);" class="block text-gray-400 hover text-xs tracking-widest	pb-5">QUARTERLY REPORT</a>
-                </li>
-                <li class="flex-shrink-0	mr-5"> 
+                <li class="flex-shrink-0	mr-5 lg:mr-0"> 
                   <a href="javascript:void(0);" class="block text-gray-400 hover text-xs tracking-widest	pb-5">ANNUAL REPORT</a>
                 </li>
-                <li class="flex-shrink-0	mr-5"> 
+                <li class="flex-shrink-0	mr-5 lg:mr-0"> 
                   <a href="javascript:void(0);" class="block text-gray-400 hover text-xs tracking-widest	pb-5">SUSTAINABILITY REPORT</a>
                 </li>
               </ul>
-
+<!-- 
               <div class="flex w-full hidden lg:block">
                 <a class="flex text-orange1 gap-3 uppercase hover" href="http://" target="_blank" rel="noopener noreferrer">
                   <img class="w-auto" src="images/svg/icon__arrow__orange.svg" alt="">
                   SEE ALL
                 </a>
-              </div>
+              </div> -->
 
             </div>
-            <div class="col-span-12 lg:col-span-9  w-full lg:pl-10" id="tab-content">
-              <div id="tab1" class="grid grid-cols-1 lg:grid-cols-2">
+            <div class="col-span-12 lg:col-span-9  w-full lg:pl-24" id="tab-content">
+              <!-- <div id="tab1" class="grid grid-cols-1 lg:grid-cols-2">
                 <div>
                  <div class="h-full flex flex-wrap content-between">
                   <div>
@@ -372,7 +379,7 @@
                     </a>
                   </div>
                 </div>
-              </div>
+              </div> -->
               <div id="tab2" class="grid grid-cols-1 lg:grid-cols-2">
                 <div>
                  <div class="h-full flex flex-wrap content-between">
@@ -467,7 +474,7 @@
         <div class="grid grid-cols-12 accordion">          
           <div class="col-span-12 lg:col-span-5">
             <img class="w-auto block lg:hidden mb-10" src="images/logo-white.png" alt="">
-            <div class="lg:mb-10">
+            <div class="mb-5 lg:mb-10">
               <h4 class="text-lg mb-4">Contact Us</h4>              
               <p><strong>All Enquiries:</strong> general@bumitama-agri.com (+65 6222 1332)</p>
               <div class="mt-2">
@@ -481,7 +488,7 @@
             </div>
 
             <div>
-              <h4 class="text-lg mb-3">Current Share Price</h4>
+              <h4 class="text-lg mb-1 lg:mb-2">Current Share Price</h4>
               <p><strong> 22 June 2021 5.30pm SGT</strong></p>
             </div>
 

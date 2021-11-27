@@ -22,7 +22,10 @@ module.exports = {
        },
        fontSize: {
         xxs: ['10px', '20px']
-      }
+      },
+      height: {
+        '80': '21.25rem'
+       }
     }, 
     container: {
       center: true,

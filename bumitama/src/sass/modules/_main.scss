@@ -1,5 +1,5 @@
 .container{
-
+  
   @include max-responsive($lg){
     padding: 0 20px;
   }
@@ -202,6 +202,10 @@
     li{
       a{
         text-transform: lowercase;
+        @include min-responsive($lg){
+          font-size: 16px;
+        }
+        
       }
     }
   }
@@ -243,6 +247,14 @@
       background-image: none;
     }
   }
+
+  &__fix1{
+
+    @include max-responsive($lg){
+      background-position: bottom 240px right;
+      background-size: 80%;
+    }
+  }
 }
 
 
@@ -271,4 +283,23 @@
   }
 
  
+}
+
+
+//page-section
+.page-section{
+
+  &:last-child{
+    border-bottom: none;
+  }
+}
+
+.accordion_m{
+
+  & .toggleAccordion{
+    
+    @include min-responsive($lg){
+      pointer-events: none;
+    }
+  }
 }

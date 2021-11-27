@@ -19,17 +19,17 @@
 
     <div class="header">
       <div class="container">
-        <div class="flex justify-between items-center  pt-5 pb-24">       
+        <div class="flex justify-between items-end  pt-5 pb-24">       
           <div class="logo">
             <a href="index.html">
-              <img class="w-60 lg:w-72" src="images/logo.png" alt="">
+              <img class="w-60 lg:w-72" src="images/logo.svg" alt="">
             </a>
           </div>        
-          <div class="header__menu p-5 lg:p-0 lg:ml-5 lg:block lg:relative w-full lg:w-auto h-screen lg:h-auto left-0 top-0 right-0 bg-brokenwhite lg:bg-transparent z-50 flex flex-wrap content-between">
+          <div class="header__menu p-5 lg:p-0 lg:ml-5 lg:block lg:relative w-full lg:w-auto h-full lg:h-auto left-0 top-0 right-0 bg-brokenwhite lg:bg-transparent z-50 flex flex-wrap content-between">
             <div class="w-full">
               <div class="lg:hidden flex justify-between items-center ">
                 <a href="index.html" class="header__sub__logo">
-                  <img class="w-60 lg:w-auto" src="images/logo.png" alt="">
+                  <img class="w-60 lg:w-auto" src="images/logo.svg" alt="">
                 </a>
                 <div class="menuMobileBack header__sub hidden">
                   <img class="w-auto" src="images/svg/icon__menu__back.svg" alt="">
@@ -43,17 +43,21 @@
               </div>    
               <ul class="text-green1 flex lg:gap-x-10 flex-col lg:flex-row mt-10 lg:mt-0 relative lg:static ">
                 <li>
-                  <a class="hover text-lg py-3 lg:py-0 lg:text-base" href="about.html">About Us</a>
+                  <a class="active hover text-lg py-3 lg:py-0 lg:text-sm" href="about.html">About Us</a>
                 </li>
                 <li>
-                  <a class="hover text-lg py-3 lg:py-0 lg:text-base" href="business.html">Our Business</a>
+                  <a class="hover text-lg py-3 lg:py-0 lg:text-sm" href="business.html">Our Business</a>
+                </li>
+                <li>
+                  <a class="hover text-lg py-3 lg:py-0 lg:text-sm" href="governance.html">Governance</a>
                 </li>
                 <li class="dropdown ">
-                  <a class="dropbtn dropbtn__sub hover text-lg py-3 lg:py-0 lg:text-base flex items-center" href="sustainability.html">
+                  <a class="dropbtn dropbtn__sub hover text-lg py-3 lg:py-0 lg:text-sm flex items-center" href="sustainability.html">
                     Sustainability
                     <img class="transform -rotate-90 lg:rotate-0" style="width: 15px;margin-left: 5px;" src="images/svg/icon__arrow__bottom.svg" alt="">
                   </a>
-                  <div class="header__menu__sub dropdown-content w-full lg:w-auto  flex-col lg:rounded-xl text-base lg:px-4 py-3">
+                  <div class="header__menu__sub dropdown-content w-full lg:w-auto  flex-col lg:rounded-xl text-base lg:text-sm lg:px-4 py-3">
+                    <hr class="absolute left-0 right-0 top-0" style="border: 1px solid #828282;">
                     <a class="py-3 lg:py-1" href="environment.html">Environment</a>
                     <a class="py-3 lg:py-1" href="community.html">Community</a>
                     <a class="py-3 lg:py-1" href="workplace.html">Workplace</a>
@@ -63,10 +67,10 @@
                   </div>
                 </li>
                 <li>
-                  <a class="hover text-lg py-3 lg:py-0 lg:text-base" href="investor.html">Investor</a>
+                  <a class="hover text-lg py-3 lg:py-0 lg:text-sm" href="investor.html">Investor</a>
                 </li>
                 <li>
-                  <a class="hover text-lg py-3 lg:py-0 lg:text-base" href="news.html">News & Media</a>
+                  <a class="hover text-lg py-3 lg:py-0 lg:text-sm" href="news.html">News & Media</a>
                 </li>
               </ul>
             </div>
@@ -89,10 +93,10 @@
               <div class="dropbtn dropbtn__search p-2">
                 <img class="w-auto lg:w-4" src="images/svg/icon__search.svg" alt="">
               </div>
-              <div class="sub__search dropdown-content p-5  w-full lg:w-auto flex-col lg:rounded-xl text-base lg:px-4 lg:py-3">
+              <div class="sub__search dropdown-content p-5  w-full lg:w-auto flex-col lg:rounded-xl text-base lg:px-4 lg:pt-2 lg:pb-3">
                 <div class="lg:hidden flex justify-between items-center ">
                   <a href="index.html" class="header__sub__logo">
-                    <img class="w-60 lg:w-auto" src="images/logo.png" alt="">
+                    <img class="w-60 lg:w-auto" src="images/logo.svg" alt="">
                   </a>           
                   <div class="menuMobileClose">
                     <img class="w-auto" src="images/svg/icon__menu__close.svg" alt="">
@@ -117,9 +121,9 @@
       </div>
     </div>
 
-    <div class="h-3/6	 lg:h-4/5 w-full overflow-hidden items-end flex bg-cover" style="background-image: url(images/hero__sustainability.jpg);">
+    <div class="h-96		 lg:h-4/5 w-full overflow-hidden items-end flex bg-cover" style="background-image: url(images/hero__sustainability.jpg);">
       <div class="container">
-        <h3 class="font-libre text-white w-1/2 text-xl lg:text-4xl	leading-10 tracking-wide mb-5 lg:mb-20">Environment
+        <h3 class="font-libre text-white w-full text-xl lg:text-4xl	leading-10 tracking-wide mb-5 lg:mb-20">Environment
           </h3>
       </div>
     </div>
@@ -243,7 +247,7 @@
             </div>
 
 
-            <div class="col-span-12 lg:col-span-9 w-full pt-10 lg:pt-0 lg:pl-10 accordion">
+            <div class="col-span-12 lg:col-span-9 w-full pt-10 lg:pt-0 lg:pl-10 accordion accordion_m">
 
                 <div id="1" class="py-5 lg:pt-10 lg:mb-10 lg:border-green1 border-gray-300 border-b page-section ">
                     <h4 class="text-lg lg:text-2xl text-green1 font-libre lg:mb-10 flex justify-between toggleAccordion">Land Assessments, Procedures, Operations 
@@ -472,7 +476,7 @@
         <div class="grid grid-cols-12 accordion">          
           <div class="col-span-12 lg:col-span-5">
             <img class="w-auto block lg:hidden mb-10" src="images/logo-white.png" alt="">
-            <div class="lg:mb-10">
+            <div class="mb-5 lg:mb-10">
               <h4 class="text-lg mb-4">Contact Us</h4>              
               <p><strong>All Enquiries:</strong> general@bumitama-agri.com (+65 6222 1332)</p>
               <div class="mt-2">
@@ -486,7 +490,7 @@
             </div>
 
             <div>
-              <h4 class="text-lg mb-3">Current Share Price</h4>
+              <h4 class="text-lg mb-1 lg:mb-2">Current Share Price</h4>
               <p><strong> 22 June 2021 5.30pm SGT</strong></p>
             </div>
 
