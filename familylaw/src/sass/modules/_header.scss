@@ -1,0 +1,136 @@
+.header{
+    position: fixed;
+    z-index: 99999;
+    left: 0;
+    right: 0;
+    top: 0;
+    background: rgb(255,247,243);
+    background: linear-gradient(180deg, rgba(255,247,243,1) 0%, rgba(255,247,243,1) 10%, rgba(255,247,243,0.75) 55%, rgba(255,247,243,0) 100%);
+    @include base_transition(all);
+
+
+    & .pt-5.pb-24{
+        //@include base_transition(all);
+    }
+
+    .logo{
+        @include min-responsive($lg){
+            width: 18rem;
+        }
+    }
+    &__menu{
+        
+        @include max-responsive(1023px){
+            display: none;
+            position: fixed;
+            //padding-top: 30px;
+        }
+
+        & ul{
+
+            @include min-responsive(0){
+                column-gap: 2rem !important; 
+            }
+        }
+
+        &.active{
+            display: flex;
+
+
+            .header__menu__sub{
+                position: absolute;
+                left: 0;
+                top: 0;
+                box-shadow: none;
+            }
+        }
+
+        ul{
+
+            li{
+
+                a{
+                    bottom: 1px;
+                    position: relative;
+                    &:hover,
+                    &.active{
+                        @include min-responsive($lg){
+                            border-bottom: 1px solid #134F2B;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    & .menuMobile{
+        display: none;
+        @include max-responsive(1023px){
+            display: block;
+        }
+    }
+
+    .header__sub{
+      height: 43px;
+      position: relative;
+      top: 10px; 
+    }
+    
+    .menuMobileClose{
+        // position: absolute;
+        // right: 20px;
+    }
+
+
+    //scroll
+    &.header__scroll{
+
+        background: #FFF7F3;
+
+        & .pt-5.pb-24{
+            padding: 20px 0 30px 0;
+        }
+    }
+}
+
+
+.dropdown{
+
+    & > a{
+        
+    }
+    
+    &:hover > .dropdown-content{
+        @include min-responsive($lg){
+            display: flex;  
+        }
+    }
+
+    
+    
+    .dropdown-content {
+        display: none;
+        // display: flex; 
+        position: absolute;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        background-color: #FFF7F3;
+
+
+        &.active{
+            display: flex;
+        }
+
+        &.sub__search{
+            @include max-responsive($md){
+                position: fixed !important;
+                left: 0;
+                top: 0;
+                box-shadow: none;
+            }
+            position: absolute;
+            right: 0;            
+        }
+      }
+}

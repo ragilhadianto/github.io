@@ -29,10 +29,29 @@ $(document).ready(function(){
   });
 
   $('.slider').on('init', function(event, slick, currentSlide, nextSlide){
-  
  });
+
+  if ($('.slick-current .item').hasClass('dark-mode')) {
+    console.log("ada");
+    $(".logo img").attr("src","images/logo_white.svg");
+    $(".menu img").attr("src","images/svg/menu_white.svg");
+    $(".item__arrow img").attr("src","images/svg/arrow-right2_white.svg");
+    $(".item__text").addClass("text-white");
+    $(".item__position").addClass("text-white");
+    $(".buttonsvg").addClass('buttonsvg--white');
+  } else {
+    $(".logo img").attr("src","images/logo.svg");
+    $(".menu img").attr("src","images/svg/menu.svg");
+    $(".item__arrow img").attr("src","images/svg/arrow-right2.svg");
+    $(".item__text").removeClass("text-white");
+    $(".item__position").removeClass("text-white");
+    $(".buttonsvg").removeClass('buttonsvg--white');
+  }
   
- $('.slider').on('beforeChange', function(event, slick, currentSlide, nextSlide){
+
+
+ $('.slider').on('afterChange', function(event, slick, currentSlide, nextSlide){
+  console.log("afterChange");
   if ($('.slick-current .item').hasClass('dark-mode')) {
     console.log("ada");
     $(".logo img").attr("src","images/logo_white.svg");

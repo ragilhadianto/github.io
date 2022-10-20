@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Nunito+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/tailwind.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Bumitama Agri</title>
+  </head>
+  <body>
+
+    <div class="header">
+      <div class="container">
+        <div class="flex justify-between items-end  pt-5 pb-24">       
+          <div class="logo">
+            <a href="index.html">
+              <img class="w-60 lg:w-72" src="images/logo.svg" alt="">
+            </a>
+          </div>        
+          <div class="header__menu p-5 lg:p-0 lg:ml-5 lg:block lg:relative w-full lg:w-auto h-full lg:h-auto left-0 top-0 right-0 bg-brokenwhite lg:bg-transparent z-50 flex flex-wrap content-between">
+            <div class="w-full">
+              <div class="lg:hidden flex justify-between items-center ">
+                <a href="index.html" class="header__sub__logo">
+                  <img class="w-60 lg:w-auto" src="images/logo.svg" alt="">
+                </a>
+                <div class="menuMobileBack header__sub hidden">
+                  <img class="w-auto" src="images/svg/icon__menu__back.svg" alt="">
+                </div>
+                <div class="text-xl header__sub hidden">
+                  <a href="sustainability.html">Sustainability</a>
+                </div>            
+                <div class="menuMobileClose">
+                  <img class="w-auto" src="images/svg/icon__menu__close.svg" alt="">
+                </div>
+              </div>    
+              <ul class="text-green1 flex lg:gap-x-10 flex-col lg:flex-row mt-10 lg:mt-0 relative lg:static ">
+                <li>
+                  <a class="active hover text-lg py-3 lg:py-0 lg:text-sm" href="about.html">About Us</a>
+                </li>
+                <li>
+                  <a class="hover text-lg py-3 lg:py-0 lg:text-sm" href="business.html">Our Business</a>
+                </li>
+                <li>
+                  <a class="hover text-lg py-3 lg:py-0 lg:text-sm" href="governance.html">Governance</a>
+                </li>
+                <li class="dropdown ">
+                  <a class="dropbtn dropbtn__sub hover text-lg py-3 lg:py-0 lg:text-sm flex items-center" href="sustainability.html">
+                    Sustainability
+                    <img class="transform -rotate-90 lg:rotate-0" style="width: 15px;margin-left: 5px;" src="images/svg/icon__arrow__bottom.svg" alt="">
+                  </a>
+                  <div class="header__menu__sub dropdown-content w-full lg:w-auto  flex-col lg:rounded-xl text-base lg:text-sm lg:px-4 py-3">
+                    <hr class="absolute left-0 right-0 top-0" style="border: 1px solid #828282;">
+                    <a class="py-3 lg:py-1" href="environment.html">Environment</a>
+                    <a class="py-3 lg:py-1" href="community.html">Community</a>
+                    <a class="py-3 lg:py-1" href="workplace.html">Workplace</a>
+                    <a class="py-3 lg:py-1" href="#">Responsible Sourcing</a>
+                    <a class="py-3 lg:py-1" href="#">Certifications</a>
+                    <a class="py-3 lg:py-1" href="policies-reports.html">Policies & Reports</a>
+                  </div>
+                </li>
+                <li>
+                  <a class="hover text-lg py-3 lg:py-0 lg:text-sm" href="investor.html">Investor</a>
+                </li>
+                <li>
+                  <a class="hover text-lg py-3 lg:py-0 lg:text-sm" href="news.html">News & Media</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="text-gray-400 w-full lg:hidden">
+              <ul class="flex flex-col mb-3 pb-3 border-b border-gray-400">
+                <li>
+                  <a href="" class="mb-3">Contact</a>
+                </li>
+                <li>
+                  <a href="" class="mb-3">Terms & Conditions</a>
+                </li>
+              </ul>
+              <small>© 2021 Bumitama Agri. All Rights Reserved.</small>
+            </div>
+          </div>
+          
+          <div class="flex items-center gap-x-2"> 
+            <div class="cursor-pointer dropdown relative ">
+              <div class="dropbtn dropbtn__search p-2">
+                <img class="w-auto lg:w-4" src="images/svg/icon__search.svg" alt="">
+              </div>
+              <div class="sub__search dropdown-content p-5  w-full lg:w-auto flex-col lg:rounded-xl text-base lg:px-4 lg:pt-2 lg:pb-3">
+                <div class="lg:hidden flex justify-between items-center ">
+                  <a href="index.html" class="header__sub__logo">
+                    <img class="w-60 lg:w-auto" src="images/logo.svg" alt="">
+                  </a>           
+                  <div class="menuMobileClose">
+                    <img class="w-auto" src="images/svg/icon__menu__close.svg" alt="">
+                  </div>
+                </div>    
+                  <form action="" class="relative mt-10 lg:mt-0">
+                    <input class="w-full lg:w-auto bg-transparent p-2 border-b lg:border-green1 border-gray-400" type="text" placeholder="Enter keyword">
+                    <button class="absolute right-0 top-0 bottom-0 m-auto pl-5">
+                      <img style="width: 15px;" class=" transform -rotate-90 hidden lg:block" src="images/svg/icon__arrow__bottom.svg" alt="">
+                      <img class="w-auto lg:hidden" src="images/svg/icon__search__grey.svg" alt="">
+                    </button>
+                  </form>
+              </div>
+            </div>
+            
+            <!-- mobile -->
+            <div class="menuMobile">
+              <img class="w-auto" src="images/svg/icon__menu__m.svg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="h-96		 lg:h-4/5 w-full overflow-hidden items-end flex bg-cover" style="background-image: url(images/hero__governance.jpg);">
+      <div class="container">
+        <h3 class="font-libre text-white w-full text-xl lg:text-4xl	leading-10 tracking-wide mb-5 lg:mb-20">Governance
+          </h3>
+      </div>
+    </div>
+    
+    <div class="bg-brokenwhite bg-cover bg-right-top bg-no-repeat py-10 lg:py-24">
+      <div class="container">
+        <div class="breadcum mb-10 lg:hidden">
+          <ul class="text-gray-400">
+              <li>
+                  <a class="text-xs lg:text-sm" href="index.html">home</a>
+              </li>
+              <li>
+                  <a class="text-xs lg:text-sm" href="">></a>
+              </li>
+              <li>
+                  <a href="governance.html" class="underline text-green1 text-xs lg:text-sm">governance</a>
+              </li>
+          </ul>
+        </div>
+       <div class="w-full lg:w-4/6">      
+          <h4 class="text-xl lg:text-2xl font-libre">“We are strategically positioned to make a positive difference.” 
+            — Mr. Gunawan. CEO</h4>
+          <br/>
+          <br/>
+          <p>Over the years, we have made steady progress in our sustainability journey. While remaining focused on our certification programme, we continue to work with suppliers on traceable and responsible sourcing, to engage experts on strengthening existing sustainable land use initiatives and to partner with communities in innovative ways of fire prevention and socio-economic activities.</p>      
+       </div>
+      </div>
+    </div>
+
+    <div class="breadcum mt-16 mb-8 hidden lg:block">
+        <div class="container">
+            <ul class="text-gray-400">
+                <li>
+                    <a class="text-xs" href="index.html">home</a>
+                </li>
+                <li>
+                    <a class="text-xs" href="">></a>
+                </li>
+                <li>
+                    <a href="governance.html" class="underline text-green1 text-xs">governance</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="py-10 lg:pb-24">
+        <div class="container">  
+            <div class="mb-10 pb-10 lg:pb-24 lg:mb-24 border-b border-gray3">
+                <h2 class="font-libre text-2xl lg:text-4xl mb-10 lg:mb-20">Board of Directors</h2>
+             
+                <div class="slider2col slider">
+                  <div class="item mb-5 lg:mb-0 sm:px-3">
+                    <div class="grid grid-cols-7 border border-gray-300 rounded-xl overflow-hidden">                
+                        <div class="col-span-4 p-4 lg:p-8 pr-2">
+                            <h3 class="font-libre text-lg">Lim Gunawan Hariyanto</h3>
+                            <small class="text-xs  block mt-1 sm:h-5">Executive Chairman and Chief Executive Officer</small>
+                            <p class="text-xs lg:text-sm my-5 overflow-hidden text-gray-400 sm:h-60">Mr. Lim Gunawan Hariyanto, Executive Chairman and Chief Executive Officer of Bumitama, joined the Group in 1997 when he was appointed Director of 
+                              PT Karya Makmur Bahagia. </p>
+            
+                            <div class="flex w-full">
+                                <a class="flex text-orange1 gap-3 uppercase text-xs items-center" href="http://" target="_blank" rel="noopener noreferrer">
+                                    <img class="w-auto" src="images/svg/icon__arrow__orange.svg" alt="">
+                                    <span class="hidden lg:block">Read More</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-span-3 h-full">
+                            <img class="object-cover	 h-full w-full" src="images/fotomanajemen1.jpg" alt="">
+                        </div>
+                    </div>  
+                  </div>
+                  <div class="item mb-5 lg:mb-0 sm:px-3">
+                    <div class="grid grid-cols-7 border border-gray-300 rounded-xl overflow-hidden">                
+                        <div class="col-span-4 p-4 lg:p-8 pr-2">
+                            <h3 class="font-libre text-lg">Lim Christina Hariyanto</h3>
+                            <small class="text-xs  block mt-1 sm:h-5">Executive Director</small>
+                            <p class="text-xs lg:text-sm my-5 overflow-hidden text-gray-400 sm:h-60">Ms. Lim Christina Hariyanto, Executive Director of the Company, joined the Group in 2012 as the Head of Investor Relations.</p>
+            
+                            <div class="flex w-full">
+                                <a class="flex text-orange1 gap-3 uppercase text-xs items-center" href="http://" target="_blank" rel="noopener noreferrer">
+                                    <img class="w-auto" src="images/svg/icon__arrow__orange.svg" alt="">
+                                    <span class="hidden lg:block">Read More</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-span-3 h-full">
+                            <img class="object-cover	 h-full w-full" src="images/fotomanajemen2.jpg" alt="">
+                        </div>
+                    </div>  
+                  </div>
+                  <div class="item mb-5 lg:mb-0 sm:px-3">
+                    <div class="grid grid-cols-7 border border-gray-300 rounded-xl overflow-hidden">                
+                        <div class="col-span-4 p-4 lg:p-8 pr-2">
+                            <h3 class="font-libre text-lg">Dato’ Lee Yeow Chor</h3>
+                            <small class="text-xs  block mt-1 sm:h-5">Non — Executive Director</small>
+                            <p class="text-xs lg:text-sm my-5 overflow-hidden text-gray-400 sm:h-60">Dato’ Lee Yeow Chor a Non—Executive Director of Bumitama, was first appointed to our Board on 23 March 2012</p>
+            
+                            <div class="flex w-full">
+                                <a class="flex text-orange1 gap-3 uppercase text-xs items-center" href="http://" target="_blank" rel="noopener noreferrer">
+                                    <img class="w-auto" src="images/svg/icon__arrow__orange.svg" alt="">
+                                    <span class="hidden lg:block">Read More</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-span-3 h-full">
+                            <img class="object-cover	 h-full w-full" src="images/fotomanajemen5.jpg" alt="">
+                        </div>
+                    </div>   
+                  </div>
+                  <div class="item mb-5 lg:mb-0 sm:px-3">
+                    <div class="grid grid-cols-7 border border-gray-300 rounded-xl overflow-hidden">                
+                        <div class="col-span-4 p-4 lg:p-8 pr-2">
+                            <h3 class="font-libre text-lg">Lee Lap Wah George</h3>
+                            <small class="text-xs  block mt-1 sm:h-5">Lead Independent Director</small>
+                            <p class="text-xs lg:text-sm my-5 overflow-hidden text-gray-400 sm:h-60">Mr. Lee Lap Wah George, the Lead Independent Director of the Company, was appointed to our Board on 1 June 2017 and re-elected on 24 April 2020.</p>
+            
+                            <div class="flex w-full">
+                                <a class="flex text-orange1 gap-3 uppercase text-xs items-center" href="http://" target="_blank" rel="noopener noreferrer">
+                                    <img class="w-auto" src="images/svg/icon__arrow__orange.svg" alt="">
+                                    <span class="hidden lg:block">Read More</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-span-3 h-full">
+                            <img class="object-cover	 h-full w-full" src="images/fotomanajemen6.jpg" alt="">
+                        </div>
+                    </div>   
+                  </div>
+                  <div class="item mb-5 lg:mb-0 sm:px-3">
+                    <div class="grid grid-cols-7 border border-gray-300 rounded-xl overflow-hidden">                
+                        <div class="col-span-4 p-4 lg:p-8 pr-2">
+                            <h3 class="font-libre text-lg">Lim Hung Siang</h3>
+                            <small class="text-xs  block mt-1 sm:h-5">Independent Director</small>
+                            <p class="text-xs lg:text-sm my-5 overflow-hidden text-gray-400 sm:h-60">Mr. Lim Hung Siang, an Independent Director of Bumitama, was appointed to our Board on 1 June 2018 and re-elected on 
+                              22 April 2019.</p>
+            
+                            <div class="flex w-full">
+                                <a class="flex text-orange1 gap-3 uppercase text-xs items-center" href="http://" target="_blank" rel="noopener noreferrer">
+                                    <img class="w-auto" src="images/svg/icon__arrow__orange.svg" alt="">
+                                    <span class="hidden lg:block">Read More</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-span-3 h-full">
+                            <img class="object-cover	 h-full w-full" src="images/fotomanajemen7.jpg" alt="">
+                        </div>
+                    </div>   
+                  </div>
+                  <div class="item mb-5 lg:mb-0 sm:px-3">
+                    <div class="grid grid-cols-7 border border-gray-300 rounded-xl overflow-hidden">                
+                        <div class="col-span-4 p-4 lg:p-8 pr-2">
+                            <h3 class="font-libre text-lg">Lawrence Lua Gek Pong</h3>
+                            <small class="text-xs  block mt-1 sm:h-5">Independent Director</small>
+                            <p class="text-xs lg:text-sm my-5 overflow-hidden text-gray-400 sm:h-60">Mr. Lawrence Lua Gek Pong, an Independent Director of Bumitama, was appointed to our Board on 1 January 2020 and re-elected on 24 April 2020.</p>
+            
+                            <div class="flex w-full">
+                                <a class="flex text-orange1 gap-3 uppercase text-xs items-center" href="http://" target="_blank" rel="noopener noreferrer">
+                                    <img class="w-auto" src="images/svg/icon__arrow__orange.svg" alt="">
+                                    <span class="hidden lg:block">Read More</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-span-3 h-full">
+                            <img class="object-cover	 h-full w-full" src="images/fotomanajemen8.jpg" alt="">
+                        </div>
+                    </div>   
+                  </div>
+                   
+                   
+                </div>                           
+           
+            </div>
+            <div class="mb-10 pb-10 lg:pb-24 lg:mb-24 border-b border-gray3">
+                <h2 class="font-libre text-2xl lg:text-4xl mb-10 lg:mb-20">Management Team</h2>
+
+                <div class="slider2col slider">
+                  <div class="item mb-5 lg:mb-0 sm:px-3">
+                    <div class="grid grid-cols-7 border border-gray-300 rounded-xl overflow-hidden">                
+                      <div class="col-span-4 p-4 lg:p-8 pr-2">
+                          <h3 class="font-libre text-lg">Roebianto</h3>
+                          <small class="text-xs  block mt-1 sm:h-5">Executive Chairman and Chief Executive Officer</small>
+                          <p class="text-xs lg:text-sm my-5 overflow-hidden text-gray-400 sm:h-60">He joined the Group in 2003 
+                            as General Manager in the engineering division of Burriana Gunagsya Agro.</p>
+          
+                          <div class="flex w-full">
+                              <a class="flex text-orange1 gap-3 uppercase text-xs items-center" href="http://" target="_blank" rel="noopener noreferrer">
+                                  <img class="w-auto" src="images/svg/icon__arrow__orange.svg" alt="">
+                                  Read More
+                              </a>
+                          </div>
+                      </div>
+                      <div class="col-span-3 h-full">
+                          <img class="object-cover h-full w-full" src="images/fotomanajemen3.jpg" alt="">
+                      </div>
+                    </div>  
+                  </div>
+                  <div class="item mb-5 lg:mb-0 sm:px-3">
+                    <div class="grid grid-cols-7 border border-gray-300 rounded-xl overflow-hidden">                
+                        <div class="col-span-4 p-4 lg:p-8 pr-2">
+                            <h3 class="font-libre text-lg">Lim Sian Choo</h3>
+                            <small class="text-xs  block mt-1 sm:h-5">Executive Director</small>
+                            <p class="text-xs lg:text-sm my-5 overflow-hidden text-gray-400 sm:h-60">She joined the Group in 2011 as the Group Head of Corporate Secretarial Services and Corporate Social Responsibilty. </p>
+            
+                            <div class="flex w-full">
+                                <a class="flex text-orange1 gap-3 uppercase text-xs items-center" href="http://" target="_blank" rel="noopener noreferrer">
+                                    <img class="w-auto" src="images/svg/icon__arrow__orange.svg" alt="">
+                                    <span class="hidden lg:block">Read More</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-span-3 h-full">
+                            <img class="object-cover h-full w-full" src="images/fotomanajemen4.jpg" alt="">
+                        </div>
+                    </div>  
+                  </div>
+                  <div class="item mb-5 lg:mb-0 sm:px-3">
+                    <div class="grid grid-cols-7 border border-gray-300 rounded-xl overflow-hidden">                
+                        <div class="col-span-4 p-4 lg:p-8 pr-2">
+                            <h3 class="font-libre text-lg">Sie Eddy Kurniawan</h3>
+                            <small class="text-xs  block mt-1 sm:h-5">Chief Financial Officer</small>
+                            <p class="text-xs lg:text-sm my-5 overflow-hidden text-gray-400 sm:h-60">Mr. Sie Eddy Kurniawan is the Group’s Chief Financial Officer. He joined the Group in 2013 and is responsible for the Group’s finance, accounting, and ICT department.</p>
+            
+                            <div class="flex w-full">
+                                <a class="flex text-orange1 gap-3 uppercase text-xs items-center" href="http://" target="_blank" rel="noopener noreferrer">
+                                    <img class="w-auto" src="images/svg/icon__arrow__orange.svg" alt="">
+                                    <span class="hidden lg:block">Read More</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-span-3 h-full">
+                            <img class="object-cover h-full w-full" src="images/fotomanajemen9.jpg" alt="">
+                        </div>
+                    </div>  
+                  </div>
+                </div>
+
+            </div>
+
+            <div>
+                <h4 class="text-xl lg:text-3xl text-green1 font-libre mb-10 lg:mb-14">Corporate Governance</h4>    
+                <div class="content font-libre ">                    
+                    <p>
+                        Bumitama upholds high standards of corporate governance, integrity, and professionalism across all our activities and operations. The Board provides management oversight and leads the development of corporate strategies while being responsible for ensuring that our company’s corporate governance practices are aligned with the Singapore Code of Corporate Governance.
+                    </p>
+                    <h3>Ethics and Integrity</h3> 
+                    <br>
+                    <p>
+                        Integrity remains the cornerstone of our business. It is only by conducting our business to the highest ethical standards can we ensure business continuity, stakeholder respect and local community support. The Bumitama Code of Conduct guides our dealings with business partners, regulatory bodies, and employees. The Code applies to all Bumitama employees, the Board of Directors, and other individuals working on behalf of the company. 
+                    </p>
+                    <div class="flex w-full font-nurito">
+                        <a class="flex text-orange1 gap-3 uppercase text-xs items-center" href="http://" target="_blank" rel="noopener noreferrer">
+                            <img class="w-auto" src="images/svg/icon__arrow__orange.svg" alt="">
+                            Read More
+                        </a>
+                    </div>
+                    <hr>
+
+                    <h3>Grievances and Whistleblowing</h3> 
+                    <br/>
+
+                    <ul>
+                        <li>
+                            Our grievance procedure is a structured Group-wide approach for handling complaints. The system is available to all estate employees and each head office and protects the complainant’s anonymity. The grievance procedure also addresses third-party compliance issues and land conflicts. Although it is open for internal complaints, grievances can also be raised through external platforms, such as the RSPO complaints process. 
+                        </li>
+                        <li>
+                            We will continue to provide ongoing updates of any raised grievances...
+                        </li>
+                        <li>
+                            Besides the formal RSPO complaints process, we also monitor issues raised through other channels, such as social media, NGO reports or buyer enquiries. These are recorded using our in-house grievance tracker and logged. Our policy is to engage proactively with interested stakeholders and address any raised issues through the public domain.
+                        </li>
+                        <li>
+                            We have a well-established Whistleblowing Policy and associated procedures approved by our Board’s Audit Committee. This enables our employees, customers, suppliers, contractors or local community members to raise concerns. The Policy guarantees confidential reporting without fear of reprisal; anonymous disclosures are accepted, and anonymity is preserved. The details of our Whistleblowing Policy can be found here 
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer bg-green2 text-white pt-10 lg:pt-14 pb-10 text-xs">
+      <div class="container">
+        <div class="grid grid-cols-12 accordion">          
+          <div class="col-span-12 lg:col-span-5">
+            <img class="w-auto block lg:hidden mb-10" src="images/logo-white.png" alt="">
+            <div class="mb-5 lg:mb-10">
+              <h4 class="text-lg mb-4">Contact Us</h4>              
+              <p><strong>All Enquiries:</strong> general@bumitama-agri.com (+65 6222 1332)</p>
+              <div class="mt-2">
+                <p><strong>Ms. Christina Lim: </strong> clim@bumitama-agri.com</p>
+                <p><strong>Ms. Lim Sian Choo: </strong> lim.sian.choo@bumitama-agri.com</p>
+                <p><strong>Mr. Glenn Ho:  </strong> glenn.ho@bumitama-agri.com</p>
+              </div>
+              <div class="mt-5">
+                <p>10 Anson Road, 11-19 International Plaza, Singapore, 079903 </p>
+              </div>
+            </div>
+
+            <div>
+              <h4 class="text-lg mb-1 lg:mb-2">Current Share Price</h4>
+              <p><strong> 22 June 2021 5.30pm SGT</strong></p>
+            </div>
+
+            <div class="my-5 flex items-baseline">
+              <h2 class="text-6xl font-libre">0.46</h2>
+              <p class="text-green3 text-base">(+0.02%)</p>              
+            </div>
+
+            <div class="w-1/2	border-t border-gray-500 pt-5">
+                <img class="w-full" src="images/footer-img.png" alt="">
+            </div>
+
+          </div>
+          <div class="col-span-12 lg:col-span-7 grid grid-cols-12 lg:gap-x-10 my-5 lg:my-0 py-8 lg:pt-0 border-t border-b border-gray-500 lg:border-none">
+            <div class="col-span-12 lg:col-span-9">
+              <div class="grid lg:grid-cols-3 lg:gap-x-10">
+                <div class="lg:mb-10">
+                 <h4 class="text-lg mb-4 flex items-center toggleAccordion">
+                   About Us 
+                   <img class="w-auto ml-3 block lg:hidden" src="images/svg/icon__arrow__bottom__white.svg" alt="">
+                  </h4>
+                 <ul class="flex flex-col innerm mb-8 lg:mb-0 list__block">
+                   <li class="py-1">
+                     <a href="">Journey</a>
+                   </li>
+                   <li class="py-1">
+                     <a href="">Partners</a>
+                   </li>
+                   <li class="py-1">
+                     <a href="">Mapping Bumitama</a>
+                   </li>
+                   <li class="py-1">
+                     <a href="">Awards</a>
+                   </li>
+                 </ul>
+                </div>
+                <div class="lg:mb-10">
+                 <h4 class="text-lg mb-4 flex items-center toggleAccordion">
+                   Our Business
+                   <img class="w-auto ml-3 block lg:hidden" src="images/svg/icon__arrow__bottom__white.svg" alt="">
+                  </h4>
+                 <ul class="flex flex-col innerm mb-8 lg:mb-0 list__block">
+                   <li class="py-1">
+                     <a href="">Product</a>
+                   </li>
+                   <li class="py-1">
+                     <a href="">Plantations</a>
+                   </li>
+                   <li class="py-1">
+                     <a href="">Research and Development</a>
+                   </li>
+                 </ul>
+                </div>
+                <div class="lg:mb-10">
+                 <h4 class="text-lg mb-4 flex items-center toggleAccordion">
+                   Investors
+                   <img class="w-auto ml-3 block lg:hidden" src="images/svg/icon__arrow__bottom__white.svg" alt="">
+                  </h4>
+                 <ul class="flex flex-col innerm mb-8 lg:mb-0 list__block">
+                   <li class="py-1">
+                     <a href="">Share Information</a>
+                   </li>
+                   <li class="py-1">
+                     <a href="">Reporting</a>
+                   </li>
+                   <li class="py-1">
+                     <a href="">Measures</a>
+                   </li>
+                   <li class="py-1">
+                     <a href="">Announcements</a>
+                   </li>
+                 </ul>
+                </div>
+   
+               </div>    
+               <div class="grid lg:grid-cols-3 lg:gap-x-10">
+                 <div class="lg:mb-10">
+                   <h4 class="text-lg mb-4 flex items-center toggleAccordion">
+                     Information
+                     <img class="w-auto ml-3 block lg:hidden" src="images/svg/icon__arrow__bottom__white.svg" alt="">
+                    </h4>
+                   <ul class="flex flex-col innerm mb-8 lg:mb-0 list__block">
+                     <li class="py-1">
+                       <a href="">Careers</a>
+                     </li>
+                   </ul>
+                 </div>
+                <div class="lg:mb-10">
+                 <h4 class="text-lg mb-4 flex items-center toggleAccordion">
+                   Governance
+                   <img class="w-auto ml-3 block lg:hidden" src="images/svg/icon__arrow__bottom__white.svg" alt="">
+                  </h4>
+                 <ul class="flex flex-col innerm mb-8 lg:mb-0 list__block">
+                   <li class="py-1">
+                     <a href="">Board of Directors</a>
+                   </li>
+                   <li class="py-1">
+                     <a href="">Board Committees</a>
+                   </li>
+                   <li class="py-1">
+                     <a href="">Management Team</a>
+                   </li>
+                   <li class="py-1">
+                     <a href="">Corporate Governance</a>
+                   </li>
+                 </ul>
+                </div>
+                <div class="lg:mb-10">
+                 <h4 class="text-lg mb-4 flex items-center toggleAccordion">
+                   News & Media
+                   <img class="w-auto ml-3 block lg:hidden" src="images/svg/icon__arrow__bottom__white.svg" alt="">
+                  </h4>
+                 <ul class="flex flex-col innerm mb-8 lg:mb-0 list__block">
+                   <li class="py-1">
+                     <a href="">From Us</a>
+                   </li>
+                   <li class="py-1">
+                     <a href="">In the Media</a>
+                   </li>
+                 </ul>
+                </div>
+               </div>
+            </div>
+            <div class="col-span-12 lg:col-span-3">
+              <div class="lg:mb-10">
+                <h4 class="text-lg mb-4 flex items-center toggleAccordion">
+                  Sustainability
+                  <img class="w-auto ml-3 block lg:hidden" src="images/svg/icon__arrow__bottom__white.svg" alt="">
+                </h4>
+                <ul class="flex flex-col innerm mb-8 lg:mb-0 list__block">
+                  <li class="py-1">
+                    <a href="">Environment</a>
+                  </li>
+                  <li class="py-1">
+                    <a href="">Community</a>
+                  </li>
+                  <li class="py-1">
+                    <a href="">Employees</a>
+                  </li>
+                  <li class="py-1">
+                    <a href="">Responsible Sourcing</a>
+                  </li>
+                  <li class="py-1">
+                    <a href="">Certifications</a>
+                  </li>
+                  <li class="py-1">
+                    <a href="">Policies</a>
+                  </li>
+                  <li class="py-1">
+                    <a href="">Reporting</a>
+                  </li>
+                  <li class="py-1">
+                    <a href="">Announcements</a>
+                  </li>
+                </ul>
+               </div>
+            </div>            
+          </div>
+        </div>
+
+        <div class="flex justify-between mt-5 items-center">
+          <p>© 2021 Bumitama Agri. All Rights Reserved.</p>
+
+          <img class="w-auto hidden lg:block" src="images/logo-white.png" alt="">
+        </div>
+      </div>
+    </div>
+
+
+   
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
