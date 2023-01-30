@@ -1,0 +1,265 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+    
+    *, :after, :before {
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    html {
+        @apply font-normal; 
+        @apply h-full;
+        @apply text-grey2;
+        scroll-behavior: smooth;
+    }
+
+    body{
+        @apply h-full overflow-x-hidden;
+    }
+
+
+    input:focus::-webkit-input-placeholder,
+    input:focus:-moz-placeholder,
+    input:focus::-moz-placeholder,
+    input:focus:-ms-input-placeholder {
+    color: transparent;
+    }
+    input:focus,
+    textarea:focus,
+    select:focus {
+    outline: none;
+    }
+    input[type="button"],
+    input[type="checkbox"],
+    input[type="radio"],
+    input[type="reset"],
+    input[type="submit"],
+    label,
+    select {
+    cursor: pointer;
+    }
+
+    select {
+        appearance: none;
+    }
+
+    input[type="search"] {
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    -webkit-appearance: textfield;
+    }
+
+    input[type="search"]::-webkit-search-cancel-button,
+    input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+    }
+
+    button,
+    input[type="button"],
+    input[type="checkbox"],
+    input[type="radio"],
+    input[type="reset"],
+    input[type="submit"],
+    label,
+    select {
+    cursor: pointer;
+    }
+
+    textarea {
+    overflow: auto;
+    vertical-align: top;
+    }
+
+    h1 {
+        font-size: 2.5em;
+      }
+      h2 {
+        font-size: 2em;
+      }
+      h3 {
+        font-size: 1.5em;
+      }
+      h4 {
+        font-size: 1em;
+      }
+      h5 {
+        font-size: 0.9375em;
+      }
+      h6 {
+        font-size: 0.786em;
+      }
+
+      a{
+        @apply transition-all opacity-100;
+      }
+      a:hover{
+        @apply opacity-80;
+      }
+
+    /* slider */
+    .hero  .slick-arrow{
+      @apply transition-all;
+      opacity: 0;
+    }
+    .hero:hover .slick-arrow{
+      opacity: 1;
+    }
+    .slick-prev:before, .slick-next:before {
+      font-size: 30px;
+    }
+    .slick-prev {
+      left: -40px;
+    }
+    .slick-next {
+      right: -40px;
+    }
+    .slick-prev, .slick-next {
+      width: 30px;
+      height: 30px;
+    }
+    .slick-dotted.slick-slider {
+        margin-bottom: auto;
+    }
+    .slick-dots{
+      display: flex;
+      justify-content: end;
+    }
+    .slick-dots li.slick-active button:before {
+      opacity: .75;
+      color: #ff6c2e;
+    }
+    .slick-dots li button:before {
+      font-size: 15px;
+      color: #fff;
+    }
+    .slick-dots li {
+      width: 15px;
+      height: 15px;
+    }
+
+    /* menu */
+    .menu{
+      @apply hidden lg:block bg-dark1 bg-opacity-95 fixed lg:relative right-0 top-0 w-full h-full px-5 z-10;
+    }
+
+    .menu__active{
+      @apply bg-white p-2 text-dark1 rounded-3xl;
+    }
+
+
+    @media only screen and (max-width: 768px) {
+      .slick-dots li button:before {
+        font-size: 10px;
+      }
+      .slick-dots li {
+        width: 10px;
+        height: 10px;
+      }
+    }
+
+
+    /*!
+  * Hamburgers
+  * @description Tasty CSS-animated hamburgers
+  * @author Jonathan Suh @jonsuh
+  * @site https://jonsuh.com/hamburgers
+  * @link https://github.com/jonsuh/hamburgers
+  */
+  .hamburger {
+    padding: 10px;
+    display: flex;
+    cursor: pointer;
+    transition-property: opacity, filter;
+    transition-duration: 0.15s;
+    transition-timing-function: linear;
+    font: inherit;
+    color: inherit;
+    text-transform: none;
+    background-color: transparent;
+    border: 0;
+    margin: 0;
+    overflow: visible; }
+    .hamburger:hover {
+      opacity: 0.7; }
+    .hamburger.is-active:hover {
+      opacity: 0.7; }
+    .hamburger.is-active .hamburger-inner,
+    .hamburger.is-active .hamburger-inner::before,
+    .hamburger.is-active .hamburger-inner::after {
+      background-color: #fff; }
+
+  .hamburger-box {
+    width: 30px;
+    height: 24px;
+    display: inline-block;
+    position: relative; }
+
+  .hamburger-inner {
+    display: block;
+    top: 50%;
+    margin-top: -2px; }
+    .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+      width: 30px;
+      height: 4px;
+      background-color: #fff;
+      border-radius: 4px;
+      position: absolute;
+      transition-property: transform;
+      transition-duration: 0.15s;
+      transition-timing-function: ease; }
+    .hamburger-inner::before, .hamburger-inner::after {
+      content: "";
+      display: block; }
+    .hamburger-inner::before {
+      top: -10px; }
+    .hamburger-inner::after {
+      bottom: -10px; }
+
+      .hamburger--slider .hamburger-inner {
+        top: 2px; }
+        .hamburger--slider .hamburger-inner::before {
+          top: 10px;
+          transition-property: transform, opacity;
+          transition-timing-function: ease;
+          transition-duration: 0.15s; }
+        .hamburger--slider .hamburger-inner::after {
+          top: 20px; }
+      
+      .hamburger--slider.is-active .hamburger-inner {
+        transform: translate3d(0, 10px, 0) rotate(45deg); }
+        .hamburger--slider.is-active .hamburger-inner::before {
+          transform: rotate(-45deg) translate3d(-5.71429px, -6px, 0);
+          opacity: 0; }
+        .hamburger--slider.is-active .hamburger-inner::after {
+          transform: translate3d(0, -20px, 0) rotate(-90deg); }
+      
+      /*
+         * Slider Reverse
+         */
+      .hamburger--slider-r .hamburger-inner {
+        top: 2px; }
+        .hamburger--slider-r .hamburger-inner::before {
+          top: 10px;
+          transition-property: transform, opacity;
+          transition-timing-function: ease;
+          transition-duration: 0.15s; }
+        .hamburger--slider-r .hamburger-inner::after {
+          top: 20px; }
+      
+      .hamburger--slider-r.is-active .hamburger-inner {
+        transform: translate3d(0, 10px, 0) rotate(-45deg); }
+        .hamburger--slider-r.is-active .hamburger-inner::before {
+          transform: rotate(45deg) translate3d(5.71429px, -6px, 0);
+          opacity: 0; }
+        .hamburger--slider-r.is-active .hamburger-inner::after {
+          transform: translate3d(0, -20px, 0) rotate(90deg); }
+      
+
+
+
+}

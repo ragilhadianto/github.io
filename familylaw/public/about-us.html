@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- css -->
+    <link rel="stylesheet" href="css/tailwind.css" />
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/slick-theme.css" />
+    <title>Family Law</title>
+  </head>
+  <body>
+
+  <!-- header -->
+  <div class="header w-full fixed left-0 top-0 px-5 pt-10 lg:p-5 z-[999] transition-all">
+    <div class="container lg:px-16 flex flex-col h-full lg:justify-between">
+      <div class="flex justify-between items-start lg:items-center">
+        <div>
+          <a href="index.html">
+            <img class="w-[76px] sm:w-[105px] logo" src="images/icon/logo_white.png" alt="">
+          </a>
+        </div>
+        <div class="flex items-center">
+          <div class="hidden lg:flex items-center mr-16 langweb ">
+            <img class="w-auto" src="images/icon/icon_web.svg" alt="">
+            <!-- <span class="text-white font-lucida ml-2">EN</span> -->
+            <select name="" id="" class="text-white font-lucida ml-2 bg-transparent langweb__select w-[50px]">
+              <option value="" class="text-blue1">EN</option>
+              <option value="" class="text-blue1">TV</option>
+            </select>
+          </div>
+          <div>
+            <div class="menuOpen -mr-3 pt-0 px-3 lg:p-3 cursor-pointer justify-center">
+              <img class="w-[31px] lg:w-auto" src="images/icon/icon_menu.svg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="menu h-full fixed left-0 top-0 w-full z-[999]" style="display:none;">
+    <div class="header w-full left-0 top-0 px-5 pt-10 lg:p-5 z-[999] transition-all">
+      <div class="container lg:px-16 flex flex-col h-full lg:justify-between">
+        <div class="flex justify-between items-start lg:items-center">
+          <div>
+            <a href="index.html">
+              <img class="w-[76px] sm:w-[105px] logo" src="images/icon/logo_white.png" alt="">
+            </a>
+          </div>
+          <div class="flex items-center">
+            <div class="hidden lg:flex items-center mr-16 langweb ">
+              <img class="w-auto" src="images/icon/icon_web.svg" alt="">
+              <select name="" id="" class="text-blue1 font-lucida ml-2 bg-transparent langweb__select w-[50px]">
+                <option value="" class="text-blue1">EN</option>
+                <option value="" class="text-blue1">TV</option>
+              </select>
+            </div>
+            <div>
+              <div class="menuClose -mr-3 pt-0 px-3 lg:p-3 cursor-pointer">
+                <img class="w-[31px] lg:w-auto" src="images/icon/icon_menu_close.svg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mt-10 overflow-y-scroll lg:overflow-y-hidden pr-3 pb-10">
+          <ul class="menuInner mb-10 text-3xl lg:text-6xl font-lucida text-gray1 flex flex-col gap-y-5 relative lg:w-[50%]">
+            <li>
+              <a href="" class="hover:text-blue1 transition-all">Homepage</a>
+            </li>
+            <li>
+              <a href="javascript:void(0);" class="hover:text-blue1 transition-all">Practices</a>
+              <ul>
+                <li>
+                  <a href="" class="hover:text-blue1 transition-all py-2 lg:py-1 flex">Marriage Registration</a>
+                </li>
+                <li>
+                  <a href="" class="hover:text-blue1 transition-all py-2 lg:py-1 flex">Prenuptial Agreement</a>
+                </li>
+                <li>
+                  <a href="" class="hover:text-blue1 transition-all py-2 lg:py-1 flex">Wills And Estates</a>
+                </li>
+                <li>
+                  <a href="" class="hover:text-blue1 transition-all py-2 lg:py-1 flex">Birth Certificate</a>
+                </li>
+                <li>
+                  <a href="" class="hover:text-blue1 transition-all py-2 lg:py-1 flex">Divorce And Assets Division</a>
+                </li>
+                <li>
+                  <a href="" class="hover:text-blue1 transition-all py-2 lg:py-1 flex">Children’s Matters</a>
+                </li>
+                <li>
+                  <a href="" class="hover:text-blue1 transition-all py-2 lg:py-1 flex">Representation At Family And Matrimonial Court</a>
+                </li>
+                <li>
+                  <a href="" class="hover:text-blue1 transition-all py-2 lg:py-1 flex">Vietnam Immigration</a>
+                </li>
+              </ul>                
+            </li>
+            <li>
+              <a href="javascript:void(0);" class="hover:text-blue1 transition-all">Forefront</a>
+              <ul>
+                <li>
+                  <a href="" class="hover:text-blue1 transition-all py-2 lg:py-1 flex">Legal Insights</a>
+                </li>
+                <li>
+                  <a href="" class="hover:text-blue1 transition-all py-2 lg:py-1 flex">Events</a>
+                </li>
+                <li>
+                  <a href="" class="hover:text-blue1 transition-all py-2 lg:py-1 flex">Firm News</a>
+                </li>
+                <li>
+                  <a href="" class="hover:text-blue1 transition-all py-2 lg:py-1 flex">Frequently Asked Questions</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="javascript:void(0);" class="hover:text-blue1 transition-all">About Us</a>
+              <ul>
+                <li>
+                  <a href="" class="hover:text-blue1 transition-all py-2 lg:py-1 flex">Why Us</a>
+                </li>
+                <li>
+                  <a href="" class="hover:text-blue1 transition-all py-2 lg:py-1 flex">The Team</a>
+                </li>
+                <li>
+                  <a href="" class="hover:text-blue1 transition-all py-2 lg:py-1 flex">Testimonials</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="" class="hover:text-blue1 transition-all">Contact</a>
+            </li>
+          </ul>
+          <div class="flex lg:hidden items-center langweb ">
+            <img class="w-auto" src="images/icon/icon_web.svg" alt="">
+            <select name="" id="" class="text-white font-lucida ml-2 bg-transparent langweb__select w-[50px]">
+              <option value="" class="text-blue1">EN</option>
+              <option value="" class="text-blue1">TV</option>
+            </select>
+          </div>
+        </div>
+      </div>
+          
+      </div>
+    </div>
+      
+
+    <!-- hero -->
+    <div class="w-full h-full">
+      <div class="h-full w-full overflow-hidden">      
+        <img class="object-cover h-full w-full" src="images/hero_about_us.jpg" alt="">
+      </div>
+      <div class="container relative">
+        <div class="text-white absolute pb-10 lg:pb-5 xl:pb-10  bottom-0 left-0 right-0 text-center flex justify-center items-center flex-col px-5">
+            <h1 class="text-3xl lg:text-[56px] leading-[34px] lg:leading-[50px] font-light font-proxima-lt lg:w-[60%] px-5">Who we are</h1>
+            <div class="w-full lg:w-1/3 text-base lg:text-xl mt-2 leading-5	 lg:leading-6">
+                <p>For the big matters, and the small, the specialist at Family Lawyers Vietnam have got you covered and will support you throughout the whole legal process.</p>
+            </div>
+            <div class="flex items-center gap-x-5 mt-5 lg:mt-5">
+              <img class="w-[40px]  w-auto" src="images/icon/icon_arrow_circle_white.svg" alt="">
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- main content  -->
+   <div class="container px-5 xl:px-14 pt-12 xl:pt-20">
+      
+        <!-- section quote-->
+        <div class="mb-14 lg:mb-24">
+            <h2 class="font-lucida text-3xl lg:text-6xl text-blue1 tracking-[-0.05em] lg:leading-[62px]">
+                We provide constructive and pragmatic advice in a <span class="text-gray1"> supportive way.</span>
+            </h2>
+            <div class="grid grid-cols-2 mt-20">
+              <div class="lg:col-start-2 col-span-2 lg:col-span-1 pl-24 lg:pl-0">
+                  <h5 class="text-xl lg:text-2xl font-bold mb-2">ABOUT US</h5>
+                  <div class="text-xl">
+                      <p >Based in Ho Chi Minh City, Vietnam, we are a member of Le & Tran, premier boutique litigation firm, but focus only on the practice of family law. We pride ourselves to be a sole law firm in Vietnam that are exclusively equipped with specialized knowledge & experience in family law to bring a unique effective solution to clients.</p>
+                  </div>
+                  <div class="text-base lg:text-xl border-t border-black pt-8 mt-8">
+                      <p>
+                          Like no others, our experienced attorneys are accompanied with Senior litigators who bring in practical and effective solution to avoid any potential litigation dispute where clients do not wish to escalate. Our clients benefit from our diverse team of dedicated legal professionals, working together to achieve successful results while always focusing on our clients’ well-being.
+                      </p>
+                      <br> 
+                      <p>We take the time to understand the circumstances of clients’ case and work diligently toward their desired outcomes. We pride ourselves on providing honest advice and timely communication. You can count on our attorneys and client support team to exceed your expectations.
+                      </p>
+                      <br>
+                      <p>Our family law lawyers are highly respected for their mastery of the field of family law and deep understanding of the legal nuances that sometimes can make or break a complicated case. Our lawyers are known not only for their abilities to skillfully litigate contested matters, but also for the most effective use of their experience, knowledge and sound judgment to achieve negotiated settlements.
+                      </p>
+                  </div>
+              </div>  
+            </div>
+        </div>
+
+        <!-- section The Team-->
+        <div class="mb-14 lg:mb-24">    
+            <div class="flex justify-between items-end mb-5 lg:mb-10">               
+                <h5 class="heading1">The Team</h5>                
+                <div class="hidden lg:flex">
+                    <a href="http://#" target="_blank" rel="noopener noreferrer" class="button-orange1">Let’s meet the Team</a>
+                </div>
+                <div class="slider-arrow flex gap-x-3 lg:hidden"></div>
+            </div>
+            
+            <div class="slider grid grid-cols-1 sm:grid-cols-3">              
+             <a href="">
+              <div class="relative team">
+                <img class="w-full" src="images/stephencc3.png" alt="">
+                <div class="absolute bottom-0 right-0 p-3 lg:p-5 w-full text-white text-right">
+                  <p class="text-lg lg:text-2xl font-lucida font-normal -mb-[5px] lg:mb-0">Stephen Le</p>
+                 <small class="text-sm lg:text-base">Managing Partner</small>
+                </div>
+              </div>
+             </a>
+              <a href="">
+                <div class="relative team">
+                  <img class="w-full" src="images/katecc-1.png" alt="">
+                  <div class="absolute bottom-0 right-0 p-3 lg:p-5 w-full text-white text-right">
+                    <p class="text-lg lg:text-2xl font-lucida font-normal -mb-[5px] lg:mb-0">Katherine Tran</p>
+                   <small class="text-sm lg:text-base">Partner</small>
+                  </div>
+                </div>
+              </a>
+             <a href="">
+              <div class="relative team">
+                <img class="w-full" src="images/hannahfl2.png" alt="">
+                <div class="absolute bottom-0 right-0 p-3 lg:p-5 w-full text-white text-right">
+                  <p class="text-lg lg:text-2xl font-lucida font-normal -mb-[5px] lg:mb-0">Hannah Huynh</p>
+                 <small class="text-sm lg:text-base">Senior Associate</small>
+                </div>
+              </div>
+             </a>
+              <!-- <div class="relative">
+                <img class="w-full" src="images/profil1.jpg" alt="">
+                <div class="absolute bottom-0 right-0 p-3 lg:p-5 w-full text-white text-right">
+                  <p class="text-lg lg:text-2xl font-lucida font-normal -mb-[5px] lg:mb-0">Stephen Le</p>
+                 <small class="text-sm lg:text-base">Managing Partner</small>
+                </div>
+              </div>
+              <div class="relative">
+                <img class="w-full" src="images/profile2.jpg" alt="">
+                <div class="absolute bottom-0 right-0 p-3 lg:p-5 w-full text-white text-right">
+                  <p class="text-lg lg:text-2xl font-lucida font-normal -mb-[5px] lg:mb-0">Katherine Tran</p>
+                 <small class="text-sm lg:text-base">Partner</small>
+                </div>
+              </div>
+              <div class="relative">
+                <img class="w-full" src="images/profile3.jpg" alt="">
+                <div class="absolute bottom-0 right-0 p-3 lg:p-5 w-full text-white text-right">
+                  <p class="text-lg lg:text-2xl font-lucida font-normal -mb-[5px] lg:mb-0">Hannah Huynh</p>
+                 <small class="text-sm lg:text-base">Senior Associate</small>
+                </div>
+              </div> -->
+            </div>
+
+            <div class="lg:hidden flex my-5 justify-center">
+              <a href="http://#" target="_blank" rel="noopener noreferrer" class="button-orange1">Let’s meet the Team</a>
+            </div>
+            
+        </div>
+
+        <!-- section Our Expertise-->
+      <div class="mb-14 lg:mb-24">     
+        <div class="mb-5 lg:mb-0">
+          <h5 class="heading1">Our Expertise</h5>
+          <h4 class="heading2">Effective Solution to Clients</h4>
+        </div>
+        <div class="grid grid-cols-2">
+          <div class="lg:col-start-2 col-span-2 lg:col-span-1 ">
+            <div class="text-base lg:text-xl leading-[18px] pl-24 lg:pl-0">
+                <p>Based in Ho Chi Minh City, Vietnam, we are a member of Le & Tran, premier boutique litigation firm, but focus only on the practice of family law. We pride ourselves to be a sole law firm in Vietnam that are exclusively equipped with specialized knowledge & experience in family law to bring a unique effective solution to clients.</p>
+            </div>
+            <div class="flex px-10 lg:px-0 mt-10">
+              <a href="http://#" target="_blank" rel="noopener noreferrer" class="button-orange1-np py-2 flex-1 lg:flex-none px-10">
+                Contact Us
+              </a>
+            </div>
+          </div>
+        </div>         
+      </div>
+
+   </div>
+   
+
+
+    <!-- footer -->   
+    <div class="container px-5 xl:px-14 pb-12 lg:pb-20">
+      <div class="border-t border-blue1 pt-10 lg:pt-16 ">
+          <div class="flex lg:grid lg:grid-cols-2 flex-col-reverse">
+            <div class="flex flex-col justify-between">             
+              <div class="lg:mb-10">
+                <div class="mb-3">
+                  <img src="images/icon/logo_footer.png" alt="">
+                </div>
+                <div class="mb-3">
+                  <h5 class="text-sm font-bold uppercase font-lucida ">
+                    HEAD OFFICE
+                  </h5>
+                  <p class="text-sm leading-4	">
+                    Le & Tran Building, Area 284, No.9, Nguyen Trong Tuyen Street,<br>
+                    Ward 10, Phu Nhuan District, Ho Chi Minh City
+                  </p>
+                </div>
+                <div class="mb-3">
+                  <h5 class="text-sm font-bold uppercase font-lucida ">
+                    CITY CENTER BRANCH
+                  </h5>
+                  <p class="text-sm leading-4	">
+                    Unit 615-4, Level 6, Me Linh Point Tower 2 Ngo Duc Ke, District 1,<br>
+                    Ho Chi Minh City
+                  </p>
+                </div>
+              </div>
+              <div>
+                <div class="mb-3">
+                  <p class="text-sm leading-4	">
+                    letran@familylawyers.vn
+                    <br>
+                    (+84 28) 36 22 77 30
+                  </p>
+                </div>
+                <div class="mb-3">
+                  <p class="text-[10px] lg:text-sm leading-4">
+                    © 2022 © Family Lawyers. All rights reserved
+                    <br>
+                    Disclaimer | Privacy Policy
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="relative flex flex-col justify-between flex-col-reverse lg:flex-col mb-10 lg:mb-0">
+              <div class="flex sm:grid grid-cols-3 justify-between pr-4 lg:pr-0">
+                <div>
+                  <h5 class="font-lucida text-base lg:text-lg font-bold mb-3">About Us</h5>
+                  <ul class="flex flex-col gap-y-2 lg:gap-y-4">
+                    <li>
+                      <a href="#" class="text-sm">Why Us</a>
+                    </li>
+                    <li>
+                      <a href="#" class="text-sm">The Team</a>
+                    </li>
+                    <li>
+                      <a href="#" class="text-sm">Testimonials</a>
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <h5 class="font-lucida text-base lg:text-lg font-bold mb-3">News</h5>
+                  <ul class="flex flex-col gap-y-2 lg:gap-y-4">
+                    <li>
+                      <a href="#" class="text-sm">Legal Insights</a>
+                    </li>
+                    <li>
+                      <a href="#" class="text-sm">Events</a>
+                    </li>
+                    <li>
+                      <a href="#" class="text-sm">Podcasts</a>
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <h5 class="font-lucida text-base lg:text-lg font-bold mb-3">Others</h5>
+                  <ul class="flex flex-col gap-y-2 lg:gap-y-4">
+                    <li>
+                      <a href="#" class="text-sm">Practices</a>
+                    </li>
+                    <li>
+                      <a href="#" class="text-sm">FAQs</a>
+                    </li>
+                    <li>
+                      <a href="#" class="text-sm">Contact</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="mb-10 lg:mb-0">
+                <h5 class="font-lucida text-base lg:text-lg font-bold mb-3">Stay connected through our other channels</h5>
+                <div class="flex sm:grid grid-cols-3 justify-between gap-x-10 sm:gap-x-0 items-center pr-4 lg:pr-0">
+                  <a href="http://" target="_blank" rel="noopener noreferrer">
+                    <img class="w-[130px]" src="images/icon/footer-logo1.png" alt="">
+                  </a>
+                  <a href="http://" target="_blank" rel="noopener noreferrer">
+                    <img class="w-[130px]" src="images/icon/footer-logo2.png" alt="">
+                  </a>
+                  <a href="http://" target="_blank" rel="noopener noreferrer">
+                    <img  class="w-[45px]" src="images/icon/footer-logo3.png" alt="">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>  
+        </div>
+    </div>
+
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

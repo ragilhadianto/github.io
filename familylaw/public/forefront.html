@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- css -->
+    <link rel="stylesheet" href="css/tailwind.css" />
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/slick-theme.css" />
+    <title>Family Law</title>
+  </head>
+  <body>
+
+  <!-- header -->
+  <div class="header header__blue w-full fixed left-0 top-0 px-5 pt-10 lg:p-5 z-[999] transition-all">
+    <div class="container lg:px-16 flex flex-col h-full lg:justify-between">
+      <div class="flex justify-between items-start lg:items-center">
+        <div>
+          <a href="index.html">
+            <img class="w-[76px] sm:w-[105px] logo" src="images/icon/logo_blue.png" alt="">
+          </a>
+        </div>
+        <div class="flex items-center">
+          <div class="hidden lg:flex items-center mr-16 langweb ">
+            <img class="w-auto" src="images/icon/icon_web_blue.svg" alt="">
+            <!-- <span class="text-white font-lucida ml-2">EN</span> -->
+            <select name="" id="" class="text-blue1 font-lucida ml-2 bg-transparent langweb__select w-[50px]">
+              <option value="" class="text-blue1">EN</option>
+              <option value="" class="text-blue1">TV</option>
+            </select>
+          </div>
+          <div>
+            <div class="menuOpen -mr-3 pt-0 px-3 lg:p-3 cursor-pointer justify-center">
+              <img class="w-[31px] lg:w-auto" src="images/icon/icon_menu_blue.svg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="menu h-full fixed left-0 top-0 w-full z-[999]" style="display:none;">
+    <div class="header w-full left-0 top-0 px-5 pt-10 lg:p-5 z-[999] transition-all">
+      <div class="container lg:px-16 flex flex-col h-full lg:justify-between">
+        <div class="flex justify-between items-start lg:items-center">
+          <div>
+            <a href="index.html">
+              <img class="w-[76px] sm:w-[105px] logo" src="images/icon/logo_white.png" alt="">
+            </a>
+          </div>
+          <div class="flex items-center">
+            <div class="hidden lg:flex items-center mr-16 langweb ">
+              <img class="w-auto" src="images/icon/icon_web.svg" alt="">
+              <select name="" id="" class="text-blue1 font-lucida ml-2 bg-transparent langweb__select w-[50px]">
+                <option value="" class="text-blue1">EN</option>
+                <option value="" class="text-blue1">TV</option>
+              </select>
+            </div>
+            <div>
+              <div class="menuClose -mr-3 pt-0 px-3 lg:p-3 cursor-pointer">
+                <img class="w-[31px] lg:w-auto" src="images/icon/icon_menu_close.svg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mt-10 overflow-y-scroll lg:overflow-y-hidden pr-3 pb-10">
+          <ul class="menuInner mb-10 text-3xl lg:text-6xl font-lucida text-gray1 flex flex-col gap-y-5 relative lg:w-[50%]">
+            <li>
+              <a href="" class="hover:text-blue1 transition-all">Homepage</a>
+            </li>
+            <li>
+              <a href="javascript:void(0);" class="hover:text-blue1 transition-all">Practices</a>
+              <ul>
+                <li>
+                  <a href="" class="hover:text-blue1 transition-all py-2 lg:py-1 flex">Marriage Registration</a>
+                </li>
+                <li>
+                  <a href="" class="hover:text-blue1 transition-all py-2 lg:py-1 flex">Prenuptial Agreement</a>
+                </li>
+                <li>
+                  <a href="" class="hover:text-blue1 transition-all py-2 lg:py-1 flex">Wills And Estates</a>
+                </li>
+                <li>
+                  <a href="" class="hover:text-blue1 transition-all py-2 lg:py-1 flex">Birth Certificate</a>
+                </li>
+                <li>
+                  <a href="" class="hover:text-blue1 transition-all py-2 lg:py-1 flex">Divorce And Assets Division</a>
+                </li>
+                <li>
+                  <a href="" class="hover:text-blue1 transition-all py-2 lg:py-1 flex">Children’s Matters</a>
+                </li>
+                <li>
+                  <a href="" class="hover:text-blue1 transition-all py-2 lg:py-1 flex">Representation At Family And Matrimonial Court</a>
+                </li>
+                <li>
+                  <a href="" class="hover:text-blue1 transition-all py-2 lg:py-1 flex">Vietnam Immigration</a>
+                </li>
+              </ul>                
+            </li>
+            <li>
+              <a href="javascript:void(0);" class="hover:text-blue1 transition-all">Forefront</a>
+              <ul>
+                <li>
+                  <a href="" class="hover:text-blue1 transition-all py-2 lg:py-1 flex">Legal Insights</a>
+                </li>
+                <li>
+                  <a href="" class="hover:text-blue1 transition-all py-2 lg:py-1 flex">Events</a>
+                </li>
+                <li>
+                  <a href="" class="hover:text-blue1 transition-all py-2 lg:py-1 flex">Firm News</a>
+                </li>
+                <li>
+                  <a href="" class="hover:text-blue1 transition-all py-2 lg:py-1 flex">Frequently Asked Questions</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="javascript:void(0);" class="hover:text-blue1 transition-all">About Us</a>
+              <ul>
+                <li>
+                  <a href="" class="hover:text-blue1 transition-all py-2 lg:py-1 flex">Why Us</a>
+                </li>
+                <li>
+                  <a href="" class="hover:text-blue1 transition-all py-2 lg:py-1 flex">The Team</a>
+                </li>
+                <li>
+                  <a href="" class="hover:text-blue1 transition-all py-2 lg:py-1 flex">Testimonials</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="" class="hover:text-blue1 transition-all">Contact</a>
+            </li>
+          </ul>
+          <div class="flex lg:hidden items-center langweb ">
+            <img class="w-auto" src="images/icon/icon_web.svg" alt="">
+            <select name="" id="" class="text-white font-lucida ml-2 bg-transparent langweb__select w-[50px]">
+              <option value="" class="text-blue1">EN</option>
+              <option value="" class="text-blue1">TV</option>
+            </select>
+          </div>
+        </div>
+      </div>
+          
+      </div>
+    </div>
+      
+
+    <!-- hero -->
+    <div class="w-full h-full">
+      <div class="h-full w-full overflow-hidden">      
+        <img class="object-cover h-full w-full" src="images/hero_forefront.jpg" alt="">
+      </div>
+      <div class="container relative">
+        <div class="text-white absolute pb-10 lg:pb-14 bottom-0 left-0 right-0 text-center flex justify-center items-center flex-col ">
+            <h1 class="text-3xl lg:text-[56px] leading-[34px] lg:leading-[50px] font-light font-proxima-lt lg:w-[60%] px-5">Stay up to date with our latest guides and information</h1>
+            <div class="flex items-center gap-x-5 mt-5 lg:mt-5">
+              <img class="w-[40px]  w-auto" src="images/icon/icon_arrow_circle_white.svg" alt="">
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- main content  -->
+   <div class="container px-5 xl:px-14 pt-12 xl:pt-20">
+      
+      <!-- section Practical-->
+      <div class="mb-14 lg:mb-24">               
+        <div class="lg:flex flex-col lg:flex-row justify-between items-end mb-5 lg:mb-10 relative">
+          <h5 class="heading1">Featured <br class="lg:hidden"> Insights</h5>
+          <div class="slider3-arrow flex gap-x-3 absolute lg:relative right-0 bottom-0 lg:top-[75px] z-50"></div>
+        </div>
+        <!-- slider-->
+        <div class="slider3 imgFull">
+            <div>
+              <div class="grid grid-cols-1 lg:grid-cols-2">
+                <div class="h-[300px] lg:h-[400px]">
+                  <img class="w-full h-full object-cover" src="https://familylawyers.capital-six.com/wp-content/uploads/2022/11/1661877214561.jpeg" alt="">
+                </div>
+                <div class="flex flex-col justify-end lg:pl-10 pr-8 px-5 lg:px-0">
+                    <div class="mb-5 lg:mb-10">
+                        <h5 class="text-2xl	lg:text-4xl leading-6 my-5">Division of common property of Husband and Wife during marriage</h5>
+                        <span class="text-orange1 text-base lg:text-xl">20 September 2022</span>
+                    </div>
+                    
+                    <div class="flex justify-center lg:justify-start">
+                        <a href="http://#" target="_blank" rel="noopener noreferrer" class="button-orange1">
+                            Read the Insight
+                      </a>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="grid grid-cols-1 lg:grid-cols-2">
+                <div class="h-[300px] lg:h-[400px]">
+                  <img class="w-full h-full object-cover" src="images/featuredinsights.jpg" alt="">
+                </div>
+                <div class="flex flex-col justify-end lg:pl-10 pr-8 px-5 lg:px-0">
+                    <div class="mb-5 lg:mb-10">
+                        <h5 class="text-2xl	lg:text-4xl leading-6 my-5">Division of common property of Husband and Wife during marriage</h5>
+                        <span class="text-orange1 text-base lg:text-xl">20 September 2022</span>
+                    </div>
+                    
+                    <div class="flex justify-center lg:justify-start">
+                        <a href="http://#" target="_blank" rel="noopener noreferrer" class="button-orange1">
+                            Read the Insight
+                      </a>
+                    </div>
+                </div>
+              </div>
+            </div>
+        </div>               
+      </div>
+
+      <!-- section Practical-->
+      <div class="mb-14 lg:mb-24">               
+          <div class="grid grid-cols-1 lg:grid-cols-3 gap-x-5 justify-between items-center mb-10">
+              <h5 class="heading1 col-span-1 mb-5 lg:mb-0">Sharing Our Legal<br>
+                  Knowledge & Expertise</h5>
+              <div class="flex flex-1 col-span-2">
+                  <div class="w-full flex gap-5 flex-col lg:flex-row relative">
+                    <form class="w-full lg:w-[75%] relative flex gap-5 flex-col lg:flex-row">
+                      <input class="search button-blue1-np pl-10 lg:pl-14 pr-2 px-5 py-2 text-left flex-1 text-sm w-full lg:w-[70%]" type="text" placeholder="Tell us what you are looking for...">
+                      <select class="select button-blue1-np py-2 px-5 text-left w-full lg:w-[30%] text-sm" name="" id="">
+                          <option> Birth Certificates </option>
+                          <option> lorem </option>
+                          <option> ipsum </option>
+                      </select>
+                    </form>
+                    <form class="flex w-full lg:w-[25%] gap-5 flex-col lg:flex-row ">                       
+                     
+                            <select class="select button-blue1-np py-2 px-5 text-left w-full text-sm" name="" id="">
+                                <option> Sort by </option>
+                                <option> lorem </option>
+                                <option> ipsum </option>
+                            </select>
+                       
+                    </form>
+                  </div>
+              </div>
+          </div>
+
+
+          <!-- list  -->
+          <div class="grid grid-cols-1 lg:grid-cols-3 gap-x-6 gap-y-6 lg:gap-y-10">
+              <div class="bg-gray2 rounded-xl overflow-hidden">
+                <a href="#" class="flex flex-col h-full">
+                  <div>
+                    <img class="w-full h-full object-cover" src="images/marriage_registration.jpg" alt="">
+                  </div>
+                  <div class="p-3 flex flex-col h-full justify-between min-h-[70px]">
+                    <h5 class="text-black text-xl leading-6 line-clamp-2	">Marriage Registration</h5>
+                  </div>
+                </a>
+              </div>
+              <div class="bg-gray2 rounded-xl overflow-hidden">
+              <a href="#" class="flex flex-col h-full">
+                <div>
+                  <img class="w-full h-full object-cover" src="images/divorce_and_assets_division.jpg" alt="">
+                </div>
+                <div class="p-3 flex flex-col h-full justify-between min-h-[70px]">
+                  <h5 class="text-black text-xl leading-6 line-clamp-2	">Divorce and Assets Division</h5>
+                </div>
+              </a>
+              </div>
+              <div class="bg-gray2 rounded-xl overflow-hidden">
+              <a href="#" class="flex flex-col h-full">
+                <div>
+                  <img class="w-full h-full object-cover" src="images/prenuptial_agreement.jpg" alt="">
+                </div>
+                <div class="p-3 flex flex-col h-full justify-between min-h-[70px]">
+                  <h5 class="text-black text-xl leading-6 line-clamp-2	">Prenuptial Agreement</h5>
+                </div>
+              </a>
+              </div>
+              <div class="bg-gray2 rounded-xl overflow-hidden">
+                <a href="#" class="flex flex-col h-full">
+                  <div>
+                    <img class="w-full h-full object-cover" src="images/childrensmatters.jpg" alt="">
+                  </div>
+                  <div class="p-3 flex flex-col h-full justify-between min-h-[70px]">
+                    <h5 class="text-black text-xl leading-6 line-clamp-2	">Children’s Matters</h5>
+                  </div>
+                </a>
+              </div>
+              <div class="bg-gray2 rounded-xl overflow-hidden">
+              <a href="#" class="flex flex-col h-full">
+                <div>
+                  <img class="w-full h-full object-cover" src="images/representationatfamilyandmatrimonialcourt.jpg" alt="">
+                </div>
+                <div class="p-3 flex flex-col h-full justify-between min-h-[70px]">
+                  <h5 class="text-black text-xl leading-6 line-clamp-2	">Representation at Family and Matrimonial Court</h5>
+                </div>
+              </a>
+              </div>
+              <div class="bg-gray2 rounded-xl overflow-hidden">
+              <a href="#" class="flex flex-col h-full">
+                <div>
+                  <img class="w-full h-full object-cover" src="images/vietnamimmigration.jpg" alt="">
+                </div>
+                <div class="p-3 flex flex-col h-full justify-between min-h-[70px]">
+                  <h5 class="text-black text-xl leading-6 line-clamp-2	">Vietnam Immigration</h5>
+                </div>
+              </a>
+              </div>
+              <div class="bg-gray2 rounded-xl overflow-hidden">
+                <a href="#" class="flex flex-col h-full">
+                  <div>
+                    <img class="w-full h-full object-cover" src="images/willsandestates.jpg" alt="">
+                  </div>
+                  <div class="p-3 flex flex-col h-full justify-between min-h-[70px]">
+                    <h5 class="text-black text-xl leading-6 line-clamp-2	">Wills And Estates</h5>
+                  </div>
+                </a>
+              </div>
+              <div class="bg-gray2 rounded-xl overflow-hidden">
+              <a href="#" class="flex flex-col h-full">
+                <div>
+                  <img class="w-full h-full object-cover" src="images/birthcertificate.jpg" alt="">
+                </div>
+                <div class="p-3 flex flex-col h-full justify-between min-h-[70px]">
+                  <h5 class="text-black text-xl leading-6 line-clamp-2	">Birth Certificate</h5>
+                </div>
+              </a>
+              </div>
+              <div class="bg-gray2 rounded-xl overflow-hidden">
+              <a href="#" class="flex flex-col h-full">
+                <div>
+                  <img class="w-full h-full object-cover" src="images/birthcertificate.jpg" alt="">
+                </div>
+                <div class="p-3 flex flex-col h-full justify-between min-h-[70px]">
+                  <h5 class="text-black text-xl leading-6 line-clamp-2	">Birth Certificate</h5>
+                </div>
+              </a>
+              </div>
+              <div class="bg-gray2 rounded-xl overflow-hidden">
+                <a href="#" class="flex flex-col h-full">
+                  <div>
+                    <img class="w-full h-full object-cover" src="images/willsandestates.jpg" alt="">
+                  </div>
+                  <div class="p-3 flex flex-col h-full justify-between min-h-[70px]">
+                    <h5 class="text-black text-xl leading-6 line-clamp-2	">Wills And Estates</h5>
+                  </div>
+                </a>
+              </div>
+              <div class="bg-gray2 rounded-xl overflow-hidden">
+              <a href="#" class="flex flex-col h-full">
+                <div>
+                  <img class="w-full h-full object-cover" src="images/birthcertificate.jpg" alt="">
+                </div>
+                <div class="p-3 flex flex-col h-full justify-between min-h-[70px]">
+                  <h5 class="text-black text-xl leading-6 line-clamp-2	">Birth Certificate</h5>
+                </div>
+              </a>
+              </div>
+              <div class="bg-gray2 rounded-xl overflow-hidden">
+              <a href="#" class="flex flex-col h-full">
+                <div>
+                  <img class="w-full h-full object-cover" src="images/birthcertificate.jpg" alt="">
+                </div>
+                <div class="p-3 flex flex-col h-full justify-between min-h-[70px]">
+                  <h5 class="text-black text-xl leading-6 line-clamp-2	">Birth Certificate</h5>
+                </div>
+              </a>
+              </div>
+            </div>    
+            
+            <div class="flex justify-center mt-14">
+              <ul class="flex gap-x-10 text-xl items-center">
+                  <li>
+                      <a href="">
+                          <img src="images/icon/icon_leftpaging.svg" alt="">
+                      </a>
+                  </li>
+                  <li>
+                      <a href="" class="page-numbers current">1</a>
+                  </li>
+                  <li>
+                      <a href="">2</a>
+                  </li>
+                  <li>
+                      <a href="">3</a>
+                  </li>
+                  <li>
+                      <a href="">
+                          <img src="images/icon/icon_rightpaging.svg" alt="">
+                      </a>
+                  </li>
+              </ul>
+            </div>
+
+      </div>
+
+      <!-- section You’ve Read -->
+      <div class="mb-14 lg:mb-24">                      
+        <div class="flex lg:grid grid-cols-2 flex-col-reverse">
+          <div class="lg:pr-10">
+            <div class="hidden lg:flex justify-between items-end mb-10">
+              <div>
+                <h5 class="heading1">How can we help?</h5>
+                <h4 class="heading2">Tell us about your enquiry</h4>
+              </div>
+            </div>                 
+            <div class="mb-10">
+              <h5 class="text-lg font-bold uppercase font-lucida">GIVE US A CALL</h5>
+              <p class="text-base lg:text-xl">(+84 28) 36 22 77 30</p>
+            </div>
+            <div>
+              <h5 class="text-lg font-bold uppercase font-lucida">OR MEET US DIRECTLY AT</h5>
+              <p class="text-base lg:text-xl leading-[18px] lg:leading-6">
+                HEAD OFFICE:<br>
+                Le & Tran Building, Area 284, No.9, Nguyen Trong Tuyen <br>
+                Street, Ward 10, Phu Nhuan District, Ho Chi Minh City
+                <br><br>
+                CITY CENTER BRANCH:<br>
+                Unit 615-4, Level 6, Me Linh Point Tower 2<br>
+                Ngo Duc Ke, District 1, Ho Chi Minh City
+              </p>
+            </div>
+          </div>
+
+          <div class="mb-5 lg:mb-0">
+            <div class="flex lg:hidden justify-between items-end mb-5">
+              <div>
+                <h5 class="heading1">How can we help?</h5>
+                <h4 class="heading2">Tell us about your enquiry</h4>
+              </div>
+            </div>    
+            <div class="relative lg:w-full h-[380px] lg:h-full iframeFull imgFull">
+              <!-- <img class="w-full" src="images/foto_help.jpg" alt=""> -->
+<div class="typeform-formembed">
+                  <div class="typeform-widget" data-url="https://aycmedia.typeform.com/to/ik0vNR" data-hide-headers=true data-hide-footer=true data-tf-disable-auto-focus="true"> </div>                  
+                </div>
+                <script>
+                  (
+                    function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) }
+                              
+                  })()
+                </script>
+            </div>
+          </div>
+        </div>  
+      </div>
+
+   </div>
+
+    <!-- footer -->   
+    <div class="container px-5 xl:px-14 pb-12 lg:pb-20">
+      <div class="border-t border-blue1 pt-10 lg:pt-16 ">
+          <div class="flex lg:grid lg:grid-cols-2 flex-col-reverse">
+            <div class="flex flex-col justify-between">             
+              <div class="lg:mb-10">
+                <div class="mb-3">
+                  <img src="images/icon/logo_footer.png" alt="">
+                </div>
+                <div class="mb-3">
+                  <h5 class="text-sm font-bold uppercase font-lucida ">
+                    HEAD OFFICE
+                  </h5>
+                  <p class="text-sm leading-4	">
+                    Le & Tran Building, Area 284, No.9, Nguyen Trong Tuyen Street,<br>
+                    Ward 10, Phu Nhuan District, Ho Chi Minh City
+                  </p>
+                </div>
+                <div class="mb-3">
+                  <h5 class="text-sm font-bold uppercase font-lucida ">
+                    CITY CENTER BRANCH
+                  </h5>
+                  <p class="text-sm leading-4	">
+                    Unit 615-4, Level 6, Me Linh Point Tower 2 Ngo Duc Ke, District 1,<br>
+                    Ho Chi Minh City
+                  </p>
+                </div>
+              </div>
+              <div>
+                <div class="mb-3">
+                  <p class="text-sm leading-4	">
+                    letran@familylawyers.vn
+                    <br>
+                    (+84 28) 36 22 77 30
+                  </p>
+                </div>
+                <div class="mb-3">
+                  <p class="text-[10px] lg:text-sm leading-4">
+                    © 2022 © Family Lawyers. All rights reserved
+                    <br>
+                    Disclaimer | Privacy Policy
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="relative flex flex-col justify-between flex-col-reverse lg:flex-col mb-10 lg:mb-0">
+              <div class="flex sm:grid grid-cols-3 justify-between pr-4 lg:pr-0">
+                <div>
+                  <h5 class="font-lucida text-base lg:text-lg font-bold mb-3">About Us</h5>
+                  <ul class="flex flex-col gap-y-2 lg:gap-y-4">
+                    <li>
+                      <a href="#" class="text-sm">Why Us</a>
+                    </li>
+                    <li>
+                      <a href="#" class="text-sm">The Team</a>
+                    </li>
+                    <li>
+                      <a href="#" class="text-sm">Testimonials</a>
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <h5 class="font-lucida text-base lg:text-lg font-bold mb-3">News</h5>
+                  <ul class="flex flex-col gap-y-2 lg:gap-y-4">
+                    <li>
+                      <a href="#" class="text-sm">Legal Insights</a>
+                    </li>
+                    <li>
+                      <a href="#" class="text-sm">Events</a>
+                    </li>
+                    <li>
+                      <a href="#" class="text-sm">Podcasts</a>
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <h5 class="font-lucida text-base lg:text-lg font-bold mb-3">Others</h5>
+                  <ul class="flex flex-col gap-y-2 lg:gap-y-4">
+                    <li>
+                      <a href="#" class="text-sm">Practices</a>
+                    </li>
+                    <li>
+                      <a href="#" class="text-sm">FAQs</a>
+                    </li>
+                    <li>
+                      <a href="#" class="text-sm">Contact</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="mb-10 lg:mb-0">
+                <h5 class="font-lucida text-base lg:text-lg font-bold mb-3">Stay connected through our other channels</h5>
+                <div class="flex sm:grid grid-cols-3 justify-between gap-x-10 sm:gap-x-0 items-center pr-4 lg:pr-0">
+                  <a href="http://" target="_blank" rel="noopener noreferrer">
+                    <img class="w-[130px]" src="images/icon/footer-logo1.png" alt="">
+                  </a>
+                  <a href="http://" target="_blank" rel="noopener noreferrer">
+                    <img class="w-[130px]" src="images/icon/footer-logo2.png" alt="">
+                  </a>
+                  <a href="http://" target="_blank" rel="noopener noreferrer">
+                    <img  class="w-[45px]" src="images/icon/footer-logo3.png" alt="">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>  
+        </div>
+    </div>
+
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

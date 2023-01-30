@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- css -->
+    <link rel="stylesheet" href="css/tailwind.css" />
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/slick-theme.css" />
+    <title>Family Law</title>
+  </head>
+  <body>
+
+  <!-- header -->
+  <div class="header header__blue w-full fixed left-0 top-0 px-5 pt-10 lg:p-5 z-[999] transition-all">
+    <div class="container lg:px-16 flex flex-col h-full lg:justify-between">
+      <div class="flex justify-between items-start lg:items-center">
+        <div>
+          <a href="index.html">
+            <img class="w-[76px] sm:w-[105px] logo" src="images/icon/logo_blue.png" alt="">
+          </a>
+        </div>
+        <div class="flex items-center">
+          <div class="hidden lg:flex items-center mr-16 langweb ">
+            <img class="w-auto" src="images/icon/icon_web_blue.svg" alt="">
+            <!-- <span class="text-white font-lucida ml-2">EN</span> -->
+            <select name="" id="" class="text-blue1 font-lucida ml-2 bg-transparent langweb__select w-[50px]">
+              <option value="" class="text-blue1">EN</option>
+              <option value="" class="text-blue1">TV</option>
+            </select>
+          </div>
+          <div>
+            <div class="menuOpen -mr-3 pt-0 px-3 lg:p-3 cursor-pointer justify-center">
+              <img class="w-[31px] lg:w-auto" src="images/icon/icon_menu_blue.svg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="menu h-full fixed left-0 top-0 w-full z-[999]" style="display:none;">
+    <div class="header w-full left-0 top-0 px-5 pt-10 lg:p-5 z-[999] transition-all">
+      <div class="container lg:px-16 flex flex-col h-full lg:justify-between">
+        <div class="flex justify-between items-start lg:items-center">
+          <div>
+            <a href="index.html">
+              <img class="w-[76px] sm:w-[105px] logo" src="images/icon/logo_white.png" alt="">
+            </a>
+          </div>
+          <div class="flex items-center">
+            <div class="hidden lg:flex items-center mr-16 langweb ">
+              <img class="w-auto" src="images/icon/icon_web.svg" alt="">
+              <select name="" id="" class="text-blue1 font-lucida ml-2 bg-transparent langweb__select w-[50px]">
+                <option value="" class="text-blue1">EN</option>
+                <option value="" class="text-blue1">TV</option>
+              </select>
+            </div>
+            <div>
+              <div class="menuClose -mr-3 pt-0 px-3 lg:p-3 cursor-pointer">
+                <img class="w-[31px] lg:w-auto" src="images/icon/icon_menu_close.svg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mt-10 overflow-y-scroll lg:overflow-y-hidden pr-3 pb-10">
+          <ul class="menuInner mb-10 text-3xl lg:text-6xl font-lucida text-gray1 flex flex-col gap-y-5 relative lg:w-[50%]">
+            <li>
+              <a href="" class="hover:text-blue1 transition-all">Homepage</a>
+            </li>
+            <li>
+              <a href="javascript:void(0);" class="hover:text-blue1 transition-all">Practices</a>
+              <ul>
+                <li>
+                  <a href="" class="hover:text-blue1 transition-all py-2 lg:py-1 flex">Marriage Registration</a>
+                </li>
+                <li>
+                  <a href="" class="hover:text-blue1 transition-all py-2 lg:py-1 flex">Prenuptial Agreement</a>
+                </li>
+                <li>
+                  <a href="" class="hover:text-blue1 transition-all py-2 lg:py-1 flex">Wills And Estates</a>
+                </li>
+                <li>
+                  <a href="" class="hover:text-blue1 transition-all py-2 lg:py-1 flex">Birth Certificate</a>
+                </li>
+                <li>
+                  <a href="" class="hover:text-blue1 transition-all py-2 lg:py-1 flex">Divorce And Assets Division</a>
+                </li>
+                <li>
+                  <a href="" class="hover:text-blue1 transition-all py-2 lg:py-1 flex">Children’s Matters</a>
+                </li>
+                <li>
+                  <a href="" class="hover:text-blue1 transition-all py-2 lg:py-1 flex">Representation At Family And Matrimonial Court</a>
+                </li>
+                <li>
+                  <a href="" class="hover:text-blue1 transition-all py-2 lg:py-1 flex">Vietnam Immigration</a>
+                </li>
+              </ul>                
+            </li>
+            <li>
+              <a href="javascript:void(0);" class="hover:text-blue1 transition-all">Forefront</a>
+              <ul>
+                <li>
+                  <a href="" class="hover:text-blue1 transition-all py-2 lg:py-1 flex">Legal Insights</a>
+                </li>
+                <li>
+                  <a href="" class="hover:text-blue1 transition-all py-2 lg:py-1 flex">Events</a>
+                </li>
+                <li>
+                  <a href="" class="hover:text-blue1 transition-all py-2 lg:py-1 flex">Firm News</a>
+                </li>
+                <li>
+                  <a href="" class="hover:text-blue1 transition-all py-2 lg:py-1 flex">Frequently Asked Questions</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="javascript:void(0);" class="hover:text-blue1 transition-all">About Us</a>
+              <ul>
+                <li>
+                  <a href="" class="hover:text-blue1 transition-all py-2 lg:py-1 flex">Why Us</a>
+                </li>
+                <li>
+                  <a href="" class="hover:text-blue1 transition-all py-2 lg:py-1 flex">The Team</a>
+                </li>
+                <li>
+                  <a href="" class="hover:text-blue1 transition-all py-2 lg:py-1 flex">Testimonials</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="" class="hover:text-blue1 transition-all">Contact</a>
+            </li>
+          </ul>
+          <div class="flex lg:hidden items-center langweb ">
+            <img class="w-auto" src="images/icon/icon_web.svg" alt="">
+            <select name="" id="" class="text-white font-lucida ml-2 bg-transparent langweb__select w-[50px]">
+              <option value="" class="text-blue1">EN</option>
+              <option value="" class="text-blue1">TV</option>
+            </select>
+          </div>
+        </div>
+      </div>
+          
+      </div>
+    </div>
+      
+
+    <!-- hero -->
+    <div class="w-full lg:h-[720px] px-5 lg:px-0 mt-[100px] lg:mt-[100px]">
+      <div class="h-[350px] sm:h-[650px] lg:h-full container overflow-hidden rounded-b-[20px] lg:rounded-b-[50px]">      
+        <img class="object-cover h-full w-full" src="images/hero_faq.jpg" alt="">
+      </div>
+      <div class="container relative mt-5">
+        <div class="text-blue1 lg:text-white relative lg:absolute lg:pb-14 bottom-0 left-0 right-0 text-center flex justify-center items-center flex-col">
+            <h1 class="text-3xl lg:text-[56px] leading-[34px] lg:leading-[50px] font-light font-proxima-lt w-full lg:w-[60%] lg:w-full">The Answers To Your Questions</h1>
+            <div class="w-full lg:w-[50%] text-base lg:text-xl my-3 leading-6">
+                <p>If you are in needs of legal advice or looking for a reliable partner to guide you through the legal landscape, we’ve put together some commonly raised questions below that you might concern. <br> <br> For any matters not covered below, please give us a call on (+84 28) 36 22 77 30 or drop us at letran@familylawyers.vn.</p>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- main content  -->
+   <div class="container px-5 xl:px-14 pt-12 xl:pt-20">
+
+        <!-- section -->
+        <div class="mb-14 lg:mb-32 lg:px-40">
+            <div class="mb-14 lg:mb-24">
+                <form class="w-full flex flex-col lg:flex-row gap-5">
+                    <input class="search button-blue1-np pl-10 lg:pl-14 pr-2 py-2 px-5 text-left flex-1" type="text" placeholder="Tell us what you are looking for...">
+  
+                    <select class="select button-blue1-np py-2 px-5 text-sm text-left w-full lg:w-[35%]" name="" id="">
+                      <option>Adoption </option>
+                      <option> lorem </option>
+                      <option> ipsum </option>
+                    </select>
+                </form>
+            </div>
+            <div class="mb-14 lg:mb-16 ">     
+                <div class="w-full">
+                  <ul id="accordion">
+                    <li class="w-full">
+                      <div class="flex justify-between items-start border-t border-blue1 py-4 cursor-pointer">
+                        <h5 class="text-xl lg:text-2xl pr-20 leading-6">How are our attorneys in family law different from others?</h5>
+                        <span class="flex-none-auto pr-5 lg:pr-0">
+                          <img class="w-auto rotate-180" src="images/icon/icon_arrow_bottom.svg" alt="">
+                        </span>
+                      </div>
+                      <div class="pb-12 pr-10 accordionInner">
+                        <p class=" text-orange1 text-base lg:text-xl leading-[18px] ">Our Vietnam family lawyers are trained and led by Stephen Le, the litigation star of Vietnam, who has much litigation experience at court and dispute resolution. His practical insights and sophisticated creativeness are the key to un-clock all critical family matters and issues that the clients want.</p>
+                      </div>
+                    </li>
+                    <li class="w-full">
+                      <div class="flex justify-between items-start border-t border-blue1 py-4 cursor-pointer">
+                        <h5 class="text-xl lg:text-2xl pr-20 leading-6">What is our legal method in providing services to clients?</h5>
+                        <span class="flex-none-auto pr-5 lg:pr-0">
+                          <img class="w-auto" src="images/icon/icon_arrow_bottom.svg" alt="">
+                        </span>
+                      </div>
+                      <div class="pb-12 pr-10 accordionInner hidden article">
+                        <div class="  text-orange1 text-base lg:text-xl leading-[18px] ">Our Vietnam family lawyers are trained and led by Stephen Le, the litigation star of Vietnam, who has much litigation experience at court and dispute resolution. His practical insights and sophisticated creativeness are the key to un-clock all critical family matters and issues that the clients want.
+                          <span style="font-weight: 400;">The 2014 Law on Marriage and Family regulates the competence to resolve cases and matters of family and marriage involving foreign elements as follows:</span>
+                        <ul>
+                          <li><span style="font-weight: 400;">The competence to register civil status related to marriage and family relations involving foreign elements shall comply with the law on civil status;</span></li>
+                        </ul>
+                        <p style="padding-left: 40px;"><span style="font-weight: 400;">The competence to resolve marriage and family cases with foreign elements at the Court is implemented based on the provisions of the Code of Civil Procedure;</span></p>
+                        <ul>
+                          <li><span style="font-weight: 400;">District-level People’s Courts of localities where Vietnamese citizens reside are competent to annul illegal marriages, settle divorce cases, handle disputes over the rights and obligations of husband and wife, parents and children, determine recognition of parents and children, and resolve child adoption and guardianship between Vietnamese citizens residing in border areas and citizens of neighboring countries living in areas bordering on Vietnam in accordance with this Law and other Vietnamese laws.</span></li>
+                        </ul>
+                        <span style="font-weight: 400;">In addition, in accordance with the 2015 Code of Civil Procedure, a provincial-level people’s court has the jurisdiction to resolve first-instance civil cases and matters that fall under the jurisdiction of a district-level people’s court, when it is deemed necessary or at the request of the district-level people’s court.&nbsp;&nbsp;</span>
+
+                        </div>
+
+
+                        
+
+                       
+                      </div>
+                    </li>
+                    <li class="w-full">
+                      <div class="flex justify-between items-start border-t border-blue1 py-4 cursor-pointer">
+                        <h5 class="text-xl lg:text-2xl pr-20 leading-6">Why are we the best family lawyers?</h5>
+                        <span class="flex-none-auto pr-5 lg:pr-0">
+                          <img class="w-auto" src="images/icon/icon_arrow_bottom.svg" alt="">
+                        </span>
+                      </div>
+                      <div class="pb-12 pr-10 accordionInner hidden article">
+                        <div class="text-orange1 text-base lg:text-xl leading-[18px]"><span style="font-weight: 400;">According to the provisions of the 2015 Code of Civil Procedure, the following disputes over marriage and family fall under the jurisdiction of the Court:</span>
+                          <ul>
+                             <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Divorce, disputes over child custody or property division upon divorce; property division after divorce;</span></li>
+                             <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Disputes over the division of spousal common property during the marital period;</span></li>
+                             <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Disputes over change of child custody after divorce;</span></li>
+                             <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Disputes over the identification of a child’s parents; or identification of the children of parents;</span></li>
+                             <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Disputes over alimony or support;</span></li>
+                             <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Disputes over childbirth by assisted reproductive technology or surrogacy for humanitarian purposes;</span></li>
+                             <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Disputes over child custody, division of property of men and women living together as husband and wife without marriage registration or upon annulment of an illegal marriage;</span></li>
+                             <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Other marriage and family-related disputes, except for cases that fall within the competence of other agencies and organizations as prescribed by law.&nbsp;</span></li>
+                          </ul>
+                          <span style="font-weight: 400;">Marriage and family-related requests within the jurisdiction of the court:</span>
+                          <ul>
+                             <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Requests for annulment of an illegal marriage;</span></li>
+                             <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Requests for recognition of a voluntary divorce, an agreement on</span><span style="font-weight: 400;">
+                          </span><span style="font-weight: 400;">child custody or property division after divorce;</span></li>
+                             <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Requests for recognition of a parental agreement on change of child custody after divorce or for recognition of change of child custody after divorce by an agency, organization or individual as prescribed by the law on marriage and family;</span></li>
+                             <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Requests for restriction of rights of a parent toward a minor child or his/her visitation rights after a divorce;</span></li>
+                             <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Requests for termination of the adoption of a child;</span></li>
+                             <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Requests in relation to surrogacy as prescribed by the law on marriage and family;</span></li>
+                             <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Requests for recognition of an agreement on the termination of the division of common property during the marital period previously subject to a court’s judgment or decision;</span></li>
+                             <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Requests for declaration that an agreement on the spousal property regime is invalid in accordance with the law on marriage and family;</span></li>
+                             <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Requests for recognition and enforcement in Vietnam, or for non-recognition of a judgment or decision of a foreign court or another competent foreign agency on marriage and family which is not required to be enforced in Vietnam;</span></li>
+                             <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Requests for the identification of a child’s parents; or for identification of the parents of a child in accordance with the law on marriage and family.</span></li>
+                          </ul>
+                          <span style="font-weight: 400;">Other marriage and family-related requests, except for cases that fall under the competence of other agencies and organizations as prescribed by law.</span></div>
+                      </div>
+                    </li>
+                    <li class="w-full">
+                      <div class="flex justify-between items-start border-t border-blue1 py-4 cursor-pointer">
+                        <h5 class="text-xl lg:text-2xl pr-20 leading-6">What can we deliver?</h5>
+                        <span class="flex-none-auto pr-5 lg:pr-0">
+                          <img class="w-auto" src="images/icon/icon_arrow_bottom.svg" alt="">
+                        </span>
+                      </div>
+                      <div class="pb-12 pr-10 accordionInner hidden article">
+                        <p class="  text-orange1 text-base lg:text-xl leading-[18px] ">Our Vietnam family lawyers are trained and led by Stephen Le, the litigation star of Vietnam, who has much litigation experience at court and dispute resolution. His practical insights and sophisticated creativeness are the key to un-clock all critical family matters and issues that the clients want.</p>
+                      </div>
+                    </li>
+                    <li class="w-full">
+                      <div class="flex justify-between items-start border-t border-blue1 py-4 cursor-pointer">
+                        <h5 class="text-xl lg:text-2xl pr-20 leading-6">Who do we want to work with?</h5>
+                        <span class="flex-none-auto pr-5 lg:pr-0">
+                          <img class="w-auto" src="images/icon/icon_arrow_bottom.svg" alt="">
+                        </span>
+                      </div>
+                      <div class="pb-12 pr-10 accordionInner hidden article">
+                        <p class="  text-orange1 text-base lg:text-xl leading-[18px] ">Our Vietnam family lawyers are trained and led by Stephen Le, the litigation star of Vietnam, who has much litigation experience at court and dispute resolution. His practical insights and sophisticated creativeness are the key to un-clock all critical family matters and issues that the clients want.</p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>      
+            </div>
+        </div>
+
+        <!-- section Our Expertise-->
+      <div class="mb-14 lg:mb-24">     
+        <div class="mb-5 lg:mb-0">
+          <h5 class="heading1">Our Expertise</h5>
+          <h4 class="heading2">Effective Solution to Clients</h4>
+        </div>
+        <div class="grid grid-cols-2">
+          <div class="lg:col-start-2 col-span-2 lg:col-span-1 ">
+            <div class="text-base lg:text-xl leading-[18px] pl-24 lg:pl-0">
+                <p>Based in Ho Chi Minh City, Vietnam, we are a member of Le & Tran, premier boutique litigation firm, but focus only on the practice of family law. We pride ourselves to be a sole law firm in Vietnam that are exclusively equipped with specialized knowledge & experience in family law to bring a unique effective solution to clients.</p>
+            </div>
+            <div class="flex px-10 lg:px-0 mt-10">
+              <a href="http://#" target="_blank" rel="noopener noreferrer" class="button-orange1-np py-2 flex-1 lg:flex-none px-10">
+                Contact Us
+              </a>
+            </div>
+          </div>
+        </div>        
+      </div>
+   </div>
+
+    <!-- footer -->   
+    <div class="container px-5 xl:px-14 pb-12 lg:pb-20">
+      <div class="border-t border-blue1 pt-10 lg:pt-16 ">
+          <div class="flex lg:grid lg:grid-cols-2 flex-col-reverse">
+            <div class="flex flex-col justify-between">             
+              <div class="lg:mb-10">
+                <div class="mb-3">
+                  <img src="images/icon/logo_footer.png" alt="">
+                </div>
+                <div class="mb-3">
+                  <h5 class="text-sm font-bold uppercase font-lucida ">
+                    HEAD OFFICE
+                  </h5>
+                  <p class="text-sm leading-4	">
+                    Le & Tran Building, Area 284, No.9, Nguyen Trong Tuyen Street,<br>
+                    Ward 10, Phu Nhuan District, Ho Chi Minh City
+                  </p>
+                </div>
+                <div class="mb-3">
+                  <h5 class="text-sm font-bold uppercase font-lucida ">
+                    CITY CENTER BRANCH
+                  </h5>
+                  <p class="text-sm leading-4	">
+                    Unit 615-4, Level 6, Me Linh Point Tower 2 Ngo Duc Ke, District 1,<br>
+                    Ho Chi Minh City
+                  </p>
+                </div>
+              </div>
+              <div>
+                <div class="mb-3">
+                  <p class="text-sm leading-4	">
+                    letran@familylawyers.vn
+                    <br>
+                    (+84 28) 36 22 77 30
+                  </p>
+                </div>
+                <div class="mb-3">
+                  <p class="text-[10px] lg:text-sm leading-4">
+                    © 2022 © Family Lawyers. All rights reserved
+                    <br>
+                    Disclaimer | Privacy Policy
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="relative flex flex-col justify-between flex-col-reverse lg:flex-col mb-10 lg:mb-0">
+              <div class="flex sm:grid grid-cols-3 justify-between pr-4 lg:pr-0">
+                <div>
+                  <h5 class="font-lucida text-base lg:text-lg font-bold mb-3">About Us</h5>
+                  <ul class="flex flex-col gap-y-2 lg:gap-y-4">
+                    <li>
+                      <a href="#" class="text-sm">Why Us</a>
+                    </li>
+                    <li>
+                      <a href="#" class="text-sm">The Team</a>
+                    </li>
+                    <li>
+                      <a href="#" class="text-sm">Testimonials</a>
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <h5 class="font-lucida text-base lg:text-lg font-bold mb-3">News</h5>
+                  <ul class="flex flex-col gap-y-2 lg:gap-y-4">
+                    <li>
+                      <a href="#" class="text-sm">Legal Insights</a>
+                    </li>
+                    <li>
+                      <a href="#" class="text-sm">Events</a>
+                    </li>
+                    <li>
+                      <a href="#" class="text-sm">Podcasts</a>
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <h5 class="font-lucida text-base lg:text-lg font-bold mb-3">Others</h5>
+                  <ul class="flex flex-col gap-y-2 lg:gap-y-4">
+                    <li>
+                      <a href="#" class="text-sm">Practices</a>
+                    </li>
+                    <li>
+                      <a href="#" class="text-sm">FAQs</a>
+                    </li>
+                    <li>
+                      <a href="#" class="text-sm">Contact</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="mb-10 lg:mb-0">
+                <h5 class="font-lucida text-base lg:text-lg font-bold mb-3">Stay connected through our other channels</h5>
+                <div class="flex sm:grid grid-cols-3 justify-between gap-x-10 sm:gap-x-0 items-center pr-4 lg:pr-0">
+                  <a href="http://" target="_blank" rel="noopener noreferrer">
+                    <img class="w-[130px]" src="images/icon/footer-logo1.png" alt="">
+                  </a>
+                  <a href="http://" target="_blank" rel="noopener noreferrer">
+                    <img class="w-[130px]" src="images/icon/footer-logo2.png" alt="">
+                  </a>
+                  <a href="http://" target="_blank" rel="noopener noreferrer">
+                    <img  class="w-[45px]" src="images/icon/footer-logo3.png" alt="">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>  
+        </div>
+    </div>
+
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

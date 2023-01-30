@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- css -->
+    <link rel="stylesheet" href="css/tailwind.css" />
+    <title>Family Law</title>
+  </head>
+  <body>
+
+    <!-- header -->
+    <div class="header header__blue w-full fixed left-0 top-0 px-5 pt-10 lg:p-5 z-[999] transition-all">
+      <div class="container lg:px-16 flex flex-col h-full lg:justify-between">
+        <div class="flex justify-between items-start lg:items-center">
+          <div>
+            <a href="index.html">
+              <img class="w-[76px] sm:w-[105px] logo" src="images/icon/logo_blue.png" alt="">
+            </a>
+          </div>
+          <div class="flex items-center">
+            <div class="hidden lg:flex items-center mr-16 langweb ">
+              <img class="w-auto" src="images/icon/icon_web_blue.svg" alt="">
+              <!-- <span class="text-white font-lucida ml-2">EN</span> -->
+              <select name="" id="" class="text-blue1 font-lucida ml-2 bg-transparent langweb__select w-[50px]">
+                <option value="" class="text-blue1">EN</option>
+                <option value="" class="text-blue1">TV</option>
+              </select>
+            </div>
+            <div>
+              <div class="menuOpen -mr-3 pt-0 px-3 lg:p-3 cursor-pointer justify-center">
+                <img class="w-[31px] lg:w-auto" src="images/icon/icon_menu_blue.svg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="menu h-full fixed left-0 top-0 w-full z-[999]" style="display:none;">
+      <div class="header w-full left-0 top-0 px-5 pt-10 lg:p-5 z-[999] transition-all">
+        <div class="container lg:px-16 flex flex-col h-full lg:justify-between">
+          <div class="flex justify-between items-start lg:items-center">
+            <div>
+              <a href="index.html">
+                <img class="w-[76px] sm:w-[105px] logo" src="images/icon/logo_white.png" alt="">
+              </a>
+            </div>
+            <div class="flex items-center">
+              <div class="hidden lg:flex items-center mr-16 langweb ">
+                <img class="w-auto" src="images/icon/icon_web.svg" alt="">
+                <select name="" id="" class="text-blue1 font-lucida ml-2 bg-transparent langweb__select w-[50px]">
+                  <option value="" class="text-blue1">EN</option>
+                  <option value="" class="text-blue1">TV</option>
+                </select>
+              </div>
+              <div>
+                <div class="menuClose -mr-3 pt-0 px-3 lg:p-3 cursor-pointer">
+                  <img class="w-[31px] lg:w-auto" src="images/icon/icon_menu_close.svg" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mt-10 overflow-y-scroll lg:overflow-y-hidden pr-3 pb-10">
+            <ul class="menuInner mb-10 text-3xl lg:text-6xl font-lucida text-gray1 flex flex-col gap-y-5 relative lg:w-[50%]">
+              <li>
+                <a href="" class="hover:text-blue1 transition-all">Homepage</a>
+              </li>
+              <li>
+                <a href="javascript:void(0);" class="hover:text-blue1 transition-all">Practices</a>
+                <ul>
+                  <li>
+                    <a href="" class="hover:text-blue1 transition-all py-2 lg:py-1 flex">Marriage Registration</a>
+                  </li>
+                  <li>
+                    <a href="" class="hover:text-blue1 transition-all py-2 lg:py-1 flex">Prenuptial Agreement</a>
+                  </li>
+                  <li>
+                    <a href="" class="hover:text-blue1 transition-all py-2 lg:py-1 flex">Wills And Estates</a>
+                  </li>
+                  <li>
+                    <a href="" class="hover:text-blue1 transition-all py-2 lg:py-1 flex">Birth Certificate</a>
+                  </li>
+                  <li>
+                    <a href="" class="hover:text-blue1 transition-all py-2 lg:py-1 flex">Divorce And Assets Division</a>
+                  </li>
+                  <li>
+                    <a href="" class="hover:text-blue1 transition-all py-2 lg:py-1 flex">Children’s Matters</a>
+                  </li>
+                  <li>
+                    <a href="" class="hover:text-blue1 transition-all py-2 lg:py-1 flex">Representation At Family And Matrimonial Court</a>
+                  </li>
+                  <li>
+                    <a href="" class="hover:text-blue1 transition-all py-2 lg:py-1 flex">Vietnam Immigration</a>
+                  </li>
+                </ul>                
+              </li>
+              <li>
+                <a href="javascript:void(0);" class="hover:text-blue1 transition-all">Forefront</a>
+                <ul>
+                  <li>
+                    <a href="" class="hover:text-blue1 transition-all py-2 lg:py-1 flex">Legal Insights</a>
+                  </li>
+                  <li>
+                    <a href="" class="hover:text-blue1 transition-all py-2 lg:py-1 flex">Events</a>
+                  </li>
+                  <li>
+                    <a href="" class="hover:text-blue1 transition-all py-2 lg:py-1 flex">Firm News</a>
+                  </li>
+                  <li>
+                    <a href="" class="hover:text-blue1 transition-all py-2 lg:py-1 flex">Frequently Asked Questions</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="javascript:void(0);" class="hover:text-blue1 transition-all">About Us</a>
+                <ul>
+                  <li>
+                    <a href="" class="hover:text-blue1 transition-all py-2 lg:py-1 flex">Why Us</a>
+                  </li>
+                  <li>
+                    <a href="" class="hover:text-blue1 transition-all py-2 lg:py-1 flex">The Team</a>
+                  </li>
+                  <li>
+                    <a href="" class="hover:text-blue1 transition-all py-2 lg:py-1 flex">Testimonials</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="" class="hover:text-blue1 transition-all">Contact</a>
+              </li>
+            </ul>
+            <div class="flex lg:hidden items-center langweb ">
+              <img class="w-auto" src="images/icon/icon_web.svg" alt="">
+              <select name="" id="" class="text-white font-lucida ml-2 bg-transparent langweb__select w-[50px]">
+                <option value="" class="text-blue1">EN</option>
+                <option value="" class="text-blue1">TV</option>
+              </select>
+            </div>
+          </div>
+        </div>
+            
+        </div>
+      </div>
+    
+    <!-- hero -->
+    <div class="w-full lg:h-[720px] px-5 lg:px-0 mt-[100px] lg:mt-[100px]">
+      <div class="h-[350px] sm:h-[650px] lg:h-full container overflow-hidden rounded-b-[20px] lg:rounded-b-[50px]">      
+        <img class="object-cover h-full w-full" src="images/hero_practices_article.jpg" alt="">
+      </div>
+      <div class="container relative mt-5">
+        <div class="text-blue1 lg:text-white relative lg:absolute lg:pb-14 bottom-0 left-0 right-0 text-center flex justify-center items-center flex-col px-5">
+            <h1 class="text-3xl lg:text-[56px] leading-[34px] lg:leading-[50px] font-light font-proxima-lt lg:w-[60%] px-5">Marriage <br class="lg:hidden"> Registrations</h1>
+            <a href="" class="button-blue1-np lg:button-white1-np  px-16 py-2 mt-5">
+                Submit an euiqry
+              </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- main content  -->
+   <div class="container px-5 xl:px-14 pt-12 xl:pt-20">
+      
+      <!-- section article-->
+      <div class="mb-14 lg:mb-32 lg:px-40">               
+            <div class="article">
+              <p>For foreign residents who are looking to get married in Vietnam, obtaining a marriage registration can be somewhat of a challenging exercise. It is vital that you and your partner are properly prepared for the process. At Family Lawyers, we assist you throughout, helping you to navigate the pitfalls, providing a seamless experience and ensuring a happy occasion follows.</p>
+              <p>In order to get married in Vietnam there are a considerable amount of documents that need to be prepared and furnished to the relevant authorities. The documentation requirements go above and beyond what you may expect and the arduous process can be confusing to many. Having a family law expert guide you, will ensure that your personal information, application and certificates are in order. Our vast experience, coupled with our exceptional attention to detail ensures that the documentation is prepared, compiled, and presented in a swift and effective fashion.</p>
+              
+              <h3>Lorem Ipsum</h3>
+              <p>In addition to the documentation requirements, it will also be necessary for you to attend an in-person interview. The interview helps authorities to determine the legitimacy of the marriage. Family Lawyers will help prepare you and have you comfortable with what to expect for this component of the application procedure.</p>
+              <p>Family Lawyers provides a customized service, eliminating frustration and facilitating the obtainment of a marriage registration certificate. We achieve this by:</p>
+              <p>
+                  <ul>
+                      <li>Consulting you on the Vietnamese legal regulations and requirements applicable to your citizenship;</li>
+                      <li> Reviewing your dossier;</li>
+                      <li>Preparing and translating all relevant documents required for your marriage registration;</li>
+                      <li>Getting your documents notarized and legalized;</li>
+                      <li>
+                          Accompanying you and your partner during the marriage registration
+                          <ul>
+                              <li>Consulting you on the Vietnamese legal regulations and requirements applicable to your citizenship;</li>
+                              <li> Reviewing your dossier;</li>
+                              <li>Preparing and translating all relevant documents required for your marriage registration;</li>
+                              <li>Getting your documents notarized and legalized;</li>
+                              <li>Accompanying you and your partner during the marriage registration</li>
+                          </ul>
+                      </li>
+                  </ul>
+              </p>
+              <ul>
+                  <li>Consulting you on the Vietnamese legal regulations and requirements applicable to your citizenship;</li>
+                  <li> Reviewing your dossier;</li>
+                  <li>Preparing and translating all relevant documents required for your marriage registration;</li>
+                  <li>Getting your documents notarized and legalized;</li>
+                  <li>Accompanying you and your partner during the marriage registration</li>
+              </ul>
+              <ol>
+                  <li>Consulting you on the Vietnamese legal regulations and requirements applicable to your citizenship;</li>
+                  <li> Reviewing your dossier;</li>
+                  <li>Preparing and translating all relevant documents required for your marriage registration;</li>
+                  <li>Getting your documents notarized and legalized;</li>
+                  <li>Accompanying you and your partner during the marriage registration</li>
+              </ol>
+              <p>Additionally, Family Lawyers are capable of assisting you with the creation of a  another premarital legal procedure. If done amicably and carefully, a prenuptial agreement is a reliable tool that can protect your family’s financial interests and welfare in case of separation. Under the provisions of Vietnamese laws, this agreement must be made in writing, then notarized or legalized, all before marriage. The terms of a prenuptial can identify shared and separate assets as well as determine the rights and obligations of each spouse to each asset post-divorce. Tactful yet methodical, you can trust that our lawyers will leave no stone unturned whilst ensuring a composed and productive discussion between you and your partner.</p>
+            </div>
+            <div class="flex mt-10 justify-center">
+                <a href="http://#" target="_blank" rel="noopener noreferrer" class="button-orange1-np px-24 py-3">
+                    Contact Us
+              </a>
+            </div>
+      </div>
+
+      <!-- section You’ve Read -->
+      <div class="mb-14 lg:mb-24">                      
+        <div class="flex lg:grid grid-cols-2 flex-col-reverse">
+          <div class="lg:pr-10">
+            <div class="hidden lg:flex justify-between items-end mb-10">
+              <div>
+                <h5 class="heading1">How can we help?</h5>
+                <h4 class="heading2">Tell us about your enquiry</h4>
+              </div>
+            </div>                 
+            <div class="mb-10">
+              <h5 class="text-lg font-bold uppercase font-lucida">GIVE US A CALL</h5>
+              <p class="text-base lg:text-xl">(+84 28) 36 22 77 30</p>
+            </div>
+            <div>
+              <h5 class="text-lg font-bold uppercase font-lucida">OR MEET US DIRECTLY AT</h5>
+              <p class="text-base lg:text-xl leading-[18px] lg:leading-6">
+                HEAD OFFICE:<br>
+                Le & Tran Building, Area 284, No.9, Nguyen Trong Tuyen <br>
+                Street, Ward 10, Phu Nhuan District, Ho Chi Minh City
+                <br><br>
+                CITY CENTER BRANCH:<br>
+                Unit 615-4, Level 6, Me Linh Point Tower 2<br>
+                Ngo Duc Ke, District 1, Ho Chi Minh City
+              </p>
+            </div>
+          </div>
+
+          <div class="mb-5 lg:mb-0">
+            <div class="flex lg:hidden justify-between items-end mb-5">
+              <div>
+                <h5 class="heading1">How can we help?</h5>
+                <h4 class="heading2">Tell us about your enquiry</h4>
+              </div>
+            </div>    
+            <div class="relative lg:w-full h-[380px] lg:h-full iframeFull imgFull">
+              <!-- <img class="w-full" src="images/foto_help.jpg" alt=""> -->
+<div class="typeform-formembed">
+                  <div class="typeform-widget" data-url="https://aycmedia.typeform.com/to/ik0vNR" data-hide-headers=true data-hide-footer=true data-tf-disable-auto-focus="true"> </div>                  
+                </div>
+                <script>
+                  (
+                    function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) }
+                              
+                  })()
+                </script>
+            </div>
+          </div>
+        </div>  
+      </div>
+
+   </div>
+
+    <!-- footer -->   
+    <div class="container px-5 xl:px-14 pb-12 lg:pb-20">
+      <div class="border-t border-blue1 pt-10 lg:pt-16 ">
+          <div class="flex lg:grid lg:grid-cols-2 flex-col-reverse">
+            <div class="flex flex-col justify-between">             
+              <div class="lg:mb-10">
+                <div class="mb-3">
+                  <img src="images/icon/logo_footer.png" alt="">
+                </div>
+                <div class="mb-3">
+                  <h5 class="text-sm font-bold uppercase font-lucida ">
+                    HEAD OFFICE
+                  </h5>
+                  <p class="text-sm leading-4	">
+                    Le & Tran Building, Area 284, No.9, Nguyen Trong Tuyen Street,<br>
+                    Ward 10, Phu Nhuan District, Ho Chi Minh City
+                  </p>
+                </div>
+                <div class="mb-3">
+                  <h5 class="text-sm font-bold uppercase font-lucida ">
+                    CITY CENTER BRANCH
+                  </h5>
+                  <p class="text-sm leading-4	">
+                    Unit 615-4, Level 6, Me Linh Point Tower 2 Ngo Duc Ke, District 1,<br>
+                    Ho Chi Minh City
+                  </p>
+                </div>
+              </div>
+              <div>
+                <div class="mb-3">
+                  <p class="text-sm leading-4	">
+                    letran@familylawyers.vn
+                    <br>
+                    (+84 28) 36 22 77 30
+                  </p>
+                </div>
+                <div class="mb-3">
+                  <p class="text-[10px] lg:text-sm leading-4">
+                    © 2022 © Family Lawyers. All rights reserved
+                    <br>
+                    Disclaimer | Privacy Policy
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="relative flex flex-col justify-between flex-col-reverse lg:flex-col mb-10 lg:mb-0">
+              <div class="flex sm:grid grid-cols-3 justify-between pr-4 lg:pr-0">
+                <div>
+                  <h5 class="font-lucida text-base lg:text-lg font-bold mb-3">About Us</h5>
+                  <ul class="flex flex-col gap-y-2 lg:gap-y-4">
+                    <li>
+                      <a href="#" class="text-sm">Why Us</a>
+                    </li>
+                    <li>
+                      <a href="#" class="text-sm">The Team</a>
+                    </li>
+                    <li>
+                      <a href="#" class="text-sm">Testimonials</a>
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <h5 class="font-lucida text-base lg:text-lg font-bold mb-3">News</h5>
+                  <ul class="flex flex-col gap-y-2 lg:gap-y-4">
+                    <li>
+                      <a href="#" class="text-sm">Legal Insights</a>
+                    </li>
+                    <li>
+                      <a href="#" class="text-sm">Events</a>
+                    </li>
+                    <li>
+                      <a href="#" class="text-sm">Podcasts</a>
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <h5 class="font-lucida text-base lg:text-lg font-bold mb-3">Others</h5>
+                  <ul class="flex flex-col gap-y-2 lg:gap-y-4">
+                    <li>
+                      <a href="#" class="text-sm">Practices</a>
+                    </li>
+                    <li>
+                      <a href="#" class="text-sm">FAQs</a>
+                    </li>
+                    <li>
+                      <a href="#" class="text-sm">Contact</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="mb-10 lg:mb-0">
+                <h5 class="font-lucida text-base lg:text-lg font-bold mb-3">Stay connected through our other channels</h5>
+                <div class="flex sm:grid grid-cols-3 justify-between gap-x-10 sm:gap-x-0 items-center pr-4 lg:pr-0">
+                  <a href="http://" target="_blank" rel="noopener noreferrer">
+                    <img class="w-[130px]" src="images/icon/footer-logo1.png" alt="">
+                  </a>
+                  <a href="http://" target="_blank" rel="noopener noreferrer">
+                    <img class="w-[130px]" src="images/icon/footer-logo2.png" alt="">
+                  </a>
+                  <a href="http://" target="_blank" rel="noopener noreferrer">
+                    <img  class="w-[45px]" src="images/icon/footer-logo3.png" alt="">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>  
+        </div>
+    </div>
+
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

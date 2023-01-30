@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- css -->
+    <link rel="stylesheet" href="css/tailwind.css" />
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/slick-theme.css" />
+    <title>Family Law</title>
+  </head>
+  <body>
+
+    <!-- header -->
+    <div class="header header__blue w-full fixed left-0 top-0 px-5 pt-10 lg:p-5 z-[999] transition-all">
+      <div class="container lg:px-16 flex flex-col h-full lg:justify-between">
+        <div class="flex justify-between items-start lg:items-center">
+          <div>
+            <a href="index.html">
+              <img class="w-[76px] sm:w-[105px] logo" src="images/icon/logo_blue.png" alt="">
+            </a>
+          </div>
+          <div class="flex items-center">
+            <div class="hidden lg:flex items-center mr-16 langweb ">
+              <img class="w-auto" src="images/icon/icon_web_blue.svg" alt="">
+              <!-- <span class="text-white font-lucida ml-2">EN</span> -->
+              <select name="" id="" class="text-blue1 font-lucida ml-2 bg-transparent langweb__select w-[50px]">
+                <option value="" class="text-blue1">EN</option>
+                <option value="" class="text-blue1">TV</option>
+              </select>
+            </div>
+            <div>
+              <div class="menuOpen -mr-3 pt-0 px-3 lg:p-3 cursor-pointer justify-center">
+                <img class="w-[31px] lg:w-auto" src="images/icon/icon_menu_blue.svg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="menu h-full fixed left-0 top-0 w-full z-[999]" style="display:none;">
+      <div class="header w-full left-0 top-0 px-5 pt-10 lg:p-5 z-[999] transition-all">
+        <div class="container lg:px-16 flex flex-col h-full lg:justify-between">
+          <div class="flex justify-between items-start lg:items-center">
+            <div>
+              <a href="index.html">
+                <img class="w-[76px] sm:w-[105px] logo" src="images/icon/logo_white.png" alt="">
+              </a>
+            </div>
+            <div class="flex items-center">
+              <div class="hidden lg:flex items-center mr-16 langweb ">
+                <img class="w-auto" src="images/icon/icon_web.svg" alt="">
+                <select name="" id="" class="text-blue1 font-lucida ml-2 bg-transparent langweb__select w-[50px]">
+                  <option value="" class="text-blue1">EN</option>
+                  <option value="" class="text-blue1">TV</option>
+                </select>
+              </div>
+              <div>
+                <div class="menuClose -mr-3 pt-0 px-3 lg:p-3 cursor-pointer">
+                  <img class="w-[31px] lg:w-auto" src="images/icon/icon_menu_close.svg" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mt-10 overflow-y-scroll lg:overflow-y-hidden pr-3 pb-10">
+            <ul class="menuInner mb-10 text-3xl lg:text-6xl font-lucida text-gray1 flex flex-col gap-y-5 relative lg:w-[50%]">
+              <li>
+                <a href="" class="hover:text-blue1 transition-all">Homepage</a>
+              </li>
+              <li>
+                <a href="javascript:void(0);" class="hover:text-blue1 transition-all">Practices</a>
+                <ul>
+                  <li>
+                    <a href="" class="hover:text-blue1 transition-all py-2 lg:py-1 flex">Marriage Registration</a>
+                  </li>
+                  <li>
+                    <a href="" class="hover:text-blue1 transition-all py-2 lg:py-1 flex">Prenuptial Agreement</a>
+                  </li>
+                  <li>
+                    <a href="" class="hover:text-blue1 transition-all py-2 lg:py-1 flex">Wills And Estates</a>
+                  </li>
+                  <li>
+                    <a href="" class="hover:text-blue1 transition-all py-2 lg:py-1 flex">Birth Certificate</a>
+                  </li>
+                  <li>
+                    <a href="" class="hover:text-blue1 transition-all py-2 lg:py-1 flex">Divorce And Assets Division</a>
+                  </li>
+                  <li>
+                    <a href="" class="hover:text-blue1 transition-all py-2 lg:py-1 flex">Children’s Matters</a>
+                  </li>
+                  <li>
+                    <a href="" class="hover:text-blue1 transition-all py-2 lg:py-1 flex">Representation At Family And Matrimonial Court</a>
+                  </li>
+                  <li>
+                    <a href="" class="hover:text-blue1 transition-all py-2 lg:py-1 flex">Vietnam Immigration</a>
+                  </li>
+                </ul>                
+              </li>
+              <li>
+                <a href="javascript:void(0);" class="hover:text-blue1 transition-all">Forefront</a>
+                <ul>
+                  <li>
+                    <a href="" class="hover:text-blue1 transition-all py-2 lg:py-1 flex">Legal Insights</a>
+                  </li>
+                  <li>
+                    <a href="" class="hover:text-blue1 transition-all py-2 lg:py-1 flex">Events</a>
+                  </li>
+                  <li>
+                    <a href="" class="hover:text-blue1 transition-all py-2 lg:py-1 flex">Firm News</a>
+                  </li>
+                  <li>
+                    <a href="" class="hover:text-blue1 transition-all py-2 lg:py-1 flex">Frequently Asked Questions</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="javascript:void(0);" class="hover:text-blue1 transition-all">About Us</a>
+                <ul>
+                  <li>
+                    <a href="" class="hover:text-blue1 transition-all py-2 lg:py-1 flex">Why Us</a>
+                  </li>
+                  <li>
+                    <a href="" class="hover:text-blue1 transition-all py-2 lg:py-1 flex">The Team</a>
+                  </li>
+                  <li>
+                    <a href="" class="hover:text-blue1 transition-all py-2 lg:py-1 flex">Testimonials</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="" class="hover:text-blue1 transition-all">Contact</a>
+              </li>
+            </ul>
+            <div class="flex lg:hidden items-center langweb ">
+              <img class="w-auto" src="images/icon/icon_web.svg" alt="">
+              <select name="" id="" class="text-white font-lucida ml-2 bg-transparent langweb__select w-[50px]">
+                <option value="" class="text-blue1">EN</option>
+                <option value="" class="text-blue1">TV</option>
+              </select>
+            </div>
+          </div>
+        </div>
+            
+        </div>
+      </div>
+      
+
+    <!-- hero -->
+    <div class="h-auto lg:h-[720px] mt-[100px] container overflow-hidden rounded-b-[0] lg:rounded-b-[50px] px-5 lg:px-0">
+        <div class="lg:grid grid-cols-1 lg:grid-cols-2 h-full relative">
+            <div class="relative h-[350px] sm:h-[650px] lg:h-[720px] w-full container overflow-hidden rounded-b-[20px] lg:rounded-b-[0]">      
+              <img class="object-cover object-top	h-full w-full" src="images/stephencc3.png" alt="">
+            </div>
+            <div class="lg:bg-blue1 text-blue1 lg:text-white flex justify-center lg:justify-start text-center lg:text-left  items-center lg:items-end lg:pl-32 lg:pb-20 mt-5 lg:mt-0">
+               <div>
+                    <h1 class="text-3xl lg:text-[56px] leading-[34px] lg:leading-[50px] font-light font-proxima-lt">Stephen Le</h1>
+                    <h3 class="font-lucida text-base lg:text-lg font-bold mb-3">Managing Partner</h3>
+                    <div class="text-base mb-6">
+                        <p>hoangchuong.le@letranlaw.com</p>
+                        <p>+84 937070997</p>
+                   </div>
+                   <div class="flex justify-center lg:justify-start mt-5">
+                     <a class="button-blue1-np lg:button-white1-np px-10 py-2 flex-1 lg:flex-none-auto" href="http://.pdf" target="_blank" rel="noopener noreferrer">
+                          Download CV
+                      </a>
+                   </div>
+               </div>
+            </div>
+        </div> 
+    </div>
+
+    <!-- main content  -->
+   <div class="container px-5 xl:px-14 pt-12 xl:pt-20">
+
+        <!-- section -->
+        <div class="mb-14 lg:mb-32 lg:px-40">
+            <div class="mb-16 ">     
+                <div class="mb-10">
+                    <ul id="tabs-nav" class="flex justify-between text-gray1 flex-col lg:flex-row text-center gap-5">
+                        <li class="active">
+                             <a href="#content1" class="font-lucida font-bold uppercase ">Overview</a>
+                        </li>
+                        <li>
+                             <a href="#content2" class="font-lucida font-bold uppercase">PRACTICE AREAS</a>
+                        </li>
+                        <li>
+                             <a href="#content3" class="font-lucida font-bold uppercase">EXPERIENCES</a>
+                        </li>
+                        <li>
+                             <a href="#content4" class="font-lucida font-bold uppercase">QUALIFICATIONS</a>
+                        </li>
+                   </ul>
+                </div>
+                <div id="tabs-content">
+                  <div id="content1" class="article tab-content">
+                      <p>
+                        Overview Stephen is the senior trial lawyer and founder of Le & Tran and its “Family Lawyers” branch. With years of extensive experience, Stephen has impressive litigation, arbitration, and criminal defense background and a wealth of knowledge and a deep understanding of how Vietnam’s legal system, courts, and authorities operate. He has pursued the philosophy of “Fighting for Justice” for his entire illustrious career.
+                      </p>
+                      <p>
+                          In 2017, Stephen was the Winner of the prestigious Disputes Star of the Year awarded by AsiaLaw Profiles in Hong Kong. He has followed up this achievement by receiving numerous additional accolades, including being endorsed as a preeminent trial lawyer of Vietnam by over 50 global corporations. He has been highly ranked in Chambers Asia Pacific, Legal500, Benchmark Litigation, and AsiaLaw Profiles for consecutive years. Large multinational enterprises such as Petronas (Malaysia) endorsed Stephen as a top-ranked lawyer in Vietnam.
+                      </p>
+                  </div>      
+                  <div id="content2" class="article tab-content">
+                      <p>
+                        PRACTICE Stephen is the senior trial lawyer and founder of Le & Tran and its “Family Lawyers” branch. With years of extensive experience, Stephen has impressive litigation, arbitration, and criminal defense background and a wealth of knowledge and a deep understanding of how Vietnam’s legal system, courts, and authorities operate. He has pursued the philosophy of “Fighting for Justice” for his entire illustrious career.
+                      </p>
+                      <p>
+                          In 2017, Stephen was the Winner of the prestigious Disputes Star of the Year awarded by AsiaLaw Profiles in Hong Kong. He has followed up this achievement by receiving numerous additional accolades, including being endorsed as a preeminent trial lawyer of Vietnam by over 50 global corporations. He has been highly ranked in Chambers Asia Pacific, Legal500, Benchmark Litigation, and AsiaLaw Profiles for consecutive years. Large multinational enterprises such as Petronas (Malaysia) endorsed Stephen as a top-ranked lawyer in Vietnam.
+                      </p>
+                  </div>      
+                  <div id="content3" class="article tab-content">
+                      <p>
+                        EXPERIENCES Stephen is the senior trial lawyer and founder of Le & Tran and its “Family Lawyers” branch. With years of extensive experience, Stephen has impressive litigation, arbitration, and criminal defense background and a wealth of knowledge and a deep understanding of how Vietnam’s legal system, courts, and authorities operate. He has pursued the philosophy of “Fighting for Justice” for his entire illustrious career.
+                      </p>
+                      <p>
+                          In 2017, Stephen was the Winner of the prestigious Disputes Star of the Year awarded by AsiaLaw Profiles in Hong Kong. He has followed up this achievement by receiving numerous additional accolades, including being endorsed as a preeminent trial lawyer of Vietnam by over 50 global corporations. He has been highly ranked in Chambers Asia Pacific, Legal500, Benchmark Litigation, and AsiaLaw Profiles for consecutive years. Large multinational enterprises such as Petronas (Malaysia) endorsed Stephen as a top-ranked lawyer in Vietnam.
+                      </p>
+                  </div>      
+                  <div id="content4" class="article tab-content">
+                      <p>
+                        QUALIFICATIONS Stephen is the senior trial lawyer and founder of Le & Tran and its “Family Lawyers” branch. With years of extensive experience, Stephen has impressive litigation, arbitration, and criminal defense background and a wealth of knowledge and a deep understanding of how Vietnam’s legal system, courts, and authorities operate. He has pursued the philosophy of “Fighting for Justice” for his entire illustrious career.
+                      </p>
+                      <p>
+                          In 2017, Stephen was the Winner of the prestigious Disputes Star of the Year awarded by AsiaLaw Profiles in Hong Kong. He has followed up this achievement by receiving numerous additional accolades, including being endorsed as a preeminent trial lawyer of Vietnam by over 50 global corporations. He has been highly ranked in Chambers Asia Pacific, Legal500, Benchmark Litigation, and AsiaLaw Profiles for consecutive years. Large multinational enterprises such as Petronas (Malaysia) endorsed Stephen as a top-ranked lawyer in Vietnam.
+                      </p>
+                  </div>      
+
+                </div>
+            </div>
+          </div>
+          
+          <div class="mb-14 lg:mb-24">            
+            <div class="flex justify-between items-end mb-5 lg:mb-10">
+                <div>
+                    <h5 class="heading1">Related People</h5>
+                </div>
+                <div class="slider-arrow flex gap-x-3 lg:hidden"></div>
+            </div>
+    
+            <div class="slider imgFull grid grid-cols-1 sm:grid-cols-3">
+              <a href="">
+                <div class="relative team">
+                  <img class="w-full" src="images/stephencc3.png" alt="">
+                  <div class="absolute bottom-0 right-0 p-3 lg:p-5 w-full text-white text-right">
+                    <p class="text-lg lg:text-2xl font-lucida font-normal -mb-[5px] lg:mb-0">Stephen Le</p>
+                   <small class="text-sm lg:text-base">Managing Partner</small>
+                  </div>
+                </div>
+               </a>
+                <a href="">
+                  <div class="relative team">
+                    <img class="w-full" src="images/katecc-1.png" alt="">
+                    <div class="absolute bottom-0 right-0 p-3 lg:p-5 w-full text-white text-right">
+                      <p class="text-lg lg:text-2xl font-lucida font-normal -mb-[5px] lg:mb-0">Katherine Tran</p>
+                     <small class="text-sm lg:text-base">Partner</small>
+                    </div>
+                  </div>
+                </a>
+               <a href="">
+                <div class="relative team">
+                  <img class="w-full" src="images/hannahfl2.png" alt="">
+                  <div class="absolute bottom-0 right-0 p-3 lg:p-5 w-full text-white text-right">
+                    <p class="text-lg lg:text-2xl font-lucida font-normal -mb-[5px] lg:mb-0">Hannah Huynh</p>
+                   <small class="text-sm lg:text-base">Senior Associate</small>
+                  </div>
+                </div>
+               </a>
+            </div>
+        </div>
+       
+   </div>
+
+    <!-- footer -->   
+    <div class="container px-5 xl:px-14 pb-12 lg:pb-20">
+      <div class="border-t border-blue1 pt-10 lg:pt-16 ">
+          <div class="flex lg:grid lg:grid-cols-2 flex-col-reverse">
+            <div class="flex flex-col justify-between">             
+              <div class="lg:mb-10">
+                <div class="mb-3">
+                  <img src="images/icon/logo_footer.png" alt="">
+                </div>
+                <div class="mb-3">
+                  <h5 class="text-sm font-bold uppercase font-lucida ">
+                    HEAD OFFICE
+                  </h5>
+                  <p class="text-sm leading-4	">
+                    Le & Tran Building, Area 284, No.9, Nguyen Trong Tuyen Street,<br>
+                    Ward 10, Phu Nhuan District, Ho Chi Minh City
+                  </p>
+                </div>
+                <div class="mb-3">
+                  <h5 class="text-sm font-bold uppercase font-lucida ">
+                    CITY CENTER BRANCH
+                  </h5>
+                  <p class="text-sm leading-4	">
+                    Unit 615-4, Level 6, Me Linh Point Tower 2 Ngo Duc Ke, District 1,<br>
+                    Ho Chi Minh City
+                  </p>
+                </div>
+              </div>
+              <div>
+                <div class="mb-3">
+                  <p class="text-sm leading-4	">
+                    letran@familylawyers.vn
+                    <br>
+                    (+84 28) 36 22 77 30
+                  </p>
+                </div>
+                <div class="mb-3">
+                  <p class="text-[10px] lg:text-sm leading-4">
+                    © 2022 © Family Lawyers. All rights reserved
+                    <br>
+                    Disclaimer | Privacy Policy
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="relative flex flex-col justify-between flex-col-reverse lg:flex-col mb-10 lg:mb-0">
+              <div class="flex sm:grid grid-cols-3 justify-between pr-4 lg:pr-0">
+                <div>
+                  <h5 class="font-lucida text-base lg:text-lg font-bold mb-3">About Us</h5>
+                  <ul class="flex flex-col gap-y-2 lg:gap-y-4">
+                    <li>
+                      <a href="#" class="text-sm">Why Us</a>
+                    </li>
+                    <li>
+                      <a href="#" class="text-sm">The Team</a>
+                    </li>
+                    <li>
+                      <a href="#" class="text-sm">Testimonials</a>
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <h5 class="font-lucida text-base lg:text-lg font-bold mb-3">News</h5>
+                  <ul class="flex flex-col gap-y-2 lg:gap-y-4">
+                    <li>
+                      <a href="#" class="text-sm">Legal Insights</a>
+                    </li>
+                    <li>
+                      <a href="#" class="text-sm">Events</a>
+                    </li>
+                    <li>
+                      <a href="#" class="text-sm">Podcasts</a>
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <h5 class="font-lucida text-base lg:text-lg font-bold mb-3">Others</h5>
+                  <ul class="flex flex-col gap-y-2 lg:gap-y-4">
+                    <li>
+                      <a href="#" class="text-sm">Practices</a>
+                    </li>
+                    <li>
+                      <a href="#" class="text-sm">FAQs</a>
+                    </li>
+                    <li>
+                      <a href="#" class="text-sm">Contact</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="mb-10 lg:mb-0">
+                <h5 class="font-lucida text-base lg:text-lg font-bold mb-3">Stay connected through our other channels</h5>
+                <div class="flex sm:grid grid-cols-3 justify-between gap-x-10 sm:gap-x-0 items-center pr-4 lg:pr-0">
+                  <a href="http://" target="_blank" rel="noopener noreferrer">
+                    <img class="w-[130px]" src="images/icon/footer-logo1.png" alt="">
+                  </a>
+                  <a href="http://" target="_blank" rel="noopener noreferrer">
+                    <img class="w-[130px]" src="images/icon/footer-logo2.png" alt="">
+                  </a>
+                  <a href="http://" target="_blank" rel="noopener noreferrer">
+                    <img  class="w-[45px]" src="images/icon/footer-logo3.png" alt="">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>  
+        </div>
+    </div>
+
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

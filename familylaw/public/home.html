@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- css -->
+    <link rel="stylesheet" href="css/tailwind.css" />
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/slick-theme.css" />
+    <title>Family Law</title>
+  </head>
+  <body>
+
+  <!-- header -->
+  <div class="header w-full fixed left-0 top-0 px-5 pt-10 lg:p-5 z-[999] transition-all">
+    <div class="container lg:px-16 flex flex-col h-full lg:justify-between">
+      <div class="flex justify-between items-start lg:items-center">
+        <div>
+          <a href="index.html">
+            <img class="w-[76px] sm:w-[105px] logo" src="images/icon/logo_white.png" alt="">
+          </a>
+        </div>
+        <div class="flex items-center">
+          <div class="hidden lg:flex items-center mr-16 langweb ">
+            <img class="w-auto" src="images/icon/icon_web.svg" alt="">
+            <!-- <span class="text-white font-lucida ml-2">EN</span> -->
+            <select name="" id="" class="text-white font-lucida ml-2 bg-transparent langweb__select w-[50px]">
+              <option value="" class="text-blue1">EN</option>
+              <option value="" class="text-blue1">TV</option>
+            </select>
+          </div>
+          <div>
+            <div class="menuOpen -mr-3 pt-0 px-3 lg:p-3 cursor-pointer justify-center">
+              <img class="w-[31px] lg:w-auto" src="images/icon/icon_menu.svg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="menu h-full fixed left-0 top-0 w-full z-[999]" style="display:none;">
+    <div class="header w-full left-0 top-0 px-5 pt-10 lg:p-5 z-[999] transition-all">
+      <div class="container lg:px-16 flex flex-col h-full lg:justify-between">
+        <div class="flex justify-between items-start lg:items-center">
+          <div>
+            <a href="index.html">
+              <img class="w-[76px] sm:w-[105px] logo" src="images/icon/logo_white.png" alt="">
+            </a>
+          </div>
+          <div class="flex items-center">
+            <div class="hidden lg:flex items-center mr-16 langweb ">
+              <img class="w-auto" src="images/icon/icon_web.svg" alt="">
+              <select name="" id="" class="text-blue1 font-lucida ml-2 bg-transparent langweb__select w-[50px]">
+                <option value="" class="text-blue1">EN</option>
+                <option value="" class="text-blue1">TV</option>
+              </select>
+            </div>
+            <div>
+              <div class="menuClose -mr-3 pt-0 px-3 lg:p-3 cursor-pointer">
+                <img class="w-[31px] lg:w-auto" src="images/icon/icon_menu_close.svg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mt-10 overflow-y-scroll lg:overflow-y-hidden pr-3 pb-10">
+          <ul class="menuInner mb-10 text-3xl lg:text-6xl font-lucida text-gray1 flex flex-col gap-y-5 relative lg:w-[50%]">
+            <li>
+              <a href="" class="hover:text-blue1 transition-all">Homepage</a>
+            </li>
+            <li>
+              <a href="javascript:void(0);" class="hover:text-blue1 transition-all">Practices</a>
+              <ul>
+                <li>
+                  <a href="" class="hover:text-blue1 transition-all py-2 lg:py-1 flex">Marriage Registration</a>
+                </li>
+                <li>
+                  <a href="" class="hover:text-blue1 transition-all py-2 lg:py-1 flex">Prenuptial Agreement</a>
+                </li>
+                <li>
+                  <a href="" class="hover:text-blue1 transition-all py-2 lg:py-1 flex">Wills And Estates</a>
+                </li>
+                <li>
+                  <a href="" class="hover:text-blue1 transition-all py-2 lg:py-1 flex">Birth Certificate</a>
+                </li>
+                <li>
+                  <a href="" class="hover:text-blue1 transition-all py-2 lg:py-1 flex">Divorce And Assets Division</a>
+                </li>
+                <li>
+                  <a href="" class="hover:text-blue1 transition-all py-2 lg:py-1 flex">Children’s Matters</a>
+                </li>
+                <li>
+                  <a href="" class="hover:text-blue1 transition-all py-2 lg:py-1 flex">Representation At Family And Matrimonial Court</a>
+                </li>
+                <li>
+                  <a href="" class="hover:text-blue1 transition-all py-2 lg:py-1 flex">Vietnam Immigration</a>
+                </li>
+              </ul>                
+            </li>
+            <li>
+              <a href="javascript:void(0);" class="hover:text-blue1 transition-all">Forefront</a>
+              <ul>
+                <li>
+                  <a href="home.html" class="hover:text-blue1 transition-all py-2 lg:py-1 flex">Legal Insights</a>
+                </li>
+                <li>
+                  <a href="home.html" class="hover:text-blue1 transition-all py-2 lg:py-1 flex">Events</a>
+                </li>
+                <li>
+                  <a href="home.html" class="hover:text-blue1 transition-all py-2 lg:py-1 flex">Firm News</a>
+                </li>
+                <li>
+                  <a href="home.html" class="hover:text-blue1 transition-all py-2 lg:py-1 flex">Frequently Asked Questions</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="javascript:void(0);" class="hover:text-blue1 transition-all">About Us</a>
+              <ul>
+                <li>
+                  <a href="" class="hover:text-blue1 transition-all py-2 lg:py-1 flex">Why Us</a>
+                </li>
+                <li>
+                  <a href="" class="hover:text-blue1 transition-all py-2 lg:py-1 flex">The Team</a>
+                </li>
+                <li>
+                  <a href="" class="hover:text-blue1 transition-all py-2 lg:py-1 flex">Testimonials</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="" class="hover:text-blue1 transition-all">Contact</a>
+            </li>
+          </ul>
+          <div class="flex lg:hidden items-center langweb ">
+            <img class="w-auto" src="images/icon/icon_web.svg" alt="">
+            <select name="" id="" class="text-white font-lucida ml-2 bg-transparent langweb__select w-[50px]">
+              <option value="" class="text-blue1">EN</option>
+              <option value="" class="text-blue1">TV</option>
+            </select>
+          </div>
+        </div>
+      </div>
+          
+      </div>
+    </div>
+
+
+
+    <!-- hero -->
+    <div class="w-full h-full">
+      <div class="h-full w-full overflow-hidden">      
+        <img class="object-cover h-full w-full" src="images/hero_1.jpg" alt="">
+      </div>
+      <div class="container relative">
+        <div class="text-white absolute pb-10 lg:pb-5 xl:pb-10  bottom-0 left-0 right-0 text-center flex justify-center items-center flex-col px-5">
+          <h5 class="text-base lg:text-lg font-lucida uppercase lg:tracking-widest font-semibold">Family Lawyers</h5>
+          <h1 class="text-3xl lg:text-[56px] leading-[34px] lg:leading-[50px] font-light font-proxima-lt lg:w-[60%] px-5">Your Trusted </br>Family Law Attorneys</h1>
+          <div class="flex items-center my-5 gap-x-5">
+            <img class="w-[68px] lg:w-[93px]" src="images/rank-a.png" alt="">
+            <img class="w-[68px] lg:w-[93px]" src="images/rank-b.png" alt="">
+          </div>
+          <a href="" class="button-white1-np px-12 lg:px-16 py-2">
+            About Us
+          </a>
+        </div>
+      </div>
+    </div>
+
+      <!-- main content  -->
+    <div class="container px-5 xl:px-14 pt-12 xl:pt-20">
+        <!-- section quote-->
+        <div class="mb-14 lg:mb-24">
+          <h2 class="font-lucida text-3xl lg:text-6xl text-blue1 tracking-[-0.05em] lg:leading-[62px]">Family law matters can be <span class="text-gray1"> complicated</span>, but it need not be difficult nor devastating. We provide <span class="text-gray1">constructive and pragmatic</span> family law advice
+            in a constructive way.</h2>
+
+          <div class="grid grid-cols-2 mt-20">
+            <div class="lg:col-start-2 col-span-2 lg:col-span-1 pl-24 lg:pl-0">
+              <h5 class="text-2xl font-bold mb-2">FAMILY LAYWERS</h5>
+              <div class="text-sm lg:text-xl">
+                  <p>Based in Ho Chi Minh City, Vietnam, we are a member of Le & Tran, premier boutique litigation firm, but focus only on the practice of family law. We pride ourselves to be a sole law firm in Vietnam that are exclusively equipped with specialized knowledge & experience in family law to bring a unique effective solution to clients.</p>
+              </div>
+              <div class="flex mt-5">
+                <a href="http://#" target="_blank" rel="noopener noreferrer" class="button-orange1 text-center w-full sm:w-auto">
+                  Get to know us
+                </a>
+              </div>
+            </div>  
+          </div>
+        </div>
+
+        <!-- section Practice Areas -->
+        <div class="mb-14 lg:mb-24">
+          <div class="rounded-xl px-5 py-8 lg:p-12 grid grid-cols-1 lg:grid-cols-2 bg-[#E8E8E8]" >
+            <div class="mb-8 lg:mb-5">
+              <h5 class="heading1">Practice Areas</h5>
+              <h4 class="heading2">Our Family Lawyers <br> specialize in many areas</h4>
+              <div class="hidden lg:flex my-5">
+                <a href="http://#" target="_blank" rel="noopener noreferrer" class="button-orange1">Learn More</a>
+              </div>
+            </div>
+            <div>
+              <ul class="grid grid-cols-2 gap-8 lg:gap-6">
+                <li class="text-base leading-[18px] lg:text-2xl">
+                  <a href="">Marriage Registration</a>
+                </li>
+                <li class="text-base leading-[18px] lg:text-2xl">
+                  <a href="">Divorce and  <br> Assets Division</a>
+                </li>
+                <li class="text-base leading-[18px] lg:text-2xl">
+                  <a href="">Prenuptial Agreement</a>
+                </li>
+                <li class="text-base leading-[18px] lg:text-2xl">
+                  <a href="">Children’s Matters</a>
+                </li>
+                <li class="text-base leading-[18px] lg:text-2xl">
+                  <a href="">Representation at Family and Matrimonial Court</a>
+                </li>
+                <li class="text-base leading-[18px] lg:text-2xl">
+                  <a href="">Vietnam Immigration</a>
+                </li>
+                <li class="text-base leading-[18px] lg:text-2xl">
+                  <a href="">Wills and Estates</a>
+                </li>
+                <li class="text-base leading-[18px] lg:text-2xl">
+                  <a href="">Birth Certificate</a>
+                </li>
+              </ul>
+            </div>
+            <div class="flex lg:hidden mt-8">
+              <a href="http://#" target="_blank" rel="noopener noreferrer" class="button-orange1 w-full text-center">Learn More</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- section Our Lawyers-->
+        <div class="mb-14 lg:mb-24">
+        
+            <div class="flex justify-between items-end mb-5 lg:mb-10">
+              <div>
+                <h5 class="heading1">Our Lawyers</h5>
+                <h4 class="heading2">We work out practical<br> solutions for you</h4>
+              </div>
+              <div class="hidden lg:flex">
+                <a href="http://#" target="_blank" rel="noopener noreferrer" class="button-orange1">Let’s meet the Team</a>
+              </div>
+              <div class="slider-arrow flex gap-x-3 lg:hidden"></div>
+            </div>
+            
+            <div class="slider imgFull grid grid-cols-1 lg:grid-cols-3">
+              <div class="relative">
+                <a href="staff-profile.html">
+                  <img class="w-full" src="images/profil1.jpg" alt="">
+                  <div class="absolute bottom-0 right-0 p-3 lg:p-5 w-full text-white text-right px-5 pr-6">
+                    <p class="text-lg lg:text-2xl font-lucida font-normal -mb-[5px] lg:mb-0">Stephen Le</p>
+                  <small class="text-sm lg:text-base">Managing Partner</small>
+                  </div>
+                </a>
+              </div>
+              <div class="relative">
+               <a href="staff-profile.html">
+                <img class="w-full" src="images/profile2.jpg" alt="">
+                <div class="absolute bottom-0 right-0 p-3 lg:p-5 w-full text-white text-right px-5 pr-6">
+                  <p class="text-lg lg:text-2xl font-lucida font-normal -mb-[5px] lg:mb-0">Katherine Tran</p>
+                 <small class="text-sm lg:text-base">Partner</small>
+                </div>
+               </a>
+              </div>
+              <div class="relative">
+                <a href="staff-profile.html">
+                  <img class="w-full" src="images/profile3.jpg" alt="">
+                  <div class="absolute bottom-0 right-0 p-3 lg:p-5 w-full text-white text-right px-5 pr-6">
+                    <p class="text-lg lg:text-2xl font-lucida font-normal -mb-[5px] lg:mb-0">Hannah Huynh</p>
+                  <small class="text-sm lg:text-base">Senior Associate</small>
+                  </div>
+                </a>
+              </div>
+            </div>
+           
+
+            <div class="lg:hidden flex my-5 justify-center">
+              <a href="http://#" target="_blank" rel="noopener noreferrer" class="button-orange1">Let’s meet the Team</a>
+            </div>
+          
+        </div>
+
+        <!-- section Q&A-->
+        <div class="mb-14 lg:mb-24">     
+          <div class="mb-10">
+            <h5 class="heading1">Q&A</h5>
+            <h4 class="heading2">The Common Questions</h4>
+          </div>
+          <div class="grid grid-cols-1 lg:grid-cols-2">
+            <div class="col-start-2 col-span-1">
+              <ul id="accordion">
+                <li class="w-full">
+                  <div class="flex justify-between items-start border-t border-blue1 py-4 cursor-pointer">
+                    <h5 class="text-xl lg:text-2xl pr-20 leading-6">How are our attorneys in family law different from others?</h5>
+                    <span class="flex-none-auto pr-5 lg:pr-0">
+                      <img class="w-auto rotate-180" src="images/icon/icon_arrow_bottom.svg" alt="">
+                    </span>
+                  </div>
+                  <div class="pb-12 pr-10 accordionInner">
+                    <p class=" text-orange1 text-base lg:text-xl leading-[18px] ">Our Vietnam family lawyers are trained and led by Stephen Le, the litigation star of Vietnam, who has much litigation experience at court and dispute resolution. His practical insights and sophisticated creativeness are the key to un-clock all critical family matters and issues that the clients want.</p>
+                  </div>
+                </li>
+                <li class="w-full">
+                  <div class="flex justify-between items-start border-t border-blue1 py-4 cursor-pointer">
+                    <h5 class="text-xl lg:text-2xl pr-20 leading-6">What is our legal method in providing services to clients?</h5>
+                    <span class="flex-none-auto pr-5 lg:pr-0">
+                      <img class="w-auto" src="images/icon/icon_arrow_bottom.svg" alt="">
+                    </span>
+                  </div>
+                  <div class="pb-12 pr-10 accordionInner hidden">
+                    <p class="  text-orange1 text-base lg:text-xl leading-[18px] ">Our Vietnam family lawyers are trained and led by Stephen Le, the litigation star of Vietnam, who has much litigation experience at court and dispute resolution. His practical insights and sophisticated creativeness are the key to un-clock all critical family matters and issues that the clients want.</p>
+                  </div>
+                </li>
+                <li class="w-full">
+                  <div class="flex justify-between items-start border-t border-blue1 py-4 cursor-pointer">
+                    <h5 class="text-xl lg:text-2xl pr-20 leading-6">Why are we the best family lawyers?</h5>
+                    <span class="flex-none-auto pr-5 lg:pr-0">
+                      <img class="w-auto" src="images/icon/icon_arrow_bottom.svg" alt="">
+                    </span>
+                  </div>
+                  <div class="pb-12 pr-10 accordionInner hidden">
+                    <p class="  text-orange1 text-base lg:text-xl leading-[18px] ">Our Vietnam family lawyers are trained and led by Stephen Le, the litigation star of Vietnam, who has much litigation experience at court and dispute resolution. His practical insights and sophisticated creativeness are the key to un-clock all critical family matters and issues that the clients want.</p>
+                  </div>
+                </li>
+                <li class="w-full">
+                  <div class="flex justify-between items-start border-t border-blue1 py-4 cursor-pointer">
+                    <h5 class="text-xl lg:text-2xl pr-20 leading-6">What can we deliver?</h5>
+                    <span class="flex-none-auto pr-5 lg:pr-0">
+                      <img class="w-auto" src="images/icon/icon_arrow_bottom.svg" alt="">
+                    </span>
+                  </div>
+                  <div class="pb-12 pr-10 accordionInner hidden">
+                    <p class="  text-orange1 text-base lg:text-xl leading-[18px] ">Our Vietnam family lawyers are trained and led by Stephen Le, the litigation star of Vietnam, who has much litigation experience at court and dispute resolution. His practical insights and sophisticated creativeness are the key to un-clock all critical family matters and issues that the clients want.</p>
+                  </div>
+                </li>
+                <li class="w-full">
+                  <div class="flex justify-between items-start border-t border-blue1 py-4 cursor-pointer">
+                    <h5 class="text-xl lg:text-2xl pr-20 leading-6">Who do we want to work with?</h5>
+                    <span class="flex-none-auto pr-5 lg:pr-0">
+                      <img class="w-auto" src="images/icon/icon_arrow_bottom.svg" alt="">
+                    </span>
+                  </div>
+                  <div class="pb-12 pr-10 accordionInner hidden">
+                    <p class="  text-orange1 text-base lg:text-xl leading-[18px] ">Our Vietnam family lawyers are trained and led by Stephen Le, the litigation star of Vietnam, who has much litigation experience at court and dispute resolution. His practical insights and sophisticated creativeness are the key to un-clock all critical family matters and issues that the clients want.</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>        
+        </div>
+        
+        <!-- section Practical-->
+        <div class="mb-14 lg:mb-24">               
+            <div class="flex flex-col lg:flex-row justify-between items-end mb-5 lg:mb-10 relative">
+              <div class="w-full">
+                  <h5 class="heading1">Practical <br class="block lg:hidden"> Experience & <br class="hidden lg:block"> Expert  <br class="block lg:hidden"> Legal  Knowledge</h5>
+                  <h4 class="heading2">Read our Latest <br class="lg:hidden"> Legal Articles</h4>
+              </div>              
+              <div class="slider2-arrow flex gap-x-3 absolute lg:relative right-0 bottom-0"></div>
+            </div>
+            <div class="slider2 grid grid-cols-1 lg:grid-cols-3 gap-6">
+              <div class="bg-gray2 rounded-xl overflow-hidden">
+                <a href="#" class="flex flex-col h-full">
+                  <div>
+                    <img class="w-full h-full object-cover" src="images/latest1.jpg" alt="">
+                  </div>
+                  <div class="p-3 flex flex-col h-full justify-between min-h-[100px]">
+                    <h5 class="text-black text-xl leading-6 line-clamp-2	">Division of common property of Husband and Wife during marriage</h5>
+                    <small class="text-orange1 align-bottom">20 September 2022</small>
+                  </div>
+                </a>
+              </div>
+              <div class="bg-gray2 rounded-xl overflow-hidden">
+                <a href="#" class="flex flex-col h-full">
+                  <div>
+                    <img class="w-full h-full object-cover" src="images/latest1.jpg" alt="">
+                  </div>
+                  <div class="p-3 flex flex-col h-full justify-between min-h-[100px]">
+                    <h5 class="text-black text-xl leading-6 line-clamp-2	">Division of common property of Husband and Wife during marriage</h5>
+                    <small class="text-orange1 align-bottom">20 September 2022</small>
+                  </div>
+                </a>
+              </div>
+              <div class="bg-gray2 rounded-xl overflow-hidden">
+                <a href="#" class="flex flex-col h-full">
+                  <div>
+                    <img class="w-full h-full object-cover" src="images/latest2.png" alt="">
+                  </div>
+                  <div class="p-3 flex flex-col h-full justify-between min-h-[100px]">
+                    <h5 class="text-black text-xl leading-6 line-clamp-2	">Registration of Birth for Children with Foreign Elements</h5>
+                    <small class="text-orange1 align-bottom">20 September 2022</small>
+                  </div>
+                </a>
+              </div>
+              <div class="bg-gray2 rounded-xl overflow-hidden">
+                <a href="#" class="flex flex-col h-full">
+                  <div>
+                    <img class="w-full h-full object-cover" src="images/latest3.jpg" alt="">
+                  </div>
+                  <div class="p-3 flex flex-col h-full justify-between min-h-[100px]">
+                    <h5 class="text-black text-xl leading-6 line-clamp-2	">When the Testament comes into force?</h5>
+                    <small class="text-orange1 align-bottom">20 September 2022</small>
+                  </div>
+                </a>
+              </div>
+            </div>        
+
+            <div class="my-8 flex justify-center">
+              <a href="http://#" target="_blank" rel="noopener noreferrer" class="button-orange1">See 50+ Legal Insights</a>
+            </div>
+        </div>
+
+        <!-- section You’ve Read -->
+        <div class="mb-14 lg:mb-24">                      
+            <div class="grid grid-cols-1 lg:grid-cols-2">
+              <div class="flex flex-col justify-between lg:pr-10">
+                <h5 class="mb-5 lg:mb-0 font-lucida text-3xl lg:text-6xl text-blue1 tracking-[-0.05em] lg:leading-[62px]">
+                  You’ve <span class="text-gray1">Read</span>, <br> 
+                  You’ve <span class="text-gray1">Looked</span>, <br>
+                  Now Listen.
+                </h5>              
+                <div>
+                  <p class="text-xl lg:text-2xl font-bold uppercase mb-2 tracking-wider">Yes, We Do Podcasts</p>
+                  <div class="hidden lg:flex justify-between gap-x-5 ">
+                    <a href="http://#" target="_blank" rel="noopener noreferrer" class="button-orange1-np py-3 text-sm xl:text-base flex-1	">Listen to all of our Podcasts</a>
+                    <a href="http://#" target="_blank" rel="noopener noreferrer" class="button-blue1-np py-3 text-sm xl:text-base flex-1	">Visit our Youtube Channel</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="relative cursor-pointer imgFull" >
+                <div class="yt-player-click">
+                  <img class="w-full" src="images/video_cover.jpg" alt="">
+                  <span class=" absolute left-0 right-0 top-0 bottom-0 w-[60px] h-[60px] lg:w-[100px] lg:h-[100px] m-auto">
+                    <img src="images/icon/icon_play.svg" alt="">
+                  </span>
+                </div>
+                
+                <div id="yt-player" class="hidden absolute left-0 right-0 top-0 bottom-0 h-full w-full z-50"></div>
+                
+              </div>
+
+              <div class="flex lg:hidden flex-col justify-between mt-5 gap-3 px-5">
+                <a href="http://#" target="_blank" rel="noopener noreferrer" class="button-blue1-np py-3 ">Visit our Youtube Channel</a>
+                <a href="http://#" target="_blank" rel="noopener noreferrer" class="button-orange1-np py-3 ">Listen to all of our Podcasts</a>
+              </div>
+
+            </div>  
+        </div>
+
+        <!-- section Newsletter-->
+        <div class="mb-14 lg:mb-24">      
+            <div class="">
+              <h5 class="heading1">LinkedIn Newsletter</h5>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 mb-5">
+              <div class="grid grid-cols-1 lg:grid-cols-2 gap-x-5 items-end my-10 sm:pr-6">
+                <div class="mb-5">
+                  <img class="w-full" src="images/coffeebreak.jpg" alt="">
+                </div>
+                <div>
+                  <p class="text-lg leading-6">You deserve a break. I hope that by sharing my thoughts on timely and timeless topics, we'll be able to connect in some way over your coffee break. And who knows? Maybe we’ll even get to meet for a proper chat one day.</p>
+                  <div class="flex mt-5 px-10 lg:px-0">
+                    <a href="http://#" target="_blank" rel="noopener noreferrer" class="button-orange1-np py-2 flex-1">
+                      Subscribe
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="imgFull">
+                <img class="w-full" src="images/newsletter1.jpg" alt="">
+              </div>
+            </div>      
+            
+            <div class="flex lg:grid grid-cols-1 lg:grid-cols-2 flex-col-reverse">
+              <div class="sm:pr-6">
+                <ul>
+                  <li class="w-full">
+                    <div class="flex justify-between items-start border-t border-blue1 py-4">
+                      <div>
+                        <a href="">
+                          <h5 class="text-2xl pr-5 sm:pr-20">Name Your Core Strengths.
+                            If You Can’t, You’re Distracted.</h5>
+                        </a>
+                          <small class="text-orange1">05 September 2022 | by Stephen Le</small>
+                      </div>
+                      <span class="flex-none-auto pr-5 lg:pr-0">
+                        <img class="w-auto -rotate-90" src="images/icon/icon_arrow_bottom.svg" alt="">
+                      </span>
+                    </div>
+                  </li>
+                  <li class="w-full">
+                    <div class="flex justify-between items-start border-t border-blue1 py-4">
+                      <div>
+                        <a href="">
+                          <h5 class="text-2xl pr-5 sm:pr-20">You’re born an Original, don’t die a copy</h5>
+                        </a>
+                          <small class="text-orange1">05 September 2022 | by Stephen Le</small>
+                      </div>
+                      <span class="flex-none-auto pr-5 lg:pr-0">
+                        <img class="w-auto -rotate-90" src="images/icon/icon_arrow_bottom.svg" alt="">
+                      </span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="mb-10 lg:mb-0">
+                <div class="pb-2 pt-4">
+                  <div>
+                    <a href="">
+                      <h5 class="text-2xl pr-5 sm:pr-20">Name Your Core Strengths.
+                        If You Can’t, You’re Distracted.</h5>
+                    </a>
+                      <small class="text-orange1">05 September 2022 | by Stephen Le</small>
+                  </div>
+                </div>
+                <div class="pb-4">
+                  <p class="opacity-70 text-sm lg:text-xl">We’ve all seen it happen, haven’t we? A sudden role change..a move to a newly created role to look after “special projects”. A role with little opportunities...</p>
+                </div>
+                <div class="flex justify-end px-10 lg:px-0">
+                  <a href="http://#" target="_blank" rel="noopener noreferrer" class="button-orange1-np py-2 flex-1 lg:flex-none px-10">
+                    Read more
+                  </a>
+                </div>
+              </div>
+            </div> 
+
+        </div>
+
+        <!-- section -->
+        <div class="mb-14 lg:mb-24">                      
+          <div class="flex lg:grid grid-cols-2 flex-col-reverse">
+            <div class="lg:pr-10">
+              <div class="hidden lg:flex justify-between items-end mb-10">
+                <div>
+                  <h5 class="heading1">How can we help?</h5>
+                  <h4 class="heading2">Tell us about your enquiry</h4>
+                </div>
+              </div>                 
+              <div class="mb-10">
+                <h5 class="text-lg font-bold uppercase font-lucida">GIVE US A CALL</h5>
+                <p class="text-base lg:text-xl">(+84 28) 36 22 77 30</p>
+              </div>
+              <div>
+                <h5 class="text-lg font-bold uppercase font-lucida">OR MEET US DIRECTLY AT</h5>
+                <p class="text-base lg:text-xl leading-[18px] lg:leading-6">
+                  HEAD OFFICE:<br>
+                  Le & Tran Building, Area 284, No.9, Nguyen Trong Tuyen <br>
+                  Street, Ward 10, Phu Nhuan District, Ho Chi Minh City
+                  <br><br>
+                  CITY CENTER BRANCH:<br>
+                  Unit 615-4, Level 6, Me Linh Point Tower 2<br>
+                  Ngo Duc Ke, District 1, Ho Chi Minh City
+                </p>
+              </div>
+            </div>
+
+            <div class="mb-5 lg:mb-0">
+              <div class="flex lg:hidden justify-between items-end mb-5">
+                <div>
+                  <h5 class="heading1">How can we help?</h5>
+                  <h4 class="heading2">Tell us about your enquiry</h4>
+                </div>
+              </div>    
+              <div class="relative lg:w-full h-[380px] lg:h-full iframeFull imgFull">                
+                <!-- <img class="w-full" src="images/foto_help.jpg" alt=""> -->
+                <!-- <iframe data-tf-disable-auto-focus width="100%" height="100%" src="https://ragil3.typeform.com/to/SWa3cjNb" ></iframe> -->
+                <div class="typeform-formembed">
+                  <div class="typeform-widget" data-url="https://aycmedia.typeform.com/to/ik0vNR" data-hide-headers=true data-hide-footer=true data-tf-disable-auto-focus="true"> </div>                  
+                </div>
+                <script>
+                  (
+                    function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) }
+                              
+                  })()
+                </script>
+              </div>
+            </div>
+          </div>  
+        </div>
+
+
+    </div>
+
+    <!-- footer -->   
+    <div class="container px-5 xl:px-14 pb-12 lg:pb-20">
+      <div class="border-t border-blue1 pt-10 lg:pt-16 ">
+          <div class="flex lg:grid lg:grid-cols-2 flex-col-reverse">
+            <div class="flex flex-col justify-between lg:pr-10">             
+              <div class="lg:mb-10">
+                <div class="mb-3">
+                  <img src="images/icon/logo_footer.png" alt="">
+                </div>
+                <div class="mb-3">
+                  <h5 class="text-sm font-bold uppercase font-lucida ">
+                    HEAD OFFICE
+                  </h5>
+                  <p class="text-sm leading-4	">
+                    Le & Tran Building, Area 284, No.9, Nguyen Trong Tuyen Street,<br>
+                    Ward 10, Phu Nhuan District, Ho Chi Minh City
+                  </p>
+                </div>
+                <div class="mb-3">
+                  <h5 class="text-sm font-bold uppercase font-lucida ">
+                    CITY CENTER BRANCH
+                  </h5>
+                  <p class="text-sm leading-4	">
+                    Unit 615-4, Level 6, Me Linh Point Tower 2 Ngo Duc Ke, District 1,<br>
+                    Ho Chi Minh City
+                  </p>
+                </div>
+              </div>
+              <div>
+                <div class="mb-3">
+                  <p class="text-sm leading-4	">
+                    letran@familylawyers.vn
+                    <br>
+                    (+84 28) 36 22 77 30
+                  </p>
+                </div>
+                <div class="mb-3">
+                  <p class="text-[10px] lg:text-sm leading-4">
+                    © 2022 © Family Lawyers. All rights reserved
+                    <br>
+                    Disclaimer | Privacy Policy
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="relative flex flex-col justify-between flex-col-reverse lg:flex-col mb-10 lg:mb-0">
+              <div class="flex sm:grid grid-cols-3 justify-between pr-4 lg:pr-0">
+                <div>
+                  <h5 class="font-lucida text-base lg:text-lg font-bold mb-3">About Us</h5>
+                  <ul class="flex flex-col gap-y-2 lg:gap-y-4">
+                    <li>
+                      <a href="#" class="text-sm">Why Us</a>
+                    </li>
+                    <li>
+                      <a href="#" class="text-sm">The Team</a>
+                    </li>
+                    <li>
+                      <a href="#" class="text-sm">Testimonials</a>
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <h5 class="font-lucida text-base lg:text-lg font-bold mb-3">News</h5>
+                  <ul class="flex flex-col gap-y-2 lg:gap-y-4">
+                    <li>
+                      <a href="#" class="text-sm">Legal Insights</a>
+                    </li>
+                    <li>
+                      <a href="#" class="text-sm">Events</a>
+                    </li>
+                    <li>
+                      <a href="#" class="text-sm">Podcasts</a>
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <h5 class="font-lucida text-base lg:text-lg font-bold mb-3">Others</h5>
+                  <ul class="flex flex-col gap-y-2 lg:gap-y-4">
+                    <li>
+                      <a href="#" class="text-sm">Practices</a>
+                    </li>
+                    <li>
+                      <a href="#" class="text-sm">FAQs</a>
+                    </li>
+                    <li>
+                      <a href="#" class="text-sm">Contact</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="mb-10 lg:mb-0">
+                <h5 class="font-lucida text-base lg:text-lg font-bold mb-3">Stay connected through our other channels</h5>
+                <div class="flex sm:grid grid-cols-3 justify-between gap-x-10 sm:gap-x-0 items-center pr-4 lg:pr-0">
+                  <a href="http://" target="_blank" rel="noopener noreferrer">
+                    <img class="w-[130px]" src="images/icon/footer-logo1.png" alt="">
+                  </a>
+                  <a href="http://" target="_blank" rel="noopener noreferrer">
+                    <img class="w-[130px]" src="images/icon/footer-logo2.png" alt="">
+                  </a>
+                  <a href="http://" target="_blank" rel="noopener noreferrer">
+                    <img  class="w-[45px]" src="images/icon/footer-logo3.png" alt="">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>  
+        </div>
+    </div>
+
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
