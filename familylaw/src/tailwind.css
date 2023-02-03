@@ -1,3 +1,412 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: 'Lucida Grande';
+    src: url('../fonts/LucidaGrande-Bold.woff2') format('woff2'),
+        url('../fonts/LucidaGrande-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lucida Grande';
+    src: url('../fonts/LucidaGrande.woff2') format('woff2'),
+        url('../fonts/LucidaGrande.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Proxima Nova Rg';
+    src: url('../fonts/ProximaNova-Regular.woff2') format('woff2'),
+        url('../fonts/ProximaNova-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+@font-face {
+    font-family: 'Proxima Nova Lt';
+    src: url('../fonts/ProximaNova-Light.woff2') format('woff2'),
+        url('../fonts/ProximaNova-Light.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Proxima Nova Rg';
+    src: url('../fonts/ProximaNova-Bold.woff2') format('woff2'),
+        url('../fonts/ProximaNova-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Proxima Nova Rg';
+    src: url('../fonts/ProximaNova-RegularIt.woff2') format('woff2'),
+        url('../fonts/ProximaNova-RegularIt.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+
+
+
+@layer components {
+    
+    *, :after, :before {
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    html {
+        @apply text-blue1;
+        @apply font-normal; 
+        @apply h-full;
+    }
+
+    body{
+        @apply h-full overflow-x-hidden;
+    }
+
+
+    input:focus::-webkit-input-placeholder,
+    input:focus:-moz-placeholder,
+    input:focus::-moz-placeholder,
+    input:focus:-ms-input-placeholder {
+    color: transparent;
+    }
+    input:focus,
+    textarea:focus,
+    select:focus {
+    outline: none;
+    }
+    input[type="button"],
+    input[type="checkbox"],
+    input[type="radio"],
+    input[type="reset"],
+    input[type="submit"],
+    label,
+    select {
+    cursor: pointer;
+    }
+
+    select {
+        appearance: none;
+    }
+
+    input[type="search"] {
+    /* -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    -webkit-appearance: textfield; */
+    }
+
+    input[type="search"]::-webkit-search-cancel-button,
+    input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+    }
+
+    button,
+    input[type="button"],
+    input[type="checkbox"],
+    input[type="radio"],
+    input[type="reset"],
+    input[type="submit"],
+    label,
+    select {
+    cursor: pointer;
+    }
+
+    textarea {
+    overflow: auto;
+    vertical-align: top;
+    }
+
+    h1 {
+        font-size: 56px;
+        line-height: 50px;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 26px;
+      }
+      h3 {
+        font-size: 24px;
+        line-height: 26px;
+      }
+      h4 {
+        font-size: 20px;
+        line-height: 26px;
+      }
+      h5 {
+        font-size: 20px;
+        line-height: 26px;
+      }
+      h6 {
+        font-size: 18px;
+        line-height: 18px;
+      }
+
+      a{
+        @apply transition-all opacity-100;
+      }
+      
+      a:hover{
+        @apply opacity-80;
+      }
+
+    /* button */
+    .button-orange1{
+        @apply rounded-full border-[1.5px] border-orange1 text-orange1 px-10 py-2 font-lucida text-base;
+    }
+    .button-orange1-np{
+        @apply rounded-full border-[1.5px] border-orange1 text-orange1 font-lucida text-base text-center;
+    }
+    .button-blue1{
+        @apply rounded-full border-[1.5px] border-blue1 text-blue1 px-10 py-2 font-lucida text-base ;
+    }
+    .button-blue1-np{
+        @apply rounded-full border-[1.5px] border-blue1 text-blue1 font-lucida text-base text-center;
+    }
+    .button-white1-np{
+        @apply rounded-full border-[1.5px] border-white text-white font-lucida text-base text-center;
+    }
+    /* Heading */
+    .heading1{
+        @apply leading-[26px] lg:leading-[38px] font-bold font-lucida text-2xl lg:text-3xl;
+    }
+    .heading2{
+        @apply text-xl lg:text-4xl leading-6 lg:leading-9;
+    }
+
+    /* haeader overwrite */
+    .menushow{
+        @apply bg-white fixed left-0 top-0 w-full h-full  z-[9999];
+    }
+    .header__scroll{
+        @apply bg-white py-3 drop-shadow-md !important;
+    }
+    .header__scroll .flex.justify-between.items-start{
+        @apply items-center;
+    }
+
+
+    body > .container{
+        overflow-x: hidden;
+    }
+    /* form */
+    .container .search{
+        background-image: url('../images/icon/icon_search.svg');
+        background-position: left 15px center;
+        @apply bg-no-repeat;
+    }
+    .container .select{      
+        -webkit-appearance: none;
+        appearance: none;
+        background-image: url('../images/icon/icon_arrow_bottom_select.svg');
+        background-position: right 20px center;
+        @apply bg-no-repeat;
+        background-size: 11px;
+        
+    }
+
+    /* article */
+    .article{
+        @apply text-base lg:text-xl;
+        
+    }
+    .article > *{
+        @apply mb-5;
+    }
+    .article *{
+        word-break: break-word;
+    }
+    
+    .article h1,
+    .article h2,
+    .article h3,
+    .article h4,
+    .article h5,
+    .article h6{
+        @apply text-blue1 !important;
+    }
+
+    .article h1 *,
+    .article h2 *,
+    .article h3 *,
+    .article h4 *,
+    .article h5 *,
+    .article h6 *{
+        @apply text-blue1 !important;
+    }
+
+    .article h1 {
+        font-size: 56px;
+        line-height: 50px;
+      }
+    .article h2 {
+        font-size: 24px;
+        line-height: 26px;
+        font-weight: bold;
+      }
+    .article h3 {
+        font-size: 24px;
+        line-height: 26px;
+      }
+    .article h4 {
+        font-size: 20px;
+        line-height: 26px;
+        font-weight: bold;
+      }
+    .article h5 {
+        font-size: 20px;
+        line-height: 26px;
+      }
+    .article h6 {
+        font-size: 18px;
+        line-height: 18px;
+      }
+    .page-numbers.current{
+        @apply text-white rounded-full p-2 text-center bg-blue1 flex justify-center items-center;
+        height: 40px;
+        width: 40px;
+    }
+    
+    .article ul {
+        list-style-type: disc;
+        margin-left: 20px;
+        margin-bottom: 20px;
+        margin-top: 10px;
+      }
+    .article ol {
+        list-style-type: decimal;
+        margin-left: 20px;
+      }
+    .article  ul ul,
+    .article ol ul {
+        list-style-type: circle;
+        margin-left: 20px;
+      }
+      .article ol ol,
+      .article ul ol {
+        list-style-type: lower-latin;
+        margin-left: 20px;
+      }
+      .article ul li,
+      .article ol li{
+        margin-left: 10px;
+        padding-left: 10px;
+      }
+
+    /* .menu > ul li ul { 
+        opacity: 0;
+    }
+
+    .menu > ul li a:hover ~ ul { 
+        opacity: 1;
+    } */
+
+    .slick-prev,
+    .slick-next{
+        background-repeat: no-repeat !important;
+        height: 32px;
+        width: 32px;
+    }
+    .slick-prev{
+        background-image: url('../images/icon/icon_leftslider.svg') !important;
+    }
+    .slick-next {
+        background-image: url('../images/icon/icon_righslider.svg') !important;
+    }
+    .slider2 .slick-slide {
+        margin: 0 10px;
+    }
+    /* the parent */
+    .slider2 .slick-list {
+        margin: 0 -10px;
+    }
+
+    /* yt */
+    .yt-player > iframe{
+        @apply h-full !important;
+        @apply w-full !important;
+    }
+
+    /* tabbing */
+    
+    ul#tabs-nav {
+
+    }
+    ul#tabs-nav li {
+        @apply transition-all;
+    }
+    ul#tabs-nav li:hover,
+    ul#tabs-nav li.active {
+        @apply text-blue1;
+    }
+    #tabs-nav li a {
+        text-decoration: none;
+    }
+    .tab-content {
+
+    }
+
+    .iframeFull div{
+        height: 100%;
+    }
+    .iframeFull iframe{
+        height: 100%;
+    }
+
+    .imgFull{
+        @apply w-[112%] ml-[-20px] sm:w-auto sm:ml-0;
+    }
+
+    .menuInner:hover{
+        @apply w-full;
+    }
+    .menuInner ul{
+        transition: transform 0.6s cubic-bezier(0.5, 1, 0.89, 1);
+        z-index: 9999999;
+        @apply lg:duration-500 lg:transition-all relative lg:absolute text-base leading-[18px] lg:text-2xl lg:ml-[460px] lg:top-[200%] lg:opacity-0 lg:invisible font-proxima flex-col gap-y-2 lg:gap-y-1 mt-4 lg:mt-0 hidden lg:block;
+    }
+
+    .menuInner > li{
+        @apply lg:relative cursor-pointer;
+    }
+    .menuInner > li a{
+        @apply hover:text-blue1 transition-all ;
+    }
+    .menuInner ul.show{
+        @apply lg:visible lg:opacity-100 lg:top-0;
+    }
+
+
+    /* team */
+    .team{
+        background-image: url(../images/bg-card-team.jpg);
+        @apply overflow-hidden bg-no-repeat bg-cover h-[400px] sm:h-[300px] lg:h-[415px];
+    }
+
+    .teamdetail{
+        background-image: url(../images/bg-banner-team.jpg);
+        @apply bg-cover bg-no-repeat;
+    }
+
+
+    @media only screen and (max-width: 320px) {
+        .imgFull{
+            @apply w-[115%];
+        }
+      }
+}

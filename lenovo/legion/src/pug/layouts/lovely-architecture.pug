@@ -1,0 +1,28 @@
+//-------------------------------------------------------------------------------
+  @name: Lovely Architecture
+  -------------------------------------------------------------------------------//
+
+//lovely-architecture
+section.lovely-architecture#lovely-architecture
+  .lovely-architecture__inner
+    .container
+      =`\n`
+      //lovely-architecture-list
+      .lovely-architecture__list
+        each val, index in data.list
+          =`\n`
+          //lovely-architecture-item
+          .lovely-architecture__item(data-index=(index + 1))
+            h6.lovely-architecture__up-to !{val.label}
+            h4.lovely-architecture__ttl !{val.ttl}
+            p.lovely-architecture__desc !{val.desc}
+          =`\n`
+          ///.lovely-architecture-item
+      =`\n`
+      ///.lovely-architecture-list
+      =`\n`
+    .lovely-architecture__img
+      =`\n`
+      img.lovely-architecture__img__el(src="assets/images/dummy/"+data.img, alt=data.alt)/
+=`\n`
+///.lovely-architecture

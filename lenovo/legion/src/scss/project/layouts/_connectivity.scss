@@ -1,0 +1,399 @@
+/* ==========================================================================
+   Layout: Connectivity
+   ========================================================================== */
+
+.connectivity {
+  padding-top: 200px;
+  position: relative;
+  @include x-large {
+    padding-top: 120px;
+  }
+  @include large {
+    padding-top: 100px;
+  }
+  @include medium {
+    padding-top: 80px;
+  }
+  @include small {
+    padding-top: 56px;
+  }
+  &__ttl {
+    font-weight: fw(medium);
+    margin-bottom: 0;
+    letter-spacing: -3.75px;
+    @include fade-in;
+    @include x-large {
+      @include font-size(h3-b);
+      line-height: 1;
+    }
+    @include large {
+      @include font-size(h4);
+    }
+    @include medium {
+      @include font-size(h5);
+    }
+    @include small {
+      @include font-size(body);
+      letter-spacing: -2px;
+    }
+    span {
+      display: block;
+    }
+  }
+
+  &__sequences {
+    width: 1920px;
+    margin: 0 auto !important;
+    @include x-large {
+      width: 1440px;
+    }
+    @include large {
+      width: 992px;
+    }
+    @include medium {
+      width: 768px;
+    }
+    @include small {
+      width: 320px;
+    }
+  }
+  &__img {
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 20%;
+      background: rgb(0, 0, 0);
+      background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 1) 0%,
+        rgba(0, 0, 0, 0) 50%,
+        rgba(255, 255, 255, 0) 100%
+      );
+      z-index: zi(connectivity-img-after);
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 20%;
+      background: rgb(0, 0, 0);
+      background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(0, 0, 0, 0) 50%,
+        rgba(0, 0, 0, 1) 100%
+      );
+      z-index: zi(connectivity-img-after);
+    }
+  }
+  &__pin {
+    position: relative;
+    margin-top: 80px;
+    @include x-large {
+      margin-top: 64px;
+    }
+    @include large {
+      max-width: 992px;
+      margin-top: 56px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    @include medium {
+      max-width: 768px;
+      margin-top: 48px;
+    }
+    @include small {
+      margin-top: 40px;
+    }
+  }
+  &__svg {
+    top: 0;
+    left: 50%;
+    position: absolute;
+    z-index: zi(connectivity-svg);
+    width: 100%;
+    max-width: 1920px;
+    height: 620px;
+    transform: translateX(-50%);
+    @include x-large {
+      height: 464px;
+      max-width: 1440px;
+    }
+    @include large {
+      height: 320px;
+      max-width: 992px;
+    }
+    @include medium {
+      height: 248px;
+      max-width: 768px;
+    }
+    @include small {
+      height: 104px;
+      max-width: 320px;
+      transform: translateX(-113px);
+    }
+    > div {
+      position: absolute;
+      bottom: 0;
+    }
+    p {
+      opacity: 0;
+      transition: all 0.75s ease;
+      transition-delay: 0s;
+      white-space: nowrap;
+      margin-bottom: 0;
+      position: absolute;
+      text-align: center;
+      @include x-large {
+        @include font-size(small);
+      }
+      @include large {
+        @include font-size(small-b);
+      }
+      @include medium {
+        @include font-size(small-c);
+      }
+      @include small {
+        font-size: 0.9rem;
+        line-height: 1.2rem;
+      }
+      span {
+        display: block;
+      }
+    }
+    &__power-btn {
+      right: 562px;
+      @include x-large {
+        right: 420px;
+      }
+      @include large {
+        right: 290px;
+      }
+      @include medium {
+        right: 224px;
+      }
+      @include small {
+        right: 139px;
+      }
+      &.show {
+        p {
+          opacity: 1;
+          transition-delay: 0.75s;
+        }
+      }
+      p {
+        top: -64px;
+        left: 50%;
+        transform: translateX(-50%);
+        @include x-large {
+          top: -40px;
+        }
+        @include medium {
+          top: -32px;
+        }
+        @include small {
+          top: -20px;
+        }
+      }
+      svg {
+        @include x-large {
+          height: 320px;
+        }
+        @include large {
+          height: 200px;
+        }
+        @include medium {
+          height: 160px;
+        }
+        @include small {
+          height: 100px;
+        }
+      }
+    }
+    &__audio-jack-1 {
+      right: 780px;
+      @include x-large {
+        right: 588px;
+        height: 156px;
+      }
+      @include large {
+        right: 406px;
+        height: 112px;
+      }
+      @include medium {
+        right: 310px;
+        height: 96px;
+      }
+      @include small {
+        height: 44px;
+        right: 175px;
+      }
+      &.show {
+        p {
+          opacity: 1;
+          transition-delay: 0.75s;
+        }
+      }
+      p {
+        top: -116px;
+        left: -80px;
+        @include x-large {
+          top: -72px;
+          left: -60px;
+        }
+        @include large {
+          top: -52px;
+          left: -36px;
+        }
+        @include medium {
+          top: -44px;
+          left: -24px;
+        }
+        @include small {
+          top: -30px;
+          left: -22px;
+        }
+      }
+      svg {
+        @include x-large {
+          height: 156px;
+        }
+        @include large {
+          height: 112px;
+        }
+        @include medium {
+          height: 96px;
+        }
+        @include small {
+          height: 44px;
+        }
+      }
+    }
+    &__audio-jack-2 {
+      right: 880px;
+      @include x-large {
+        right: 652px;
+        height: 200px;
+      }
+      @include large {
+        right: 440px;
+        height: 140px;
+      }
+      @include medium {
+        right: 328px;
+        height: 120px;
+      }
+      @include small {
+        right: 164px;
+        height: 68px;
+      }
+      svg {
+        @include x-large {
+          height: 200px;
+        }
+        @include large {
+          height: 140px;
+        }
+        @include medium {
+          height: 120px;
+        }
+        @include small {
+          height: 68px;
+        }
+      }
+    }
+    &__usb-left {
+      right: 1280px;
+      @include x-large {
+        right: 960px;
+        height: 280px;
+      }
+      @include large {
+        right: 650px;
+        height: 180px;
+      }
+      @include medium {
+        height: 148px;
+        right: 494px;
+      }
+      @include small {
+        right: 238px;
+        height: 72px;
+      }
+      &.show {
+        p {
+          opacity: 1;
+          transition-delay: 0.75s;
+        }
+      }
+      p {
+        top: -28px;
+        left: 44px;
+        @include x-large {
+          top: -12px;
+          left: 53px;
+        }
+        @include large {
+          left: 42px;
+        }
+        @include medium {
+          top: -8px;
+          left: 35px;
+        }
+      }
+      svg {
+        @include x-large {
+          height: 280px;
+        }
+        @include large {
+          height: 180px;
+        }
+        @include medium {
+          height: 148px;
+        }
+        @include small {
+          height: 72px;
+        }
+      }
+    }
+    &__usb-right {
+      right: 1132px;
+      @include x-large {
+        right: 840px;
+        height: 280px;
+      }
+      @include large {
+        right: 566px;
+        height: 180px;
+      }
+      @include medium {
+        right: 428px;
+        height: 148px;
+      }
+      @include small {
+        right: 206px;
+        height: 72px;
+      }
+      svg {
+        @include x-large {
+          height: 280px;
+        }
+        @include large {
+          height: 180px;
+        }
+        @include medium {
+          height: 148px;
+        }
+        @include small {
+          height: 72px;
+        }
+      }
+    }
+  }
+}

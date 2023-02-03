@@ -1,32 +1,27 @@
 const colors = require('tailwindcss/colors')
 
 module.exports = {
-  purge: ["./public/**/*.html", "./public/**/*.js"],
-  darkMode: false, // or 'media' or 'class'
+  content: ["./public/**/*.html", "./public/**/*.js"],
   theme: {
     extend: {
       colors: {
-        green1: '#134F2B',
-        green2: '#094623',
-        green3: '#27AE60',
-        orange1: '#F26A22',
-        brokenwhite: '#FFF7F3',
-        gray1: '#333333',
-        gray2: '#4F4F4F',
-        gray3: '#C1C1C1 ',
-        brown1:'#A3A294',
+        'blue1': '#0A2540',
+        'gray1': '#909090',
+        'gray2': '#EEEEEE',
+        'orange1': '#BF7F48',
       },
       fontFamily: {
-        'nuri':  ['"Nunito Sans", sans-serif'],
-        'lib':  ['"Libre Baskerville", sans-serif'],
+        'lucida':  ['"Lucida Grande", sans-serif'],
+        'proxima':  ['"Proxima Nova Rg", sans-serif'],
+        'proxima-lt':  ['"Proxima Nova Lt", sans-serif'],
        },
        fontSize: {
         xxs: ['10px', '20px']
       },
-      height: {
-        '80': '21.25rem'
-       }
-    }, 
+      flex: {
+        'none-auto': '0 0 auto'
+      }
+    },    
     container: {
       center: true,
     },
@@ -35,17 +30,18 @@ module.exports = {
       sm: "640px",
       md: "768px",
       lg: "1024px",
-      xl: "1100px",
+      xl: "1320px",
     },
-    
     fontFamily: {
-      sans: ['"Nunito Sans", sans-serif'],
-     }
+      'sans': ['"Proxima Nova Rg", sans-serif'],
+    },
   },
   variants: {
     extend: {
 
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/line-clamp'),
+  ],
 };

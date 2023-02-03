@@ -1,0 +1,191 @@
+/* ==========================================================================
+   Layout: Introduction
+   ========================================================================== */
+
+.introduction {
+  $i: &;
+  text-align: center;
+  background-color: color(black, 0);
+  position: relative;
+  z-index: zi(introduction);
+  @include medium {
+    overflow: hidden;
+  }
+  .container {
+    position: relative;
+    @include xl-large {
+      max-width: 1240px;
+    }
+    @include x-large {
+      max-width: 1088px;
+    }
+  }
+  // fake scroll
+  &__head {
+    opacity: 0;
+    visibility: hidden;
+    width: 100%;
+    position: absolute;
+    top: 140px;
+    left: 50%;
+    transform: translateX(-50%);
+    @include x-large {
+      top: 120px;
+    }
+    @include medium {
+      top: 300px;
+    }
+    @include small {
+      top: 228px;
+    }
+    @include retina {
+      top: 188px;
+    }
+  }
+  &__item {
+    @include medium {
+      &:nth-child(1) {
+        height: 120px;
+      }
+    }
+    @include small {
+      &:nth-child(1) {
+        height: 80px;
+      }
+    }
+  }
+  // real scroll
+  &__headline {
+    position: absolute;
+    top: 168px;
+    left: 50%;
+    opacity: 0;
+    transform: translate(-50%, 80px);
+    transition: all 0.5s ease;
+    z-index: zi(introduction-headline);
+    @include x-large {
+      top: 120px;
+      transform: translate(-50%, 50px);
+    }
+    @include large {
+      top: 100px;
+    }
+    @include small {
+      top: 40px;
+    }
+    &.show-first {
+      opacity: 1;
+      transform: translate(-50%, 0);
+    }
+  }
+  &__inner {
+    opacity: 0;
+    transform: translateY(80px);
+    transition: all 0.5s ease 0s;
+    @include x-large {
+      transform: translateY(48px);
+    }
+    @include small {
+      transform: translateY(24px);
+    }
+    .active & {
+      opacity: 1;
+      transform: none;
+      transition-delay: 0.3s;
+    }
+    // new design
+    &[data-index="1"] {
+      height: 280px;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      @include x-large {
+        height: 240px;
+      }
+      @include large {
+        height: 184px;
+      }
+      @include small {
+        height: 100px;
+      }
+    }
+    // superb performance
+    &[data-index="2"] {
+      #{$i} {
+        &__txt {
+          background: -webkit-linear-gradient(#318cff, #194680);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+      }
+    }
+  }
+  &__txt {
+    font-weight: fw(medium);
+    letter-spacing: -3.75px;
+    margin-bottom: 0;
+    @include x-large {
+      @include font-size(h3-b);
+    }
+    @include medium {
+      @include font-size(h4);
+    }
+    @include small {
+      letter-spacing: -1px;
+      @include font-size(body);
+    }
+  }
+  &__video {
+    transform: scale(1.35) translateY(-40px);
+    position: relative;
+    @include xl-large {
+      transform: scale(1) translateY(-60px);
+    }
+    @include x-large {
+      transform: none;
+      width: 920px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    @include medium {
+      width: 100%;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 10%;
+      background: rgb(0, 0, 0);
+      background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(0, 0, 0, 1) 90%,
+        rgba(0, 0, 0, 1) 100%
+      );
+      z-index: zi(introduction-video-after);
+      @include x-large {
+        bottom: 32px;
+      }
+      @include small {
+        bottom: 0;
+      }
+    }
+    &__el {
+      display: block;
+      width: 100%;
+      @include x-large {
+        transform: translateY(-32px);
+      }
+      @include small {
+        transform: none;
+      }
+    }
+  }
+  .owl-carousel {
+    .owl-stage-outer {
+      overflow: initial;
+    }
+  }
+}

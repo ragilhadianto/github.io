@@ -1,0 +1,51 @@
+/* ==========================================================================
+   Layout: Introduction
+   ========================================================================== */
+
+.introduction {
+  $i: &;
+  text-align: center;
+  .container {
+    max-width: 1088px;
+    position: relative;
+  }
+  &__head {
+    width: 100%;
+    position: absolute;
+    top: 148px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  &__list {
+    position: relative;
+  }
+  &__item {
+    // opacity: 0;
+    // transform: translateY(120px);
+    &:first-child {
+      #{$i} {
+        &__ttl {
+        }
+      }
+    }
+    &:last-child {
+      // position: absolute;
+      // top: 0;
+      // left: 0;
+      // opacity: 0;
+      #{$i} {
+        &__ttl {
+          background: -webkit-linear-gradient(#318cff, #194680);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+      }
+    }
+  }
+  &__ttl {
+    font-weight: fw(medium);
+    letter-spacing: -3.75px;
+    text-align: center;
+    margin-bottom: 0;
+  }
+}

@@ -1,0 +1,53 @@
+//-------------------------------------------------------------------------------
+  @name: Power Your Play
+  -------------------------------------------------------------------------------//
+
+//power-your-play
+section.power-your-play#power-your-play
+  .power-your-play__layer
+  .container
+    .power-your-play__head
+        h4.power-your-play__ttl !{data.ttl}
+        =`\n`
+        //- video(width="320" height="240" controls muted)
+        //-   source(src="assets/video/lovely-architecture.mp4" type="video/mp4")
+        //-   | Your browser does not support the video tag.
+        .power-your-play__nav
+          =`\n`
+          button.power-your-play__prev.js-power-your-play-prev.disabled(type='button')
+            =`\n`
+            i.fi.fi-prev
+            =`\n`
+          =`\n`
+          button.power-your-play__next.js-power-your-play-next(type='button')
+            =`\n`
+            i.fi.fi-next
+            =`\n`
+    .power-your-play__body
+      =`\n`
+      //power-your-play-list
+      .power-your-play__list.js-power-your-play
+        each val, index in data.list
+          =`\n`
+          //power-your-play-item
+          .power-your-play__item(data-index=(index + 1))
+            .power-your-play__box
+              //- a.power-your-play__link(href=val.to) Buy Now
+              .power-your-play__img
+                =`\n`
+                img.power-your-play__img__el(src="assets/images/dummy/"+val.img, alt=val.alt)/
+              .power-your-play__txt
+                h6.power-your-play__name !{val.name}
+                .power-your-play__action
+                  =`\n`
+                  a.power-your-play__link(href=val.to)
+                    =`\n`
+                    span Buy Now
+                    =`\n`
+                    i.fi.fi-arrow-right
+          =`\n`
+          ///.power-your-play-item
+      =`\n`
+      ///.power-your-play-list
+=`\n`
+///.power-your-play

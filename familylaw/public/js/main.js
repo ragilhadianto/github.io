@@ -1,280 +1,279 @@
 $(document).ready(function () {
 
-  //header
-  const header = document.querySelector(".header");
-  const header_height = header.offsetHeight;
-  window.addEventListener("scroll", function () {
-      scrollpos = window.scrollY;
+    //header
+    var $logo = $(".logo");
+    var $iconmenu = $(".menuOpen img");
+    var $langwebimg = $(".langweb img");
+    var $langwebspan = $(".langweb .langweb__select");
+    var $header = $(".header");
+    var $header_height = $header.outerHeight();
+    var $header__blue = $(".header__blue");
 
-      if (scrollpos >= header_height) {
-          //console.log("down");
-          header.classList.add("header__scroll");
-      } else {
-          //console.log("up");
-          header.classList.remove("header__scroll");
-      }
+    window.addEventListener("scroll", function () {
+        scrollpos = window.scrollY;        
+        if (scrollpos >= $header_height) {
+            $header.addClass("header__scroll");
+            $logo.attr("src","images/icon/logo_blue.png");
+            $langwebimg.attr("src","images/icon/icon_web_blue.svg");
+            $langwebspan.addClass("text-blue1");
+            $iconmenu.attr("src","images/icon/icon_menu_blue.svg");
 
-      //console.log(scrollpos);
-  });
+            $(".menuClose").on("click", function () {        
+                $logo.attr("src","images/icon/logo_blue.png");
+                $iconmenu.attr("src","images/icon/icon_menu_blue.svg");
+                $langwebimg.attr("src","images/icon/icon_web_blue.svg");
+                $langwebspan.addClass("text-blue1");
+                $(".menu").hide();
+                $(".header").removeClass("menushow");
+                $("body").removeClass("overflow-hidden");   
+            });            
+        } else{
+             $header.removeClass("header__scroll");
+             $(".menuClick").attr("data-click-state", 1);
+             $logo.attr("src","images/icon/logo_white.png");
+             $langwebimg.attr("src","images/icon/icon_web.svg");
+             $langwebspan.removeClass("text-blue1");
+             $iconmenu.attr("src","images/icon/icon_menu.svg");
 
-  var lastScrollTop = 0;
-  function scrollHeader2() {
-    var st = $(this).scrollTop();
+             if (($header).hasClass("header__blue")){
+                console.log("header blue");
+               $header.removeClass("header__scroll");
+               $logo.attr("src","images/icon/logo_blue.png");
+               $langwebimg.attr("src","images/icon/icon_web_blue.svg");
+               $langwebspan.addClass("text-blue1");
+               $iconmenu.attr("src","images/icon/icon_menu_blue.svg");
+            }
+ 
+             $(".menuClose").on("click", function () {        
+                 $logo.attr("src","images/icon/logo_white.png");
+                 $iconmenu.attr("src","images/icon/icon_menu.svg");
+                 $langwebimg.attr("src","images/icon/icon_web.svg");
+                 $langwebspan.removeClass("text-blue1");                 
+                 $(".menu").hide();
+                 $(".header").removeClass("menushow");
+                 $("body").removeClass("overflow-hidden");    
 
-    if (st < lastScrollTop || st <= 100) {
-      $(".header").css("top", "0");
-    } else {
-      $(".header").css("top", "-110px");
-    }   
-    lastScrollTop = st;
-  }
+                 if (($header).hasClass("header__blue")){
+                    $logo.attr("src","images/icon/logo_blue.png");
+                    $iconmenu.attr("src","images/icon/icon_menu_blue.svg");
+                    $langwebimg.attr("src","images/icon/icon_web_blue.svg");
+                    $langwebspan.addClass("text-blue1");
+                    $(".menu").hide();
+                    $(".header").removeClass("menushow");
+                    $("body").removeClass("overflow-hidden");   
+                }
+             });
+        }   
+        
+    });
 
-  window.addEventListener("scroll", scrollHeader2);
+    $(".menuOpen").on("click", function () {        
+        //action
+        $logo.attr("src","images/icon/logo_blue.png");
+        $iconmenu.attr("src","images/icon/icon_menu_close.svg");
+        $langwebimg.attr("src","images/icon/icon_web_blue.svg");
+        $langwebspan.addClass("text-blue1");
+        $(".menu").show();
+        $(".header").addClass("menushow");
+        $("body").addClass("overflow-hidden");      
+    });
 
-//slider
-var slickslider = document.querySelector('.slider2col');
-if (slickslider != null) {
-  //action
-  $(".slider2col").slick({
-      dots: false,
-      infinite: true,
-      speed: 500,
-      autoplay: true,
-      autoplaySpeed: 3000,
-      slidesToShow: 2,
-      slidesToScroll: 2,
-      responsive: [
-        {
-            breakpoint: 768,
-            settings: "unslick",
+    $(".menuClose").on("click", function () {        
+        $logo.attr("src","images/icon/logo_white.png");
+        $iconmenu.attr("src","images/icon/icon_menu.svg");
+        $langwebimg.attr("src","images/icon/icon_web.svg");
+        $langwebspan.removeClass("text-blue1");
+        $(".menu").hide();
+        $(".header").removeClass("menushow");
+        $("body").removeClass("overflow-hidden");
+
+        if (($header).hasClass("header__blue")){
+            $logo.attr("src","images/icon/logo_blue.png");
+            $iconmenu.attr("src","images/icon/icon_menu_blue.svg");
+            $langwebimg.attr("src","images/icon/icon_web_blue.svg");
+            $langwebspan.addClass("text-blue1");
+            $(".menu").hide();
+            $(".header").removeClass("menushow");
+            $("body").removeClass("overflow-hidden");    
         }
-      ]
+    });
+
+    //slider
+    $('.slider').slick({
+        slidesToShow:1,
+        slidesToScroll: 1,
+        dots: false,
+        arrows: true,
+        draggable:true,
+        focusOnSelect: true,
+        appendArrows: ".slider-arrow",
+        responsive: [
+            {
+                breakpoint: 9999,
+                settings: "unslick"
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow:1,
+                    slidesToScroll: 1,
+              }
+            }
+          ]
+      });
+
+    $('.slider2').slick({
+        slidesToShow:3,
+        slidesToScroll: 1,
+        dots: false,
+        arrows: true,
+        draggable:true,
+        focusOnSelect: true,
+        appendArrows: ".slider2-arrow",
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow:1,
+                    slidesToScroll: 1,
+              }
+            }
+          ]
+      });
+
+    $('.slider3').slick({
+        slidesToShow:1,
+        slidesToScroll: 1,
+        dots: false,
+        arrows: true,
+        draggable:true,
+        focusOnSelect: true,
+        appendArrows: ".slider3-arrow",
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow:1,
+                    slidesToScroll: 1,
+              }
+            }
+          ]
+      });
+
+    
+    //menu
+    const mediaQuery = window.matchMedia('(min-width: 1024px)')
+    // Check if the media query is true
+    if (mediaQuery.matches) {
+        //desktop
+        $('.menuInner > li').hover(function(e) {
+            console.log("sdasd");
+            e.preventDefault();
+            var $this = $(this);
+            var target = $(this).children("ul");
+            var targetAll = $(this).parent().find("ul");    
+            if ($this.children("ul").hasClass('show')) {
+                $this.children("ul").removeClass('show');
+            } else {
+                $(targetAll).removeClass('show');
+                $this.children("ul").toggleClass('show');
+            }      
+          });
+    } else{
+       //mobile
+        $('.menuInner li > a').click(function() {
+            //e.preventDefault();
+            var $this = $(this);
+            var target = $(this).parent().children("ul");
+            var targetAll = $(this).parent().parent().find("ul");
+
+            if ($this.next().hasClass('show')) {
+                $this.next().removeClass('show');
+                $this.next().slideUp(500);
+            } else {
+                $(targetAll).removeClass('show');
+                $(targetAll).slideUp(500);
+                $this.next().toggleClass('show');
+                $this.next().slideToggle(500); 
+            }      
+        });
+    }
+    
+    
+    // accordion
+    $('#accordion li > div:first-child').click(function(e) {
+        e.preventDefault();
+        var $this = $(this);
+        var target = $(this).parent().children(".accordionInner");
+
+        //console.log(target);
+        var targetAll = $(this).parent().parent().find(".accordionInner");
+        var arrow = $(this).parent().parent().find("span > img");
+        console.log(arrow);
+
+        if ($this.next().hasClass('show')) {
+            $this.next().removeClass('show');
+            $this.next().slideUp(500);
+            arrow.removeClass("rotate-180");
+        } else {
+            $(targetAll).removeClass('show');
+            arrow.removeClass("rotate-180");
+            $(targetAll).slideUp(500);
+            $this.next().toggleClass('show');
+            $this.next().slideToggle(500); 
+            $this.find("span img").addClass("rotate-180");
+        }      
+      });
+
+      //tabbing
+        $('#tabs-nav li:first-child').addClass('active');
+        $('.tab-content').hide();
+        $('.tab-content:first').show();
+
+        // Click function
+        $('#tabs-nav li').click(function(){
+            $('#tabs-nav li').removeClass('active');
+            $(this).addClass('active');
+            $('.tab-content').hide();
+            
+            var activeTab = $(this).find('a').attr('href');
+            $(activeTab).fadeIn();
+            return false;
+        });
+});
+
+// video YT 
+var tag = document.createElement("script");
+tag.src = "https://www.youtube.com/player_api";
+var firstScriptTag = document.getElementsByTagName("script")[0];
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+var player;
+function onYouTubePlayerAPIReady() {
+    player = new YT.Player("yt-player", {
+    playerVars: {
+        autoplay: 0,
+        controls: 1,
+        autohide: 1,
+        wmode: "opaque",
+        showinfo: 0,
+        loop: 0,
+    },
+    videoId: "LKNr9rVR85c",
+    events: {
+        onReady: onPlayerReady,
+    },
     });
 }
 
-
-  //video
-  $('.ytplay').click(function(){
-    var v_parent = $(this).parent();  
-    $(v_parent).children('.ytplayer').removeClass('hidden');
-  });
-
-  $('.ytplayer .close_button').click(function(){
-    var v_parent = $(this).parent();
-    var v_iframe = $(this).siblings('iframe');
-
-    $(v_parent).addClass('hidden');
-    $(v_parent).find('iframe').remove();
-    $(v_parent).append(v_iframe);
-  });
-
-  //clickmore
-  $('#clickmore').click(function(){
-    $(this).parent().removeClass('h-wrap-m');
-    $(this).parent().removeClass('h-wrap');
-    $(this).hide();
-  });
-
-  
-  //menuMobile
-  
-  // Mobile Version
-  if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-    
-  
-  } else {
-
-  }
-
-
-  const mediaQuery768 = window.matchMedia('(max-width: 1024px)')
-  const mediaQuery1024 = window.matchMedia('(min-width: 1024px)')
-  // Check if the media query is true
-  if (mediaQuery768.matches) {
-    // // Then trigger an alert
-    // alert('Media Query Matched!')
-
-    $(".dropbtn__sub").attr("href","javascript:void(0);");
-
-    $('.menuMobile').click(function(){
-      $('.header__menu').addClass('active');
-    });
-    $('.menuMobileClose').click(function(){
-      $('.header__menu').removeClass('active');
-      $('.sub__search').removeClass('active');
-      $('.header__menu__sub').removeClass('active');
-    });
-    
-    $('.dropbtn__sub').click(function(){
-      $(this).next().addClass('active');
-      $('.header__sub').removeClass('hidden');
-      $('.header__sub__logo').addClass('hidden');
-    });
-
-    $('.dropbtn__search').click(function(){
-      $(this).next().addClass('active');
-    });
-
-    $('.menuMobileBack').click(function(){
-      $('.dropdown-content').removeClass('active');
-      $('.header__sub').addClass('hidden');
-      $('.header__sub__logo').removeClass('hidden');
-    });
-    
-    $('.sidemenuClick').on('click',function(){
-      if($(this).attr('data-click-state') == 1) {
-          $(this).attr('data-click-state', 0);
-          $(this).find('img').addClass('-rotate-180');
-          $('.sidemenu').css('left', '0')
-        }
-      else {
-        $(this).attr('data-click-state', 1);
-        $('.sidemenu').css('left', '-295px');
-        $(this).find('img').removeClass('-rotate-180');
-      }
-    });
-
-    $(window).scroll(function() {
-      var scrollDistance = $(window).scrollTop() + 100;
-  
-      $('.about-content').each(function() {
-        if ($(this).position().top <= scrollDistance) {
-            $('.sidemenu').fadeIn('slow');           
-        }
-        else{
-          $('.sidemenu').fadeOut('slow');
-        }
-    });
-      
-    }).scroll();
- 
-  }
-
-  if (mediaQuery1024.matches){
-    $('.container').click(function(){
-      $('.sub__search').removeClass('active');
-      $('.header__menu__sub').removeClass('active');
-    });
-  }
-
-  //tabbing
-
-  $('#tab-content > div').hide();
-  $('#tab-content div:first').show();
-  
-  $('#nav li').click(function() {
-      $('#nav li a').removeClass("active, text-orange1");
-      $(this).find('a').addClass("active, text-orange1");
-      $('#tab-content > div').hide();
-  
-      var indexer = $(this).index(); //gets the current index of (this) which is #nav li
-      $('#tab-content > div:eq(' + indexer + ')').fadeIn(); //uses whatever index the link has to open the corresponding box 
-  });
-
-
-  //scroll and click nav  page
-
-    $('a[href*=#]').bind('click', function(e) {
-      e.preventDefault(); // prevent hard jump, the default behavior
-
-      var target = $(this).attr("href"); // Set the target as variable
-
-      // perform animated scrolling by getting top-position of target-element and set it as scroll target
-      $('html, body').stop().animate({
-          scrollTop: $(target).offset().top
-      }, 600, function() {
-          location.hash = target; //attach the hash (#jumptarget) to the pageurl
-      });
-
-      $('.sidemenuClick').attr('data-click-state', 1);
-      $('.sidemenu').css('left', '-295px');
-      $('.sidemenu').find('img').removeClass('-rotate-180');
-
-      return false;
-  });
-
-    $('.navigation-year a[href*=#]').bind('click', function(e) {
-      e.preventDefault(); // prevent hard jump, the default behavior
-
-      var target = $(this).attr("href"); // Set the target as variable
-
-      // perform animated scrolling by getting top-position of target-element and set it as scroll target
-      $('html, body').stop().animate({
-          scrollTop: $(target).offset().top
-      }, 600, function() {
-          location.hash = target; //attach the hash (#jumptarget) to the pageurl
-      });
-
-      return false;
-  });
-
-  $(window).scroll(function() {
-    var scrollDistance = $(window).scrollTop() + 100;
-
-    // Show/hide menu on scroll
-    //if (scrollDistance >= 850) {
-    //		$('nav').fadeIn("fast");
-    //} else {
-    //		$('nav').fadeOut("fast");
-    //}
-
-    // Assign active class to nav links while scolling
-    $('.page-section').each(function(i) {
-        if ($(this).position().top <= scrollDistance) {
-            $('.navigation a.active').removeClass('active text-green1');      
-            $('.navigation--yellow a.active').removeClass('active text-orange1');         
-            $('.navigation a > img').addClass('hidden');
-            $('.navigation--yellow a > img').addClass('hidden');
-            $('.navigation a').eq(i).addClass('active text-green1');           
-            $('.navigation--yellow a').eq(i).addClass('active text-orange1');           
-            $('.navigation a > img').eq(i).removeClass('hidden');
-            $('.navigation--yellow a > img').eq(i).removeClass('hidden');     
-        }
-    });
-
-    
-
-    $('.page-section-year').each(function(i) {
-        if ($(this).position().top <= scrollDistance) {
-            $('.navigation-year a.active').removeClass('active text-orange1');
-            $('.page-section-year').removeClass('text-orange1');
-            $('.navigation-year a').eq(i).addClass('active text-orange1');
-            $('.page-section-year').eq(i).addClass('text-orange1');
-        }
-    });
-    
-  }).scroll();
-
-
-  // accordion
-  $('.toggleAccordion').click(function(e) {
-    e.preventDefault();
-    
-    let $this = $(this);
-
-    if ($this.next().hasClass('show')) {
-        $this.next().removeClass('show');
-        $this.next().slideUp(350);
-        $this.parent().removeClass('text-orange1');
-        $this.find("img").removeClass("transform rotate-180");
-        $this.find("img.arrowhistory").attr("src","images/svg/icon__arrow__bottom__green.svg");
-    } else {
-        $this.parent().parent().find('.inner').removeClass('show');
-        $this.parent().parent().find('.innerm').removeClass('show');
-        $this.parent().parent().find('.innerm--history').removeClass('text-orange1');
-        $this.parent().parent().find('img').removeClass("transform rotate-180");
-        $this.parent().parent().find('img.arrowhistory').attr("src","images/svg/icon__arrow__bottom__green.svg")
-        $this.parent().parent().find('.page-section-year').removeClass('text-orange1');
-        $this.parent().parent().find('.inner').slideUp(350);
-        $this.parent().parent().find('.innerm').slideUp(350);
-        $this.parent().parent().find('.innerm').slideUp(350);
-        $this.parent().closest('.page-section-year').addClass('text-orange1');
-        $this.next().toggleClass('show');
-        $this.next().slideToggle(350);
-        $this.find("img").addClass("transform rotate-180");
-        $this.find("img.arrowhistory").attr("src","images/svg/icon__arrow__bottom__orange.svg");
-    }
-  });
-
-
+function onPlayerReady(event) {
+    //event.target.mute();
+    //player.setVolume(0);
+    // player.playVideo();
+}
+function stopVideo() {}
+$(".yt-player-click").click(function(e) {        
+    $(".yt-player-click").addClass("z-10");
+    $("#yt-player").removeClass("hidden");
+    player.playVideo();
 });

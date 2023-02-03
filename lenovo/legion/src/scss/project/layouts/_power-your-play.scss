@@ -1,0 +1,348 @@
+/* ==========================================================================
+Layout: Power Your Play
+========================================================================== */
+
+.power-your-play {
+  padding-top: 158px;
+  padding-bottom: 158px;
+  overflow: hidden;
+  animation: pypGradient 26s ease infinite;
+  background: linear-gradient(90deg, #548ec5, #53529d, #5c67b3);
+  background-size: 600% 600%;
+  position: relative;
+  @include x-large {
+    padding-top: 132px;
+    padding-bottom: 132px;
+  }
+  @include large {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  @include medium {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  @include small {
+    padding-top: 56px;
+    padding-bottom: 56px;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 20%;
+    height: 100%;
+    opacity: 0.8;
+    z-index: zi(power-your-play-gradient-right);
+    background: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(0, 0, 0, 1) 90%,
+      rgba(0, 0, 0, 1) 100%
+    );
+    @include large {
+      width: 320px;
+    }
+    @include medium {
+      width: 220px;
+    }
+    @include small {
+      display: none;
+    }
+  }
+  &__layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: zi(power-your-play-gradient-before);
+      background: rgb(0, 0, 0);
+      background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 1) 0%,
+        rgba(255, 255, 255, 0) 100%
+      );
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: zi(power-your-play-gradient-after);
+      opacity: 0.5;
+      background: rgb(255, 255, 255);
+      background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(0, 0, 0, 1) 100%
+      );
+    }
+  }
+  .container {
+    position: relative;
+    max-width: 1112px;
+    z-index: zi(power-your-play-container);
+    @include large {
+      max-width: 800px;
+    }
+  }
+  &__head {
+    margin-bottom: 32px;
+    display: flex;
+    align-items: center;
+    @include x-large {
+      margin-bottom: 24px;
+    }
+    @include large {
+      margin-bottom: 20px;
+    }
+    @include medium {
+      margin-bottom: 16px;
+    }
+    @include small {
+      margin-bottom: 8px;
+    }
+  }
+  &__ttl {
+    margin-bottom: 0;
+    color: color(white, 1);
+    font-weight: fw(medium);
+    letter-spacing: -2.19px;
+    @include x-large {
+      @include font-size(h5);
+    }
+    @include large {
+      @include font-size(h5-b);
+    }
+    @include medium {
+      @include font-size(body);
+    }
+    @include small {
+      @include font-size(label-c);
+    }
+  }
+  &__nav {
+    margin-left: 48px;
+    @include x-large {
+      margin-left: 32px;
+    }
+    @include large {
+      margin-left: 24px;
+    }
+    @include medium {
+      margin-left: 20px;
+    }
+    @include small {
+      margin-left: 16px;
+    }
+    button {
+      width: 66px;
+      height: 66px;
+      padding: 0;
+      background-color: transparent;
+      border: 0;
+      outline: 0;
+      color: color(white, 0);
+      @include x-large {
+        width: 48px;
+        height: 48px;
+      }
+      @include large {
+        width: 40px;
+        height: 40px;
+      }
+      @include medium {
+        width: 32px;
+        height: 32px;
+      }
+      @include small {
+        width: 24px;
+        height: 24px;
+      }
+    }
+    .fi {
+      font-size: 6.6rem;
+      @include x-large {
+        font-size: 4.8rem;
+      }
+      @include large {
+        font-size: 4rem;
+      }
+      @include medium {
+        font-size: 3.2rem;
+      }
+      @include small {
+        font-size: 2.4rem;
+      }
+    }
+  }
+  &__prev,
+  &__next {
+    .fi {
+      transition: all 0.3s ease;
+    }
+    &.disabled {
+      .fi {
+        opacity: 0.5;
+      }
+    }
+  }
+  &__prev {
+    margin-right: 16px;
+    @include large {
+      margin-right: 12px;
+    }
+    @include medium {
+      margin-right: 8px;
+    }
+    @include small {
+      margin-right: 4px;
+    }
+  }
+  &__body {
+    padding-top: 36px;
+    padding-bottom: 36px;
+    @include medium {
+      padding-top: 24px;
+      padding-bottom: 24px;
+    }
+  }
+  &__box {
+    cursor: pointer;
+    background-color: color(black, 1);
+    width: 530px;
+    border-radius: 8px 8px 16px 16px;
+    transition: all 0.5s ease;
+    @include x-large {
+      width: 440px;
+    }
+    @include large {
+      width: 320px;
+    }
+    @include small {
+      width: 260px;
+    }
+    @include retina {
+      width: 240px;
+    }
+    &:hover {
+      transform: translateY(-8px);
+      background-color: color(black, 1);
+    }
+  }
+  &__img {
+    position: relative;
+    padding-bottom: 100%;
+    border-radius: 8px 8px 0 0;
+    &__el {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+  &__txt {
+    padding: 56px;
+    @include x-large {
+      padding: 48px;
+    }
+    @include large {
+      padding: 40px;
+    }
+    @include medium {
+      padding: 32px;
+    }
+    @include small {
+      padding: 32px 24px;
+    }
+  }
+  &__name {
+    font-weight: fw(regular);
+    margin-bottom: 24px;
+    color: color(white, 1);
+    letter-spacing: -0.88px;
+    @include font-size(label);
+    @include x-large {
+      @include font-size(label-b);
+    }
+    @include large {
+      @include font-size(label-c);
+    }
+    @include medium {
+      margin-bottom: 20px;
+      @include font-size(small);
+      line-height: 3.2rem;
+    }
+    @include small {
+      margin-bottom: 16px;
+      @include font-size(small-a);
+    }
+  }
+  &__link {
+    color: color(blue, 5);
+    @include font-size(small);
+    text-decoration: none;
+    font-weight: fw(bold);
+    display: flex;
+    align-items: center;
+    @include x-large {
+      @include font-size(small-b);
+    }
+    @include large {
+      @include font-size(small-c);
+    }
+    span {
+      margin-right: 12px;
+      letter-spacing: -0.88px;
+      @include small {
+        margin-right: 10px;
+      }
+    }
+    .fi {
+      transform: translateY(2px);
+      font-size: 1.6rem;
+      @include x-large {
+        font-size: 1.4rem;
+      }
+      @include large {
+        font-size: 1.2rem;
+      }
+      @include small {
+        font-size: 1rem;
+      }
+    }
+  }
+  .owl-carousel {
+    .owl-stage-outer {
+      overflow: initial;
+    }
+    .owl-nav {
+      display: none;
+    }
+  }
+}
+
+@keyframes pypGradient {
+  0% {
+    background-position: 0% 54%;
+  }
+  50% {
+    background-position: 100% 47%;
+  }
+  100% {
+    background-position: 0% 54%;
+  }
+}

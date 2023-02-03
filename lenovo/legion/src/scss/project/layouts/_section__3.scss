@@ -1,0 +1,47 @@
+/* ==========================================================================
+   Layout: section 3
+   ========================================================================== */
+.section{
+
+    &__3{
+        position: relative;
+        z-index: 3;
+
+        & .container{
+            margin-top: -70px;
+        }
+
+        &__inner{
+
+        }
+
+        &__text{
+            display: flex;
+
+            &__ttl{
+                flex: 0 0 50%;
+                display: flex;
+                align-items: center;
+                padding-left: 140px;
+            }
+
+            &__desc{
+
+            }
+
+            h3{
+                font-size: 60px;
+                line-height: 60px;
+            }
+
+            p{
+                font-size: 26px;
+                line-height: normal;
+                font-weight: 500;
+            }
+        }
+
+    }
+
+}
+

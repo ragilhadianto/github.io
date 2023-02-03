@@ -1,0 +1,122 @@
+/* ==========================================================================
+   Layout: Beyond Performance
+   ========================================================================== */
+
+.beyond-performance {
+  background: linear-gradient(-90deg, #974e85, #318cff, #6ba1e4);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  padding-top: 320px;
+  padding-bottom: 320px;
+  position: relative;
+  @include x-large {
+    padding-top: 240px;
+    padding-bottom: 240px;
+  }
+  @include large {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+  @include medium {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(0, 0, 0, 1) 100%
+    );
+    z-index: zi(beyond-performance-before);
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(255, 255, 255, 0) 100%
+    );
+    z-index: zi(beyond-performance-after);
+  }
+  .container {
+    position: relative;
+    z-index: zi(beyond-performance-container);
+  }
+  &__inner {
+    max-width: 1268px;
+    @include x-large {
+      max-width: 1100px;
+    }
+  }
+  &__ttl {
+    font-weight: fw(medium);
+    letter-spacing: -5px;
+    color: color(black, 2);
+    @include fade-in;
+    @include x-large {
+      @include font-size(h3);
+      line-height: 1;
+    }
+    @include large {
+      @include font-size(h3-b);
+      line-height: 1;
+    }
+    @include medium {
+      @include font-size(h4);
+    }
+    @include small {
+      @include font-size(h5-b);
+      letter-spacing: -2px;
+    }
+    @include retina {
+      @include font-size(body);
+    }
+    span {
+      display: block;
+    }
+  }
+  &__desc {
+    margin-bottom: 0;
+    color: color(black, 2);
+    letter-spacing: -1.2px;
+    @include font-size(h5);
+    @include fade-in;
+    @include x-large {
+      @include font-size(h5-b);
+    }
+    @include large {
+      @include font-size(body);
+    }
+    @include medium {
+      @include font-size(label-b);
+    }
+    @include small {
+      @include font-size(small-b);
+    }
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

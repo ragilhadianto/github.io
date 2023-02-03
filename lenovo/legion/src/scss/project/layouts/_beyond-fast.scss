@@ -1,0 +1,63 @@
+/* ==========================================================================
+   Layout: Beyond Fast
+   ========================================================================== */
+
+.beyond-fast {
+  $bf: &;
+  padding-top: 200px;
+  @include x-large {
+    padding-top: 120px;
+  }
+  @include large {
+    padding-top: 100px;
+  }
+  @include medium {
+    padding-top: 80px;
+  }
+  @include small {
+    padding-top: 56px;
+  }
+  .container {
+    position: relative;
+  }
+  &__ttl {
+    font-weight: fw(medium);
+    letter-spacing: -5px;
+    color: color(white, 0);
+    max-width: 950px;
+    margin: 0 auto 0;
+    @include fade-in;
+    @include x-large {
+      max-width: 800px;
+      @include font-size(h3);
+    }
+    @include large {
+      max-width: 768px;
+      @include font-size(h3-b);
+    }
+    @include medium {
+      @include font-size(h4);
+    }
+    @include small {
+      @include font-size(h5-b);
+      letter-spacing: -2px;
+    }
+    span {
+      display: block;
+    }
+  }
+  &__sequences {
+    text-align: center;
+    @include fade-in;
+    @include x-large {
+      width: 880px;
+      margin: 0 auto !important;
+    }
+    @include large {
+      width: 768px;
+    }
+    @include medium {
+      width: 100%;
+    }
+  }
+}
