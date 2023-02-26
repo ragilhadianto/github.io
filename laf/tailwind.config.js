@@ -17,6 +17,7 @@ module.exports = {
         'yellow1': '#ffa41d',
         'blue1': '#1294d7',
         'blue2': '#70b4c3',
+        'blue3': '#2295d2',
       },
       fontFamily: {
         'russo':  ['"Russo One", sans-serif'],

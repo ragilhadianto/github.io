@@ -702,6 +702,10 @@ a:hover {
 
 /* slider */
 
+.hero{
+  background-color: transparent !important;
+}
+
 .hero  .slick-arrow {
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -737,6 +741,9 @@ a:hover {
 .slick-dots{
   display: flex;
   justify-content: end;
+  overflow: hidden;
+  height: 15px;
+  padding-right: 10px;
 }
 
 .slick-dots li.slick-active button:before {
@@ -746,12 +753,16 @@ a:hover {
 
 .slick-dots li button:before {
   font-size: 15px;
-  color: #fff;
+  color: #7e7e7e;
 }
 
 .slick-dots li {
   width: 15px;
   height: 15px;
+}
+
+.slick-prev:before, .slick-next:before {
+  color: #ff6c2e;
 }
 
 /* menu */
@@ -795,6 +806,14 @@ a:hover {
     width: 10px;
     height: 10px;
   }
+}
+
+/* content  */
+
+.content-body img {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+  border-radius: 1.5rem;
 }
 
 /*!
@@ -932,6 +951,37 @@ a:hover {
   transform: translate3d(0, -20px, 0) rotate(90deg);
 }
 
+.whatsappClick {
+  position: fixed;
+  bottom: 10px;
+  right: 15px;
+  width: 60px;
+  z-index: 99999;
+}
+
+.wa__inner{
+  width: 50px;
+  position: relative;
+  background: #fff;
+  padding: 3px;
+  border-radius: 6px;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  display: flex;
+  font-weight: bold;
+  align-items: center;
+  justify-content: center;
+  left: 4px;
+  margin-top: -10px;
+}
+
+.wa__text{
+  display: block;
+  font-size: 6px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+
 .visible {
   visibility: visible;
 }
@@ -996,6 +1046,16 @@ a:hover {
   margin: auto;
 }
 
+.my-5 {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.my-10 {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
 .mb-3 {
   margin-bottom: 0.75rem;
 }
@@ -1004,12 +1064,16 @@ a:hover {
   margin-bottom: 2.5rem;
 }
 
-.mt-10 {
-  margin-top: 2.5rem;
+.mt-16 {
+  margin-top: 4rem;
 }
 
 .mb-5 {
   margin-bottom: 1.25rem;
+}
+
+.mt-10 {
+  margin-top: 2.5rem;
 }
 
 .mb-14 {
@@ -1026,10 +1090,6 @@ a:hover {
 
 .mt-5 {
   margin-top: 1.25rem;
-}
-
-.mt-20 {
-  margin-top: 5rem;
 }
 
 .block {
@@ -1096,10 +1156,6 @@ a:hover {
   height: 2.5rem;
 }
 
-.h-0 {
-  height: 0px;
-}
-
 .h-auto {
   height: auto;
 }
@@ -1108,8 +1164,8 @@ a:hover {
   width: 100%;
 }
 
-.w-\[40px\] {
-  width: 40px;
+.w-\[111px\] {
+  width: 111px;
 }
 
 .w-\[50px\] {
@@ -1152,12 +1208,16 @@ a:hover {
   resize: both;
 }
 
+.grid-cols-1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
-.grid-cols-1 {
-  grid-template-columns: repeat(1, minmax(0, 1fr));
+.grid-cols-5 {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
 }
 
 .flex-col {
@@ -1182,6 +1242,10 @@ a:hover {
 
 .gap-10 {
   gap: 2.5rem;
+}
+
+.gap-14 {
+  gap: 3.5rem;
 }
 
 .gap-2 {
@@ -1330,6 +1394,16 @@ a:hover {
   padding-bottom: 3.5rem;
 }
 
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
 .px-2 {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
@@ -1369,6 +1443,14 @@ a:hover {
   padding-top: 1.25rem;
 }
 
+.pt-72 {
+  padding-top: 18rem;
+}
+
+.pt-40 {
+  padding-top: 10rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -1396,9 +1478,19 @@ a:hover {
   line-height: 1.25rem;
 }
 
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
 .text-base {
   font-size: 1rem;
   line-height: 1.5rem;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 .font-bold {
@@ -1409,9 +1501,18 @@ a:hover {
   text-transform: uppercase;
 }
 
+.leading-\[10px\] {
+  line-height: 10px;
+}
+
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-blue3 {
+  --tw-text-opacity: 1;
+  color: rgb(34 149 210 / var(--tw-text-opacity));
 }
 
 .text-dark2 {
@@ -1429,6 +1530,11 @@ a:hover {
   color: rgb(196 206 212 / var(--tw-text-opacity));
 }
 
+.text-gray-700 {
+  --tw-text-opacity: 1;
+  color: rgb(55 65 81 / var(--tw-text-opacity));
+}
+
 .blur {
   --tw-blur: blur(8px);
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
@@ -1444,6 +1550,12 @@ a:hover {
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
+}
+
+@media (min-width: 640px) {
+  .sm\:grid-cols-5 {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
 }
 
 @media (min-width: 1024px) {
@@ -1503,12 +1615,16 @@ a:hover {
     height: 3.5rem;
   }
 
-  .lg\:w-\[50px\] {
-    width: 50px;
+  .lg\:w-\[222px\] {
+    width: 222px;
   }
 
   .lg\:w-\[100px\] {
     width: 100px;
+  }
+
+  .lg\:w-\[50px\] {
+    width: 50px;
   }
 
   .lg\:w-\[25px\] {
@@ -1519,12 +1635,12 @@ a:hover {
     width: 3.5rem;
   }
 
-  .lg\:grid-cols-3 {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
   .lg\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .lg\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .lg\:grid-cols-10 {
@@ -1551,8 +1667,12 @@ a:hover {
     justify-content: flex-end;
   }
 
-  .lg\:gap-20 {
-    gap: 5rem;
+  .lg\:gap-16 {
+    gap: 4rem;
+  }
+
+  .lg\:gap-32 {
+    gap: 8rem;
   }
 
   .lg\:gap-10 {
@@ -1563,6 +1683,10 @@ a:hover {
     padding: 1rem;
   }
 
+  .lg\:p-2 {
+    padding: 0.5rem;
+  }
+
   .lg\:p-10 {
     padding: 2.5rem;
   }
@@ -1570,6 +1694,11 @@ a:hover {
   .lg\:py-20 {
     padding-top: 5rem;
     padding-bottom: 5rem;
+  }
+
+  .lg\:px-10 {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
   }
 
   .lg\:px-5 {
@@ -1582,12 +1711,13 @@ a:hover {
     padding-bottom: 1.25rem;
   }
 
-  .lg\:pt-20 {
-    padding-top: 5rem;
+  .lg\:px-14 {
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
   }
 
-  .lg\:pl-40 {
-    padding-left: 10rem;
+  .lg\:pt-20 {
+    padding-top: 5rem;
   }
 
   .lg\:pt-72 {
