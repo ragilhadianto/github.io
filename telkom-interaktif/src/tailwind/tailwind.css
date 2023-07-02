@@ -178,9 +178,38 @@
       @apply bg-no-repeat p-[55px];
     }
 
+
+    /* slider */
     .SliderWrap{
       background-image: url('../images/box.png');
-      @apply bg-no-repeat rounded-xl bg-contain px-5 py-10;
+      @apply bg-no-repeat rounded-xl bg-contain px-5 py-10 w-[600px];
+    }
+    .slick-arrow{
+      width: 30px;
+      height: 30px;
+      @apply bg-no-repeat;
+    }
+    .slick-arrow:before{
+      content: '';
+    }
+    .slick-next{
+      background-image: url('../images/icon-slick-left.svg') !important;
+      right: -60px;
+    }
+    .slick-prev{
+      background-image: url('../images/icon-slick-right.svg') !important;
+      left: -60px;
+    }
+    .slick-disabled{
+      display: none !important;
+    }
+
+    /* zoom */
+    .mfp-bg {
+        z-index: 999999999;
+    }
+    .mfp-wrap {
+      z-index: 999999999;
     }
 
 
@@ -258,14 +287,65 @@
       @apply lg:w-[120px];
     }
 
-    
-    .static-img-2.playdown{
 
+    /* hover state */
+    .hoverScale{
+      @apply transition-all duration-700   scale-100;
     }
+    .hoverScale:hover{
+      @apply scale-110;
+    }
+    
+    /* animation css */
 
+    /* border animation */
+    .border-animation {
+      background-image: repeating-linear-gradient(0deg, #ee3124, #ee3124 10px, transparent 10px, transparent 20px, #ee3124 20px), repeating-linear-gradient(90deg, #ee3124, #ee3124 10px, transparent 10px, transparent 20px, #ee3124 20px), repeating-linear-gradient(180deg, #ee3124, #ee3124 10px, transparent 10px, transparent 20px, #ee3124 20px), repeating-linear-gradient(270deg, #ee3124, #ee3124 10px, transparent 10px, transparent 20px, #ee3124 20px);
+      background-size: 3px calc(100% + 20px), calc(100% + 20px) 3px, 3px calc(100% + 20px) , calc(100% + 20px) 3px;
+      background-position: 0 0, 0 0, 100% 0, 0 100%;
+      background-repeat: no-repeat;
+      animation: borderAnimation 0.7s infinite linear;
+      }
+      
+      @keyframes borderAnimation {
+      from { background-position: 0 0, -20px 0, 100% -20px, 0 100%; }
+      to { background-position: 0 -20px, 0 0, 100% 0, -20px 100%; }
+      }
 
+      /* bounce */
+      .bounce-1 {
+        animation-name: bounce-1;
+        animation-timing-function: linear;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+      }
+      @keyframes bounce-1 {
+          0%   { transform: translateY(0); }
+          50%  { transform: translateY(-35px); }
+          100% { transform: translateY(0); }
+      }
+      .bounce-2 {
+        animation-name: bounce-2;
+        animation-timing-function: linear;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+      }
+      @keyframes bounce-2 {
+          0%   { transform: translateY(0); }
+          30%  { transform: translateY(-35px); }
+          100% { transform: translateY(0); }
+      }
+      .bounce-3 {
+        animation-name: bounce-3;
+        animation-timing-function: linear;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+      }
+      @keyframes bounce-3 {
+          0%   { transform: translateY(0); }
+          70%  { transform: translateY(-35px); }
+          100% { transform: translateY(0); }
+      }
 
-
-
-
+/* end */
 }

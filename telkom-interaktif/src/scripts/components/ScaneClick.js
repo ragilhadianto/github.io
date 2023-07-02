@@ -10,6 +10,77 @@ const ScaneClick = (() => {
 
     $(document).ready(function() {
 
+
+        // slick-js
+        $('.slick-js').slick({
+            slidesToShow: 1,
+            dots:false,
+            infinite:false
+        });
+
+        // magnific
+        $('.zoom-gallery').magnificPopup({
+            delegate: 'a',
+            type: 'image',
+            closeOnContentClick: false,
+            closeBtnInside: false,
+            mainClass: 'mfp-with-zoom mfp-img-mobile',
+            image: {
+                verticalFit: true,
+            },
+            gallery: {
+                enabled: true
+            },
+            zoom: {
+                enabled: true,
+                duration: 300, // don't foget to change the duration also in CSS
+                opener: function(element) {
+                    return element.find('img');
+                }
+            }
+            
+        });
+        $('.zoom-gallery2').magnificPopup({
+            delegate: 'a',
+            type: 'image',
+            closeOnContentClick: false,
+            closeBtnInside: false,
+            mainClass: 'mfp-with-zoom mfp-img-mobile',
+            image: {
+                verticalFit: true,
+            },
+            gallery: {
+                enabled: true
+            },
+            zoom: {
+                enabled: true,
+                duration: 300, // don't foget to change the duration also in CSS
+                opener: function(element) {
+                    return element.find('img');
+                }
+            }
+        });
+        $('.zoom-gallery3').magnificPopup({
+            delegate: 'a',
+            type: 'image',
+            closeOnContentClick: false,
+            closeBtnInside: false,
+            mainClass: 'mfp-with-zoom mfp-img-mobile',
+            image: {
+                verticalFit: true,
+            },
+            gallery: {
+                enabled: true
+            },
+            zoom: {
+                enabled: true,
+                duration: 300, // don't foget to change the duration also in CSS
+                opener: function(element) {
+                    return element.find('img');
+                }
+            }
+        });
+
         // fivebold-click
         $(".fivebold-click").click(function (e) {    
             var $parent = $(this).parents()
@@ -24,6 +95,7 @@ const ScaneClick = (() => {
         var $sectionPemerintahan = $("#sectionPemerintahan");
 
         $(".clickUmkm").click(function (e) {    
+            fullpage_api.setAllowScrolling(false);
             $backB2b.fadeIn();            
             $landing.velocity({
                 opacity: "0",
@@ -40,6 +112,7 @@ const ScaneClick = (() => {
             })
         });
         $(".clickKorporasi").click(function (e) {    
+            fullpage_api.setAllowScrolling(false);
             $backB2b.fadeIn();            
             $landing.velocity({
                 opacity: "0",
@@ -56,6 +129,7 @@ const ScaneClick = (() => {
             })
         });
         $(".clickPemerintahan").click(function (e) {    
+            fullpage_api.setAllowScrolling(false);
             $backB2b.fadeIn();            
             $landing.velocity({
                 opacity: "0",
@@ -72,6 +146,7 @@ const ScaneClick = (() => {
             })
         });
         $backB2b.click(function (e) {    
+            fullpage_api.setAllowScrolling(true);
             $backB2b.fadeOut();
             $("#sectionUmkm, #sectionKorporasi, #sectionPemerintahan").velocity({
                 opacity: "0",

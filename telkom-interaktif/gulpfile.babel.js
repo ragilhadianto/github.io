@@ -90,6 +90,7 @@ const DEV_PATH = {
         `${SRC}/scripts/vendors/fullpage.min.js`,
         `${SRC}/scripts/vendors/fullpage.extensions.min.js`,
         `${SRC}/scripts/vendors/velocity.min.js`,
+        `${SRC}/scripts/vendors/slick.min.js`,
         `${SRC}/scripts/vendors/*.js`,
       ],
       concat: "vendor.js",

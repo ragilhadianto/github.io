@@ -162,16 +162,18 @@ const ScaneGlobal = (() => {
               else if (origin.index == 11 && direction == 'down') {
                 console.log("ini dari ="+origin.index);
                 $(".static-bg-1").addClass("playdown6"); 
-                
+                //$(".backB2b ").fadeIn(); 
               }
               else if (origin.index == 12 && direction == 'up') {   
                 console.log("ini dari ="+origin.index);
                 $(".static-bg-1").removeClass("playdown6"); 
+                $(".backB2b ").fadeOut(); 
                 
               }
               else if (origin.index == 12 && direction == 'down') {
                 console.log("ini dari ="+origin.index);
                 $(".static-bg-1").addClass("playdown7"); 
+                $(".backB2b ").fadeOut(); 
                 
               }
               else if (origin.index == 13 && direction == 'up') {   

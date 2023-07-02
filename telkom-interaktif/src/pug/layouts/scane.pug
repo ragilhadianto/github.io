@@ -1,11 +1,11 @@
 //- scane1
 div(class="section section1")
     div(class="flex h-full w-full items-center justify-center ")
-            div(class="container relative px-20")
-                div(class="flex items-center gap-10")
-                    div(class="telkom-hub transition-all")
+            div(class="container relative px-10 lg:px-20")
+                div(class="flex flex-col-reverse lg:flex-row items-center gap-10")
+                    div(class="telkom-hub transition-all px-5 lg:px-0")
                         img(src="assets/images/telkom-hub.png", alt="")
-                    div(class="right-0 top-0 transition-all")
+                    div(class="right-0 top-0 transition-all w-[50%] lg:w-auto")
                         img(src="assets/images/58-logo.png", alt="")
 
 //- scane2
@@ -40,9 +40,9 @@ div(class="section section6")
         div(class="container mt-40")
             h3(class="font-bold text-4xl text-center mb-14 uppercase") <span class="text-red1 ">Tiga</span> Pilar Bisnis Telkom
             div(class="flex gap-14 justify-center")
-                img(src="assets/images/digital-connectivity.png", alt="")
-                img(src="assets/images/digital-platform.png", alt="")
-                img(src="assets/images/digital-service.png", alt="")
+                img(class="bounce-1" src="assets/images/digital-connectivity.png", alt="")
+                img(class="bounce-2" src="assets/images/digital-platform.png", alt="")
+                img(class="bounce-3" src="assets/images/digital-service.png", alt="")
 
 //- scane7
 div(class="section section7")
@@ -59,7 +59,7 @@ div(class="section section8")
         div(class="container mt-10")
             h3(class="font-bold text-4xl text-center mb-14 uppercase") <span class="text-red1 ">Five Bold </span> Moves
 
-            div(class="grid grid-cols-5 gap-5")
+            div(class="grid grid-cols-5")
                 div(class="px-5 text-center")
                     div(class="flex justify-center")
                         img(src="assets/images/icon-fmc.png", alt="")
@@ -118,7 +118,7 @@ div(class="section section9")
 
             div(class="grid grid-cols-5 gap-2 section-inner mx-auto mt-10")
                 div(class="px-5 text-center")
-                    div(class="flex justify-center border-2 border-dashed border-red1 rounded-xl")
+                    div(class="flex justify-center border-animation border-red1 rounded-lg")
                         img(src="assets/images/icon-fmc.png", alt="")
 
                 div(class="px-5 text-center")
@@ -130,7 +130,7 @@ div(class="section section9")
                         img(src="assets/images/icon-dtc.png", alt="")
                     
                 div(class="px-5 text-center")
-                    div(class="flex justify-center border-2 border-dashed border-red1 rounded-xl")
+                    div(class="flex justify-center border-animation border-red1 rounded-lg")
                         img(src="assets/images/icon-b2b.png", alt="")
 
                 div(class="px-5 text-center")
@@ -162,7 +162,7 @@ div(class="section section12")
 //- scane13
 div(class="section section13") 
     div(class="flex h-full w-full items-center justify-center ")
-        div(class="container mt-20")
+        div(class="container mt-16")
 
             div(class="relative")
                 //- landing sectionB2b
@@ -176,13 +176,13 @@ div(class="section section13")
                         p Ke depannya, untuk memperluas penetrasi ke pasar regional dan memperkuat strategi business-to-business (B2B), Telkom akan <span class="text-red1 font-bold ">fokus</span> ke <span class="text-red1 font-bold ">tiga</span> segmen utama, diantaranya:
 
                     div(class="px-30 flex gap-x-20 justify-center")
-                        div(class="text-center flex justify-center flex-col items-center cursor-pointer clickUmkm")
+                        div(class="text-center flex justify-center flex-col items-center cursor-pointer hoverScale clickUmkm")
                             img(class="w-[65px]" src="assets/images/icon-umkm.svg", alt="") 
                             h5(class="font-bold mt-2") UMKM
-                        div(class="text-center flex justify-center flex-col items-center cursor-pointer clickKorporasi")
+                        div(class="text-center flex justify-center flex-col items-center cursor-pointer hoverScale clickKorporasi")
                             img(class="w-[65px]" src="assets/images/icon-korporasi.svg", alt="") 
                             h5(class="font-bold mt-2") Korporasi
-                        div(class="text-center flex justify-center flex-col items-center cursor-pointer clickPemerintahan")
+                        div(class="text-center flex justify-center flex-col items-center cursor-pointer hoverScale clickPemerintahan")
                             img(class="w-[65px]" src="assets/images/icon-pemerintahan.svg", alt="") 
                             h5(class="font-bold mt-2") Pemerintahan
 
@@ -198,9 +198,16 @@ div(class="section section13")
                         img(class="w-[65px]" src="assets/images/icon-umkm.svg", alt="") 
                         h5(class="font-bold mt-2") Segmen UMKM
                     div
-                        div(class="SliderWrap w-[500px] mx-auto")
-                            div
-                                img(src="assets/images/fotoslider.jpg", alt="") 
+                        div(class="relative SliderWrap mx-auto")
+                            div(class="slick-js zoom-gallery")
+                                a(href="assets/images/fotoslider-zoom.jpg")
+                                    img(class="w-full" src="assets/images/fotoslider.jpg", alt="")  
+                                a(href="assets/images/fotoslider-zoom.jpg")
+                                    img(class="w-full" src="assets/images/fotoslider.jpg", alt="")  
+                                a(href="assets/images/fotoslider-zoom.jpg")
+                                    img(class="w-full" src="assets/images/fotoslider.jpg", alt="")  
+                            div(class="absolute right-[25px] top-[45px] pointer-events-none	")     
+                                img(src="assets/images/icon-zoom.svg", alt="")
                         div 
                             p(class="text-base") Memperkuat UMKM untuk menjadi jawara yang berdaya saing global melalui dukungan infrastruktur dan platform digital,  pengayaan manajemen channel serta, menghubungkan kerja sama dengan partner potensial di tingkat nasional dan global, sehingga UMKM bisa naik kelas dan ekonomi digital Indonesia dapat terus terakselerasi ke depannya.
                             
@@ -210,9 +217,16 @@ div(class="section section13")
                         img(class="w-[65px]" src="assets/images/icon-korporasi.svg", alt="") 
                         h5(class="font-bold mt-2") Segmen Korporasi
                     div
-                        div(class="SliderWrap w-[500px] mx-auto")
-                            div
-                                img(src="assets/images/fotoslider2.jpg", alt="") 
+                        div(class="relative SliderWrap mx-auto")
+                            div(class="slick-js zoom-gallery2")
+                                a(href="assets/images/fotoslider2-zoom.jpg")
+                                    img(class="w-full" src="assets/images/fotoslider2.jpg", alt="")  
+                                a(href="assets/images/fotoslider2-zoom.jpg")
+                                    img(class="w-full" src="assets/images/fotoslider2.jpg", alt="")  
+                                a(href="assets/images/fotoslider2-zoom.jpg")
+                                    img(class="w-full" src="assets/images/fotoslider2.jpg", alt="")  
+                            div(class="absolute right-[25px] top-[45px] pointer-events-none	")     
+                                img(src="assets/images/icon-zoom.svg", alt="")
                         div 
                             p(class="text-base") Telkom fokus pada penyediaan solusi digital, baik konektivitas maupun platform yang mendukung aktivitas bisnis perusahaan/korporasi menjadi lebih efektif dan efisien, menciptakan hub ekosistem digital, serta mengembangkan model bisnis untuk kerja sama yang saling menguntungkan.
 
@@ -222,9 +236,16 @@ div(class="section section13")
                         img(class="w-[65px]" src="assets/images/icon-pemerintahan.svg", alt="") 
                         h5(class="font-bold mt-2") Segmen Pemerintahan
                     div
-                        div(class="SliderWrap w-[500px] mx-auto")
-                            div
-                                img(src="assets/images/fotoslider3.jpg", alt="") 
+                        div(class="relative SliderWrap mx-auto")
+                            div(class="slick-js zoom-gallery3")
+                                a(href="assets/images/fotoslider3-zoom.jpg")
+                                    img(class="w-full" src="assets/images/fotoslider3.jpg", alt="")  
+                                a(href="assets/images/fotoslider3-zoom.jpg")
+                                    img(class="w-full" src="assets/images/fotoslider3.jpg", alt="")  
+                                a(href="assets/images/fotoslider3-zoom.jpg")
+                                    img(class="w-full" src="assets/images/fotoslider3.jpg", alt="")  
+                            div(class="absolute right-[25px] top-[45px] pointer-events-none	")     
+                                img(src="assets/images/icon-zoom.svg", alt="")
                         div 
                             p(class="text-base") Fokusnya adalah pada penyediaan solusi digital untuk mendukung percepatan digitalisasi pemerintahan, salah satunya dengan mencantumkan penawaran produk Telkom di sistem pengadaan elektronik pemerintah. Strategi solusi digital juga termasuk membangun kerja sama strategis dan optimalisasi utilitas platform digital Telkom, sehingga dapat mendukung pelayanan yang lebih baik lagi bagi masyarakat.
     
