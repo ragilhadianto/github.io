@@ -1,0 +1,24 @@
+extends ../templates/default.pug
+
+//- Head
+block siteHeader
+  -
+    siteTitle = '';
+
+//- Body
+block siteContent
+
+  //- section__fix
+  include ../layouts/scane-fix.pug
+
+  //- section__static
+  include ../layouts/scane-static.pug
+
+  <div id="fullpage">
+      //- section
+      include ../layouts/scane.pug
+  </div>
+  
+
+  =`\n\n`
+

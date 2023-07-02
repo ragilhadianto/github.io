@@ -1,0 +1,600 @@
+/* ==========================================================================
+   Grid System
+   ========================================================================== */
+   .c6-container {
+    width: 100%;
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @media only screen and (max-width: 1234px) {
+    .c6-container {
+      max-width: initial;
+      padding-left: 32px;
+      padding-right: 32px;
+    }
+  }
+  @media only screen and (max-width: 767.98px) {
+    .c6-container {
+      padding-left: 24px;
+      padding-right: 24px;
+    }
+  }
+  
+  /* ==========================================================================
+     Elements Btn
+     ========================================================================== */
+  #c6-main-site .c6-btn {
+    border: 0;
+    outline: 0;
+    display: inline-block;
+    vertical-align: middle;
+    background-color: transparent;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    /* modifier ----------------------------------------------------------------- */
+  }
+  #c6-main-site .c6-btn--buy {
+    padding-top: 4px;
+    padding-bottom: 4px;
+    min-width: 76px;
+    background-color: #017dc5;
+    -webkit-border-radius: 17px;
+    -moz-border-radius: 17px;
+    border-radius: 17px;
+    font-size: 16px;
+    line-height: 24px;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+  #c6-main-site .c6-btn--buy:hover {
+    background-color: #0064a9;
+  }
+  #c6-main-site .c6-btn--primary {
+    font-size: 50px;
+    line-height: 60px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    padding: 20px;
+    font-weight: 500;
+    max-width: 576px;
+    width: 100%;
+  }
+  @media only screen and (max-width: 991.98px) {
+    #c6-main-site .c6-btn--primary {
+      font-size: 40px;
+      line-height: 44px;
+      max-width: 480px;
+      padding: 16px;
+    }
+  }
+  @media only screen and (max-width: 767.98px) {
+    #c6-main-site .c6-btn--primary {
+      font-size: 30px;
+      line-height: 35px;
+      line-height: 36px;
+      max-width: 342px;
+      padding: 14px;
+    }
+  }
+  @media only screen and (max-width: 575.86px) {
+    #c6-main-site .c6-btn--primary {
+      max-width: 264px;
+      padding: 12px;
+    }
+  }
+  #c6-main-site .c6-btn--primary::before,
+  #c6-main-site .c6-btn--primary::after {
+    content: "";
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+  #c6-main-site .c6-btn--primary::before {
+    background: -webkit-linear-gradient(
+      165deg,
+      rgb(158, 27, 225) 0%,
+      rgb(49, 140, 255) 100%
+    );
+    background: -moz-linear-gradient(
+      165deg,
+      rgb(158, 27, 225) 0%,
+      rgb(49, 140, 255) 100%
+    );
+    background: -o-linear-gradient(
+      165deg,
+      rgb(158, 27, 225) 0%,
+      rgb(49, 140, 255) 100%
+    );
+    background: linear-gradient(
+      285deg,
+      rgb(158, 27, 225) 0%,
+      rgb(49, 140, 255) 100%
+    );
+  }
+  #c6-main-site .c6-btn--primary::after {
+    opacity: 0;
+    -webkit-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    background: -webkit-linear-gradient(
+      165deg,
+      rgb(49, 140, 255) 0%,
+      rgb(49, 140, 255) 100%
+    );
+    background: -moz-linear-gradient(
+      165deg,
+      rgb(49, 140, 255) 0%,
+      rgb(49, 140, 255) 100%
+    );
+    background: -o-linear-gradient(
+      165deg,
+      rgb(49, 140, 255) 0%,
+      rgb(49, 140, 255) 100%
+    );
+    background: linear-gradient(
+      285deg,
+      rgb(49, 140, 255) 0%,
+      rgb(49, 140, 255) 100%
+    );
+  }
+  #c6-main-site .c6-btn--primary:hover::after {
+    opacity: 1;
+  }
+  #c6-main-site .c6-btn--secondary {
+    font-size: 35px;
+    line-height: 40px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    padding: 12px 20px;
+    font-weight: 500;
+    max-width: 300px;
+    width: 100%;
+  }
+  @media only screen and (max-width: 1440px) {
+    #c6-main-site .c6-btn--secondary {
+      font-size: 30px;
+      line-height: 35px;
+      max-width: 280px;
+    }
+  }
+  @media only screen and (max-width: 1199.98px) {
+    #c6-main-site .c6-btn--secondary {
+      font-size: 28px;
+      line-height: 35px;
+      max-width: 260px;
+    }
+  }
+  @media only screen and (max-width: 991.98px) {
+    #c6-main-site .c6-btn--secondary {
+      font-size: 24px;
+      line-height: 32px;
+      max-width: 240px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+  }
+  @media only screen and (max-width: 767.98px) {
+    #c6-main-site .c6-btn--secondary {
+      font-size: 20px;
+      line-height: 24px;
+      padding-top: 8px;
+      padding-bottom: 8px;
+      max-width: 160px;
+    }
+  }
+  #c6-main-site .c6-btn--secondary::before,
+  #c6-main-site .c6-btn--secondary::after {
+    content: "";
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+  #c6-main-site .c6-btn--secondary::before {
+    background: -webkit-linear-gradient(
+      165deg,
+      rgb(158, 27, 225) 0%,
+      rgb(49, 140, 255) 100%
+    );
+    background: -moz-linear-gradient(
+      165deg,
+      rgb(158, 27, 225) 0%,
+      rgb(49, 140, 255) 100%
+    );
+    background: -o-linear-gradient(
+      165deg,
+      rgb(158, 27, 225) 0%,
+      rgb(49, 140, 255) 100%
+    );
+    background: linear-gradient(
+      285deg,
+      rgb(158, 27, 225) 0%,
+      rgb(49, 140, 255) 100%
+    );
+  }
+  #c6-main-site .c6-btn--secondary::after {
+    opacity: 0;
+    -webkit-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    background: -webkit-linear-gradient(
+      165deg,
+      rgb(49, 140, 255) 0%,
+      rgb(49, 140, 255) 100%
+    );
+    background: -moz-linear-gradient(
+      165deg,
+      rgb(49, 140, 255) 0%,
+      rgb(49, 140, 255) 100%
+    );
+    background: -o-linear-gradient(
+      165deg,
+      rgb(49, 140, 255) 0%,
+      rgb(49, 140, 255) 100%
+    );
+    background: linear-gradient(
+      285deg,
+      rgb(49, 140, 255) 0%,
+      rgb(49, 140, 255) 100%
+    );
+  }
+  #c6-main-site .c6-btn--secondary:hover::after {
+    opacity: 1;
+  }
+  
+  /* ==========================================================================
+     Elements Legion Title
+     ========================================================================== */
+  .c6-legion-ttl {
+    font-size: 80px;
+    line-height: 1;
+    font-weight: 500;
+    letter-spacing: -2px;
+  }
+  @media only screen and (max-width: 1440px) {
+    .c6-legion-ttl {
+      font-size: 72px;
+      line-height: 1;
+    }
+  }
+  @media only screen and (max-width: 1199.98px) {
+    .c6-legion-ttl {
+      font-size: 68px;
+      line-height: 1;
+    }
+  }
+  @media only screen and (max-width: 991.98px) {
+    .c6-legion-ttl {
+      font-size: 56px;
+      line-height: 64px;
+    }
+  }
+  @media only screen and (max-width: 767.98px) {
+    .c6-legion-ttl {
+      font-size: 48px;
+      line-height: 64px;
+      line-height: 55px;
+    }
+  }
+  @media only screen and (max-width: 320px) {
+    .c6-legion-ttl {
+      font-size: 40px;
+      line-height: 44px;
+    }
+  }
+  
+  /* ==========================================================================
+  Layout: Power Your Play
+  ========================================================================== */
+  .c6-power-your-play {
+    position: relative;
+    overflow: hidden;
+    padding-top: 48px;
+    padding-bottom: 200px;
+    background: -webkit-gradient(
+      linear,
+      right top,
+      left top,
+      from(#974e85),
+      color-stop(#318cff),
+      to(#6ba1e4)
+    );
+    background: -webkit-linear-gradient(right, #974e85, #318cff, #6ba1e4);
+    background: -moz-linear-gradient(right, #974e85, #318cff, #6ba1e4);
+    background: -o-linear-gradient(right, #974e85, #318cff, #6ba1e4);
+    background: linear-gradient(-90deg, #974e85, #318cff, #6ba1e4);
+    -webkit-background-size: 400% 400%;
+    -moz-background-size: 400% 400%;
+    background-size: 400% 400%;
+    -webkit-animation: animeBgGradient 15s ease infinite;
+    -moz-animation: animeBgGradient 15s ease infinite;
+    -o-animation: animeBgGradient 15s ease infinite;
+    animation: animeBgGradient 15s ease infinite;
+  }
+  @media only screen and (max-width: 1199.98px) {
+    .c6-power-your-play {
+      padding-bottom: 120px;
+    }
+  }
+  @media only screen and (max-width: 991.98px) {
+    .c6-power-your-play {
+      padding-bottom: 100px;
+    }
+  }
+  @media only screen and (max-width: 767.98px) {
+    .c6-power-your-play {
+      padding-bottom: 80px;
+    }
+  }
+  .c6-power-your-play::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: -webkit-gradient(
+      linear,
+      left bottom,
+      left top,
+      color-stop(11%, rgba(255, 255, 255, 0)),
+      to(rgb(0, 0, 0))
+    );
+    background: -webkit-linear-gradient(
+      bottom,
+      rgba(255, 255, 255, 0) 11%,
+      rgb(0, 0, 0) 100%
+    );
+    background: -moz-linear-gradient(
+      bottom,
+      rgba(255, 255, 255, 0) 11%,
+      rgb(0, 0, 0) 100%
+    );
+    background: -o-linear-gradient(
+      bottom,
+      rgba(255, 255, 255, 0) 11%,
+      rgb(0, 0, 0) 100%
+    );
+    background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0) 11%,
+      rgb(0, 0, 0) 100%
+    );
+    z-index: 1;
+  }
+  .c6-power-your-play::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      color-stop(11%, rgba(255, 255, 255, 0)),
+      to(rgb(0, 0, 0))
+    );
+    background: -webkit-linear-gradient(
+      top,
+      rgba(255, 255, 255, 0) 11%,
+      rgb(0, 0, 0) 100%
+    );
+    background: -moz-linear-gradient(
+      top,
+      rgba(255, 255, 255, 0) 11%,
+      rgb(0, 0, 0) 100%
+    );
+    background: -o-linear-gradient(
+      top,
+      rgba(255, 255, 255, 0) 11%,
+      rgb(0, 0, 0) 100%
+    );
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0) 11%,
+      rgb(0, 0, 0) 100%
+    );
+    z-index: 1;
+  }
+  .c6-power-your-play .c6-container {
+    max-width: 1495px;
+    position: relative;
+    z-index: 2;
+  }
+  @media only screen and (max-width: 1575px) {
+    .c6-power-your-play .c6-container {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+  }
+  @media only screen and (max-width: 991.98px) {
+    .c6-power-your-play .c6-container {
+      padding-left: 32px;
+      padding-right: 32px;
+    }
+  }
+  @media only screen and (max-width: 767.98px) {
+    .c6-power-your-play .c6-container {
+      padding-left: 24px;
+      padding-right: 24px;
+    }
+  }
+  .c6-power-your-play .c6-legion-ttl {
+    margin-bottom: 0;
+  }
+  @media only screen and (max-width: 767.98px) {
+    .c6-power-your-play .c6-legion-ttl {
+      font-size: 45px;
+      line-height: 56px;
+    }
+  }
+  @media only screen and (max-width: 575.86px) {
+    .c6-power-your-play .c6-legion-ttl {
+      font-size: 40px;
+      line-height: 44px;
+    }
+  }
+  @media only screen and (max-width: 320px) {
+    .c6-power-your-play .c6-legion-ttl {
+      font-size: 36px;
+      line-height: 42px;
+    }
+  }
+  .c6-power-your-play__head {
+    margin-bottom: 64px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+    -webkit-align-items: baseline;
+    -moz-box-align: baseline;
+    -ms-flex-align: baseline;
+    align-items: baseline;
+  }
+  @media only screen and (max-width: 1199.98px) {
+    .c6-power-your-play__head {
+      margin-bottom: 56px;
+    }
+  }
+  @media only screen and (max-width: 991.98px) {
+    .c6-power-your-play__head {
+      margin-bottom: 48px;
+    }
+  }
+  @media only screen and (max-width: 767.98px) {
+    .c6-power-your-play__head {
+      margin-bottom: 40px;
+    }
+  }
+  @media only screen and (max-width: 575.86px) {
+    .c6-power-your-play__head {
+      margin-bottom: 32px;
+    }
+  }
+  @media only screen and (max-width: 767.98px) {
+    .c6-power-your-play__body {
+      margin-bottom: 32px;
+    }
+  }
+  .c6-power-your-play__box {
+    width: 264px;
+    background-color: #0d0c10;
+    -webkit-border-radius: 21px;
+    -moz-border-radius: 21px;
+    border-radius: 21px;
+  }
+  .c6-power-your-play__img {
+    position: relative;
+    padding-bottom: 100%;
+  }
+  .c6-power-your-play__img__el {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: contain;
+    object-fit: contain;
+    -webkit-border-radius: 21px 21px 0 0;
+    -moz-border-radius: 21px 21px 0 0;
+    border-radius: 21px 21px 0 0;
+  }
+  .c6-power-your-play__txt {
+    padding: 0 24px 30px;
+  }
+  .c6-power-your-play__name {
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 400 !important;
+    letter-spacing: -0.6px;
+    white-space: initial;
+    margin-bottom: 16px !important;
+  }
+  .c6-power-your-play__name strong {
+    font-weight: 500;
+  }
+  .c6-power-your-play .owl-carousel .owl-stage-outer {
+    overflow: initial;
+  }
+  .c6-power-your-play .owl-carousel .owl-item:last-child {
+    margin-right: 0;
+  }
+  
+  @-webkit-keyframes animeBgGradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  @-moz-keyframes animeBgGradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  @-o-keyframes animeBgGradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  @keyframes animeBgGradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
