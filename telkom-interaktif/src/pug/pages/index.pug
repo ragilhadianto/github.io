@@ -8,12 +8,33 @@ block siteHeader
 //- Body
 block siteContent
 
-  //- section__fix
+
+  ='\n\n' 
+  // preloader
+
+  <div class="preloader transition-all duration-700">
+      <div class="preloaderWrap" id="animationPreload">
+          <div class="flex h-full w-full items-center">
+              <div class="panel">
+                  <div class="cards">
+                      <div class="front"></div>
+                      <div class="back"></div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div> 
+  
+  ='\n\n' 
+  // section__fix
   include ../layouts/scane-fix.pug
 
-  //- section__static
+  ='\n\n' 
+  // section__static
   include ../layouts/scane-static.pug
 
+  ='\n\n' 
+  // fullpage
   <div id="fullpage">
       //- section
       include ../layouts/scane.pug

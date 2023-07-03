@@ -86,6 +86,9 @@ const ScaneClick = (() => {
             var $parent = $(this).parents()
             $(this).parents().children(".fivebol-desc").slideToggle("hidden");
         });
+        $(".fivebol-desc img").click(function (e) {    
+            $(".fivebol-desc").fadeOut();
+        });
         
         // sectionB2b
         var $backB2b = $(".backB2b");
@@ -93,10 +96,12 @@ const ScaneClick = (() => {
         var $sectionUmkm = $("#sectionUmkm");
         var $sectionKorporasi = $("#sectionKorporasi");
         var $sectionPemerintahan = $("#sectionPemerintahan");
+        var $staticimg1 = $(".static-img-1");
 
         $(".clickUmkm").click(function (e) {    
             fullpage_api.setAllowScrolling(false);
-            $backB2b.fadeIn();            
+            $backB2b.fadeIn('playdown13');            
+            $staticimg1.addClass('playdown13');            
             $landing.velocity({
                 opacity: "0",
                 top: "-100%",
@@ -113,6 +118,7 @@ const ScaneClick = (() => {
         });
         $(".clickKorporasi").click(function (e) {    
             fullpage_api.setAllowScrolling(false);
+            $staticimg1.addClass('playdown13'); 
             $backB2b.fadeIn();            
             $landing.velocity({
                 opacity: "0",
@@ -130,6 +136,7 @@ const ScaneClick = (() => {
         });
         $(".clickPemerintahan").click(function (e) {    
             fullpage_api.setAllowScrolling(false);
+            $staticimg1.addClass('playdown13'); 
             $backB2b.fadeIn();            
             $landing.velocity({
                 opacity: "0",
@@ -147,6 +154,7 @@ const ScaneClick = (() => {
         });
         $backB2b.click(function (e) {    
             fullpage_api.setAllowScrolling(true);
+            $staticimg1.removeClass('playdown13');
             $backB2b.fadeOut();
             $("#sectionUmkm, #sectionKorporasi, #sectionPemerintahan").velocity({
                 opacity: "0",

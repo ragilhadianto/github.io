@@ -4,6 +4,89 @@
 
 @layer components {
 
+  .preloader {
+    top: 0;
+    background: #F2F1F1;
+    height: 100%;
+    width: 100%;
+    z-index: 1001;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    overflow: hidden; }
+    .preloaderWrap {
+      width: 200px; }
+      @media (min-width: 768px) {
+        .preloaderWrap {
+          width: 120px; } }
+  
+  /* main container */
+  .panel {
+    width: 100px;
+    height: 100px;
+    margin: 100px auto;
+    position: relative;
+    perspective: 1000;
+    -webkit-perspective: 1000; }
+  
+  /* prevent animation on hover */
+  .panel .cards {
+    animation: CardFlip 5s infinite;
+    -webkit-animation: CardFlip 5s infinite;
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d; }
+  
+  /* styling divs to be 100% fit */
+
+  
+  /* cards container */
+  .panel .cards {
+    transition: all 1s linear;
+    -webkit-transition: all 1s linear; }
+  
+  /* front card */
+  .panel .cards .front {
+    z-index: 2;
+    background-image: url("../images/preload-telkom.jpg");
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden; }
+  
+  /* back card */
+  .panel .cards .back {
+    z-index: 1;
+    background-image: url("../images/preload-58.jpg");
+    transform: scale(-1, 1);
+    -webkit-transform: scale(-1, 1); }
+  
+
+    .panel .cards,
+    .panel .front,
+    .panel .back {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0; 
+      background-size: 100%;
+      background-repeat: no-repeat;
+    }
+
+  @keyframes CardFlip {
+    0% {
+      -webkit-transform: rotateY(0deg); }
+    50% {
+      -webkit-transform: rotateY(180deg); }
+    100% {
+      -webkit-transform: rotateY(360deg); } }
+  
+  @-webkit-keyframes CardFlip {
+    0% {
+      -webkit-transform: rotateY(0deg); }
+    50% {
+      -webkit-transform: rotateY(180deg); }
+    100% {
+      -webkit-transform: rotateY(360deg); } }
+
     *,
     *::after,
     *::before {
@@ -118,7 +201,7 @@
     }
     
     .container{
-      @apply mx-auto;
+      @apply mx-auto px-5 lg:px-0;
     }
 
     .moveLeft {
@@ -175,30 +258,45 @@
     .bg-text1{
       background-image: url(../images/bg-text1.png);
       background-size: 100% 100%;
-      @apply bg-no-repeat p-[55px];
+      @apply bg-no-repeat py-[40px] px-[20px] lg:p-[55px];
+    }
+
+    .fivebol-desc{
+      @apply absolute top-8 lg:top-[100%] left-0 right-0 m-auto w-full p-5 bg-grey1 lg:bg-transparent;
+    }
+
+    .fivebol-desc img{
+      @apply absolute lg:hidden right-2 top-2;
     }
 
 
     /* slider */
     .SliderWrap{
       background-image: url('../images/box.png');
-      @apply bg-no-repeat rounded-xl bg-contain px-5 py-10 w-[600px];
+      background-size: 100% 100%;
+      @apply bg-no-repeat rounded-xl px-3 lg:px-5 py-5 lg:py-10 w-full lg:w-[600px] mb-3;
     }
-    .slick-arrow{
-      width: 30px;
-      height: 30px;
-      @apply bg-no-repeat;
+    .slick-slide {
+        height: 250px;
+        @apply overflow-hidden;
+    }
+    .slick-slide img{
+        @apply h-full w-full object-cover;
     }
     .slick-arrow:before{
       content: '';
     }
     .slick-next{
       background-image: url('../images/icon-slick-left.svg') !important;
-      right: -60px;
+      @apply right-[-10px] lg:right-[-60px];
     }
     .slick-prev{
       background-image: url('../images/icon-slick-right.svg') !important;
-      left: -60px;
+      @apply left-[-10px] lg:left-[-60px];
+    }
+    .slick-arrow{
+      background-size: 100% !important;
+      @apply bg-no-repeat w-[20px] lg:w-[30px] h-[20px] lg:h-[30px] z-20;
     }
     .slick-disabled{
       display: none !important;
@@ -215,77 +313,83 @@
 
     /* playdown  */
     .static-img-1.playdown .logo-58{
-      @apply lg:w-[200px];
+      @apply top-[50px] lg:top-[20px] w-[70px] lg:w-[200px];
+    }
+ 
+    .static-img-1.playdown2 .logo-58{
+      @apply  lg:w-[110px];
+    }    
+
+    .static-img-1.playdown13 .logo-58{
+      @apply hidden lg:block
     }
 
     .static-bg-1.playdown .bg-left{
-      left: 0;
+      @apply left-[-70%] lg:left-0;
     }
 
     .static-bg-1.playdown .bg-right{
-      right: 0;
+      @apply right-[-70%] lg:right-0;
     }
     
     .static-bg-1.playdown2 .bg-left{
-      left: -15%;
+      @apply left-[-90%] lg:left-[-15%];
     }
 
     .static-bg-1.playdown2 .bg-right{
-      right: -15%;
+      @apply right-[-90%] lg:right-[-15%];
     }
 
     .static-bg-1.playdown3 .bg-left{
-      left: -25%;
+      @apply left-[-110%] lg:left-[-25%];
     }
 
     .static-bg-1.playdown3 .bg-right{
-      right: -25%;
+      @apply right-[-110%] lg:right-[-25%];
     }
 
     .static-bg-1.playdown4 .bg-left{
-      left: -15%;
+      @apply left-[-95%] lg:left-[-15%];
     }
 
     .static-bg-1.playdown4 .bg-right{
-      right: -15%;
-    }
+      @apply right-[-95%] lg:right-[-15%];
+    } 
 
     .static-bg-1.playdown5 .bg-left{
-      left: -30%;
+      @apply left-[-110%] lg:left-[-30%];
     }
     
     .static-bg-1.playdown5 .bg-right{
-      right: -30%;
+      @apply right-[-110%]  lg:right-[-30%];
     }
 
     .static-bg-1.playdown6 .bg-left{
-      left: -10%;
+      @apply left-[-95%] lg:left-[-10%];
     }
 
     .static-bg-1.playdown6 .bg-right{
-      right: -10%;
+      @apply right-[-95%] lg:right-[-10%];
     }
 
     .static-bg-1.playdown7 .bg-left{
-      left: -30%;
+      @apply left-[-110%] lg:left-[-30%];
     }
     
     .static-bg-1.playdown7 .bg-right{
-      right: -30%;
+      @apply right-[-110%] lg:right-[-30%];
     }
 
     .static-bg-1.playdown8 .bg-left{
-      left: -22%;
+      @apply left-[-100%] lg:left-[-22%];
     }
 
     .static-bg-1.playdown8 .bg-right{
-      right: -22%;
+      @apply right-[-100%] lg:right-[-22%];
     }
 
-    /* static img */
-    .static-img-1.playdown2 .logo-58{
-      @apply lg:w-[120px];
-    }
+
+
 
 
     /* hover state */

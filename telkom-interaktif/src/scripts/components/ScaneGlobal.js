@@ -8,10 +8,25 @@ const ScaneGlobal = (() => {
 
   const handleScaneGlobal = () => {
 
+        $(window).on('load', function () {
+          fullpage_api.setAllowScrolling(false);
+
+          setTimeout(function () {
+              $(".preloader").addClass("moveUp");
+              $("#animationPreload").fadeOut(500, function () {
+                  $('.preloader').remove();
+                  fullpage_api.setAllowScrolling(true);
+              })
+          }, 1000);
+      })
+
       $(document).ready(function() {
+        
+        
 
         new fullpage('#fullpage', {
           //options here
+          
           autoScrolling: true,
           scrollHorizontally: true,
           //navigation: true,
