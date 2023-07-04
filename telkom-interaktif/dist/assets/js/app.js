@@ -269,7 +269,8 @@ exports["default"] = void 0;
 var ScaneGlobal = function () {
   var handleScaneGlobal = function handleScaneGlobal() {
     $(window).on('load', function () {
-      fullpage_api.setAllowScrolling(false);
+      //fullpage_api.setAllowScrolling(false);
+
       setTimeout(function () {
         $(".preloader").addClass("moveUp");
         $("#animationPreload").fadeOut(500, function () {
