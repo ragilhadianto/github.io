@@ -9,7 +9,7 @@ const ScaneGlobal = (() => {
   const handleScaneGlobal = () => {
 
         $(window).on('load', function () {
-          fullpage_api.setAllowScrolling(false);
+          //fullpage_api.setAllowScrolling(false);
 
           setTimeout(function () {
               $(".preloader").addClass("moveUp");
