@@ -476,6 +476,13 @@ const ScaneGlobal = (() => {
                     delay: 1000,
                     duration: 500
                 })
+                $(".clickheresinfo").velocity({
+                  opacity: "1",
+                  top: "0%",
+                }, {
+                    delay: 1250,
+                    duration: 500
+                })
               }
               else if (origin.index == 12 && direction == 'up') {   
                 console.log("ini dari ="+origin.index);
@@ -499,6 +506,13 @@ const ScaneGlobal = (() => {
                     duration: 0
                 })
                 $(".clickPemerintahan").velocity({
+                  opacity: "0",
+                  top: "100%",
+                }, {
+                    delay: 0,
+                    duration: 0
+                })
+                $(".clickheresinfo").velocity({
                   opacity: "0",
                   top: "100%",
                 }, {
