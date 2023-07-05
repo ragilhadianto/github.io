@@ -267,7 +267,7 @@
     }
 
     .fivebol-desc{
-      @apply absolute top-8 lg:top-[90%] left-0 right-0 m-auto w-full py-3 px-10 bg-grey1 lg:bg-transparent z-[90];
+      @apply absolute top-8 lg:top-[90%] left-0 right-0 m-auto w-full py-3 px-5 bg-grey1 lg:bg-transparent z-[90] lg:z-[-1];
     }
 
     .fivebol-desc img{
@@ -547,6 +547,17 @@
       @keyframes bounce-3 {
           0%   { transform: translateY(0); }
           70%  { transform: translateY(-35px); }
+          100% { transform: translateY(0); }
+      }
+      .bounce-4 {
+        animation-name: bounce-4;
+        animation-timing-function: linear;
+        animation-duration: 0.7s;
+        animation-iteration-count: infinite;
+      }
+      @keyframes bounce-4 {
+          0%   { transform: translateY(0); }
+          50%  { transform: translateY(-5px); }
           100% { transform: translateY(0); }
       }
 
