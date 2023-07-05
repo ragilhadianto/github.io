@@ -76,13 +76,6 @@ exports["default"] = void 0;
 var ScaneClick = function () {
   var handleScaneClick = function handleScaneClick() {
     $(document).ready(function () {
-      // slick-js
-      $('.slick-js').slick({
-        slidesToShow: 1,
-        dots: false,
-        infinite: false
-      });
-
       // magnific
       $('.zoom-gallery').magnificPopup({
         delegate: 'a',
@@ -169,76 +162,42 @@ var ScaneClick = function () {
         $backB2b.fadeIn('playdown13');
         $staticimg1.addClass('playdown13');
         $(".scroll-guide").fadeOut();
-        $landing.velocity({
-          opacity: "0",
-          top: "-100%"
-        }, {
-          delay: 0,
-          duration: 400,
-          begin: function begin() {
-            $sectionUmkm.velocity({
-              top: "0",
-              opacity: "1"
-            });
-          }
-        });
+        $landing.addClass('off');
+        $sectionUmkm.addClass('show');
+        $('.slick-js').slick('setPosition');
       });
       $(".clickKorporasi").click(function (e) {
         fullpage_api.setAllowScrolling(false);
         $staticimg1.addClass('playdown13');
         $(".scroll-guide").fadeOut();
         $backB2b.fadeIn();
-        $landing.velocity({
-          opacity: "0",
-          top: "-100%"
-        }, {
-          delay: 0,
-          duration: 400,
-          begin: function begin() {
-            $sectionKorporasi.velocity({
-              top: "0",
-              opacity: "1"
-            });
-          }
-        });
+        $landing.addClass('off');
+        $sectionKorporasi.addClass('show');
+        $('.slick-js').slick('setPosition');
       });
       $(".clickPemerintahan").click(function (e) {
         fullpage_api.setAllowScrolling(false);
         $(".scroll-guide").fadeOut();
+        $landing.addClass('off');
         $staticimg1.addClass('playdown13');
         $backB2b.fadeIn();
-        $landing.velocity({
-          opacity: "0",
-          top: "-100%"
-        }, {
-          delay: 0,
-          duration: 400,
-          begin: function begin() {
-            $sectionPemerintahan.velocity({
-              top: "0",
-              opacity: "1"
-            });
-          }
-        });
+        $sectionPemerintahan.addClass('show');
+        $('.slick-js').slick('setPosition');
       });
       $backB2b.click(function (e) {
         fullpage_api.setAllowScrolling(true);
         $(".scroll-guide").fadeIn();
         $staticimg1.removeClass('playdown13');
         $backB2b.fadeOut();
-        $("#sectionUmkm, #sectionKorporasi, #sectionPemerintahan").velocity({
-          opacity: "0",
-          top: "100%"
-        }, {
-          delay: 0,
-          duration: 400,
-          begin: function begin() {
-            $landing.velocity({
-              top: "0",
-              opacity: "1"
-            });
-          }
-        });
+        $("#sectionUmkm, #sectionKorporasi, #sectionPemerintahan").removeClass('show');
+        $landing.removeClass('off');
+      });
+
+      // slick-js
+      $('.slick-js').slick({
+        slidesToShow: 1,
+        dots: false,
+        infinite: false
       });
     });
   };
@@ -300,13 +259,13 @@ var ScaneGlobal = function () {
             console.log("ini dari =" + origin.index);
             $(".static-img-1").addClass("moveDown");
             $(".static-bg-1").addClass("playdown");
-            $(".logo-telkom").fadeIn();
+            $(".logo-telkom").removeClass('opacity-0');
             //parking
           } else if (origin.index == 1 && direction == 'up') {
             console.log("ini dari =" + origin.index);
             $(".static-img-1").removeClass("moveDown");
             $(".static-bg-1").removeClass("playdown");
-            $(".logo-telkom").fadeOut();
+            $(".logo-telkom").addClass('opacity-0');
             // parking
           } else if (origin.index == 1 && direction == 'down') {
             console.log("ini dari =" + origin.index);

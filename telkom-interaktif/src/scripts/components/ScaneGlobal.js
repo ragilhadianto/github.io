@@ -41,7 +41,7 @@ const ScaneGlobal = (() => {
                 console.log("ini dari ="+origin.index);    
                 $(".static-img-1").addClass("moveDown");    
                 $(".static-bg-1").addClass("playdown");    
-                $(".logo-telkom").fadeIn();    
+                $(".logo-telkom").removeClass('opacity-0');    
                 //parking
                
 
@@ -50,7 +50,7 @@ const ScaneGlobal = (() => {
                 console.log("ini dari ="+origin.index);
                 $(".static-img-1").removeClass("moveDown"); 
                 $(".static-bg-1").removeClass("playdown");  
-                $(".logo-telkom").fadeOut(); 
+                $(".logo-telkom").addClass('opacity-0');  
                 // parking
 
               }
