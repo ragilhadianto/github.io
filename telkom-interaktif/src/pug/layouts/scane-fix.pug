@@ -14,6 +14,10 @@ div(class="footer fixed w-full bottom-0 left-0 z-[50]")
                 img(src="assets/images/elevating-logo.png", alt="Telkom Indonesia - Elavating Your Future")
             div(class="w-[90px] lg:w-[130px] hidden logo-bisniscom")
                 img(src="assets/images/logo-bisniscom.svg", alt="Bisnis.com")
+
+//- restart
+div(class="restart fixed bottom-0 right-0 z-[999]")
+    div(class="px-5 lg:px-8 pb-5 lg:pb-8") 
         a(href="index.html" class="hidden clickRestart") 
             div(class="flex gap-1 items-center") 
                 div(class="flex-none")
@@ -22,5 +26,12 @@ div(class="footer fixed w-full bottom-0 left-0 z-[50]")
             
 
 //- pin
-div(class="fixed right-2 bottom-2 cursor-pointer w-[90px] lg:w-[111px] z-[999999] backB2b hidden")
-    img(src="assets/images/pin-b2b.png", alt="")
+div(class="fixed right-2 -bottom-2 lg:bottom-2 cursor-pointer w-[90px] lg:w-[111px] z-[999999] backB2b hidden")
+    img(class="hidden lg:block" src="assets/images/pin-b2b.png", alt="")
+    img(class="lg:hidden" src="assets/images/pin-b2b-m.png", alt="")
+
+
+//- scroll guide
+<div class="scroll-guide flex items-center justify-center font-semibold">
+    <span class="icon-scroll"></span> scroll
+</div>

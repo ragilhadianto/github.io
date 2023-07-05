@@ -262,7 +262,7 @@
     }
 
     .fivebol-desc{
-      @apply absolute top-8 lg:top-[100%] left-0 right-0 m-auto w-full p-5 bg-grey1 lg:bg-transparent;
+      @apply absolute top-8 lg:top-[90%] left-0 right-0 m-auto w-full py-3 px-10 bg-grey1 lg:bg-transparent z-[90];
     }
 
     .fivebol-desc img{
@@ -277,8 +277,7 @@
       @apply bg-no-repeat rounded-xl px-3 lg:px-5 py-5 lg:py-10 w-full lg:w-[600px] mb-3;
     }
     .slick-slide {
-        height: 250px;
-        @apply overflow-hidden;
+        @apply overflow-hidden h-[150px] lg:h-[250px];
     }
     .slick-slide img{
         @apply h-full w-full object-cover;
@@ -313,7 +312,7 @@
 
     /* playdown  */
     .static-img-1.playdown .logo-58{
-      @apply top-[50px] lg:top-[20px] w-[70px] lg:w-[200px];
+      @apply top-[50px] lg:top-[20px] w-[70px] lg:w-[175px];
     }
  
     .static-img-1.playdown2 .logo-58{
@@ -402,6 +401,96 @@
     
     /* animation css */
 
+    .scroll-guide {
+        position: absolute;
+        bottom: 15px;
+        left: 50%;
+        transform: translate(-50%);
+        z-index: 999;
+        flex-direction: column;
+        color: #000;
+        font-size: 12px;
+        -webkit-transition: all .2s ease;
+        -moz-transition: all .2s ease;
+        -ms-transition: all .2s ease;
+        -o-transition: all .2s ease;
+        transition: all .2s ease;
+    }
+    .scroll-guide .icon-scroll {
+        width: 15px;
+        height: 25px;
+    }
+    .icon-scroll {
+      position: relative;
+      border-radius: 50px;
+      width: 14px;
+      height: 20px;
+      border: 2px solid #000;
+    }
+
+    .scroll-guide .icon-scroll:before {
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        width: 5px;
+        height: 6px;
+    }
+
+    .icon-scroll:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: 2px;
+        height: 5px;
+        margin-left: -1px;
+        background-color: #EE3124;
+        border-radius: 10px;
+        -webkit-animation: scrolldown 2s infinite;
+        animation: scrolldown 2s infinite;
+    }
+
+    @-webkit-keyframes scrolldown {
+      0% {
+          -webkit-transform: translate(0);
+          opacity: 0
+      }
+
+      40% {
+          opacity: 1
+      }
+
+      80% {
+          -webkit-transform: translateY(10px);
+          opacity: 0
+      }
+
+      to {
+          opacity: 0
+      }
+    }
+
+    @keyframes scrolldown {
+      0% {
+          transform: translate(0);
+          opacity: 0
+      }
+
+      40% {
+          opacity: 1
+      }
+
+      80% {
+          transform: translateY(10px);
+          opacity: 0
+      }
+
+      to {
+          opacity: 0
+      }
+    }
+
+
     /* border animation */
     .border-animation {
       background-image: repeating-linear-gradient(0deg, #ee3124, #ee3124 10px, transparent 10px, transparent 20px, #ee3124 20px), repeating-linear-gradient(90deg, #ee3124, #ee3124 10px, transparent 10px, transparent 20px, #ee3124 20px), repeating-linear-gradient(180deg, #ee3124, #ee3124 10px, transparent 10px, transparent 20px, #ee3124 20px), repeating-linear-gradient(270deg, #ee3124, #ee3124 10px, transparent 10px, transparent 20px, #ee3124 20px);
@@ -451,5 +540,14 @@
           100% { transform: translateY(0); }
       }
 
+
+      /* velocity */
+
+      .topVelo{
+        @apply top-[100%] opacity-0;
+      }
+      .topVelo2{
+        @apply top-[50%] opacity-0;
+      }
 /* end */
 }

@@ -101,7 +101,8 @@ const ScaneClick = (() => {
         $(".clickUmkm").click(function (e) {    
             fullpage_api.setAllowScrolling(false);
             $backB2b.fadeIn('playdown13');            
-            $staticimg1.addClass('playdown13');            
+            $staticimg1.addClass('playdown13');         
+            $(".scroll-guide").fadeOut();   
             $landing.velocity({
                 opacity: "0",
                 top: "-100%",
@@ -119,6 +120,7 @@ const ScaneClick = (() => {
         $(".clickKorporasi").click(function (e) {    
             fullpage_api.setAllowScrolling(false);
             $staticimg1.addClass('playdown13'); 
+            $(".scroll-guide").fadeOut(); 
             $backB2b.fadeIn();            
             $landing.velocity({
                 opacity: "0",
@@ -136,6 +138,7 @@ const ScaneClick = (() => {
         });
         $(".clickPemerintahan").click(function (e) {    
             fullpage_api.setAllowScrolling(false);
+            $(".scroll-guide").fadeOut(); 
             $staticimg1.addClass('playdown13'); 
             $backB2b.fadeIn();            
             $landing.velocity({
@@ -154,6 +157,7 @@ const ScaneClick = (() => {
         });
         $backB2b.click(function (e) {    
             fullpage_api.setAllowScrolling(true);
+            $(".scroll-guide").fadeIn(); 
             $staticimg1.removeClass('playdown13');
             $backB2b.fadeOut();
             $("#sectionUmkm, #sectionKorporasi, #sectionPemerintahan").velocity({

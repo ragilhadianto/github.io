@@ -14,24 +14,24 @@ div(class="section section2")
 
 //- scane3
 div(class="section section3")
-    div(class="flex h-full w-full items-center justify-center ")
-        div(class="container mt-20 lg:mt-40")
-            div(class="text-sm lg:text-xl section-inner text1 mx-auto text-center bg-text1") 
-                p(class="") Telkom Indonesia sebagai digital telco terdepan di Indonesia melalui digital connectivity, digital platform dan digital services berkomitmen hadir untuk memenuhi kebutuhan dan aktivitas seluruh lapisan masyarakat, baik personal, rumah, UMKM, korporasi hingga Pemerintahan. Dengan kekuatan digital yang dimiliki, Telkom bersinergi mendukung potensi dan mimpi besar anak bangsa untuk bergerak lebih cepat dan mewujudkan mimpi demi masa depan Indonesia yang lebih baik.
+    //- div(class="flex h-full w-full items-center justify-center ")
+    //-     div(class="container mt-20 lg:mt-40")
+    //-         div(class="text-sm lg:text-xl section-inner text1 mx-auto text-center bg-text1") 
+    //-             p(class="") Telkom Indonesia sebagai digital telco terdepan di Indonesia melalui digital connectivity, digital platform dan digital services berkomitmen hadir untuk memenuhi kebutuhan dan aktivitas seluruh lapisan masyarakat, baik personal, rumah, UMKM, korporasi hingga Pemerintahan. Dengan kekuatan digital yang dimiliki, Telkom bersinergi mendukung potensi dan mimpi besar anak bangsa untuk bergerak lebih cepat dan mewujudkan mimpi demi masa depan Indonesia yang lebih baik.
 
 //- scane4
 div(class="section section4")
-    div(class="flex h-full w-full items-center justify-center ")
-        div(class="container mt-20 lg:mt-40")
-            div(class="text-sm lg:text-xl section-inner text1 mx-auto text-center bg-text1") 
-                p(class="") Telkom Indonesia akan terus mengikuti perkembangan teknologi dan berinovasi dengan semangat <span class="text-red1"> Sinergi untuk Indonesia </span> membawa seluruh potensi agar selalu bergerak maju di masa depan bersama-sama untuk <br> <span class="text-red1"> “Elevating Your Future” </span>
+    //- div(class="flex h-full w-full items-center justify-center ")
+    //-     div(class="container mt-20 lg:mt-40")
+    //-         div(class="text-sm lg:text-xl section-inner text1 mx-auto text-center bg-text1") 
+    //-             p(class="") Telkom Indonesia akan terus mengikuti perkembangan teknologi dan berinovasi dengan semangat <span class="text-red1 font-bold"> Sinergi untuk Indonesia </span> membawa seluruh potensi agar selalu bergerak maju di masa depan bersama-sama untuk <br> <span class="text-red1 font-bold"> “Elevating Your Future” </span>
 
 //- scane5
 div(class="section section5")
-    div(class="flex h-full w-full items-center justify-center ")
-        div(class="container mt-20 lg:mt-40")
-            div(class="text-sm lg:text-xl section-inner text1 mx-auto text-center bg-text1") 
-                p(class="") Sebagai motor utama penggerak digitalisasi, Telkom berkomitmen untuk bertransformasi menjadi digital telco dengan tiga domain bisnisnya, yaitu <span class="text-red1"> Digital Connectivity, Digital Platform, </span> dan <span class="text-red1"> Digital Services. </span>
+    //- div(class="flex h-full w-full items-center justify-center ")
+    //-     div(class="container mt-20 lg:mt-40")
+    //-         div(class="text-sm lg:text-xl section-inner text1 mx-auto text-center bg-text1") 
+    //-             p(class="") Sebagai motor utama penggerak digitalisasi, Telkom berkomitmen untuk bertransformasi menjadi digital telco dengan tiga domain bisnisnya, yaitu <span class="text-red1 font-bold"> Digital Connectivity, Digital Platform, </span> dan <span class="text-red1 font-bold"> Digital Services. </span>
 
 
 //- scane6
@@ -40,16 +40,24 @@ div(class="section section6")
         div(class="container mt-20 lg:mt-40")
             h3(class="font-bold text-xl lg:text-4xl text-center mb-14 uppercase") <span class="text-red1 ">Tiga</span> Pilar Bisnis Telkom
             div(class="grid grid-cols-3 lg:flex gap-5 lg:gap-14 justify-center w-full")
-                img(class="bounce-1" src="assets/images/digital-connectivity.png", alt="")
-                img(class="bounce-2" src="assets/images/digital-platform.png", alt="")
-                img(class="bounce-3" src="assets/images/digital-service.png", alt="")
+                div(class="relative bounce-1-box topVelo") 
+                    img(class="bounce-1" src="assets/images/digital-connectivity.png", alt="")
+                    img(class="absolute w-full left-0 top-0" src="assets/images/digital-connectivity-shadow.png", alt="")
+                div(class="relative bounce-2-box topVelo")  
+                    img(class="bounce-2" src="assets/images/digital-platform.png", alt="")
+                    img(class="absolute w-full left-0 top-0" src="assets/images/digital-platform-shadow.png", alt="")
+                div(class="relative bounce-3-box topVelo")  
+                    img(class="bounce-3" src="assets/images/digital-service.png", alt="")
+                    img(class="absolute w-full left-0 top-0" src="assets/images/digital-service-shadow.png", alt="")
 
 //- scane7
 div(class="section section7")
     div(class="flex h-full w-full items-center justify-center ")
         div(class="container mt-10")
-            div(class="section-inner mx-auto px-5 lg:px-20")
-                img(src="assets/images/fivebold.png", alt="")
+            div(class="section-inner mx-auto px-5 lg:px-20 ")
+                div(class="relative") 
+                    img(src="assets/images/fivebold.png", alt="")
+                    img(src="assets/images/fivebold-5.png", alt="" class="absolute left-0 w-full topVelo fivebold-5")
             div(class="text-sm lg:text-xl section-inner text1 mx-auto text-center") 
                 p(class="") Telkom semakin gencar dengan strategi utama <strong> Five Bold Moves </strong> untuk membangun competitive advantages perusahaan dan leadership di Industri guna untuk mencapai cita-cita menjadi perusahaan digital telco terdepan kelas dunia yang memberikan dampak baik bagi seluruh stakeholders dan masyarakat.
 
@@ -57,52 +65,53 @@ div(class="section section7")
 div(class="section section8")
     div(class="flex h-full w-full items-center justify-center ")
         div(class="container mt-10")
-            h3(class="font-bold text-2xl lg:text-4xl text-center mb-6 lg:mb-14 uppercase") <span class="text-red1 ">Five Bold </span> Moves
+            h3(class="font-bold text-2xl lg:text-4xl text-center mb-6 uppercase") <span class="text-red1 ">Five Bold </span> Moves
 
-            div(class="grid grid-cols-5 gap-3 lg:gap-0 relative")
-                div(class="lg:px-5 text-center lg:relative")
+            div(class="grid grid-cols-5 gap-3 lg:gap-0 relative lg:px-5")
+                div(class="lg:px-2 text-center lg:relative topVelo fbm-1")
                     div(class="flex justify-center")
                         img(src="assets/images/icon-fmc.png", alt="")
-                    h5(class="font-semibold text-xs lg:text-xl") Fixed Mobile Convergence (FMC)
-                    div(class="flex justify-center my-2 cursor-pointer fivebold-click w-[15px] mx-auto")
+                    h5(class="font-semibold text-xs lg:text-lg") Fixed Mobile Convergence (FMC)
+                    div(class="flex justify-center my-2 cursor-pointer fivebold-click w-[15px] mx-auto relative z-50")
                         img(class="w-full" src="assets/images/icon-clickinfo.svg", alt="")
-                    p(class="text-sm hidden fivebol-desc") Pengintegrasian IndiHome ke Telkomsel sehingga layanan fixed dan mobile broadband berada dalam satu entitas untuk memberikan layanan terbaik dan menghadirkan inovasi berkelanjutan bagi seluruh pelanggan.
+                    p(class="text-xs hidden fivebol-desc") Pengintegrasian IndiHome ke Telkomsel sehingga layanan fixed dan mobile broadband berada dalam satu entitas untuk memberikan layanan terbaik dan menghadirkan inovasi berkelanjutan bagi seluruh pelanggan.
                         img(src="assets/images/icon-close.svg", alt="")
 
-                div(class="lg:px-5 text-center lg:relative")
+                div(class="lg:px-2 text-center lg:relative topVelo fbm-2")
                     div(class="flex justify-center")
                         img(src="assets/images/icon-ic.png", alt="")
-                    h5(class="font-semibold text-xs lg:text-xl") InfraCo
-                    div(class="flex justify-center my-2 cursor-pointer fivebold-click w-[15px] mx-auto")
+                    h5(class="font-semibold text-xs lg:text-lg") InfraCo
+                    div(class="flex justify-center my-2 cursor-pointer fivebold-click w-[15px] mx-auto relative z-50")
                         img(class="w-full" src="assets/images/icon-clickinfo.svg", alt="")
-                    p(class="text-sm hidden fivebol-desc") Konsolidasi infrastruktur telekomunikasi yang memungkinkan adanya network sharing demi mengoptimalkan potensi dan valuasi.
+                        img(class="w-[20px] max-w-none absolute left-[5px] top-[10px] z-50" src="assets/images/icon-cursor.svg", alt="")
+                    p(class="text-xs hidden fivebol-desc") Konsolidasi infrastruktur telekomunikasi yang memungkinkan adanya network sharing demi mengoptimalkan potensi dan valuasi.
                         img(src="assets/images/icon-close.svg", alt="")
 
-                div(class="lg:px-5 text-center lg:relative")
+                div(class="lg:px-2 text-center lg:relative topVelo fbm-3")
                     div(class="flex justify-center")
                         img(src="assets/images/icon-dtc.png", alt="")
-                    h5(class="font-semibold text-xs lg:text-xl") Data Center Co
-                    div(class="flex justify-center my-2 cursor-pointer fivebold-click w-[15px] mx-auto")
+                    h5(class="font-semibold text-xs lg:text-lg") Data Center Co
+                    div(class="flex justify-center my-2 cursor-pointer fivebold-click w-[15px] mx-auto relative z-50")
                         img(class="w-full" src="assets/images/icon-clickinfo.svg", alt="")
-                    p(class="text-sm hidden fivebol-desc") Konsolidasi data center dalam satu entitas Telkom Data Ecosystem.
+                    p(class="text-xs hidden fivebol-desc") Konsolidasi data center dalam satu entitas Telkom Data Ecosystem.
                         img(src="assets/images/icon-close.svg", alt="")
                     
-                div(class="lg:px-5 text-center lg:relative")
+                div(class="lg:px-2 text-center lg:relative topVelo fbm-4")
                     div(class="flex justify-center")
                         img(src="assets/images/icon-b2b.png", alt="")
-                    h5(class="font-semibold text-xs lg:text-xl") B2B Digital IT Service Co
-                    div(class="flex justify-center my-2 cursor-pointer fivebold-click w-[15px] mx-auto")
+                    h5(class="font-semibold text-xs lg:text-lg") B2B Digital IT <br> Service Co
+                    div(class="flex justify-center my-2 cursor-pointer fivebold-click w-[15px] mx-auto relative z-50")
                         img(class="w-full" src="assets/images/icon-clickinfo.svg", alt="")
-                    p(class="text-sm hidden fivebol-desc") Penyediaaan layanan digital dalam kerangka business-to-business (B2B).
+                    p(class="text-xs hidden fivebol-desc") Penyediaaan layanan digital dalam kerangka business-to-business (B2B).
                         img(src="assets/images/icon-close.svg", alt="")
 
-                div(class="lg:px-5 text-center lg:relative")
+                div(class="lg:px-2 text-center lg:relative topVelo fbm-5")
                     div(class="flex justify-center")
                         img(src="assets/images/icon-digico.png", alt="")
-                    h5(class="font-semibold text-xs lg:text-xl") DigiCo
-                    div(class="flex justify-center my-2 cursor-pointer fivebold-click w-[15px] mx-auto")
+                    h5(class="font-semibold text-xs lg:text-lg") DigiCo
+                    div(class="flex justify-center my-2 cursor-pointer fivebold-click w-[15px] mx-auto relative z-50")
                         img(class="w-full" src="assets/images/icon-clickinfo.svg", alt="")
-                    p(class="text-sm hidden fivebol-desc") Percepatan bisnis digital secara terstruktur melalui pembentukan Digital Company (DigiCo).
+                    p(class="text-xs hidden fivebol-desc") Percepatan bisnis digital secara terstruktur melalui pembentukan Digital Company (DigiCo).
                         img(src="assets/images/icon-close.svg", alt="")
 
 
@@ -110,7 +119,7 @@ div(class="section section8")
 div(class="section section9")
     div(class="flex h-full w-full items-center justify-center ")
         div(class="container mt-10 lg:mt-20")
-            h3(class="font-bold text-2xl lg:text-4xl text-center mb-5 lg:mb-14 uppercase") <span class="text-red1 ">Focus</span> 2023
+            h3(class="font-bold text-2xl lg:text-4xl text-center mb-5 lg:mb-10 uppercase") <span class="text-red1 ">Focus</span> 2023
 
             div(class="mx-auto flex justify-center")
                 div(class="section-inner flex gap-3 flex-col lg:px-20")
@@ -122,23 +131,23 @@ div(class="section section9")
                         h5(class="text-sm lg:text-xl") Tahun yang penuh tantangan bagi seluruh sektor industri, terutama telekomunikasi.
 
             div(class="grid grid-cols-5 gap-1 section-inner mx-auto mt-10")
-                div(class="px-0 lg:px-5 text-center")
+                div(class="px-0 lg:px-5 text-center relative topVelo fc-1")
                     div(class="flex justify-center border-animation border-red1 rounded-lg p-1 ")
                         img(src="assets/images/icon-fmc.png", alt="")
 
-                div(class="px-0 lg:px-5 text-center")
+                div(class="px-0 lg:px-5 text-center relative topVelo fc-2")
                     div(class="flex justify-center")
                         img(src="assets/images/icon-ic.png", alt="")
 
-                div(class="px-0 lg:px-5 text-center")
+                div(class="px-0 lg:px-5 text-center relative topVelo fc-3")
                     div(class="flex justify-center")
                         img(src="assets/images/icon-dtc.png", alt="")
                     
-                div(class="px-0 lg:px-5 text-center")
+                div(class="px-0 lg:px-5 text-center relative topVelo fc-4")
                     div(class="flex justify-center border-animation border-red1 rounded-lg p-1 ")
                         img(src="assets/images/icon-b2b.png", alt="")
 
-                div(class="px-0 lg:px-5 text-center")
+                div(class="px-0 lg:px-5 text-center relative topVelo fc-5")
                     div(class="flex justify-center")
                         img(src="assets/images/icon-digico.png", alt="")
 
@@ -160,8 +169,10 @@ div(class="section section12")
                             img(class="w-full" src="assets/images/icon-petik.svg", alt="")
                         div(class="text-sm lg:text-2xl text-center") Sebagai BUMN yang tengah bertransformasi menjadi perusahaan telekomunikasi digital, Telkom harus mampu <span class="text-red1 font-bold ">mengembangkan kepemimpinan teknologi </span> untuk tidak hanya memberikan <span class="text-red1 font-bold ">layanan terbaik </span> bagi pelanggan Indonesia, namun juga ikut <span class="text-red1 font-bold ">mengawal transformasi digital Indonesia.</span>”
                     div(class="flex-none w-[40%] lg:w-auto")
-                        img(class="w-full" src="assets/images/ErickThohir.png", alt="")
-                        div(class="mt-2 lg:mt-5 border-l-4 border-red1 pl-3 lg:pl-5")
+                        div(class="relative ") 
+                            img(class="w-full" src="assets/images/ErickThohir.png", alt="")
+                            img(class="w-full  z-50 absolute left-0 bottom-0 topVelo2 erick" src="assets/images/ErickThohir-1.png", alt="")
+                        div(class="mt-2 lg:mt-5 border-l-4 border-red1 pl-3 lg:pl-5 relative erick2")
                             h5(class="text-sm lg:text-lg font-semibold") Erick Thohir
                             span(class="text-xs lg:text-sm") Menteri BUMN
 
@@ -172,7 +183,7 @@ div(class="section section13")
 
             div(class="relative")
                 //- landing sectionB2b
-                div(class="text-sm lg:text-xl section-inner mx-auto text-center flex justify-center flex-col gap-3 lg:gap-10 relative" id="sectionB2b") 
+                div(class="text-sm lg:text-xl section-inner mx-auto text-center flex justify-center flex-col gap-3 lg:gap-6 relative" id="sectionB2b") 
 
                     div(class="flex gap-5 items-center justify-center")
                         img(class="w-[70px] lg:w-auto" src="assets/images/icon-b2b.png", alt="")
@@ -181,25 +192,25 @@ div(class="section section13")
                     div(class="lg:px-24")
                         p Ke depannya, untuk memperluas penetrasi ke pasar regional dan memperkuat strategi business-to-business (B2B), Telkom akan <span class="text-red1 font-bold ">fokus</span> ke <span class="text-red1 font-bold ">tiga</span> segmen utama, diantaranya:
 
-                    div(class="lg:px-30 grid grid-cols-3 lg:flex gap-x-2 lg:gap-x-20 justify-center")
-                        div(class="text-center flex justify-center flex-col items-center cursor-pointer hoverScale clickUmkm")
+                    div(class="lg:px-30 grid grid-cols-3 gap-x-2 lg:gap-x-20 justify-center lg:w-[60%] mx-auto")
+                        div(class="text-center flex justify-center flex-col items-center cursor-pointer hoverScale relative topVelo clickUmkm")
                             img(class="w-[40px] lg:w-[65px]" src="assets/images/icon-umkm.svg", alt="") 
                             h5(class="font-bold mt-2") UMKM
-                        div(class="text-center flex justify-center flex-col items-center cursor-pointer hoverScale clickKorporasi")
+                        div(class="text-center flex justify-center flex-col items-center cursor-pointer hoverScale relative topVelo clickKorporasi")
                             img(class="w-[40px] lg:w-[65px]" src="assets/images/icon-korporasi.svg", alt="") 
                             h5(class="font-bold mt-2") Korporasi
-                        div(class="text-center flex justify-center flex-col items-center cursor-pointer hoverScale clickPemerintahan")
+                        div(class="text-center flex justify-center flex-col items-center cursor-pointer hoverScale relative topVelo clickPemerintahan")
                             img(class="w-[40px] lg:w-[65px]" src="assets/images/icon-pemerintahan.svg", alt="") 
                             h5(class="font-bold mt-2") Pemerintahan
 
-                    div(class="px-16")
+                    div(class="px-16 clickPemerintahan topVelo")
                         div(class="flex justify-center mb-2")
                             img(src="assets/images/icon-arrowclickhere.svg", alt="")
                         p(class="text-xs") <span class="text-red1">Klik</span> salah satu segmen untuk info lebih lanjut
 
                 //- slider 
                 //- slider 1 Segmen UMKM
-                div(class="section-inner mx-auto text-center absolute left-0 right-0 pushDown opacity-0 -mt-12 lg:mt-5" id="sectionUmkm")
+                div(class="section-inner mx-auto text-center absolute left-0 right-0 pushDown opacity-0 -mt-14 lg:-mt-10" id="sectionUmkm")
                     div(class="text-center flex justify-center flex-col items-center cursor-pointer mb-3")
                         img(class="w-[40px] lg:w-[50px]" src="assets/images/icon-umkm.svg", alt="") 
                         h5(class="text-sm lg:text-base font-bold mt-1") Segmen UMKM
@@ -222,7 +233,7 @@ div(class="section section13")
                             p(class="text-xs lg:text-base") Memperkuat UMKM untuk menjadi jawara yang berdaya saing global melalui dukungan infrastruktur dan platform digital,  pengayaan manajemen channel serta, menghubungkan kerja sama dengan partner potensial di tingkat nasional dan global, sehingga UMKM bisa naik kelas dan ekonomi digital Indonesia dapat terus terakselerasi ke depannya.
                             
                 //- slider 2 Segmen Korporasi
-                div(class="section-inner mx-auto text-center absolute left-0 right-0 pushDown opacity-0 -mt-12 lg:mt-5" id="sectionKorporasi")
+                div(class="section-inner mx-auto text-center absolute left-0 right-0 pushDown opacity-0 -mt-14 lg:-mt-10" id="sectionKorporasi")
                     div(class="text-center flex justify-center flex-col items-center cursor-pointer mb-3")
                         img(class="w-[40px] lg:w-[50px]" src="assets/images/icon-korporasi.svg", alt="") 
                         h5(class="text-sm lg:text-base font-bold mt-1") Segmen Korporasi
@@ -245,7 +256,7 @@ div(class="section section13")
                             p(class="text-xs lg:text-base") Telkom fokus pada penyediaan solusi digital, baik konektivitas maupun platform yang mendukung aktivitas bisnis perusahaan/korporasi menjadi lebih efektif dan efisien, menciptakan hub ekosistem digital, serta mengembangkan model bisnis untuk kerja sama yang saling menguntungkan.
 
                 //- slider 2 Segmen Pemerintahan
-                div(class="section-inner mx-auto text-center absolute left-0 right-0 pushDown opacity-0 -mt-12 lg:mt-5" id="sectionPemerintahan")
+                div(class="section-inner mx-auto text-center absolute left-0 right-0 pushDown opacity-0 -mt-14 lg:-mt-10" id="sectionPemerintahan")
                     div(class="text-center flex justify-center flex-col items-center cursor-pointer mb-3")
                         img(class="w-[40px] lg:w-[50px]" src="assets/images/icon-pemerintahan.svg", alt="") 
                         h5(class="text-sm lg:text-base font-bold mt-1") Segmen Pemerintahan
@@ -280,9 +291,9 @@ div(class="section section14")
             div(class="section-inner2 mx-auto")
                 div(class="flex flex-col-reverse lg:flex-row gap-2 lg:gap-10 items-start")                        
                     div(class="flex-none w-full lg:w-[28%] flex lg:block items-center")
-                        div(class="w-[30%] lg:w-auto") 
+                        div(class="w-[30%] lg:w-auto direktur relative") 
                             img(src="assets/images/Ririek-Adriansyah.png", alt="Ririek Adriansyah")
-                        div
+                        div(class="direktur2 topVelo2 relative")
                             div(class="border-l-4 border-red1 pl-2 lg:pl-5 mt-5 flex-none")
                                 h5(class="text-sm lg:text-lg font-semibold") Ririek Adriansyah
                                 span(class="text-xs lg:text-sm") Direktur Utama Telkom Indonesia
