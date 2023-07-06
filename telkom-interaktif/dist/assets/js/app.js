@@ -143,6 +143,7 @@ var ScaneClick = function () {
 
       // fivebold-click
       $(".fivebold-click").click(function (e) {
+        $('.icon-cursor').fadeOut();
         var $parent = $(this).parents();
         $(this).parents().children(".fivebol-desc").slideToggle("hidden");
       });
