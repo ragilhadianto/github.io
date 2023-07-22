@@ -1,0 +1,29 @@
+//- header
+div(class="header fixed left-0 top-0 w-full py-4 lg:py-0 bg-white z-[999]")
+    div(class="container mx-auto")
+        div(class="flex justify-between lg:grid grid-cols-12 items-center w-full relative" )
+            div(class="logo col-span-2")
+                a(href="index.html")
+                    h1 
+                        img(src="assets/images/logo.svg", alt="BNI UMKM FESTIFAL" class="w-[100px] lg:w-auto") 
+            div(class="col-span-8 fixed lg:relative  menu bg-white w-full lg:w-auto top-[60px] lg:top-auto px-3 lg:px-0 right-[-100%] lg:right-[inherit] lg:flex justify-center h-full lg:h-auto transition-all ")
+                ul(class="flex flex-col lg:flex-row  lg:gap-x-10 text-base items-end menu-inner justify-center") 
+                    li  
+                        a(href="#section-home" class="active") Home  
+                    li  
+                        a(href="#section-tentang") Tentang Kami  
+                    li  
+                        a(href="#section-jadwal") Jadwal Acara
+                    li  
+                        a(href="#section-galeri") Galeri Foto
+                    li  
+                        a(href="#section-news") Berita  
+            div(class="col-span-2 flex gap-5 justify-end items-center") 
+                div 
+                    a(class="button" href="#") Registrasi 
+
+                <div class="menuClick hamburger hamburger--spring lg:hidden">
+                    <div class="hamburger-box">
+                        <div class="hamburger-inner"></div>
+                    </div>
+                </div>

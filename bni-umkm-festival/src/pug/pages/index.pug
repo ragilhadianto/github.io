@@ -1,0 +1,21 @@
+extends ../templates/default.pug
+
+//- Head
+block siteHeader
+  -
+    siteTitle = '';
+
+//- Body
+block siteContent
+
+  ='\n\n' 
+  include ../layouts/header.pug
+
+  ='\n\n' 
+  include ../layouts/scane.pug
+  
+  ='\n\n' 
+  include ../layouts/footer.pug
+
+  =`\n\n`
+

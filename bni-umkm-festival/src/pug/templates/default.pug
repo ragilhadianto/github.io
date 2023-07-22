@@ -1,0 +1,59 @@
+include ../config/config.pug
+
+doctype html
+html(lang='en')
+  block siteHeader
+  head
+    meta(charset='utf-8')/
+    //- meta(http-equiv='refresh', content=timeRefresh)/
+    meta(http-equiv='X-UA-Compatible' content='IE=9')/
+    meta(http-equiv='Content-Type' content='text/html; charset=utf-8')/
+    meta(name='viewport' content='width=device-width, initial-scale=1, user-scalable=no,minimal-ui')/
+    ='\n\n'
+
+    // primary information
+    title #{siteTitle + ' '+ suffixSiteTitle}
+    meta(name='description', content=siteTitle + ' '+ suffixSiteDescription)/
+    meta(name='keywords', content=siteTitle + ', ' + suffixSiteKeywords)/
+
+    //- HTML5 IE
+    ='\n\n'
+    // ie fix for html5 tags
+    //[if lt IE 9]><script src='http://html5shiv.googlecode.com/svn/trunk/html5.js'></script><![endif]
+    ='\n\n'
+
+    // fonts
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap" rel="stylesheet">
+
+    ='\n\n'
+
+    // style
+    link(rel='stylesheet', href=cssTailwind)/
+    link(rel='stylesheet', href="assets/css/magnific-popup.css")/
+
+    ='\n\n'
+
+  body(class="body")
+
+
+    ='\n\n'
+
+    main
+      //- site-content
+      block siteContent
+
+      ='\n\n'
+
+      
+    ='\n'
+    
+
+    ='\n\n'
+
+    // script
+    script(src='assets/js/jquery-3.6.0.min.js')
+    script(src=jsVendor)
+    script(src=jsMain)
+    ='\n\n'

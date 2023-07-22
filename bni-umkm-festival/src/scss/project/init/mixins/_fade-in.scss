@@ -1,0 +1,22 @@
+/* ==========================================================================
+   Mixin Fade In
+   ========================================================================== */
+
+@mixin fade-in {
+  opacity: 0;
+  transform: translateY(80px);
+  transition: all 0.3s ease-in-out;
+  @include large {
+    transform: translateY(64px);
+  }
+  @include medium {
+    transform: translateY(48px);
+  }
+  @include small {
+    transform: translateY(24px);
+  }
+  &.fade-in {
+    opacity: 1;
+    transform: none;
+  }
+}
