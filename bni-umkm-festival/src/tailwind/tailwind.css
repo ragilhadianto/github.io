@@ -87,7 +87,7 @@
     }
 
     .section{
-      @apply py-12 lg:py-20 relative;
+      @apply py-10 lg:py-20 relative;
     }
 
     .menu li, .menu a{
@@ -103,7 +103,10 @@
     }
 
     .menu.active{
-      @apply right-0 border-t border-gray-100;
+      @apply right-0 border-t border-gray-100 -z-10;
+    }
+    .menu-inner{
+      @apply container mx-auto;
     }
 
 
@@ -134,10 +137,7 @@
       background-image: url('../images/icon-plus.svg');
       @apply bg-no-repeat bg-center;
     }
-    .menu-inner{
-      @apply container mx-auto;
-    }
-
+   
 
     /* hamburger */
     .hamburger {

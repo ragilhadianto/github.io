@@ -1,29 +1,28 @@
 //- header
-div(class="header fixed left-0 top-0 w-full py-4 lg:py-0 bg-white z-[999]")
+div(class="header fixed left-0 top-0 w-full py-4 lg:py-0 bg-white z-[9999]")
     div(class="container mx-auto")
-        div(class="flex justify-between lg:grid grid-cols-12 items-center w-full relative" )
-            div(class="logo col-span-2")
+        div(class="grid grid-cols-12 items-center w-full relative" )
+            div(class="menuClick hamburger hamburger--spring lg:hidden col-span-3")
+                div(class="hamburger-box")
+                    div(class="hamburger-inner")
+
+            div(class="logo flex justify-center col-span-6 lg:col-span-2")
                 a(href="index.html")
                     h1 
                         img(src="assets/images/logo.svg", alt="BNI UMKM FESTIFAL" class="w-[100px] lg:w-auto") 
-            div(class="col-span-8 fixed lg:relative  menu bg-white w-full lg:w-auto top-[60px] lg:top-auto px-3 lg:px-0 right-[-100%] lg:right-[inherit] lg:flex justify-center h-full lg:h-auto transition-all ")
+            div(class="col-span-8 fixed lg:relative top-0 menu bg-white w-full lg:w-auto lg:top-auto px-3 lg:px-0 right-[-100%] lg:right-[inherit] flex justify-center h-full lg:h-auto transition-all ")
                 ul(class="flex flex-col lg:flex-row  lg:gap-x-10 text-base items-end menu-inner justify-center") 
-                    li  
+                    li(class="w-full lg:w-auto text-center")  
                         a(href="#section-home" class="active") Home  
-                    li  
+                    li(class="w-full lg:w-auto text-center")  
                         a(href="#section-tentang") Tentang Kami  
-                    li  
+                    li(class="w-full lg:w-auto text-center")  
                         a(href="#section-jadwal") Jadwal Acara
-                    li  
+                    li(class="w-full lg:w-auto text-center")  
                         a(href="#section-galeri") Galeri Foto
-                    li  
+                    li(class="w-full lg:w-auto text-center")  
                         a(href="#section-news") Berita  
-            div(class="col-span-2 flex gap-5 justify-end items-center") 
-                div 
-                    a(class="button" href="#") Registrasi 
 
-                <div class="menuClick hamburger hamburger--spring lg:hidden">
-                    <div class="hamburger-box">
-                        <div class="hamburger-inner"></div>
-                    </div>
-                </div>
+            div(class="col-span-3 lg:col-span-2 flex gap-5 justify-end items-center") 
+                div 
+                    a(class="button px-1 lg:px-8" href="#") Registrasi 
