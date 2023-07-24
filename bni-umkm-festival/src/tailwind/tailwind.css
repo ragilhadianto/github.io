@@ -83,7 +83,7 @@
     
     /* custom */
     .container{
-      @apply mx-auto px-3 lg:px-10 xl:px-0;
+      @apply mx-auto px-5 md:px-14 lg:px-12 xl:px-0;
     }
 
     .section{
@@ -136,6 +136,14 @@
     .hover-photo::after{
       background-image: url('../images/icon-plus.svg');
       @apply bg-no-repeat bg-center;
+    }
+
+    /* news */
+    .news:hover img{
+      @apply scale-110;
+    }
+    .news:hover h6{
+      @apply text-green2;
     }
    
 
