@@ -83,7 +83,7 @@
     
     /* custom */
     .container{
-      @apply mx-auto px-5 md:px-14 lg:px-12 xl:px-0;
+      @apply mx-auto px-5 md:px-14 lg:px-12 xl:px-5 xxl:px-10;
     }
 
     .section{
@@ -109,13 +109,6 @@
       @apply container mx-auto;
     }
 
-
-
-    /* .text-2xl{
-      @apply text-[28px];
-    } */
-
-
     .section-home{
       background-image: url(../images/bg-home.png);
       @apply bg-cover bg-center bg-no-repeat;
@@ -127,7 +120,7 @@
     }
 
     .button{
-      @apply px-4 lg:px-8 py-2 lg:py-3 text-white text-xs lg:text-base bg-orange2 cursor-pointer;
+      @apply transition-all px-4 lg:px-8 py-2 lg:py-3 text-white text-xs lg:text-base bg-orange2 cursor-pointer hover:bg-orange-hover;
     }
     
     .hover-photo{
@@ -136,6 +129,28 @@
     .hover-photo::after{
       background-image: url('../images/icon-plus.svg');
       @apply bg-no-repeat bg-center;
+    }
+
+    .hover-event{
+      @apply transition-all;
+    }
+
+    .hover-event::after{
+      @apply transition-all;
+      opacity: 0;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      content: '';
+      box-shadow: 7px 7px 0px -1px rgba(22,148,164,1);
+      -webkit-box-shadow: 7px 7px 0px -1px rgba(22,148,164,1);
+      -moz-box-shadow: 7px 7px 0px -1px rgba(22,148,164,1);
+    }
+
+    .hover-event:hover::after{
+      opacity: 1;
     }
 
     /* news */
