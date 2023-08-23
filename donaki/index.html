@@ -22,6 +22,8 @@
 
   <!-- style-->
   <link rel="stylesheet" href="assets/css/tailwind.css" />
+  <link rel="stylesheet" href="assets/css/slick.css" />
+  <link rel="stylesheet" href="assets/css/slick-theme.css" />
 
 </head>
 
@@ -31,20 +33,25 @@
 
   <div class="header">
     <div class="container mx-auto py-4">
-      <div class="flex justify-between">
-        <div class="flex gap-14">
-          <div class="logo"><a href=""><img src="assets/images/logo.png" alt="lorem ipsum"></a></div>
+      <div class="flex gap-12 justify-between lg:justify-start">
+        <div class="flex gap-14 flex-none">
+          <div class="logo w-[100px] lg:w-auto"><a href=""><img src="assets/images/logo.png" alt="lorem ipsum"></a></div>
+        </div>
+        <div class="lg:hidden flex gap-5 items-center"> <a class="text-sm font-bold flex gap-3 items-center" href="#">EN<img src="assets/images/icon-arrow-right.png"></a>
+          <div class="menu-m cursor-pointer p-2 w-[50px]" data-click-state="1"><img src="assets/images/icon-nav-mobile.png" alt=""></div>
+        </div>
+        <div class="justify-between w-full hidden lg:flex nav">
           <div class="menu items-center flex pt-5">
-            <ul class="text-sm font-bold uppercase flex gap-9">
-              <li><a class="flex gap-3 items-center" href="#">Home</a></li>
-              <li><a class="flex gap-3 items-center" href="#"> <span>LINK</span><img src="assets/images/icon-arrow-right.png"></a></li>
-              <li><a class="flex gap-3 items-center" href="#"> <span>LINK</span><img src="assets/images/icon-arrow-right.png"></a></li>
-              <li><a class="flex gap-3 items-center" href="#">CONTACT US</a></li>
+            <ul class="text-sm font-bold uppercase w-full lg:w-auto flex flex-col lg:flex-row gap-9">
+              <li><a class="flex gap-3 items-center w-full justify-between" href="#">Home</a></li>
+              <li><a class="flex gap-3 items-center w-full justify-between" href="#"> <span>LINK</span><img src="assets/images/icon-arrow-right.png"></a></li>
+              <li><a class="flex gap-3 items-center w-full justify-between" href="#"> <span>LINK</span><img src="assets/images/icon-arrow-right.png"></a></li>
+              <li><a class="flex gap-3 items-center w-full justify-between" href="#">CONTACT US</a></li>
             </ul>
           </div>
-        </div>
-        <div class="flex flex-col items-end gap-2"><a class="text-sm font-bold flex gap-3 items-center" href="#">EN<img src="assets/images/icon-arrow-right.png"></a>
-          <div class="self-end flex gap-3"><a class="button bg-white border border-purple2 text-black" href="">LOGIN </a><a class="button" href="">REGISTER </a></div>
+          <div class="flex flex-col lg:items-end gap-2 mt-5 pt-5 lg:mt-0 lg:pt-0 border-t border-gray-200 lg:border-0"><a class="text-sm font-bold hidden lg:flex gap-3 items-center" href="#">EN<img src="assets/images/icon-arrow-right.png"></a>
+            <div class="lg:self-end flex gap-3 flex flex-col lg:flex-row"><a class="button w-full lg:w-auto bg-white border border-purple2 text-black" href="">LOGIN </a><a class="button w-full lg:w-auto" href="">REGISTER </a></div>
+          </div>
         </div>
       </div>
     </div>
@@ -52,67 +59,70 @@
 
   <div class="main">
 
-    <div class="bg-cover min-h-[550px] flex items-center pb-20" style="background-image:url(assets/images/hero.jpg)">
+    <div class="bg-[url('../images/hero-m.jpg')] lg:bg-[url('../images/hero.jpg')] bg-cover min-h-[100vh] lg:min-h-[550px] flex items-center pb-20">
       <div class="container">
-        <div class="w-[50%] pr-6">
-          <h2 class="text-7xl font-fjala uppercase mb-5">Who are we?</h2>
-          <p class="text-xl mb-5 leading-[2rem]">Donaki is dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo </p>
+        <div class="w-full lg:w-[50%] pr-6">
+          <h2 class="text-5xl lg:text-7xl font-fjala uppercase mb-5">Who are we?</h2>
+          <p class="text-sm lg:text-xl mb-5 lg:leading-[2rem]">Donaki is dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo </p>
           <div class="flex"><a class="button px-14" href="">FIND MORE </a></div>
         </div>
       </div>
     </div>
-    <div class="container px-0 -mt-20">
+    <div class="container lg:px-0 -mt-10 lg:-mt-20">
 
-      <div class="grid grid-cols-2 gap-10 mb-10">
-        <div class="flex flex-col justify-center text-white bg-green1 bg-no-repeat bg-center pt-16 pb-14 px-14" style="background-image:url(assets/images/become-partner.png)">
-          <h3 class="font-fjala uppercase mb-5 text-4xl">become a Partner</h3>
-          <p class="mb-5">Promote your store through our platform </p>
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-5 lg:gap-10 mb-5 lg:mb-10">
+        <div class="flex flex-col justify-center text-white bg-green1 bg-no-repeat bg-center bg-70%  pt-8 lg:pt-16 pb-8 lg:pb-14 px-5 lg:px-14" style="background-image:url(assets/images/become-partner.png)">
+          <h3 class="font-fjala uppercase mb-2 lg:mb-5 text-2xl lg:text-4xl">become a Partner</h3>
+          <p class="mb-2 lg:mb-5 text-sm lg:text-lg">Promote your store through our platform </p>
           <div class="flex"><a class="button bg-transparent border-white border" href="">find out more</a></div>
         </div>
-        <div class="flex flex-col justify-center text-white bg-purple1 bg-no-repeat bg-center pt-16 pb-14 px-14" style="background-image:url(assets/images/become-member.png)">
-          <h3 class="font-fjala uppercase mb-5 text-4xl">become a Member</h3>
-          <p class="mb-5">Browse through a large number of retailers</p>
+        <div class="flex flex-col justify-center text-white bg-purple1 bg-no-repeat bg-center bg-70%  pt-8 lg:pt-16 pb-8 lg:pb-14 px-5 lg:px-14" style="background-image:url(assets/images/become-member.png)">
+          <h3 class="font-fjala uppercase mb-2 lg:mb-5 text-2xl lg:text-4xl">become a Member</h3>
+          <p class="mb-2 lg:mb-5 text-sm lg:text-lg">Browse through a large number of retailers</p>
           <div class="flex"><a class="button bg-transparent border-white border" href="">find out more</a></div>
         </div>
       </div>
 
-      <div class="bg-cover bg-center bg-no-repeat min-h-[400px] flex items-center px-14" style="background-image:url(assets/images/bg-about.jpg)">
-        <div class="w-[50%] pr-6">
-          <h2 class="text-7xl font-fjala uppercase mb-5">About us</h2>
-          <p class="text-xl mb-5 leading-[2rem]">Donaki is dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo </p>
+      <div class="bg-[url('../images/bg-about-m.jpg')] lg:bg-[url('../images/bg-about.jpg')] bg-cover bg-center bg-no-repeat lg:min-h-[400px] flex items-center py-6 px-5 lg:px-14">
+        <div class="w-full lg:w-[50%] pr-10 lg:pr-6">
+          <h2 class="text-4xl lg:text-7xl font-fjala uppercase mb-2 lg:mb-5">About us</h2>
+          <p class="text-xs lg:text-xl mb-0 lg:leading-[2rem]">Donaki is dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
         </div>
       </div>
 
-      <div class="grid grid-cols-6 pl-14 my-20">
-        <div class="col-span-2">
+      <div class="grid grid-cols-6 lg:pl-14 my-5 lg:my-20">
+        <div class="col-span-6 lg:col-span-2 mb-5">
           <h3 class="font-fjala uppercase mb-5 text-4xl"><span class="text-2xl"> See who are</span> <br> Our Partners</h3>
-          <div class="flex gap-3 mb-5"><span class="bg-gray2 py-3 px-4 cursor-pointer"><img src="assets/images/slide-arrow-left.png" alt=""></span><span class="bg-gray2 py-3 px-4 cursor-pointer"><img src="assets/images/slide-arrow-right.png" alt=""></span></div>
+          <div class="flex gap-3 mb-5"><span class="bg-gray2 py-3 px-4 cursor-pointer prev"><img src="assets/images/slide-arrow-left.png" alt=""></span><span class="bg-gray2 py-3 px-4 cursor-pointer next"><img src="assets/images/slide-arrow-right.png" alt=""></span></div>
           <div class="flex"><a class="button" href="">see our partners</a></div>
         </div>
-        <div class="col-span-4">
-          <div class="partners-slider grid grid-cols-3 gap-5">
-            <div class="border border-gray1 px-5 py-14 flex items-center justify-center"><img src="assets/images/logo-home-decor.png" alt=""></div>
-            <div class="border border-gray1 px-5 py-14 flex items-center justify-center"><img src="assets/images/logo-diesel.png" alt=""></div>
-            <div class="border border-gray1 px-5 py-14 flex items-center justify-center"><img src="assets/images/logo-zara.png" alt=""></div>
+        <div class="col-span-6 lg:col-span-4">
+          <div class="parters-js">
+            <div class="border border-gray1 px-5 py-14 flex items-center justify-center min-h-[200px] lg:min-h-[250px]"><img src="assets/images/logo-home-decor.png" alt=""></div>
+            <div class="border border-gray1 px-5 py-14 flex items-center justify-center min-h-[200px] lg:min-h-[250px]"><img src="assets/images/logo-diesel.png" alt=""></div>
+            <div class="border border-gray1 px-5 py-14 flex items-center justify-center min-h-[200px] lg:min-h-[250px]"><img src="assets/images/logo-zara.png" alt=""></div>
+            <div class="border border-gray1 px-5 py-14 flex items-center justify-center min-h-[200px] lg:min-h-[250px]"><img src="assets/images/logo-home-decor.png" alt=""></div>
+            <div class="border border-gray1 px-5 py-14 flex items-center justify-center min-h-[200px] lg:min-h-[250px]"><img src="assets/images/logo-diesel.png" alt=""></div>
+            <div class="border border-gray1 px-5 py-14 flex items-center justify-center min-h-[200px] lg:min-h-[250px]"><img src="assets/images/logo-zara.png" alt=""></div>
           </div>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="footer text-gray2 bg-gray3 pt-16 pb-20">
+  <div class="footer text-gray2 bg-gray3 py-10 lg:pt-16 lg:pb-20">
     <div class="container">
-      <div class="flex justify-between">
-        <div class="w-[30%] flex-none">
+      <div class="flex flex-col lg:flex-row justify-between">
+        <div class="lg:w-[30%] flex-none mb-10 lg:mb-0">
           <h4 class="font-fjala uppercase text-2xl mb-5">Subscribe to our newsletter</h4>
           <div class="mb-5">
             <form class="flex gap-5"><input class="field" type="text" placeholder="YOUR E-MAIL"><button class="field field-submit" type="submit">SUBSCRIBE</button></form>
           </div>
           <div>
-            <p class="text-xs">Donaki is Luisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora uptatem.</p>
+            <p class="text-xs m-0">Donaki is Luisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora uptatem.</p>
           </div>
         </div>
-        <div class="w-auto">
+        <div class="w-auto mb-14 lg:mb-0">
           <h4 class="font-fjala uppercase text-2xl mb-5">Follow us</h4>
           <ul class="flex gap-5">
             <li><a href="http://" target="_blank" rel="noopener noreferrer"> <img src="assets/images/pinterest.png" alt=""></a></li>
@@ -142,6 +152,10 @@
 
 
   <!-- script-->
+  <script src="assets/js/jquery-3.6.0.min.js"></script>
+  <script src="assets/js/vendor.min.js"></script>
+  <script src="assets/js/app.min.js?40"></script>
+
 </body>
 
 </html>
