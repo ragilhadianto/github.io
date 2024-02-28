@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* custom component */
+@layer components {
+  html {
+    font-weight: 600;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    margin: 0;
+  }
+
+  .section {
+    @apply min-h-screen w-full flex;
+  }
+
+  .section-center {
+    @apply justify-center items-center text-center;
+  }
+
+  .section .inner{
+    @apply max-w-[832px;] px-0
+  }
+
+  /* p {
+    @apply text-lg;
+  } */
+
+  /* hero */
+  .hero {
+    @apply bg-cover bg-no-repeat bg-center;
+    background-image: url(../images/hero_cover.jpg);
+  }
+
+  .font-harriet {
+    font-family: "Harriet Text", serif;
+  }
+}
