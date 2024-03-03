@@ -4,9 +4,21 @@
 
 /* custom component */
 @layer components {
+  *,
+  *:before,
+  *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
   html {
-    font-weight: 600;
+    /* font-weight: 600; */
     font-family: "Helvetica Neue", Arial, sans-serif;
+    height: 100%;
+  }
+  body {
+    height: 100%;
   }
   h1,
   h2,
@@ -18,21 +30,24 @@
     margin: 0;
   }
 
+  body .wrapper {
+    @apply mx-auto max-w-[1440px] pb-0;
+  }
   .section {
-    @apply min-h-screen w-full flex;
+    @apply w-full w-full flex py-20 lg:py-32;
   }
 
   .section-center {
     @apply justify-center items-center text-center;
   }
 
-  .section .inner{
-    @apply max-w-[832px;] px-0
+  .section .inner {
+    @apply max-w-[832px] px-0;
   }
 
-  /* p {
-    @apply text-lg;
-  } */
+  .headline-circle {
+    @apply rounded-full h-[25px] w-[25px] flex items-center justify-center border-2 border-black border-solid;
+  }
 
   /* hero */
   .hero {
@@ -40,7 +55,33 @@
     background-image: url(../images/hero_cover.jpg);
   }
 
+  /* typo */
   .font-harriet {
     font-family: "Harriet Text", serif;
+  }
+  .font-helvetica {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+  }
+  .headlines {
+    @apply text-5xl font-harriet font-normal;
+  }
+  .wording {
+    @apply text-pink1 text-2xl lg:text-4xl font-harriet font-normal;
+  }
+  .description {
+    @apply text-base lg:text-2xl font-light;
+  }
+  .question {
+    @apply text-lg lg:text-3xl font-bold leading-[normal];
+  }
+
+  footer {
+    z-index: 20;
+    position: relative;
+  }
+
+  /* overwrite */
+  .hide {
+    @apply hidden;
   }
 }
