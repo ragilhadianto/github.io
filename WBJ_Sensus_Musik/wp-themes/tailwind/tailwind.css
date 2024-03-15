@@ -1,0 +1,216 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* custom component */
+@layer components {
+  *,
+  *:before,
+  *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  html {
+    /* font-weight: 600; */
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    height: 100%;
+  }
+  body {
+    height: 100%;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    margin: 0;
+  }
+
+  body .wrapper {
+    @apply mx-auto max-w-[1440px] pb-0;
+  }
+  .section {
+    @apply w-full w-full flex py-20 lg:py-32;
+  }
+
+  .section-center {
+    @apply justify-center items-center text-center;
+  }
+
+  .section .inner {
+    @apply max-w-[832px] px-0;
+  }
+
+  .headline-circle {
+    @apply rounded-full h-[25px] w-[25px] flex items-center justify-center border-2 border-black border-solid;
+  }
+
+  /* hero */
+  .hero {
+    @apply bg-cover bg-no-repeat bg-center;
+    background-image: url(../images/hero_cover.jpg);
+  }
+
+  /* typo */
+  .font-harriet {
+    font-family: "Harriet Text", serif;
+  }
+  .font-helvetica {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+  }
+  .headlines {
+    @apply text-5xl font-harriet font-normal;
+  }
+  .wording {
+    @apply text-pink1 text-2xl lg:text-4xl font-harriet font-normal;
+  }
+  .description {
+    @apply text-base lg:text-2xl font-light;
+  }
+  .question {
+    @apply text-lg lg:text-3xl font-bold leading-[normal];
+  }
+
+  footer {
+    z-index: 20;
+    position: relative;
+  }
+
+  /* overwrite */
+  .hide {
+    @apply hidden;
+  }
+
+  /* animasi */
+  .section__fade,
+  .section__fade__custom {
+    opacity: 0;
+    transition: all 0.7s ease-in-out;
+  }
+  .section__fade.active,
+  .section__fade__custom.active {
+    opacity: 1;
+  }
+  .section__scale,
+  .section__scale__abang2 {
+    @apply scale-0;
+    transition: all 0.5s ease-in-out;
+  }
+  .section__scale.active,
+  .section__scale__abang2.active {
+    @apply scale-100;
+  }
+
+  /* section custom */
+  .section__cover {
+    @apply opacity-0 transition-all ease-in-out;
+  }
+  .section__cover__1.active {
+    @apply opacity-100;
+  }
+  .section__cover__2.active {
+    @apply opacity-100 delay-500;
+  }
+  .section__cover__3.active {
+    @apply opacity-100 delay-500;
+  }
+  .section__cover__4.active {
+    @apply opacity-100 delay-1000;
+  }
+  .section__83 {
+    @apply w-[0%] transition-all ease-out duration-1000;
+  }
+  .section__akreditas__item {
+    @apply w-[0%] transition-all ease-out duration-500;
+  }
+  .section__83.active {
+    @apply w-[83%];
+  }
+  .section__prioritas > div {
+    @apply h-[0%] transition-all ease-out duration-500;
+  }
+  .section__prioritas > img {
+    @apply opacity-0  transition-all ease-out duration-500;
+  }
+  .section__prioritas1.active > div {
+    @apply h-[100%];
+  }
+  .section__prioritas1.active > img {
+    @apply opacity-100 delay-500;
+  }
+  .section__prioritas2.active > div {
+    @apply h-[80%] delay-500;
+  }
+  .section__prioritas2.active > img {
+    @apply opacity-100 delay-1000;
+  }
+  .section__prioritas3.active > div {
+    @apply h-[70%] delay-1000;
+  }
+  .section__prioritas3.active > img {
+    @apply opacity-100 delay-1500;
+  }
+  .section__prioritas4.active > div {
+    @apply h-[60%] delay-1500;
+  }
+  .section__prioritas4.active > img {
+    @apply opacity-100 delay-2000;
+  }
+  .section__akreditasi.active {
+    @apply w-full;
+  }
+  .section__edukasi.active {
+    @apply w-[90%];
+  }
+  .section__akreditas__lainnya.active {
+    @apply w-[10%];
+  }
+  .section__8__bird {
+    @apply transition-all ease-out duration-500;
+  }
+  .section__8__bird1.active {
+    @apply right-[-120px];
+  }
+  .section__8__bird2.active {
+    @apply left-[-120px];
+  }
+
+  /* wbj-form */
+
+  .wbj-form-wrap label {
+    @apply question text-base lg:text-xl block;
+  }
+
+  .wbj-form-wrap input[type="text"],
+  .wbj-form-wrap input[type="email"] {
+    @apply rounded-lg border-black border border-solid w-full text-base lg:text-xl px-5 py-3;
+  }
+
+  .wbj-form-wrap form .wbj-form {
+    @apply flex flex-col lg:flex-row gap-5 mb-5;
+  }
+  .wbj-form-wrap form p {
+    @apply last:flex-none relative w-full lg:w-[50%];
+  }
+  .wbj-form-wrap form .wpcf7-submit {
+    @apply bg-pink2 text-black border-l-2 border-x-0 border-y-0 border-solid font-helvetica text-sm lg:text-lg font-bold py-3 px-10 my-5 cursor-pointer;
+  }
+  .wbj-form-wrap form .wpcf7-response-output {
+    @apply my-5;
+  }
+  .wbj-form-wrap .screen-reader-response {
+    @apply hide;
+  }
+  .wpcf7 form.invalid .wpcf7-response-output,
+  .wpcf7 form.unaccepted .wpcf7-response-output,
+  .wpcf7 form.payment-required .wpcf7-response-output,
+  .wpcf7 form.failed .wpcf7-response-output,
+  .wpcf7 form.aborted .wpcf7-response-output,
+  .wpcf7 form.sent .wpcf7-response-output {
+    @apply bg-black text-white border-none px-2 py-3 m-0;
+  }
+}
